@@ -81,14 +81,26 @@ body {
     color: #D3BC8E;
     letter-spacing: 8px;
     opacity: 0;
-    transform: translateY(20px);
-    transition: opacity 2s ease, transform 2s ease;
     text-shadow: 0 0 30px rgba(211, 188, 142, 0.5);
+    animation: particleGather 3s ease forwards;
 }
 
-.title-text.visible {
-    opacity: 1;
-    transform: translateY(0);
+@keyframes particleGather {
+    0% {
+        opacity: 0;
+        transform: translateY(20px) scale(0.5);
+        filter: blur(20px);
+    }
+    50% {
+        opacity: 0.5;
+        transform: translateY(10px) scale(0.8);
+        filter: blur(10px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+        filter: blur(0);
+    }
 }
 
 .enter-btn {
@@ -103,6 +115,7 @@ body {
     transition: all 0.4s ease;
     letter-spacing: 3px;
     pointer-events: auto;
+    border-radius: 8px;
 }
 
 .enter-btn.visible {

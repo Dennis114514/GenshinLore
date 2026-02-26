@@ -29,7 +29,7 @@ function initVideo() {
 
 function startIntroAnimation() {
     setTimeout(() => {
-        titleText.classList.add('visible');
+        // 标题文字使用CSS动画，不需要添加类
     }, 500);
     
     setTimeout(() => {

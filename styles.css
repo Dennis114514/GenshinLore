@@ -102,3 +102,472 @@ body {
     min-height: calc(100vh - 70px);
     background: linear-gradient(180deg, #f8f8f8 0%, #e8e8e8 100%);
 }
+
+.page-content {
+    font-family: 'Genshin', 'Microsoft YaHei', sans-serif;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 60px 40px;
+}
+
+.page-title {
+    font-family: 'Genshin', serif;
+    font-size: 42px;
+    color: #4d4f53;
+    text-align: center;
+    margin-bottom: 40px;
+    border-bottom: 3px solid #D3BC8E;
+    padding-bottom: 20px;
+    display: inline-block;
+    width: 100%;
+}
+
+.intro-text {
+    font-family: 'Genshin', serif;
+    font-size: 18px;
+    color: #4d4f53;
+    text-align: center;
+    line-height: 2;
+    margin-bottom: 50px;
+    padding: 30px;
+    background: linear-gradient(135deg, #f8f8f8 0%, #f0f0f0 100%);
+    border-radius: 12px;
+    border-left: 4px solid #D3BC8E;
+    border-right: 4px solid #D3BC8E;
+}
+
+.intro-text p {
+    margin: 0;
+    padding: 3px 0;
+}
+
+.has-footnote {
+    position: relative;
+    cursor: help;
+    display: block;
+    margin-left: 0;
+    font-family: 'Genshin', sans-serif;
+    font-size: 16px;
+    color: #4d4f53;
+    text-align: center;
+    margin: 10px 0;
+    line-height: 1.6;
+}
+
+.has-footnote sup {
+    color: #D3BC8E;
+    margin-left: 4px;
+}
+
+.section-subtitle {
+    font-family: 'Genshin', serif;
+    font-size: 20px;
+    color: #4d4f53;
+    text-align: center;
+    margin: 30px 0 20px;
+    line-height: 1.4;
+}
+
+.section-subtitle.has-footnote {
+    position: relative;
+    cursor: help;
+    display: inline-block;
+    margin-left: 0;
+}
+
+.section-subtitle.has-footnote:hover .tooltip {
+    bottom: 100%;
+    margin-bottom: 10px;
+}
+
+.section-subtitle.has-footnote .tooltip {
+    bottom: 100%;
+    margin-bottom: 10px;
+}
+
+.section-title.has-footnote {
+    position: relative;
+    cursor: help;
+    display: block;
+    margin-left: 0;
+}
+
+.section-title.has-footnote:hover .tooltip {
+    bottom: 85%;
+}
+
+.section-title.has-footnote .tooltip {
+    bottom: 85%;
+    margin-bottom: 10px;
+}
+
+.has-footnote:hover .tooltip {
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+}
+
+.tooltip {
+    position: absolute;
+    bottom: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #4d4f53;
+    color: #D3BC8E;
+    padding: 10px 14px;
+    border-radius: 6px;
+    font-size: 12px;
+    white-space: normal;
+    width: 350px;
+    max-width: 350px;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s ease;
+    z-index: 10;
+    margin-bottom: 10px;
+    pointer-events: none;
+    text-align: left;
+    line-height: 1.5;
+}
+
+.tooltip:hover {
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+}
+
+.tooltip a {
+    color: #D3BC8E;
+    text-decoration: none;
+    display: block;
+    margin-bottom: 5px;
+}
+
+.tooltip a:hover {
+    text-decoration: underline;
+}
+
+.intro-text .has-footnote {
+    position: relative;
+    cursor: help;
+    display: block;
+    padding: 5px 0;
+}
+
+.intro-text .has-footnote sup {
+    color: #D3BC8E;
+    margin-left: 4px;
+}
+
+.intro-text .has-footnote:hover .tooltip {
+    bottom: -5px;
+    margin-bottom: 0;
+}
+
+.intro-text .tooltip {
+    bottom: -5px;
+    margin-bottom: 0;
+}
+
+.basiclore-section {
+    margin-bottom: 60px;
+}
+
+.section-title {
+    font-family: 'Genshin', serif;
+    font-size: 28px;
+    color: #4d4f53;
+    text-align: center;
+    margin-bottom: 30px;
+    position: relative;
+    padding-bottom: 15px;
+}
+
+.section-title::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100px;
+    height: 2px;
+    background: linear-gradient(90deg, transparent, #D3BC8E, transparent);
+}
+
+.card-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 25px;
+    padding: 10px;
+}
+
+.card-item {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding: 25px;
+    background: linear-gradient(135deg, #ffffff 0%, #f8f8f8 100%);
+    border-radius: 12px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    border: 1px solid #e8e8e8;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.card-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(211, 188, 142, 0.2);
+    border-color: #D3BC8E;
+}
+
+.card-icon {
+    font-size: 36px;
+    width: 60px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(135deg, #D3BC8E 0%, #c4a87a 100%);
+    border-radius: 12px;
+    flex-shrink: 0;
+}
+
+.card-content h3 {
+    font-family: 'Genshin', serif;
+    font-size: 20px;
+    color: #4d4f53;
+    margin-bottom: 8px;
+}
+
+.card-content p {
+    font-family: 'Genshin', sans-serif;
+    font-size: 14px;
+    color: #8d8f93;
+    margin: 0;
+}
+
+.home-content {
+    font-family: 'Genshin', 'Microsoft YaHei', sans-serif;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 60px 40px;
+}
+
+.home-title {
+    font-family: 'Genshin', serif;
+    font-size: 48px;
+    color: #4d4f53;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.home-subtitle {
+    font-family: 'Genshin', sans-serif;
+    font-size: 20px;
+    color: #6d6f73;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.home-subtitle a {
+    color: #D3BC8E;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.home-subtitle a:hover {
+    text-decoration: underline;
+}
+
+.home-info {
+    font-family: 'Genshin', sans-serif;
+    font-size: 14px;
+    color: #6d6f73;
+    text-align: center;
+    margin-bottom: 60px;
+    line-height: 1.8;
+}
+
+.home-info p {
+    margin: 8px 0;
+}
+
+.editor-name {
+    font-size: 18px;
+    color: #D3BC8E;
+}
+
+.editor-info {
+    font-size: 18px;
+    color: #000000;
+    text-align: center;
+    margin: 8px 0;
+}
+
+.editor-info a {
+    color: #000000;
+    text-decoration: none;
+}
+
+.editor-info a:hover {
+    text-decoration: underline;
+}
+
+.home-info a {
+    color: #D3BC8E;
+    text-decoration: none;
+}
+
+.table-container {
+    max-width: 1000px;
+    margin: 40px auto;
+    overflow-x: auto;
+}
+
+.lightrelam-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-family: 'Genshin', sans-serif;
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+.lightrelam-table th {
+    background-color: #4d4f53;
+    color: #D3BC8E;
+    padding: 12px 15px;
+    text-align: center;
+    border: 1px solid #D3BC8E;
+    font-weight: normal;
+}
+
+.lightrelam-table td {
+    padding: 12px 15px;
+    border: 1px solid #D3BC8E;
+    text-align: center;
+    color: #4d4f53;
+}
+
+.lightrelam-table tr:nth-child(even) {
+    background-color: #f5f5f5;
+}
+
+.lightrelam-table tr:hover {
+    background-color: #f0f0f0;
+}
+
+.lightrelam-description {
+    font-family: 'Genshin', sans-serif;
+    font-size: 16px;
+    color: #4d4f53;
+    text-align: center;
+    margin: 20px 0 30px;
+    line-height: 1.6;
+}
+
+.lightrelam-content {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 0 20px;
+}
+
+.lightrelam-content h2 {
+    font-family: 'Genshin', serif;
+    font-size: 24px;
+    color: #4d4f53;
+    text-align: center;
+    margin-bottom: 30px;
+    line-height: 1.4;
+}
+
+.lightrelam-content p {
+    font-family: 'Genshin', sans-serif;
+    font-size: 16px;
+    color: #4d4f53;
+    text-align: center;
+    margin: 10px 0;
+    line-height: 1.6;
+}
+
+@media (max-width: 768px) {
+    .table-container {
+        margin: 20px;
+    }
+    
+    .lightrelam-table {
+        font-size: 12px;
+    }
+    
+    .lightrelam-table th,
+    .lightrelam-table td {
+        padding: 8px 10px;
+    }
+}
+
+.thanks-section {
+    font-family: 'Genshin', sans-serif;
+    margin-bottom: 40px;
+}
+
+.thanks-section h2 {
+    font-family: 'Genshin', serif;
+    font-size: 28px;
+    color: #4d4f53;
+    text-align: center;
+    margin-bottom: 20px;
+    border-bottom: 2px solid #D3BC8E;
+    padding-bottom: 10px;
+    display: inline-block;
+}
+
+.thanks-section > p {
+    font-size: 16px;
+    color: #4d4f53;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.contributors {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px 30px;
+    font-size: 15px;
+    color: #5d5f63;
+}
+
+.contributors li {
+    padding: 5px 15px;
+    background-color: rgba(211, 188, 142, 0.1);
+    border-radius: 4px;
+}
+
+.thanks-detail {
+    font-size: 15px;
+    color: #5d5f63;
+    text-align: center;
+    line-height: 2;
+}
+
+.home-footer {
+    font-family: 'Genshin', sans-serif;
+    text-align: center;
+    padding: 40px;
+    color: #9d9f93;
+    font-size: 14px;
+}
+
+.home-footer p {
+    margin: 5px 0;
+}
+
+.home-footer a {
+    color: #9d9f93;
+    text-decoration: none;
+}
+
+.home-footer a:hover {
+    color: #D3BC8E;
+    text-decoration: underline;
+}

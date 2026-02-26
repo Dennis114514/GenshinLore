@@ -1,7 +1,19 @@
+const navPageMap = {
+    'home': 'main.html',
+    'basic': 'basiclore.html',
+    'history': 'Teyvathis.html',
+    'nations': 'history-country.html',
+    'brief': 'genshinbasichis.html',
+    'about-manual': 'about.html',
+    'about-site': 'aboutsite.html'
+};
+
+
 function goToMain() {
     const currentPage = window.location.href;
     if (!currentPage.includes('main.html')) {
-        window.location.href = 'main.html';
+        const basePath = getBasePath();
+        window.location.href = basePath + 'main.html';
     }
 }
 
@@ -10,7 +22,6 @@ window.goToMain = goToMain;
 document.addEventListener('DOMContentLoaded', function() {
     const navItems = document.querySelectorAll('.nav-item');
     const indicator = document.querySelector('.nav-indicator');
-    const topbarLeft = document.querySelector('.topbar-left');
 
     function updateIndicator(item) {
         const itemWidth = item.offsetWidth;
@@ -20,32 +31,9 @@ document.addEventListener('DOMContentLoaded', function() {
         indicator.style.left = itemLeft + 'px';
     }
 
-    function setActiveNav(index) {
-        navItems.forEach(item => item.classList.remove('active'));
-        navItems[index].classList.add('active');
-        updateIndicator(navItems[index]);
-    }
-
     navItems.forEach((item, index) => {
         item.addEventListener('mouseenter', function() {
             updateIndicator(this);
-        });
-
-        item.addEventListener('click', function(e) {
-            e.preventDefault();
-            const navName = this.querySelector('a').dataset.nav;
-            console.log('导航点击:', navName);
-            
-            if (navName === 'home') {
-                const currentPage = window.location.href;
-                if (currentPage.includes('main.html')) {
-                    setActiveNav(index);
-                } else {
-                    goToMain();
-                }
-            } else {
-                setActiveNav(index);
-            }
         });
     });
 
