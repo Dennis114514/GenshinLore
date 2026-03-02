@@ -260,6 +260,10 @@ body {
     width: 100%;
 }
 
+.khaenriah-font {
+    font-family: 'Khaenriah', serif;
+}
+
 .intro-text {
     font-family: 'Common', serif;
     font-size: 18px;
@@ -621,7 +625,7 @@ body {
 
 .table-container {
     max-width: 1200px;
-    margin: 40px auto;
+    margin: 40px 70px;
     overflow-x: auto;
 }
 
@@ -929,7 +933,8 @@ body {
     font-family: 'Genshin', sans-serif;
     font-size: 18px;
     color: #4d4f53;
-    margin: 0 0 15px 0;
+    margin: 30px 0 20px 70px;
+    padding-left: 20px;
 }
 
 .timeline-content {
@@ -943,10 +948,8 @@ body {
 
 .timeline-subtitle {
     font-family: 'Genshin', sans-serif;
-    font-size: 16px;
-    color: #D3BC8E;
-    margin: 25px 0 15px 0;
-    font-weight: normal;
+    font-size: 18px;
+    color: #4d4f53;
 }
 
 .quote-block {
