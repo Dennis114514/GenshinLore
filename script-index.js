@@ -17,6 +17,7 @@ let isFormed = false;
 let textAlpha = 0;
 let particlesExploded = true;
 let animationStarted = false;
+let particleFadeOut = 1;
 
 const titleString = "All of Sun and Moon";
 let fontSize = 72;
@@ -49,11 +50,14 @@ function initParticles() {
     tempCtx.font = `${fontSize}px 'Khaenriah', serif`;
     tempCtx.fillStyle = 'white';
     tempCtx.textAlign = 'center';
-    tempCtx.textBaseline = 'alphabetic';
+    tempCtx.textBaseline = 'middle';
 
     const centerX = canvas.width / 2;
-    const centerY = canvas.height / 2 + fontSize * 0.35;
-    tempCtx.fillText(titleString, centerX, centerY);
+    const centerY = canvas.height / 2;
+
+    for (let i = -2; i <= 2; i++) {
+        tempCtx.fillText(titleString, centerX, centerY + i);
+    }
 
     const imageData = tempCtx.getImageData(0, 0, canvas.width, canvas.height).data;
     const gap = 3;
@@ -75,12 +79,12 @@ function drawRealText(alpha) {
     ctx.font = `${fontSize}px 'Khaenriah', serif`;
     ctx.fillStyle = '#D3BC8E';
     ctx.textAlign = 'center';
-    ctx.textBaseline = 'alphabetic';
+    ctx.textBaseline = 'middle';
     ctx.shadowColor = 'rgba(211, 188, 142, 0.5)';
     ctx.shadowBlur = 20;
 
     const centerX = canvas.width / 2;
-    const centerY = canvas.height / 2 + fontSize * 0.35;
+    const centerY = canvas.height / 2;
     ctx.fillText(titleString, centerX, centerY);
     ctx.restore();
 }
@@ -120,6 +124,9 @@ function animateParticles() {
         }
 
         if (particlesExploded) {
+            particleFadeOut -= 0.02;
+            if (particleFadeOut < 0) particleFadeOut = 0;
+
             particles.forEach(p => {
                 p.x += p.vx;
                 p.y += p.vy;
@@ -131,7 +138,7 @@ function animateParticles() {
         }
     }
 
-    let particleAlpha = 1 - textAlpha;
+    let particleAlpha = (1 - textAlpha) * particleFadeOut;
 
     if (particleAlpha > 0.01) {
         ctx.globalAlpha = particleAlpha;
@@ -169,18 +176,34 @@ function initVideo() {
     });
 }
 
+function waitForFontLoad() {
+    return new Promise((resolve) => {
+        if (document.fonts && document.fonts.load) {
+            document.fonts.load('72px "Khaenriah"').then(() => {
+                resolve();
+            }).catch(() => {
+                setTimeout(resolve, 500);
+            });
+        } else {
+            setTimeout(resolve, 500);
+        }
+    });
+}
+
 function startIntroAnimation() {
-    initParticles();
-    animateParticles();
+    waitForFontLoad().then(() => {
+        initParticles();
+        animateParticles();
 
-    setTimeout(() => {
-        isFormed = true;
-        animationStarted = true;
-    }, 500);
+        setTimeout(() => {
+            isFormed = true;
+            animationStarted = true;
+        }, 500);
 
-    setTimeout(() => {
-        enterBtn.classList.add('visible');
-    }, 3500);
+        setTimeout(() => {
+            enterBtn.classList.add('visible');
+        }, 3500);
+    });
 }
 
 function goToMain() {
@@ -200,7 +223,9 @@ window.goToMain = goToMain;
 
 window.addEventListener('resize', () => {
     if (animationStarted) {
-        initParticles();
+        waitForFontLoad().then(() => {
+            initParticles();
+        });
     }
 });
 
