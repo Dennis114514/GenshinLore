@@ -1089,87 +1089,14 @@ body {
     background: #c4a87a;
 }
 
-.toc-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: 15px;
-    padding-bottom: 10px;
-    border-bottom: 2px solid #D3BC8E;
-}
-
 .toc-title {
     font-family: 'Genshin', serif;
     font-size: 18px;
     color: #4d4f53;
-    margin: 0;
-}
-
-.toc-toggle {
-    background: none;
-    border: none;
-    color: #D3BC8E;
-    font-size: 18px;
-    cursor: pointer;
-    padding: 0;
-    width: 30px;
-    height: 30px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-radius: 50%;
-    transition: all 0.3s ease;
-}
-
-.toc-toggle:hover {
-    background-color: rgba(211, 188, 142, 0.15);
-}
-
-.toc-toggle::before {
-    content: '→';
-    display: block;
-    transition: transform 0.3s ease;
-    font-size: 16px;
-    font-weight: bold;
-}
-
-.toc-sidebar.collapsed .toc-toggle::before {
-    transform: rotate(180deg);
-}
-
-.toc-content {
-    transition: max-height 0.3s ease;
-    overflow: hidden;
-    max-height: 2000px;
-}
-
-.toc-sidebar.collapsed .toc-content {
-    max-height: 0;
-    margin: 0;
-    padding: 0;
-}
-
-.toc-sidebar.collapsed {
-    width: 60px;
-    padding: 10px;
-}
-
-.toc-sidebar.collapsed .toc-title {
-    display: none;
-}
-
-@media (max-width: 1200px) {
-    .toc-sidebar.collapsed {
-        width: 50px;
-        padding: 8px;
-    }
-}
-
-@media (max-width: 768px) {
-    .toc-sidebar.collapsed {
-        width: 45px;
-        padding: 6px;
-    }
+    margin-bottom: 15px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #D3BC8E;
+    text-align: center;
 }
 
 .toc-list {
@@ -1246,62 +1173,7 @@ body {
 
 @media (max-width: 1200px) {
     .toc-sidebar {
-        width: 200px;
-        right: 5px;
-        padding: 15px;
-    }
-    
-    .toc-link {
-        font-size: 12px;
-    }
-    
-    .toc-link.level-1 {
-        font-size: 13px;
-    }
-    
-    .toc-link.level-2 {
-        padding-left: 15px;
-        font-size: 12px;
-    }
-    
-    .toc-link.level-3 {
-        padding-left: 25px;
-        font-size: 11px;
-    }
-}
-
-@media (max-width: 768px) {
-    .toc-sidebar {
-        width: 160px;
-        right: 2px;
-        padding: 10px;
-        top: 80px;
-        max-height: calc(100vh - 100px);
-    }
-    
-    .toc-title {
-        font-size: 14px;
-        margin-bottom: 10px;
-        padding-bottom: 5px;
-    }
-    
-    .toc-link {
-        font-size: 11px;
-        padding: 4px 8px;
-    }
-    
-    .toc-link.level-1 {
-        font-size: 12px;
-    }
-    
-    .toc-link.level-2 {
-        padding-left: 12px;
-        font-size: 11px;
-    }
-    
-    .toc-link.level-3 {
-        padding-left: 20px;
-        font-size: 10px;
+        display: none;
     }
 }
 

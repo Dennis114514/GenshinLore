@@ -41,14 +41,9 @@
     </header>
     <main class="main-content">
         <aside class="toc-sidebar">
-            <div class="toc-header">
-                <h3 class="toc-title">目录导航</h3>
-                <button class="toc-toggle" id="toc-toggle"></button>
-            </div>
-            <div class="toc-content">
-                <ul class="toc-list" id="toc-list">
-                </ul>
-            </div>
+            <h3 class="toc-title">目录导航</h3>
+            <ul class="toc-list" id="toc-list">
+            </ul>
         </aside>
         
         <section class="page-content">
@@ -564,10 +559,6 @@
         <script>
         document.addEventListener('DOMContentLoaded', function() {
             const tocList = document.getElementById('toc-list');
-            const tocSidebar = document.querySelector('.toc-sidebar');
-            const tocToggle = document.getElementById('toc-toggle');
-            
-
             
             const tocData = [
                 { id: 'section-1', text: '一、七王时期', level: 1 },
