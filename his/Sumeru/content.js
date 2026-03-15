@@ -1364,7 +1364,10 @@ sub floreis  lumen  sagacitatis
 
                 // 外部链接映射（仅包含外部链接的脚注）
                 const linkMap = {
-                    '1': '<a href="https://www.bilibili.com" target="_blank">哔哩哔哩</a>',
+                    '1': '<a href="https://www.bilibili.com/video/BV1At4y1q7UQ/?spm_id_from=333.1387.upload.video_card.click&amp;vd_source=5521f8f34a1af08d13b6fcf39bf4506b" target="_blank">《原神·提瓦特篇》主线章节预告PV-「足迹」_哔哩哔哩_bilibili</a>',
+                    '14': '<a href="https://www.bilibili.com/video/BV1MP411J7Zn/?spm_id_from=333.1387.upload.video_card.click&amp;vd_source=5521f8f34a1af08d13b6fcf39bf4506b" target="_blank">《原神》剧情PV-「沙中遗事」_原神</a>',
+                    '17': '<a href="https://www.bilibili.com/video/BV1Es421w7YV/?spm_id_from=333.1387.upload.video_card.click&amp;vd_source=5521f8f34a1af08d13b6fcf39bf4506b" target="_blank">《原神》过场动画-「赫曼努比斯的传承」_原神</a>',
+                    '21': '<a href="https://www.bilibili.com/video/BV1AG4y1h7Ap/?spm_id_from=333.1387.upload.video_card.click&amp;vd_source=5521f8f34a1af08d13b6fcf39bf4506b" target="_blank">《原神》纳西妲角色PV——「生日快乐」_哔哩哔哩bilibili_原神</a>',
                       };
 
                 for (const raw of lines) {
