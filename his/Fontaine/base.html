@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>枫丹历史 - 原神世界观手册</title>
+    <link rel="stylesheet" href="../../styles.css">
+</head>
+<body>
+    <header class="topbar">
+        <div class="topbar-left" onclick="window.location.href='../../main.html'">
+            <img src="../../img/logo/genshinlogo.webp" alt="原神 Logo" class="logo">
+            <span class="site-title">世界观手册</span>
+        </div>
+        <nav class="nav-menu">
+            <div class="nav-indicator"></div>
+            <ul class="nav-list">
+                <li class="nav-item" data-index="0">
+                    <a href="../../main.html" data-nav="home">首页</a>
+                </li>
+                <li class="nav-item" data-index="1">
+                    <a href="../../basiclore.html" data-nav="basic">基本设定</a>
+                </li>
+                <li class="nav-item" data-index="2">
+                    <a href="../../Teyvathis.html" data-nav="history">提瓦特历史</a>
+                </li>
+                <li class="nav-item active" data-index="3">
+                    <a href="../../history-country.html" data-nav="nations">各国历史</a>
+                </li>
+                <li class="nav-item" data-index="4">
+                    <a href="../../genshinbasichis.html" data-nav="brief">原神简史</a>
+                </li>
+                <li class="nav-item" data-index="5">
+                    <a href="../../about.html" data-nav="about-manual">关于手册</a>
+                </li>
+                <li class="nav-item" data-index="6">
+                    <a href="../../aboutsite.html" data-nav="about-site">关于本站</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main class="main-content">
+        <aside class="toc-sidebar">
+            <h3 class="toc-title">目录导航 <button class="toc-toggle-btn" id="toc-toggle">▲</button></h3>
+            <ul class="toc-list" id="toc-list"></ul>
+        </aside>
+
+        <section class="page-content">
+            <h1 class="page-title" id="page-title">璃月</h1>
+
+            <div class="timeline-intro" id="timeline-intro"></div>
+            <div class="timeline" id="timeline"></div>
+        </section>
+    </main>
+
+    <footer class="home-footer">
+        <p>愿风指引你们的道路</p>
+        <p><a href="https://github.com/Dennis114514/GenshinLore" target="_blank">GenshinLore</a> 2026</p>
+    </footer>
+
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3>原文</h3>
+                <button id="close-modal" class="close-button">&times;</button>
+            </div>
+            <div class="modal-body" id="modal-body"></div>
+        </div>
+    </div>
+
+    <script src="../../script.js"></script>
+    <script src="content.js"></script>
+</body>
+</html>
