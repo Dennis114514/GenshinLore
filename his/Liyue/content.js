@@ -1500,7 +1500,7 @@ ruat caelum  fiat  pactum
                             h4.innerHTML = injectFootnoteTooltips(normalizeInline(text), footnoteMap);
                             ensureSection().appendChild(h4);
 
-                            pushToc(id, cleanTocText(text), 2);
+                            // 不添加到目录导航中
                             i++;
                             continue;
                         }
