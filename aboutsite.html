@@ -5,7 +5,237 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>关于本站 - 日月全事</title>
     <link rel="stylesheet" href="styles.css">
-</head>
+    <style>
+        .article-body {
+            max-width: 900px;
+            margin: 0 auto;
+        }
+        .article-body h2 {
+            font-family: 'Genshin', serif;
+            position: relative;
+            padding-bottom: 10px;
+        }
+        .article-body h2::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 50px;
+            height: 3px;
+            background: #D3BC8E;
+            transition: width 0.3s ease;
+        }
+        .article-body h2:hover::after {
+            width: 100%;
+        }
+        .article-body ul {
+            list-style: none;
+            padding-left: 0;
+        }
+        .article-body li {
+            position: relative;
+            padding-left: 20px;
+        }
+        .article-body li::before {
+            content: '◆';
+            position: absolute;
+            left: 0;
+            color: #D3BC8E;
+        }
+        .article-body p, .article-body ul, .article-body li {
+            font-family: 'Common', sans-serif;
+            line-height: 2;
+        }
+        .article-body a {
+            color: #D3BC8E;
+            text-decoration: none;
+        }
+        .article-body a:hover {
+            color: #B8A076;
+        }
+        .misc-links p {
+            font-family: 'Genshin', serif;
+            font-size: 28px;
+            color: #4d4f53;
+        }
+        .logos-container {
+            display: flex;
+            justify-content: space-around;
+            padding: 20px;
+        }
+        .logo-item {
+            text-align: center;
+        }
+        .logo-text {
+            font-family: 'Genshin', serif;
+            color: #666;
+            margin-bottom: 10px;
+        }
+        .logo-bg {
+            display: inline-block;
+            padding: 5px;
+        }
+        .cloudflare-bg {
+            background-color: white;
+        }
+        .rainyun-bg {
+            background-color: white;
+        }
+        .github-bg {
+            background-color: black;
+        }
+        .logo-img {
+            max-height: 70px;
+            width: auto;
+            transition: transform 0.3s;
+        }
+        .logo-img:hover {
+            transform: scale(1.1);
+        }
+        
+        /* GitHub风格commit记录样式 */
+        .commits-container {
+            margin-top: 20px;
+            position: relative;
+            padding-left: 30px;
+        }
+        
+        .commit-item {
+            padding: 16px 0;
+            display: flex;
+            align-items: flex-start;
+            transition: all 0.2s ease;
+            opacity: 0;
+            transform: translateY(-10px);
+            animation: commitFadeIn 0.4s ease forwards;
+            position: relative;
+            cursor: pointer;
+        }
+        
+        .commit-item:hover {
+            background-color: transparent;
+        }
+        
+        .commit-item:hover .commit-branch-icon {
+            background-color: #D3BC8E;
+            transform: scale(1.2);
+        }
+        
+        .commit-item:hover .commit-message {
+            color: #0366d6;
+        }
+        
+        .commit-item:last-child {
+            border-bottom: none;
+        }
+        
+        /* 分支图标容器 */
+        .commit-icon-wrapper {
+            position: absolute;
+            left: -30px;
+            top: 0;
+            width: 30px;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        
+        /* 分支图标（类似-o-的样式） */
+        .commit-branch-icon {
+            width: 12px;
+            height: 12px;
+            border: 2px solid #D3BC8E;
+            border-radius: 50%;
+            background-color: white;
+            position: relative;
+            z-index: 2;
+            flex-shrink: 0;
+        }
+        
+        /* 竖线连接 */
+        .commit-line {
+            width: 2px;
+            flex: 1;
+            background-color: #eaecef;
+            min-height: 20px;
+        }
+        
+        .commit-item:last-child .commit-line {
+            display: none;
+        }
+        
+        .commit-content {
+            flex: 1;
+            min-width: 0;
+            padding-left: 12px;
+        }
+        
+        .commit-message {
+            font-family: 'Common', sans-serif;
+            font-size: 14px;
+            color: #24292e;
+            line-height: 1.5;
+            margin-bottom: 4px;
+            word-wrap: break-word;
+        }
+        
+        .commit-message a {
+            color: #0366d6;
+            text-decoration: none;
+        }
+        
+        .commit-message a:hover {
+            text-decoration: underline;
+        }
+        
+        .commit-meta {
+            font-family: 'Common', sans-serif;
+            font-size: 12px;
+            color: #586069;
+        }
+        
+        .commit-date {
+            margin-right: 8px;
+        }
+        
+        .commit-sha {
+            font-family: 'SFMono-Regular', Consolas, 'Liberation Mono', Menlo, monospace;
+            color: #0366d6;
+            text-decoration: none;
+        }
+        
+        .commit-sha:hover {
+            text-decoration: underline;
+        }
+        
+        .loading-text {
+            font-family: 'Common', sans-serif;
+            font-size: 14px;
+            color: #586069;
+            text-align: center;
+            padding: 20px;
+        }
+        
+        .error-text {
+            font-family: 'Common', sans-serif;
+            font-size: 14px;
+            color: #cb2431;
+            text-align: center;
+            padding: 20px;
+        }
+        
+        @keyframes commitFadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(-10px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+    </style>
 <body>
     <header class="topbar">
         <div class="topbar-left" onclick="window.location.href='main.html'">
@@ -45,6 +275,67 @@
     <main class="main-content">
         <section class="page-content">
             <h1 class="page-title">关于本站</h1>
+            <div class="article-body">
+                <h2>杂项内容</h2>
+                <div class="misc-links">
+                    <p><a href="interestfacts.html">关于原神你不知道的很多事实和彩蛋</a><br>
+                    <a href="somewords.html">一些想说的话</a></p>
+                </div>
+                <div class="logos-container">
+                    <div class="logo-item">
+                        <p class="logo-text">服务器：Cloudflare</p>
+                        <a href="https://www.cloudflare.com/" target="_blank">
+                            <div class="logo-bg cloudflare-bg">
+                                <img src="img/logo/website/Cloudflare.png" alt="Cloudflare" class="logo-img">
+                            </div>
+                        </a>
+                    </div>
+                    <div class="logo-item">
+                        <p class="logo-text">域名：雨云</p>
+                        <a href="https://www.rainyun.com/" target="_blank">
+                            <div class="logo-bg rainyun-bg">
+                                <img src="img/logo/website/Rainyun.png" alt="Yun" class="logo-img">
+                            </div>
+                        </a>
+                    </div>
+                    <div class="logo-item">
+                        <p class="logo-text">源代码：Github</p>
+                        <a href="https://github.com/Dennis114514/GenshinLore" target="_blank">
+                            <div class="logo-bg github-bg">
+                                <img src="img/logo/website/Github.png" alt="Github" class="logo-img">
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <p>本站旨在帮助所有喜爱《原神》剧情及世界观的玩家提供一个方便、快速的平台，帮助他们阅读<a href="https://space.bilibili.com/1916076420" target="_blank">诗漱</a>的<a href="https://www.bilibili.com/video/BV1HZf1B7EgF/" target="_blank">原神世界观手册</a></p>
+
+                <h2>意见和问题反馈</h2>
+                <p>如果遇到内容问题，请在<a href="https://space.bilibili.com/1916076420" target="_blank">诗漱</a>的B站相关动态或视频留言</p>
+                <p>如果遇到技术问题，请联系站长。<br>联系方式：（按照优先级排序）</p>
+                <ul>
+                    <li>Github：<a href="https://github.com/Dennis114514/GenshinLore/issues" target="_blank">提交issues</a></li>
+                    <li>Gitee：<a href="https://gitee.com/Dennis114514/GenshinLore/issues/new" target="_blank">提交issues</a></li>
+                    <li>邮箱：Dennis1111@126.com</li>
+                    <li>QQ：1963626461</li>
+                </ul>
+
+                <h2>更改记录</h2>
+                <div id="commits-container" class="commits-container">
+                    <p class="loading-text">加载中...</p>
+                </div>
+
+                <h2>站长的话</h2>
+                <p>作为一本具有基础性作用的考据手册，它的内容理应触达更多玩家。我们需要在尽可能降低阅读门槛的同时，保持内容的严谨与<span style="color:red;">原汁原味</span>——即还原游戏内真实的文本阅读体验，而非仅仅提供解析后的结论。</p>
+                <p>然而，原版手册为了追求实体「书」的质感，在数字时代的「易读性」上做出了妥协。原版采用了更适合印刷的 PDF 格式发布，通篇都在尽量模仿传统书籍的排版。这种设计初衷固然是希望读者能获得沉浸式的读书体验，但同时也导致了它在电子屏幕上的阅读体验大打折扣。毕竟，并非所有人都有条件将其打印成册，或是拥有整块的时间通读全书。如今，更多人习惯于利用碎片化时间，在小小的手机屏幕上进行阅读。那些在宽大屏幕或纸张上显得清晰优雅的文档，在移动端往往变得难以卒读。</p>
+                <p>因此，我制作了这个网站。相比于原版手册，本网站在阅读体验上进行了全面重构：</p>
+                <ul>
+                    <li><span style="color:red;">全端适配</span>：所有页面均采用响应式设计，完美适配从手机到桌面的几乎所有屏幕尺寸。</li>
+                    <li><span style="color:red;">交互优化</span>：充分利用 Web 的交互特性，将次要信息折叠并以弹窗形式展示；将传统脚注优化为行内元素，鼠标悬停或点击即可查看；为长页面配备了一键跳转的目录导航，让信息检索与快速浏览更加流畅。</li>
+                    <li><span style="color:red;">重构重组</span>：对手册的庞大内容进行了深度拆解与逻辑分类，以直观友好的现代 UI 呈现，大幅降低了阅读门槛，提升了整体的阅读体验。</li>
+                    <li><span style="color:red;">拥抱开源</span>：网站源代码全面托管于开源社区 <a href="https://github.com/Dennis114514/GenshinLore" target="_blank">GitHub</a>。欢迎所有有能力的朋友为网站建设做出贡献，依托社区的力量，也更有利于网站的持久化运行。</li>
+                    <li><span style="color:red;">开放自由</span><a class="has-footnote"><sup>*</sup><span class="tooltip">PDF 格式最初由 Adobe 开发，尽管如今已成为国际标准（ISO 32000-2:2020），但对于有「赛博洁癖」的人来说，它依然不符合对「绝对自由」的追求。相比之下，HTML 自诞生之初便是通用的标记语言，解析它的浏览器完全开源，其纯文本的底层存储逻辑，也让你无需担心这些文本在数十年甚至百年后会面临「无法解析」的风险。</span></a>：无需依赖任何第三方软件（如 PDF 阅读器），仅需一个浏览器，即可为读者创造真正自由的阅读体验。</li>
+                </ul>
+            </div>
         </section>
 
         <footer class="home-footer">
@@ -53,5 +344,98 @@
         </footer>
     </main>
     <script src="script.js"></script>
+    <script>
+        // GitHub Commit记录加载器
+        (function() {
+            const commitsContainer = document.getElementById('commits-container');
+            const apiUrl = 'https://api.github.com/repos/Dennis114514/GenshinLore/commits?sha=main&per_page=10';
+            
+            // 格式化日期
+            function formatDate(dateString) {
+                const date = new Date(dateString);
+                const year = date.getFullYear();
+                const month = String(date.getMonth() + 1).padStart(2, '0');
+                const day = String(date.getDate()).padStart(2, '0');
+                const hours = String(date.getHours()).padStart(2, '0');
+                const minutes = String(date.getMinutes()).padStart(2, '0');
+                return `${year}-${month}-${day} ${hours}:${minutes}`;
+            }
+            
+            // 渲染commit列表
+            function renderCommits(commits) {
+                if (!commits || commits.length === 0) {
+                    commitsContainer.innerHTML = '<p class="error-text">暂无提交记录</p>';
+                    return;
+                }
+                
+                let html = '';
+                commits.forEach((commit, index) => {
+                    const commitData = commit.commit;
+                    const author = commitData.author;
+                    const fullMessage = commitData.message;
+                    // 只取第一行作为消息
+                    const message = fullMessage.split('\n')[0];
+                    const date = formatDate(author.date);
+                    const sha = commit.sha.substring(0, 7);
+                    const htmlUrl = commit.html_url;
+                    
+                    // 为每个commit添加延迟动画
+                    const animationDelay = index * 0.08;
+                    
+                    html += `
+                        <div class="commit-item" style="animation-delay: ${animationDelay}s" onclick="window.open('${htmlUrl}', '_blank')">
+                            <div class="commit-icon-wrapper">
+                                <div class="commit-branch-icon"></div>
+                                <div class="commit-line"></div>
+                            </div>
+                            <div class="commit-content">
+                                <div class="commit-message">${escapeHtml(message)}</div>
+                                <div class="commit-meta">
+                                    <span class="commit-date">${date}</span>
+                                    <a href="${htmlUrl}" target="_blank" class="commit-sha" onclick="event.stopPropagation()">${sha}</a>
+                                </div>
+                            </div>
+                        </div>
+                    `;
+                });
+                
+                commitsContainer.innerHTML = html;
+            }
+            
+            // HTML转义函数，防止XSS攻击
+            function escapeHtml(text) {
+                const div = document.createElement('div');
+                div.textContent = text;
+                return div.innerHTML;
+            }
+            
+            // 显示错误信息
+            function showError() {
+                commitsContainer.innerHTML = '<p class="error-text">加载失败，请刷新页面重试</p>';
+            }
+            
+            // 获取commit数据
+            async function fetchCommits() {
+                try {
+                    const response = await fetch(apiUrl);
+                    if (!response.ok) {
+                        throw new Error(`HTTP error! status: ${response.status}`);
+                    }
+                    const data = await response.json();
+                    renderCommits(data);
+                } catch (error) {
+                    console.error('Failed to fetch commits:', error);
+                    showError();
+                }
+            }
+            
+            // 页面加载完成后执行
+            if (document.readyState === 'loading') {
+                document.addEventListener('DOMContentLoaded', fetchCommits);
+            } else {
+                fetchCommits();
+            }
+        })();
+    </script>
 </body>
 </html>
