@@ -194,6 +194,93 @@
     margin: 25px 0;
 }
 
+/* 用户协议弹窗专用样式 */
+.user-agreement-modal .modal-content {
+    max-width: 700px;
+    max-height: 85%;
+}
+
+.user-agreement-modal .modal-body {
+    max-height: 500px;
+    font-family: 'Common', sans-serif;
+    font-size: 14px;
+    line-height: 1.8;
+    color: #4d4f53;
+}
+
+.user-agreement-modal .modal-body h2 {
+    font-family: 'Genshin', serif;
+    font-size: 22px;
+    color: #4d4f53;
+    margin: 20px 0 15px 0;
+    padding-bottom: 8px;
+    border-bottom: 2px solid #D3BC8E;
+}
+
+.user-agreement-modal .modal-body h3 {
+    font-family: 'Genshin', serif;
+    font-size: 18px;
+    color: #4d4f53;
+    margin: 18px 0 12px 0;
+}
+
+.user-agreement-modal .modal-body p {
+    margin: 10px 0;
+    text-align: justify;
+}
+
+.user-agreement-modal .modal-body ul {
+    margin: 10px 0 10px 20px;
+    padding: 0;
+}
+
+.user-agreement-modal .modal-body li {
+    margin: 6px 0;
+    line-height: 1.6;
+}
+
+.modal-footer {
+    padding: 15px 20px;
+    border-top: 1px solid #e8e8e8;
+    display: flex;
+    justify-content: flex-end;
+    gap: 12px;
+    background-color: #fafafa;
+}
+
+.btn {
+    padding: 10px 24px;
+    border: none;
+    border-radius: 6px;
+    font-family: 'Genshin', sans-serif;
+    font-size: 15px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    outline: none;
+}
+
+.btn-agree {
+    background-color: #D3BC8E;
+    color: #4d4f53;
+}
+
+.btn-agree:hover {
+    background-color: #c4ad7f;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(211, 188, 142, 0.3);
+}
+
+.btn-decline {
+    background-color: #e8e8e8;
+    color: #6d6f73;
+}
+
+.btn-decline:hover {
+    background-color: #d8d8d8;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
 * {
     margin: 0;
     padding: 0;
