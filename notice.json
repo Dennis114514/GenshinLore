@@ -1,0 +1,23 @@
+[
+    {
+        "title": "Notice Title 1",
+        "description": "This is the description for notice 1.",
+        "date": "2024-06-01",
+        "author": "Dennis114514",
+        "id": 3
+    },
+    {
+        "title": "Notice Title 2",
+        "description": "This is the description for notice 2.",
+        "date": "2024-06-15",
+        "author": "Dennis114514",
+        "id": 2
+    },
+    {
+        "title": "Notice Title 3",
+        "description": "This is the description for notice 3.",
+        "date": "2024-06-30",
+        "author": "Dennis114514",
+        "id": 1
+    }
+]
