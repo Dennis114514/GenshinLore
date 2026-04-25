@@ -381,7 +381,6 @@ body {
 .main-content {
     margin-top: 70px;
     min-height: calc(100vh - 70px);
-    background: linear-gradient(180deg, #f8f8f8 0%, #e8e8e8 100%);
 }
 
 .page-content {
@@ -389,6 +388,160 @@ body {
     max-width: 1000px;
     margin: 0 auto;
     padding: 60px 40px;
+}
+
+/* 移动端导航菜单适配 */
+@media screen and (max-width: 768px) {
+    .topbar {
+        padding: 0 20px;
+        height: 60px;
+    }
+
+    .topbar-left {
+        gap: 10px;
+    }
+
+    .logo {
+        width: 35px;
+        height: 35px;
+    }
+
+    .site-title {
+        font-size: 20px;
+    }
+
+    /* 移动端导航容器 */
+    .nav-menu {
+        position: relative;
+        flex-grow: 1;
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    /* 汉堡菜单按钮样式 */
+    .mobile-menu-btn {
+        display: block;
+        position: relative;
+        width: 30px;
+        height: 20px;
+        cursor: pointer;
+        z-index: 20;
+        margin-left: 15px;
+        background: transparent;
+        border: none;
+        padding: 0;
+    }
+
+    .mobile-menu-btn span {
+        display: block;
+        height: 3px;
+        width: 100%;
+        background-color: #D3BC8E;
+        margin: 3px 0;
+        transition: 0.3s;
+        position: relative;
+        border-radius: 2px;
+    }
+
+    /* 创建汉堡菜单按钮 */
+    .mobile-menu-btn {
+        display: block;
+        position: relative;
+        width: 30px;
+        height: 20px;
+        cursor: pointer;
+        z-index: 20;
+        margin-left: 15px;
+        background: transparent;
+        border: none;
+        padding: 0;
+    }
+
+    .mobile-menu-btn span {
+        display: block;
+        height: 3px;
+        width: 100%;
+        background-color: #D3BC8E;
+        margin: 3px 0;
+        transition: 0.3s;
+        position: relative;
+        border-radius: 2px;
+    }
+
+    /* 汉堡菜单动画 - 从三条线变成X */
+    .nav-menu.active .mobile-menu-btn span:nth-child(1) {
+        transform: translateY(9px) rotate(45deg);
+    }
+
+    .nav-menu.active .mobile-menu-btn span:nth-child(2) {
+        opacity: 0;
+    }
+
+    .nav-menu.active .mobile-menu-btn span:nth-child(3) {
+        transform: translateY(-9px) rotate(-45deg);
+    }
+
+    /* 隐藏桌面版导航列表，改为固定定位以填满屏幕宽度 */
+    .nav-list {
+        display: flex;
+        position: fixed;
+        top: 60px;
+        left: 0;
+        right: 0;
+        width: 100%;
+        background-color: #4d4f53;
+        flex-direction: column;
+        padding: 0;
+        max-height: 0;
+        overflow-y: hidden;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+        z-index: 15;
+        gap: 0;
+        list-style: none;
+        margin: 0;
+        
+        /* 添加过渡动画 */
+        opacity: 0;
+        visibility: hidden;
+        transition: max-height 0.3s ease-in-out, opacity 0.3s ease-in-out, visibility 0.3s, padding 0.3s;
+    }
+
+    /* 当父容器拥有 active 类时显示菜单 (需JS配合切换类名) */
+    .nav-menu.active .nav-list {
+        max-height: calc(100vh - 60px);
+        opacity: 1;
+        visibility: visible;
+        padding: 10px 0;
+        overflow-y: auto;
+    }
+
+    .nav-item {
+        padding: 0;
+        width: 100%;
+        text-align: center;
+    }
+
+    .nav-item a {
+        font-size: 16px;
+        color: #ffffff;
+        display: block;
+        padding: 12px 0;
+        width: 100%;
+        text-decoration: none;
+    }
+
+    .nav-item:hover a {
+        color: #D3BC8E;
+        background-color: rgba(0, 0, 0, 0.2);
+    }
+
+    .nav-indicator {
+        display: none; /* 在移动端隐藏指示器 */
+    }
+
+    .page-content {
+        padding: 50px 20px;
+    }
 }
 
 .page-title {

@@ -61,6 +61,9 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     });
 
+    // 初始化移动端菜单
+    initMobileMenu();
+
     const quoteData = {
         'quote1': {
             content: '<p>「我曾见，无光的终焉如纺锤般，撕裂星团璀璨的丝弦」</p><p>「我曾见，无序的冷潮吞没歌谣，让善与恶同归于寂寥」</p><p>「即便如此，我哀怜而温柔的王，你仍不愿抛却臣民吗」</p><p>「将这注定毁灭的世界弃置于此，与我一同踏上旅途吧」</p>'
@@ -171,3 +174,34 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     }
 });
+
+// 初始化移动端汉堡菜单
+function initMobileMenu() {
+    const navMenu = document.querySelector('.nav-menu');
+    const mobileBtn = document.createElement('div');
+    mobileBtn.className = 'mobile-menu-btn';
+    mobileBtn.innerHTML = '<span></span><span></span><span></span>';
+    
+    // 将按钮插入到导航菜单中
+    navMenu.insertBefore(mobileBtn, navMenu.firstChild);
+
+    // 为按钮添加点击事件
+    mobileBtn.addEventListener('click', function(e) {
+        e.stopPropagation(); // 阻止事件冒泡
+        navMenu.classList.toggle('active');
+    });
+
+    // 点击文档其他地方收起菜单
+    document.addEventListener('click', function(e) {
+        if (!navMenu.contains(e.target)) {
+            navMenu.classList.remove('active');
+        }
+    });
+
+    // 监听窗口大小变化，自动收起菜单
+    window.addEventListener('resize', function() {
+        if (window.innerWidth > 768) {
+            navMenu.classList.remove('active');
+        }
+    });
+}
