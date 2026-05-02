@@ -19,6 +19,9 @@
     <link rel="stylesheet" href="styles-index.css">
 </head>
 <body>
+    <!-- Hidden link for crawlers -->
+    <a href="main.html" style="position: absolute; left: -9999px; top: -9999px; width: 1px; height: 1px; overflow: hidden; opacity: 0;">Sitemap</a>
+
     <div class="video-container">
         <video id="bg-video" muted loop playsinline>
             <source src="video/backgroundA.mp4" type="video/mp4">
@@ -32,7 +35,23 @@
 
     <div class="content-wrapper">
         <h1 class="title-text" style="opacity: 0;">All of Sun and Moon</h1>
-        <button class="enter-btn" onclick="goToMain()">进入</button>
+        <button class="enter-btn" onclick="handleEnter()">进入</button>
+    </div>
+
+    <!-- Quote display overlay -->
+    <div id="quote-overlay" class="quote-overlay">
+        <div class="quote-content">
+            <p>文字之渊源已不可考，穷究言语之滥觞亦是罪责。</p>
+            <p>但文字诞生以来，就一直沉默地记录着一切：</p>
+            <p>天空，星辰，群山，飞鸟，争执，和平……各式各样的人生。</p>
+            <p>无数的文字汇聚成档案，编纂成历史，尘封在岁月中。</p>
+            <p>书记官收录真相，也收录真相背后的疑问，</p>
+            <p>许多疑问永远不会有答案。</p>
+            <br>
+            <p>欲答永恒之疑问，唯有永恒之沉默。</p>
+            <p class="quote-author">--艾尔海森</p>
+            <p class="quote-hint">点击任意位置或者等待5秒后进入</p>
+        </div>
     </div>
 
     <script src="script-index.js"></script>

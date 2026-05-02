@@ -219,7 +219,39 @@ function goToMain() {
     }, 1800);
 }
 
+function handleEnter() {
+    const quoteOverlay = document.getElementById('quote-overlay');
+    
+    // 触发原有的粒子消散动画
+    isFormed = false;
+    
+    // 等待粒子消散动画完成后（约1.5秒），再显示白色背景和文字
+    setTimeout(() => {
+        // 隐藏内容容器
+        const contentWrapper = document.querySelector('.content-wrapper');
+        contentWrapper.style.transition = 'opacity 0.8s ease';
+        contentWrapper.style.opacity = '0';
+        
+        // 显示引用文字覆盖层（纯白色背景）
+        setTimeout(() => {
+            quoteOverlay.classList.add('visible');
+            
+            // 添加点击事件监听器，点击任意位置跳转到main.html
+            quoteOverlay.addEventListener('click', function clickHandler() {
+                window.location.href = 'main.html';
+                quoteOverlay.removeEventListener('click', clickHandler);
+            });
+        }, 300);
+        
+        // 5秒后跳转到main.html
+        setTimeout(() => {
+            window.location.href = 'main.html';
+        }, 5300);
+    }, 1500);
+}
+
 window.goToMain = goToMain;
+window.handleEnter = handleEnter;
 
 window.addEventListener('resize', () => {
     if (animationStarted) {

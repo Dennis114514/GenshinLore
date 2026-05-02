@@ -121,3 +121,56 @@ body {
 .enter-btn:active {
     transform: scale(0.95);
 }
+
+/* Quote overlay styles */
+.quote-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #ffffff;
+    z-index: 100;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.8s ease, visibility 0.8s ease;
+}
+
+.quote-overlay.visible {
+    opacity: 1;
+    visibility: visible;
+}
+
+.quote-content {
+    max-width: 800px;
+    padding: 40px;
+    text-align: center;
+}
+
+.quote-content p {
+    font-family: 'Genshin', 'Microsoft YaHei', sans-serif;
+    font-size: 20px;
+    line-height: 2;
+    color: #000000;
+    margin-bottom: 10px;
+    letter-spacing: 1px;
+}
+
+.quote-author {
+    font-family: 'Genshin', 'Microsoft YaHei', sans-serif;
+    font-size: 18px;
+    color: #333333;
+    margin-top: 20px;
+    font-style: italic;
+}
+
+.quote-hint {
+    font-family: 'Common', 'Microsoft YaHei', sans-serif;
+    font-size: 14px;
+    color: #666666;
+    margin-top: 40px;
+    letter-spacing: 0.5px;
+}
