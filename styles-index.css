@@ -59,6 +59,7 @@ body {
     height: 100%;
     background-color: rgba(77, 79, 83, 0.2);
     z-index: 2;
+    pointer-events: none;
 }
 
 #particle-canvas {
@@ -73,7 +74,7 @@ body {
 
 .content-wrapper {
     position: fixed;
-    top: 50%;
+    top: 38.2%;
     left: 50%;
     transform: translate(-50%, -50%);
     z-index: 10;
@@ -93,6 +94,18 @@ body {
     text-shadow: 0 0 30px rgba(211, 188, 142, 0.5);
 }
 
+@media (max-width: 1199px) {
+    .title-text {
+        font-size: calc(100vw / 16);
+    }
+    
+    .enter-btn {
+        font-size: 16px;
+        padding: 12px 35px;
+        letter-spacing: 2px;
+    }
+}
+
 .enter-btn {
     font-family: 'Genshin', sans-serif;
     font-size: 20px;
@@ -102,10 +115,15 @@ body {
     padding: 15px 50px;
     cursor: pointer;
     opacity: 0;
-    transition: all 0.4s ease;
+    transition: opacity 0.4s ease, background-color 0.4s ease, color 0.4s ease, box-shadow 0.4s ease;
     letter-spacing: 3px;
     pointer-events: auto;
     border-radius: 8px;
+    position: fixed;
+    bottom: 38.2%;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 20;
 }
 
 .enter-btn.visible {
@@ -118,8 +136,10 @@ body {
     box-shadow: 0 0 20px rgba(211, 188, 142, 0.6);
 }
 
-.enter-btn:active {
-    transform: scale(0.95);
+.enter-btn.fade-out {
+    opacity: 0 !important;
+    pointer-events: none;
+    transition: opacity 1s ease;
 }
 
 /* Quote overlay styles */
@@ -161,16 +181,30 @@ body {
 
 .quote-author {
     font-family: 'Genshin', 'Microsoft YaHei', sans-serif;
-    font-size: 18px;
-    color: #333333;
-    margin-top: 20px;
-    font-style: italic;
+    font-size: 18px!important;
+    color: #333333!important;
+    margin-top: 20px!important;
 }
 
 .quote-hint {
     font-family: 'Common', 'Microsoft YaHei', sans-serif;
-    font-size: 14px;
-    color: #666666;
-    margin-top: 40px;
-    letter-spacing: 0.5px;
+    font-size: 14px!important;
+    color: #838383!important;
+    margin-top: 40px!important;
+    letter-spacing: 0.5px!important;
+}
+
+/* 小屏幕适配：当屏幕面积小于301840px²时缩小字体 */
+.quote-content.small-screen p {
+    font-size: calc(100vw / 50)!important;
+    line-height: 1.8!important;
+}
+
+.quote-content.small-screen .quote-author {
+    font-size: calc(100vw / 60)!important;
+}
+
+.quote-content.small-screen .quote-hint {
+    font-size: calc(100vw / 70)!important;
+    margin-top: 30px!important;
 }

@@ -1,7 +1,5 @@
 const videoSources = [
-    'video/backgroundA.mp4',
-    'video/backgroundB.mp4',
-    'video/backgroundC.mp4'
+    'video/backgroundA.mp4'
 ];
 
 let currentVideoIndex = 0;
@@ -40,7 +38,12 @@ function initParticles() {
     canvas.height = window.innerHeight;
     particles = [];
 
-    fontSize = Math.min(canvas.width / 12, 72);
+    // 根据屏幕宽度调整字体大小
+    if (canvas.width < 1200) {
+        fontSize = Math.min(canvas.width / 16, 72);
+    } else {
+        fontSize = 72;
+    }
 
     const tempCanvas = document.createElement('canvas');
     const tempCtx = tempCanvas.getContext('2d');
@@ -53,7 +56,7 @@ function initParticles() {
     tempCtx.textBaseline = 'middle';
 
     const centerX = canvas.width / 2;
-    const centerY = canvas.height / 2;
+    const centerY = canvas.height * 0.382;
 
     for (let i = -2; i <= 2; i++) {
         tempCtx.fillText(titleString, centerX, centerY + i);
@@ -84,7 +87,7 @@ function drawRealText(alpha) {
     ctx.shadowBlur = 20;
 
     const centerX = canvas.width / 2;
-    const centerY = canvas.height / 2;
+    const centerY = canvas.height * 0.382;
     ctx.fillText(titleString, centerX, centerY);
     ctx.restore();
 }
@@ -221,6 +224,10 @@ function goToMain() {
 
 function handleEnter() {
     const quoteOverlay = document.getElementById('quote-overlay');
+    const enterBtn = document.querySelector('.enter-btn');
+    
+    // 按钮渐隐
+    enterBtn.classList.add('fade-out');
     
     // 触发原有的粒子消散动画
     isFormed = false;
@@ -253,15 +260,34 @@ function handleEnter() {
 window.goToMain = goToMain;
 window.handleEnter = handleEnter;
 
+// 检测屏幕面积并调整引用文字大小
+function checkScreenArea() {
+    const quoteContent = document.querySelector('.quote-content');
+    if (!quoteContent) return;
+    
+    const area = window.innerWidth * window.innerHeight;
+    const threshold = 301840; // 阈值
+    
+    if (area < threshold) {
+        quoteContent.classList.add('small-screen');
+    } else {
+        quoteContent.classList.remove('small-screen');
+    }
+}
+
 window.addEventListener('resize', () => {
     if (animationStarted) {
         waitForFontLoad().then(() => {
             initParticles();
         });
     }
+    // 同时检测屏幕面积变化
+    checkScreenArea();
 });
 
 document.addEventListener('DOMContentLoaded', function() {
     initVideo();
     startIntroAnimation();
+    // 初始化时检测屏幕面积
+    checkScreenArea();
 });
