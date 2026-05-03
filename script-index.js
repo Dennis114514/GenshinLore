@@ -1,5 +1,5 @@
 const videoSources = [
-    'video/backgroundA.mp4'
+    'https://uploadstatic.mihoyo.com/hk4e/upload/officialsites/202009/%E8%B6%B3%E8%BF%B9_1601249080_8615.mp4'
 ];
 
 let currentVideoIndex = 0;
@@ -163,6 +163,9 @@ function animateParticles() {
 }
 
 function initVideo() {
+    video.defaultMuted = true;
+    video.muted = true;
+    video.volume = 0;
     video.src = videoSources[currentVideoIndex];
     video.load();
 
