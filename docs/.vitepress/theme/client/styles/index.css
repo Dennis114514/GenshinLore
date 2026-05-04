@@ -1,1 +1,22 @@
 @import "tailwindcss";
+
+@font-face {
+  font-family: 'Khaenriah';
+  src: url('/fonts/Khaenriah.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Genshin';
+  src: url('/fonts/genshin.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Common';
+  src: url('/fonts/common.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}

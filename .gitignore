@@ -8,4 +8,5 @@
 
 # 将vitepress的缓存排除
 /docs/.vitepress/cache/
+/docs/.vitepress/dist/
 /script.py

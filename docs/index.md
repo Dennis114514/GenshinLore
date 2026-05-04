@@ -1,4 +1,3 @@
 ---
-home: true
+layout: splash
 ---
-

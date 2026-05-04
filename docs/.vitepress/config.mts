@@ -11,27 +11,6 @@ export default defineConfig({
   head: [
     // 图标
     ['link', { rel: 'icon', href: '/favicon.png' }],
-    // 预加载的字体
-    [
-      'link',
-      {
-        rel: 'preload',
-        href: '/fonts/Khaenriah.woff2',
-        as: 'font',
-        type: 'font/woff2',
-        crossorigin: '',
-      },
-    ],
-    [
-      'link',
-      {
-        rel: 'preload',
-        href: '/fonts/genshin.woff2',
-        as: 'font',
-        type: 'font/woff2',
-        crossorigin: '',
-      },
-    ],
   ],
 
   // 渲染md文档的自定义配置
