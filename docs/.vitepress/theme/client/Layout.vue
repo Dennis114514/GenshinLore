@@ -6,6 +6,7 @@ import HomeScreenLayout from './components/HomeScreen.vue'
 import AppHeader from './components/AppHeader.vue'
 import Article from './components/Article.vue'
 import NationScreen from './components/NationScreen.vue'
+import TimelineScreen from './components/TimelineScreen.vue'
 
 const { page, frontmatter } = useData()
 </script>
@@ -18,6 +19,7 @@ const { page, frontmatter } = useData()
     <SplashScreenLayout v-if="frontmatter.layout === 'splash'" />
     <HomeScreenLayout v-else-if="frontmatter.layout === 'home'" />
     <NationScreen v-else-if="frontmatter.layout === 'nations'" />
+    <TimelineScreen v-else-if="frontmatter.layout === 'timeline'" />
     <!-- 常规渲染 由vitepress进行 -->
     <div v-else class="flex w-full min-h-screen bg-[#f5f5f5]">
       <main class="flex w-full">
