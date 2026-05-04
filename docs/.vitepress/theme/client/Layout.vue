@@ -17,8 +17,8 @@ const { page, frontmatter } = useData()
     <SplashScreenLayout v-if="frontmatter.layout === 'splash'" />
     <HomeScreenLayout v-else-if="frontmatter.layout === 'home'" />
     <!-- 常规渲染 由vitepress进行 -->
-    <div v-else class="flex w-screen h-screen">
-      <main class="flex">
+    <div v-else class="flex w-full min-h-screen bg-[#f5f5f5]">
+      <main class="flex w-full">
         <NotFound v-if="page.isNotFound" />
         <Article v-else />
       </main>

@@ -10,12 +10,11 @@ const title = computed(() => (frontmatter.value.title as string) ?? undefined)
 </script>
 
 <template>
-  <div
-    class="relative w-screen overflow-x-hidden h-full flex-1 bg-[#f5f5f5]"
-    :class="!isMobile ? 'pt-17.5' : 'pt-15'"
-  >
-    <h1 v-if="title !== undefined">{{ title }}</h1>
-    <Content />
+  <div class="vp-doc article-content w-full relative" :class="!isMobile ? 'pt-17.5' : 'pt-15'">
+    <div class="content-wrapper">
+      <h1 v-if="title !== undefined" class="page-title">{{ title }}</h1>
+      <Content />
+    </div>
   </div>
 </template>
 

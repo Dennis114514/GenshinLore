@@ -20,3 +20,5 @@
   font-weight: normal;
   font-style: normal;
 }
+
+@import './content.css';

@@ -1,0 +1,328 @@
+/* ======== 内容容器 ======== */
+.vp-doc .content-wrapper {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 60px 40px;
+  box-sizing: border-box;
+}
+
+/* ======== 页面标题 ======== */
+.vp-doc .page-title {
+  font-family: 'Genshin', serif;
+  font-size: 42px;
+  color: #4d4f53;
+  text-align: center;
+  margin-bottom: 40px;
+  border-bottom: 3px solid #D3BC8E;
+  padding-bottom: 20px;
+  display: inline-block;
+  width: 100%;
+  font-weight: normal;
+}
+
+/* ======== 标题层级 ======== */
+.vp-doc .content-wrapper h2 {
+  font-family: 'Genshin', serif;
+  font-size: 28px;
+  color: #4d4f53;
+  margin: 40px 0 20px 0;
+  padding-bottom: 10px;
+  border-bottom: 2px solid #D3BC8E;
+  line-height: 1.4;
+  font-weight: normal;
+}
+
+.vp-doc .content-wrapper h3 {
+  font-family: 'Genshin', serif;
+  font-size: 22px;
+  color: #4d4f53;
+  margin: 30px 0 15px 0;
+  line-height: 1.5;
+  font-weight: normal;
+}
+
+.vp-doc .content-wrapper h4 {
+  font-family: 'Genshin', serif;
+  font-size: 18px;
+  color: #4d4f53;
+  margin: 25px 0 12px 0;
+  line-height: 1.5;
+  font-weight: normal;
+}
+
+.vp-doc .content-wrapper h5 {
+  font-family: 'Genshin', serif;
+  font-size: 16px;
+  color: #4d4f53;
+  margin: 20px 0 10px 0;
+  font-weight: normal;
+}
+
+.vp-doc .content-wrapper h6 {
+  font-family: 'Genshin', serif;
+  font-size: 14px;
+  color: #4d4f53;
+  margin: 20px 0 10px 0;
+  font-weight: normal;
+}
+
+/* ======== 段落 ======== */
+.vp-doc .content-wrapper p {
+  font-family: 'Common', sans-serif;
+  font-size: 16px;
+  color: #4d4f53;
+  line-height: 2;
+  margin: 15px 0;
+  text-align: justify;
+}
+
+/* ======== 链接 ======== */
+.vp-doc .content-wrapper a {
+  color: #D3BC8E;
+  text-decoration: none;
+}
+
+.vp-doc .content-wrapper a:hover {
+  text-decoration: underline;
+}
+
+/* ======== 红色文本（旧站 **text** = 红色约定）======= */
+.vp-doc .content-wrapper .red-text,
+.vp-doc .content-wrapper strong {
+  color: #cc0000;
+  font-weight: normal;
+}
+
+/* ======== 块引用 ======== */
+.vp-doc .content-wrapper blockquote {
+  font-family: 'Common', sans-serif;
+  font-size: 15px;
+  color: #5a5c5f;
+  background-color: #f5f5f5;
+  padding: 20px;
+  margin: 20px 0;
+  border-left: 3px solid #D3BC8E;
+  line-height: 1.8;
+}
+
+.vp-doc .content-wrapper blockquote p {
+  margin: 10px 0;
+  font-size: 15px;
+  color: #5a5c5f;
+}
+
+/* ======== 表格 ======== */
+.vp-doc .content-wrapper table {
+  width: 100%;
+  border-collapse: collapse;
+  font-family: 'Common', sans-serif;
+  font-size: 14px;
+  line-height: 1.8;
+  margin: 20px 0;
+  display: block;
+  overflow-x: auto;
+}
+
+.vp-doc .content-wrapper th {
+  background-color: #4d4f53;
+  color: #D3BC8E;
+  padding: 12px 15px;
+  text-align: center;
+  border: 1px solid #D3BC8E;
+  font-weight: normal;
+}
+
+.vp-doc .content-wrapper td {
+  padding: 12px 15px;
+  border: 1px solid #D3BC8E;
+  color: #4d4f53;
+  text-align: center;
+}
+
+.vp-doc .content-wrapper tr:nth-child(even) {
+  background-color: #f5f5f5;
+}
+
+.vp-doc .content-wrapper tr:hover {
+  background-color: #f0f0f0;
+}
+
+/* ======== 代码 ======== */
+.vp-doc .content-wrapper code {
+  font-family: 'Common', monospace;
+  font-size: 0.9em;
+  background-color: #f0f0f0;
+  padding: 2px 6px;
+  border-radius: 4px;
+  color: #4d4f53;
+}
+
+.vp-doc .content-wrapper pre {
+  background-color: #f0f0f0;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  padding: 16px 20px;
+  overflow-x: auto;
+  font-family: 'Common', monospace;
+  font-size: 14px;
+  line-height: 1.6;
+  margin: 20px 0;
+}
+
+.vp-doc .content-wrapper pre code {
+  background: none;
+  padding: 0;
+  border-radius: 0;
+}
+
+/* ======== 列表 ======== */
+.vp-doc .content-wrapper ul,
+.vp-doc .content-wrapper ol {
+  font-family: 'Common', sans-serif;
+  font-size: 16px;
+  color: #4d4f53;
+  line-height: 2;
+  margin: 15px 0;
+  padding-left: 2em;
+}
+
+.vp-doc .content-wrapper li {
+  margin: 6px 0;
+  line-height: 1.8;
+}
+
+/* ======== 图片 ======== */
+.vp-doc .content-wrapper img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+  display: block;
+  margin: 20px auto;
+}
+
+/* ======== 水平分隔线 ======== */
+.vp-doc .content-wrapper hr {
+  border: none;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, #D3BC8E, transparent);
+  margin: 40px 0;
+}
+
+/* ======== 工具类 — 引言块 ======== */
+.vp-doc .intro-text {
+  font-family: 'Common', serif;
+  font-size: 18px;
+  color: #4d4f53;
+  text-align: center;
+  line-height: 2;
+  margin-bottom: 50px;
+  padding: 30px;
+  background: linear-gradient(135deg, #f8f8f8 0%, #f0f0f0 100%);
+  border-radius: 12px;
+  border-left: 4px solid #D3BC8E;
+  border-right: 4px solid #D3BC8E;
+}
+
+.vp-doc .intro-text p {
+  margin: 0;
+  padding: 3px 0;
+}
+
+/* ======== 工具类 — 次要引言 ======== */
+.vp-doc .intro-second {
+  color: #8d8f93;
+  padding: 15px 20px;
+  border-left: 3px solid #c0c0c0;
+  font-family: 'Common', sans-serif;
+  font-size: 14px;
+  line-height: 2;
+  margin: 10px 0 10px 70px;
+  text-align: justify;
+}
+
+/* ======== 工具类 — 黑块（防剧透）======= */
+.vp-doc .black-block {
+  background-color: black;
+  color: black;
+  cursor: help;
+  padding: 0 2px;
+  border-radius: 2px;
+  transition: all 0.2s ease;
+}
+
+.vp-doc .black-block:hover {
+  background-color: transparent;
+  color: #4d4f53;
+}
+
+/* ======== 工具类 — 删除线 ======= */
+.vp-doc .strikethrough {
+  text-decoration: line-through;
+  opacity: 0.7;
+}
+
+/* ======== 工具类 — Khaenriah 字体 ======== */
+.vp-doc .khaenriah-font {
+  font-family: 'Khaenriah', serif;
+}
+
+/* ======== 滚动条 ======== */
+.vp-doc .content-wrapper::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+.vp-doc .content-wrapper::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 4px;
+}
+
+.vp-doc .content-wrapper::-webkit-scrollbar-thumb {
+  background: #4d4f53;
+  border-radius: 4px;
+}
+
+.vp-doc .content-wrapper::-webkit-scrollbar-thumb:hover {
+  background: #333;
+}
+
+/* ======== 响应式 ======== */
+@media (max-width: 768px) {
+  .vp-doc .content-wrapper {
+    padding: 30px 20px;
+  }
+
+  .vp-doc .content-wrapper table {
+    font-size: 12px;
+  }
+
+  .vp-doc .content-wrapper th,
+  .vp-doc .content-wrapper td {
+    padding: 8px 10px;
+  }
+
+  .vp-doc .page-title {
+    font-size: 32px;
+  }
+
+  .vp-doc .content-wrapper h2 {
+    font-size: 22px;
+  }
+
+  .vp-doc .content-wrapper h3 {
+    font-size: 18px;
+  }
+
+  .vp-doc .content-wrapper h4 {
+    font-size: 16px;
+  }
+
+  .vp-doc .content-wrapper p {
+    font-size: 15px;
+  }
+
+  .vp-doc .intro-second {
+    margin: 10px 0;
+  }
+}
