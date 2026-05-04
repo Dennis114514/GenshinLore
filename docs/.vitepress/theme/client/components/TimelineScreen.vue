@@ -1,8 +1,66 @@
 <script setup lang="ts">
-import { computed } from 'vue'
+import { computed, ref, onMounted, onUnmounted } from 'vue'
 import AppFooter from './AppFooter.vue'
 import { nationColumns, timelinePeriods } from '../../data/timelineData'
 import type { TimelineCell } from '../../data/timelineData'
+
+const blurred = ref(false)
+
+function onVisibilityChange() {
+  blurred.value = document.hidden
+}
+
+function onWindowBlur() {
+  blurred.value = true
+}
+
+function onWindowFocus() {
+  blurred.value = false
+}
+
+function onKeydown(e: KeyboardEvent) {
+  if (e.key === 'F12' || e.keyCode === 123) {
+    e.preventDefault()
+    return
+  }
+  if (
+    e.ctrlKey &&
+    e.shiftKey &&
+    (e.key === 'I' ||
+      e.key === 'i' ||
+      e.key === 'J' ||
+      e.key === 'j' ||
+      e.key === 'C' ||
+      e.key === 'c')
+  ) {
+    e.preventDefault()
+    return
+  }
+  if (e.ctrlKey && (e.key === 'U' || e.key === 'u')) {
+    e.preventDefault()
+    return
+  }
+}
+
+function onContextMenu(e: MouseEvent) {
+  e.preventDefault()
+}
+
+onMounted(() => {
+  document.addEventListener('visibilitychange', onVisibilityChange)
+  window.addEventListener('blur', onWindowBlur)
+  window.addEventListener('focus', onWindowFocus)
+  window.addEventListener('keydown', onKeydown)
+  window.addEventListener('contextmenu', onContextMenu)
+})
+
+onUnmounted(() => {
+  document.removeEventListener('visibilitychange', onVisibilityChange)
+  window.removeEventListener('blur', onWindowBlur)
+  window.removeEventListener('focus', onWindowFocus)
+  window.removeEventListener('keydown', onKeydown)
+  window.removeEventListener('contextmenu', onContextMenu)
+})
 
 // 计算一个国家内哪些单元格应该合并（连续相同的单元格）
 function cellsEqual(a: TimelineCell, b: TimelineCell): boolean {
@@ -101,6 +159,11 @@ const rowsWithMergedCells = computed(() => {
             </template>
           </tbody>
         </table>
+        <!-- 失焦遮罩 -->
+        <div v-if="blurred" class="blur-overlay">
+          <p class="blur-text">页面已受保护</p>
+          <p class="blur-text">请将焦点保持在当前窗口</p>
+        </div>
       </div>
     </div>
     <AppFooter />
@@ -126,6 +189,7 @@ const rowsWithMergedCells = computed(() => {
   overflow-x: auto;
   overflow-y: auto;
   max-height: calc(100vh - 70px - 80px); /* viewport minus header minus footer */
+  position: relative;
 }
 
 .timeline-table {
@@ -260,6 +324,24 @@ const rowsWithMergedCells = computed(() => {
 
 .cell-placeholder {
   color: transparent;
+}
+
+.blur-overlay {
+  position: absolute;
+  inset: 0;
+  z-index: 50;
+  background: rgba(0, 0, 0, 0.92);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  pointer-events: all;
+}
+
+.blur-text {
+  font-family: 'Genshin', sans-serif;
+  font-size: 20px;
+  color: #d3bc8e;
+  letter-spacing: 2px;
 }
 
 @media screen and (max-width: 768px) {
