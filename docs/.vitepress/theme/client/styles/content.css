@@ -288,6 +288,112 @@
 }
 
 /* ======== 响应式 ======== */
+/* ======== 时间线 ======== */
+.vp-doc .content-wrapper .timeline {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 0 20px;
+  position: relative;
+}
+
+.vp-doc .content-wrapper .timeline::before {
+  content: '';
+  position: absolute;
+  left: 30px;
+  top: 0;
+  bottom: 0;
+  width: 3px;
+  background: linear-gradient(to bottom, #D3BC8E, #4d4f53);
+  border-radius: 2px;
+}
+
+/* 时间线 H2 章节标题 */
+.vp-doc .content-wrapper .timeline > h2 {
+  font-family: 'Genshin', sans-serif;
+  font-size: 24px;
+  color: #D3BC8E;
+  margin: 40px 0 30px 70px;
+  padding-bottom: 10px;
+  border-bottom: 2px solid #D3BC8E;
+  position: relative;
+}
+
+.vp-doc .content-wrapper .timeline > h2::before {
+  content: '';
+  position: absolute;
+  left: -40px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 12px;
+  height: 12px;
+  background-color: #D3BC8E;
+  border-radius: 50%;
+  border: 3px solid #4d4f53;
+  box-shadow: 0 0 0 3px #D3BC8E;
+}
+
+/* 时间线 H3 小节标题 */
+.vp-doc .content-wrapper .timeline > h3 {
+  font-family: 'Genshin', sans-serif;
+  font-size: 20px;
+  font-weight: bold;
+  color: #4d4f53;
+  margin: 30px 0 30px 70px;
+  padding: 0;
+  background-color: transparent;
+  border: none;
+  border-radius: 0;
+  position: relative;
+}
+
+.vp-doc .content-wrapper .timeline > h3::before {
+  content: '';
+  position: absolute;
+  left: -40px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 10px;
+  height: 10px;
+  background-color: #4d4f53;
+  border-radius: 50%;
+  border: 2px solid #D3BC8E;
+}
+
+/* 时间线项目 */
+.vp-doc .content-wrapper .timeline-item {
+  margin-left: 70px;
+  margin-bottom: 30px;
+  padding: 20px;
+  background-color: #fafafa;
+  border-radius: 8px;
+  border-left: 3px solid #D3BC8E;
+  position: relative;
+}
+
+.vp-doc .content-wrapper .timeline-item::before {
+  content: '';
+  position: absolute;
+  left: -43px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 8px;
+  height: 8px;
+  background-color: #4d4f53;
+  border-radius: 50%;
+  border: 2px solid #D3BC8E;
+}
+
+/* 时间线正文 */
+.vp-doc .content-wrapper .timeline-content {
+  font-family: 'Common', sans-serif;
+  font-size: 14px;
+  color: #5a5c5f;
+  line-height: 1.8;
+  margin: 10px 0;
+  text-align: left;
+}
+
+/* ======== 响应式 ======== */
 @media (max-width: 768px) {
   .vp-doc .content-wrapper {
     padding: 30px 20px;
@@ -324,5 +430,39 @@
 
   .vp-doc .intro-second {
     margin: 10px 0;
+  }
+
+  .vp-doc .content-wrapper .timeline::before {
+    left: 15px;
+  }
+
+  .vp-doc .content-wrapper .timeline > h2 {
+    margin-left: 50px;
+    font-size: 20px;
+  }
+
+  .vp-doc .content-wrapper .timeline > h2::before {
+    left: -25px;
+    width: 10px;
+    height: 10px;
+  }
+
+  .vp-doc .content-wrapper .timeline > h3 {
+    margin-left: 50px;
+    font-size: 17px;
+  }
+
+  .vp-doc .content-wrapper .timeline > h3::before {
+    left: -25px;
+    width: 8px;
+    height: 8px;
+  }
+
+  .vp-doc .content-wrapper .timeline-item {
+    margin-left: 50px;
+  }
+
+  .vp-doc .content-wrapper .timeline-item::before {
+    left: -30px;
   }
 }
