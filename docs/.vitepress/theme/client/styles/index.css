@@ -1,6 +1,1 @@
-@import "../../../../../node_modules/tailwindcss/dist/lib.d.mts";
-
-html {
-  font-family: Arial, Helvetica;
-}
-
+@import "tailwindcss";

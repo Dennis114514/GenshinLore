@@ -1,20 +1,15 @@
 <script setup lang="ts">
-import { useData } from 'vitepress'
+import { Content, useData } from 'vitepress'
+import NotFound from './components/NotFound.vue'
 
-const { site, frontmatter } = useData()
+const { page } = useData()
 </script>
 
 <template>
-  <div v-if="frontmatter.home">
-    <h1>{{ site.title }}</h1>
-    <p>{{ site.description }}</p>
-    <ul>
-      <li><a href="/markdown-examples.html">Markdown Examples</a></li>
-      <li><a href="/api-examples.html">API Examples</a></li>
-    </ul>
-  </div>
-  <div v-else>
-    <a href="/docs/public">Home</a>
-    <Content />
+  <div>
+    <main>
+      <NotFound v-if="page.isNotFound" />
+      <Content v-else />
+    </main>
   </div>
 </template>
