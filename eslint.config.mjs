@@ -33,6 +33,6 @@ export default [
     },
   },
   {
-    ignores: ['cache', 'dist'],
+    ignores: ['cache', 'dist', 'docs/.vitepress/theme/data/timelineData.ts'],
   },
 ]
