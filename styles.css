@@ -558,6 +558,16 @@ body {
     font-family: 'Khaenriah', serif;
 }
 
+.intro-second{
+    color: #8d8f93;
+    padding: 15px 20px;
+    border-left: 3px solid #c0c0c0!important;
+    font-family: 'Common', sans-serif; 
+    font-size: 14px; 
+    line-height: 2; 
+    margin: 10px 0 10px 70px; 
+    text-align: justify;
+}
 .intro-text {
     font-family: 'Common', serif;
     font-size: 18px;
