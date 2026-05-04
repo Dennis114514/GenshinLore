@@ -1,7 +1,6 @@
 <script setup lang="ts">
 import { useData } from 'vitepress'
 
-// https://vitepress.dev/reference/runtime-api#usedata
 const { site, frontmatter } = useData()
 </script>
 
@@ -15,7 +14,7 @@ const { site, frontmatter } = useData()
     </ul>
   </div>
   <div v-else>
-    <a href="/">Home</a>
+    <a href="/docs/public">Home</a>
     <Content />
   </div>
 </template>

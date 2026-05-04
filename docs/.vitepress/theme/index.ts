@@ -1,7 +1,7 @@
 // https://vitepress.dev/guide/custom-theme
-import Layout from './Layout.vue'
+import Layout from './client/Layout.vue'
 import type { Theme } from 'vitepress'
-import './style.css'
+import './client/styles/index.css'
 
 export default {
   Layout,
