@@ -1,11 +1,15 @@
 {
   "compilerOptions": {
-    "moduleResolution": "bundler",
-    "module": "esnext",
-    "target": "esnext",
     "strict": true,
+    "sourceMap": true,
+    "noImplicitAny": false,
     "esModuleInterop": true,
-    "skipLibCheck": true
+    "resolveJsonModule": true,
+    "moduleResolution": "bundler",
+    "target": "esnext",
+    "module": "esnext",
+    "types": ["vite/client"]
   },
-  "include": ["./**/*.mts", "./**/*.ts"]
+  "include": ["./**/*.mts", "./**/*.ts"],
+  "exclude": ["dist", "cache"]
 }
