@@ -23,7 +23,7 @@ const isMobile = useIsMobile()
           <p class="text-[16px] text-[#ccc]">可能被寒天之钉砸了...</p>
         </div>
         <img src="/img/others/star.png" alt="star" class="w-5.5 h-5.5 m-[0_auto]" />
-        <a href="/" class="mb-7.5 font-[24px] opacity-[0.8] hover:opacity-[1]">返回首页 »</a>
+        <a href="/home" class="mb-7.5 font-[24px] opacity-[0.8] hover:opacity-[1]">返回首页 »</a>
       </div>
     </div>
   </div>

@@ -2,18 +2,30 @@
 import { Content, useData } from 'vitepress'
 import NotFound from './components/NotFound.vue'
 import SplashScreenLayout from './layouts/SplashScreen.vue'
-import HomeLayout from './layouts/home.vue'
+import HomeScreenLayout from './layouts/HomeScreen.vue'
+import AppHeader from './components/AppHeader.vue'
 
 const { page, frontmatter } = useData()
 </script>
 
 <template>
   <SplashScreenLayout v-if="frontmatter.layout === 'splash'" />
-  <HomeLayout v-else-if="frontmatter.layout === 'home'" />
+  <HomeScreenLayout v-else-if="frontmatter.layout === 'home'" />
   <div v-else>
     <main>
       <NotFound v-if="page.isNotFound" />
-      <Content v-else />
+      <template v-else>
+        <AppHeader />
+        <Content />
+      </template>
     </main>
   </div>
 </template>
+
+<style scoped>
+@media screen and (max-width: 1012px) {
+  .default-layout main {
+    margin-top: 60px;
+  }
+}
+</style>
