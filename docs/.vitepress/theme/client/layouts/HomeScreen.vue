@@ -1,11 +1,9 @@
 <script setup lang="ts">
-import AppHeader from '../components/AppHeader.vue'
 import AppFooter from '../components/AppFooter.vue'
 </script>
 
 <template>
   <div class="bg-[#f5f5f5]">
-    <AppHeader />
     <main class="mt-17.5 genshin-font main-content">
       <section class="home-content max-w-200 m-[0_auto] p-[60px_40px]">
         <h1 class="text-5xl text-[#4d4f53] text-center mb-5">日月全事</h1>

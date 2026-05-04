@@ -9,13 +9,13 @@ const { page, frontmatter } = useData()
 </script>
 
 <template>
+  <AppHeader :class="page.isNotFound || frontmatter.layout == 'splash' ? 'hidden' : ''" />
   <SplashScreenLayout v-if="frontmatter.layout === 'splash'" />
   <HomeScreenLayout v-else-if="frontmatter.layout === 'home'" />
   <div v-else>
     <main>
       <NotFound v-if="page.isNotFound" />
       <template v-else>
-        <AppHeader />
         <Content />
       </template>
     </main>

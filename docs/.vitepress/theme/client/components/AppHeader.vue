@@ -1,6 +1,6 @@
 <script setup lang="ts">
-import { ref, computed, watch, onMounted, onUnmounted } from 'vue'
-import { useRouter, useRoute } from 'vitepress'
+import { ref, onMounted, onUnmounted, watch } from 'vue'
+import { useData, useRouter } from 'vitepress'
 
 const navItems = [
   { label: '首页', href: '/home' },
@@ -14,15 +14,19 @@ const navItems = [
 ]
 
 const router = useRouter()
-const route = useRoute()
 const INDICATOR_INITIAL = { width: '0px', left: '0px' }
 const indicatorStyle = ref<{ width: string; left: string }>({ ...INDICATOR_INITIAL })
 const mobileMenuActive = ref(false)
+const activeIndex = ref(0)
+const { page } = useData()
 
-const activeIndex = computed(() => {
-  const idx = navItems.findIndex((item) => item.href === route.path)
-  return idx >= 0 ? idx : 0
-})
+const updateActiveIndex = () => {
+  const idx = navItems.findIndex((item) => {
+    return item.href === page.value.frontmatter.secondaryClass
+  })
+  activeIndex.value = idx >= 0 ? idx : 0
+  resetIndicator()
+}
 
 const updateIndicator = (el: HTMLElement) => {
   indicatorStyle.value = {
@@ -55,17 +59,15 @@ const onResize = () => {
 }
 
 onMounted(() => {
+  updateActiveIndex()
   resetIndicator()
   window.addEventListener('resize', onResize)
   document.addEventListener('click', closeMobileMenu)
 })
 
-watch(
-  () => route.path,
-  () => {
-    resetIndicator()
-  },
-)
+watch(page, () => {
+  updateActiveIndex()
+})
 
 onUnmounted(() => {
   window.removeEventListener('resize', onResize)
