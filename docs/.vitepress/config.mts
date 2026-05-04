@@ -15,6 +15,7 @@ export default defineConfig({
 
   // 渲染md文档的自定义配置
   markdown: {
+    headers: true,
     config: (md) => {
       md.renderer.rules.strong_open = () => '<span class="red-text">'
       md.renderer.rules.strong_close = () => '</span>'
