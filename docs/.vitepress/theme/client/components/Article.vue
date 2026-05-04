@@ -3,6 +3,7 @@ import { Content, useData } from 'vitepress'
 import { computed } from 'vue'
 import useIsMobile from '../composables/isMobile'
 import TableOfContents from './TableOfContents.vue'
+import AppFooter from './AppFooter.vue'
 
 const { frontmatter } = useData()
 const isMobile = useIsMobile()
@@ -16,6 +17,7 @@ const title = computed(() => (frontmatter.value.title as string) ?? undefined)
       <h1 v-if="title !== undefined" class="page-title">{{ title }}</h1>
       <Content />
     </div>
+    <AppFooter />
     <TableOfContents />
   </div>
 </template>

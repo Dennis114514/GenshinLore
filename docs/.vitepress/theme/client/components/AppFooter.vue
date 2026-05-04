@@ -2,8 +2,8 @@
 
 <template>
   <footer class="app-footer text-center p-10 text-[#9d9f93] text-sm">
-    <p class="m-[5px_0]">愿风指引你们的道路</p>
-    <p class="m-[5px_0]">
+    <p class="m-[5px_0] text-center">愿风指引你们的道路</p>
+    <p class="m-[5px_0] text-center">
       <a class="hover:underline" href="https://github.com/Dennis114514/GenshinLore" target="_blank"
         >GenshinLore</a
       >
@@ -14,6 +14,6 @@
 
 <style scoped>
 .app-footer {
-  font-family: 'Genshin', sans-serif;
+  font-family: 'Genshin', sans-serif !important;
 }
 </style>

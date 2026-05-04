@@ -193,12 +193,12 @@
 
 /* ======== 图片 ======== */
 .vp-doc .content-wrapper img {
-  max-width: 100%;
   height: auto;
   border-radius: 8px;
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
   display: block;
   margin: 20px auto;
+  max-width: 500px;
 }
 
 /* ======== 水平分隔线 ======== */
