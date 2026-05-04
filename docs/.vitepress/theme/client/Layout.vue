@@ -1,31 +1,29 @@
 <script setup lang="ts">
-import { Content, useData } from 'vitepress'
+import { useData } from 'vitepress'
 import NotFound from './components/NotFound.vue'
-import SplashScreenLayout from './layouts/SplashScreen.vue'
-import HomeScreenLayout from './layouts/HomeScreen.vue'
+import SplashScreenLayout from './components/SplashScreen.vue'
+import HomeScreenLayout from './components/HomeScreen.vue'
 import AppHeader from './components/AppHeader.vue'
+import Article from './components/Article.vue'
 
 const { page, frontmatter } = useData()
 </script>
 
 <template>
-  <AppHeader :class="page.isNotFound || frontmatter.layout == 'splash' ? 'hidden' : ''" />
-  <SplashScreenLayout v-if="frontmatter.layout === 'splash'" />
-  <HomeScreenLayout v-else-if="frontmatter.layout === 'home'" />
-  <div v-else>
-    <main>
-      <NotFound v-if="page.isNotFound" />
-      <template v-else>
-        <Content />
-      </template>
-    </main>
+  <div class="flex m-0 p-0">
+    <!-- 统一页眉 -->
+    <AppHeader :class="page.isNotFound || frontmatter.layout == 'splash' ? 'hidden' : ''" />
+    <!-- 针对特定路由的自定义页面 -->
+    <SplashScreenLayout v-if="frontmatter.layout === 'splash'" />
+    <HomeScreenLayout v-else-if="frontmatter.layout === 'home'" />
+    <!-- 常规渲染 由vitepress进行 -->
+    <div v-else class="flex w-screen h-screen">
+      <main class="flex">
+        <NotFound v-if="page.isNotFound" />
+        <Article v-else />
+      </main>
+    </div>
   </div>
 </template>
 
-<style scoped>
-@media screen and (max-width: 1012px) {
-  .default-layout main {
-    margin-top: 60px;
-  }
-}
-</style>
+<style scoped></style>
