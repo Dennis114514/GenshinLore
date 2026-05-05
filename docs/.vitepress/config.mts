@@ -1,7 +1,7 @@
 import { defineConfig } from 'vitepress'
 import tailwindcss from '@tailwindcss/vite'
 
-const isProd = process.env.NODE_ENV === 'production'
+//const isProd = process.env.NODE_ENV === 'production'
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
@@ -9,7 +9,7 @@ export default defineConfig({
   description: '最详尽的原神世界观手册',
   lang: 'zh-CN',
   lastUpdated: true,
-  base: isProd ? '/GenshinLore/' : '/',
+  //base: isProd ? '/GenshinLore/' : '/',
 
   head: [
     // 图标
