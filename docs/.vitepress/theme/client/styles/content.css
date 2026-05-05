@@ -699,6 +699,88 @@
 }
 
 /* ======== 版本历史 & 编者的话 响应式 ======== */
+/* ======== 关于本站 — 杂项链接 ======== */
+.vp-doc .content-wrapper .misc-links p {
+  font-family: 'Genshin', serif;
+  font-size: 28px;
+  color: #4d4f53;
+  line-height: 2;
+}
+
+/* ======== 关于本站 — Logo 展示 ======== */
+.vp-doc .content-wrapper .logos-container {
+  display: flex;
+  justify-content: space-around;
+  padding: 20px;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.vp-doc .content-wrapper .logo-item {
+  text-align: center;
+  flex: 1 1 200px;
+  min-width: 150px;
+  max-width: 300px;
+}
+
+.vp-doc .content-wrapper .logo-text {
+  font-family: 'Genshin', serif;
+  color: #666;
+  margin-bottom: 10px;
+  font-size: 16px;
+}
+
+.vp-doc .content-wrapper .logo-bg {
+  display: inline-block;
+  padding: 5px;
+}
+
+.vp-doc .content-wrapper .cloudflare-bg {
+  background-color: white;
+}
+
+.vp-doc .content-wrapper .rainyun-bg {
+  background-color: white;
+}
+
+.vp-doc .content-wrapper .github-bg {
+  background-color: black;
+}
+
+.vp-doc .content-wrapper .logo-img {
+  max-height: 70px;
+  width: auto;
+  transition: transform 0.3s;
+}
+
+.vp-doc .content-wrapper .logo-img:hover {
+  transform: scale(1.1);
+}
+
+@media (max-width: 1012px) {
+  .vp-doc .content-wrapper .logos-container {
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    gap: 30px;
+  }
+
+  .vp-doc .content-wrapper .logo-item {
+    flex: 1 1 100%;
+    max-width: 100%;
+    width: 100%;
+  }
+
+  .vp-doc .content-wrapper .logo-text {
+    font-size: 18px;
+    margin-bottom: 15px;
+  }
+
+  .vp-doc .content-wrapper .logo-img {
+    max-height: 80px;
+  }
+}
+
 @media (max-width: 768px) {
   .vp-doc .content-wrapper .version-header {
     flex-direction: column;
