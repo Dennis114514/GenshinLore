@@ -107,7 +107,7 @@ const rowsWithMergedCells = computed(() => {
 
 <template>
   <!-- 按照原设计意图，本页面全页禁止选中 -->
-  <div class="timeline-page select-none">
+  <div v-if="!blurred" class="timeline-page select-none">
     <div class="table-wrapper">
       <div class="table-scroll">
         <table class="timeline-table">
@@ -159,14 +159,14 @@ const rowsWithMergedCells = computed(() => {
             </template>
           </tbody>
         </table>
-        <!-- 失焦遮罩 -->
-        <div v-if="blurred" class="blur-overlay">
-          <p class="blur-text">页面已受保护</p>
-          <p class="blur-text">请将焦点保持在当前窗口</p>
-        </div>
       </div>
     </div>
     <AppFooter />
+  </div>
+  <!-- 失焦遮罩 -->
+  <div v-else class="blur-overlay">
+    <p class="blur-text">页面已受保护</p>
+    <p class="blur-text">请将焦点保持在当前窗口</p>
   </div>
 </template>
 
