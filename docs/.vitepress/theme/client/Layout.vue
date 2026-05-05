@@ -8,6 +8,8 @@ import Article from './components/Article.vue'
 import NationScreen from './components/NationScreen.vue'
 import TimelineScreen from './components/TimelineScreen.vue'
 import EastereggScreen from './components/EastereggScreen.vue'
+import NoticeModal from './components/NoticeModal.vue'
+import UserAgreementModal from './components/UserAgreementModal.vue'
 
 const { page, frontmatter } = useData()
 </script>
@@ -29,6 +31,12 @@ const { page, frontmatter } = useData()
         <Article v-else />
       </main>
     </div>
+
+    <!-- 全局弹窗（仅客户端渲染，Teleport 到 body） -->
+    <ClientOnly>
+      <UserAgreementModal />
+      <NoticeModal />
+    </ClientOnly>
   </div>
 </template>
 
