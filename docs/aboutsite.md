@@ -8,8 +8,9 @@ secondaryClass: "/aboutsite"
 ## 杂项内容
 
 <div class="misc-links">
-<p><a href="interestfacts.html">关于原神你不知道的很多事实和彩蛋</a><br>
-<a href="somewords.html">一些想说的话</a><br>
+<p><a href="/about/interestfacts">关于原神你不知道的很多事实和彩蛋</a><br>
+<a href="/about/somewords">一些想说的话</a><br>
+</p>
 </div>
 
 ## 网站基础设施
