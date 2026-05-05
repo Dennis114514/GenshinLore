@@ -1,17 +1,9 @@
 <script setup lang="ts">
 import { ref, onMounted, onUnmounted, watch } from 'vue'
 import { useData, useRouter } from 'vitepress'
+import { navData } from '../../data/navData'
 
-const navItems = [
-  { label: '首页', href: '/home' },
-  { label: '前言', href: '/preface' },
-  { label: '基本设定', href: '/basiclore' },
-  { label: '提瓦特历史', href: '/teyvathis' },
-  { label: '各国历史', href: '/nations' },
-  { label: '时间线', href: '/timeline' },
-  { label: '关于手册', href: '/about' },
-  { label: '关于本站', href: '/aboutsite' },
-]
+const navItems = navData
 
 const router = useRouter()
 const INDICATOR_INITIAL = { width: '0px', left: '0px' }
@@ -22,7 +14,7 @@ const { page } = useData()
 
 const updateActiveIndex = () => {
   const idx = navItems.findIndex((item) => {
-    return item.href === page.value.frontmatter.secondaryClass
+    return item.secondaryClass === page.value.frontmatter.secondaryClass
   })
   activeIndex.value = idx >= 0 ? idx : 0
   resetIndicator()
@@ -102,7 +94,7 @@ onUnmounted(() => {
           "
           @mouseleave="resetIndicator"
         >
-          <a :href="item.href">{{ item.label }}</a>
+          <a :href="item.secondaryClass">{{ item.label }}</a>
         </li>
       </ul>
     </nav>
