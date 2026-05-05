@@ -25,6 +25,10 @@ export default defineConfig({
     },
   },
 
+  sitemap: {
+    hostname: 'https://genshinlore.cn/',
+  },
+
   vite: {
     plugins: [tailwindcss()],
   },
