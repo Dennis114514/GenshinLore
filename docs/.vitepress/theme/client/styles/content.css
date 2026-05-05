@@ -466,3 +466,268 @@
     left: -30px;
   }
 }
+
+/* ======== 版本修改记录 ======== */
+.vp-doc .content-wrapper .version-history {
+  margin-top: 40px;
+}
+
+.vp-doc .content-wrapper .version-history-toggle {
+  font-family: 'Genshin', serif;
+  font-size: 28px;
+  color: #4d4f53;
+  text-align: left;
+  margin-bottom: 30px;
+  position: relative;
+  padding-bottom: 15px;
+  cursor: pointer;
+  list-style: none;
+  display: block;
+  transition: all 0.3s ease;
+}
+
+.vp-doc .content-wrapper .version-history-toggle::-webkit-details-marker {
+  display: none;
+}
+
+.vp-doc .content-wrapper .version-history-toggle:hover {
+  color: #D3BC8E;
+}
+
+.vp-doc .content-wrapper .version-history[open] .version-history-toggle::before {
+  content: '▼ ';
+  font-size: 0.7em;
+  margin-right: 8px;
+}
+
+.vp-doc .content-wrapper .version-history:not([open]) .version-history-toggle::before {
+  content: '▶ ';
+  font-size: 0.7em;
+  margin-right: 8px;
+}
+
+.vp-doc .content-wrapper .version-history-content {
+  animation: versionFadeIn 0.3s ease;
+}
+
+@keyframes versionFadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.vp-doc .content-wrapper .version-item {
+  margin-bottom: 35px;
+  padding: 25px 30px;
+  background: linear-gradient(135deg, #fafafa 0%, #f5f5f5 100%);
+  border-radius: 10px;
+  border-left: 4px solid #D3BC8E;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+  transition: all 0.3s ease;
+}
+
+.vp-doc .content-wrapper .version-item:hover {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transform: translateY(-2px);
+}
+
+.vp-doc .content-wrapper .version-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 18px;
+  padding-bottom: 12px;
+  border-bottom: 2px solid #e8e8e8;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.vp-doc .content-wrapper .version-date {
+  font-family: 'Genshin', serif;
+  font-size: 18px;
+  color: #4d4f53;
+  font-weight: bold;
+}
+
+.vp-doc .content-wrapper .version-number {
+  font-family: 'Genshin', serif;
+  font-size: 16px;
+  color: #D3BC8E;
+  font-weight: bold;
+  background-color: rgba(211, 188, 142, 0.15);
+  padding: 4px 12px;
+  border-radius: 15px;
+}
+
+.vp-doc .content-wrapper .version-changes {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.vp-doc .content-wrapper .version-changes li {
+  font-family: 'Common', sans-serif;
+  font-size: 15px;
+  color: #4d4f53;
+  line-height: 1.9;
+  margin-bottom: 12px;
+  padding-left: 25px;
+  position: relative;
+  text-align: justify;
+}
+
+.vp-doc .content-wrapper .version-changes li:last-child {
+  margin-bottom: 0;
+}
+
+.vp-doc .content-wrapper .version-changes li::before {
+  content: '•';
+  position: absolute;
+  left: 8px;
+  color: #D3BC8E;
+  font-size: 20px;
+  line-height: 1.6;
+}
+
+.vp-doc .content-wrapper .version-note {
+  display: block;
+  margin-top: 10px;
+  padding: 12px 15px;
+  padding-left: 18px;
+  border-left: 3px solid #c0c0c0;
+  font-size: 13px;
+  color: #8d8f93;
+  line-height: 1.8;
+  background-color: rgba(0, 0, 0, 0.02);
+  border-radius: 0 6px 6px 0;
+}
+
+.vp-doc .content-wrapper .version-changes del {
+  color: #8d8f93;
+  opacity: 0.7;
+}
+
+/* ======== 编者的话 & 诗歌 ======== */
+.vp-doc .content-wrapper .editor-note-title {
+  font-family: 'Genshin', serif;
+  font-size: 32px;
+  color: #4d4f53;
+  text-align: center;
+  margin-bottom: 40px;
+  position: relative;
+  padding-bottom: 15px;
+  font-weight: normal;
+}
+
+.vp-doc .content-wrapper .editor-note-title::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 120px;
+  height: 3px;
+  background: linear-gradient(90deg, transparent, #D3BC8E, transparent);
+}
+
+.vp-doc .content-wrapper .poem-author {
+  font-family: 'Common', sans-serif;
+  font-size: 15px;
+  color: #4d4f53;
+  margin-bottom: 12px;
+  font-weight: bold;
+}
+
+.vp-doc .content-wrapper .poem-content {
+  font-family: 'Common', sans-serif;
+  font-size: 16px;
+  color: #4d4f53;
+  line-height: 2;
+  margin: 30px 0;
+  padding: 30px;
+  background: linear-gradient(135deg, #fafafa 0%, #f5f5f5 100%);
+  border-radius: 12px;
+  border: 1px solid #e8e8e8;
+}
+
+.vp-doc .content-wrapper .poem-content p {
+  margin: 18px 0;
+  text-align: left;
+  text-indent: 0;
+}
+
+.vp-doc .content-wrapper .poem-dedication {
+  font-style: italic;
+  color: #D3BC8E;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 25px !important;
+  font-size: 17px;
+}
+
+.vp-doc .content-wrapper .poem-signature {
+  text-align: right;
+  margin-top: 30px !important;
+  font-style: italic;
+  color: #8d8f93;
+  font-size: 14px;
+}
+
+.vp-doc .content-wrapper .image-caption {
+  font-family: 'Common', sans-serif;
+  font-size: 12px;
+  color: #8d8f93;
+  margin-top: 10px;
+  text-align: center;
+}
+
+.vp-doc .content-wrapper .image-container {
+  text-align: center;
+  margin: 20px 0;
+}
+
+.vp-doc .content-wrapper .image-container img {
+  max-width: 100%;
+  height: auto;
+  margin: 10px 0;
+  box-shadow: none;
+}
+
+/* ======== 版本历史 & 编者的话 响应式 ======== */
+@media (max-width: 768px) {
+  .vp-doc .content-wrapper .version-header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .vp-doc .content-wrapper .version-item {
+    padding: 20px;
+  }
+
+  .vp-doc .content-wrapper .version-date {
+    font-size: 16px;
+  }
+
+  .vp-doc .content-wrapper .version-number {
+    font-size: 14px;
+  }
+
+  .vp-doc .content-wrapper .version-changes li {
+    font-size: 14px;
+    padding-left: 20px;
+  }
+
+  .vp-doc .content-wrapper .editor-note-title {
+    font-size: 26px;
+  }
+
+  .vp-doc .content-wrapper .poem-content {
+    font-size: 15px;
+    padding: 20px;
+  }
+}
