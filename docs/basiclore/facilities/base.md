@@ -1,56 +1,13 @@
-<!DOCTYPE html>
-<html lang="zh-CN">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>大地及装置 - 基本设定</title>
-    <link rel="icon" type="image/png" sizes="32x32" href="../../img/logo/favicon32x32.png">
-    <link rel="stylesheet" href="../../styles.css">
-</head>
-<body>
-    <header class="topbar">
-        <div class="topbar-left" onclick="window.location.href='../../main.html'">
-            <img src="../../img/logo/genshinlogo.webp" alt="原神Logo" class="logo">
-            <span class="site-title">世界观手册</span>
-        </div>
-        <nav class="nav-menu">
-            <div class="nav-indicator"></div>
-            <ul class="nav-list">
-                <li class="nav-item" data-index="0">
-                    <a href="../../main.html" data-nav="home">首页</a>
-                </li>
-                <li class="nav-item" data-index="1">
-                    <a href="../../preface.html" data-nav="preface">前言</a>
-                </li>
-                <li class="nav-item active" data-index="2">
-                    <a href="../../basiclore.html" data-nav="basic">基本设定</a>
-                </li>
-                <li class="nav-item" data-index="3">
-                    <a href="../../Teyvathis.html" data-nav="history">提瓦特历史</a>
-                </li>
-                <li class="nav-item" data-index="4">
-                    <a href="../../history-country.html" data-nav="nations">各国历史</a>
-                </li>
-                <li class="nav-item" data-index="5">
-                    <a href="../../genshinbasichis.html" data-nav="brief">时间线</a>
-                </li>
-                <li class="nav-item" data-index="6">
-                    <a href="../../about.html" data-nav="about-manual">关于手册</a>
-                </li>
-                <li class="nav-item" data-index="7">
-                    <a href="../../aboutsite.html" data-nav="about-site">关于本站</a>
-                </li>
-            </ul>
-        </nav>
-    </header>
+---
+layout: doc
+title: 大地及装置
+editLink: true
+secondaryClass: "/basiclore"
+---
 
-    <main class="main-content">
-        <section class="page-content">
-            <h2 class="section-title">大地及装置</h2>
-            
-            <h3 class="section-subtitle">地脉</h3>
-            <div class="table-container">
-                <table class="lightrelam-table">
+<MidTitle>地脉</MidTitle>
+<div class="w-full flex items-center justify-center">
+<table style="width: auto !important;">
                     <tr>
                         <td>世界树</td>
                         <td class="text-left">
@@ -69,11 +26,11 @@
                         </td>
                     </tr>
                 </table>
-            </div>
-            
-            <h3 class="section-subtitle">装置</h3>
-            <div class="table-container">
-                <table class="lightrelam-table">
+</div>
+
+<MidTitle>装置</MidTitle>
+<div class="w-full flex items-center justify-center">
+<table style="width: auto !important;">
                     <tr>
                         <td>凯尔特符号</td>
                         <td>代表天理的秩序。</td>
@@ -104,15 +61,4 @@
                         </td>
                     </tr>
                 </table>
-            </div>
-        </section>
-    </main>
-
-    <footer class="home-footer">
-        <p>愿风指引你们的道路</p>
-        <p><a href="https://github.com/Dennis114514/GenshinLore" target="_blank">GenshinLore</a> 2026</p>
-    </footer>
-
-    <script src="../../script.js"></script>
-</body>
-</html>
+</div>
