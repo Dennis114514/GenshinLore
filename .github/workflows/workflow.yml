@@ -28,6 +28,7 @@ jobs:
         with:
           node-version: 24
           cache: npm
+          package-manager-cache: false
       - name: Setup Pages
         uses: actions/configure-pages@v4
       - name: Install dependencies
