@@ -42,7 +42,7 @@ secondaryClass: "/basiclore"
 <template #icon>🔱</template>
 <template #title>魔神</template>
 </Card>
-<Card dest="/history-country.html">
+<Card dest="/nations.html">
 <template #icon>👹</template>
 <template #title>人和怪物</template>
 <template #subtitle>参见八国中的组织和游戏图鉴</template>
