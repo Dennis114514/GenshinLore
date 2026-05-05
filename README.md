@@ -56,116 +56,153 @@
 ## 项目结构
 ```
 GenshinLore/
-├── .gitignore    #防止下游仓库配置的 actions 被覆盖
-├── 404.html    #404 错误页面
-├── BingSiteAuth.xml    #Bing 搜索引擎验证
-├── Teyvathis.html    #“提瓦特历史”页面
-├── _headers    #预加载字体资源
-├── about.html    #关于手册页面
-├── aboutsite.html    #关于网站页面
-├── basiclore.html    #基础设定入口页
-├── genshinbasichis.html    #时间线页面
-├── history-country.html    #各国历史入口页
-├── index.html    #起始页
-├── interestfacts.html    #制作组的小巧思页面
-├── interestfacts.json    #制作组的小巧思数据
-├── main.html    #主页
-├── notice.js    #公告加载器
-├── notice.json    #公告数据
-├── preface.html    #前言页面
-├── script-index.js    #起始页动画
-├── script.js    #全站 JavaScript
-├── somewords.html    #杂谈页面
-├── styles-index.css   #起始页 CSS
-├── styles.css    #全站 CSS
-├── useragreement.js    #用户协议加载器
-├── useragreementversion.json    #用户协议版本数据
-├── watermarkDiv.js    #时间线页面保护器
-├── sitemap.xml    #网站地图
-├── md.html    #Markdown版本入口
+├── .gitignore               # Git 忽略配置
+├── .github/                 # GitHub Actions 工作流
+│   └── workflows/
+│       └── workflow.yml
+├── .prettierignore          # Prettier 忽略配置
+├── LICENCE.md               # 许可证
+├── README.md                # 项目说明
+├── docimg/                  # 文档配图
+│   ├── icon.png
+│   └── icondark.png
+├── eslint.config.mjs        # ESLint 配置
+├── package.json             # 项目依赖（VitePress + Tailwind CSS）
+├── prettier.config.mjs      # Prettier 配置
 │
-├── basiclore/                        # 基础世界观
-│   ├── descenders/            #降临者
-│   │   └── base.html
-│   ├── facilities/                 #大地和装置
-│   │   └── base.html
-│   ├── god/                         #魔神
-│   │   └── base.html
-│   ├── lightrelam/              #龙族和光界
-│   │   └── base.html
-│   ├── principles/              #天理和人界
-│   │   └── base.html
-│   ├── stars/                      #星空
-│   │   └── base.html
-│   └── void/                        #深渊
-│       └── base.html
-│
-├── fonts/                            # 字体资源
-│   ├── Khaenriah.woff2
-│   ├── common.woff2
-│   └── genshin.woff2
-│
-├── his/                              # 各国历史
-│   ├── Fontaine/
-│   │   ├── base.html
-│   │   └── content.js
-│   ├── Inazuma/
-│   │   ├── base.html
-│   │   └── content.js
-│   ├── Khaenriah/
-│   │   ├── base.html
-│   │   └── content.js
-│   ├── Liyue/
-│   │   ├── base.html
-│   │   └── content.js
-│   ├── Mondstadt/
-│   │   └── base.html
-│   ├── Natlan/
-│   │   ├── base.html
-│   │   └── content.js
-│   ├── Snezhnaya/
-│   │   ├── base.html
-│   │   └── content.js
-│   └── Sumeru/
-│       ├── base.html
-│       └── content.js
-│
-├── img/                              # 图片资源
-│   ├── context/                      # 内容配图
-│   │   ├── about/                    (2 张)
-│   │   ├── basiclore/               (1 张)
-│   │   ├── Fontaine/                (8 张)
-│   │   ├── gallery/                 (1 张)
-│   │   ├── Inazuma/                 (10 张)
-│   │   ├── Liyue/                   (5 张)
-│   │   ├── Mondstadt/               (26 张)
-│   │   ├── Natlan/                  (23 张)
-│   │   ├── Snezhnaya/               (2 张)
-│   │   ├── Sumeru/                  (7 张)
-│   │   └── teyvathis/               (2 张)
-│   ├── country/                      # 各国背景 & 角色
-│   │   ├── fontaine-bg.jpg / fontaine-char.png
-│   │   ├── inazuma-bg.jpg / inazuma-char.png
-│   │   ├── liyue-bg.jpg / liyue-char.png
-│   │   ├── mondstadt-bg.jpg / mondstadt-char.png
-│   │   ├── natlan-bg.jpg / natlan-char.png
-│   │   └── sumeru-bg.jpg / sumeru-char.png
-│   ├── logo/                         # Logo
-│   │   ├── Fontaine / Inazuma / Khaenriah / Liyue
-│   │   ├── Mondstadt / Natlan / Snezhnaya / Sumeru
-│   │   ├── genshinlogo.webp
-│   │   └── website/
-│   │       ├── Cloudflare.png
-│   │       ├── Github.png
-│   │       └── Rainyun.png
-│   └── others/
-│       ├── 404.png
-│       └── star.png
-│
-├── video/                            # 背景视频
-│   ├── backgroundA.mp4
-│   ├── backgroundB.mp4
-│   └── backgroundC.mp4
-└── md/
-│   (各页面的markdown版本)
+├── docs/                    # VitePress 站点（主站内容）
+│   ├── .vitepress/          # VitePress 配置与主题
+│   │   ├── config.mts       # 站点配置
+│   │   ├── tsconfig.json
+│   │   └── theme/           # 自定义主题
+│   │       ├── index.ts
+│   │       ├── types/
+│   │       │   └── params.ts
+│   │       ├── data/        # 站点数据
+│   │       │   ├── eulaContent.ts
+│   │       │   ├── interestfactsData.ts
+│   │       │   ├── navData.ts
+│   │       │   └── timelineData.ts
+│   │       └── client/
+│   │           ├── Layout.vue       # 整个网页的根布局
+│   │           ├── tsconfig.json
+│   │           ├── components/      # Vue 组件 （全局性组件和导航栏项下的各门户页面）
+│   │           │   ├── AppFooter.vue
+│   │           │   ├── AppHeader.vue
+│   │           │   ├── Article.vue
+│   │           │   ├── EastereggScreen.vue   # 小巧思页面
+│   │           │   ├── HomeScreen.vue
+│   │           │   ├── NationScreen.vue
+│   │           │   ├── NotFound.vue
+│   │           │   ├── NoticeModal.vue
+│   │           │   ├── SplashScreen.vue  # 开屏视频
+│   │           │   ├── TableOfContents.vue  # 文章页侧的toc
+│   │           │   ├── TimelineScreen.vue  # @诗漱 的excel导出表格
+│   │           │   └── UserAgreementModal.vue
+│   │           ├── composables/     # Vue 组合函数
+│   │           │   ├── filePage.ts
+│   │           │   └── isMobile.ts
+│   │           ├── core/            # 核心工具
+│   │           │   ├── cookies.ts
+│   │           │   └── particle.ts
+│   │           ├── styles/          # 全局样式
+│   │           │   ├── content.css
+│   │           │   └── index.css
+│   │           └── widgets/         # 页面小组件（用于markdown页面，也可以在其他vue组件里使用，它们都已全局注册）
+│   │               ├── Card.vue
+│   │               ├── Footnote.vue
+│   │               ├── Grid.vue
+│   │               ├── Intro.vue
+│   │               ├── MidTitle.vue
+│   │               ├── QuoteBlock.vue
+│   │               ├── SecondaryQuote.vue
+│   │               ├── Spacer.vue
+│   │               ├── Subtitle.vue
+│   │               ├── TextCenter.vue
+│   │               ├── TimelineImage.vue
+│   │               ├── TimelineItem.vue
+│   │               └── TimelineWrapper.vue
+│   │
+│   ├── index.md             # 首页（VitePress home 布局）
+│   ├── home.md              # 主导航页
+│   ├── preface.md           # 前言
+│   ├── about.md             # 关于手册
+│   ├── aboutsite.md         # 关于网站
+│   ├── basiclore.md         # 基础设定入口
+│   ├── nations.md           # 各国历史入口
+│   ├── teyvathis.md         # 提瓦特历史
+│   ├── timeline.md          # 时间线
+│   │
+│   ├── about/               # 杂谈与巧思
+│   │   ├── interestfacts.md
+│   │   └── somewords.md
+│   │
+│   ├── basiclore/           # 基础世界观
+│   │   ├── descenders/base.md    # 降临者
+│   │   ├── facilities/base.md    # 大地和装置
+│   │   ├── god/base.md           # 魔神
+│   │   ├── lightrelam/base.md    # 龙族和光界
+│   │   ├── principles/base.md    # 天理和人界
+│   │   ├── stars/base.md         # 星空
+│   │   └── void/base.md          # 深渊
+│   │
+│   ├── his/                 # 各国历史
+│   │   ├── Fontaine/base.md
+│   │   ├── Inazuma/base.md
+│   │   ├── Khaenriah/base.md
+│   │   ├── Liyue/base.md
+│   │   ├── Mondstadt/base.md
+│   │   ├── Natlan/base.md
+│   │   ├── Snezhnaya/base.md
+│   │   └── Sumeru/base.md
+│   │
+│   └── public/              # 静态资源（构建时复制到输出目录）
+│       ├── _headers         # Cloudflare 缓存头
+│       ├── BingSiteAuth.xml # Bing 搜索引擎验证
+│       ├── favicon.png
+│       ├── notice.json      # 公告数据
+│       ├── useragreementversion.json
+│       ├── fonts/           # 字体资源
+│       │   ├── Khaenriah.woff2
+│       │   ├── common.woff2
+│       │   └── genshin.woff2
+│       └── img/             # 图片资源
+│           ├── context/     # 内容配图
+│           │   ├── about/            (2 张)
+│           │   ├── basiclore/        (1 张)
+│           │   ├── Fontaine/         (8 张)
+│           │   ├── gallery/          (1 张)
+│           │   ├── Inazuma/          (10 张)
+│           │   ├── Liyue/            (5 张)
+│           │   ├── Mondstadt/        (26 张)
+│           │   ├── Natlan/           (23 张)
+│           │   ├── Snezhnaya/        (2 张)
+│           │   ├── Sumeru/           (7 张)
+│           │   └── teyvathis/        (2 张)
+│           ├── country/    # 各国背景 & 角色
+│           │   ├── fontaine-bg.jpg / fontaine-char.png
+│           │   ├── inazuma-bg.jpg / inazuma-char.png
+│           │   ├── liyue-bg.jpg / liyue-char.png
+│           │   ├── mondstadt-bg.jpg / mondstadt-char.png
+│           │   ├── natlan-bg.jpg / natlan-char.png
+│           │   └── sumeru-bg.jpg / sumeru-char.png
+│           ├── logo/       # Logo 与标识
+│           │   ├── Fontaine / Inazuma / Khaenriah / Liyue
+│           │   ├── Mondstadt / Natlan / Snezhnaya / Sumeru
+│           │   ├── genshinlogo.webp
+│           │   ├── favicon32x32.png
+│           │   └── website/
+│           │       ├── Cloudflare.png
+│           │       ├── Github.png
+│           │       └── Rainyun.png
+│           └── others/     # 其他图片
+│               ├── 404.png
+│               ├── GenshinLore.png
+│               └── star.png
 ```
+
+---
+
+本项目已迁移至 VitePress + Vue + TypeScript 技术栈，使用 Tailwind CSS 进行样式设计。
+
+本站的内容页面使用 Markdown 文件（`.md`）编写，由 VitePress 渲染。

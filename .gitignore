@@ -1,3 +1,11 @@
 /example
-/.github
+
+# 配置ide工具和npm依赖排除
+/.idea/
+/node_modules/
+/package-lock.json
+
+# 将vitepress的缓存排除
+/docs/.vitepress/cache/
+/docs/.vitepress/dist/
 /script.py
