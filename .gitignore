@@ -1,5 +1,4 @@
 /example
-/.github
 
 # 配置ide工具和npm依赖排除
 /.idea/
