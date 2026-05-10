@@ -1,0 +1,815 @@
+/* ======== 内容容器 ======== */
+.vp-doc .content-wrapper {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 60px 40px;
+  box-sizing: border-box;
+}
+
+/* ======== 页面标题 ======== */
+.vp-doc .page-title {
+  font-family: 'Genshin', serif;
+  font-size: 42px;
+  color: #4d4f53;
+  text-align: center;
+  margin-bottom: 40px;
+  border-bottom: 3px solid #D3BC8E;
+  padding-bottom: 20px;
+  display: inline-block;
+  width: 100%;
+  font-weight: normal;
+}
+
+/* ======== 标题层级 ======== */
+.vp-doc .content-wrapper h2 {
+  font-family: 'Genshin', serif;
+  font-size: 28px;
+  color: #4d4f53;
+  margin: 40px 0 20px 0;
+  padding-bottom: 10px;
+  border-bottom: 2px solid #D3BC8E;
+  line-height: 1.4;
+  font-weight: normal;
+}
+
+.vp-doc .content-wrapper h3 {
+  font-family: 'Genshin', serif;
+  font-size: 22px;
+  color: #4d4f53;
+  margin: 30px 0 15px 0;
+  line-height: 1.5;
+  font-weight: normal;
+}
+
+.vp-doc .content-wrapper h4 {
+  font-family: 'Genshin', serif;
+  font-size: 18px;
+  color: #4d4f53;
+  margin: 25px 0 12px 0;
+  line-height: 1.5;
+  font-weight: normal;
+}
+
+.vp-doc .content-wrapper h5 {
+  font-family: 'Genshin', serif;
+  font-size: 16px;
+  color: #4d4f53;
+  margin: 20px 0 10px 0;
+  font-weight: normal;
+}
+
+.vp-doc .content-wrapper h6 {
+  font-family: 'Genshin', serif;
+  font-size: 14px;
+  color: #4d4f53;
+  margin: 20px 0 10px 0;
+  font-weight: normal;
+}
+
+/* ======== 段落 ======== */
+.vp-doc .content-wrapper p {
+  font-family: 'Common', sans-serif;
+  font-size: 16px;
+  color: #4d4f53;
+  line-height: 2;
+  margin: 15px 0;
+  text-align: justify;
+}
+
+/* ======== 链接 ======== */
+.vp-doc .content-wrapper a {
+  color: #D3BC8E;
+  text-decoration: none;
+}
+
+.vp-doc .content-wrapper a:hover {
+  text-decoration: underline;
+}
+
+/* ======== 红色文本（旧站 **text** = 红色约定）======= */
+.vp-doc .content-wrapper .red-text,
+.vp-doc .content-wrapper strong {
+  color: #cc0000;
+  font-weight: normal;
+}
+
+/* ======== 块引用 ======== */
+.vp-doc .content-wrapper blockquote {
+  font-family: 'Common', sans-serif;
+  font-size: 15px;
+  color: #5a5c5f;
+  background-color: #f5f5f5;
+  padding: 20px;
+  margin: 20px 0;
+  border-left: 3px solid #D3BC8E;
+  line-height: 1.8;
+}
+
+.vp-doc .content-wrapper blockquote p {
+  margin: 10px 0;
+  font-size: 15px;
+  color: #5a5c5f;
+}
+
+/* ======== 表格 ======== */
+.vp-doc .content-wrapper table {
+  width: 100%;
+  border-collapse: collapse;
+  font-family: 'Common', sans-serif;
+  font-size: 14px;
+  line-height: 1.8;
+  margin: 20px 0;
+  display: block;
+  overflow-x: auto;
+}
+
+.vp-doc .content-wrapper th {
+  background-color: #4d4f53;
+  color: #D3BC8E;
+  padding: 12px 15px;
+  text-align: center;
+  border: 1px solid #D3BC8E;
+  font-weight: normal;
+}
+
+.vp-doc .content-wrapper td {
+  padding: 12px 15px;
+  border: 1px solid #D3BC8E;
+  color: #4d4f53;
+  text-align: center;
+}
+
+.vp-doc .content-wrapper tr:nth-child(even) {
+  background-color: #f5f5f5;
+}
+
+.vp-doc .content-wrapper tr:hover {
+  background-color: #f0f0f0;
+}
+
+/* ======== 代码 ======== */
+.vp-doc .content-wrapper code {
+  font-family: 'Common', monospace;
+  font-size: 0.9em;
+  background-color: #f0f0f0;
+  padding: 2px 6px;
+  border-radius: 4px;
+  color: #4d4f53;
+}
+
+.vp-doc .content-wrapper pre {
+  background-color: #f0f0f0;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  padding: 16px 20px;
+  overflow-x: auto;
+  font-family: 'Common', monospace;
+  font-size: 14px;
+  line-height: 1.6;
+  margin: 20px 0;
+}
+
+.vp-doc .content-wrapper pre code {
+  background: none;
+  padding: 0;
+  border-radius: 0;
+}
+
+/* ======== 列表 ======== */
+.vp-doc .content-wrapper ul,
+.vp-doc .content-wrapper ol {
+  font-family: 'Common', sans-serif;
+  font-size: 16px;
+  color: #4d4f53;
+  line-height: 2;
+  margin: 15px 0;
+  padding-left: 2em;
+}
+
+.vp-doc .content-wrapper li {
+  margin: 6px 0;
+  line-height: 1.8;
+}
+
+/* ======== 图片 ======== */
+.vp-doc .content-wrapper img {
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+  display: block;
+  margin: 20px auto;
+  max-width: 500px;
+}
+
+/* ======== 水平分隔线 ======== */
+.vp-doc .content-wrapper hr {
+  border: none;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, #D3BC8E, transparent);
+  margin: 40px 0;
+}
+
+/* ======== 工具类 — 引言块 ======== */
+.vp-doc .intro-text {
+  font-family: 'Common', serif;
+  font-size: 18px;
+  color: #4d4f53;
+  text-align: center;
+  line-height: 2;
+  margin-bottom: 50px;
+  padding: 30px;
+  background: linear-gradient(135deg, #f8f8f8 0%, #f0f0f0 100%);
+  border-radius: 12px;
+  border-left: 4px solid #D3BC8E;
+  border-right: 4px solid #D3BC8E;
+}
+
+.vp-doc .intro-text p {
+  margin: 0;
+  padding: 3px 0;
+}
+
+/* ======== 工具类 — 次要引言 ======== */
+.vp-doc .intro-second {
+  color: #8d8f93;
+  padding: 15px 20px;
+  border-left: 3px solid #c0c0c0;
+  font-family: 'Common', sans-serif;
+  font-size: 14px;
+  line-height: 2;
+  margin: 10px 0 10px 70px;
+  text-align: justify;
+}
+
+/* ======== 工具类 — 黑块（防剧透）======= */
+.vp-doc .black-block {
+  background-color: black;
+  color: black;
+  cursor: help;
+  padding: 0 2px;
+  border-radius: 2px;
+  transition: all 0.2s ease;
+}
+
+.vp-doc .black-block:hover {
+  background-color: transparent;
+  color: #4d4f53;
+}
+
+/* ======== 工具类 — 删除线 ======= */
+.vp-doc .strikethrough {
+  text-decoration: line-through;
+  opacity: 0.7;
+}
+
+/* ======== 工具类 — Khaenriah 字体 ======== */
+.vp-doc .khaenriah-font {
+  font-family: 'Khaenriah', serif;
+}
+
+/* ======== 滚动条 ======== */
+.vp-doc .content-wrapper::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+.vp-doc .content-wrapper::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 4px;
+}
+
+.vp-doc .content-wrapper::-webkit-scrollbar-thumb {
+  background: #4d4f53;
+  border-radius: 4px;
+}
+
+.vp-doc .content-wrapper::-webkit-scrollbar-thumb:hover {
+  background: #333;
+}
+
+/* ======== 响应式 ======== */
+/* ======== 时间线 ======== */
+.vp-doc .content-wrapper .timeline {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 0 20px;
+  position: relative;
+}
+
+.vp-doc .content-wrapper .timeline::before {
+  content: '';
+  position: absolute;
+  left: 30px;
+  top: 0;
+  bottom: 0;
+  width: 3px;
+  background: linear-gradient(to bottom, #D3BC8E, #4d4f53);
+  border-radius: 2px;
+}
+
+/* 时间线 H2 章节标题 */
+.vp-doc .content-wrapper .timeline > h2 {
+  font-family: 'Genshin', sans-serif;
+  font-size: 24px;
+  color: #D3BC8E;
+  margin: 40px 0 30px 70px;
+  padding-bottom: 10px;
+  border-bottom: 2px solid #D3BC8E;
+  position: relative;
+}
+
+.vp-doc .content-wrapper .timeline > h2::before {
+  content: '';
+  position: absolute;
+  left: -40px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 12px;
+  height: 12px;
+  background-color: #D3BC8E;
+  border-radius: 50%;
+  border: 3px solid #4d4f53;
+  box-shadow: 0 0 0 3px #D3BC8E;
+}
+
+/* 时间线 H3 小节标题 */
+.vp-doc .content-wrapper .timeline > h3 {
+  font-family: 'Genshin', sans-serif;
+  font-size: 20px;
+  font-weight: bold;
+  color: #4d4f53;
+  margin: 30px 0 30px 70px;
+  padding: 0;
+  background-color: transparent;
+  border: none;
+  border-radius: 0;
+  position: relative;
+}
+
+.vp-doc .content-wrapper .timeline > h3::before {
+  content: '';
+  position: absolute;
+  left: -40px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 10px;
+  height: 10px;
+  background-color: #4d4f53;
+  border-radius: 50%;
+  border: 2px solid #D3BC8E;
+}
+
+/* 时间线项目 */
+.vp-doc .content-wrapper .timeline-item {
+  margin-left: 70px;
+  margin-bottom: 30px;
+  padding: 20px;
+  background-color: #fafafa;
+  border-radius: 8px;
+  border-left: 3px solid #D3BC8E;
+  position: relative;
+}
+
+.vp-doc .content-wrapper .timeline-item::before {
+  content: '';
+  position: absolute;
+  left: -43px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 8px;
+  height: 8px;
+  background-color: #4d4f53;
+  border-radius: 50%;
+  border: 2px solid #D3BC8E;
+}
+
+/* 时间线正文 */
+.vp-doc .content-wrapper .timeline-content {
+  font-family: 'Common', sans-serif;
+  font-size: 14px;
+  color: #5a5c5f;
+  line-height: 1.8;
+  margin: 10px 0;
+  text-align: left;
+}
+
+/* ======== 响应式 ======== */
+@media (max-width: 768px) {
+  .vp-doc .content-wrapper {
+    padding: 30px 20px;
+  }
+
+  .vp-doc .content-wrapper table {
+    font-size: 12px;
+  }
+
+  .vp-doc .content-wrapper th,
+  .vp-doc .content-wrapper td {
+    padding: 8px 10px;
+  }
+
+  .vp-doc .page-title {
+    font-size: 32px;
+  }
+
+  .vp-doc .content-wrapper h2 {
+    font-size: 22px;
+  }
+
+  .vp-doc .content-wrapper h3 {
+    font-size: 18px;
+  }
+
+  .vp-doc .content-wrapper h4 {
+    font-size: 16px;
+  }
+
+  .vp-doc .content-wrapper p {
+    font-size: 15px;
+  }
+
+  .vp-doc .intro-second {
+    margin: 10px 0;
+  }
+
+  .vp-doc .content-wrapper .timeline::before {
+    left: 15px;
+  }
+
+  .vp-doc .content-wrapper .timeline > h2 {
+    margin-left: 50px;
+    font-size: 20px;
+  }
+
+  .vp-doc .content-wrapper .timeline > h2::before {
+    left: -25px;
+    width: 10px;
+    height: 10px;
+  }
+
+  .vp-doc .content-wrapper .timeline > h3 {
+    margin-left: 50px;
+    font-size: 17px;
+  }
+
+  .vp-doc .content-wrapper .timeline > h3::before {
+    left: -25px;
+    width: 8px;
+    height: 8px;
+  }
+
+  .vp-doc .content-wrapper .timeline-item {
+    margin-left: 50px;
+  }
+
+  .vp-doc .content-wrapper .timeline-item::before {
+    left: -30px;
+  }
+}
+
+/* ======== 版本修改记录 ======== */
+.vp-doc .content-wrapper .version-history {
+  margin-top: 40px;
+}
+
+.vp-doc .content-wrapper .version-history-toggle {
+  font-family: 'Genshin', serif;
+  font-size: 28px;
+  color: #4d4f53;
+  text-align: left;
+  margin-bottom: 30px;
+  position: relative;
+  padding-bottom: 15px;
+  cursor: pointer;
+  list-style: none;
+  display: block;
+  transition: all 0.3s ease;
+}
+
+.vp-doc .content-wrapper .version-history-toggle::-webkit-details-marker {
+  display: none;
+}
+
+.vp-doc .content-wrapper .version-history-toggle:hover {
+  color: #D3BC8E;
+}
+
+.vp-doc .content-wrapper .version-history[open] .version-history-toggle::before {
+  content: '▼ ';
+  font-size: 0.7em;
+  margin-right: 8px;
+}
+
+.vp-doc .content-wrapper .version-history:not([open]) .version-history-toggle::before {
+  content: '▶ ';
+  font-size: 0.7em;
+  margin-right: 8px;
+}
+
+.vp-doc .content-wrapper .version-history-content {
+  animation: versionFadeIn 0.3s ease;
+}
+
+@keyframes versionFadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.vp-doc .content-wrapper .version-item {
+  margin-bottom: 35px;
+  padding: 25px 30px;
+  background: linear-gradient(135deg, #fafafa 0%, #f5f5f5 100%);
+  border-radius: 10px;
+  border-left: 4px solid #D3BC8E;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+  transition: all 0.3s ease;
+}
+
+.vp-doc .content-wrapper .version-item:hover {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transform: translateY(-2px);
+}
+
+.vp-doc .content-wrapper .version-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 18px;
+  padding-bottom: 12px;
+  border-bottom: 2px solid #e8e8e8;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.vp-doc .content-wrapper .version-date {
+  font-family: 'Genshin', serif;
+  font-size: 18px;
+  color: #4d4f53;
+  font-weight: bold;
+}
+
+.vp-doc .content-wrapper .version-number {
+  font-family: 'Genshin', serif;
+  font-size: 16px;
+  color: #D3BC8E;
+  font-weight: bold;
+  background-color: rgba(211, 188, 142, 0.15);
+  padding: 4px 12px;
+  border-radius: 15px;
+}
+
+.vp-doc .content-wrapper .version-changes {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.vp-doc .content-wrapper .version-changes li {
+  font-family: 'Common', sans-serif;
+  font-size: 15px;
+  color: #4d4f53;
+  line-height: 1.9;
+  margin-bottom: 12px;
+  padding-left: 25px;
+  position: relative;
+  text-align: justify;
+}
+
+.vp-doc .content-wrapper .version-changes li:last-child {
+  margin-bottom: 0;
+}
+
+.vp-doc .content-wrapper .version-changes li::before {
+  content: '•';
+  position: absolute;
+  left: 8px;
+  color: #D3BC8E;
+  font-size: 20px;
+  line-height: 1.6;
+}
+
+.vp-doc .content-wrapper .version-note {
+  display: block;
+  margin-top: 10px;
+  padding: 12px 15px;
+  padding-left: 18px;
+  border-left: 3px solid #c0c0c0;
+  font-size: 13px;
+  color: #8d8f93;
+  line-height: 1.8;
+  background-color: rgba(0, 0, 0, 0.02);
+  border-radius: 0 6px 6px 0;
+}
+
+.vp-doc .content-wrapper .version-changes del {
+  color: #8d8f93;
+  opacity: 0.7;
+}
+
+/* ======== 编者的话 & 诗歌 ======== */
+.vp-doc .content-wrapper .editor-note-title {
+  font-family: 'Genshin', serif;
+  font-size: 32px;
+  color: #4d4f53;
+  text-align: center;
+  margin-bottom: 40px;
+  position: relative;
+  padding-bottom: 15px;
+  font-weight: normal;
+}
+
+.vp-doc .content-wrapper .editor-note-title::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 120px;
+  height: 3px;
+  background: linear-gradient(90deg, transparent, #D3BC8E, transparent);
+}
+
+.vp-doc .content-wrapper .poem-author {
+  font-family: 'Common', sans-serif;
+  font-size: 15px;
+  color: #4d4f53;
+  margin-bottom: 12px;
+  font-weight: bold;
+}
+
+.vp-doc .content-wrapper .poem-content {
+  font-family: 'Common', sans-serif;
+  font-size: 16px;
+  color: #4d4f53;
+  line-height: 2;
+  margin: 30px 0;
+  padding: 30px;
+  background: linear-gradient(135deg, #fafafa 0%, #f5f5f5 100%);
+  border-radius: 12px;
+  border: 1px solid #e8e8e8;
+}
+
+.vp-doc .content-wrapper .poem-content p {
+  margin: 18px 0;
+  text-align: left;
+  text-indent: 0;
+}
+
+.vp-doc .content-wrapper .poem-dedication {
+  font-style: italic;
+  color: #D3BC8E;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 25px !important;
+  font-size: 17px;
+}
+
+.vp-doc .content-wrapper .poem-signature {
+  text-align: right;
+  margin-top: 30px !important;
+  font-style: italic;
+  color: #8d8f93;
+  font-size: 14px;
+}
+
+.vp-doc .content-wrapper .image-caption {
+  font-family: 'Common', sans-serif;
+  font-size: 12px;
+  color: #8d8f93;
+  margin-top: 10px;
+  text-align: center;
+}
+
+.vp-doc .content-wrapper .image-container {
+  text-align: center;
+  margin: 20px 0;
+}
+
+.vp-doc .content-wrapper .image-container img {
+  max-width: 100%;
+  height: auto;
+  margin: 10px 0;
+  box-shadow: none;
+}
+
+/* ======== 版本历史 & 编者的话 响应式 ======== */
+/* ======== 关于本站 — 杂项链接 ======== */
+.vp-doc .content-wrapper .misc-links p {
+  font-family: 'Genshin', serif;
+  font-size: 28px;
+  color: #4d4f53;
+  line-height: 2;
+}
+
+/* ======== 关于本站 — Logo 展示 ======== */
+.vp-doc .content-wrapper .logos-container {
+  display: flex;
+  justify-content: space-around;
+  padding: 20px;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.vp-doc .content-wrapper .logo-item {
+  text-align: center;
+  flex: 1 1 200px;
+  min-width: 150px;
+  max-width: 300px;
+}
+
+.vp-doc .content-wrapper .logo-text {
+  font-family: 'Genshin', serif;
+  color: #666;
+  margin-bottom: 10px;
+  font-size: 16px;
+}
+
+.vp-doc .content-wrapper .logo-bg {
+  display: inline-block;
+  padding: 5px;
+}
+
+.vp-doc .content-wrapper .cloudflare-bg {
+  background-color: white;
+}
+
+.vp-doc .content-wrapper .rainyun-bg {
+  background-color: white;
+}
+
+.vp-doc .content-wrapper .github-bg {
+  background-color: black;
+}
+
+.vp-doc .content-wrapper .logo-img {
+  max-height: 70px;
+  width: auto;
+  transition: transform 0.3s;
+}
+
+.vp-doc .content-wrapper .logo-img:hover {
+  transform: scale(1.1);
+}
+
+@media (max-width: 1012px) {
+  .vp-doc .content-wrapper .logos-container {
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    gap: 30px;
+  }
+
+  .vp-doc .content-wrapper .logo-item {
+    flex: 1 1 100%;
+    max-width: 100%;
+    width: 100%;
+  }
+
+  .vp-doc .content-wrapper .logo-text {
+    font-size: 18px;
+    margin-bottom: 15px;
+  }
+
+  .vp-doc .content-wrapper .logo-img {
+    max-height: 80px;
+  }
+}
+
+@media (max-width: 768px) {
+  .vp-doc .content-wrapper .version-header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .vp-doc .content-wrapper .version-item {
+    padding: 20px;
+  }
+
+  .vp-doc .content-wrapper .version-date {
+    font-size: 16px;
+  }
+
+  .vp-doc .content-wrapper .version-number {
+    font-size: 14px;
+  }
+
+  .vp-doc .content-wrapper .version-changes li {
+    font-size: 14px;
+    padding-left: 20px;
+  }
+
+  .vp-doc .content-wrapper .editor-note-title {
+    font-size: 26px;
+  }
+
+  .vp-doc .content-wrapper .poem-content {
+    font-size: 15px;
+    padding: 20px;
+  }
+}
