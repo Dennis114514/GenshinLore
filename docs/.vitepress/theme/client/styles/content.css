@@ -432,11 +432,20 @@
     margin: 10px 0;
   }
 
+  .vp-doc .content-wrapper img {
+    max-width: 100%;
+  }
+
+  .vp-doc .content-wrapper .timeline {
+    padding: 0 10px;
+  }
+
   .vp-doc .content-wrapper .timeline::before {
     left: 15px;
   }
 
   .vp-doc .content-wrapper .timeline > h2 {
+    margin: 20px 0 10px 20px;
     margin-left: 50px;
     font-size: 20px;
   }
@@ -460,6 +469,8 @@
 
   .vp-doc .content-wrapper .timeline-item {
     margin-left: 50px;
+    margin-bottom: 10px;
+    padding: 15px;
   }
 
   .vp-doc .content-wrapper .timeline-item::before {

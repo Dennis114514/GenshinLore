@@ -64,6 +64,7 @@ function onKeydown(e: KeyboardEvent) {
   display: -webkit-box;
   -webkit-box-orient: vertical;
   -webkit-line-clamp: 1;
+  line-clamp: 1;
   overflow: hidden;
 }
 
@@ -138,7 +139,6 @@ function onKeydown(e: KeyboardEvent) {
 .modal-body {
   padding: 20px;
   max-height: 400px;
-  overflow-y: auto;
   font-family: 'Common', sans-serif;
   font-size: 14px;
   line-height: 1.8;

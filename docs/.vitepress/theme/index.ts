@@ -1,6 +1,8 @@
 // https://vitepress.dev/guide/custom-theme
 import Layout from './client/Layout.vue'
-import type { Theme } from 'vitepress'
+import { inBrowser, type Theme } from 'vitepress'
+import NProgress from 'nprogress'
+import 'nprogress/nprogress.css'
 import './client/styles/index.css'
 import Intro from './client/widgets/Intro.vue'
 import MidTitle from './client/widgets/MidTitle.vue'
@@ -19,6 +21,22 @@ import TextCenter from './client/widgets/TextCenter.vue'
 export default {
   Layout,
   enhanceApp({ app, router, siteData }) {
+    if (inBrowser) {
+      NProgress.configure({
+        showSpinner: true,
+        minimum: 0.12,
+        trickleSpeed: 100,
+      })
+
+      router.onBeforeRouteChange = async () => {
+        NProgress.start()
+      }
+
+      router.onAfterRouteChange = async () => {
+        NProgress.done()
+      }
+    }
+
     // 将一些可能用的比较多的组件注册为全局组件
     app.component('Intro', Intro)
     app.component('MidTitle', MidTitle)

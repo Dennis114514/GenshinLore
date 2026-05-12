@@ -103,6 +103,8 @@ onUnmounted(() => {
 
 <style scoped>
 .topbar {
+  top: var(--mirror-notice-height, 0px);
+  height: var(--site-header-height-desktop, 70px);
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
 }
 
@@ -113,17 +115,20 @@ onUnmounted(() => {
 
 .nav-menu {
   position: relative;
+  z-index: 20;
 }
 
 .nav-list {
   display: flex;
   list-style: none;
   gap: 5px;
+  align-items: center;
 }
 
 .nav-item {
   position: relative;
-  padding: 10px 18px;
+  padding: 0;
+  cursor: pointer;
 }
 
 .nav-item a {
@@ -132,9 +137,12 @@ onUnmounted(() => {
   color: #ffffff;
   text-decoration: none;
   transition: color 0.3s ease;
-  display: block;
+  display: flex;
+  align-items: center;
+  padding: 10px 18px;
   position: relative;
   z-index: 1;
+  cursor: pointer;
 }
 
 .nav-item:hover a,
@@ -153,10 +161,14 @@ onUnmounted(() => {
   pointer-events: none;
 }
 
+.mobile-menu-btn {
+  display: none;
+}
+
 @media screen and (max-width: 1012px) {
   .topbar {
     padding: 0 20px;
-    height: 60px;
+    height: var(--site-header-height-mobile, 60px);
   }
 
   .topbar-left {
@@ -200,7 +212,7 @@ onUnmounted(() => {
   }
 
   .nav-menu.active .mobile-menu-btn span:nth-child(1) {
-    transform: translateY(9px) rotate(45deg);
+    transform: translateY(6px) rotate(45deg);
   }
 
   .nav-menu.active .mobile-menu-btn span:nth-child(2) {
@@ -208,13 +220,13 @@ onUnmounted(() => {
   }
 
   .nav-menu.active .mobile-menu-btn span:nth-child(3) {
-    transform: translateY(-9px) rotate(-45deg);
+    transform: translateY(-6px) rotate(-45deg);
   }
 
   .nav-list {
     display: flex;
     position: fixed;
-    top: 60px;
+    top: calc(var(--mirror-notice-height, 0px) + var(--site-header-height-mobile, 60px));
     left: 0;
     right: 0;
     width: 100%;
@@ -238,7 +250,7 @@ onUnmounted(() => {
   }
 
   .nav-menu.active .nav-list {
-    max-height: calc(100vh - 60px);
+    max-height: calc(100vh - var(--mirror-notice-height, 0px) - var(--site-header-height-mobile, 60px));
     opacity: 1;
     visibility: visible;
     padding: 10px 0;

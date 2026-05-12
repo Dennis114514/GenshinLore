@@ -1,10 +1,14 @@
 <script setup lang="ts">
-import { computed, ref, onMounted, onUnmounted } from 'vue'
+import { computed, ref, onMounted, onUnmounted, nextTick } from 'vue'
 import AppFooter from './AppFooter.vue'
 import { nationColumns, timelinePeriods } from '../../data/timelineData'
 import type { TimelineCell } from '../../data/timelineData'
 
 const blurred = ref(false)
+const tableScrollRef = ref<HTMLElement | null>(null)
+const canScrollLeft = ref(false)
+const canScrollRight = ref(false)
+const showBackToTop = ref(false)
 
 function onVisibilityChange() {
   blurred.value = document.hidden
@@ -46,12 +50,38 @@ function onContextMenu(e: MouseEvent) {
   e.preventDefault()
 }
 
+function updateScrollIndicators() {
+  const el = tableScrollRef.value
+  if (!el) return
+  canScrollLeft.value = el.scrollLeft > 8
+  canScrollRight.value = el.scrollLeft + el.clientWidth < el.scrollWidth - 8
+  showBackToTop.value = el.scrollTop > 320
+}
+
+function onTableScroll() {
+  updateScrollIndicators()
+}
+
+function onResize() {
+  updateScrollIndicators()
+}
+
+function scrollTimelineToTop() {
+  const el = tableScrollRef.value
+  if (!el) return
+  el.scrollTo({ top: 0, behavior: 'smooth' })
+}
+
 onMounted(() => {
   document.addEventListener('visibilitychange', onVisibilityChange)
   window.addEventListener('blur', onWindowBlur)
   window.addEventListener('focus', onWindowFocus)
   window.addEventListener('keydown', onKeydown)
   window.addEventListener('contextmenu', onContextMenu)
+  window.addEventListener('resize', onResize)
+  nextTick(() => {
+    updateScrollIndicators()
+  })
 })
 
 onUnmounted(() => {
@@ -60,6 +90,7 @@ onUnmounted(() => {
   window.removeEventListener('focus', onWindowFocus)
   window.removeEventListener('keydown', onKeydown)
   window.removeEventListener('contextmenu', onContextMenu)
+  window.removeEventListener('resize', onResize)
 })
 
 // 计算一个国家内哪些单元格应该合并（连续相同的单元格）
@@ -108,8 +139,8 @@ const rowsWithMergedCells = computed(() => {
 <template>
   <!-- 按照原设计意图，本页面全页禁止选中 -->
   <div v-if="!blurred" class="timeline-page select-none">
-    <div class="table-wrapper">
-      <div class="table-scroll">
+    <div class="table-wrapper" :class="{ 'can-scroll-left': canScrollLeft, 'can-scroll-right': canScrollRight }">
+      <div ref="tableScrollRef" class="table-scroll" @scroll="onTableScroll">
         <table class="timeline-table">
           <thead>
             <tr class="header-row">
@@ -160,6 +191,9 @@ const rowsWithMergedCells = computed(() => {
           </tbody>
         </table>
       </div>
+      <button v-if="showBackToTop" class="timeline-backtop" @click="scrollTimelineToTop">
+        回到顶部
+      </button>
     </div>
     <AppFooter />
   </div>
@@ -173,23 +207,55 @@ const rowsWithMergedCells = computed(() => {
 <style scoped>
 .timeline-page {
   min-height: 100vh;
-  background: #111111bf;
-  padding-top: 70px;
+  background: radial-gradient(circle at top, #26292e 0%, #1b1d21 52%, #17181b 100%);
+  padding-top: calc(var(--mirror-notice-height, 0px) + var(--site-header-height-desktop, 70px));
   display: flex;
   flex-direction: column;
+  width: 100%;
+  max-width: 100%;
+  overflow-x: hidden;
 }
 
 .table-wrapper {
   flex: 1;
   overflow: hidden;
   position: relative;
+  border-top: 1px solid rgba(211, 188, 142, 0.22);
+  width: 100%;
+  max-width: 100%;
+  min-width: 0;
+}
+
+.table-wrapper::before,
+.table-wrapper::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 22px;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.18s ease;
+  z-index: 12;
+}
+
+.table-wrapper.can-scroll-left::before {
+  opacity: 1;
+}
+
+.table-wrapper.can-scroll-right::after {
+  opacity: 1;
 }
 
 .table-scroll {
   overflow-x: auto;
   overflow-y: auto;
-  max-height: calc(100vh - 70px - 80px); /* viewport minus header minus footer */
+  max-height: calc(100vh - var(--mirror-notice-height, 0px) - var(--site-header-height-desktop, 70px) - 80px);
   position: relative;
+  scrollbar-gutter: stable both-edges;
+  width: 100%;
+  max-width: 100%;
+  min-width: 0;
 }
 
 .timeline-table {
@@ -197,16 +263,16 @@ const rowsWithMergedCells = computed(() => {
   table-layout: auto;
   min-width: 100%;
   font-family: 'Common', sans-serif;
-  font-size: 12px;
-  line-height: 1.6;
-  color: #e0d5c1;
+  font-size: 13px;
+  line-height: 1.65;
+  color: #e9dfcc;
 }
 
 .header-row th {
   position: sticky;
   top: 0;
   z-index: 10;
-  background: #3a3d40;
+  background: linear-gradient(180deg, #3f4348 0%, #35383d 100%);
   color: #d3bc8e;
   font-family: 'Genshin', sans-serif;
   font-weight: 700;
@@ -220,7 +286,7 @@ const rowsWithMergedCells = computed(() => {
 .period-header {
   position: sticky;
   left: 0;
-  z-index: 11;
+  z-index: 30;
 }
 
 .period-col {
@@ -232,6 +298,7 @@ const rowsWithMergedCells = computed(() => {
   min-width: 90px;
   width: 90px;
   left: 48px;
+  z-index: 29;
 }
 
 .nation-header {
@@ -249,8 +316,8 @@ const rowsWithMergedCells = computed(() => {
 .period-cell {
   position: sticky;
   left: 0;
-  z-index: 5;
-  background: #2a2a2a;
+  z-index: 20;
+  background: linear-gradient(180deg, #2f3237 0%, #2a2d31 100%);
   color: #d3bc8e;
   font-family: 'Genshin', sans-serif;
   font-weight: 700;
@@ -267,8 +334,8 @@ const rowsWithMergedCells = computed(() => {
 .subperiod-cell {
   position: sticky;
   left: 48px;
-  z-index: 5;
-  background: #2a2a2a;
+  z-index: 19;
+  background: linear-gradient(180deg, #2f3237 0%, #2a2d31 100%);
   color: #d3bc8e;
   font-family: 'Genshin', sans-serif;
   font-weight: 700;
@@ -282,11 +349,12 @@ const rowsWithMergedCells = computed(() => {
 }
 
 .data-cell {
-  padding: 6px 8px;
+  padding: 8px 10px;
   border: 1px solid #3a3a3a;
   vertical-align: top;
   min-width: 100px;
-  max-width: 220px;
+  max-width: 260px;
+  transition: background-color 0.15s ease;
 }
 
 .cell-empty {
@@ -310,9 +378,9 @@ const rowsWithMergedCells = computed(() => {
 .cell-items li {
   position: relative;
   padding-left: 12px;
-  margin-bottom: 2px;
-  font-size: 11px;
-  color: #ccc;
+  margin-bottom: 4px;
+  font-size: 12px;
+  color: #d8d8d8;
 }
 
 .cell-items li::before {
@@ -324,6 +392,36 @@ const rowsWithMergedCells = computed(() => {
 
 .cell-placeholder {
   color: transparent;
+}
+
+.data-row:hover .data-cell {
+  background-color: rgba(211, 188, 142, 0.08);
+}
+
+.data-row:hover .cell-empty {
+  background-color: rgba(211, 188, 142, 0.04);
+}
+
+.timeline-backtop {
+  position: absolute;
+  right: 18px;
+  bottom: 18px;
+  z-index: 14;
+  border: 1px solid rgba(211, 188, 142, 0.45);
+  background: rgba(29, 31, 35, 0.88);
+  color: #d3bc8e;
+  font-family: 'Common', sans-serif;
+  font-size: 12px;
+  padding: 6px 10px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.timeline-backtop:hover {
+  background: rgba(211, 188, 142, 0.2);
+  border-color: rgba(211, 188, 142, 0.65);
+  color: #e6d2a7;
 }
 
 .blur-overlay {
@@ -346,42 +444,87 @@ const rowsWithMergedCells = computed(() => {
 
 @media screen and (max-width: 768px) {
   .timeline-page {
-    padding-top: 60px;
+    padding-top: calc(var(--mirror-notice-height, 0px) + var(--site-header-height-mobile, 60px));
+  }
+
+  .table-wrapper {
+    border-top-color: rgba(211, 188, 142, 0.16);
+  }
+
+  .table-scroll {
+    max-height: calc(100vh - var(--mirror-notice-height, 0px) - var(--site-header-height-mobile, 60px) - 72px);
+    -webkit-overflow-scrolling: touch;
+    overscroll-behavior: contain;
   }
 
   .timeline-table {
-    font-size: 11px;
+    font-size: 12px;
+    line-height: 1.6;
   }
 
   .header-row th {
     font-size: 12px;
-    padding: 6px 4px;
+    padding: 7px 6px;
   }
 
   .period-col {
-    min-width: 36px;
-    width: 36px;
+    min-width: 58px;
+    width: 58px;
   }
 
   .subperiod-col {
-    min-width: 60px;
-    width: 60px;
-    left: 36px;
+    min-width: 86px;
+    width: 86px;
+    left: auto;
+  }
+
+  .period-header {
+    left: auto;
+    z-index: 10;
   }
 
   .subperiod-cell {
-    left: 36px;
-    min-width: 60px;
+    position: static;
+    left: auto;
+    z-index: auto;
+    min-width: 86px;
+    font-size: 11px;
+    padding: 6px 6px;
   }
 
   .period-cell {
-    min-width: 36px;
+    position: static;
+    left: auto;
+    z-index: auto;
+    min-width: 58px;
+    writing-mode: horizontal-tb;
+    letter-spacing: 1px;
+    font-size: 11px;
+    padding: 6px 6px;
+    white-space: nowrap;
   }
 
   .data-cell {
-    min-width: 80px;
-    max-width: 160px;
-    padding: 4px 6px;
+    min-width: 140px;
+    max-width: 220px;
+    padding: 6px 8px;
+  }
+
+  .cell-heading {
+    font-size: 12px;
+    margin-bottom: 5px;
+  }
+
+  .cell-items li {
+    font-size: 12px;
+    line-height: 1.6;
+    margin-bottom: 3px;
+  }
+
+  .table-wrapper::before,
+  .table-wrapper::after,
+  .timeline-backtop {
+    display: none;
   }
 }
 </style>

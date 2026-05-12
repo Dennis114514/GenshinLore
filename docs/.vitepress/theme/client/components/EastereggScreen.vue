@@ -23,7 +23,7 @@ function onKeydown(e: KeyboardEvent) {
 
 <template>
   <div class="w-screen">
-    <main class="mt-17.5">
+    <main class="easteregg-main">
       <Spacer :size="20" />
       <p class="genshin-font text-center text-[#4d4f53] text-4xl">
         关于原神你不知道的很多事实和彩蛋
@@ -114,6 +114,10 @@ function onKeydown(e: KeyboardEvent) {
 </template>
 
 <style scoped>
+.easteregg-main {
+  margin-top: calc(var(--mirror-notice-height, 0px) + var(--site-header-height-desktop, 70px));
+}
+
 .genshin-font {
   font-family: 'Genshin', sans-serif;
 }
@@ -252,6 +256,10 @@ function onKeydown(e: KeyboardEvent) {
 }
 
 @media (max-width: 768px) {
+  .easteregg-main {
+    margin-top: calc(var(--mirror-notice-height, 0px) + var(--site-header-height-mobile, 60px));
+  }
+
   .modal-content {
     width: 95%;
     padding: 20px;
