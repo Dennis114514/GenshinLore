@@ -17,6 +17,9 @@ import Footnote from './client/widgets/Footnote.vue'
 import TimelineWrapper from './client/widgets/TimelineWrapper.vue'
 import TimelineItem from './client/widgets/TimelineItem.vue'
 import TextCenter from './client/widgets/TextCenter.vue'
+import KhaenriahMotto from './client/widgets/KhaenriahMotto.vue'
+import Spoiler from './client/widgets/Spoiler.vue'
+import Khaenriah from './client/widgets/Khaenriah.vue'
 
 export default {
   Layout,
@@ -51,5 +54,8 @@ export default {
     app.component('TimelineWrapper', TimelineWrapper)
     app.component('TimelineItem', TimelineItem)
     app.component('TextCenter', TextCenter)
+    app.component('KhaenriahMotto', KhaenriahMotto)
+    app.component('Spoiler', Spoiler)
+    app.component('Khaenriah', Khaenriah)
   },
 } satisfies Theme

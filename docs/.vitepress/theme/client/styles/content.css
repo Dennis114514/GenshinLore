@@ -113,14 +113,11 @@
 
 /* ======== 表格 ======== */
 .vp-doc .content-wrapper table {
-  width: 100%;
   border-collapse: collapse;
   font-family: 'Common', sans-serif;
   font-size: 14px;
   line-height: 1.8;
-  margin: 20px 0;
-  display: block;
-  overflow-x: auto;
+  margin: 20px auto;
 }
 
 .vp-doc .content-wrapper th {
@@ -136,7 +133,7 @@
   padding: 12px 15px;
   border: 1px solid #D3BC8E;
   color: #4d4f53;
-  text-align: center;
+  text-align: left;
 }
 
 .vp-doc .content-wrapper tr:nth-child(even) {
@@ -400,12 +397,27 @@
   }
 
   .vp-doc .content-wrapper table {
+    display: block;
+    max-width: 100%;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    white-space: nowrap;
     font-size: 12px;
+    background:
+      linear-gradient(to right, #ffffff 30%, transparent) left,
+      linear-gradient(to right, transparent, #ffffff 70%) right,
+      radial-gradient(farthest-side at 0% 50%, rgba(0, 0, 0, 0.12), transparent) left,
+      radial-gradient(farthest-side at 100% 50%, rgba(0, 0, 0, 0.12), transparent) right;
+    background-repeat: no-repeat;
+    background-size: 40px 100%, 40px 100%, 14px 100%, 14px 100%;
+    background-attachment: local, local, scroll, scroll;
   }
 
   .vp-doc .content-wrapper th,
   .vp-doc .content-wrapper td {
     padding: 8px 10px;
+    white-space: normal;
+    min-width: 40vw;
   }
 
   .vp-doc .page-title {

@@ -43,6 +43,40 @@
 
 > 其他未被列举到的markdown样式将以其原本的行为在本站中被渲染，**但我们不推荐使用**。若你需要红色文字，除了用 `**文字**` 外，也可以直接写 `<span class="red-text">文字</span>`。
 
+### 表格：直接用 Markdown 原生语法
+
+本站已优化，你可以直接用 Markdown 原生表格语法编写，**无需**再用 `<div>` 包裹或写 HTML `<table>/<tr>/<td>`：
+
+```markdown
+| 类型 | 介绍 |
+|------|------|
+| 魔神 | 原初之人法涅斯的碎片，依附到元素生命上使其成为魔神。 |
+| 邪神 | 战败的魔神逃到暗之外海，化作邪神。 |
+```
+
+效果：表格会自动居中，单元格内容默认左对齐。对于复杂的合并单元格（如 rowspan/colspan），仍需使用 HTML 表格语法。
+
+### 链接：自动新窗口打开
+
+本站已配置，所有以 `http://` 或 `https://` 开头的外部链接会自动在新标签页打开，**无需**再写 `target="_blank"`。直接用 Markdown 链接即可：
+
+```markdown
+[视频链接](https://www.bilibili.com/video/BV1At4y1q7UQ/)
+```
+
+等价于：
+```html
+<a href="https://www.bilibili.com/video/BV1At4y1q7UQ/" target="_blank">视频链接</a>
+```
+
+### 脚注中的链接
+
+`<Footnote>` 组件的 `text` 属性支持 Markdown 链接语法 `[文字](链接)`，会自动转为可点击的新窗口链接：
+
+```html
+<Footnote n="1" text="参考资料：[B站视频](https://www.bilibili.com/video/BV1At4y1q7UQ/)" />
+```
+
 **第三：** 为方便你使用一些复杂样式，我们根据实际编写需要封装出了一些全局可用的自定义DOM，你可以在你的markdown文档内自由使用：
 
 > 如果你不熟悉 HTML 或编程，不必担心。你只需要把下面的示例代码复制到你的 markdown 文件中，然后把示例里的文字替换成你想展示的内容即可。注意保留代码中的尖括号（`< >`）和引号等符号。
@@ -148,10 +182,15 @@
 
 在文字旁边添加一个金色的脚注编号，读者将鼠标移到编号上时会显示脚注内容。需要填写两个参数：
 - `n`：脚注编号
-- `text`：脚注内容（支持 HTML）
+- `text`：脚注内容（支持 `[文字](链接)` 格式的 Markdown 链接）
 
 ```html
 此处是正文内容<Footnote n="1" text="这是脚注的详细说明文字。" />
+```
+
+带链接的脚注：
+```html
+<Footnote n="1" text="参考资料：[B站视频](https://www.bilibili.com/video/BVxxx/)" />
 ```
 
 ### 时间线类

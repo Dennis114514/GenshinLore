@@ -6,7 +6,7 @@ secondaryClass: "/nations"
 ---
 
 <TextCenter>
-<p style="text-align: center !important; font-family: 'Khaenriah', sans-serif;">iustitia omnia vincit</p>
+<KhaenriahMotto>iustitia omnia vincit</KhaenriahMotto>
 **正义**之神
 <br>
 热爱法庭上的一切闹剧，
@@ -15,7 +15,7 @@ secondaryClass: "/nations"
 <br>
 但她非常明白，
 <br>
-唯有**天理**不可与之为敌。<Footnote n="1" text="<a href='https://www.bilibili.com/video/BV1At4y1q7UQ/' target='_blank'>《原神·提瓦特篇》主线章节预告PV-「足迹」_哔哩哔哩_bilibili</a>"></Footnote>
+唯有**天理**不可与之为敌。<Footnote n="1" text="[《原神·提瓦特篇》主线章节预告PV-「足迹」_哔哩哔哩_bilibili](https://www.bilibili.com/video/BV1At4y1q7UQ/)"></Footnote>
 <br>
 <Space :size="14"></Space>
 我的**理想**之内并没有一丝污浊。
@@ -111,7 +111,7 @@ secondaryClass: "/nations"
 
 </TimelineItem>
 
-## 四、雷穆利亚帝国<Footnote n="3" text="<a href='https://wiki.biligame.com/ys/%E9%A6%96%E9%A1%B5' target='_blank'>原神WIKI_BWIKI_哔哩哔哩</a>"></Footnote><Footnote n="4" text="黄金剧团，谐律异想断章，雷穆利亚衰亡史，公义的酬报，海渊终曲，浪影阔剑，纯水流华，静谧之曲，白雨心弦，柔风挽歌，香韵奏者悠古弦音系列材料，纯圣露滴系列材料，无垢之海系列材料"></Footnote>
+## 四、雷穆利亚帝国<Footnote n="3" text="[原神WIKI_BWIKI_哔哩哔哩](https://wiki.biligame.com/ys/%E9%A6%96%E9%A1%B5)"></Footnote><Footnote n="4" text="黄金剧团，谐律异想断章，雷穆利亚衰亡史，公义的酬报，海渊终曲，浪影阔剑，纯水流华，静谧之曲，白雨心弦，柔风挽歌，香韵奏者悠古弦音系列材料，纯圣露滴系列材料，无垢之海系列材料"></Footnote>
 
 ### （一）建国
 
@@ -2401,7 +2401,7 @@ secondaryClass: "/nations"
 
 芙卡洛斯的计划。
 
-芙宁娜上任并开始扮演水神。<Footnote n="14" text="<a href='https://www.bilibili.com/video/BV1oa4y1X7Zt/' target='_blank'>《原神》芙宁娜角色PV——「戏中人」_哔哩哔哩bilibili_原神</a>"></Footnote>
+芙宁娜上任并开始扮演水神。<Footnote n="14" text="[《原神》芙宁娜角色PV——「戏中人」_哔哩哔哩bilibili_原神](https://www.bilibili.com/video/BV1oa4y1X7Zt/)"></Footnote>
 
 </TimelineItem>
 
@@ -2413,7 +2413,7 @@ secondaryClass: "/nations"
 
 <TimelineItem>
 
-400年前，那维莱特（2000年前诞生）来到枫丹廷，<Footnote n="15" text="<a href='https://www.bilibili.com/video/BV1iP411b7fH/' target='_blank'>《原神》那维莱特角色PV——「水中之眼」_原神</a>"></Footnote>并带来美露莘。
+400年前，那维莱特（2000年前诞生）来到枫丹廷，<Footnote n="15" text="[《原神》那维莱特角色PV——「水中之眼」_原神](https://www.bilibili.com/video/BV1iP411b7fH/)"></Footnote>并带来美露莘。
 
 </TimelineItem>
 

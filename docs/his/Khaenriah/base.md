@@ -25,7 +25,7 @@ secondaryClass: "/nations"
 <Space :size="14"></Space>
 从世界之外，
 <br>
-我们取得否定世界的力量。<Footnote n="1" text="<a href='https://www.bilibili.com/video/BV1At4y1q7UQ/' target='_blank'>《原神·提瓦特篇》主线章节预告PV-「足迹」_哔哩哔哩_bilibili</a>"></Footnote>
+我们取得否定世界的力量。<Footnote n="1" text="[《原神·提瓦特篇》主线章节预告PV-「足迹」_哔哩哔哩_bilibili](https://www.bilibili.com/video/BV1At4y1q7UQ/)"></Footnote>
 </TextCenter>
 
 <TimelineWrapper>
@@ -174,24 +174,22 @@ secondaryClass: "/nations"
 
 指的是坎瑞亚的四个支柱产业（炼金，军队，机械，占星）
 
-<div class="table-container">
-<table class="lightrelam-table">
+<table>
 <tr><th>组织</th><th>人物</th><th>介绍</th></tr>
-<tr><td>王室</td><td>「黑王」<br/>伊尔明苏尔</td><td class="text-left">独眼的王者</td></tr>
-<tr><td rowspan="6">骑士</td><td>「摄政元帅」<br/>安弗塔斯·亚尔伯里奇</td><td class="text-left">驾驶遗迹巨像驰援须弥的白鹄骑士的统帅<br/>亚尔伯里奇族在独眼王者失能后担任摄政</td></tr>
-<tr><td>克罗达尔·亚尔伯里奇</td><td class="text-left">创立深渊教团</td></tr>
-<tr><td>「末光之剑」<br/>戴因斯雷布</td><td class="text-left">宫廷卫队成员<br/>未能阻止坎瑞亚灭国，因不死诅咒而流浪</td></tr>
-<tr><td>哈夫丹</td><td class="text-left">戴因的战友</td></tr>
-<tr><td>「天柱骑士」<br/>瑟雷恩</td><td class="text-left">后来加入愚人众，成为卡皮塔诺</td></tr>
-<tr><td>古瑟雷德</td><td class="text-left">瑟雷恩的副官</td></tr>
-<tr><td rowspan="2">教养院</td><td>尼约德</td><td class="text-left">与黑骏相伴</td></tr>
-<tr><td>「妙音女」<br/>「天王奴」<br/>安吉莉卡</td><td class="text-left">来自璃月的少女</td></tr>
-<tr><td rowspan="4">深秘院</td><td>海洛塔帝</td><td class="text-left">院长，首席御前法师</td></tr>
-<tr><td>艾弗提尔维特</td><td class="text-left">副院长，宫廷法师，后来加入愚人众，成为皮耶罗</td></tr>
-<tr><td>阿尔夫</td><td class="text-left">最擅长战斗</td></tr>
-<tr><td>「妖僧」<br/>拉乌斯万格</td><td class="text-left"></td></tr>
+<tr><td>王室</td><td>「黑王」<br/>伊尔明苏尔</td><td>独眼的王者</td></tr>
+<tr><td rowspan="6">骑士</td><td>「摄政元帅」<br/>安弗塔斯·亚尔伯里奇</td><td>驾驶遗迹巨像驰援须弥的白鹄骑士的统帅<br/>亚尔伯里奇族在独眼王者失能后担任摄政</td></tr>
+<tr><td>克罗达尔·亚尔伯里奇</td><td>创立深渊教团</td></tr>
+<tr><td>「末光之剑」<br/>戴因斯雷布</td><td>宫廷卫队成员<br/>未能阻止坎瑞亚灭国，因不死诅咒而流浪</td></tr>
+<tr><td>哈夫丹</td><td>戴因的战友</td></tr>
+<tr><td>「天柱骑士」<br/>瑟雷恩</td><td>后来加入愚人众，成为卡皮塔诺</td></tr>
+<tr><td>古瑟雷德</td><td>瑟雷恩的副官</td></tr>
+<tr><td rowspan="2">教养院</td><td>尼约德</td><td>与黑骏相伴</td></tr>
+<tr><td>「妙音女」<br/>「天王奴」<br/>安吉莉卡</td><td>来自璃月的少女</td></tr>
+<tr><td rowspan="4">深秘院</td><td>海洛塔帝</td><td>院长，首席御前法师</td></tr>
+<tr><td>艾弗提尔维特</td><td>副院长，宫廷法师，后来加入愚人众，成为皮耶罗</td></tr>
+<tr><td>阿尔夫</td><td>最擅长战斗</td></tr>
+<tr><td>「妖僧」<br/>拉乌斯万格</td><td></td></tr>
 </table>
-</div>
 
 </TimelineItem>
 
@@ -199,16 +197,14 @@ secondaryClass: "/nations"
 
 <TimelineItem>
 
-<div class="table-container">
-<table class="lightrelam-table">
+<table>
 <tr><th>罪人</th><th>权能</th><th>关系户</th><th>介绍</th></tr>
-<tr><td>「贤者」<br/>海洛塔帝</td><td>理</td><td></td><td class="text-left">曾是深秘院院长和首席御前法师</td></tr>
-<tr><td>「预言家」<br/>维瑟弗尼尔</td><td>时</td><td>戴因斯雷布（弟弟）</td><td class="text-left"></td></tr>
-<tr><td>「黄金」<br/>莱茵多特</td><td>生</td><td>造物：阿贝多、巴窟纳瓦、厄里那斯、魔龙杜林</td><td class="text-left">吞噬纳贝里士并成为生之执政<br/>「树为最完美的果实骄傲，它是如此圆满而无瑕疵。但是寄宿了梦的种子啊，不要止当果壳中的宇宙之王。」<Footnote n="5" text="阿贝多魔女的课业中，莱茵多特给阿贝多的寄语"></Footnote></td></tr>
-<tr><td>「极恶骑」<br/>苏尔特洛奇</td><td>空</td><td>丝柯克（徒弟）</td><td class="text-left">曾是宫廷卫队成员</td></tr>
-<tr><td>「猎月人」<br/>雷利尔</td><td>死</td><td>狂猎（造物）</td><td class="text-left">曾是猎杀赤月遗民的特务</td></tr>
+<tr><td>「贤者」<br/>海洛塔帝</td><td>理</td><td></td><td>曾是深秘院院长和首席御前法师</td></tr>
+<tr><td>「预言家」<br/>维瑟弗尼尔</td><td>时</td><td>戴因斯雷布（弟弟）</td><td></td></tr>
+<tr><td>「黄金」<br/>莱茵多特</td><td>生</td><td>造物：阿贝多、巴窟纳瓦、厄里那斯、魔龙杜林</td><td>吞噬纳贝里士并成为生之执政<br/>「树为最完美的果实骄傲，它是如此圆满而无瑕疵。但是寄宿了梦的种子啊，不要止当果壳中的宇宙之王。」<Footnote n="5" text="阿贝多魔女的课业中，莱茵多特给阿贝多的寄语"></Footnote></td></tr>
+<tr><td>「极恶骑」<br/>苏尔特洛奇</td><td>空</td><td>丝柯克（徒弟）</td><td>曾是宫廷卫队成员</td></tr>
+<tr><td>「猎月人」<br/>雷利尔</td><td>死</td><td>狂猎（造物）</td><td>曾是猎杀赤月遗民的特务</td></tr>
 </table>
-</div>
 
 </TimelineItem>
 
@@ -326,7 +322,7 @@ secondaryClass: "/nations"
 
 然而除了戴因之外的五人却受到深渊的蛊惑，瓜分了王储身上的深渊力量，成为了与世界匹敌的超然存在——五罪人。
 
-雷利尔没有挽回索琳蒂丝，一怒之下接触深渊，成为罪人。<Footnote n="6" text="<a href='https://www.bilibili.com/video/BV1GPymBwE9K/' target='_blank'>《原神》剧情PV-「月的倒影」_原神</a>"></Footnote>
+雷利尔没有挽回索琳蒂丝，一怒之下接触深渊，成为罪人。<Footnote n="6" text="[《原神》剧情PV-「月的倒影」_原神](https://www.bilibili.com/video/BV1GPymBwE9K/)"></Footnote>
 
 被称为「黄金」的炼金士堕落为了罪人，孕育了大量漆黑的魔兽。
 
@@ -342,18 +338,16 @@ secondaryClass: "/nations"
 
 除了守护世界树的大慈树王，其余六神（温迪、钟离、雷电真、厄歌莉娅、玛薇卡、白沙皇）均被召集前往坎瑞亚抗击深渊。
 
-<div class="table-container">
-<table class="lightrelam-table">
+<table>
 <tr><th>七神</th><th>战斗结果</th></tr>
-<tr><td>温迪</td><td class="text-left">存活，是现存的一代神</td></tr>
-<tr><td>钟离</td><td class="text-left">存活，是现存的一代神。与冰之女皇签订了终结一切契约的契约</td></tr>
-<tr><td>雷电真</td><td class="text-left">在坎瑞亚战死。接任的雷电影开始维系永恒，闭关锁国，颁布眼狩令</td></tr>
-<tr><td>大慈树王</td><td class="text-left">因感染禁忌知识，所以将自身从世界树抹除，最终被世界遗忘。作为世界树枝芽的纳西妲诞生，取代了大慈树王在世界上的所有记录</td></tr>
-<tr><td>厄歌莉娅</td><td class="text-left">在甘露花海战死，树王种下大树，让厄歌莉娅的意识得以寄宿。接任的芙卡洛斯为了应对预言，承受水神创造枫丹人的罪孽，开始计划摧毁水神神座</td></tr>
-<tr><td>玛薇卡</td><td class="text-left">将自身融入圣火，支援500年后对深渊的决战</td></tr>
-<tr><td>白沙皇</td><td class="text-left">战死。接任的冰之女皇性情大变，成为不再爱人的神，创立了愚人众，并开始收集神之心</td></tr>
+<tr><td>温迪</td><td>存活，是现存的一代神</td></tr>
+<tr><td>钟离</td><td>存活，是现存的一代神。与冰之女皇签订了终结一切契约的契约</td></tr>
+<tr><td>雷电真</td><td>在坎瑞亚战死。接任的雷电影开始维系永恒，闭关锁国，颁布眼狩令</td></tr>
+<tr><td>大慈树王</td><td>因感染禁忌知识，所以将自身从世界树抹除，最终被世界遗忘。作为世界树枝芽的纳西妲诞生，取代了大慈树王在世界上的所有记录</td></tr>
+<tr><td>厄歌莉娅</td><td>在甘露花海战死，树王种下大树，让厄歌莉娅的意识得以寄宿。接任的芙卡洛斯为了应对预言，承受水神创造枫丹人的罪孽，开始计划摧毁水神神座</td></tr>
+<tr><td>玛薇卡</td><td>将自身融入圣火，支援500年后对深渊的决战</td></tr>
+<tr><td>白沙皇</td><td>战死。接任的冰之女皇性情大变，成为不再爱人的神，创立了愚人众，并开始收集神之心</td></tr>
 </table>
-</div>
 
 </TimelineItem>
 
@@ -361,7 +355,7 @@ secondaryClass: "/nations"
 
 <Subtitle>·覆灭</Subtitle>
 
-若娜瓦前往坎瑞亚，给纯血坎瑞亚人降下不死诅咒。而其他血脉的国民遭遇荒野诅咒而变成丘丘人。艾弗提尔维特见证了她降下诅咒的开端。<Footnote n="7" text="<a href='https://www.bilibili.com/video/BV18tGHzoEyW/' target='_blank'>《原神·提瓦特篇》幕间PV-「神的局限性」_原神</a>"></Footnote>
+若娜瓦前往坎瑞亚，给纯血坎瑞亚人降下不死诅咒。而其他血脉的国民遭遇荒野诅咒而变成丘丘人。艾弗提尔维特见证了她降下诅咒的开端。<Footnote n="7" text="[《原神·提瓦特篇》幕间PV-「神的局限性」_原神](https://www.bilibili.com/video/BV18tGHzoEyW/)"></Footnote>
 
 黑日王朝最终覆灭，灾难突破了古国城墙，在大陆上散布开来。
 

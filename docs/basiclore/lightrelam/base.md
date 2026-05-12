@@ -7,51 +7,16 @@ secondaryClass: "/basiclore"
 
 <TextCenter>光界其代表的是原始元素力，也就是蛮荒元素力（燃素）。</TextCenter>
 
-<div class="w-full flex items-center justify-center">
-<table style="width: auto !important;">
-  <tr>
-    <th>位格</th>
-    <th>一代（光界之王）</th>
-    <th>二代（×龙之王）</th>
-  </tr>
-  <tr>
-    <td>龙族之王</td>
-    <td colspan="2">尼伯龙根</td>
-  </tr>
-  <tr>
-    <td>风龙王</td>
-    <td>？</td>
-    <td>特瓦林（塔兹拉克）</td>
-  </tr>
-  <tr>
-    <td>岩龙王</td>
-    <td>？（疑似也是若陀龙王）</td>
-    <td>若陀龙王</td>
-  </tr>
-  <tr>
-    <td>雷龙王</td>
-    <td colspan="2">？（卡帕奇莉疑似与雷龙王有关）</td>
-  </tr>
-  <tr>
-    <td>草龙王</td>
-    <td colspan="2">阿佩普</td>
-  </tr>
-  <tr>
-    <td>水龙王</td>
-    <td>？</td>
-    <td>那维莱特</td>
-  </tr>
-  <tr>
-    <td>火龙王</td>
-    <td colspan="2">修库特尔</td>
-  </tr>
-  <tr>
-    <td>冰龙王</td>
-    <td>？</td>
-    <td>？</td>
-  </tr>
-</table>
-</div>
+| 位格 | 一代（光界之王） | 二代（×龙之王） |
+|------|------------------|-------------------|
+| 龙族之王 | 尼伯龙根 | 尼伯龙根 |
+| 风龙王 | ？ | 特瓦林（塔兹拉克） |
+| 岩龙王 | ？（疑似也是若陀龙王） | 若陀龙王 |
+| 雷龙王 | ？（卡帕奇莉疑似与雷龙王有关） | ？（卡帕奇莉疑似与雷龙王有关） |
+| 草龙王 | 阿佩普 | 阿佩普 |
+| 水龙王 | ？ | 那维莱特 |
+| 火龙王 | 修库特尔 | 修库特尔 |
+| 冰龙王 | ？ | ？ |
 
 <MidTitle>相关文本</MidTitle>
 <Space :size="20"></Space>

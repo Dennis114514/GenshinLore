@@ -8,6 +8,7 @@
 # 将vitepress的缓存排除
 /docs/.vitepress/cache/
 /docs/.vitepress/dist/
+/docs/.vitepress/.temp/
 /script.py
 
 .tmp-vitepress-dev.log

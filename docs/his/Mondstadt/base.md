@@ -6,7 +6,7 @@ secondaryClass: "/nations"
 ---
 
 <TextCenter>
-<p style="text-align: center !important; font-family: 'Khaenriah', sans-serif;">mea libertas meus canor</p>
+<KhaenriahMotto>mea libertas meus canor</KhaenriahMotto>
 守护自由城邦千年的巨龙，
 <br>
 终于对自由产生了迷茫，
@@ -180,30 +180,28 @@ secondaryClass: "/nations"
 ## 三、3000 年前 -2600 年前 魔神战争<Footnote n="1" text="醉客轶事，古恩希尔德小传，凛风奔狼系列材料"></Footnote>
 
 <TimelineItem>
-<div class="table-container">
-<table class="lightrelam-table">
+<table>
 <tr>
 <td>迭卡拉庇安</td>
-<td class="text-left">高塔孤王、昏君</td>
+<td>高塔孤王、昏君</td>
 </tr>
 <tr>
 <td>安德留斯</td>
-<td class="text-left">北风王狼，疑似是「孤狼」</td>
+<td>北风王狼，疑似是「孤狼」</td>
 </tr>
 <tr>
 <td>玻瑞亚斯</td>
-<td class="text-left">安德留斯的残魂</td>
+<td>安德留斯的残魂</td>
 </tr>
 <tr>
 <td>伊斯塔露</td>
-<td class="text-left">时间之执政、时间魔神、至上四柱之一<br>东面望海的高崖上，先民将时间的主人与风的主人一同祭拜。<br>「风带来故事，时间使之发芽」</td>
+<td>时间之执政、时间魔神、至上四柱之一<br>东面望海的高崖上，先民将时间的主人与风的主人一同祭拜。<br>「风带来故事，时间使之发芽」</td>
 </tr>
 <tr>
 <td>温迪</td>
-<td class="text-left">它代表秘密，诞生自时间的枝杈，誊写繁荣与寂寥，见证了无所不在之神。<br>「我在想，如果有一天我能感动星海。那应该能唤来一场流星雨吧。啊，对了。这件风之翼就是星海的回应，是天上掉下来的，和你一样。」<br>「终点并不意味着一切，在抵达终点之前，用你的眼睛，多多观察这个世界吧。」<br>「但风向是会转变的。终有一天，会吹向更有光亮的方向。从今往后，带着我的祝福，活得更加从容一些吧。」</td>
+<td>它代表秘密，诞生自时间的枝杈，誊写繁荣与寂寥，见证了无所不在之神。<br>「我在想，如果有一天我能感动星海。那应该能唤来一场流星雨吧。啊，对了。这件风之翼就是星海的回应，是天上掉下来的，和你一样。」<br>「终点并不意味着一切，在抵达终点之前，用你的眼睛，多多观察这个世界吧。」<br>「但风向是会转变的。终有一天，会吹向更有光亮的方向。从今往后，带着我的祝福，活得更加从容一些吧。」</td>
 </tr>
 </table>
-</div>
 </TimelineItem>
 
 ### （一）安德留斯与狼族【待发现】
@@ -311,34 +309,32 @@ secondaryClass: "/nations"
 ### （一）孤王的统治
 
 <TimelineItem>
-<div class="table-container">
-<table class="lightrelam-table">
+<table>
 <tr>
 <td>「高塔孤王」<br>迭卡拉庇安</td>
-<td class="text-left">龙卷的魔神，蒙德的统治者</td>
+<td>龙卷的魔神，蒙德的统治者</td>
 </tr>
 <tr>
 <td>「无名少年」</td>
-<td class="text-left">吟游诗人</td>
+<td>吟游诗人</td>
 </tr>
 <tr>
 <td>「风精灵」<br>温迪</td>
-<td class="text-left">千风之中的精灵</td>
+<td>千风之中的精灵</td>
 </tr>
 <tr>
 <td>「女射手」<br>阿莫斯</td>
-<td class="text-left">阿莫斯之弓的主人，单向爱着孤王</td>
+<td>阿莫斯之弓的主人，单向爱着孤王</td>
 </tr>
 <tr>
 <td>「骑士」<br>古恩希尔德</td>
-<td class="text-left">流民首领</td>
+<td>流民首领</td>
 </tr>
 <tr>
 <td>「红发流浪战士」<br>莱艮芬德</td>
-<td class="text-left">为孤王清理反叛者，后成为反叛者</td>
+<td>为孤王清理反叛者，后成为反叛者</td>
 </tr>
 </table>
-</div>
 </TimelineItem>
 
 <TimelineItem>
@@ -515,7 +511,7 @@ secondaryClass: "/nations"
 
 <TimelineItem>
 
-<Subtitle>·战争爆发<Footnote n="1" text="<a href='https://www.bilibili.com/video/BV1JV411m7tc/' target='_blank'>《原神》剧情PV-「微风与少年」_哔哩哔哩_bilibili</a>"></Footnote></Subtitle>
+<Subtitle>·战争爆发<Footnote n="1" text="[《原神》剧情PV-「微风与少年」_哔哩哔哩_bilibili](https://www.bilibili.com/video/BV1JV411m7tc/)"></Footnote></Subtitle>
 
 蒙德爆发了追求「自由」的战争。羽毛藏在温迪怀中，随他一同在反抗的硝烟里见识了乖僻的君王之殁。君王曾为臣子们提供没有苦寒的城市。直到最后，他都以为众臣爱他，一如他爱他们。
 
@@ -670,30 +666,28 @@ secondaryClass: "/nations"
 ### （二）各大家族<Footnote n="1" text="祭礼系列武器"></Footnote>
 
 <TimelineItem>
-<div class="table-container">
-<table class="lightrelam-table">
+<table>
 <tr>
 <th>家族</th>
 <th>介绍</th>
 </tr>
 <tr>
 <td>古恩希尔德家族</td>
-<td class="text-left">象征守护。献给时间之风的祭礼戏剧，总共有三幕。终幕讲述的是守护者，守护生命与自由的故事。古恩希尔德一族至今仍在扮演守护者。<br>古恩希尔德的家训：「永护蒙德」</td>
+<td>象征守护。献给时间之风的祭礼戏剧，总共有三幕。终幕讲述的是守护者，守护生命与自由的故事。古恩希尔德一族至今仍在扮演守护者。<br>古恩希尔德的家训：「永护蒙德」</td>
 </tr>
 <tr>
 <td>伊蒙洛卡家族</td>
-<td class="text-left">在祭礼中他们饰演被血染黑，厮杀奋战的斗士。伊蒙洛卡一族认为，战斗不是为保卫、荣耀或开拓，而是为了取悦天上那些无可消遣的众神。无论来者是魔物也好，贼匪也好，不论自己是否能回到恋人的臂弯里，只要浴血奋战，在厮杀中高声咆哮，职责便完成了。如此惘然的血脉，本应无法在历史中长久延续，因为他们的战斗没有终结，也没有胜利的希望。但随着冰雪消融、蒙德建立，他们最终有了值得守护的对象。</td>
+<td>在祭礼中他们饰演被血染黑，厮杀奋战的斗士。伊蒙洛卡一族认为，战斗不是为保卫、荣耀或开拓，而是为了取悦天上那些无可消遣的众神。无论来者是魔物也好，贼匪也好，不论自己是否能回到恋人的臂弯里，只要浴血奋战，在厮杀中高声咆哮，职责便完成了。如此惘然的血脉，本应无法在历史中长久延续，因为他们的战斗没有终结，也没有胜利的希望。但随着冰雪消融、蒙德建立，他们最终有了值得守护的对象。</td>
 </tr>
 <tr>
 <td>劳伦斯家族</td>
-<td class="text-left">贵族<br>善于用剑，贬低枪（所以蒙德只有罗莎莉亚用枪）<br>梵尼拉睿是劳伦斯领袖，打造风神像</td>
+<td>贵族<br>善于用剑，贬低枪（所以蒙德只有罗莎莉亚用枪）<br>梵尼拉睿是劳伦斯领袖，打造风神像</td>
 </tr>
 <tr>
 <td>莱艮芬德家族</td>
-<td class="text-left">古旧尖塔的废墟之上，在获得新生的人们的欢呼、合歌与泪水中，有一名红发战士背向初生的新神，如浪潮中的雨滴般隐没在人群里。他是以风之花传递暗语的先行者，在黎明前漫长的暗夜中编织晨曦。其名早已湮没于流转的时光中。但此人的作为，在诗篇中传唱不息。千年后，另一名红发骑士追随他的脚步，照亮宗室贵胄涂黑的历史。就如同「风之花」的命运一般：在重压之下、不得不奋起时才绽放，这一族的宿命恐怕永远不会变：身居至暗的黑夜，带来破晓的火光…</td>
+<td>古旧尖塔的废墟之上，在获得新生的人们的欢呼、合歌与泪水中，有一名红发战士背向初生的新神，如浪潮中的雨滴般隐没在人群里。他是以风之花传递暗语的先行者，在黎明前漫长的暗夜中编织晨曦。其名早已湮没于流转的时光中。但此人的作为，在诗篇中传唱不息。千年后，另一名红发骑士追随他的脚步，照亮宗室贵胄涂黑的历史。就如同「风之花」的命运一般：在重压之下、不得不奋起时才绽放，这一族的宿命恐怕永远不会变：身居至暗的黑夜，带来破晓的火光…</td>
 </tr>
 </table>
-</div>
 </TimelineItem>
 
 ### （三）1000年前 贵族专政时期<Footnote n="1" text="饰铁之花，风信之锋，决斗之枪，笛剑，绝弦，流浪乐章，暗巷系列武器，宗室系列武器，黎明破晓之史，四风原典，苍古自由之誓，松籁响起之时，终末嗟叹之诗&#10;流浪大地的乐团，昔日宗室之仪，&#10;侍从骑士之歌，温妮莎传奇，与神性同行，列王与宗室史&#10;原神project 漫画"></Footnote>
@@ -811,38 +805,36 @@ secondaryClass: "/nations"
 ### 2.流浪乐团
 
 <TimelineItem>
-<div class="table-container">
-<table class="lightrelam-table">
+<table>
 <tr>
 <th>人物</th>
 <th>介绍</th>
 </tr>
 <tr>
 <td>（最初的）克留兹理德</td>
-<td class="text-left">劳伦斯贵族，参与叛乱，组建地下组织<br>在那个无法看见破晓曙光的时代，「克留兹理德」一词渐渐成了所有起事失败者的代称，因此，最终也成为了叛逆抗争者共通的旗号。</td>
+<td>劳伦斯贵族，参与叛乱，组建地下组织<br>在那个无法看见破晓曙光的时代，「克留兹理德」一词渐渐成了所有起事失败者的代称，因此，最终也成为了叛逆抗争者共通的旗号。</td>
 </tr>
 <tr>
 <td>「晨光」</td>
-<td class="text-left">剑舞者，后沦为贵族的决斗奴</td>
+<td>剑舞者，后沦为贵族的决斗奴</td>
 </tr>
 <tr>
 <td>莱艮芬德</td>
-<td class="text-left">侍从骑士，后成为晨曦骑士</td>
+<td>侍从骑士，后成为晨曦骑士</td>
 </tr>
 <tr>
 <td>琴师</td>
-<td class="text-left">琴师，来自华美绚烂的异国枫丹，他行遍多国寻找自己的真心与命运。</td>
+<td>琴师，来自华美绚烂的异国枫丹，他行遍多国寻找自己的真心与命运。</td>
 </tr>
 <tr>
 <td>伊娜丝</td>
-<td class="text-left">羽球节少女</td>
+<td>羽球节少女</td>
 </tr>
 <tr>
 <td>「无名牧者」</td>
-<td class="text-left"></td>
+<td></td>
 </tr>
 </table>
-</div>
 </TimelineItem>
 
 <TimelineItem>
@@ -950,30 +942,28 @@ secondaryClass: "/nations"
 ### 3.侠盗和魔女
 
 <TimelineItem>
-<div class="table-container">
-<table class="lightrelam-table">
+<table>
 <tr>
 <th>人物</th>
 <th>介绍</th>
 </tr>
 <tr>
 <td>帕西法尔</td>
-<td class="text-left">贵族，成为暗巷侠盗，铁蜂刺主人</td>
+<td>贵族，成为暗巷侠盗，铁蜂刺主人</td>
 </tr>
 <tr>
 <td>普莉希拉</td>
-<td class="text-left">魔女，流月针主人<br>设计这种长枪的少女，据说能看见注定终结生命的死之隙。死之隙就像有魔力一般，会将她手中如针细的枪尖吸过去。「或许万物都期许死亡吧」能看见万物之死，却没有死之隙的少女心想。</td>
+<td>魔女，流月针主人<br>设计这种长枪的少女，据说能看见注定终结生命的死之隙。死之隙就像有魔力一般，会将她手中如针细的枪尖吸过去。「或许万物都期许死亡吧」能看见万物之死，却没有死之隙的少女心想。</td>
 </tr>
 <tr>
 <td>厄伯哈特</td>
-<td class="text-left">和帕同父异母的胞弟，西风逆子，使枪的贵族子弟。传说厄伯哈特曾藉着至夜的轻风，以枪尖挑起初凝的清露。<br>魔女的徒弟，后来杀死魔女以斩草除根。</td>
+<td>和帕同父异母的胞弟，西风逆子，使枪的贵族子弟。传说厄伯哈特曾藉着至夜的轻风，以枪尖挑起初凝的清露。<br>魔女的徒弟，后来杀死魔女以斩草除根。</td>
 </tr>
 <tr>
 <td>角斗士</td>
-<td class="text-left">厄伯哈特的奴隶</td>
+<td>厄伯哈特的奴隶</td>
 </tr>
 </table>
-</div>
 </TimelineItem>
 
 <TimelineItem>
@@ -1230,7 +1220,7 @@ secondaryClass: "/nations"
 
 <QuoteBlock>
 
-《西风骑士团军歌》<Footnote n="1" text="编者注：这首歌是由无名流浪骑士（初代北风骑士）带来的歌谣，后在骑士团传唱至今。歌词与翻译源于<a href='https://www.bilibili.com/video/BV1j5kFBwEad/' target='_blank'>法尔加和蒙德远征军唱了什么？原神德语歌曲听译详解_哔哩哔哩bilibili_原神_游戏杂谈</a>"></Footnote>
+《西风骑士团军歌》<Footnote n="1" text="编者注：这首歌是由无名流浪骑士（初代北风骑士）带来的歌谣，后在骑士团传唱至今。歌词与翻译源于[法尔加和蒙德远征军唱了什么？原神德语歌曲听译详解_哔哩哔哩bilibili_原神_游戏杂谈](https://www.bilibili.com/video/BV1j5kFBwEad/)"></Footnote>
 
 Liebling,komm und tanz' mit mir in dieser Nacht
 
@@ -1347,12 +1337,11 @@ Bis der Falke fliegt, im Morgenglanz
 <Subtitle>·四风守护</Subtitle>
 
 <TimelineItem>
-<div class="table-container">
-<table class="lightrelam-table">
+<table>
 <thead>
 <tr>
 <th></th>
-<th>1000年前<Footnote n="1" text="<a href='https://www.bilibili.com/video/BV1xk4y117tg/' target='_blank'>《原神》温迪角色PV-「四方之风」_哔哩哔哩_bilibili，此为1000年前的四风守护</a>"></Footnote></th>
+<th>1000年前<Footnote n="1" text="[《原神》温迪角色PV-「四方之风」_哔哩哔哩_bilibili，此为1000年前的四风守护](https://www.bilibili.com/video/BV1xk4y117tg/)"></Footnote></th>
 <th>500年前<Footnote n="2" text="西风系列武器"></Footnote></th>
 </tr>
 </thead>
@@ -1423,7 +1412,6 @@ Bis der Falke fliegt, im Morgenglanz
 </tr>
 </tbody>
 </table>
-</div>
 </TimelineItem>
 
 </TimelineItem>
@@ -1807,8 +1795,7 @@ Bis der Falke fliegt, im Morgenglanz
 ### *灾变之后的蒙德编制
 
 <TimelineItem>
-<div class="table-container">
-<table class="lightrelam-table">
+<table>
 <thead>
 <tr>
 <th>单位</th>
@@ -1949,7 +1936,6 @@ Bis der Falke fliegt, im Morgenglanz
 </tr>
 </tbody>
 </table>
-</div>
 </TimelineItem>
 
 ### （一）阿贝多
@@ -2006,7 +1992,7 @@ Bis der Falke fliegt, im Morgenglanz
 
 <TimelineItem>
 
-<Subtitle>·后续<Footnote n="1" text="<a href='https://www.bilibili.com/video/BV1Eu4y1p7EU/?spm_id_from=333.1387.upload.video_card.click&vd_source=5521f8f34a1af08d13b6fcf39bf4506b' target='_blank'>《原神》剧情 PV-「清泉之心」</a>"></Footnote></Subtitle>
+<Subtitle>·后续<Footnote n="1" text="[《原神》剧情 PV-「清泉之心」](https://www.bilibili.com/video/BV1Eu4y1p7EU/?spm_id_from=333.1387.upload.video_card.click&vd_source=5521f8f34a1af08d13b6fcf39bf4506b)"></Footnote></Subtitle>
 
 </TimelineItem>
 
@@ -2029,26 +2015,24 @@ Bis der Falke fliegt, im Morgenglanz
 ### （四）迪卢克、凯亚及其他主要人物<Footnote n="1" text="原神project漫画"></Footnote>
 
 <TimelineItem>
-<div class="table-container">
-<table class="lightrelam-table">
+<table>
 <tr>
 <th>人物</th>
 <th>介绍</th>
 </tr>
 <tr>
 <td>克利普斯</td>
-<td class="text-left">迪卢克的父亲，收养凯亚</td>
+<td>迪卢克的父亲，收养凯亚</td>
 </tr>
 <tr>
 <td>迪卢克</td>
-<td class="text-left">前任骑兵队长</td>
+<td>前任骑兵队长</td>
 </tr>
 <tr>
 <td>凯亚</td>
-<td class="text-left">坎瑞亚末裔<br>现任骑兵队长（一共有十位队长）亚尔伯里奇家族</td>
+<td>坎瑞亚末裔<br>现任骑兵队长（一共有十位队长）亚尔伯里奇家族</td>
 </tr>
 </table>
-</div>
 </TimelineItem>
 
 <TimelineItem>
@@ -2279,11 +2263,10 @@ Bis der Falke fliegt, im Morgenglanz
 
 </TimelineItem>
 
-### （五）魔女会【待发现】<Footnote n="1" text="<a href='https://www.bilibili.com/video/BV1z84y1P7FY/?spm_id_from=333.1387.upload.video_card.click&vd_source=5521f8f34a1af08d13b6fcf39bf4506b' target='_blank'>《原神》剧情 PV-「魔女的茶会」_游戏热门视频</a>"></Footnote>
+### （五）魔女会【待发现】<Footnote n="1" text="[《原神》剧情 PV-「魔女的茶会」_游戏热门视频](https://www.bilibili.com/video/BV1z84y1P7FY/?spm_id_from=333.1387.upload.video_card.click&vd_source=5521f8f34a1af08d13b6fcf39bf4506b)"></Footnote>
 
 <TimelineItem>
-<div class="table-container">
-<table class="lightrelam-table">
+<table>
 <tr>
 <th>魔女</th>
 <th>介绍</th>
@@ -2291,41 +2274,40 @@ Bis der Falke fliegt, im Morgenglanz
 </tr>
 <tr>
 <td>｢A｣ 艾莉丝</td>
-<td class="text-left">边界守护者，以四叶草为标志<br>「诸世界的大冒险家」<br>「很坏很坏的大魔王」<br>「旧蒙德的守护者」<br>「提瓦特游览指南作者」<br>「鲸井流手鞠术的宗家」<br>「大名鼎鼎的桑歌玛哈巴依老爷的供货商」<br>「最可爱的可莉的妈妈」</td>
+<td>边界守护者，以四叶草为标志<br>「诸世界的大冒险家」<br>「很坏很坏的大魔王」<br>「旧蒙德的守护者」<br>「提瓦特游览指南作者」<br>「鲸井流手鞠术的宗家」<br>「大名鼎鼎的桑歌玛哈巴依老爷的供货商」<br>「最可爱的可莉的妈妈」</td>
 <td>克莱纳（丈夫）<br>可莉（女儿）</td>
 </tr>
 <tr>
 <td>｢B｣ 芭比洛斯·崔斯梅姬斯图斯</td>
-<td class="text-left">老太婆，占星术士</td>
+<td>老太婆，占星术士</td>
 <td>莫娜（徒弟）</td>
 </tr>
 <tr>
 <td>｢J｣ 约安娜·伊万诺夫娜·N</td>
-<td class="text-left">至冬人类<br>已婚（在风花节结婚），结束了丈夫的痛苦</td>
+<td>至冬人类<br>已婚（在风花节结婚），结束了丈夫的痛苦</td>
 <td>斯嘉莉（继承人）</td>
 </tr>
 <tr>
 <td>｢M｣ 安雅·玛丽·安德斯多特</td>
-<td class="text-left">人类（寿命不长），已婚<br>《野猪公主》的作者，撰写了杜林的故事</td>
+<td>人类（寿命不长），已婚<br>《野猪公主》的作者，撰写了杜林的故事</td>
 <td>小杜林（创造的故事人物）</td>
 </tr>
 <tr>
 <td>｢N｣ 尼可·莱恩</td>
-<td class="text-left">天使，在乎方向<br>能凭空在他人脑内说话，当世界发生变动，就能如先知般暗示人们真相</td>
+<td>天使，在乎方向<br>能凭空在他人脑内说话，当世界发生变动，就能如先知般暗示人们真相</td>
 <td></td>
 </tr>
 <tr>
 <td>「O」 欧科塔维亚</td>
-<td class="text-left">能穿越星海，创造了千星奇域</td>
+<td>能穿越星海，创造了千星奇域</td>
 <td>千星人偶</td>
 </tr>
 <tr>
 <td>「R」 莱茵多特</td>
-<td class="text-left">坎瑞亚人，擅长炼金术</td>
+<td>坎瑞亚人，擅长炼金术</td>
 <td>造物：阿贝多、巴窟纳瓦、厄里那斯、魔龙杜林</td>
 </tr>
 </table>
-</div>
 </TimelineItem>
 
 </TimelineWrapper>

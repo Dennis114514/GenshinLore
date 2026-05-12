@@ -6,7 +6,7 @@ secondaryClass: "/nations"
 ---
 
 <TextCenter>
-<p style="text-align: center !important; font-family: 'Khaenriah', sans-serif;">sub floreis lumen sagacitatis</p>
+<KhaenriahMotto>sub floreis lumen sagacitatis</KhaenriahMotto>
 智慧
 <br>
 是智慧之神的敌人，
@@ -19,7 +19,7 @@ secondaryClass: "/nations"
 <br>
 而神的**智慧**
 <br>
-对此并无意见。<Footnote n="1" text="<a href='https://www.bilibili.com/video/BV1At4y1q7UQ/' target='_blank'>《原神·提瓦特篇》主线章节预告PV-「足迹」_哔哩哔哩_bilibili</a>"></Footnote>
+对此并无意见。<Footnote n="1" text="[《原神·提瓦特篇》主线章节预告PV-「足迹」_哔哩哔哩_bilibili](https://www.bilibili.com/video/BV1At4y1q7UQ/)"></Footnote>
 <br>
 <Space :size="14"></Space>
 我做了一个很长很长的梦…
@@ -202,18 +202,12 @@ secondaryClass: "/nations"
 ## 三、乐土瓦利·韦杰
 
 <TimelineItem>
-<div class="table-container">
-<table class="lightrelam-table">
-<colgroup>
-<col style="width:25%">
-<col style="width:75%">
-</colgroup>
+<table>
 <tr><th>人物</th><th>介绍</th></tr>
-<tr><td>「花神」<br/>娜布·玛莉卡塔 <Footnote n="6" text="介绍出自绿洲花园系列材料。编者注：娜布·玛莉卡塔为俗称，花神的魔神名未知。"></Footnote></td><td class="text-left">「白银的月亮」，欢乐与幸福之主梦的主人，天使<br/>花的王者是欢乐与幸福之主。清泉从她的袖口涌流而出，沙漠中便有了百花盛开的绿洲；鲜花与香草紧随着她的脚步，银白的月光为她开道。欢宴属于鲜花与月夜的女主人。<br/>在高天转过脸去的艰苦时代，她为凡人遍洒恩惠。<br/>「安乐和平，统一的无忧乐园中无分彼此，亦无有灾祸…」「真希望此刻蜃楼般的幸福能化作永恒，再无分离之苦。」<br/>「有尽的欢愉终以苦涩作结，」「蜜般甘美的回忆烟消云散。」</td></tr>
-<tr><td>「赤王」<br/>阿赫玛尔/<br/>阿蒙 <Footnote n="7" text="编者注：阿赫玛尔为俗称，阿蒙为魔神名。"></Footnote></td><td class="text-left">神王，「黄金的太阳」，生者和王者的引路人，天空遗落的子嗣<br/>决心要在地上建造理想国（无法老去的梦想），让一切悲伤从此消失；在沙漠一隅构建了前所未见的大绿洲；耗尽智性与气力在沙中建成了永恒的蜃气楼。<br/>约定相互提醒的挚友先染上了遗忘的恶疾。如果主宰记忆的器官已经太过残破无法复原，那带上另一位老友，一同在过往的梦中生活，在小树屋中玩耍，在无限深远的密林中探险，那也不错。在梦中，谁都有重新开始的机会。<br/>依照未完全忘却的旧梦中描绘的三人、三精灵的形象，以及被学院所流逐的狂医（博士）留下的记录与猜想，去捕获梦想——捕获能操控梦想的林中居民（兰那罗），让挚友再度想起自己的形象与一同的记忆吧。首先要捕获那些梦中的精灵。那些佣兵曾经为我做过很多。这次应该也不会让我失望吧。</td></tr>
-<tr><td>「大慈树王」 <Footnote n="8" text="千夜浮梦。编者注：大慈树王的魔神名未知。"></Footnote></td><td class="text-left">树木的神，「翡翠的绿洲」王女昨日的拥有者，初代草神<br/>生命属于草木的养主，散布草木与绿茵，让土地充满智识与幸福。永无穷尽的智慧将文明捍卫，人们会因它回归而欢欣。<br/>御苑堙坠之刻，从未知晓过「光明」的少女，在梦中聆见了她的轻语。原本下定决心，伴着「梦」一同离去的孩子，在泪中睹见了她的慈恻。苍翠的灯盏浮映静邃的月光，将繁星的掠影与那永世的歌谣一并述撰——<br/>碧瞳的舞姬轻吻垂蜜的绸缎，白红蓝黄的鱼儿在珍珠般的净水中翩转，夜行的乐师挈引镇灵的烛炬，咏叹沙海中镀金的城塞与石榴色的锦弦，敏辩的水手踏上荣耀的远航，只为探寻梦里的歌声与彼岸葱蔚的花园。宁静的灯火照亮倾陨的御苑，伴着一千个世界的瑰幻之梦在灯中萦旋，轻柔的林风吹开覆尘的归径，引领迷失的孩子走出那不再安谧的宫殿。渐明的天光漏落细碎的叶间，那述说千夜之梦的苍翠灯盏却愈发黯淡：<br/>直至她似梦似醒时蓦然回首，目盲的少女才发觉群森不复、破晓已至。那梦中的灯盏自此不再闪烁，旧夜的梦也被荏苒的时光吞没，迎来曙光的鸟儿却依然歌唱，歌唱如繁花般粲然绽放的绮谈，为那些不曾将梦目睹的孩子，赠予期许的勇气、希望与欢乐，纺织那永无终结的千夜之歌，点亮静候破晓之时的一夜灯火。渡越千夜的迷梦，直至夜莺不再鸣唱，直至暮日再度沉落，<br/>行至终焉的旅人再度见到了那苍翠的灯盏，那遥远的故国，沾露的蔷薇依然在沐月的风中轻曳，待她将新的故事述说：<br/>「纵然昨夜的回忆永不再，我们仍要为今夜的美梦欢歌。」</td></tr>
+<tr><td>「花神」<br/>娜布·玛莉卡塔 <Footnote n="6" text="介绍出自绿洲花园系列材料。编者注：娜布·玛莉卡塔为俗称，花神的魔神名未知。"></Footnote></td><td>「白银的月亮」，欢乐与幸福之主梦的主人，天使<br/>花的王者是欢乐与幸福之主。清泉从她的袖口涌流而出，沙漠中便有了百花盛开的绿洲；鲜花与香草紧随着她的脚步，银白的月光为她开道。欢宴属于鲜花与月夜的女主人。<br/>在高天转过脸去的艰苦时代，她为凡人遍洒恩惠。<br/>「安乐和平，统一的无忧乐园中无分彼此，亦无有灾祸…」「真希望此刻蜃楼般的幸福能化作永恒，再无分离之苦。」<br/>「有尽的欢愉终以苦涩作结，」「蜜般甘美的回忆烟消云散。」</td></tr>
+<tr><td>「赤王」<br/>阿赫玛尔/<br/>阿蒙 <Footnote n="7" text="编者注：阿赫玛尔为俗称，阿蒙为魔神名。"></Footnote></td><td>神王，「黄金的太阳」，生者和王者的引路人，天空遗落的子嗣<br/>决心要在地上建造理想国（无法老去的梦想），让一切悲伤从此消失；在沙漠一隅构建了前所未见的大绿洲；耗尽智性与气力在沙中建成了永恒的蜃气楼。<br/>约定相互提醒的挚友先染上了遗忘的恶疾。如果主宰记忆的器官已经太过残破无法复原，那带上另一位老友，一同在过往的梦中生活，在小树屋中玩耍，在无限深远的密林中探险，那也不错。在梦中，谁都有重新开始的机会。<br/>依照未完全忘却的旧梦中描绘的三人、三精灵的形象，以及被学院所流逐的狂医（博士）留下的记录与猜想，去捕获梦想——捕获能操控梦想的林中居民（兰那罗），让挚友再度想起自己的形象与一同的记忆吧。首先要捕获那些梦中的精灵。那些佣兵曾经为我做过很多。这次应该也不会让我失望吧。</td></tr>
+<tr><td>「大慈树王」 <Footnote n="8" text="千夜浮梦。编者注：大慈树王的魔神名未知。"></Footnote></td><td>树木的神，「翡翠的绿洲」王女昨日的拥有者，初代草神<br/>生命属于草木的养主，散布草木与绿茵，让土地充满智识与幸福。永无穷尽的智慧将文明捍卫，人们会因它回归而欢欣。<br/>御苑堙坠之刻，从未知晓过「光明」的少女，在梦中聆见了她的轻语。原本下定决心，伴着「梦」一同离去的孩子，在泪中睹见了她的慈恻。苍翠的灯盏浮映静邃的月光，将繁星的掠影与那永世的歌谣一并述撰——<br/>碧瞳的舞姬轻吻垂蜜的绸缎，白红蓝黄的鱼儿在珍珠般的净水中翩转，夜行的乐师挈引镇灵的烛炬，咏叹沙海中镀金的城塞与石榴色的锦弦，敏辩的水手踏上荣耀的远航，只为探寻梦里的歌声与彼岸葱蔚的花园。宁静的灯火照亮倾陨的御苑，伴着一千个世界的瑰幻之梦在灯中萦旋，轻柔的林风吹开覆尘的归径，引领迷失的孩子走出那不再安谧的宫殿。渐明的天光漏落细碎的叶间，那述说千夜之梦的苍翠灯盏却愈发黯淡：<br/>直至她似梦似醒时蓦然回首，目盲的少女才发觉群森不复、破晓已至。那梦中的灯盏自此不再闪烁，旧夜的梦也被荏苒的时光吞没，迎来曙光的鸟儿却依然歌唱，歌唱如繁花般粲然绽放的绮谈，为那些不曾将梦目睹的孩子，赠予期许的勇气、希望与欢乐，纺织那永无终结的千夜之歌，点亮静候破晓之时的一夜灯火。渡越千夜的迷梦，直至夜莺不再鸣唱，直至暮日再度沉落，<br/>行至终焉的旅人再度见到了那苍翠的灯盏，那遥远的故国，沾露的蔷薇依然在沐月的风中轻曳，待她将新的故事述说：<br/>「纵然昨夜的回忆永不再，我们仍要为今夜的美梦欢歌。」</td></tr>
 </table>
-</div>
 </TimelineItem>
 
 ### （一）结盟 <Footnote n="9" text="浮槃歌卷"></Footnote>
@@ -545,15 +539,13 @@ secondaryClass: "/nations"
 ## 四、奥尔玛兹时期 <Footnote n="12" text="沙上楼阁史话，希鲁伊和希琳的故事"></Footnote>
 
 <TimelineItem>
-<div class="table-container">
-<table class="lightrelam-table">
-<tr><td>奥尔玛兹藩王</td><td class="text-left">镀金藩王</td></tr>
-<tr><td>大镇灵利露帕尔</td><td class="text-left">睡莲之女，其子嗣都是月神的宠儿</td></tr>
-<tr><td>希琳</td><td class="text-left">利露帕尔的女儿</td></tr>
-<tr><td>帕维兹拉万</td><td class="text-left">基斯拉，奥的义子，利的亲儿子，最强大的藩王</td></tr>
-<tr><td>希鲁伊</td><td class="text-left">胡拉姆丁，帕的儿子，蒙面王</td></tr>
+<table>
+<tr><td>奥尔玛兹藩王</td><td>镀金藩王</td></tr>
+<tr><td>大镇灵利露帕尔</td><td>睡莲之女，其子嗣都是月神的宠儿</td></tr>
+<tr><td>希琳</td><td>利露帕尔的女儿</td></tr>
+<tr><td>帕维兹拉万</td><td>基斯拉，奥的义子，利的亲儿子，最强大的藩王</td></tr>
+<tr><td>希鲁伊</td><td>胡拉姆丁，帕的儿子，蒙面王</td></tr>
 </table>
-</div>
 </TimelineItem>
 
 ### （一）奥尔玛兹藩王
@@ -742,18 +734,16 @@ secondaryClass: "/nations"
 
 <TimelineItem>
 
-<div class="table-container">
-<table class="lightrelam-table">
+<table>
 <tr><th>臣子</th><th>介绍</th></tr>
-<tr><td>公羊之王赫里沙夫</td><td class="text-left">赤土的副王、七贤之首、众相之相</td></tr>
-<tr><td>圣者贝努</td><td class="text-left">那飞向太阳的鸟、王之心魂</td></tr>
-<tr><td>圣者谢斯芬赫</td><td class="text-left">那狮身人面者、王之意志</td></tr>
-<tr><td>鳄之王索贝克</td><td class="text-left">统帅，统御战争兵器</td></tr>
-<tr><td>鹮之王图特</td><td class="text-left">书记，其使者是阿舍鲁，发明了沙漠文字和魔法</td></tr>
-<tr><td>赫曼努比斯</td><td class="text-left">众贤之至贤、沙漠贤人（提纳勒勇士）、祭司集团的上首</td></tr>
-<tr><td>阿赫·阿佩普</td><td class="text-left">最后获授王之血肉却从不觉得自己位列七贤的龙</td></tr>
+<tr><td>公羊之王赫里沙夫</td><td>赤土的副王、七贤之首、众相之相</td></tr>
+<tr><td>圣者贝努</td><td>那飞向太阳的鸟、王之心魂</td></tr>
+<tr><td>圣者谢斯芬赫</td><td>那狮身人面者、王之意志</td></tr>
+<tr><td>鳄之王索贝克</td><td>统帅，统御战争兵器</td></tr>
+<tr><td>鹮之王图特</td><td>书记，其使者是阿舍鲁，发明了沙漠文字和魔法</td></tr>
+<tr><td>赫曼努比斯</td><td>众贤之至贤、沙漠贤人（提纳勒勇士）、祭司集团的上首</td></tr>
+<tr><td>阿赫·阿佩普</td><td>最后获授王之血肉却从不觉得自己位列七贤的龙</td></tr>
 </table>
-</div>
 
 ·鳄之王和鹮之王素来争论不休，而那日他们争论着事物的转变。鳄之王寻来了身怀妙术的人。此人被留住此处的纯水精灵祝福，任何液体经过他的手，都会自行转变，直到比例恰当，化为美酒琼浆。鹮之王则寻来了另一个异士。他误触了古老魔神的尸骸与坟冢，因此被诅咒，双手触碰之物会逐渐变成纯银——毕竟今日来看，变化黄金与摩拉乃是仅属贵金之神的伟业。两人打赌究竟哪种不可思议之变化会最终胜出。他们也让赫曼努比斯——也就是最后一位要提到的七贤——来猜测结果。
 
@@ -765,7 +755,7 @@ secondaryClass: "/nations"
 
 </TimelineItem>
 
-### （四）灾祸 <Footnote n="14" text="<a href='https://www.bilibili.com/video/BV1MP411J7Zn/' target='_blank'>《原神》剧情PV-「沙中遗事」_原神</a>"></Footnote> <Footnote n="15" text="阿赫玛尔的故事，饰金之梦，烈日威权系列材料"></Footnote>
+### （四）灾祸 <Footnote n="14" text="[《原神》剧情PV-「沙中遗事」_原神](https://www.bilibili.com/video/BV1MP411J7Zn/)"></Footnote> <Footnote n="15" text="阿赫玛尔的故事，饰金之梦，烈日威权系列材料"></Footnote>
 
 <TimelineItem>
 
@@ -888,31 +878,29 @@ secondaryClass: "/nations"
 ## 五、沙漠群王时期 <Footnote n="16" text="玛海菈的水色，西福斯的月光，流浪的晚星，图莱杜拉的回忆，圣显之钥，裁叶萃光，苇海信标，真语秘匣"></Footnote>
 
 <TimelineItem>
-<div class="table-container">
-<table class="lightrelam-table">
+<table>
 <tr><th>派别</th><th>人物</th><th>介绍</th></tr>
-<tr><td>月女城·阿依哈努姆</td><td>镇灵</td><td class="text-left">月女城原本的统治者，灾祸之后被遗忘</td></tr>
-<tr><td></td><td>**迦尔沙斯普/穆阿扎姆哈冈**</td><td class="text-left">镇守月女城阿伊哈努姆</td></tr>
-<tr><td>居尔城</td><td>胡拉姆丁/希鲁伊</td><td class="text-left">蒙面王</td></tr>
-<tr><td></td><td>**卡乌斯巴依/兰沙赫尔王**</td><td class="text-left">胡拉姆丁的后裔</td></tr>
-<tr><td></td><td>阿塔希尔</td><td class="text-left">兰沙赫尔王的儿子</td></tr>
-<tr><td>蓝宝石城·图莱杜拉·提纳勒人</td><td>呼玛云/库列甘王</td><td class="text-left">娶了兰沙赫尔王的女儿，所以是兰沙赫尔王的女婿</td></tr>
-<tr><td></td><td>**古达尔兹/撒勒布·道莱王**</td><td class="text-left">「居尔的大王」</td></tr>
-<tr><td></td><td>霍杰尔王子</td><td class="text-left">道莱王的儿子</td></tr>
-<tr><td>勇士之城·萨勒赫·赛莫德人</td><td>图尔</td><td class="text-left">图兰哈冈恶贼</td></tr>
-<tr><td></td><td>**迦尔沙斯普/穆阿扎姆哈冈**</td><td class="text-left">曾镇守月女城阿伊哈努姆</td></tr>
-<tr><td>港城·奥尔迦娜</td><td>**穆扎法尔代伊**</td><td class="text-left">二十九代伊盟主</td></tr>
-<tr><td></td><td>祖玛鲁德</td><td class="text-left">穆扎法尔代伊的儿子、绿之王</td></tr>
-<tr><td></td><td>穆祖丁王子</td><td class="text-left">祖玛鲁德之子，巴达那的兄长，被巴达那推翻</td></tr>
-<tr><td></td><td>**巴达那王子/暴君**</td><td class="text-left">祖玛鲁德之子，后来的暴君</td></tr>
-<tr><td></td><td>**法拉玛兹**</td><td class="text-left">巴达那的儿子</td></tr>
-<tr><td></td><td>**玛海菈舞女**</td><td class="text-left">镇灵的女儿、舞女<br/>曾是巴达那的姬妾<br/>实际上是西福斯的情人</td></tr>
-<tr><td></td><td>**西福斯**</td><td class="text-left">穆祖丁的儿子，金瞳，因暴君的统治沦为奴隶</td></tr>
-<tr><td></td><td>老诗人</td><td class="text-left">西福斯的师父，被巴达那挖去眼睛</td></tr>
-<tr><td></td><td>戈拉兹国舅</td><td class="text-left">法拉玛兹的叔父</td></tr>
-<tr><td></td><td>瓦拉什</td><td class="text-left">相国，亦为图莱杜拉城主</td></tr>
+<tr><td>月女城·阿依哈努姆</td><td>镇灵</td><td>月女城原本的统治者，灾祸之后被遗忘</td></tr>
+<tr><td></td><td>**迦尔沙斯普/穆阿扎姆哈冈**</td><td>镇守月女城阿伊哈努姆</td></tr>
+<tr><td>居尔城</td><td>胡拉姆丁/希鲁伊</td><td>蒙面王</td></tr>
+<tr><td></td><td>**卡乌斯巴依/兰沙赫尔王**</td><td>胡拉姆丁的后裔</td></tr>
+<tr><td></td><td>阿塔希尔</td><td>兰沙赫尔王的儿子</td></tr>
+<tr><td>蓝宝石城·图莱杜拉·提纳勒人</td><td>呼玛云/库列甘王</td><td>娶了兰沙赫尔王的女儿，所以是兰沙赫尔王的女婿</td></tr>
+<tr><td></td><td>**古达尔兹/撒勒布·道莱王**</td><td>「居尔的大王」</td></tr>
+<tr><td></td><td>霍杰尔王子</td><td>道莱王的儿子</td></tr>
+<tr><td>勇士之城·萨勒赫·赛莫德人</td><td>图尔</td><td>图兰哈冈恶贼</td></tr>
+<tr><td></td><td>**迦尔沙斯普/穆阿扎姆哈冈**</td><td>曾镇守月女城阿伊哈努姆</td></tr>
+<tr><td>港城·奥尔迦娜</td><td>**穆扎法尔代伊**</td><td>二十九代伊盟主</td></tr>
+<tr><td></td><td>祖玛鲁德</td><td>穆扎法尔代伊的儿子、绿之王</td></tr>
+<tr><td></td><td>穆祖丁王子</td><td>祖玛鲁德之子，巴达那的兄长，被巴达那推翻</td></tr>
+<tr><td></td><td>**巴达那王子/暴君**</td><td>祖玛鲁德之子，后来的暴君</td></tr>
+<tr><td></td><td>**法拉玛兹**</td><td>巴达那的儿子</td></tr>
+<tr><td></td><td>**玛海菈舞女**</td><td>镇灵的女儿、舞女<br/>曾是巴达那的姬妾<br/>实际上是西福斯的情人</td></tr>
+<tr><td></td><td>**西福斯**</td><td>穆祖丁的儿子，金瞳，因暴君的统治沦为奴隶</td></tr>
+<tr><td></td><td>老诗人</td><td>西福斯的师父，被巴达那挖去眼睛</td></tr>
+<tr><td></td><td>戈拉兹国舅</td><td>法拉玛兹的叔父</td></tr>
+<tr><td></td><td>瓦拉什</td><td>相国，亦为图莱杜拉城主</td></tr>
 </table>
-</div>
 </TimelineItem>
 
 <TimelineItem>
@@ -929,7 +917,7 @@ secondaryClass: "/nations"
 
 <TimelineItem>
 
-<Subtitle>·赫曼努比斯和提纳勒人在蓝宝石城图莱杜拉建立缄默之殿 <Footnote n="17" text="<a href='https://www.bilibili.com/video/BV1Es421w7YV/' target='_blank'>《原神》过场动画-「赫曼努比斯的传承」_原神</a>"></Footnote></Subtitle>
+<Subtitle>·赫曼努比斯和提纳勒人在蓝宝石城图莱杜拉建立缄默之殿 <Footnote n="17" text="[《原神》过场动画-「赫曼努比斯的传承」_原神](https://www.bilibili.com/video/BV1Es421w7YV/)"></Footnote></Subtitle>
 
 吸收了很多无家可归之人。（莱依拉就是图莱杜拉人的后人）
 
@@ -1672,26 +1660,24 @@ secondaryClass: "/nations"
 法留纳神机的力量的显现。带来生命的水，把巴螺迦变成桓那，让不毛的土地从此充满生机。
 
 <TimelineItem>
-<div class="table-container">
-<table class="lightrelam-table">
+<table>
 <tr><th>兰那罗语</th><th>含义</th></tr>
-<tr><td>那菈</td><td class="text-left">人类</td></tr>
-<tr><td>那菈法留纳</td><td class="text-left">反主，因为修好了「法留纳神机」而被兰那罗们如此称呼</td></tr>
-<tr><td>恒那</td><td class="text-left">须弥森林</td></tr>
-<tr><td>桓那兰那</td><td class="text-left">兰那罗的聚集地</td></tr>
-<tr><td>玛哈桓那兰那薜那<br/>（梦中的桓那兰那）</td><td class="text-left">伟大之梦中的桓那兰那</td></tr>
-<tr><td>觉王之树</td><td class="text-left">树王亲自种下的伟大之树，兰那罗一族的原点</td></tr>
-<tr><td>法留纳</td><td class="text-left">本义是「水天」，被树王召唤的精灵的名字</td></tr>
-<tr><td>法留纳神机</td><td class="text-left">兰穆护昆达与树王在许多个月亮前创造，为森林带来了许多诞生</td></tr>
-<tr><td>沙恒</td><td class="text-left">地脉</td></tr>
-<tr><td>无留陀</td><td class="text-left">死域</td></tr>
-<tr><td>巴螺迦</td><td class="text-left">沙漠</td></tr>
-<tr><td>恒素果</td><td class="text-left">由兰那罗们的记忆结成的果实，供养给「觉王之树」能结出惟耶之实</td></tr>
-<tr><td>惟耶之果</td><td class="text-left">地脉精华果实，可以救回死域侵蚀的人</td></tr>
-<tr><td>兰迦拉梨</td><td class="text-left">最早是兰那罗礼赞树王、那菈、同族的歌<br/>依靠「见证」就可习得（记忆就是力量）</td></tr>
-<tr><td>记忆</td><td class="text-left">记忆是流动的，就像河流进入大海<br/>因为记忆，所以有梦，所以有生命，所以有力量。<br/>智慧是流动的记忆，梦是活的记忆，无留陀是停滞的记忆。<br/>人造的死物夺去活的记忆，为统御和驯化。</td></tr>
+<tr><td>那菈</td><td>人类</td></tr>
+<tr><td>那菈法留纳</td><td>反主，因为修好了「法留纳神机」而被兰那罗们如此称呼</td></tr>
+<tr><td>恒那</td><td>须弥森林</td></tr>
+<tr><td>桓那兰那</td><td>兰那罗的聚集地</td></tr>
+<tr><td>玛哈桓那兰那薜那<br/>（梦中的桓那兰那）</td><td>伟大之梦中的桓那兰那</td></tr>
+<tr><td>觉王之树</td><td>树王亲自种下的伟大之树，兰那罗一族的原点</td></tr>
+<tr><td>法留纳</td><td>本义是「水天」，被树王召唤的精灵的名字</td></tr>
+<tr><td>法留纳神机</td><td>兰穆护昆达与树王在许多个月亮前创造，为森林带来了许多诞生</td></tr>
+<tr><td>沙恒</td><td>地脉</td></tr>
+<tr><td>无留陀</td><td>死域</td></tr>
+<tr><td>巴螺迦</td><td>沙漠</td></tr>
+<tr><td>恒素果</td><td>由兰那罗们的记忆结成的果实，供养给「觉王之树」能结出惟耶之实</td></tr>
+<tr><td>惟耶之果</td><td>地脉精华果实，可以救回死域侵蚀的人</td></tr>
+<tr><td>兰迦拉梨</td><td>最早是兰那罗礼赞树王、那菈、同族的歌<br/>依靠「见证」就可习得（记忆就是力量）</td></tr>
+<tr><td>记忆</td><td>记忆是流动的，就像河流进入大海<br/>因为记忆，所以有梦，所以有生命，所以有力量。<br/>智慧是流动的记忆，梦是活的记忆，无留陀是停滞的记忆。<br/>人造的死物夺去活的记忆，为统御和驯化。</td></tr>
 </table>
-</div>
 </TimelineItem>
 
 </TimelineItem>
@@ -1890,7 +1876,7 @@ secondaryClass: "/nations"
 
 <TimelineItem>
 
-<Subtitle>·纳西妲诞生，被贤者发现并带回须弥 <Footnote n="21" text="<a href='https://www.bilibili.com/video/BV1AG4y1h7Ap/' target='_blank'>《原神》纳西妲角色PV——「生日快乐」_哔哩哔哩bilibili_原神</a>"></Footnote></Subtitle>
+<Subtitle>·纳西妲诞生，被贤者发现并带回须弥 <Footnote n="21" text="[《原神》纳西妲角色PV——「生日快乐」_哔哩哔哩bilibili_原神](https://www.bilibili.com/video/BV1AG4y1h7Ap/)"></Footnote></Subtitle>
 
 <QuoteBlock>
 
@@ -2096,17 +2082,15 @@ secondaryClass: "/nations"
 
 <TimelineItem>
 
-<div class="table-container">
-<table class="lightrelam-table">
+<table>
 <tr><th>职称</th><th>介绍</th><th>主要人物</th></tr>
-<tr><td>贤者</td><td class="text-left">教令院研究者的最高头衔<br/>在六学派中，会推举出一位「大贤者」，作为统辖教令院的顶点。</td><td class="text-left">最初的贤者（获得草神认可，化解灾厄，创办教令院）<br/>阿扎尔（前任大贤者，已流放）<br/>艾尔海森（前任代理大贤者，已辞职）</td></tr>
-<tr><td>陀裟多</td><td class="text-left">能够独立研究课题、创造学术价值的学者。<br/>陀裟多如果想要从见习转正，需要两个不同课题的论文通过评审。</td><td class="text-left"></td></tr>
-<tr><td>诃般荼</td><td class="text-left">学识渊博、能够指导众人的的智者。</td><td class="text-left"></td></tr>
-<tr><td>帝力耶悉</td><td class="text-left">在四方游学的学者。</td><td class="text-left"></td></tr>
-<tr><td>书记官</td><td class="text-left">书记官既不跟随所有重大会议，也不参与核心事务决策，只负责归档备份重要资料</td><td class="text-left">艾尔海森</td></tr>
-<tr><td>大掌书</td><td class="text-left">身为管理图书之人最有机会接触记录了顶级智慧的书籍。</td><td class="text-left"></td></tr>
+<tr><td>贤者</td><td>教令院研究者的最高头衔<br/>在六学派中，会推举出一位「大贤者」，作为统辖教令院的顶点。</td><td>最初的贤者（获得草神认可，化解灾厄，创办教令院）<br/>阿扎尔（前任大贤者，已流放）<br/>艾尔海森（前任代理大贤者，已辞职）</td></tr>
+<tr><td>陀裟多</td><td>能够独立研究课题、创造学术价值的学者。<br/>陀裟多如果想要从见习转正，需要两个不同课题的论文通过评审。</td><td></td></tr>
+<tr><td>诃般荼</td><td>学识渊博、能够指导众人的的智者。</td><td></td></tr>
+<tr><td>帝力耶悉</td><td>在四方游学的学者。</td><td></td></tr>
+<tr><td>书记官</td><td>书记官既不跟随所有重大会议，也不参与核心事务决策，只负责归档备份重要资料</td><td>艾尔海森</td></tr>
+<tr><td>大掌书</td><td>身为管理图书之人最有机会接触记录了顶级智慧的书籍。</td><td></td></tr>
 </table>
-</div>
 
 </TimelineItem>
 
@@ -2114,17 +2098,15 @@ secondaryClass: "/nations"
 
 <TimelineItem>
 
-<div class="table-container">
-<table class="lightrelam-table">
+<table>
 <tr><th>学派</th><th>学院</th><th>纹章</th><th>研究内容</th><th>主要人物</th></tr>
-<tr><td>生论派</td><td class="text-left">阿弥利多学院</td><td class="text-left">绿色不死鸟</td><td class="text-left">生物学、生态学</td><td class="text-left">熙蔓·法罗赫札德（前任贤者）<br/>纳菲斯（贤者）<br/>提纳里（毕业生）</td></tr>
-<tr><td>明论派</td><td class="text-left">梨多梵谛学院</td><td class="text-left">蓝色大象</td><td class="text-left">星空</td><td class="text-left">阿扎尔（前任贤者）（现被流放）<br/>莱依拉（学生）</td></tr>
-<tr><td>素论派</td><td class="text-left">悉般多摩学院</td><td class="text-left">红色孔雀</td><td class="text-left">元素</td><td class="text-left">居勒什（前任贤者）<br/>丽莎（毕业生）<br/>赛诺（毕业生）</td></tr>
-<tr><td>知论派</td><td class="text-left">室罗婆耽学院</td><td class="text-left">黑色水牛</td><td class="text-left">语言、文字视为世界的核心与本质</td><td class="text-left">卡瓦贡（前任贤者）<br/>珐露珊（导师）<br/>艾尔海森（毕业生）</td></tr>
-<tr><td>因论派</td><td class="text-left">伐护末那学院</td><td class="text-left">黄色战马</td><td class="text-left">知识的来源、构成及其本质</td><td class="text-left">伊斯坎德（贤者）<br/>阿帽（学生）<br/>派蒙（学生） <Footnote n="23" text="艾尔海森2026生日邮件"></Footnote></td></tr>
-<tr><td>妙论派</td><td class="text-left">刹诃伐罗学院</td><td class="text-left">白色狮子</td><td class="text-left">驱动机关</td><td class="text-left">卡维（毕业生）</td></tr>
+<tr><td>生论派</td><td>阿弥利多学院</td><td>绿色不死鸟</td><td>生物学、生态学</td><td>熙蔓·法罗赫札德（前任贤者）<br/>纳菲斯（贤者）<br/>提纳里（毕业生）</td></tr>
+<tr><td>明论派</td><td>梨多梵谛学院</td><td>蓝色大象</td><td>星空</td><td>阿扎尔（前任贤者）（现被流放）<br/>莱依拉（学生）</td></tr>
+<tr><td>素论派</td><td>悉般多摩学院</td><td>红色孔雀</td><td>元素</td><td>居勒什（前任贤者）<br/>丽莎（毕业生）<br/>赛诺（毕业生）</td></tr>
+<tr><td>知论派</td><td>室罗婆耽学院</td><td>黑色水牛</td><td>语言、文字视为世界的核心与本质</td><td>卡瓦贡（前任贤者）<br/>珐露珊（导师）<br/>艾尔海森（毕业生）</td></tr>
+<tr><td>因论派</td><td>伐护末那学院</td><td>黄色战马</td><td>知识的来源、构成及其本质</td><td>伊斯坎德（贤者）<br/>阿帽（学生）<br/>派蒙（学生） <Footnote n="23" text="艾尔海森2026生日邮件"></Footnote></td></tr>
+<tr><td>妙论派</td><td>刹诃伐罗学院</td><td>白色狮子</td><td>驱动机关</td><td>卡维（毕业生）</td></tr>
 </table>
-</div>
 
 </TimelineItem>
 

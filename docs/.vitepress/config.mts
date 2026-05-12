@@ -35,8 +35,31 @@ export default defineConfig({
   markdown: {
     headers: true,
     config: (md) => {
-      md.renderer.rules.strong_open = () => '<span class="red-text">'
-      md.renderer.rules.strong_close = () => '</span>'
+      md.renderer.rules.strong_open = () =>
+        '<strong class="red-text">'
+      md.renderer.rules.strong_close = () => '</strong>'
+
+      const defaultLinkRender =
+        md.renderer.rules.link_open ||
+        function (tokens, idx, options, _env, self) {
+          return self.renderToken(tokens, idx, options)
+        }
+
+      md.renderer.rules.link_open = function (
+        tokens,
+        idx,
+        options,
+        env,
+        self,
+      ) {
+        const token = tokens[idx]
+        const href = token.attrGet('href')
+        if (href && /^https?:\/\//.test(href)) {
+          token.attrSet('target', '_blank')
+          token.attrSet('rel', 'noopener noreferrer')
+        }
+        return defaultLinkRender(tokens, idx, options, env, self)
+      }
     },
   },
 

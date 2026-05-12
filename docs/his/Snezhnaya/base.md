@@ -6,7 +6,7 @@ secondaryClass: "/nations"
 ---
 
 <TextCenter>
-<p style="text-align: center !important; font-family: 'Khaenriah', sans-serif;">ducam regina mea gloria haud pluribus impar</p>
+<KhaenriahMotto>ducam regina mea gloria haud pluribus impar</KhaenriahMotto>
 她
 <br>
 是人再也不会去 **爱** 的神，
@@ -265,8 +265,7 @@ secondaryClass: "/nations"
 
 <TimelineItem>
 
-<div class="table-container">
-<table class="lightrelam-table">
+<table>
 <thead>
 <tr>
 <th>派别</th>
@@ -372,7 +371,6 @@ secondaryClass: "/nations"
 </tr>
 </tbody>
 </table>
-</div>
 
 </TimelineItem>
 
@@ -1332,8 +1330,7 @@ secondaryClass: "/nations"
 
 <TimelineItem>
 
-<div class="table-container">
-<table class="lightrelam-table">
+<table>
 <thead>
 <tr>
 <th>席位</th>
@@ -1368,7 +1365,7 @@ secondaryClass: "/nations"
 <td>月神，现已退出愚人众</td>
 </tr>
 <tr>
-<td class="text-left" colspan="3">暂无现任</td>
+<td colspan="3">暂无现任</td>
 </tr>
 <tr>
 <td rowspan="2">4</td>
@@ -1394,7 +1391,7 @@ secondaryClass: "/nations"
 <td>巴尔泽布用银白古树作为材料，创造的原型人偶，算是稻妻人。制造技术疑似出自坎瑞亚的贤者海洛塔帝<br/>现因把自己从世界树完全抹除，而「从未在愚人众存在」</td>
 </tr>
 <tr>
-<td class="text-left" colspan="2">暂无<br/>（一直空缺）</td>
+<td colspan="2">暂无<br/>（一直空缺）</td>
 <td>在散兵将自己从历史中抹除之后产生的新的世界线中，第6席一直是空缺的，从未有散兵存在</td>
 </tr>
 <tr>
@@ -1410,7 +1407,7 @@ secondaryClass: "/nations"
 <td>蒙德人，炎之魔女，在他的爱人鲁斯坦死于漆黑的灾厄之后，便燃尽自己的生命之火。某一天，女皇看到了她，并赋予她冰之邪眼<br/>已被雷电将军杀死</td>
 </tr>
 <tr>
-<td class="text-left" colspan="3">暂无现任</td>
+<td colspan="3">暂无现任</td>
 </tr>
 <tr>
 <td>9</td>
@@ -1420,7 +1417,7 @@ secondaryClass: "/nations"
 </tr>
 <tr>
 <td>10</td>
-<td class="text-left" colspan="3">暂无<br/>（一直空缺）</td>
+<td colspan="3">暂无<br/>（一直空缺）</td>
 </tr>
 <tr>
 <td>11</td>
@@ -1430,7 +1427,6 @@ secondaryClass: "/nations"
 </tr>
 </tbody>
 </table>
-</div>
 
 </TimelineItem>
 

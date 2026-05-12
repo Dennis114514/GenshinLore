@@ -6,7 +6,7 @@ secondaryClass: "/nations"
 ---
 
 <TextCenter>
-<p style="text-align: center !important; font-family: 'Khaenriah', sans-serif;">surge  vir  fortis  i  natam  victoriam</p>
+<KhaenriahMotto>surge  vir  fortis  i  natam  victoriam</KhaenriahMotto>
 **战争**的规则刻写在生物体内，
 <br>
 败者成为战火的余烬，
@@ -17,7 +17,7 @@ secondaryClass: "/nations"
 <br>
 因为
 <br>
-她有这样做的理由。<Footnote n="1" text="<a href='https://www.bilibili.com/video/BV1At4y1q7UQ/?spm_id_from=333.1387.upload.video_card.click&vd_source=5521f8f34a1af08d13b6fcf39bf4506b' target='_blank'>《原神·提瓦特篇》主线章节预告PV-「足迹」_哔哩哔哩_bilibili</a>"></Footnote>
+她有这样做的理由。<Footnote n="1" text="[《原神·提瓦特篇》主线章节预告PV-「足迹」_哔哩哔哩_bilibili](https://www.bilibili.com/video/BV1At4y1q7UQ/?spm_id_from=333.1387.upload.video_card.click&vd_source=5521f8f34a1af08d13b6fcf39bf4506b)"></Footnote>
 <br>
 <Space :size="14"></Space>
 为了愿望而步上巡礼，
@@ -1465,7 +1465,7 @@ CL-02：很好。你几乎让我感到惋惜了，第八席，也许已经让我
 
 </TimelineItem>
 
-## 四、奥奇坎时期<Footnote n="21" text="<a href='https://wiki.biligame.com/ys/%E9%A6%96%E9%A1%B5' target='_blank'>引用了一些原神WIKI_BWIKI_哔哩哔哩的内容</a>"></Footnote><Footnote n="22" text="未竟的遐思，谵妄圣主系列材料"></Footnote>
+## 四、奥奇坎时期<Footnote n="21" text="[引用了一些原神WIKI_BWIKI_哔哩哔哩的内容](https://wiki.biligame.com/ys/%E9%A6%96%E9%A1%B5)"></Footnote><Footnote n="22" text="未竟的遐思，谵妄圣主系列材料"></Footnote>
 
 ### （一）奥奇坎的统治
 
@@ -2779,7 +2779,7 @@ CL-02：很好。你几乎让我感到惋惜了，第八席，也许已经让我
 
 </TimelineItem>
 
-### （二）队长<Footnote n="36" text="<a href='https://www.bilibili.com/video/BV1yArkYKEva/?spm_id_from=333.1387.upload.video_card.click&vd_source=5521f8f34a1af08d13b6fcf39bf4506b' target='_blank'>《原神》剧情PV-「荣勋」_哔哩哔哩bilibili_原神</a><br/><a href='https://www.bilibili.com/video/BV1h7reY9EM7/?spm_id_from=333.1387.upload.video_card.click&vd_source=5521f8f34a1af08d13b6fcf39bf4506b' target='_blank'>《原神》动画短片：「此世之忆」_哔哩哔哩_bilibili</a>"></Footnote>
+### （二）队长<Footnote n="36" text="[《原神》剧情PV-「荣勋」_哔哩哔哩bilibili_原神](https://www.bilibili.com/video/BV1yArkYKEva/?spm_id_from=333.1387.upload.video_card.click&vd_source=5521f8f34a1af08d13b6fcf39bf4506b)<br/>[《原神》动画短片：「此世之忆」_哔哩哔哩_bilibili](https://www.bilibili.com/video/BV1h7reY9EM7/?spm_id_from=333.1387.upload.video_card.click&vd_source=5521f8f34a1af08d13b6fcf39bf4506b)"></Footnote>
 
 <TimelineItem>
 
@@ -2789,7 +2789,7 @@ CL-02：很好。你几乎让我感到惋惜了，第八席，也许已经让我
 
 </TimelineItem>
 
-### （三）玛薇卡<Footnote n="37" text="<a href='https://www.bilibili.com/video/BV1mtCNY3EiH/?spm_id_from=333.1387.upload.video_card.click&vd_source=5521f8f34a1af08d13b6fcf39bf4506b' target='_blank'>《原神》动画短片——「黄昏」_哔哩哔哩_bilibili</a>"></Footnote>
+### （三）玛薇卡<Footnote n="37" text="[《原神》动画短片——「黄昏」_哔哩哔哩_bilibili](https://www.bilibili.com/video/BV1mtCNY3EiH/?spm_id_from=333.1387.upload.video_card.click&vd_source=5521f8f34a1af08d13b6fcf39bf4506b)"></Footnote>
 
 <TimelineItem>
 

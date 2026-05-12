@@ -6,7 +6,7 @@ secondaryClass: "/nations"
 ---
 
 <TextCenter>
-<p style="text-align: center !important; font-family: 'Khaenriah', sans-serif;">ruat caelum fiat pactum</p>
+<KhaenriahMotto>ruat caelum fiat pactum</KhaenriahMotto>
 众目睽睽之下，
 <br>
 契约之神遭人谋杀，
@@ -15,7 +15,7 @@ secondaryClass: "/nations"
 <br>
 他将签订
 <br>
-终结一切契约的契约。<Footnote n="1" text="<a href='https://www.bilibili.com/video/BV1At4y1q7UQ/' target='_blank'>《原神·提瓦特篇》主线章节预告PV-「足迹」_哔哩哔哩_bilibili</a>"></Footnote>
+终结一切契约的契约。<Footnote n="1" text="[《原神·提瓦特篇》主线章节预告PV-「足迹」_哔哩哔哩_bilibili](https://www.bilibili.com/video/BV1At4y1q7UQ/)"></Footnote>
 <br>
 <Space :size="14"></Space>
 大陆所流通的一切银钱
@@ -91,7 +91,7 @@ secondaryClass: "/nations"
 
 <TimelineItem>
 
-<Subtitle>·天空岛使者的指引<Footnote n="5" text="<a href='https://www.bilibili.com/video/BV1Cy6gBeEFA/' target='_blank'>《原神》兹白角色PV——「亦如陌上尘」_哔哩哔哩bilibili_原神</a> <a href='https://www.bilibili.com/video/BV1kdfRBzEz5/' target='_blank'>《原神》剧情PV-「古日魇」_哔哩哔哩bilibili_原神</a>"></Footnote></Subtitle>
+<Subtitle>·天空岛使者的指引<Footnote n="5" text="[《原神》兹白角色PV——「亦如陌上尘」_哔哩哔哩bilibili_原神](https://www.bilibili.com/video/BV1Cy6gBeEFA/) [《原神》剧情PV-「古日魇」_哔哩哔哩bilibili_原神](https://www.bilibili.com/video/BV1kdfRBzEz5/)"></Footnote></Subtitle>
 
 人们步入琅玕的祭场（如今的赤望台），用精雕的美玉映衬夜的容姿。
 
@@ -253,7 +253,7 @@ secondaryClass: "/nations"
 
 <TimelineItem>
 
-<Subtitle>·创龙点睛<Footnote n="11" text="<a href='https://www.bilibili.com/video/BV13K4y1N7BM/' target='_blank'>《原神》剧情PV-「创龙点睛」_哔哩哔哩_bilibili</a>"></Footnote><Footnote n="12" text="无工之剑"></Footnote></Subtitle>
+<Subtitle>·创龙点睛<Footnote n="11" text="[《原神》剧情PV-「创龙点睛」_哔哩哔哩_bilibili](https://www.bilibili.com/video/BV13K4y1N7BM/)"></Footnote><Footnote n="12" text="无工之剑"></Footnote></Subtitle>
 
 很久以前，璃月曾经有龙（若陀龙王）的身影。并非乘风翱翔天际的龙。而是踞身于山峦之中，身躯亦如山峦般庞大的悠古石龙。传说它曾沉睡在南天门一带，与群山混若一体。
 
@@ -389,8 +389,7 @@ secondaryClass: "/nations"
 
 除了仙人，璃月还有魔神，例如梦之魔神、盐之魔神、漩涡魔神奥赛尔、螭、擘那（桃都）等。
 
-<div class="table-container">
-<table class="lightrelam-table">
+<table>
 <thead>
 <tr>
 <th>派别/居所</th>
@@ -404,7 +403,7 @@ secondaryClass: "/nations"
 <td rowspan="3">归离集</td>
 <td>摩拉克斯/钟离</td>
 <td></td>
-<td>岩之魔神，岩王帝君，岩主天星。<br/>贵金之神，铸造了第一枚摩拉。<br/>契约之神，与璃月仙人们签订守护璃月的契约。<br/>魔神战争后成为尘世七执政之一。<br/>现已退休，担任往生堂客卿。<br/>「我虽无意逐鹿，却知苍生苦楚。」<Footnote n="16" text="<a href='https://www.bilibili.com/video/BV1hD4y1X7Rm/' target='_blank'>《原神》角色演示-「钟离：听书人」_哔哩哔哩_bilibili</a>"></Footnote></td>
+<td>岩之魔神，岩王帝君，岩主天星。<br/>贵金之神，铸造了第一枚摩拉。<br/>契约之神，与璃月仙人们签订守护璃月的契约。<br/>魔神战争后成为尘世七执政之一。<br/>现已退休，担任往生堂客卿。<br/>「我虽无意逐鹿，却知苍生苦楚。」<Footnote n="16" text="[《原神》角色演示-「钟离：听书人」_哔哩哔哩_bilibili](https://www.bilibili.com/video/BV1hD4y1X7Rm/)"></Footnote></td>
 </tr>
 <tr>
 <td>哈艮图斯/归终</td>
@@ -414,7 +413,7 @@ secondaryClass: "/nations"
 <tr>
 <td>马科修斯</td>
 <td>锅巴</td>
-<td>炉灶之魔神，在魔神战争时期为了吸取土地中的瘴疠而身体缩小，失去神智。现在是香菱的伙伴。<br/>「年岁一箸，山海一壶。阅古话今，几度春秋。炊烟喜乐，柴米朝暮。纤云逐月，尘世系舟。」<Footnote n="18" text="<a href='https://www.bilibili.com/video/BV1yR4y1p7WX/' target='_blank'>《原神》剧情PV-「人间至味」_游戏热门视频</a>"></Footnote></td>
+<td>炉灶之魔神，在魔神战争时期为了吸取土地中的瘴疠而身体缩小，失去神智。现在是香菱的伙伴。<br/>「年岁一箸，山海一壶。阅古话今，几度春秋。炊烟喜乐，柴米朝暮。纤云逐月，尘世系舟。」<Footnote n="18" text="[《原神》剧情PV-「人间至味」_游戏热门视频](https://www.bilibili.com/video/BV1yR4y1p7WX/)"></Footnote></td>
 </tr>
 <tr>
 <td>庆云顶</td>
@@ -443,7 +442,7 @@ secondaryClass: "/nations"
 <td>璃月港</td>
 <td>歌尘浪市真君</td>
 <td>萍姥姥</td>
-<td>仙人，喜好音律，擅长弹琴，常与归终结伴同行。<br/>归终死后，以老者形态住在璃月港，后来收有徒弟瑶瑶（人类）、烟绯（具有仙兽血脉的人类，其父亲是仙兽，母亲是人类）<br/>「或许终有一日，我们都要尘埃落地，回到红尘中去。」<Footnote n="20" text="<a href='https://www.bilibili.com/video/BV1bY411X7Tx/' target='_blank'>《原神》剧情PV-「余音萦心」_哔哩哔哩bilibili_原神</a>"></Footnote></td>
+<td>仙人，喜好音律，擅长弹琴，常与归终结伴同行。<br/>归终死后，以老者形态住在璃月港，后来收有徒弟瑶瑶（人类）、烟绯（具有仙兽血脉的人类，其父亲是仙兽，母亲是人类）<br/>「或许终有一日，我们都要尘埃落地，回到红尘中去。」<Footnote n="20" text="[《原神》剧情PV-「余音萦心」_哔哩哔哩bilibili_原神](https://www.bilibili.com/video/BV1bY411X7Tx/)"></Footnote></td>
 </tr>
 <tr>
 <td rowspan="4">沉玉谷</td>
@@ -459,7 +458,7 @@ secondaryClass: "/nations"
 <tr>
 <td>药君</td>
 <td>长生</td>
-<td>仙人，与浮锦、灵渊交好，在沉玉谷之战中被斩成几段，身形缩小，与药师定下救死扶伤的契约，并被带到璃月港。<br/>现在是白术的伙伴。<br/>「既然眼前有一条值得挽救的性命，我有知道挽救的方法，还有什么不救的道理？」<Footnote n="23" text="<a href='https://www.bilibili.com/video/BV1Vh411L7st/' target='_blank'>《原神》剧情PV-「长生」_原神</a>"></Footnote></td>
+<td>仙人，与浮锦、灵渊交好，在沉玉谷之战中被斩成几段，身形缩小，与药师定下救死扶伤的契约，并被带到璃月港。<br/>现在是白术的伙伴。<br/>「既然眼前有一条值得挽救的性命，我有知道挽救的方法，还有什么不救的道理？」<Footnote n="23" text="[《原神》剧情PV-「长生」_原神](https://www.bilibili.com/video/BV1Vh411L7st/)"></Footnote></td>
 </tr>
 <tr>
 <td>梦之魔神</td>
@@ -497,7 +496,7 @@ secondaryClass: "/nations"
 <td rowspan="6">夜叉<Footnote n="28" text="璃月地图载入提示：「夜叉者，璃月之仙兽，性凶怖悍战，杀生而护法。」"></Footnote></td>
 <td>腾蛇太元帅/浮舍</td>
 <td></td>
-<td>夜叉，在漆黑灾祸中，死于层岩巨渊地底<br/>「浮生一刹，万般皆舍。」<Footnote n="29" text="<a href='https://www.bilibili.com/video/BV1mW4y1C7eD/' target='_blank'>《原神》剧情PV-「惟余旧忆」_游戏热门视频</a>"></Footnote></td>
+<td>夜叉，在漆黑灾祸中，死于层岩巨渊地底<br/>「浮生一刹，万般皆舍。」<Footnote n="29" text="[《原神》剧情PV-「惟余旧忆」_游戏热门视频](https://www.bilibili.com/video/BV1mW4y1C7eD/)"></Footnote></td>
 </tr>
 <tr>
 <td>金鹏大将（名号）/？（原名未知）/魈（钟离赐名）</td>
@@ -592,7 +591,6 @@ secondaryClass: "/nations"
 </tr>
 </tbody>
 </table>
-</div>
 
 </TimelineItem>
 
@@ -600,8 +598,7 @@ secondaryClass: "/nations"
 
 <Subtitle>·仙人法宝<Footnote n="39" text="雾海云间系列材料"></Footnote></Subtitle>
 
-<div class="table-container">
-<table class="lightrelam-table">
+<table>
 <thead>
 <tr>
 <th>法宝</th>
@@ -623,7 +620,6 @@ secondaryClass: "/nations"
 </tr>
 </tbody>
 </table>
-</div>
 
 </TimelineItem>
 
@@ -889,7 +885,7 @@ secondaryClass: "/nations"
 
 <TimelineItem>
 
-归终死去<Footnote n="43" text="<a href='https://www.bilibili.com/video/BV1bY411X7Tx/' target='_blank'>《原神》剧情PV-「余音萦心」_哔哩哔哩bilibili_原神</a>"></Footnote>。但归终的死因未知。归终死后，魔神战争进入白热化。
+归终死去<Footnote n="43" text="[《原神》剧情PV-「余音萦心」_哔哩哔哩bilibili_原神](https://www.bilibili.com/video/BV1bY411X7Tx/)"></Footnote>。但归终的死因未知。归终死后，魔神战争进入白热化。
 
 </TimelineItem>
 
@@ -1088,7 +1084,7 @@ secondaryClass: "/nations"
 
 <TimelineItem>
 
-<Subtitle>·马科修斯融入大地<Footnote n="54" text="<a href='https://www.bilibili.com/video/BV1yR4y1p7WX/' target='_blank'>《原神》剧情PV-「人间至味」_游戏热门视频</a>"></Footnote></Subtitle>
+<Subtitle>·马科修斯融入大地<Footnote n="54" text="[《原神》剧情PV-「人间至味」_游戏热门视频](https://www.bilibili.com/video/BV1yR4y1p7WX/)"></Footnote></Subtitle>
 
 </TimelineItem>
 
@@ -1408,9 +1404,9 @@ secondaryClass: "/nations"
 
 <Subtitle>·夜叉的命运</Subtitle>
 
-浮舍在层岩巨渊的地下失踪，后战死。<Footnote n="59" text="<a href='https://www.bilibili.com/video/BV1mW4y1C7eD/' target='_blank'>《原神》剧情PV-「惟余旧忆」_游戏热门视频</a>"></Footnote>
+浮舍在层岩巨渊的地下失踪，后战死。<Footnote n="59" text="[《原神》剧情PV-「惟余旧忆」_游戏热门视频](https://www.bilibili.com/video/BV1mW4y1C7eD/)"></Footnote>
 
-弥怒和伐难因业障而自相残杀，双双死亡。应达因业障发疯而死。<Footnote n="60" text="<a href='https://www.bilibili.com/video/BV1A5411J7Ab/' target='_blank'>《原神》剧情PV-「护法仙众夜叉录」_哔哩哔哩_bilibili</a>"></Footnote>
+弥怒和伐难因业障而自相残杀，双双死亡。应达因业障发疯而死。<Footnote n="60" text="[《原神》剧情PV-「护法仙众夜叉录」_哔哩哔哩_bilibili](https://www.bilibili.com/video/BV1A5411J7Ab/)"></Footnote>
 
 层岩巨渊的部族后来便成为了今日八门之一——盛露厅的前身。
 
@@ -1432,8 +1428,7 @@ secondaryClass: "/nations"
 
 <TimelineItem>
 
-<div class="table-container">
-<table class="lightrelam-table">
+<table>
 <thead>
 <tr>
 <th>派别</th>
@@ -1476,7 +1471,6 @@ secondaryClass: "/nations"
 </tr>
 </tbody>
 </table>
-</div>
 
 </TimelineItem>
 
@@ -1665,8 +1659,7 @@ secondaryClass: "/nations"
 
 <TimelineItem>
 
-<div class="table-container">
-<table class="lightrelam-table">
+<table>
 <thead>
 <tr>
 <th>职位</th>
@@ -1712,7 +1705,6 @@ secondaryClass: "/nations"
 </tr>
 </tbody>
 </table>
-</div>
 
 </TimelineItem>
 
