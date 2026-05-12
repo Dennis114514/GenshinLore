@@ -1,6 +1,5 @@
 <script setup lang="ts">
 import AppFooter from './AppFooter.vue'
-import useIsMobile from '../composables/isMobile'
 
 const nations = [
   { name: '蒙德', folder: 'Mondstadt', en: 'mondstadt' },
@@ -13,20 +12,19 @@ const nations = [
   { name: '坎瑞亚', folder: 'Khaenriah', en: 'khaenriah' },
 ]
 
-const isMobile = useIsMobile()
 </script>
 
 <template>
-  <div class="bg-[#111111BF] w-screen h-full flex flex-col">
-    <section class="cities p-0" :class="!isMobile ? 'mt-17.5' : 'mt-15'">
-      <ul class="city_list w-full overflow-hidden">
+  <div class="bg-[#111111BF] w-full min-h-screen flex flex-col overflow-x-hidden">
+    <section class="cities cities-section p-0">
+      <ul class="city_list w-full">
         <li v-for="nation in nations" :key="nation.en" class="city_item">
           <div
             class="city_bg"
             :style="{ backgroundImage: `url(/img/country/${nation.en}-bg.jpg)` }"
           ></div>
-          <a :href="`/his/${nation.folder}/base.html`">
-            <p style="font-family: 'Genshin', sans-serif">{{ nation.name }}</p>
+          <a class="city_link" :href="`/his/${nation.folder}/base.html`">
+            <p class="city_name" style="font-family: 'Genshin', sans-serif">{{ nation.name }}</p>
           </a>
           <div
             class="city_char"
@@ -41,7 +39,8 @@ const isMobile = useIsMobile()
 
 <style scoped>
 .city_list {
-  display: block;
+  display: grid;
+  gap: 0;
   width: 100%;
 }
 
@@ -64,11 +63,22 @@ const isMobile = useIsMobile()
   content: '';
   width: 100%;
   height: 100%;
-  background: rgba(0, 0, 0, 0.4);
+  background: linear-gradient(
+    180deg,
+    rgba(0, 0, 0, 0.34) 0%,
+    rgba(0, 0, 0, 0.48) 72%,
+    rgba(0, 0, 0, 0.62) 100%
+  );
+  transition: background 0.22s ease;
 }
 
 .city_item:hover::before {
-  background: rgba(0, 0, 0, 0.2);
+  background: linear-gradient(
+    180deg,
+    rgba(0, 0, 0, 0.2) 0%,
+    rgba(0, 0, 0, 0.32) 68%,
+    rgba(0, 0, 0, 0.48) 100%
+  );
 }
 
 .city_bg {
@@ -108,16 +118,24 @@ const isMobile = useIsMobile()
   opacity: 1;
 }
 
-.city_item p,
-.city_item a {
-  display: inline-block;
+.city_link {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   position: relative;
   z-index: 3;
-  font-size: 36px;
-  color: #fff;
-  line-height: 260px;
   width: 100%;
   height: 260px;
+  color: #fff;
+  text-decoration: none;
+}
+
+.city_name {
+  display: inline-block;
+  font-size: 36px;
+  color: #fff;
+  line-height: 1;
   background: url(data:image/png;base64,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)
     center no-repeat;
   background-size: 132px;
@@ -125,10 +143,9 @@ const isMobile = useIsMobile()
   text-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
   margin: 0 !important;
   overflow: hidden;
-  text-decoration: none;
 }
 
-.city_item p::after {
+.city_name::after {
   position: absolute;
   bottom: 91px;
   left: 50%;
@@ -143,7 +160,7 @@ const isMobile = useIsMobile()
   opacity: 0;
 }
 
-.city_item:hover p::after {
+.city_item:hover .city_name::after {
   opacity: 1;
 }
 
@@ -156,5 +173,104 @@ const isMobile = useIsMobile()
 
 .cities {
   padding: 0;
+}
+
+.cities-section {
+  margin-top: calc(var(--mirror-notice-height, 0px) + var(--site-header-height-desktop, 70px));
+}
+
+@media screen and (max-width: 1012px) {
+  .cities-section {
+    margin-top: calc(var(--mirror-notice-height, 0px) + var(--site-header-height-mobile, 60px));
+  }
+
+  .cities {
+    padding: 0;
+  }
+
+  .city_list {
+    gap: 0;
+  }
+
+  .city_item {
+    height: 220px;
+    border-radius: 0;
+    overflow: hidden;
+    box-shadow: none;
+  }
+
+  .city_bg {
+    background-size: cover;
+    background-position: center;
+  }
+
+  .city_char {
+    opacity: 0.68;
+    border-width: 0;
+    background-position: calc(50% + 110px) 58%;
+    background-size: auto 100%;
+    transition: opacity 0.25s ease;
+  }
+
+  .city_link {
+    align-items: flex-start;
+    justify-content: flex-end;
+    padding: 0 16px 18px;
+    height: 220px;
+  }
+
+  .city_name {
+    background: none;
+    font-size: 32px;
+    line-height: 1.1;
+    text-align: left;
+    text-shadow: 0 3px 10px rgba(0, 0, 0, 0.5);
+  }
+
+  .city_name::after {
+    display: none;
+  }
+
+  .city_item:hover .city_char {
+    opacity: 0.85;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .cities {
+    padding: 0;
+  }
+
+  .city_list {
+    gap: 0;
+  }
+
+  .city_item {
+    height: 188px;
+    border-radius: 0;
+  }
+
+  .city_link {
+    height: 188px;
+    padding: 0 14px 14px;
+  }
+
+  .city_name {
+    font-size: 28px;
+  }
+
+  .city_char {
+    background-position: calc(50% + 90px) 58%;
+    background-size: auto 100%;
+    opacity: 0.58;
+  }
+
+  .city_item:active .city_bg {
+    transform: scale(1.02);
+  }
+
+  .city_item:active .city_char {
+    opacity: 0.74;
+  }
 }
 </style>

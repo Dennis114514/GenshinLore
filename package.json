@@ -21,8 +21,10 @@
   },
   "dependencies": {
     "@tailwindcss/vite": "^4.2.4",
+    "@types/nprogress": "^0.2.3",
     "@vueuse/core": "^14.3.0",
     "globals": "^17.6.0",
+    "nprogress": "^0.2.0",
     "tailwindcss": "^4.2.4"
   }
 }

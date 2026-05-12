@@ -10,6 +10,6 @@
     "module": "esnext",
     "types": ["vite/client"]
   },
-  "include": ["./**/*.mts", "./**/*.ts"],
+  "include": ["./**/*.mts", "./**/*.ts", "./**/*.d.ts"],
   "exclude": ["dist", "cache"]
 }

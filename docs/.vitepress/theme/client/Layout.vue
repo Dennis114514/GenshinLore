@@ -10,12 +10,14 @@ import TimelineScreen from './components/TimelineScreen.vue'
 import EastereggScreen from './components/EastereggScreen.vue'
 import NoticeModal from './components/NoticeModal.vue'
 import UserAgreementModal from './components/UserAgreementModal.vue'
+import MirrorNotice from './components/MirrorNotice.vue'
 
 const { page, frontmatter } = useData()
 </script>
 
 <template>
   <div class="flex m-0 p-0">
+    <MirrorNotice />
     <!-- 统一页眉 -->
     <AppHeader :class="page.isNotFound || frontmatter.layout == 'splash' ? 'hidden' : ''" />
     <!-- 针对特定路由的自定义页面 -->

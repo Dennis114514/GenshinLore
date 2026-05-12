@@ -4,7 +4,7 @@ import AppFooter from './AppFooter.vue'
 
 <template>
   <div class="bg-[#f5f5f5] w-screen">
-    <main class="mt-17.5 genshin-font main-content">
+    <main class="genshin-font main-content">
       <section class="home-content max-w-200 m-[0_auto] p-[60px_40px]">
         <h1 class="text-5xl text-[#4d4f53] text-center mb-5">日月全事</h1>
         <p class="text-[20px] text-[#4d4f53] text-center mb-10">
@@ -81,6 +81,10 @@ import AppFooter from './AppFooter.vue'
   font-family: 'Genshin', sans-serif;
 }
 /* Main content */
+.main-content {
+  margin-top: calc(var(--mirror-notice-height, 0px) + var(--site-header-height-desktop, 70px));
+}
+
 .editor-info {
   font-size: 18px;
   color: #000000;
@@ -162,7 +166,7 @@ import AppFooter from './AppFooter.vue'
 /* Mobile */
 @media screen and (max-width: 1012px) {
   .main-content {
-    margin-top: 60px;
+    margin-top: calc(var(--mirror-notice-height, 0px) + var(--site-header-height-mobile, 60px));
   }
 
   .home-content {

@@ -21,4 +21,60 @@
   font-style: normal;
 }
 
+:root {
+  --mirror-notice-height: 0px;
+  --site-header-height-desktop: 70px;
+  --site-header-height-mobile: 60px;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 100px;
+}
+
+.vp-doc [id] {
+  scroll-margin-top: 100px;
+}
+
+/* NProgress - 主题化样式 */
+#nprogress {
+  pointer-events: none;
+}
+
+#nprogress .bar {
+  background: linear-gradient(90deg, #d3bc8e 0%, #c4a87a 55%, #e2cfaa 100%);
+  box-shadow: 0 0 8px rgba(211, 188, 142, 0.45);
+  height: 3px;
+  position: fixed;
+  z-index: 14000;
+  top: var(--mirror-notice-height, 0px);
+  left: 0;
+  width: 100%;
+}
+
+#nprogress .peg {
+  box-shadow:
+    0 0 10px rgba(211, 188, 142, 0.65),
+    0 0 5px rgba(211, 188, 142, 0.55);
+}
+
+#nprogress .spinner {
+  display: block;
+  position: fixed;
+  z-index: 14000;
+  top: calc(var(--mirror-notice-height, 0px) + 10px);
+  right: 14px;
+}
+
+#nprogress .spinner-icon {
+  width: 18px;
+  height: 18px;
+  box-sizing: border-box;
+  border: 2px solid transparent;
+  border-top-color: #d3bc8e;
+  border-left-color: #d3bc8e;
+  border-radius: 50%;
+  filter: drop-shadow(0 0 4px rgba(211, 188, 142, 0.45));
+}
+
 @import './content.css';

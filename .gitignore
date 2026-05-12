@@ -9,3 +9,5 @@
 /docs/.vitepress/cache/
 /docs/.vitepress/dist/
 /script.py
+
+.tmp-vitepress-dev.log
