@@ -1,6 +1,8 @@
 {
   "devDependencies": {
+    "concurrently": "^9.2.1",
     "@eslint/js": "^10.0.1",
+    "@originjs/vite-plugin-federation": "^1.4.1",
     "@types/node": "^25.6.0",
     "eslint": "^10.3.0",
     "eslint-config-prettier": "^10.1.8",
@@ -13,9 +15,15 @@
     "vue": "^3.5.33"
   },
   "scripts": {
-    "docs:dev": "vitepress dev docs",
-    "docs:build": "vitepress build docs",
+    "docs:dev:site": "vitepress dev docs --host 127.0.0.1 --port 5173 --strictPort",
+    "editor:dev": "npm --prefix editor run dev -- --host 127.0.0.1 --port 5174 --strictPort",
+    "docs:dev": "concurrently -n DOCS,EDITOR -c yellow,cyan \"npm run docs:dev:site\" \"npm run editor:dev\"",
+    "docs:build": "npm run editor:bundle && vitepress build docs",
     "docs:preview": "vitepress preview docs",
+    "editor:build": "npm --prefix editor run build",
+    "editor:publish": "node scripts/publish-editor.mjs",
+    "editor:bundle": "npm run editor:build && npm run editor:publish",
+    "editor:clean": "node scripts/clean-editor-public.mjs",
     "lint": "eslint .",
     "format": "prettier --write ."
   },

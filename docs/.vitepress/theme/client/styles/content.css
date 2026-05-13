@@ -304,7 +304,14 @@
   border-radius: 2px;
 }
 
+/* 时间线 section */
+.vp-doc .content-wrapper .timeline-section {
+  margin-bottom: 60px;
+  position: relative;
+}
+
 /* 时间线 H2 章节标题 */
+.vp-doc .content-wrapper .timeline-period,
 .vp-doc .content-wrapper .timeline > h2 {
   font-family: 'Genshin', sans-serif;
   font-size: 24px;
@@ -315,6 +322,7 @@
   position: relative;
 }
 
+.vp-doc .content-wrapper .timeline-period::before,
 .vp-doc .content-wrapper .timeline > h2::before {
   content: '';
   position: absolute;
@@ -330,6 +338,7 @@
 }
 
 /* 时间线 H3 小节标题 */
+.vp-doc .content-wrapper .timeline-main-title,
 .vp-doc .content-wrapper .timeline > h3 {
   font-family: 'Genshin', sans-serif;
   font-size: 20px;
@@ -343,6 +352,7 @@
   position: relative;
 }
 
+.vp-doc .content-wrapper .timeline-main-title::before,
 .vp-doc .content-wrapper .timeline > h3::before {
   content: '';
   position: absolute;
@@ -354,6 +364,14 @@
   background-color: #4d4f53;
   border-radius: 50%;
   border: 2px solid #D3BC8E;
+}
+
+/* 时间线注释 */
+.vp-doc .content-wrapper .timeline-note {
+  font-family: 'Common', sans-serif;
+  font-size: 12px;
+  color: #8d8f93;
+  margin: 0 0 30px 70px;
 }
 
 /* 时间线项目 */
@@ -378,6 +396,20 @@
   background-color: #4d4f53;
   border-radius: 50%;
   border: 2px solid #D3BC8E;
+}
+
+/* 时间线子标题 */
+.vp-doc .content-wrapper .timeline-subtitle,
+.vp-doc .content-wrapper .timeline-item h4,
+.vp-doc .content-wrapper .timeline-item h5 {
+  font-family: 'Genshin', sans-serif !important;
+  font-size: 18px !important;
+  color: #4d4f53 !important;
+  margin: 0 !important;
+  font-weight: bold !important;
+  padding: 0 !important;
+  border: none !important;
+  background: none !important;
 }
 
 /* 时间线正文 */
@@ -456,23 +488,27 @@
     left: 15px;
   }
 
+  .vp-doc .content-wrapper .timeline-period,
   .vp-doc .content-wrapper .timeline > h2 {
     margin: 20px 0 10px 20px;
     margin-left: 50px;
     font-size: 20px;
   }
 
+  .vp-doc .content-wrapper .timeline-period::before,
   .vp-doc .content-wrapper .timeline > h2::before {
     left: -25px;
     width: 10px;
     height: 10px;
   }
 
+  .vp-doc .content-wrapper .timeline-main-title,
   .vp-doc .content-wrapper .timeline > h3 {
     margin-left: 50px;
     font-size: 17px;
   }
 
+  .vp-doc .content-wrapper .timeline-main-title::before,
   .vp-doc .content-wrapper .timeline > h3::before {
     left: -25px;
     width: 8px;
@@ -487,6 +523,10 @@
 
   .vp-doc .content-wrapper .timeline-item::before {
     left: -30px;
+  }
+
+  .vp-doc .content-wrapper .timeline-item h4 {
+    font-size: 16px !important;
   }
 }
 

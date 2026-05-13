@@ -1,4 +1,4 @@
-# 日月全事——全网最详尽的原神世界观手册
+﻿# 日月全事——全网最详尽的原神世界观手册
 ![Logo](docimg/icondark.png)
 ## 项目简介
 本项目是[「日月全事」原神世界观手册网站](https://genshinlore.cn/)的代码仓库，托管了该网站的全部内容与程序代码，面向开源社区开放查看与维护。
@@ -117,11 +117,7 @@ GenshinLore/
 │   │               ├── QuoteBlock.vue
 │   │               ├── SecondaryQuote.vue
 │   │               ├── Spacer.vue
-│   │               ├── Subtitle.vue
-│   │               ├── TextCenter.vue
-│   │               ├── TimelineImage.vue
-│   │               ├── TimelineItem.vue
-│   │               └── TimelineWrapper.vue
+│   │               └── Timeline.vue
 │   │
 │   ├── index.md             # 首页（VitePress home 布局）
 │   ├── home.md              # 主导航页

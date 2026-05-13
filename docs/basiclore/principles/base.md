@@ -1,4 +1,4 @@
----
+﻿---
 layout: doc
 title: 天理/人界
 editLink: true
@@ -34,21 +34,21 @@ function closeModalFunc() {
 }
 </script>
 
-<TextCenter>点击表格中的某些行可以查看相关文本</TextCenter>
+<div class="text-center text-base text-[#4d4f53] leading-[2]">点击表格中的某些行可以查看相关文本</div>
 
-<TextCenter>众神皆背负爱人的责任。</TextCenter>
+<div class="text-center text-base text-[#4d4f53] leading-[2]">众神皆背负爱人的责任。</div>
 
-<TextCenter>人间界代表力量则是如今的七元素，分为风、岩、水、火、草、冰、雷。七元素合一则是地脉能量/光元素。</TextCenter>
+<div class="text-center text-base text-[#4d4f53] leading-[2]">人间界代表力量则是如今的七元素，分为风、岩、水、火、草、冰、雷。七元素合一则是地脉能量/光元素。</div>
 
 ## 天理与四影/天理的维系者【待发现】
 
-<TextCenter>
+<div class="text-center text-base text-[#4d4f53] leading-[2]">
 原初之人**法涅斯**，第一位降临者，击败七龙王后改建世界，将原始的蛮荒燃素改造成较温和的七元素力，为了防止星间巨物的入侵，通过虚假之天隔绝提瓦特与宇宙，创造人类与飞鸟与制度，通过天使指引人类建立文明。
-</TextCenter>
+</div>
 
-<TextCenter>
+<div class="text-center text-base text-[#4d4f53] leading-[2]">
 葬火之战时，其战争中掉落的神体碎片化为魔神。如今已陷入沉睡。他的四个影子即**四影执政**。
-</TextCenter>
+</div>
 
 <table style="width: auto !important;">
   <thead>
@@ -196,9 +196,9 @@ function closeModalFunc() {
 
 ## 天使/仙灵【待发现】
 
-<TextCenter>
+<div class="text-center text-base text-[#4d4f53] leading-[2]">
 古老的生灵，「天使」是指天上的使者，由天理所创造。「仙灵」则是由天使退化而来。天使是晨星的代行。<Footnote n="3" text="兹白角色故事" />
-</TextCenter>
+</div>
 
 <div class="w-full flex items-center justify-center">
 <table style="width: auto !important;">
@@ -253,15 +253,15 @@ function closeModalFunc() {
       <td>提瓦特存在着自己的「法则」。如今世界的法则由「天理」制定。</td>
     </tr>
     <tr>
-      <td>神之心<br>gnosis<br><Khaenriah>gnosis</Khaenriah></td>
+      <td>神之心<br>gnosis<br><span class="khaenriah-font">gnosis</span></td>
       <td>直译为「灵知」，「神之心」是更高位的元素控制中枢，是七神之座的象征。天理掌控提瓦特和法则的象征。<br>通过第三降临者的遗骨打造成而。<br>神之心被摧毁之前，并不会产生新的神祇，因此而失去神之心也算是现任神。</td>
     </tr>
     <tr>
-      <td>神之眼<br>vision<br><Khaenriah>vision</Khaenriah></td>
+      <td>神之眼<br>vision<br><span class="khaenriah-font">vision</span></td>
       <td>直译为「幻觉」<br>「导出魔力的外置器官」。「神之眼」是这世上极少数受神认可者才拥有的外置魔力器官。他们通过「神之眼」来引导元素力。每一位「神之眼」的拥有者，都是有资格成神的人，因此被称作「原神」，拥有登上天空岛的资格（而当初获得了赠礼的人完成使命之后...众神收到的回赠也会更加丰厚）。<br>神之眼是由持有者的灵魂包裹住对应元素古龙大权的碎屑。内圈对应元素古龙大权的碎屑；外圈是神之眼持有者的灵魂。<br>由「光界」发放，尘世七执政（七神）并无权限发放神之眼。</td>
     </tr>
     <tr>
-      <td>原神<br>allogens<br><Khaenriah>allogens</Khaenriah></td>
+      <td>原神<br>allogens<br><span class="khaenriah-font">allogens</span></td>
       <td>持有神之眼的人。人类获得神之眼就拥有成为神明的资格。<br>外来之物。在塞特派的诺斯替文献里，是修士常用的自称，实际上就是管自己叫「异乡人」，代表孤独英雄对陌生人民的责任。</td>
     </tr>
     <tr>

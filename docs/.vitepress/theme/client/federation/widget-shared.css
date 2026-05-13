@@ -1,0 +1,165 @@
+@font-face {
+  font-family: 'Khaenriah';
+  src: url('/fonts/Khaenriah.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Genshin';
+  src: url('/fonts/genshin.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Common';
+  src: url('/fonts/common.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
+.black-block {
+  background-color: #000;
+  color: #000;
+  cursor: help;
+  padding: 0 2px;
+  border-radius: 2px;
+  transition: all 0.2s ease;
+}
+
+.black-block:hover {
+  background-color: transparent;
+  color: #4d4f53;
+}
+
+.khaenriah-font {
+  font-family: 'Khaenriah', serif;
+}
+
+.timeline {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 0 20px;
+  position: relative;
+}
+
+.timeline::before {
+  content: '';
+  position: absolute;
+  left: 30px;
+  top: 0;
+  bottom: 0;
+  width: 3px;
+  background: linear-gradient(to bottom, #d3bc8e, #4d4f53);
+  border-radius: 2px;
+}
+
+.timeline-section {
+  margin-bottom: 60px;
+  position: relative;
+}
+
+.timeline-period,
+.timeline > h2 {
+  font-family: 'Genshin', sans-serif;
+  font-size: 24px;
+  color: #d3bc8e;
+  margin: 40px 0 30px 70px;
+  padding-bottom: 10px;
+  border-bottom: 2px solid #d3bc8e;
+  position: relative;
+}
+
+.timeline-period::before,
+.timeline > h2::before {
+  content: '';
+  position: absolute;
+  left: -40px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 12px;
+  height: 12px;
+  background-color: #d3bc8e;
+  border-radius: 50%;
+  border: 3px solid #4d4f53;
+  box-shadow: 0 0 0 3px #d3bc8e;
+}
+
+.timeline-main-title,
+.timeline > h3 {
+  font-family: 'Genshin', sans-serif;
+  font-size: 20px;
+  font-weight: bold;
+  color: #4d4f53;
+  margin: 30px 0 30px 70px;
+  padding: 0;
+  border: none;
+  position: relative;
+}
+
+.timeline-main-title::before,
+.timeline > h3::before {
+  content: '';
+  position: absolute;
+  left: -40px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 10px;
+  height: 10px;
+  background-color: #4d4f53;
+  border-radius: 50%;
+  border: 2px solid #d3bc8e;
+}
+
+.timeline-note {
+  font-family: 'Common', sans-serif;
+  font-size: 12px;
+  color: #8d8f93;
+  margin: 0 0 30px 70px;
+}
+
+.timeline-item {
+  margin-left: 70px;
+  margin-bottom: 30px;
+  padding: 20px;
+  background-color: #fafafa;
+  border-radius: 8px;
+  border-left: 3px solid #d3bc8e;
+  position: relative;
+}
+
+.timeline-item::before {
+  content: '';
+  position: absolute;
+  left: -43px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 8px;
+  height: 8px;
+  background-color: #4d4f53;
+  border-radius: 50%;
+  border: 2px solid #d3bc8e;
+}
+
+.timeline-subtitle,
+.timeline-item h4,
+.timeline-item h5 {
+  font-family: 'Genshin', sans-serif !important;
+  font-size: 18px !important;
+  color: #4d4f53 !important;
+  margin: 0 !important;
+  font-weight: bold !important;
+  padding: 0 !important;
+  border: none !important;
+  background: none !important;
+}
+
+.timeline-content {
+  font-family: 'Common', sans-serif;
+  font-size: 14px;
+  color: #5a5c5f;
+  line-height: 1.8;
+  margin: 10px 0;
+  text-align: left;
+}

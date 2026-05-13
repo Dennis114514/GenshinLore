@@ -1,13 +1,13 @@
 <script setup lang="ts">
 import { useData } from 'vitepress'
 import NotFound from './components/NotFound.vue'
-import SplashScreenLayout from './components/SplashScreen.vue'
-import HomeScreenLayout from './components/HomeScreen.vue'
+import Splash from './views/Splash/index.vue'
+import Home from './views/Home/index.vue'
 import AppHeader from './components/AppHeader.vue'
 import Article from './components/Article.vue'
-import NationScreen from './components/NationScreen.vue'
-import TimelineScreen from './components/TimelineScreen.vue'
-import EastereggScreen from './components/EastereggScreen.vue'
+import Nation from './views/Nation/index.vue'
+import Timeline from './views/Timeline/index.vue'
+import Easteregg from './views/Easteregg/index.vue'
 import NoticeModal from './components/NoticeModal.vue'
 import UserAgreementModal from './components/UserAgreementModal.vue'
 import MirrorNotice from './components/MirrorNotice.vue'
@@ -21,11 +21,11 @@ const { page, frontmatter } = useData()
     <!-- 统一页眉 -->
     <AppHeader :class="page.isNotFound || frontmatter.layout == 'splash' ? 'hidden' : ''" />
     <!-- 针对特定路由的自定义页面 -->
-    <SplashScreenLayout v-if="frontmatter.layout === 'splash'" />
-    <HomeScreenLayout v-else-if="frontmatter.layout === 'home'" />
-    <NationScreen v-else-if="frontmatter.layout === 'nations'" />
-    <TimelineScreen v-else-if="frontmatter.layout === 'timeline'" />
-    <EastereggScreen v-else-if="frontmatter.layout === 'interestfacts'" />
+    <Splash v-if="frontmatter.layout === 'splash'" />
+    <Home v-else-if="frontmatter.layout === 'home'" />
+    <Nation v-else-if="frontmatter.layout === 'nations'" />
+    <Timeline v-else-if="frontmatter.layout === 'timeline'" />
+    <Easteregg v-else-if="frontmatter.layout === 'interestfacts'" />
     <!-- 常规渲染 由vitepress进行 -->
     <div v-else class="flex w-full min-h-screen bg-[#f5f5f5]">
       <main class="flex w-full">

@@ -196,7 +196,7 @@ onBeforeUnmount(() => {
   white-space: normal;
   width: var(--desktop-tooltip-width, 350px);
   max-width: var(--desktop-tooltip-width, 350px);
-  z-index: 500;
+  z-index: 2000;
   text-align: left;
   line-height: 1.5;
   font-family: 'Common', sans-serif;

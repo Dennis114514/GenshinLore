@@ -1,11 +1,11 @@
----
+﻿---
 layout: doc
 title: 降临者
 editLink: true
 secondaryClass: "/basiclore"
 ---
 
-<TextCenter>来自世界之外且唯有自身等价一个世界的人才能担此头衔。非降临者且来自世界之外只能算「偷渡客」（例如丝柯克）。</TextCenter>
+<div class="text-center text-base text-[#4d4f53] leading-[2]">来自世界之外且唯有自身等价一个世界的人才能担此头衔。非降临者且来自世界之外只能算「偷渡客」（例如丝柯克）。</div>
 
 | 位格 | 人物 | 介绍 |
 |------|------|------|

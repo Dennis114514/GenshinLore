@@ -1,4 +1,4 @@
----
+﻿---
 layout: doc
 title: 魔神/邪神
 editLink: true
@@ -18,7 +18,7 @@ secondaryClass: "/basiclore"
 | 风神 | 巴巴托斯（温迪） | 巴巴托斯（温迪） |
 | 岩神 | 摩拉克斯（钟离） | 摩拉克斯（钟离） |
 | 雷神 | 巴尔（雷电真） | 巴尔泽布（雷电影） |
-| 草神 | ？<Footnote n="2" text="大慈树王的魔神名未知"></Footnote>（<Spoiler title="大慈树王">大慈树王</Spoiler>）<br>（ ~~已将自我从历史中删除，关于<Spoiler title="大慈树王">大慈树王</Spoiler>的全部信息都被替换为纳西妲~~ ） | 布耶尔（纳西妲） |
+| 草神 | ？<Footnote n="2" text="大慈树王的魔神名未知"></Footnote>（<span class="black-block" title="大慈树王">大慈树王</span>）<br>（ ~~已将自我从历史中删除，关于<span class="black-block" title="大慈树王">大慈树王</span>的全部信息都被替换为纳西妲~~ ） | 布耶尔（纳西妲） |
 | 水神 | 厄歌莉娅 | 芙卡洛斯（芙宁娜·德·枫丹）<Footnote n="3" text="芙卡洛斯为二代水神本尊，也是「神格」；而芙宁娜·德·枫丹是芙卡洛斯作为人类的一部分，为「人格」"></Footnote><br>（现神座已毁，水神不复存在） |
 | 火神 | 赫布里穆<Footnote n="4" text="成为火神意味着继承了圣火里的传承记忆，因此都叫赫布里穆。历代火神都是人神，寿命相较于其他执政较短"></Footnote><br>（希巴拉克-赤瞳少年……库穆库库尔……柯夏尼娜……恩德盖……） | 赫布里穆（玛薇卡） |
 | 冰神 | ？<br>（白沙皇·莫诺马赫·雪奈茨尼伊） | 巴纳巴斯<Footnote n="5" text="原神project漫画"></Footnote><br>（冰之女皇·安娜丝塔夏·费奥多罗夫娜·雪奈茨娜娅） |
