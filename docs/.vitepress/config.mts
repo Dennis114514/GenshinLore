@@ -1,56 +1,9 @@
 import { defineConfig } from 'vitepress'
 import tailwindcss from '@tailwindcss/vite'
-import federation from '@originjs/vite-plugin-federation'
-import { execSync } from 'node:child_process'
-import type { ConfigEnv, Plugin, UserConfig } from 'vite'
 
-//const isProd = process.env.NODE_ENV === 'production'
-
-function resolveShortCommit() {
-  try {
-    return execSync('git rev-parse --short=7 HEAD', { encoding: 'utf8' }).trim()
-  }
-  catch {
-    return 'unknown'
-  }
-}
-
-const shortCommit = resolveShortCommit()
 const tailwindPlugin = tailwindcss() as unknown as NonNullable<
   Parameters<typeof defineConfig>[0]['vite']
 >['plugins']
-const rawFederationPlugin = federation({
-  name: 'genshinloreDocs',
-  filename: 'editorRemoteEntry.js',
-  exposes: {
-    './widgets': './docs/.vitepress/theme/client/federation/widgetRegistry.ts',
-    './widgetStyles': './docs/.vitepress/theme/client/federation/stylesEntry.ts',
-  },
-  shared: ['vue'],
-}) as unknown as Plugin | Plugin[]
-
-function clientOnlyPlugin(plugin: Plugin): Plugin {
-  const originalApply = plugin.apply
-  return {
-    ...plugin,
-    apply(config: UserConfig, env: ConfigEnv) {
-      if (env.isSsrBuild) {
-        return false
-      }
-      if (typeof originalApply === 'function') {
-        return originalApply(config, env)
-      }
-      if (originalApply) {
-        return originalApply
-      }
-      return true
-    },
-  }
-}
-
-const federationPlugin = Array.isArray(rawFederationPlugin)
-  ? rawFederationPlugin.map(clientOnlyPlugin)
-  : clientOnlyPlugin(rawFederationPlugin)
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
@@ -116,19 +69,6 @@ export default defineConfig({
   vite: {
     plugins: [
       tailwindPlugin,
-      ...(Array.isArray(federationPlugin) ? federationPlugin : [federationPlugin]),
     ],
-    server: {
-      cors: true,
-      proxy: {
-        '/editor': {
-          target: 'http://127.0.0.1:5174',
-          changeOrigin: true,
-        },
-      },
-    },
-    define: {
-      __MIRROR_COMMIT__: JSON.stringify(shortCommit),
-    },
   },
 })
