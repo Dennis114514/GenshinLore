@@ -1,5 +1,8 @@
 /example
-/.github #防止下游仓库配置的actions被上游覆盖
+/.github 
+#防止下游仓库配置的actions被上游覆盖
 /script.py
-/tree.json #自动更新文件树的残留文件
-/tree.md ##自动更新文件树的残留文件
+/tree.json 
+#自动更新文件树的残留文件
+/tree.md 
+#自动更新文件树的残留文件
