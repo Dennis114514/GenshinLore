@@ -57,11 +57,6 @@ const mpsLink = computed(() => (mpsCode.value ? `${MPS_LINK_BASE}${mpsCode.value
         <span>{{ mps.number }}</span>
       </a>
     </p>
-     <p class="m-[5px_0] text-center">
-      <a class="hover:underline" href="/editor/" target="_blank"
-        >编辑器(test)</a
-      >
-    </p>
   </footer>
 </template>
 
