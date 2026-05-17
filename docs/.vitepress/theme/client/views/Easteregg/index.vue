@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import { ref } from 'vue'
-import Spacer from '../widgets/Spacer.vue'
-import { easterEggs } from '../../data/interestfactsData'
+import Spacer from '../../widgets/Spacer.vue'
+import { easterEggs } from '../../../data/interestfactsData'
 
 const showModal = ref(false)
 const easterEggsData = easterEggs

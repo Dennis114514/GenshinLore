@@ -1,63 +1,28 @@
----
+﻿---
 layout: doc
 title: 龙/龙蜥/光界
 editLink: true
 secondaryClass: "/basiclore"
 ---
 
-<TextCenter>光界其代表的是原始元素力，也就是蛮荒元素力（燃素）。</TextCenter>
+<div class="text-center text-base text-[#4d4f53] leading-[2]">光界其代表的是原始元素力，也就是蛮荒元素力（燃素）。</div>
 
-<div class="w-full flex items-center justify-center">
-<table style="width: auto !important;">
-  <tr>
-    <th>位格</th>
-    <th>一代（光界之王）</th>
-    <th>二代（×龙之王）</th>
-  </tr>
-  <tr>
-    <td>龙族之王</td>
-    <td colspan="2">尼伯龙根</td>
-  </tr>
-  <tr>
-    <td>风龙王</td>
-    <td>？</td>
-    <td>特瓦林（塔兹拉克）</td>
-  </tr>
-  <tr>
-    <td>岩龙王</td>
-    <td>？（疑似也是若陀龙王）</td>
-    <td>若陀龙王</td>
-  </tr>
-  <tr>
-    <td>雷龙王</td>
-    <td colspan="2">？（卡帕奇莉疑似与雷龙王有关）</td>
-  </tr>
-  <tr>
-    <td>草龙王</td>
-    <td colspan="2">阿佩普</td>
-  </tr>
-  <tr>
-    <td>水龙王</td>
-    <td>？</td>
-    <td>那维莱特</td>
-  </tr>
-  <tr>
-    <td>火龙王</td>
-    <td colspan="2">修库特尔</td>
-  </tr>
-  <tr>
-    <td>冰龙王</td>
-    <td>？</td>
-    <td>？</td>
-  </tr>
-</table>
-</div>
+| 位格 | 一代（光界之王） | 二代（×龙之王） |
+|------|------------------|-------------------|
+| 龙族之王 | 尼伯龙根 | 尼伯龙根 |
+| 风龙王 | ？ | 特瓦林（塔兹拉克） |
+| 岩龙王 | ？（疑似也是若陀龙王） | 若陀龙王 |
+| 雷龙王 | ？（卡帕奇莉疑似与雷龙王有关） | ？（卡帕奇莉疑似与雷龙王有关） |
+| 草龙王 | 阿佩普 | 阿佩普 |
+| 水龙王 | ？ | 那维莱特 |
+| 火龙王 | 修库特尔 | 修库特尔 |
+| 冰龙王 | ？ | ？ |
 
 <MidTitle>相关文本</MidTitle>
 <Space :size="20"></Space>
 <MidTitle>尼伯龙根【祷歌其六：始源的铁匠·塔科贾·雅尼奎宁】 <Footnote n="1" text="祷歌是终北祷歌集" /></MidTitle>
 
-<TextCenter>
+<div class="text-center text-base text-[#4d4f53] leading-[2]">
 你，地骨与三重月的锻造主呀，颀伟的始源之父，
 <br>
 你要发怒将那失衡的王座推正，好叫那美人折服。
@@ -85,4 +50,4 @@ secondaryClass: "/basiclore"
 请你平息这使地骨摇撼的烈怒，不可毁灭的君主，
 <br>
 请你纾解盘踞在我心间的痛楚，终结漆黑的灾苦。
-</TextCenter>
+</div>

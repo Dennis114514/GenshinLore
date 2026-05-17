@@ -1,19 +1,6 @@
 import { defineConfig } from 'vitepress'
 import tailwindcss from '@tailwindcss/vite'
-import { execSync } from 'node:child_process'
 
-//const isProd = process.env.NODE_ENV === 'production'
-
-function resolveShortCommit() {
-  try {
-    return execSync('git rev-parse --short=7 HEAD', { encoding: 'utf8' }).trim()
-  }
-  catch {
-    return 'unknown'
-  }
-}
-
-const shortCommit = resolveShortCommit()
 const tailwindPlugin = tailwindcss() as unknown as NonNullable<
   Parameters<typeof defineConfig>[0]['vite']
 >['plugins']
@@ -35,8 +22,31 @@ export default defineConfig({
   markdown: {
     headers: true,
     config: (md) => {
-      md.renderer.rules.strong_open = () => '<span class="red-text">'
-      md.renderer.rules.strong_close = () => '</span>'
+      md.renderer.rules.strong_open = () =>
+        '<strong class="red-text">'
+      md.renderer.rules.strong_close = () => '</strong>'
+
+      const defaultLinkRender =
+        md.renderer.rules.link_open ||
+        function (tokens, idx, options, _env, self) {
+          return self.renderToken(tokens, idx, options)
+        }
+
+      md.renderer.rules.link_open = function (
+        tokens,
+        idx,
+        options,
+        env,
+        self,
+      ) {
+        const token = tokens[idx]
+        const href = token.attrGet('href')
+        if (href && /^https?:\/\//.test(href)) {
+          token.attrSet('target', '_blank')
+          token.attrSet('rel', 'noopener noreferrer')
+        }
+        return defaultLinkRender(tokens, idx, options, env, self)
+      }
     },
   },
 
@@ -57,9 +67,8 @@ export default defineConfig({
   },
 
   vite: {
-    plugins: [tailwindPlugin],
-    define: {
-      __MIRROR_COMMIT__: JSON.stringify(shortCommit),
-    },
+    plugins: [
+      tailwindPlugin,
+    ],
   },
 })

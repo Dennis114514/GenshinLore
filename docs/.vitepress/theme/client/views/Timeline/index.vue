@@ -1,8 +1,8 @@
 <script setup lang="ts">
 import { computed, ref, onMounted, onUnmounted, nextTick } from 'vue'
-import AppFooter from './AppFooter.vue'
-import { nationColumns, timelinePeriods } from '../../data/timelineData'
-import type { TimelineCell } from '../../data/timelineData'
+import AppFooter from '../../components/AppFooter.vue'
+import { nationColumns, timelinePeriods } from '../../../data/timelineData'
+import type { TimelineCell } from '../../../data/timelineData'
 
 const blurred = ref(false)
 const tableScrollRef = ref<HTMLElement | null>(null)

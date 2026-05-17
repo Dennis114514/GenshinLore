@@ -113,14 +113,11 @@
 
 /* ======== 表格 ======== */
 .vp-doc .content-wrapper table {
-  width: 100%;
   border-collapse: collapse;
   font-family: 'Common', sans-serif;
   font-size: 14px;
   line-height: 1.8;
-  margin: 20px 0;
-  display: block;
-  overflow-x: auto;
+  margin: 20px auto;
 }
 
 .vp-doc .content-wrapper th {
@@ -136,7 +133,7 @@
   padding: 12px 15px;
   border: 1px solid #D3BC8E;
   color: #4d4f53;
-  text-align: center;
+  text-align: left;
 }
 
 .vp-doc .content-wrapper tr:nth-child(even) {
@@ -263,7 +260,7 @@
 }
 
 /* ======== 工具类 — Khaenriah 字体 ======== */
-.vp-doc .khaenriah-font {
+.vp-doc .content-wrapper .khaenriah-font {
   font-family: 'Khaenriah', serif;
 }
 
@@ -307,7 +304,14 @@
   border-radius: 2px;
 }
 
+/* 时间线 section */
+.vp-doc .content-wrapper .timeline-section {
+  margin-bottom: 60px;
+  position: relative;
+}
+
 /* 时间线 H2 章节标题 */
+.vp-doc .content-wrapper .timeline-period,
 .vp-doc .content-wrapper .timeline > h2 {
   font-family: 'Genshin', sans-serif;
   font-size: 24px;
@@ -318,6 +322,7 @@
   position: relative;
 }
 
+.vp-doc .content-wrapper .timeline-period::before,
 .vp-doc .content-wrapper .timeline > h2::before {
   content: '';
   position: absolute;
@@ -333,6 +338,7 @@
 }
 
 /* 时间线 H3 小节标题 */
+.vp-doc .content-wrapper .timeline-main-title,
 .vp-doc .content-wrapper .timeline > h3 {
   font-family: 'Genshin', sans-serif;
   font-size: 20px;
@@ -346,6 +352,7 @@
   position: relative;
 }
 
+.vp-doc .content-wrapper .timeline-main-title::before,
 .vp-doc .content-wrapper .timeline > h3::before {
   content: '';
   position: absolute;
@@ -357,6 +364,14 @@
   background-color: #4d4f53;
   border-radius: 50%;
   border: 2px solid #D3BC8E;
+}
+
+/* 时间线注释 */
+.vp-doc .content-wrapper .timeline-note {
+  font-family: 'Common', sans-serif;
+  font-size: 12px;
+  color: #8d8f93;
+  margin: 0 0 30px 70px;
 }
 
 /* 时间线项目 */
@@ -383,6 +398,20 @@
   border: 2px solid #D3BC8E;
 }
 
+/* 时间线子标题 */
+.vp-doc .content-wrapper .timeline-subtitle,
+.vp-doc .content-wrapper .timeline-item h4,
+.vp-doc .content-wrapper .timeline-item h5 {
+  font-family: 'Genshin', sans-serif !important;
+  font-size: 18px !important;
+  color: #4d4f53 !important;
+  margin: 0 !important;
+  font-weight: bold !important;
+  padding: 0 !important;
+  border: none !important;
+  background: none !important;
+}
+
 /* 时间线正文 */
 .vp-doc .content-wrapper .timeline-content {
   font-family: 'Common', sans-serif;
@@ -400,12 +429,27 @@
   }
 
   .vp-doc .content-wrapper table {
+    display: block;
+    max-width: 100%;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    white-space: nowrap;
     font-size: 12px;
+    background:
+      linear-gradient(to right, #ffffff 30%, transparent) left,
+      linear-gradient(to right, transparent, #ffffff 70%) right,
+      radial-gradient(farthest-side at 0% 50%, rgba(0, 0, 0, 0.12), transparent) left,
+      radial-gradient(farthest-side at 100% 50%, rgba(0, 0, 0, 0.12), transparent) right;
+    background-repeat: no-repeat;
+    background-size: 40px 100%, 40px 100%, 14px 100%, 14px 100%;
+    background-attachment: local, local, scroll, scroll;
   }
 
   .vp-doc .content-wrapper th,
   .vp-doc .content-wrapper td {
     padding: 8px 10px;
+    white-space: normal;
+    min-width: 40vw;
   }
 
   .vp-doc .page-title {
@@ -444,23 +488,27 @@
     left: 15px;
   }
 
+  .vp-doc .content-wrapper .timeline-period,
   .vp-doc .content-wrapper .timeline > h2 {
     margin: 20px 0 10px 20px;
     margin-left: 50px;
     font-size: 20px;
   }
 
+  .vp-doc .content-wrapper .timeline-period::before,
   .vp-doc .content-wrapper .timeline > h2::before {
     left: -25px;
     width: 10px;
     height: 10px;
   }
 
+  .vp-doc .content-wrapper .timeline-main-title,
   .vp-doc .content-wrapper .timeline > h3 {
     margin-left: 50px;
     font-size: 17px;
   }
 
+  .vp-doc .content-wrapper .timeline-main-title::before,
   .vp-doc .content-wrapper .timeline > h3::before {
     left: -25px;
     width: 8px;
@@ -475,6 +523,10 @@
 
   .vp-doc .content-wrapper .timeline-item::before {
     left: -30px;
+  }
+
+  .vp-doc .content-wrapper .timeline-item h4 {
+    font-size: 16px !important;
   }
 }
 

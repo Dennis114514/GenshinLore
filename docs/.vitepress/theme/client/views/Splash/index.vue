@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import { ref, onMounted, onUnmounted } from 'vue'
-import Particle from '../core/particle'
+import Particle from '../../core/particle'
 
 const videoLoaded = ref(false)
 const enterVisible = ref(false)
@@ -162,17 +162,22 @@ const startIntroAnimation = () => {
   }, 3500)
 }
 
+let quoteTimer: ReturnType<typeof setTimeout> | null = null
+
 const handleEnter = () => {
   enterFading.value = true
   isFormed = false
 
   setTimeout(() => {
     quoteVisible.value = true
+    quoteTimer = setTimeout(() => {
+      window.location.href = '/home'
+    }, 5000)
   }, 1800)
+}
 
-  setTimeout(() => {
-    window.location.href = '/home'
-  }, 7100)
+const goHome = () => {
+  window.location.href = '/home'
 }
 
 const checkScreenArea = () => {
@@ -224,6 +229,7 @@ onMounted(async () => {
 onUnmounted(() => {
   cancelAnimationFrame(animationId)
   window.removeEventListener('resize', onResize)
+  if (quoteTimer) clearTimeout(quoteTimer)
 })
 </script>
 
@@ -270,6 +276,7 @@ onUnmounted(() => {
     <div
       class="quote-overlay fixed top-0 left-0 w-full h-full bg-white z-100 flex items-center justify-center opacity-[0] invisible"
       :class="{ visible: quoteVisible }"
+      @click="goHome"
     >
       <div class="quote-content" :class="{ 'small-screen': quoteSmall }">
         <p>文字之渊源已不可考，穷究言语之滥觞亦是罪责。</p>
@@ -416,5 +423,52 @@ onUnmounted(() => {
 .splash-root .quote-content.small-screen .quote-hint {
   font-size: calc(100vw / 70) !important;
   margin-top: 30px !important;
+}
+
+@media (max-width: 768px) {
+  .splash-root .quote-overlay {
+    align-items: flex-start;
+    overflow-y: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  .splash-root .quote-content {
+    max-width: 100%;
+    padding: 30px 20px 40px;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .splash-root .quote-content p {
+    font-size: 16px !important;
+    line-height: 1.8 !important;
+  }
+
+  .splash-root .quote-content .quote-author {
+    font-size: 15px !important;
+    margin-top: 16px !important;
+  }
+
+  .splash-root .quote-content .quote-hint {
+    font-size: 13px !important;
+    margin-top: 32px !important;
+    color: #9d9d9d !important;
+  }
+
+  .splash-root .quote-content.small-screen p {
+    font-size: 14px !important;
+    line-height: 1.7 !important;
+  }
+
+  .splash-root .quote-content.small-screen .quote-author {
+    font-size: 13px !important;
+  }
+
+  .splash-root .quote-content.small-screen .quote-hint {
+    font-size: 12px !important;
+    margin-top: 24px !important;
+  }
 }
 </style>

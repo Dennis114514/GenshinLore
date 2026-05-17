@@ -1,4 +1,4 @@
-# 编写（贡献）指南
+﻿# 编写（贡献）指南
 
 感谢你愿意为本项目做贡献！
 
@@ -43,6 +43,40 @@
 
 > 其他未被列举到的markdown样式将以其原本的行为在本站中被渲染，**但我们不推荐使用**。若你需要红色文字，除了用 `**文字**` 外，也可以直接写 `<span class="red-text">文字</span>`。
 
+### 表格：直接用 Markdown 原生语法
+
+本站已优化，你可以直接用 Markdown 原生表格语法编写，**无需**再用 `<div>` 包裹或写 HTML `<table>/<tr>/<td>`：
+
+```markdown
+| 类型 | 介绍 |
+|------|------|
+| 魔神 | 原初之人法涅斯的碎片，依附到元素生命上使其成为魔神。 |
+| 邪神 | 战败的魔神逃到暗之外海，化作邪神。 |
+```
+
+效果：表格会自动居中，单元格内容默认左对齐。对于复杂的合并单元格（如 rowspan/colspan），仍需使用 HTML 表格语法。
+
+### 链接：自动新窗口打开
+
+本站已配置，所有以 `http://` 或 `https://` 开头的外部链接会自动在新标签页打开，**无需**再写 `target="_blank"`。直接用 Markdown 链接即可：
+
+```markdown
+[视频链接](https://www.bilibili.com/video/BV1At4y1q7UQ/)
+```
+
+等价于：
+```html
+<a href="https://www.bilibili.com/video/BV1At4y1q7UQ/" target="_blank">视频链接</a>
+```
+
+### 脚注中的链接
+
+`<Footnote>` 组件的 `text` 属性支持 Markdown 链接语法 `[文字](链接)`，会自动转为可点击的新窗口链接：
+
+```html
+<Footnote n="1" text="参考资料：[B站视频](https://www.bilibili.com/video/BV1At4y1q7UQ/)" />
+```
+
 **第三：** 为方便你使用一些复杂样式，我们根据实际编写需要封装出了一些全局可用的自定义DOM，你可以在你的markdown文档内自由使用：
 
 > 如果你不熟悉 HTML 或编程，不必担心。你只需要把下面的示例代码复制到你的 markdown 文件中，然后把示例里的文字替换成你想展示的内容即可。注意保留代码中的尖括号（`< >`）和引号等符号。
@@ -65,24 +99,6 @@
 
 ```html
 <MidTitle>章节标题</MidTitle>
-```
-
-**`<Subtitle>` — 小标题**
-
-一个加粗的小号标题，适合用在卡片或段落内部作为子标题。（注意：该标题不会被大纲索引）
-
-```html
-<Subtitle>某个段落的小标题</Subtitle>
-```
-
-**`<TextCenter>` — 居中正文**
-
-让一段文字居中对齐显示，适用于需要突出展示的短句。
-
-```html
-<TextCenter>
-这是一段需要居中显示的文字。
-</TextCenter>
 ```
 
 **`<Space>` — 垂直间距**
@@ -148,48 +164,29 @@
 
 在文字旁边添加一个金色的脚注编号，读者将鼠标移到编号上时会显示脚注内容。需要填写两个参数：
 - `n`：脚注编号
-- `text`：脚注内容（支持 HTML）
+- `text`：脚注内容（支持 `[文字](链接)` 格式的 Markdown 链接）
 
 ```html
 此处是正文内容<Footnote n="1" text="这是脚注的详细说明文字。" />
+```
+
+带链接的脚注：
+```html
+<Footnote n="1" text="参考资料：[B站视频](https://www.bilibili.com/video/BVxxx/)" />
 ```
 
 ### 时间线类
 
 这套组件用于构建游戏世界的时间线页面。
 
-**`<TimelineWrapper>` — 时间线容器**
+**`<Timeline>` — 时间线容器**
 
 时间线的外层包裹容器，所有时间线相关内容都应放在它的内部。
 
 ```html
-<TimelineWrapper>
-  <!-- 时间线条目放在这里 -->
-</TimelineWrapper>
-```
-
-**`<TimelineItem>` — 时间线条目**
-
-时间线中的一个事件条目。内部可以写 markdown 段落，每个段落会自动按时间线条目的样式渲染。
-
-```html
-<TimelineItem>
-
-这是时间线中的一个事件描述。
-
-这是同一事件中的另一段补充说明。
-
-</TimelineItem>
-```
-
-**`<TimelineImage>` — 时间线配图**
-
-在时间线条目中插入一张图片。需要填写两个参数：
-- `src`：图片的路径或网址（必填）
-- `caption`：图片下方的说明文字（选填）
-
-```html
-<TimelineImage src="/images/timeline/example.jpg" caption="图片说明文字（可选）" />
+<Timeline>
+  <!-- 时间线内使用 markdown 二级/三级/四级标题，会自动识别为时间线节点。 -->
+</Timeline>
 ```
 
 ### 内联样式

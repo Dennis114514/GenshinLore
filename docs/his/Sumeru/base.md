@@ -1,12 +1,12 @@
----
+﻿---
 layout: doc
 title: 第三章：须弥·虚空劫灰往世书
 editLink: true
 secondaryClass: "/nations"
 ---
 
-<TextCenter>
-<p style="text-align: center !important; font-family: 'Khaenriah', sans-serif;">sub floreis lumen sagacitatis</p>
+<div class="text-center text-base text-[#4d4f53] leading-[2]">
+<p class="khaenriah-font" style="text-align:center">sub floreis lumen sagacitatis</p>
 智慧
 <br>
 是智慧之神的敌人，
@@ -19,7 +19,7 @@ secondaryClass: "/nations"
 <br>
 而神的**智慧**
 <br>
-对此并无意见。<Footnote n="1" text="<a href='https://www.bilibili.com/video/BV1At4y1q7UQ/' target='_blank'>《原神·提瓦特篇》主线章节预告PV-「足迹」_哔哩哔哩_bilibili</a>"></Footnote>
+对此并无意见。<Footnote n="1" text="[《原神·提瓦特篇》主线章节预告PV-「足迹」_哔哩哔哩_bilibili](https://www.bilibili.com/video/BV1At4y1q7UQ/)"></Footnote>
 <br>
 <Space :size="14"></Space>
 我做了一个很长很长的梦…
@@ -37,13 +37,11 @@ secondaryClass: "/nations"
 **「生命」**一直都是目的，
 <br>
 「智慧」才是手段。<Footnote n="2" text="生长碧翡。另有一段废案，仅供参考：生命最后放开了手…施与众生自由。人与动物们都能表达自己，草木却只有沉默。所以它们才需要一位代言。"></Footnote>
-</TextCenter>
+</div>
 
-<TimelineWrapper>
+<Timeline>
 
 ## 一、阿佩普时期【待发现】
-
-<TimelineItem>
 
 传说在时间开始之前的过去，它们（阿佩普及其子嗣）所统辖地上遍布芳草与巨木，而它们的主宰与其子嗣一同，在湿润的泥土中穿梭，如同鱼之游于水中。
 
@@ -57,13 +55,9 @@ secondaryClass: "/nations"
 
 在阿佩普的宮阙灵囿里、草木生长之天地中，首先抽芽的便是蕨草。
 
-</TimelineItem>
-
 ## 二、月宫与葬火
 
 ### （一）月宫
-
-<TimelineItem>
 
 和平的遥远时代，王者与神官的岁月
 
@@ -89,19 +83,11 @@ secondaryClass: "/nations"
 
 曾经有三个姐妹（三月女神）。每到夜晚，她们就离开珍珠色的宫殿，行走在沙漠里。月莲在她们的脚边开放。（花神）曾漫步在亮银斑驳的沙丘，与明月的三姐妹共舞。
 
-</TimelineItem>
-
 ### （二）葬火
-
-<TimelineItem>
 
 #### 1. 月亮女神的陨落 <Footnote n="4" text="贯月矢"></Footnote>
 
-</TimelineItem>
-
-<TimelineItem>
-
-<Subtitle>·最终有两轮明月碎成了尘埃，消失不见了</Subtitle>
+#### ·最终有两轮明月碎成了尘埃，消失不见了
 
 月亮的碎屑终于落在了地面上。（安逸的月夜沉入流沙）在月亮的尘埃落下的地方，就开出了月莲。而吸入这些尘埃的孩子们，心中总是有珍珠般的明月。这是总有孩子为月所惑的原因，也是月莲逢夜开放的原因，也是月光总是青睐这些孩子们的原因。因为相互映照的三姐妹，无论何时都渴望着团聚。
 
@@ -111,17 +97,9 @@ secondaryClass: "/nations"
 
 黄金的时代里，月亮的苍白面庞也散发着如琥珀如蜜的辉光。花园中盛开着如梦般紫色的帕蒂莎兰，鼓胀的石榴放声高歌…运河闪亮纵横，哪怕在神死去的日子里也未曾被沙暴所壅阻。
 
-</TimelineItem>
-
-<TimelineItem>
-
 #### 2. 钉子 / 须弥沙漠化 <Footnote n="5" text="饰金之梦，乐园遗落之花"></Footnote>
 
-</TimelineItem>
-
-<TimelineItem>
-
-<Subtitle>·深渊入侵</Subtitle>
+#### ·深渊入侵
 
 在原本的世界，藩篱曾被撕毁，黯色的毒曾渗入大地。
 
@@ -145,21 +123,13 @@ secondaryClass: "/nations"
 
 古时，高天的诏谕陷于沉默，地上失去了主人。文明与逸和的过去被遗弃，没入浓稠的深暗中。
 
-</TimelineItem>
-
-<TimelineItem>
-
-<Subtitle>·阿佩普</Subtitle>
+#### ·阿佩普
 
 「翠草之龙」阿佩普希望继承尼伯龙根的衣钵遗志，但紧接着天理就对阿佩普的领土降下了惩罚——一枚巨大的寒天之钉降落在须弥，致使须弥变成了沙漠。阿佩普族人退化为沙虫。
 
 随着从天而降的灾厄，树木、藤蔓、根茎与花草纷纷枯干，化作尘埃，许多的生命也消失了。
 
-</TimelineItem>
-
-<TimelineItem>
-
-<Subtitle>·花神和赤王被放逐</Subtitle>
+#### ·花神和赤王被放逐
 
 <QuoteBlock>
 
@@ -179,11 +149,7 @@ secondaryClass: "/nations"
 
 花神降临，在修复须弥的过程中染上禁忌知识。
 
-</TimelineItem>
-
-<TimelineItem>
-
-<Subtitle>·浮盘婆梨袈国的建立</Subtitle>
+#### ·浮盘婆梨袈国的建立
 
 最初的镇灵皆是智慧的造物，她们皆沉迷于天真的梦，与甜梦一般的爱恋。
 
@@ -197,52 +163,31 @@ secondaryClass: "/nations"
 
 她曾为被放逐之人、癫狂之人与痴愚之人展现梦想，在梦想中为他们奉上甘美的欢乐，即使人们的手中只有黑铁的碗砵，依旧为花之女王的魅力所折服，深醉于她美丽的形象与无微不至的关怀之中。
 
-</TimelineItem>
-
 ## 三、乐土瓦利·韦杰
 
-<TimelineItem>
-<div class="table-container">
-<table class="lightrelam-table">
-<colgroup>
-<col style="width:25%">
-<col style="width:75%">
-</colgroup>
+<table>
 <tr><th>人物</th><th>介绍</th></tr>
-<tr><td>「花神」<br/>娜布·玛莉卡塔 <Footnote n="6" text="介绍出自绿洲花园系列材料。编者注：娜布·玛莉卡塔为俗称，花神的魔神名未知。"></Footnote></td><td class="text-left">「白银的月亮」，欢乐与幸福之主梦的主人，天使<br/>花的王者是欢乐与幸福之主。清泉从她的袖口涌流而出，沙漠中便有了百花盛开的绿洲；鲜花与香草紧随着她的脚步，银白的月光为她开道。欢宴属于鲜花与月夜的女主人。<br/>在高天转过脸去的艰苦时代，她为凡人遍洒恩惠。<br/>「安乐和平，统一的无忧乐园中无分彼此，亦无有灾祸…」「真希望此刻蜃楼般的幸福能化作永恒，再无分离之苦。」<br/>「有尽的欢愉终以苦涩作结，」「蜜般甘美的回忆烟消云散。」</td></tr>
-<tr><td>「赤王」<br/>阿赫玛尔/<br/>阿蒙 <Footnote n="7" text="编者注：阿赫玛尔为俗称，阿蒙为魔神名。"></Footnote></td><td class="text-left">神王，「黄金的太阳」，生者和王者的引路人，天空遗落的子嗣<br/>决心要在地上建造理想国（无法老去的梦想），让一切悲伤从此消失；在沙漠一隅构建了前所未见的大绿洲；耗尽智性与气力在沙中建成了永恒的蜃气楼。<br/>约定相互提醒的挚友先染上了遗忘的恶疾。如果主宰记忆的器官已经太过残破无法复原，那带上另一位老友，一同在过往的梦中生活，在小树屋中玩耍，在无限深远的密林中探险，那也不错。在梦中，谁都有重新开始的机会。<br/>依照未完全忘却的旧梦中描绘的三人、三精灵的形象，以及被学院所流逐的狂医（博士）留下的记录与猜想，去捕获梦想——捕获能操控梦想的林中居民（兰那罗），让挚友再度想起自己的形象与一同的记忆吧。首先要捕获那些梦中的精灵。那些佣兵曾经为我做过很多。这次应该也不会让我失望吧。</td></tr>
-<tr><td>「大慈树王」 <Footnote n="8" text="千夜浮梦。编者注：大慈树王的魔神名未知。"></Footnote></td><td class="text-left">树木的神，「翡翠的绿洲」王女昨日的拥有者，初代草神<br/>生命属于草木的养主，散布草木与绿茵，让土地充满智识与幸福。永无穷尽的智慧将文明捍卫，人们会因它回归而欢欣。<br/>御苑堙坠之刻，从未知晓过「光明」的少女，在梦中聆见了她的轻语。原本下定决心，伴着「梦」一同离去的孩子，在泪中睹见了她的慈恻。苍翠的灯盏浮映静邃的月光，将繁星的掠影与那永世的歌谣一并述撰——<br/>碧瞳的舞姬轻吻垂蜜的绸缎，白红蓝黄的鱼儿在珍珠般的净水中翩转，夜行的乐师挈引镇灵的烛炬，咏叹沙海中镀金的城塞与石榴色的锦弦，敏辩的水手踏上荣耀的远航，只为探寻梦里的歌声与彼岸葱蔚的花园。宁静的灯火照亮倾陨的御苑，伴着一千个世界的瑰幻之梦在灯中萦旋，轻柔的林风吹开覆尘的归径，引领迷失的孩子走出那不再安谧的宫殿。渐明的天光漏落细碎的叶间，那述说千夜之梦的苍翠灯盏却愈发黯淡：<br/>直至她似梦似醒时蓦然回首，目盲的少女才发觉群森不复、破晓已至。那梦中的灯盏自此不再闪烁，旧夜的梦也被荏苒的时光吞没，迎来曙光的鸟儿却依然歌唱，歌唱如繁花般粲然绽放的绮谈，为那些不曾将梦目睹的孩子，赠予期许的勇气、希望与欢乐，纺织那永无终结的千夜之歌，点亮静候破晓之时的一夜灯火。渡越千夜的迷梦，直至夜莺不再鸣唱，直至暮日再度沉落，<br/>行至终焉的旅人再度见到了那苍翠的灯盏，那遥远的故国，沾露的蔷薇依然在沐月的风中轻曳，待她将新的故事述说：<br/>「纵然昨夜的回忆永不再，我们仍要为今夜的美梦欢歌。」</td></tr>
+<tr><td>「花神」<br/>娜布·玛莉卡塔 <Footnote n="6" text="介绍出自绿洲花园系列材料。编者注：娜布·玛莉卡塔为俗称，花神的魔神名未知。"></Footnote></td><td>「白银的月亮」，欢乐与幸福之主梦的主人，天使<br/>花的王者是欢乐与幸福之主。清泉从她的袖口涌流而出，沙漠中便有了百花盛开的绿洲；鲜花与香草紧随着她的脚步，银白的月光为她开道。欢宴属于鲜花与月夜的女主人。<br/>在高天转过脸去的艰苦时代，她为凡人遍洒恩惠。<br/>「安乐和平，统一的无忧乐园中无分彼此，亦无有灾祸…」「真希望此刻蜃楼般的幸福能化作永恒，再无分离之苦。」<br/>「有尽的欢愉终以苦涩作结，」「蜜般甘美的回忆烟消云散。」</td></tr>
+<tr><td>「赤王」<br/>阿赫玛尔/<br/>阿蒙 <Footnote n="7" text="编者注：阿赫玛尔为俗称，阿蒙为魔神名。"></Footnote></td><td>神王，「黄金的太阳」，生者和王者的引路人，天空遗落的子嗣<br/>决心要在地上建造理想国（无法老去的梦想），让一切悲伤从此消失；在沙漠一隅构建了前所未见的大绿洲；耗尽智性与气力在沙中建成了永恒的蜃气楼。<br/>约定相互提醒的挚友先染上了遗忘的恶疾。如果主宰记忆的器官已经太过残破无法复原，那带上另一位老友，一同在过往的梦中生活，在小树屋中玩耍，在无限深远的密林中探险，那也不错。在梦中，谁都有重新开始的机会。<br/>依照未完全忘却的旧梦中描绘的三人、三精灵的形象，以及被学院所流逐的狂医（博士）留下的记录与猜想，去捕获梦想——捕获能操控梦想的林中居民（兰那罗），让挚友再度想起自己的形象与一同的记忆吧。首先要捕获那些梦中的精灵。那些佣兵曾经为我做过很多。这次应该也不会让我失望吧。</td></tr>
+<tr><td>「大慈树王」 <Footnote n="8" text="千夜浮梦。编者注：大慈树王的魔神名未知。"></Footnote></td><td>树木的神，「翡翠的绿洲」王女昨日的拥有者，初代草神<br/>生命属于草木的养主，散布草木与绿茵，让土地充满智识与幸福。永无穷尽的智慧将文明捍卫，人们会因它回归而欢欣。<br/>御苑堙坠之刻，从未知晓过「光明」的少女，在梦中聆见了她的轻语。原本下定决心，伴着「梦」一同离去的孩子，在泪中睹见了她的慈恻。苍翠的灯盏浮映静邃的月光，将繁星的掠影与那永世的歌谣一并述撰——<br/>碧瞳的舞姬轻吻垂蜜的绸缎，白红蓝黄的鱼儿在珍珠般的净水中翩转，夜行的乐师挈引镇灵的烛炬，咏叹沙海中镀金的城塞与石榴色的锦弦，敏辩的水手踏上荣耀的远航，只为探寻梦里的歌声与彼岸葱蔚的花园。宁静的灯火照亮倾陨的御苑，伴着一千个世界的瑰幻之梦在灯中萦旋，轻柔的林风吹开覆尘的归径，引领迷失的孩子走出那不再安谧的宫殿。渐明的天光漏落细碎的叶间，那述说千夜之梦的苍翠灯盏却愈发黯淡：<br/>直至她似梦似醒时蓦然回首，目盲的少女才发觉群森不复、破晓已至。那梦中的灯盏自此不再闪烁，旧夜的梦也被荏苒的时光吞没，迎来曙光的鸟儿却依然歌唱，歌唱如繁花般粲然绽放的绮谈，为那些不曾将梦目睹的孩子，赠予期许的勇气、希望与欢乐，纺织那永无终结的千夜之歌，点亮静候破晓之时的一夜灯火。渡越千夜的迷梦，直至夜莺不再鸣唱，直至暮日再度沉落，<br/>行至终焉的旅人再度见到了那苍翠的灯盏，那遥远的故国，沾露的蔷薇依然在沐月的风中轻曳，待她将新的故事述说：<br/>「纵然昨夜的回忆永不再，我们仍要为今夜的美梦欢歌。」</td></tr>
 </table>
-</div>
-</TimelineItem>
-
 ### （一）结盟 <Footnote n="9" text="浮槃歌卷"></Footnote>
 
-<TimelineItem>
+![花神的祭司](/img/context/Sumeru/image002.png)
 
-<TimelineImage src="/img/context/Sumeru/image002.png" caption="花神的祭司"></TimelineImage>
+![花神的朝圣者，该服饰和妮露「扮演花神」的戏服高度相似，极有可能是花神本人服饰](/img/context/Sumeru/image004.png)
 
-<TimelineImage src="/img/context/Sumeru/image004.png" caption="花神的朝圣者，该服饰和妮露「扮演花神」的戏服高度相似，极有可能是花神本人服饰"></TimelineImage>
-
-<Subtitle>·花神和赤王相遇</Subtitle>
+#### ·花神和赤王相遇
 
 在只有镇灵才会歌唱的过去，绿洲的女主人曾与赤砂的王相遇。
 
-</TimelineItem>
-
-<TimelineItem>
-
-<Subtitle>·镇灵的皈依</Subtitle>
+#### ·镇灵的皈依
 
 赤王用魔瓶广收镇灵，从它们的哀歌中习得月与驾车前事（坚强的卫士，灿烂的星宿），修月女城阿伊·哈努姆
 
 镇灵则为赤王修陵墓门扉。
 
-</TimelineItem>
-
-<TimelineItem>
-
-<Subtitle>·赤王的统治</Subtitle>
+#### ·赤王的统治
 
 时光的毒风搅扰了沦亡者（被天钉毁灭的前文明）的沉睡，引来了怀古的妄想。在那该诅咒的年代里，诸多城邦在肥沃的绿洲之上茁壮成长。跟从神王的理想，祭司们公正地治理乐土，布撒富足于四方。如今，绿洲之中代施统治的诸多显贵，成为了神主的影子。
 
@@ -262,13 +207,9 @@ secondaryClass: "/nations"
 
 </QuoteBlock>
 
-</TimelineItem>
+#### ·花神和树王结盟
 
-<TimelineItem>
-
-<Subtitle>·花神和树王结盟</Subtitle>
-
-<TimelineImage src="/img/context/Sumeru/image008.png" caption="沙漠祭司，该服饰是对赤王的模仿"></TimelineImage>
+![沙漠祭司，该服饰是对赤王的模仿](/img/context/Sumeru/image008.png)
 
 …浮盘婆梨袈国的女主人听说了这件事，便不惜纡尊降贵，前往（…）的大宫，意图用难解的谜题，考验王女的智慧。无数侍女、仆从与吏兵，簇拥在那永世辉烁的女主人身旁，他们都身着细麻与丝绸，仿佛万千昼星，装缀唯一的月光。…甜蜜的芳香萦绕着那（篱笆？花园？战场？）的女王，宛若溪流绕过树荫下碎银般的月亮。从古至今，无人曾将这般美貌瞩望，正如无人曾经目睹七月降下的晨霜。…于是，浮盘的女主人开口说：「赞颂有翼者，统领地上万国的君王。我是受造于原初的精灵，我是闪烁的虚像，我是创造者眼中流出的一缕微光。远方的人民都在将你的智慧颂唱，不知你可否为我破除令我困扰已久的迷茫？这些香料、黄金与宝石，我都要赠予你作谢礼，作为解开我三个谜语的馈贶。」那（…）的王女如此回答：「赞颂有翼者，统领地上万国的正理，我是昨日的拥有者，我是明晨的主宰者，却从未见过像你这般的秀美与雅丽。浮盘的女主人，无论你心中有什么样的疑虑，你都可以毫无保留地向我提起。这些香料、黄金与宝石，它们全部加在一处，也无法与传授知识的价值相比。」
 
@@ -282,29 +223,17 @@ secondaryClass: "/nations"
 
 …自此，二位女王便缔下了坚实的盟约，与自始至终陪伴在她们身边的那一位，就是（鲜血？怨怒？红冠？）的君王，三人勠力同心，共同引领（…）的子民走向永恒的繁荣。
 
-</TimelineItem>
-
-<TimelineItem>
-
-<Subtitle>·三人结盟</Subtitle>
+#### ·三人结盟
 
 在诸王彼此杀伐的酷烈年岁（魔神战争）中，赤王决心与另外二人共享王权。
 
 镇灵们献上了镶有祖母绿与红宝石的孔雀王座，庆祝三位深情的友人达成盟约。为了永恒的绿洲乐土，为了盛放的帕蒂莎兰，花之女主人戴上了紫水晶的王冠。
 
-</TimelineItem>
-
 ### （二）赤王和花神的计划 <Footnote n="10" text="乐园遗落之花"></Footnote>
-
-<TimelineItem>
 
 #### 1. 赤王的野心
 
-</TimelineItem>
-
-<TimelineItem>
-
-<Subtitle>·倾诉</Subtitle>
+#### ·倾诉
 
 在只有镇灵才会为之沉默的过去，赤砂为鲜花倾诉了自己的野心…
 
@@ -322,19 +251,11 @@ secondaryClass: "/nations"
 
 </QuoteBlock>
 
-</TimelineItem>
-
-<TimelineItem>
-
-<Subtitle>·前夜</Subtitle>
+#### ·前夜
 
 在某个无人忆起的月夜，在悲剧的沙暴席卷乐园的前夜…鲜花与草木曾谈及凡人国度，谈及其希望与荒芜的未来。不可接触者带来灰色的死亡，漆黑的浪潮冲刷生的河岸，草木走兽的新生将偕起凡人，击退那一轮轮险恶的潮流。
 
-</TimelineItem>
-
-<TimelineItem>
-
-<Subtitle>·花神将灵光交给树王</Subtitle>
+#### ·花神将灵光交给树王
 
 <QuoteBlock>
 
@@ -350,11 +271,7 @@ secondaryClass: "/nations"
 
 </QuoteBlock>
 
-</TimelineItem>
-
-<TimelineItem>
-
-<Subtitle>·树王的回复</Subtitle>
+#### ·树王的回复
 
 <QuoteBlock>
 
@@ -362,25 +279,13 @@ secondaryClass: "/nations"
 
 </QuoteBlock>
 
-</TimelineItem>
-
-<TimelineItem>
-
-<Subtitle>·灵光</Subtitle>
+#### ·灵光
 
 灵光能清除甚至逆转深渊，和深渊力量处于同位阶。
 
-</TimelineItem>
-
-<TimelineItem>
-
 #### 2. 花神之死
 
-</TimelineItem>
-
-<TimelineItem>
-
-<Subtitle>·花神的死亡</Subtitle>
+#### ·花神的死亡
 
 在只有镇灵才会为之哭泣的过去，绿洲的女主人做下了最后的选择。此刻她终于明晓，自己的命运并非谜题，却是开启秘密门扉的钥匙。尽管她展示的未来景象惨淡可怖，那执着的君王也并未退缩半步。尽管明知将踏上危险的歧途之旅，尽管明知将目睹深爱之人消堙…
 
@@ -406,11 +311,7 @@ secondaryClass: "/nations"
 
 </QuoteBlock>
 
-</TimelineItem>
-
-<TimelineItem>
-
-<Subtitle>·乐土覆灭</Subtitle>
+#### ·乐土覆灭
 
 彼时，乐土「瓦利·韦杰」被镀金的狂沙席卷。（失去一位魔神的乐土风暴骤起，黄沙漫天，很快被灾祸吞噬…赤王从蔽天的风沙中归来，而花的女主人却再也不见了影踪。）
 
@@ -418,11 +319,7 @@ secondaryClass: "/nations"
 
 花圃的女主人逝去之后，草木的女王亦与砂海决裂。
 
-</TimelineItem>
-
-<TimelineItem>
-
-<Subtitle>·树王创造神鸟西摩格（戈赫努丝）</Subtitle>
+#### ·树王创造神鸟西摩格（戈赫努丝）
 
 在久远的年代里，草木的女王曾遵从她的嘱托，将神鸟的形态赋予花之灵光，守护雨林的一隅。（与赤砂之主决裂的孤独岁月里，草木女王将灵光塑成神鸟）
 
@@ -446,33 +343,21 @@ secondaryClass: "/nations"
 
 终有一夜，女儿将离开三位母亲的怀抱，因为世上污秽众多，只有牺牲得以涤除…
 
-</TimelineItem>
-
 ### （三）黄金梦乡 <Footnote n="11" text="饰金之梦，乐园遗落之花，赤沙之杖"></Footnote>
 
-<TimelineItem>
-
-<Subtitle>·密约</Subtitle>
+#### ·密约
 
 传说赤砂之王在伴侣逝去后，以镇灵为使前往与凡人立密约。只有内心未尝被磨砺成为铁石者，未尝被虚假的蜃境腐蚀者，才有资格成为一方藩王，如先知那般统治羊群般迷惘的民众。就这样，在伟大主人慈悲而严厉的目光之下，镇灵有了人选…
 
 彼时年轻的牧羊人奥尔玛兹，与睡莲中诞生的利露帕尔相爱。
 
-</TimelineItem>
-
-<TimelineItem>
-
-<Subtitle>·镇灵的效忠</Subtitle>
+#### ·镇灵的效忠
 
 传说在花的女王故去时，她的诸多镇灵眷属（献出真名）转而向赤王效忠。赤王欺骗镇灵做出承诺，将为她们寻回花神。
 
 其中名「菲莉吉丝」的大镇灵，被赤砂之主拔擢为绿洲总督。
 
-</TimelineItem>
-
-<TimelineItem>
-
-<Subtitle>·赤王创造黄金梦乡（阿如）</Subtitle>
+#### ·赤王创造黄金梦乡（阿如）
 
 编织万千思绪，统制万千灵魂，此所谓威权之道。其目的恰恰最为深郁——创造不再有人苦恼，不再需要迫害与奴役的真实乐土。正如沉默的王从晶石的秘密中望见的一切，正如已然消逝的伴侣曾经的教诲那般。玄色的虫印与铁色的裁决，就这样成为了王国法度的基石。
 
@@ -502,11 +387,7 @@ secondaryClass: "/nations"
 
 </QuoteBlock>
 
-</TimelineItem>
-
-<TimelineItem>
-
-<Subtitle>·永恒绿洲</Subtitle>
+#### ·永恒绿洲
 
 出于对旧日回忆的执着，
 
@@ -518,11 +399,7 @@ secondaryClass: "/nations"
 
 为了守护女主人长眠的陵寝，她（菲莉吉丝）曾以镇灵之力维持泉流不息，因而沙漠中绿地星布，为失去家园的流民们提供葱茏的庇护…（最后的镇灵母亲菲莉吉丝守护着那片绿洲的宏伟门扉）
 
-</TimelineItem>
-
-<TimelineItem>
-
-<Subtitle>·菲莉吉丝的献身</Subtitle>
+#### ·菲莉吉丝的献身
 
 后来（居尔建立后），镇灵利露帕尔的引导下，凡人藩王的城邦围绕「永恒绿洲」建成，怀着对花之女主人的忠诚、对新生国度的怜悯，菲莉吉丝决定做出牺牲。不顾赤砂之王的挽留，大镇灵将优美的形体囚入了冰冷的构装镣铐之中，以水晶杯般的封印收敛沙海的盛怒，藉不动不变的形态守护凡人的城邦…
 
@@ -540,29 +417,20 @@ secondaryClass: "/nations"
 
 </QuoteBlock>
 
-</TimelineItem>
-
 ## 四、奥尔玛兹时期 <Footnote n="12" text="沙上楼阁史话，希鲁伊和希琳的故事"></Footnote>
 
-<TimelineItem>
-<div class="table-container">
-<table class="lightrelam-table">
-<tr><td>奥尔玛兹藩王</td><td class="text-left">镀金藩王</td></tr>
-<tr><td>大镇灵利露帕尔</td><td class="text-left">睡莲之女，其子嗣都是月神的宠儿</td></tr>
-<tr><td>希琳</td><td class="text-left">利露帕尔的女儿</td></tr>
-<tr><td>帕维兹拉万</td><td class="text-left">基斯拉，奥的义子，利的亲儿子，最强大的藩王</td></tr>
-<tr><td>希鲁伊</td><td class="text-left">胡拉姆丁，帕的儿子，蒙面王</td></tr>
+<table>
+<tr><td>奥尔玛兹藩王</td><td>镀金藩王</td></tr>
+<tr><td>大镇灵利露帕尔</td><td>睡莲之女，其子嗣都是月神的宠儿</td></tr>
+<tr><td>希琳</td><td>利露帕尔的女儿</td></tr>
+<tr><td>帕维兹拉万</td><td>基斯拉，奥的义子，利的亲儿子，最强大的藩王</td></tr>
+<tr><td>希鲁伊</td><td>胡拉姆丁，帕的儿子，蒙面王</td></tr>
 </table>
-</div>
-</TimelineItem>
-
 ### （一）奥尔玛兹藩王
 
-<TimelineItem>
+![利露帕尔扶持奥尔玛兹](/img/context/Sumeru/image011.png)
 
-<TimelineImage src="/img/context/Sumeru/image011.png" caption="利露帕尔扶持奥尔玛兹"></TimelineImage>
-
-<Subtitle>·镇灵扶助奥尔玛兹</Subtitle>
+#### ·镇灵扶助奥尔玛兹
 
 <QuoteBlock>
 
@@ -572,33 +440,17 @@ secondaryClass: "/nations"
 
 月色的缠绵之间，奥尔玛兹并未将这番警告放在心中…仿佛那命定的惩罚距离年轻勇壮的少年仍旧太过遥远。在镇灵的扶助下，年少的牧人奥尔玛兹成为了流浪氏族的首领。
 
-</TimelineItem>
+#### ·奥尔玛兹推翻胡瓦斯特拉，建立居尔城
 
-<TimelineItem>
+#### ·帕维兹拉万被巨鸟戈赫努丝（西摩格）收养，取名基斯拉
 
-<Subtitle>·奥尔玛兹推翻胡瓦斯特拉，建立居尔城</Subtitle>
-
-</TimelineItem>
-
-<TimelineItem>
-
-<Subtitle>·帕维兹拉万被巨鸟戈赫努丝（西摩格）收养，取名基斯拉</Subtitle>
-
-</TimelineItem>
-
-<TimelineItem>
-
-<Subtitle>·帕被奥尔玛兹收养</Subtitle>
+#### ·帕被奥尔玛兹收养
 
 帕受神鸟眷助，被藩王奥尔玛兹收为义子，为奥征战四方。
 
 奥的王冠愈发贵重，为基斯拉赐名帕维兹，将女儿希琳许配给帕维兹。
 
-</TimelineItem>
-
-<TimelineItem>
-
-<Subtitle>·预言</Subtitle>
+#### ·预言
 
 作为精灵的老祖母，在将女儿交付凡人藩王帕维兹之前，利露帕尔赠予了三条预言：
 
@@ -610,21 +462,13 @@ secondaryClass: "/nations"
 
 </QuoteBlock>
 
-</TimelineItem>
-
-<TimelineItem>
-
-<Subtitle>·居尔城的崛起</Subtitle>
+#### ·居尔城的崛起
 
 在居尔城崛起之时，人王将诸多绿洲联结为一体。从此，散碎的部族与短命的诸国臣服于奥尔玛兹一人。奥尔玛兹以赤砂之王为大宗主，兴建宫阙与殿堂朝拜。自部族征发奴隶，自属州索取劳役，向城市要求祭品…城邦欣欣向荣，不论显贵或奴隶都平等地被阴影笼罩。
 
 居尔城如人造之花在山壁盛开，成为凡人国度的首都。牧人奥尔玛兹，如今已是凡人藩王，赤砂之主的代行。然而，鲜花盛开时人人享受她的芳馨，又有谁曾想到…华丽绽放之后所命定结成的，正是死亡那暴烈的苦果。
 
-</TimelineItem>
-
-<TimelineItem>
-
-<Subtitle>·利的惩罚</Subtitle>
+#### ·利的惩罚
 
 从高台上遥望如蚁如蝗的神官与奴隶，镇灵爱姬（利露帕尔）发出了悲哀的叹息——身为花神的眷属，自以为拣选了理想的王，却不想他亦被虚荣迷惑。于是在床笫之间，镇灵发出温柔的谏言，徒然欲诱使人王回心转意…奥尔玛兹却以奴役为统治的惯例与定理，只将谏言斥作恋人的情话。
 
@@ -636,29 +480,17 @@ secondaryClass: "/nations"
 
 镇灵默然地摘下暴君赠予的耳饰，以示决绝，变得冷酷的心中，早已有了惩治恋人的毒策。
 
-</TimelineItem>
-
-<TimelineItem>
-
-<Subtitle>·帕和希婚姻的不幸</Subtitle>
+#### ·帕和希婚姻的不幸
 
 毕竟，凡人的英雄皆是些乖戾之辈，心中满怀统治的野心。而利露帕尔的嗣女（希琳）怀着精灵的骄傲，终究难以忍受凡人英雄看似深情的金丝陷阱，无法安于床笫与炉灶间的和宁。就这样，从无爱无聊的枯朽生活中，终于生长出了鲜活的憎恨——同银瓶之中囚禁的同类如出一辙的憎恨。
 
-</TimelineItem>
-
-<TimelineItem>
-
-<Subtitle>·蜜之夜，奥尔玛兹和三百子嗣在居尔城被下毒</Subtitle>
+#### ·蜜之夜，奥尔玛兹和三百子嗣在居尔城被下毒
 
 后来，在恶名昭彰的大宴那夜，一些卑贱的奴仆——马赞达兰绿洲的术士，或不识字的菲拉赫奴仆——将蝎毒滴入麝香的蜜糖，呈予藩王奥尔玛兹与他的三百子嗣，眼看着他们沉入甜蜜无梦的死之梦乡，溺于卑贱者的脂血，血泪纵横流淌……而在这一夜，尚有梦可享的，只剩下了被亲父排除于宴会之外的希琳与她不情愿的同谋和夫君基斯拉。卑贱的弑君者们随即被新王处以浸入蜜缸之刑，呼喊诅咒的口呛满了粘稠蜜糖。而新王的口中则涌流出黑色污血般的谎言，英雄之名逐渐染上深黑的污点……由是，第二个预言得以实现。
 
 帕维兹加冕「拉万」之名号，处弑君者以浸入蜜缸刑。
 
-</TimelineItem>
-
-<TimelineItem>
-
-<Subtitle>·希琳为帕制造镇灵残魂驱使的机械，帕抽取希琳心智内的畸形镇灵</Subtitle>
+#### ·希琳为帕制造镇灵残魂驱使的机械，帕抽取希琳心智内的畸形镇灵
 
 <QuoteBlock>
 
@@ -666,53 +498,29 @@ secondaryClass: "/nations"
 
 </QuoteBlock>
 
-</TimelineItem>
-
 ### （二）帕维兹拉万
 
-<TimelineItem>
+#### ·帕取缔奴隶制，但沉迷于奇观，削减绿洲维护费用
 
-<Subtitle>·帕取缔奴隶制，但沉迷于奇观，削减绿洲维护费用</Subtitle>
-
-</TimelineItem>
-
-<TimelineItem>
-
-<Subtitle>·希鲁伊被流放，后弑父</Subtitle>
+#### ·希鲁伊被流放，后弑父
 
 深受母亲宠爱的希鲁伊长大成人，却被父王逐出高耸的居尔城。亲父令希鲁伊遮掩面庞（黄铜面具）骑乘快马离去，从此以后再不得踏入王城一步。无疑「帕维兹拉万」对精灵主母利露帕尔的警告恐惧万分，因留恋而生的懦弱使他下达了如此决定。就这样，从藩王无根的恐惧中，希琳再度寻得了复仇的良机。
 
-</TimelineItem>
-
-<TimelineItem>
-
-<Subtitle>·希鲁伊化身蒙面王胡拉姆丁</Subtitle>
+#### ·希鲁伊化身蒙面王胡拉姆丁
 
 带领黄铜面具信徒，壮大势力。
 
-</TimelineItem>
-
-<TimelineItem>
-
-<Subtitle>·对黄铜面具的抵抗</Subtitle>
+#### ·对黄铜面具的抵抗
 
 官方宣布花神崇拜违法，鼓动希琳为妖后的传言，军用构装体产量扩大。
 
-</TimelineItem>
-
-<TimelineItem>
-
-<Subtitle>·希鲁伊弑父</Subtitle>
+#### ·希鲁伊弑父
 
 无敌的藩王「帕维兹拉万」在床榻上被蒙面的逆子刺死，在蓝宝石与黄金兽角装饰的华丽大床上留下了不可洗脱的血污。精灵的哀歌如是唱道：希鲁伊在犯下大逆之罪后，曾向母亲希琳痛哭忏悔。而希琳却不加申斥，只是将爱子拥入怀中，摘下象征放逐的黄铜面具，然后为他留下了深情的祝福之吻。
 
 希鲁伊称王之后，久为不可摆脱的噩梦折磨，终于在一次狂乱的夜游中，跌入大地的深黑裂隙，不知所踪。
 
-</TimelineItem>
-
-<TimelineItem>
-
-<Subtitle>·希鲁伊之疫</Subtitle>
+#### ·希鲁伊之疫
 
 再后来，大疫从裂隙中袭来，
 
@@ -724,36 +532,22 @@ secondaryClass: "/nations"
 
 母后希琳成就了利露帕尔的第三个预言——她与她产下的子嗣在被复仇毁灭的国土上赢得了真正的自由，化成了为自负之人报死的恶灵。（因恶毒可怖的阴谋而遭到分裂形魂的报应）（被赤王分裂获得救赎的希望）
 
-</TimelineItem>
-
 ### （三）赤王重建绿洲
-
-<TimelineItem>
 
 赤王和树王收拢臣民，重建绿洲，割据局面终结。
 
-</TimelineItem>
-
-<TimelineItem>
-
 #### 赤王之下的七贤 <Footnote n="13" text="鹮穿之喙，沙中伟贤的对答"></Footnote>
 
-</TimelineItem>
-
-<TimelineItem>
-
-<div class="table-container">
-<table class="lightrelam-table">
+<table>
 <tr><th>臣子</th><th>介绍</th></tr>
-<tr><td>公羊之王赫里沙夫</td><td class="text-left">赤土的副王、七贤之首、众相之相</td></tr>
-<tr><td>圣者贝努</td><td class="text-left">那飞向太阳的鸟、王之心魂</td></tr>
-<tr><td>圣者谢斯芬赫</td><td class="text-left">那狮身人面者、王之意志</td></tr>
-<tr><td>鳄之王索贝克</td><td class="text-left">统帅，统御战争兵器</td></tr>
-<tr><td>鹮之王图特</td><td class="text-left">书记，其使者是阿舍鲁，发明了沙漠文字和魔法</td></tr>
-<tr><td>赫曼努比斯</td><td class="text-left">众贤之至贤、沙漠贤人（提纳勒勇士）、祭司集团的上首</td></tr>
-<tr><td>阿赫·阿佩普</td><td class="text-left">最后获授王之血肉却从不觉得自己位列七贤的龙</td></tr>
+<tr><td>公羊之王赫里沙夫</td><td>赤土的副王、七贤之首、众相之相</td></tr>
+<tr><td>圣者贝努</td><td>那飞向太阳的鸟、王之心魂</td></tr>
+<tr><td>圣者谢斯芬赫</td><td>那狮身人面者、王之意志</td></tr>
+<tr><td>鳄之王索贝克</td><td>统帅，统御战争兵器</td></tr>
+<tr><td>鹮之王图特</td><td>书记，其使者是阿舍鲁，发明了沙漠文字和魔法</td></tr>
+<tr><td>赫曼努比斯</td><td>众贤之至贤、沙漠贤人（提纳勒勇士）、祭司集团的上首</td></tr>
+<tr><td>阿赫·阿佩普</td><td>最后获授王之血肉却从不觉得自己位列七贤的龙</td></tr>
 </table>
-</div>
 
 ·鳄之王和鹮之王素来争论不休，而那日他们争论着事物的转变。鳄之王寻来了身怀妙术的人。此人被留住此处的纯水精灵祝福，任何液体经过他的手，都会自行转变，直到比例恰当，化为美酒琼浆。鹮之王则寻来了另一个异士。他误触了古老魔神的尸骸与坟冢，因此被诅咒，双手触碰之物会逐渐变成纯银——毕竟今日来看，变化黄金与摩拉乃是仅属贵金之神的伟业。两人打赌究竟哪种不可思议之变化会最终胜出。他们也让赫曼努比斯——也就是最后一位要提到的七贤——来猜测结果。
 
@@ -763,19 +557,11 @@ secondaryClass: "/nations"
 
 </QuoteBlock>
 
-</TimelineItem>
+### （四）灾祸 <Footnote n="14" text="[《原神》剧情PV-「沙中遗事」_原神](https://www.bilibili.com/video/BV1MP411J7Zn/)"></Footnote> <Footnote n="15" text="阿赫玛尔的故事，饰金之梦，烈日威权系列材料"></Footnote>
 
-### （四）灾祸 <Footnote n="14" text="<a href='https://www.bilibili.com/video/BV1MP411J7Zn/' target='_blank'>《原神》剧情PV-「沙中遗事」_原神</a>"></Footnote> <Footnote n="15" text="阿赫玛尔的故事，饰金之梦，烈日威权系列材料"></Footnote>
+#### ·黄金梦乡在爆炸中破碎
 
-<TimelineItem>
-
-<Subtitle>·黄金梦乡在爆炸中破碎</Subtitle>
-
-</TimelineItem>
-
-<TimelineItem>
-
-<Subtitle>·灾祸的预言</Subtitle>
+#### ·灾祸的预言
 
 赤王认为：只有再度复活、永生不死的生命，才能弥补无底的悔恨。
 
@@ -787,17 +573,9 @@ secondaryClass: "/nations"
 
 </QuoteBlock>
 
-</TimelineItem>
+#### ·阿佩普和赤王合作以获得禁忌知识
 
-<TimelineItem>
-
-<Subtitle>·阿佩普和赤王合作以获得禁忌知识</Subtitle>
-
-</TimelineItem>
-
-<TimelineItem>
-
-<Subtitle>·愚昧之主（赤王）毁灭于自己的野心</Subtitle>
+#### ·愚昧之主（赤王）毁灭于自己的野心
 
 赤王听信三佞臣（羊、鳄和鹮）的谗言，以百年再百年的时光，建立迷宫，困于其中寻求深黑的禁忌知识（世界之外）以求弃绝凡躯。
 
@@ -813,11 +591,7 @@ secondaryClass: "/nations"
 
 灾祸终究还是降临了，黄金的虫印也被葬在了神殿与宫阙深处、曾雕着鹫兽与牛头的破碎柱基之下。智慧与权威的国度被报应的狂沙埋葬。
 
-</TimelineItem>
-
-<TimelineItem>
-
-<Subtitle>·镇灵被遗忘，被困在银瓶中</Subtitle>
+#### ·镇灵被遗忘，被困在银瓶中
 
 <QuoteBlock>
 
@@ -827,11 +601,7 @@ secondaryClass: "/nations"
 
 就这样，挽歌为那孤独的众王之王奏响，而镀金砂砾早已明晓其注定败亡的结局。
 
-</TimelineItem>
-
-<TimelineItem>
-
-<Subtitle>·羊、鳄和鹮被赤王关进阿如</Subtitle>
+#### ·羊、鳄和鹮被赤王关进阿如
 
 赤王说，只要鹮选中的人类为三个问题提供正确解答，就能让鹮从阿如中解放。
 
@@ -845,27 +615,15 @@ secondaryClass: "/nations"
 
 </QuoteBlock>
 
-</TimelineItem>
-
-<TimelineItem>
-
-<Subtitle>·人民陷入疯狂，脑海中充斥呓语</Subtitle>
+#### ·人民陷入疯狂，脑海中充斥呓语
 
 赛莫德人堕落为食尸的恶徒，被掩埋。
 
 提纳勒人化为流浪沙丘的歌者。
 
-</TimelineItem>
+#### ·死域出现，魔鳞病一并出现
 
-<TimelineItem>
-
-<Subtitle>·死域出现，魔鳞病一并出现</Subtitle>
-
-</TimelineItem>
-
-<TimelineItem>
-
-<Subtitle>·树王的帮助</Subtitle>
+#### ·树王的帮助
 
 <QuoteBlock>
 
@@ -877,211 +635,99 @@ secondaryClass: "/nations"
 
 为了清理病灶，赤王选择自我牺牲。为了配合赤王，树王透支力量，变为少女。
 
-</TimelineItem>
-
-<TimelineItem>
-
-<Subtitle>·阿佩普吞下赤王</Subtitle>
-
-</TimelineItem>
+#### ·阿佩普吞下赤王
 
 ## 五、沙漠群王时期 <Footnote n="16" text="玛海菈的水色，西福斯的月光，流浪的晚星，图莱杜拉的回忆，圣显之钥，裁叶萃光，苇海信标，真语秘匣"></Footnote>
 
-<TimelineItem>
-<div class="table-container">
-<table class="lightrelam-table">
+<table>
 <tr><th>派别</th><th>人物</th><th>介绍</th></tr>
-<tr><td>月女城·阿依哈努姆</td><td>镇灵</td><td class="text-left">月女城原本的统治者，灾祸之后被遗忘</td></tr>
-<tr><td></td><td>**迦尔沙斯普/穆阿扎姆哈冈**</td><td class="text-left">镇守月女城阿伊哈努姆</td></tr>
-<tr><td>居尔城</td><td>胡拉姆丁/希鲁伊</td><td class="text-left">蒙面王</td></tr>
-<tr><td></td><td>**卡乌斯巴依/兰沙赫尔王**</td><td class="text-left">胡拉姆丁的后裔</td></tr>
-<tr><td></td><td>阿塔希尔</td><td class="text-left">兰沙赫尔王的儿子</td></tr>
-<tr><td>蓝宝石城·图莱杜拉·提纳勒人</td><td>呼玛云/库列甘王</td><td class="text-left">娶了兰沙赫尔王的女儿，所以是兰沙赫尔王的女婿</td></tr>
-<tr><td></td><td>**古达尔兹/撒勒布·道莱王**</td><td class="text-left">「居尔的大王」</td></tr>
-<tr><td></td><td>霍杰尔王子</td><td class="text-left">道莱王的儿子</td></tr>
-<tr><td>勇士之城·萨勒赫·赛莫德人</td><td>图尔</td><td class="text-left">图兰哈冈恶贼</td></tr>
-<tr><td></td><td>**迦尔沙斯普/穆阿扎姆哈冈**</td><td class="text-left">曾镇守月女城阿伊哈努姆</td></tr>
-<tr><td>港城·奥尔迦娜</td><td>**穆扎法尔代伊**</td><td class="text-left">二十九代伊盟主</td></tr>
-<tr><td></td><td>祖玛鲁德</td><td class="text-left">穆扎法尔代伊的儿子、绿之王</td></tr>
-<tr><td></td><td>穆祖丁王子</td><td class="text-left">祖玛鲁德之子，巴达那的兄长，被巴达那推翻</td></tr>
-<tr><td></td><td>**巴达那王子/暴君**</td><td class="text-left">祖玛鲁德之子，后来的暴君</td></tr>
-<tr><td></td><td>**法拉玛兹**</td><td class="text-left">巴达那的儿子</td></tr>
-<tr><td></td><td>**玛海菈舞女**</td><td class="text-left">镇灵的女儿、舞女<br/>曾是巴达那的姬妾<br/>实际上是西福斯的情人</td></tr>
-<tr><td></td><td>**西福斯**</td><td class="text-left">穆祖丁的儿子，金瞳，因暴君的统治沦为奴隶</td></tr>
-<tr><td></td><td>老诗人</td><td class="text-left">西福斯的师父，被巴达那挖去眼睛</td></tr>
-<tr><td></td><td>戈拉兹国舅</td><td class="text-left">法拉玛兹的叔父</td></tr>
-<tr><td></td><td>瓦拉什</td><td class="text-left">相国，亦为图莱杜拉城主</td></tr>
+<tr><td>月女城·阿依哈努姆</td><td>镇灵</td><td>月女城原本的统治者，灾祸之后被遗忘</td></tr>
+<tr><td></td><td>**迦尔沙斯普/穆阿扎姆哈冈**</td><td>镇守月女城阿伊哈努姆</td></tr>
+<tr><td>居尔城</td><td>胡拉姆丁/希鲁伊</td><td>蒙面王</td></tr>
+<tr><td></td><td>**卡乌斯巴依/兰沙赫尔王**</td><td>胡拉姆丁的后裔</td></tr>
+<tr><td></td><td>阿塔希尔</td><td>兰沙赫尔王的儿子</td></tr>
+<tr><td>蓝宝石城·图莱杜拉·提纳勒人</td><td>呼玛云/库列甘王</td><td>娶了兰沙赫尔王的女儿，所以是兰沙赫尔王的女婿</td></tr>
+<tr><td></td><td>**古达尔兹/撒勒布·道莱王**</td><td>「居尔的大王」</td></tr>
+<tr><td></td><td>霍杰尔王子</td><td>道莱王的儿子</td></tr>
+<tr><td>勇士之城·萨勒赫·赛莫德人</td><td>图尔</td><td>图兰哈冈恶贼</td></tr>
+<tr><td></td><td>**迦尔沙斯普/穆阿扎姆哈冈**</td><td>曾镇守月女城阿伊哈努姆</td></tr>
+<tr><td>港城·奥尔迦娜</td><td>**穆扎法尔代伊**</td><td>二十九代伊盟主</td></tr>
+<tr><td></td><td>祖玛鲁德</td><td>穆扎法尔代伊的儿子、绿之王</td></tr>
+<tr><td></td><td>穆祖丁王子</td><td>祖玛鲁德之子，巴达那的兄长，被巴达那推翻</td></tr>
+<tr><td></td><td>**巴达那王子/暴君**</td><td>祖玛鲁德之子，后来的暴君</td></tr>
+<tr><td></td><td>**法拉玛兹**</td><td>巴达那的儿子</td></tr>
+<tr><td></td><td>**玛海菈舞女**</td><td>镇灵的女儿、舞女<br/>曾是巴达那的姬妾<br/>实际上是西福斯的情人</td></tr>
+<tr><td></td><td>**西福斯**</td><td>穆祖丁的儿子，金瞳，因暴君的统治沦为奴隶</td></tr>
+<tr><td></td><td>老诗人</td><td>西福斯的师父，被巴达那挖去眼睛</td></tr>
+<tr><td></td><td>戈拉兹国舅</td><td>法拉玛兹的叔父</td></tr>
+<tr><td></td><td>瓦拉什</td><td>相国，亦为图莱杜拉城主</td></tr>
 </table>
-</div>
-</TimelineItem>
-
-<TimelineItem>
-<TimelineImage src="/img/context/Sumeru/image013.png" caption="沙漠诸国势力范围，引用自图研所。更正：居尔城和瓦利韦杰都在千壑沙地处。"></TimelineImage>
-</TimelineItem>
-
+![沙漠诸国势力范围，引用自图研所。更正：居尔城和瓦利韦杰都在千壑沙地处。](/img/context/Sumeru/image013.png)
 ### （一）早期
-
-<TimelineItem>
 
 #### 1. 卡乌斯巴依流放归来
 
-</TimelineItem>
-
-<TimelineItem>
-
-<Subtitle>·赫曼努比斯和提纳勒人在蓝宝石城图莱杜拉建立缄默之殿 <Footnote n="17" text="<a href='https://www.bilibili.com/video/BV1Es421w7YV/' target='_blank'>《原神》过场动画-「赫曼努比斯的传承」_原神</a>"></Footnote></Subtitle>
+#### ·赫曼努比斯和提纳勒人在蓝宝石城图莱杜拉建立缄默之殿 <Footnote n="17" text="[《原神》过场动画-「赫曼努比斯的传承」_原神](https://www.bilibili.com/video/BV1Es421w7YV/)"></Footnote>
 
 吸收了很多无家可归之人。（莱依拉就是图莱杜拉人的后人）
 
-</TimelineItem>
+#### ·希鲁伊的后裔卡乌斯巴依流放归来，重新统归沙漠各部
 
-<TimelineItem>
+#### ·南提纳勒被北提纳勒灭亡
 
-<Subtitle>·希鲁伊的后裔卡乌斯巴依流放归来，重新统归沙漠各部</Subtitle>
-
-</TimelineItem>
-
-<TimelineItem>
-
-<Subtitle>·南提纳勒被北提纳勒灭亡</Subtitle>
-
-</TimelineItem>
-
-<TimelineItem>
-
-<Subtitle>·赛莫德人灭亡东提纳勒</Subtitle>
-
-</TimelineItem>
-
-<TimelineItem>
+#### ·赛莫德人灭亡东提纳勒
 
 #### 2. 卡乌斯巴依击败赛莫德人，称兰沙赫尔王
 
-</TimelineItem>
+#### ·赛莫德人被卡乌斯巴依逼退
 
-<TimelineItem>
-
-<Subtitle>·赛莫德人被卡乌斯巴依逼退</Subtitle>
-
-</TimelineItem>
-
-<TimelineItem>
-
-<Subtitle>·卡乌斯巴依统一沙漠，称兰沙赫尔王</Subtitle>
+#### ·卡乌斯巴依统一沙漠，称兰沙赫尔王
 
 征用民力，焚毁宫殿，分土地为七，找七智者封王。呼玛云统治蓝宝石城，图尔统治勇士城，迦尔沙斯普统治月女城。
 
-</TimelineItem>
-
-<TimelineItem>
-
-<Subtitle>·兰死后，儿子阿塔希尔继位</Subtitle>
-
-</TimelineItem>
-
-<TimelineItem>
+#### ·兰死后，儿子阿塔希尔继位
 
 #### 3. 图兰哈冈恶贼取代阿塔希尔，在勇士城称王
 
-</TimelineItem>
-
-<TimelineItem>
-
-<Subtitle>·阿塔希尔死后，勇士城的图兰哈冈恶贼（图尔）夺权成为摄政</Subtitle>
+#### ·阿塔希尔死后，勇士城的图兰哈冈恶贼（图尔）夺权成为摄政
 
 兰沙赫尔王的高塔终究如蜜色的鸩梦般亡殁于腥咸的扬沙。
 
-</TimelineItem>
-
-<TimelineItem>
-
 #### 4. 呼玛云击败图兰哈冈恶贼，在勇士城称库列甘王
 
-</TimelineItem>
-
-<TimelineItem>
-
-<Subtitle>·蓝宝石城的呼玛云和图兰哈刚恶贼交战，图兰哈刚恶贼被剿灭，三个儿子被判刑</Subtitle>
+#### ·蓝宝石城的呼玛云和图兰哈刚恶贼交战，图兰哈刚恶贼被剿灭，三个儿子被判刑
 
 勇士城被呼管理，呼收回其他六城自治权。
 
 呼玛云和公主（兰沙赫尔王之女）结亲，呼成为新的王中王。
 
-</TimelineItem>
-
-<TimelineItem>
-
 #### 5. 赛莫德三十人击败呼玛云，在勇士城自立为王
 
-</TimelineItem>
+#### ·赛莫德人宣称不臣服于呼玛云
 
-<TimelineItem>
+#### ·赛莫德人联合独立的迦尔沙斯普，引发镇灵之乱
 
-<Subtitle>·赛莫德人宣称不臣服于呼玛云</Subtitle>
-
-</TimelineItem>
-
-<TimelineItem>
-
-<Subtitle>·赛莫德人联合独立的迦尔沙斯普，引发镇灵之乱</Subtitle>
-
-</TimelineItem>
-
-<TimelineItem>
-
-<Subtitle>·呼玛云死亡，勇士城三十人自立为王</Subtitle>
-
-</TimelineItem>
-
-<TimelineItem>
+#### ·呼玛云死亡，勇士城三十人自立为王
 
 #### 6. 迦尔沙斯普击败三十人，在勇士城称穆阿扎姆哈冈
 
-</TimelineItem>
+#### ·镇守月女城的迦尔沙斯普（穆阿扎姆哈冈）平叛赛莫德三十人（流贼）
 
-<TimelineItem>
+#### ·诸王向迦尔沙斯普称臣
 
-<Subtitle>·镇守月女城的迦尔沙斯普（穆阿扎姆哈冈）平叛赛莫德三十人（流贼）</Subtitle>
-
-</TimelineItem>
-
-<TimelineItem>
-
-<Subtitle>·诸王向迦尔沙斯普称臣</Subtitle>
-
-</TimelineItem>
-
-<TimelineItem>
-
-<Subtitle>·迦废弃居尔城，迁都到蓝宝石城</Subtitle>
+#### ·迦废弃居尔城，迁都到蓝宝石城
 
 蓝宝石的穹顶下，一度向暴君献上缰绳的显贵们挣脱了辔头，却又追随僭称智者的伪主，跃入了烈日荒墟间血与沙的游戏。骄傲的图莱杜拉人啊，他们早已将缄默众贤的告诫抛诸脑后，直到野心随着库列甘的名号一同飘散，才意识到叛逆的代价。当残暴的哈冈们骑着骏马踏来时，已无勇士护卫千柱的花园。沉湎于镀金之梦的人们，唯有如良畜般再度俯首于新的主人。
 
-</TimelineItem>
-
-<TimelineItem>
-
 #### 7. 古达尔兹击败迦尔沙斯普，在居尔城称王
 
-</TimelineItem>
+#### ·蓝宝石城的古达尔兹反叛，和迦（穆阿扎姆哈冈）交战，依靠幻境击败迦的爪牙
 
-<TimelineItem>
-
-<Subtitle>·蓝宝石城的古达尔兹反叛，和迦（穆阿扎姆哈冈）交战，依靠幻境击败迦的爪牙</Subtitle>
-
-</TimelineItem>
-
-<TimelineItem>
-
-<Subtitle>·迦驾崩</Subtitle>
+#### ·迦驾崩
 
 都城爆发七天大火，都城百姓迁移蓝宝石城。
 
-</TimelineItem>
-
-<TimelineItem>
-
-<Subtitle>·古离开蓝宝石城，迁入居尔城称王（撒勒布·道莱王），兴建阿赫玛尔神像</Subtitle>
+#### ·古离开蓝宝石城，迁入居尔城称王（撒勒布·道莱王），兴建阿赫玛尔神像
 
 为将同胞自枷锁中解放，年轻的贵胄古达尔兹踏入了深埋于沙下的圣堂。传说那宫殿属于鹮之王，七贤僧中至为睿哲的掌书，亦是星与月的秘使。那几乎可谓无望的绝策，因救国的筹谋皆难敌过征服者灼耀如日的军势，提纳勒的智者早已远遁，那沙中伟贤恢弘的圣殿亦已湮没于铁色的砂海。然而流泉干涸的至深处，竟果真因他的祈祷，传来了神圣而古老的回声…
 
@@ -1133,101 +779,45 @@ secondaryClass: "/nations"
 
 就这样，古达尔兹的名讳渐隐于史册，取而代之的是撒勒布·道莱王的威名。昔日不容谎言的勇士以狡计织就了王权，于苍暮的虹光下投映出黄金时代的蜃景。
 
-</TimelineItem>
-
 ### （二）苍暮细雨-绿之王时代
-
-<TimelineItem>
 
 #### 1. 穆扎法尔代伊击败古达尔兹，在蓝宝石城称王
 
-</TimelineItem>
+#### ·苍暮细雨时代奥尔迦娜来贡
 
-<TimelineItem>
+#### ·古达尔兹率军队包围蓝宝石城，城中贵族勾结霸主，赫曼努比斯击碎自己，提纳勒人离开沙漠
 
-<Subtitle>·苍暮细雨时代奥尔迦娜来贡</Subtitle>
-
-</TimelineItem>
-
-<TimelineItem>
-
-<Subtitle>·古达尔兹率军队包围蓝宝石城，城中贵族勾结霸主，赫曼努比斯击碎自己，提纳勒人离开沙漠</Subtitle>
-
-</TimelineItem>
-
-<TimelineItem>
-
-<Subtitle>·穆扎法尔代伊崭露头角，多次袭击道莱王</Subtitle>
+#### ·穆扎法尔代伊崭露头角，多次袭击道莱王
 
 穆假装和古达尔兹缔结盟约，实则烧杀劫掠。
 
-</TimelineItem>
+#### ·霍杰尔王子（道莱王之子）饮酒后去世，古达尔兹命上千奴隶陪葬，苍暮细雨时代终结
 
-<TimelineItem>
-
-<Subtitle>·霍杰尔王子（道莱王之子）饮酒后去世，古达尔兹命上千奴隶陪葬，苍暮细雨时代终结</Subtitle>
-
-</TimelineItem>
-
-<TimelineItem>
-
-<Subtitle>·道和弟弟出征。弟弟被射杀，穆扎获胜。居尔城化为废墟，穆扎定都别处</Subtitle>
+#### ·道和弟弟出征。弟弟被射杀，穆扎获胜。居尔城化为废墟，穆扎定都别处
 
 此后王权便被异族的代伊们所篡夺，直到列邦皆被砂原之风碾作尘埃。而如同收纳如琥珀如蜜的月光那般，圣者将君王最后的真意收作答案。
 
-</TimelineItem>
-
-<TimelineItem>
-
-<Subtitle>·之后，绿之王祖玛鲁德的梦日轮照耀之地遍布黄沙。绿之王立志建成森林</Subtitle>
+#### ·之后，绿之王祖玛鲁德的梦日轮照耀之地遍布黄沙。绿之王立志建成森林
 
 贪索的兵士与税吏自远方到来，盘剥着早已麻木的城民。自称仁善的苍青色王廷对子民的刻薄未曾有过不同。
 
-</TimelineItem>
-
-<TimelineItem>
-
 #### 2. 九十九人内斗
 
-</TimelineItem>
+#### ·穆扎年老。绿之王祖玛鲁德生下九十九位子女：五十位是王子，头戴金冠；四十九位是公主，头戴绿叶头环
 
-<TimelineItem>
+#### ·王子们帮助绿之王建设森林
 
-<Subtitle>·穆扎年老。绿之王祖玛鲁德生下九十九位子女：五十位是王子，头戴金冠；四十九位是公主，头戴绿叶头环</Subtitle>
+#### ·王子们内斗。巴达那王子得王位
 
-</TimelineItem>
-
-<TimelineItem>
-
-<Subtitle>·王子们帮助绿之王建设森林</Subtitle>
-
-</TimelineItem>
-
-<TimelineItem>
-
-<Subtitle>·王子们内斗。巴达那王子得王位</Subtitle>
-
-</TimelineItem>
-
-<TimelineItem>
-
-<Subtitle>·热砂王国的统治，巴达那暴君的野心</Subtitle>
+#### ·热砂王国的统治，巴达那暴君的野心
 
 在遥远的过去，地上各处都曾有人竖起几乎能触达天顶的高塔。虽然人心总向低处流，但魂灵都向往高空。高塔最后总是会倒塌，或是不堪自身的质量陷入地底。
 
-</TimelineItem>
-
 ### （三）巴达那暴君时期
-
-<TimelineItem>
 
 #### 1. 暴君统治蓝宝石城
 
-</TimelineItem>
-
-<TimelineItem>
-
-<Subtitle>·老诗人为暴君效忠</Subtitle>
+#### ·老诗人为暴君效忠
 
 <QuoteBlock>
 
@@ -1235,11 +825,7 @@ secondaryClass: "/nations"
 
 </QuoteBlock>
 
-</TimelineItem>
-
-<TimelineItem>
-
-<Subtitle>·西福斯沦为奴隶</Subtitle>
+#### ·西福斯沦为奴隶
 
 衰败的齿轮将庞大的神国分解成诸多王国，又规律地将它们都碾成砂砾。
 
@@ -1253,11 +839,7 @@ secondaryClass: "/nations"
 
 </QuoteBlock>
 
-</TimelineItem>
-
-<TimelineItem>
-
-<Subtitle>·西成为武士</Subtitle>
+#### ·西成为武士
 
 人们说在这座玉蓝色的城邦，曾有一位名为西福斯的武士，他擅使双刃的长剑，从魔物的利爪下拯救少女，劫夺宝物。据古老的提纳勒人传说，他的剑中寄宿着乖张残忍的镇灵，故而其剑锋因厮杀而明亮，愈是沐浴鲜血愈显月色的光芒。
 
@@ -1267,17 +849,9 @@ secondaryClass: "/nations"
 
 </QuoteBlock>
 
-</TimelineItem>
+#### ·西结识玛海菈
 
-<TimelineItem>
-
-<Subtitle>·西结识玛海菈</Subtitle>
-
-</TimelineItem>
-
-<TimelineItem>
-
-<Subtitle>·玛海菈被卖给巴达那</Subtitle>
+#### ·玛海菈被卖给巴达那
 
 为向衰败的藩王献媚，统治图莱杜拉的智者们纳上贡礼，宫廷舞女玛海菈亦在名册当中，被迫同金瞳的恋人作别。
 
@@ -1289,15 +863,7 @@ secondaryClass: "/nations"
 
 </QuoteBlock>
 
-</TimelineItem>
-
-<TimelineItem>
-
 #### 2. 暴君之死
-
-</TimelineItem>
-
-<TimelineItem>
 
 <QuoteBlock>
 
@@ -1327,15 +893,7 @@ secondaryClass: "/nations"
 
 </QuoteBlock>
 
-</TimelineItem>
-
-<TimelineItem>
-
 #### 3. 权力斗争
-
-</TimelineItem>
-
-<TimelineItem>
 
 <QuoteBlock>
 
@@ -1343,49 +901,21 @@ secondaryClass: "/nations"
 
 </QuoteBlock>
 
-</TimelineItem>
+#### ·王位被禅让给瓦拉什
 
-<TimelineItem>
+#### ·戈拉兹国舅起兵反叛，再立法拉玛兹。瓦被推翻，戈和玛海菈共同摄政
 
-<Subtitle>·王位被禅让给瓦拉什</Subtitle>
+#### ·戈放逐法拉玛兹并自己称王
 
-</TimelineItem>
-
-<TimelineItem>
-
-<Subtitle>·戈拉兹国舅起兵反叛，再立法拉玛兹。瓦被推翻，戈和玛海菈共同摄政</Subtitle>
-
-</TimelineItem>
-
-<TimelineItem>
-
-<Subtitle>·戈放逐法拉玛兹并自己称王</Subtitle>
-
-</TimelineItem>
-
-<TimelineItem>
-
-<Subtitle>·瓦地区的达官显贵掀起叛乱</Subtitle>
+#### ·瓦地区的达官显贵掀起叛乱
 
 戈被杀，玛平定叛乱，法拉被迎回。
 
-</TimelineItem>
+#### ·战乱
 
-<TimelineItem>
+#### ·法拉第四次称王
 
-<Subtitle>·战乱</Subtitle>
-
-</TimelineItem>
-
-<TimelineItem>
-
-<Subtitle>·法拉第四次称王</Subtitle>
-
-</TimelineItem>
-
-<TimelineItem>
-
-<Subtitle>·法拉用蛇毒毒死玛海菈</Subtitle>
+#### ·法拉用蛇毒毒死玛海菈
 
 「于是我失去了爱人，为了性命与印玺，用蝰蛇的吻封住她的口，沙的被衾掩盖她的躯体」
 
@@ -1393,21 +923,13 @@ secondaryClass: "/nations"
 
 善舞大剑的姬妾最终没能成为王后。
 
-</TimelineItem>
-
-<TimelineItem>
-
-<Subtitle>·老诗人失去双眼</Subtitle>
+#### ·老诗人失去双眼
 
 他听闻故乡的陨落，刺盲其双眼的那位王子终压垮不堪重负的王位，
 
 活下来讲述这一切的年迈贤臣也失去了双眼。
 
-</TimelineItem>
-
-<TimelineItem>
-
-<Subtitle>·西结识盲眼师父</Subtitle>
+#### ·西结识盲眼师父
 
 曾掳掠无数城邦的将军，最终身边只剩一位奴仆傍身引路，而年轻的奴仆身怀着故国的「钥匙」，与复国的渺茫希望…
 
@@ -1427,11 +949,7 @@ secondaryClass: "/nations"
 
 </QuoteBlock>
 
-</TimelineItem>
-
-<TimelineItem>
-
-<Subtitle>·奴隶勾结市民的暴动</Subtitle>
+#### ·奴隶勾结市民的暴动
 
 <QuoteBlock>
 
@@ -1439,11 +957,7 @@ secondaryClass: "/nations"
 
 </QuoteBlock>
 
-</TimelineItem>
-
-<TimelineItem>
-
-<Subtitle>·热砂王国的覆灭，王子成为流民</Subtitle>
+#### ·热砂王国的覆灭，王子成为流民
 
 就这样，热砂上的王国被热砂埋葬，一度豪奢的王子沦为失去一切的流民。
 
@@ -1455,23 +969,11 @@ secondaryClass: "/nations"
 
 怀着征服新天地的愿望，孤身一人携着仅剩的财物踏上了前往雨林的路途。
 
-</TimelineItem>
-
-<TimelineItem>
-
-<Subtitle>·沙漠子民离开宫殿，建立阿如村</Subtitle>
-
-</TimelineItem>
-
-<TimelineItem>
+#### ·沙漠子民离开宫殿，建立阿如村
 
 #### 4. 图莱杜拉的灭亡
 
-</TimelineItem>
-
-<TimelineItem>
-
-<Subtitle>·西和王子的交锋，图莱杜拉灭亡，钥匙遗失</Subtitle>
+#### ·西和王子的交锋，图莱杜拉灭亡，钥匙遗失
 
 由奴隶变成英雄的王储、由王座上跌落的佣兵，二人的路途交错…（受月光镇灵深爱的武士西福斯遭遇了一位异国流亡的浪客）
 
@@ -1487,19 +989,11 @@ secondaryClass: "/nations"
 
 传说曾经号令砂砾构成空中的河流，在沙之王与故友分别后将故乡封锁，在泡沫破灭、邦国棋布后，将沙上楼阁、梦想乐园藏匿在蜃气中的钥匙，它曾如同钱币在人的霸主与王手中流转，最终也回到了流沙的怀抱之中。而老迈的盲眼诗人追随着故事的痕迹与血涂的足印，最终来到了森林中…
 
-</TimelineItem>
-
-<TimelineItem>
-
-<Subtitle>·王子来到雨林</Subtitle>
+#### ·王子来到雨林
 
 很久以后，意图如长鬓的猛虎般继承丛林的王子，却被静谧的月光征服。被手持白弓的女猎手（辛娜梦）矫健的身影所吸引，在夜复一夜追踪与被驱逐的途中，失乡的王子渐渐明白了雨林的呢喃与猛虎的低语，由普慈的梦想所接纳——（失去王国的浪客王子遁入了层叠的雨林，被静谧月光包围。怀着征服新天地的希望前来闯荡，却被白弓的女猎手追逐，狼狈的浪客为藤蔓枝条所困，清冷月光下细听猛虎的低吟。）「雨林之中行路艰难，凡人只得从碎叶间的夜空辨明前路」「明灭的晚星为浪客指明方向，却也诱他走入致命的陷阱」
 
-</TimelineItem>
-
-<TimelineItem>
-
-<Subtitle>·王子面对猎手，制裁叶萃光</Subtitle>
+#### ·王子面对猎手，制裁叶萃光
 
 多年后，当失去一切的浪客面临死境，不得不做出选择…当「死」的教谕在耳边呢喃，他才真正明晓警告的意义…
 
@@ -1537,29 +1031,17 @@ secondaryClass: "/nations"
 
 又有孩童的梦呓称他从此忘记了故乡的名字，也忘记了称王的梦想。从此以后，王子法拉玛兹之名消堙在雨林之中，随风沙回归了大漠。
 
-</TimelineItem>
-
-<TimelineItem>
-
-<Subtitle>·苇海</Subtitle>
+#### ·苇海
 
 曾有偏执的王侯在林线外树起堡垒固守沙的荣誉，最终其人兵将与边民四散，名讳也如风沙般失落。在挖掘出过往处决犯行者的王器的水池废墟之上，失去了沙之梦，又不愿放弃沙海的人们聚集于此。以从未存在的苇海为名，与曾经应许的梦相回响…
-
-</TimelineItem>
 
 ## 六、大慈树王在雨林的建设 <Footnote n="18" text="深林的记忆，翠绿之影王下近侍，森林王器，盈满之实，贯月矢，原木刀，猎人之径"></Footnote>
 
 ### （一）森林王 <Footnote n="19" text="谧林涓露系列材料"></Footnote>
 
-<TimelineItem>
+#### ·花神死去，草木的主人决定离去
 
-<Subtitle>·花神死去，草木的主人决定离去</Subtitle>
-
-</TimelineItem>
-
-<TimelineItem>
-
-<Subtitle>·几千个月亮前，树王离开巴螺迦，舍弃狂爱与威权，她选择重归雨林，谨守生命之道…</Subtitle>
+#### ·几千个月亮前，树王离开巴螺迦，舍弃狂爱与威权，她选择重归雨林，谨守生命之道…
 
 由此新生自雨林焕发，贤者们兴风造雨，塑造家园。狂想通向必然的死亡，死亡的教喻时刻警醒着凡人。
 
@@ -1567,27 +1049,15 @@ secondaryClass: "/nations"
 
 而「虎」就从中诞生了。虎的斑纹千变万化，与树木的路径一致，于是虎成为了迷宫的王者，名唤毗伽罗。得到祝福的森林王在其御苑中昂首而行，管辖灵长之外，仰赖迷宫的飞鸟与走兽。
 
-</TimelineItem>
+#### ·防沙壁的建立
 
-<TimelineItem>
-
-<Subtitle>·防沙壁的建立</Subtitle>
-
-</TimelineItem>
-
-<TimelineItem>
-
-<Subtitle>·黑铁</Subtitle>
+#### ·黑铁
 
 草木的主人教会了人们锻造黑铁的奥秘。就这样，天真的凡人学会了使用火与利刃的知识。草木的主人为之欢欣，纵使火与金属会伤害她，但亦会使凡人强大。
 
-</TimelineItem>
+#### ·森林王
 
-<TimelineItem>
-
-<Subtitle>·森林王</Subtitle>
-
-<TimelineImage src="/img/context/Sumeru/image016.png" caption="森林王"></TimelineImage>
+![森林王](/img/context/Sumeru/image016.png)
 
 迷宫之主，映月之水的主人，虎。
 
@@ -1613,94 +1083,57 @@ secondaryClass: "/nations"
 
 前代树木的神（树王）授予诞生的森林王以宝冠，最后传给了辛娜梦。
 
-</TimelineItem>
-
-<TimelineItem>
-
-<Subtitle>·后来的虎</Subtitle>
+#### ·后来的虎
 
 依旧有长鬓的大猫继承了王者的名号，模仿着王的形姿，巡视着林中的百兽。
 
-</TimelineItem>
-
-<TimelineItem>
-
-<Subtitle>·月相</Subtitle>
+#### ·月相
 
 在白弓般的凶相之月下，森林迷宫的路途会将迷误之人带到翡翠色与琥珀色的梦里。
 
 森林的迷宫在数百年前就已经不复存在了，但千百年的岁月在梦的花园中或许也不过是一朝一夕之事吧。
 
-</TimelineItem>
-
 ### （二）兰那罗
-
-<TimelineItem>
 
 兰那罗（森之民），只有孩子和意识接触过世界树的人才能看见的奇妙生物。在传说中被描述为小小的、圆圆的、像是植物一样的精灵，森林的住民、树木的守护灵，是草之神的眷属，也是树与人之间的调停者。除此之外还有着让人「进入梦乡」和使用名为兰迦拉梨的法术抵挡死域侵蚀的能力。
 
 最终，森林会记住一切……就算以后，长大了，忘记了也不要紧。森林会记住一切。
 
-</TimelineItem>
+#### ·树王种下觉王之树，作为兰那罗的原点
 
-<TimelineItem>
-
-<Subtitle>·树王种下觉王之树，作为兰那罗的原点</Subtitle>
-
-</TimelineItem>
-
-<TimelineItem>
-
-<Subtitle>·兰穆护昆达诞生，高贵美丽的伟大种族存在</Subtitle>
+#### ·兰穆护昆达诞生，高贵美丽的伟大种族存在
 
 石榴的种子（第一个长大的种子）落在土里，生出森林的精灵。森林王在最初的莎兰树（觉王之树）下祝福他们，与神主（树王）约定，将迷宫与他们分享，又命令林中鸟兽皆不得加害。
 
 高贵美丽的伟大种族被废黜。
 
-</TimelineItem>
+#### ·兰那罗诞生
 
-<TimelineItem>
-
-<Subtitle>·兰那罗诞生</Subtitle>
-
-</TimelineItem>
-
-<TimelineItem>
-
-<Subtitle>·兰穆和树王创造法留纳神机</Subtitle>
+#### ·兰穆和树王创造法留纳神机
 
 法留纳神机的力量的显现。带来生命的水，把巴螺迦变成桓那，让不毛的土地从此充满生机。
 
-<TimelineItem>
-<div class="table-container">
-<table class="lightrelam-table">
+<table>
 <tr><th>兰那罗语</th><th>含义</th></tr>
-<tr><td>那菈</td><td class="text-left">人类</td></tr>
-<tr><td>那菈法留纳</td><td class="text-left">反主，因为修好了「法留纳神机」而被兰那罗们如此称呼</td></tr>
-<tr><td>恒那</td><td class="text-left">须弥森林</td></tr>
-<tr><td>桓那兰那</td><td class="text-left">兰那罗的聚集地</td></tr>
-<tr><td>玛哈桓那兰那薜那<br/>（梦中的桓那兰那）</td><td class="text-left">伟大之梦中的桓那兰那</td></tr>
-<tr><td>觉王之树</td><td class="text-left">树王亲自种下的伟大之树，兰那罗一族的原点</td></tr>
-<tr><td>法留纳</td><td class="text-left">本义是「水天」，被树王召唤的精灵的名字</td></tr>
-<tr><td>法留纳神机</td><td class="text-left">兰穆护昆达与树王在许多个月亮前创造，为森林带来了许多诞生</td></tr>
-<tr><td>沙恒</td><td class="text-left">地脉</td></tr>
-<tr><td>无留陀</td><td class="text-left">死域</td></tr>
-<tr><td>巴螺迦</td><td class="text-left">沙漠</td></tr>
-<tr><td>恒素果</td><td class="text-left">由兰那罗们的记忆结成的果实，供养给「觉王之树」能结出惟耶之实</td></tr>
-<tr><td>惟耶之果</td><td class="text-left">地脉精华果实，可以救回死域侵蚀的人</td></tr>
-<tr><td>兰迦拉梨</td><td class="text-left">最早是兰那罗礼赞树王、那菈、同族的歌<br/>依靠「见证」就可习得（记忆就是力量）</td></tr>
-<tr><td>记忆</td><td class="text-left">记忆是流动的，就像河流进入大海<br/>因为记忆，所以有梦，所以有生命，所以有力量。<br/>智慧是流动的记忆，梦是活的记忆，无留陀是停滞的记忆。<br/>人造的死物夺去活的记忆，为统御和驯化。</td></tr>
+<tr><td>那菈</td><td>人类</td></tr>
+<tr><td>那菈法留纳</td><td>反主，因为修好了「法留纳神机」而被兰那罗们如此称呼</td></tr>
+<tr><td>恒那</td><td>须弥森林</td></tr>
+<tr><td>桓那兰那</td><td>兰那罗的聚集地</td></tr>
+<tr><td>玛哈桓那兰那薜那<br/>（梦中的桓那兰那）</td><td>伟大之梦中的桓那兰那</td></tr>
+<tr><td>觉王之树</td><td>树王亲自种下的伟大之树，兰那罗一族的原点</td></tr>
+<tr><td>法留纳</td><td>本义是「水天」，被树王召唤的精灵的名字</td></tr>
+<tr><td>法留纳神机</td><td>兰穆护昆达与树王在许多个月亮前创造，为森林带来了许多诞生</td></tr>
+<tr><td>沙恒</td><td>地脉</td></tr>
+<tr><td>无留陀</td><td>死域</td></tr>
+<tr><td>巴螺迦</td><td>沙漠</td></tr>
+<tr><td>恒素果</td><td>由兰那罗们的记忆结成的果实，供养给「觉王之树」能结出惟耶之实</td></tr>
+<tr><td>惟耶之果</td><td>地脉精华果实，可以救回死域侵蚀的人</td></tr>
+<tr><td>兰迦拉梨</td><td>最早是兰那罗礼赞树王、那菈、同族的歌<br/>依靠「见证」就可习得（记忆就是力量）</td></tr>
+<tr><td>记忆</td><td>记忆是流动的，就像河流进入大海<br/>因为记忆，所以有梦，所以有生命，所以有力量。<br/>智慧是流动的记忆，梦是活的记忆，无留陀是停滞的记忆。<br/>人造的死物夺去活的记忆，为统御和驯化。</td></tr>
 </table>
-</div>
-</TimelineItem>
-
-</TimelineItem>
-
 ### （三）森林的孩子们
 
-<TimelineItem>
-
-<Subtitle>·辛娜梦的到来</Subtitle>
+#### ·辛娜梦的到来
 
 曾经有一个孩子，她迷失在了森林里。循着森林王留下的足印，她来到了老虎（末代森林王）的花园。
 
@@ -1728,21 +1161,13 @@ secondaryClass: "/nations"
 
 她的教导虽曾经启发了许多孩子，最终也像虎的血脉一样渐渐稀薄…
 
-</TimelineItem>
-
-<TimelineItem>
-
-<Subtitle>·森林的守护者，勇者们</Subtitle>
+#### ·森林的守护者，勇者们
 
 河与星星送来了那菈中的勇者，树王让勇者心中生出智慧，让兰那罗引导他们，去往水光闪闪的洞穴去往呿波境（钵参花的梦）。
 
 得到兰那罗帮助，赶走无留陀。
 
-</TimelineItem>
-
-<TimelineItem>
-
-<Subtitle>·森林守护者的诞生</Subtitle>
+#### ·森林守护者的诞生
 
 这个近侍与王一同老去之前，遇到了同样迷失、不踩碎任何落叶而踏入了宫殿的孩子，并将一切教给了她。如同这个故事传给我一样，那个孩子也将教导传给了之后的孩子。有的孩子成为了森林的守护者，并将森林的语言、保护王土的责任传给更多人，回到了人的世界中，在最漫长的夜幕降临时，点起篝火驱赶黑暗的影子；也有人在面对他人的巨大痛苦时，决定告别生涯尽头的猎场，成为令恶兽胆寒的猎手。
 
@@ -1752,13 +1177,9 @@ secondaryClass: "/nations"
 
 直到最后低语消失，恶兽逃逸，被侵蚀透彻的她才与这个大梦一同消散。她在最后与许许多多梦的碎片一同流入了人子的梦中。如同破碎的镜子会从许多角度映照出许多各异的形象，她留下的梦也以诸多不同的形式在人们的叙事中流传。最终通行（胜出）的故事，与她原本已经没有关系了。（故事中，最后她与老虎一同，远远地离开了宫殿。）
 
-</TimelineItem>
+#### ·薇瑞迭瑟恩成为猎手
 
-<TimelineItem>
-
-<Subtitle>·薇瑞迭瑟恩成为猎手</Subtitle>
-
-<TimelineImage src="/img/context/Sumeru/image019.png" caption="猎手薇瑞迭瑟恩"></TimelineImage>
+![猎手薇瑞迭瑟恩](/img/context/Sumeru/image019.png)
 
 猎者的法理是不与大地、森林为敌，而是成为自然当中无言的一枝一叶。据说曾经有鸟儿在这顶帽子里筑巢。无人能为最为杰出的猎人冠冕，因为高于她的只有自然的天地。
 
@@ -1778,11 +1199,7 @@ secondaryClass: "/nations"
 
 传说，当猎人赤着脚在原野中静静地行走时，趾间的青草会告诉她，湿润的泥土会告诉她，大树上的雀鸟看见的，泥土里的树根听见的。
 
-</TimelineItem>
-
 ### （四）教令院的建立
-
-<TimelineItem>
 
 须弥最初的教令院由长久地去追随大慈树王的学者组成，他们各司其职，协助大慈树王管理须弥。
 
@@ -1806,15 +1223,11 @@ secondaryClass: "/nations"
 
 根据着这六宗罪，贤者们不断制订着教令，改造着或新或旧的院内规则，风纪官们依据着教令执行法度，而在风纪官们的监督下，学者们也乖乖遵守着教令。如此，教令院内的万事万物都依照律法履行着自己的职责。智识明晰，万事昌盛，教令院与学者们如此向前迈进着。
 
-</TimelineItem>
-
 ## 七、500年前 漆黑的灾祸
 
 ### （一）树王与厄歌莉娅 <Footnote n="20" text="遐叶论经，花海甘露之光"></Footnote>
 
-<TimelineItem>
-
-<Subtitle>·漆黑的灾祸，第二次禁忌知识污染</Subtitle>
+#### ·漆黑的灾祸，第二次禁忌知识污染
 
 所幸那只是故事，并不是我的记忆，也不是你的记忆。月亮曾经变成了尖牙的形状、狞笑的形状，月光也不再穿过树叶撒在草地上，将露珠变成珍珠。
 
@@ -1824,11 +1237,7 @@ secondaryClass: "/nations"
 
 她亲眼见证这一切，因生灵的哀痛与离苦，她含悲垂泪。她的泪水落在地上，祛灭了燃灼的邪火，原本荒秽的焦土，也因此生出饱沁甘露的花朵。然而灾厄的根源依然蛰伏在焦土之下，死亡的阴影依然遮蔽着原本皎澈的月光。于是她发下宏愿，决心拯救地上的生灵，与那些追随她的灵使（侍者）一并，踏上了最后（蒙耀）的远征。
 
-</TimelineItem>
-
-<TimelineItem>
-
-<Subtitle>·神鸟牺牲</Subtitle>
+#### ·神鸟牺牲
 
 只有那灾祸来临时，她才悠然醒来，走向必然破灭的命运。恰似鲜花的命运是谢落，西摩格的宿命是牺牲，苍翠的养主从与花王偕眠的那夜便已知晓此理…（甘露之神厄歌莉娅死去）
 
@@ -1838,11 +1247,7 @@ secondaryClass: "/nations"
 
 灵光百种诞生，花灵诞生。
 
-</TimelineItem>
-
-<TimelineItem>
-
-<Subtitle>·树王保护世界树，世界树重启</Subtitle>
+#### ·树王保护世界树，世界树重启
 
 她与许多森林的孩子（疑似包括辛娜梦）进入了沙漠，烧毁祸患的根、折断灾厄的枝，
 
@@ -1874,23 +1279,11 @@ secondaryClass: "/nations"
 
 末代森林王为了在漆黑灾祸中保护森林死去，迷宫也死去。
 
-</TimelineItem>
+#### ·兰帝裟作战打败独眼巨宝，后来不见
 
-<TimelineItem>
+#### ·树王创造虚空并死去
 
-<Subtitle>·兰帝裟作战打败独眼巨宝，后来不见</Subtitle>
-
-</TimelineItem>
-
-<TimelineItem>
-
-<Subtitle>·树王创造虚空并死去</Subtitle>
-
-</TimelineItem>
-
-<TimelineItem>
-
-<Subtitle>·纳西妲诞生，被贤者发现并带回须弥 <Footnote n="21" text="<a href='https://www.bilibili.com/video/BV1AG4y1h7Ap/' target='_blank'>《原神》纳西妲角色PV——「生日快乐」_哔哩哔哩bilibili_原神</a>"></Footnote></Subtitle>
+#### ·纳西妲诞生，被贤者发现并带回须弥 <Footnote n="21" text="[《原神》纳西妲角色PV——「生日快乐」_哔哩哔哩bilibili_原神](https://www.bilibili.com/video/BV1AG4y1h7Ap/)"></Footnote>
 
 <QuoteBlock>
 
@@ -1898,23 +1291,15 @@ secondaryClass: "/nations"
 
 </QuoteBlock>
 
-</TimelineItem>
-
 ### （二）少年和猎手 <Footnote n="22" text="苍翠猎弓"></Footnote>
 
-<TimelineItem>
-
-<Subtitle>·盲眼少年的迷失</Subtitle>
+#### ·盲眼少年的迷失
 
 据说盲眼的少年循着甲胄洁白的长兄的足印穿越诸多王国、山岳与河流，最终，在黯色的深林中迷失。尽管痴于剑术，却比谁都温柔。虽然过于恪守教导，却比谁都坚持正义…在心中永远洁白的幻影的尽头，找到的却是月光般清白的镇林圣物之一。
 
 之后，则是渴求血肉的野兽。当猎手终于循着白枝的微光来到他的身边，他已经失去了许愿的力量，心中指导他的洁白身影也变得暗淡、消失了…
 
-</TimelineItem>
-
-<TimelineItem>
-
-<Subtitle>·少年赠弓，猎手走上漆黑兽径</Subtitle>
+#### ·少年赠弓，猎手走上漆黑兽径
 
 曾经属于某位猎手的弓，青绿的颜色可以轻易融入原野。如同在晨光下的苍翠草甸与林木间穿行的野兽一般纯净，从不带有一丝恶意，也从未为生存以外的目的放出箭簇。
 
@@ -1934,11 +1319,7 @@ secondaryClass: "/nations"
 
 她仰仗着这件仪器在大地上游猎。受少年所托，从此狩猎的不再是走兽与飞禽，而是自古国流出的，带来灾祸与痛苦的魔物。
 
-</TimelineItem>
-
-<TimelineItem>
-
-<Subtitle>·猎手被杀</Subtitle>
+#### ·猎手被杀
 
 追猎漆黑兽群的猎手，她的捕猎似乎永无止境。她散发的气味变得与野兽熟悉的腥臭相近。
 
@@ -1950,115 +1331,47 @@ secondaryClass: "/nations"
 
 </QuoteBlock>
 
-</TimelineItem>
-
-<TimelineItem>
-
-<Subtitle>·洁白的枝条筑起猎场</Subtitle>
-
-</TimelineItem>
+#### ·洁白的枝条筑起猎场
 
 ### （三）白鹄骑士
 
-<TimelineItem>
+#### ·白鹄骑士阻滞兽群
 
-<Subtitle>·白鹄骑士阻滞兽群</Subtitle>
+#### ·沙漠大宝被毁
 
-</TimelineItem>
+#### ·海杜菈被授予金殿卫士
 
-<TimelineItem>
+#### ·骑士们患病
 
-<Subtitle>·沙漠大宝被毁</Subtitle>
+#### ·独臂贤者那伽朱那加入战斗
 
-</TimelineItem>
+#### ·海杜菈因背叛被摄政元帅安弗塔斯处决
 
-<TimelineItem>
+#### ·英格希尔达失踪
 
-<Subtitle>·海杜菈被授予金殿卫士</Subtitle>
+#### ·降魔巨人被毁
 
-</TimelineItem>
+#### ·戴因和反主加入战斗，戴因手中紧紧攥着一枚指环
 
-<TimelineItem>
+#### ·那伽朱那来到沙漠深处，进入母树，下落不明
 
-<Subtitle>·骑士们患病</Subtitle>
+#### ·污秽被封堵
 
-</TimelineItem>
+#### ·戴因和反主离开
 
-<TimelineItem>
-
-<Subtitle>·独臂贤者那伽朱那加入战斗</Subtitle>
-
-</TimelineItem>
-
-<TimelineItem>
-
-<Subtitle>·海杜菈因背叛被摄政元帅安弗塔斯处决</Subtitle>
-
-</TimelineItem>
-
-<TimelineItem>
-
-<Subtitle>·英格希尔达失踪</Subtitle>
-
-</TimelineItem>
-
-<TimelineItem>
-
-<Subtitle>·降魔巨人被毁</Subtitle>
-
-</TimelineItem>
-
-<TimelineItem>
-
-<Subtitle>·戴因和反主加入战斗，戴因手中紧紧攥着一枚指环</Subtitle>
-
-</TimelineItem>
-
-<TimelineItem>
-
-<Subtitle>·那伽朱那来到沙漠深处，进入母树，下落不明</Subtitle>
-
-</TimelineItem>
-
-<TimelineItem>
-
-<Subtitle>·污秽被封堵</Subtitle>
-
-</TimelineItem>
-
-<TimelineItem>
-
-<Subtitle>·戴因和反主离开</Subtitle>
-
-</TimelineItem>
-
-<TimelineItem>
-
-<Subtitle>·矫论团成立</Subtitle>
-
-</TimelineItem>
+#### ·矫论团成立
 
 ### （四）结果
 
-<TimelineItem>
-
-<Subtitle>·森林王死去，迷宫被毁</Subtitle>
+#### ·森林王死去，迷宫被毁
 
 一切秘密与梦构成的华美宫阙都在遗忘的深黑烈焰之下烟消云散，又融入厚重土壤，化作了新生雨林的养料。
 
-</TimelineItem>
-
-<TimelineItem>
-
-<Subtitle>·桓那兰那被毁灭一次</Subtitle>
+#### ·桓那兰那被毁灭一次
 
 因为那菈的灾难我们失去了桓那兰那，许多兰那罗过早地回归了大地。就连最终得来的故事，也是苦涩的故事。
 
-</TimelineItem>
-
-<TimelineItem>
-
-<Subtitle>·那菈法留纳到来</Subtitle>
+#### ·那菈法留纳到来
 
 金色的那菈，金色的语言，她是旅行者。
 
@@ -2070,11 +1383,7 @@ secondaryClass: "/nations"
 
 无留陀的化身被封印在地下，由兰穆看守。
 
-</TimelineItem>
-
-<TimelineItem>
-
-<Subtitle>·兰那罗进入梦中</Subtitle>
+#### ·兰那罗进入梦中
 
 兰拉迦成为梦之树以维持梦境，
 
@@ -2088,62 +1397,40 @@ secondaryClass: "/nations"
 
 </QuoteBlock>
 
-</TimelineItem>
-
 ## 八、纳西妲时期
 
 ### （一）教令院
 
-<TimelineItem>
-
-<div class="table-container">
-<table class="lightrelam-table">
+<table>
 <tr><th>职称</th><th>介绍</th><th>主要人物</th></tr>
-<tr><td>贤者</td><td class="text-left">教令院研究者的最高头衔<br/>在六学派中，会推举出一位「大贤者」，作为统辖教令院的顶点。</td><td class="text-left">最初的贤者（获得草神认可，化解灾厄，创办教令院）<br/>阿扎尔（前任大贤者，已流放）<br/>艾尔海森（前任代理大贤者，已辞职）</td></tr>
-<tr><td>陀裟多</td><td class="text-left">能够独立研究课题、创造学术价值的学者。<br/>陀裟多如果想要从见习转正，需要两个不同课题的论文通过评审。</td><td class="text-left"></td></tr>
-<tr><td>诃般荼</td><td class="text-left">学识渊博、能够指导众人的的智者。</td><td class="text-left"></td></tr>
-<tr><td>帝力耶悉</td><td class="text-left">在四方游学的学者。</td><td class="text-left"></td></tr>
-<tr><td>书记官</td><td class="text-left">书记官既不跟随所有重大会议，也不参与核心事务决策，只负责归档备份重要资料</td><td class="text-left">艾尔海森</td></tr>
-<tr><td>大掌书</td><td class="text-left">身为管理图书之人最有机会接触记录了顶级智慧的书籍。</td><td class="text-left"></td></tr>
+<tr><td>贤者</td><td>教令院研究者的最高头衔<br/>在六学派中，会推举出一位「大贤者」，作为统辖教令院的顶点。</td><td>最初的贤者（获得草神认可，化解灾厄，创办教令院）<br/>阿扎尔（前任大贤者，已流放）<br/>艾尔海森（前任代理大贤者，已辞职）</td></tr>
+<tr><td>陀裟多</td><td>能够独立研究课题、创造学术价值的学者。<br/>陀裟多如果想要从见习转正，需要两个不同课题的论文通过评审。</td><td></td></tr>
+<tr><td>诃般荼</td><td>学识渊博、能够指导众人的的智者。</td><td></td></tr>
+<tr><td>帝力耶悉</td><td>在四方游学的学者。</td><td></td></tr>
+<tr><td>书记官</td><td>书记官既不跟随所有重大会议，也不参与核心事务决策，只负责归档备份重要资料</td><td>艾尔海森</td></tr>
+<tr><td>大掌书</td><td>身为管理图书之人最有机会接触记录了顶级智慧的书籍。</td><td></td></tr>
 </table>
-</div>
-
-</TimelineItem>
 
 ### （二）学派
 
-<TimelineItem>
-
-<div class="table-container">
-<table class="lightrelam-table">
+<table>
 <tr><th>学派</th><th>学院</th><th>纹章</th><th>研究内容</th><th>主要人物</th></tr>
-<tr><td>生论派</td><td class="text-left">阿弥利多学院</td><td class="text-left">绿色不死鸟</td><td class="text-left">生物学、生态学</td><td class="text-left">熙蔓·法罗赫札德（前任贤者）<br/>纳菲斯（贤者）<br/>提纳里（毕业生）</td></tr>
-<tr><td>明论派</td><td class="text-left">梨多梵谛学院</td><td class="text-left">蓝色大象</td><td class="text-left">星空</td><td class="text-left">阿扎尔（前任贤者）（现被流放）<br/>莱依拉（学生）</td></tr>
-<tr><td>素论派</td><td class="text-left">悉般多摩学院</td><td class="text-left">红色孔雀</td><td class="text-left">元素</td><td class="text-left">居勒什（前任贤者）<br/>丽莎（毕业生）<br/>赛诺（毕业生）</td></tr>
-<tr><td>知论派</td><td class="text-left">室罗婆耽学院</td><td class="text-left">黑色水牛</td><td class="text-left">语言、文字视为世界的核心与本质</td><td class="text-left">卡瓦贡（前任贤者）<br/>珐露珊（导师）<br/>艾尔海森（毕业生）</td></tr>
-<tr><td>因论派</td><td class="text-left">伐护末那学院</td><td class="text-left">黄色战马</td><td class="text-left">知识的来源、构成及其本质</td><td class="text-left">伊斯坎德（贤者）<br/>阿帽（学生）<br/>派蒙（学生） <Footnote n="23" text="艾尔海森2026生日邮件"></Footnote></td></tr>
-<tr><td>妙论派</td><td class="text-left">刹诃伐罗学院</td><td class="text-left">白色狮子</td><td class="text-left">驱动机关</td><td class="text-left">卡维（毕业生）</td></tr>
+<tr><td>生论派</td><td>阿弥利多学院</td><td>绿色不死鸟</td><td>生物学、生态学</td><td>熙蔓·法罗赫札德（前任贤者）<br/>纳菲斯（贤者）<br/>提纳里（毕业生）</td></tr>
+<tr><td>明论派</td><td>梨多梵谛学院</td><td>蓝色大象</td><td>星空</td><td>阿扎尔（前任贤者）（现被流放）<br/>莱依拉（学生）</td></tr>
+<tr><td>素论派</td><td>悉般多摩学院</td><td>红色孔雀</td><td>元素</td><td>居勒什（前任贤者）<br/>丽莎（毕业生）<br/>赛诺（毕业生）</td></tr>
+<tr><td>知论派</td><td>室罗婆耽学院</td><td>黑色水牛</td><td>语言、文字视为世界的核心与本质</td><td>卡瓦贡（前任贤者）<br/>珐露珊（导师）<br/>艾尔海森（毕业生）</td></tr>
+<tr><td>因论派</td><td>伐护末那学院</td><td>黄色战马</td><td>知识的来源、构成及其本质</td><td>伊斯坎德（贤者）<br/>阿帽（学生）<br/>派蒙（学生） <Footnote n="23" text="艾尔海森2026生日邮件"></Footnote></td></tr>
+<tr><td>妙论派</td><td>刹诃伐罗学院</td><td>白色狮子</td><td>驱动机关</td><td>卡维（毕业生）</td></tr>
 </table>
-</div>
-
-</TimelineItem>
 
 ### （三）赞迪克 <Footnote n="24" text="苍白之火"></Footnote>
 
-<TimelineItem>
-
-<Subtitle>·赞迪克被流放</Subtitle>
+#### ·赞迪克被流放
 
 「所谓的『人』，不过是足够复杂的机器。」在智慧的苗圃中，某位少年在讲坛上论证道。如果将某个部位拆开，对某个地方进行修改，那这台机器的性能，就能轻易得到大幅提升。无论是否拥有神之眼，无论体质与武艺如何，「优化过的人」都能展现超出常理的力量吧…即使被贬为「邪魔外道」，被永远逐出求知者的灵囿，少年也仅在研究笔记的页边，随手记下了自己的感想：Ⅰ．预想属实：依教令院的作风，研究无法获得突破。Ⅱ．不过，被驱逐仍是损失。要有好的研究环境才行。
 
-</TimelineItem>
-
-<TimelineItem>
-
-<Subtitle>·赞迪克加入愚人众</Subtitle>
+#### ·赞迪克加入愚人众
 
 最初的愚者找到了他…「仅仅是『优化过的人』吗——如果贵国能提供足够的物资、应允足够的时间，就连你们所谓的『神』，我也能制造出来。如何？」在流金般炽热炫目的沙漠中，他探询地望向冬国的使者：你会像教令院的人那样将我称为「怪物」、「疯子」吗？还是说会像故乡的人那样，挥动棍棒与草叉将我赶走呢…但是…「很好。那么，我们就是同伴了。」「至于对你的称呼，这样如何——」因为惊诧，因为给他的名号实在是太过讽刺，少年不禁放声大笑起来。
 
-</TimelineItem>
-
-</TimelineWrapper>
+</Timeline>

@@ -181,7 +181,7 @@ secondaryClass: "/about"
 #### （一）【转载】日月前事·书吏祷词
 
 <div class="poem-author">
-作者：MRKTPI<Footnote n="1" text="<a href='https://space.bilibili.com/300133599' target='_blank'>MRKTPI的个人空间-MRKTPI个人主页-哔哩哔哩视频</a>"></Footnote>
+作者：MRKTPI<Footnote n="1" text="[MRKTPI的个人空间-MRKTPI个人主页-哔哩哔哩视频](https://space.bilibili.com/300133599)"></Footnote>
 </div>
 
 <SecondaryQuote>
@@ -503,7 +503,7 @@ secondaryClass: "/about"
 
 原神语境下的「角色皮套论」，是 2024 年在玩家社区发酵的一套争议性论调，核心是通过捕风捉影的臆测、碎片化信息的强行拼接，主张原神（及米哈游旗下其他游戏）的虚拟角色，是米哈游高管、内部员工的个人皮套。
 
-然而，游戏角色的完整塑造，是画师、编剧、配音、建模、关卡设计等全团队协作的成果，单一个体无法决定角色的全部内容；所谓的对应证据多为强行关联的巧合，无任何权威实锤；角色的戏份、人设走向，核心服务于游戏主线叙事和商业规划，而非个人私货。2025年4月，上海市网络游戏行业协会专门召开研讨会，将「皮套论」明确定性为新型网络谣言。<Footnote n="3" text="<a href='https://www.chinanews.com.cn/ty/2025/04-03/10394228.shtml' target='_blank'>新型网络谣言'刺痛'游戏行业 多方联合在沪发布倡议应对'皮套论'-中新网</a>" />
+然而，游戏角色的完整塑造，是画师、编剧、配音、建模、关卡设计等全团队协作的成果，单一个体无法决定角色的全部内容；所谓的对应证据多为强行关联的巧合，无任何权威实锤；角色的戏份、人设走向，核心服务于游戏主线叙事和商业规划，而非个人私货。2025年4月，上海市网络游戏行业协会专门召开研讨会，将「皮套论」明确定性为新型网络谣言。<Footnote n="3" text="[新型网络谣言'刺痛'游戏行业 多方联合在沪发布倡议应对'皮套论'-中新网](https://www.chinanews.com.cn/ty/2025/04-03/10394228.shtml)" />
 
 ##### 2.关于「原神抄袭论」，以及我的一些心里话
 
@@ -513,7 +513,7 @@ secondaryClass: "/about"
 
 诚然，这种抄袭指控极具误导性，两作品在玩法和画面渲染上的确存在很强烈的关联，仿佛《原神》就是照着《旷野之息》一比一复刻而出。但只要细究其核心内容，便会发现，这一指控缺少有力根据：
 
-其一，在法律层面，在我国司法实践中，游戏著作权侵权（法律意义上的抄袭）认定，严格遵循思想与表达的二分法：首先，《著作权法》只保护具体、具象化的原创表达（包括美术素材、原画建模、代码、剧情文案、原创音乐、动画分镜等），不保护抽象的玩法、规则、风格、创意、通用交互逻辑。<Footnote n="4" text="<a href='https://www.chinanews.com.cn/ty/2025/04-03/10394228.shtml' target='_blank'>新型网络谣言'刺痛'游戏行业 多方联合在沪发布倡议应对'皮套论'-中新网</a>" />；并且，侵权认定必须同时满足「被告接触过原告作品」，以及 「两部作品在受著作权保护的表达层面构成实质性相似」两个要件<Footnote n="5" text="<a href='https://www.shzcfy.gov.cn/detail.jhtml?eqid=ead6bb83000023b60000000564395e3d&f_link_type=f_linkinlinenote&flow_extra=eyJpbmxpbmVfZGlzcGxheV9wb3NpdGlvbiI6MCwiZG9jX3Bvc2l0aW9uIjowLCJkb2NfaWQiOiJjMWYwNmRiY2NiYTU3NGE1LTJjYTE2NWYzYjc2YmNkNjUifQ%3D%3D&id=10014986' target='_blank'>上海知识产权法院</a>" />； 此外，截至2026年2月，从未有任何游戏厂商（包括任天堂）就「著作权侵权」事由，对《原神》及其开发方米哈游提起过胜诉的生效诉讼，也没有任何司法机关、知识产权监管部门，作出过《原神》构成「著作权侵权」的生效法律认定。
+其一，在法律层面，在我国司法实践中，游戏著作权侵权（法律意义上的抄袭）认定，严格遵循思想与表达的二分法：首先，《著作权法》只保护具体、具象化的原创表达（包括美术素材、原画建模、代码、剧情文案、原创音乐、动画分镜等），不保护抽象的玩法、规则、风格、创意、通用交互逻辑。<Footnote n="4" text="[新型网络谣言'刺痛'游戏行业 多方联合在沪发布倡议应对'皮套论'-中新网](https://www.chinanews.com.cn/ty/2025/04-03/10394228.shtml)" />；并且，侵权认定必须同时满足「被告接触过原告作品」，以及 「两部作品在受著作权保护的表达层面构成实质性相似」两个要件<Footnote n="5" text="[上海知识产权法院](https://www.shzcfy.gov.cn/detail.jhtml?eqid=ead6bb83000023b60000000564395e3d&f_link_type=f_linkinlinenote&flow_extra=eyJpbmxpbmVfZGlzcGxheV9wb3NpdGlvbiI6MCwiZG9jX3Bvc2l0aW9uIjowLCJkb2NfaWQiOiJjMWYwNmRiY2NiYTU3NGE1LTJjYTE2NWYzYjc2YmNkNjUifQ%3D%3D&id=10014986)" />； 此外，截至2026年2月，从未有任何游戏厂商（包括任天堂）就「著作权侵权」事由，对《原神》及其开发方米哈游提起过胜诉的生效诉讼，也没有任何司法机关、知识产权监管部门，作出过《原神》构成「著作权侵权」的生效法律认定。
 
 可见，虽然两作品同为开放世界游戏，画风上相似，玩法上也有重叠，但缺少实质性的相似，《原神》的原创表达并不构成法律意义上的抄袭。
 

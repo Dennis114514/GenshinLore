@@ -1,4 +1,4 @@
----
+﻿---
 layout: doc
 title: 天理/人界
 editLink: true
@@ -34,23 +34,22 @@ function closeModalFunc() {
 }
 </script>
 
-<TextCenter>点击表格中的某些行可以查看相关文本</TextCenter>
+<div class="text-center text-base text-[#4d4f53] leading-[2]">点击表格中的某些行可以查看相关文本</div>
 
-<TextCenter>众神皆背负爱人的责任。</TextCenter>
+<div class="text-center text-base text-[#4d4f53] leading-[2]">众神皆背负爱人的责任。</div>
 
-<TextCenter>人间界代表力量则是如今的七元素，分为风、岩、水、火、草、冰、雷。七元素合一则是地脉能量/光元素。</TextCenter>
+<div class="text-center text-base text-[#4d4f53] leading-[2]">人间界代表力量则是如今的七元素，分为风、岩、水、火、草、冰、雷。七元素合一则是地脉能量/光元素。</div>
 
 ## 天理与四影/天理的维系者【待发现】
 
-<TextCenter>
-原初之人<strong>法涅斯</strong>，第一位降临者，击败七龙王后改建世界，将原始的蛮荒燃素改造成较温和的七元素力，为了防止星间巨物的入侵，通过虚假之天隔绝提瓦特与宇宙，创造人类与飞鸟与制度，通过天使指引人类建立文明。
-</TextCenter>
+<div class="text-center text-base text-[#4d4f53] leading-[2]">
+原初之人**法涅斯**，第一位降临者，击败七龙王后改建世界，将原始的蛮荒燃素改造成较温和的七元素力，为了防止星间巨物的入侵，通过虚假之天隔绝提瓦特与宇宙，创造人类与飞鸟与制度，通过天使指引人类建立文明。
+</div>
 
-<TextCenter>
-葬火之战时，其战争中掉落的神体碎片化为魔神。如今已陷入沉睡。他的四个影子即<strong>四影执政</strong>。
-</TextCenter>
+<div class="text-center text-base text-[#4d4f53] leading-[2]">
+葬火之战时，其战争中掉落的神体碎片化为魔神。如今已陷入沉睡。他的四个影子即**四影执政**。
+</div>
 
-<div class="w-full flex items-center justify-center">
 <table style="width: auto !important;">
   <thead>
     <tr>
@@ -99,7 +98,6 @@ function closeModalFunc() {
     </tr>
   </tbody>
 </table>
-</div>
 
 ## 三月一星
 
@@ -114,19 +112,19 @@ function closeModalFunc() {
   <tbody>
     <tr>
       <td>月神</td>
-      <td style="text-align: left;">诗与歌的女儿们，也是月夜的君王。她们驾着银色的高车巡游，每过一旬，便由一位姐妹接替另一位的王位。如是周而复。<br><br>三月女神彼此的关系是很亲切的。要是有人偷懒不想当班，就会央求另外一个人顶替。</td>
+      <td>诗与歌的女儿们，也是月夜的君王。她们驾着银色的高车巡游，每过一旬，便由一位姐妹接替另一位的王位。如是周而复。<br><br>三月女神彼此的关系是很亲切的。要是有人偷懒不想当班，就会央求另外一个人顶替。</td>
     </tr>
     <tr>
       <td>三月</td>
-      <td style="text-align: left;">古龙文明的科技造物，原本应是龙族依托提瓦特的三颗天然卫星搭建的天基武器平台，被龙族视为神明。在古龙衰落后，三月由世界的新主人法涅斯接管，此事被龙族视为三月女神背叛龙类。<br><br>法涅斯透过三月的力量打造神之眼的前身「月之轮」。<br><br>月亮破碎后，其力量凝结为月髓。</td>
+      <td>古龙文明的科技造物，原本应是龙族依托提瓦特的三颗天然卫星搭建的天基武器平台，被龙族视为神明。在古龙衰落后，三月由世界的新主人法涅斯接管，此事被龙族视为三月女神背叛龙类。<br><br>法涅斯透过三月的力量打造神之眼的前身「月之轮」。<br><br>月亮破碎后，其力量凝结为月髓。</td>
     </tr>
     <tr>
       <td>月使</td>
-      <td style="text-align: left;">月神的下级，但职位高于天使。月使的载具便是月宫高车，为明月驾高车之神就是「望舒」。</td>
+      <td>月神的下级，但职位高于天使。月使的载具便是月宫高车，为明月驾高车之神就是「望舒」。</td>
     </tr>
     <tr>
       <td>月亮船</td>
-      <td style="text-align: left;">功能是带死者去彼岸。<br><br>在葬火之战之前的时代，高贵的灵魂不是前往地脉，而是跟随月使去往月亮的城市。</td>
+      <td>功能是带死者去彼岸。<br><br>在葬火之战之前的时代，高贵的灵魂不是前往地脉，而是跟随月使去往月亮的城市。</td>
     </tr>
   </tbody>
 </table>
@@ -198,9 +196,9 @@ function closeModalFunc() {
 
 ## 天使/仙灵【待发现】
 
-<TextCenter>
+<div class="text-center text-base text-[#4d4f53] leading-[2]">
 古老的生灵，「天使」是指天上的使者，由天理所创造。「仙灵」则是由天使退化而来。天使是晨星的代行。<Footnote n="3" text="兹白角色故事" />
-</TextCenter>
+</div>
 
 <div class="w-full flex items-center justify-center">
 <table style="width: auto !important;">
@@ -256,11 +254,11 @@ function closeModalFunc() {
     </tr>
     <tr>
       <td>神之心<br>gnosis<br><span class="khaenriah-font">gnosis</span></td>
-      <td style="text-align: left; padding-left: 2em;">直译为「灵知」，「神之心」是更高位的元素控制中枢，是七神之座的象征。天理掌控提瓦特和法则的象征。<br>通过第三降临者的遗骨打造成而。<br>神之心被摧毁之前，并不会产生新的神祇，因此而失去神之心也算是现任神。</td>
+      <td>直译为「灵知」，「神之心」是更高位的元素控制中枢，是七神之座的象征。天理掌控提瓦特和法则的象征。<br>通过第三降临者的遗骨打造成而。<br>神之心被摧毁之前，并不会产生新的神祇，因此而失去神之心也算是现任神。</td>
     </tr>
     <tr>
       <td>神之眼<br>vision<br><span class="khaenriah-font">vision</span></td>
-      <td style="text-align: left; padding-left: 2em;">直译为「幻觉」<br>「导出魔力的外置器官」。「神之眼」是这世上极少数受神认可者才拥有的外置魔力器官。他们通过「神之眼」来引导元素力。每一位「神之眼」的拥有者，都是有资格成神的人，因此被称作「原神」，拥有登上天空岛的资格（而当初获得了赠礼的人完成使命之后...众神收到的回赠也会更加丰厚）。<br>神之眼是由持有者的灵魂包裹住对应元素古龙大权的碎屑。内圈对应元素古龙大权的碎屑；外圈是神之眼持有者的灵魂。<br>由「光界」发放，尘世七执政（七神）并无权限发放神之眼。</td>
+      <td>直译为「幻觉」<br>「导出魔力的外置器官」。「神之眼」是这世上极少数受神认可者才拥有的外置魔力器官。他们通过「神之眼」来引导元素力。每一位「神之眼」的拥有者，都是有资格成神的人，因此被称作「原神」，拥有登上天空岛的资格（而当初获得了赠礼的人完成使命之后...众神收到的回赠也会更加丰厚）。<br>神之眼是由持有者的灵魂包裹住对应元素古龙大权的碎屑。内圈对应元素古龙大权的碎屑；外圈是神之眼持有者的灵魂。<br>由「光界」发放，尘世七执政（七神）并无权限发放神之眼。</td>
     </tr>
     <tr>
       <td>原神<br>allogens<br><span class="khaenriah-font">allogens</span></td>

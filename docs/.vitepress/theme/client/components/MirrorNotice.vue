@@ -33,7 +33,7 @@ function updateMarquee() {
 
   shouldScroll.value = true
   const distance = textWidth + gap
-  const duration = Math.max(8, distance / 70)
+  const duration = Math.max(12, distance / 50)
   marqueeStyle.value = {
     '--mirror-scroll-distance': `${distance}px`,
     '--mirror-scroll-duration': `${duration}s`,

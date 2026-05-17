@@ -1,11 +1,11 @@
----
+﻿---
 layout: doc
 title: 第?章：坎瑞亚·未有之梦
 editLink: true
 secondaryClass: "/nations"
 ---
 
-<TextCenter>
+<div class="text-center text-base text-[#4d4f53] leading-[2]">
 在无始无终的永恒里，
 <br>
 人类将度过
@@ -25,24 +25,18 @@ secondaryClass: "/nations"
 <Space :size="14"></Space>
 从世界之外，
 <br>
-我们取得否定世界的力量。<Footnote n="1" text="<a href='https://www.bilibili.com/video/BV1At4y1q7UQ/' target='_blank'>《原神·提瓦特篇》主线章节预告PV-「足迹」_哔哩哔哩_bilibili</a>"></Footnote>
-</TextCenter>
+我们取得否定世界的力量。<Footnote n="1" text="[《原神·提瓦特篇》主线章节预告PV-「足迹」_哔哩哔哩_bilibili](https://www.bilibili.com/video/BV1At4y1q7UQ/)"></Footnote>
+</div>
 
-<TimelineWrapper>
+<Timeline>
 
 ## 葬火
 
-<TimelineItem>
-
 此时的第三降临者和仙灵的始祖被深渊拦截，六侏儒（深渊眷属）设计在仙灵始祖默许下（白之公主睡觉时）「杀死」了第三降临者（王子）。
-
-</TimelineItem>
 
 ## 赤月王朝 <Footnote n="2" text="赤月之形，裴伦埃里"></Footnote>
 
-<TimelineItem>
-
-<Subtitle>·建立</Subtitle>
+#### ·建立
 
 钉子砸下后，无数古代文明毁灭，
 
@@ -60,11 +54,7 @@ secondaryClass: "/nations"
 
 如今的反主，六侏儒和反抗的难民建立了坎瑞亚。
 
-</TimelineItem>
-
-<TimelineItem>
-
-<Subtitle>·对赤月的信仰</Subtitle>
+#### ·对赤月的信仰
 
 <QuoteBlock>
 
@@ -88,11 +78,7 @@ secondaryClass: "/nations"
 
 直至再也无法浇灭的质疑与愤怒如野火烧遍无梦的疆土，最终焚向月色的高宫…
 
-</TimelineItem>
-
-<TimelineItem>
-
-<Subtitle>·世界之外的孩子</Subtitle>
+#### ·世界之外的孩子
 
 这是一个特别古老时候的故事，相传那个时候家禽与野鸟还没有分开。那个时候，照亮地下王国的是一轮赤月，而不是后来的黑日。因为王国位置特殊，总有世界之外的事物漏入其中。王国的武备会消灭其中的灾祸，但是其他事物要怎么处理呢？比如说，或许来自某个毁灭世界的孩子？
 
@@ -102,19 +88,11 @@ secondaryClass: "/nations"
 
 期待着自所谓的海洋之外而来到王国的神——或者说能够超越神的人，他们建立了收容这种孩童的机构。在那之后，王国当中的孤儿或者是来自外界的流浪儿也会被接纳。
 
-</TimelineItem>
-
-<TimelineItem>
-
-<Subtitle>·两界之火</Subtitle>
+#### ·两界之火
 
 年幼的裴伦埃里对人生最早的记忆，就是被大人们要求爬过漆黑的甬道。这些通道或许是寒冷时节里烧火排烟的管道，里面布满煤灰，而且一丝能让烟逃出、或者光漏入的缝隙都没有。裴伦埃里爬行时，偶尔还会在黑暗中摔落。好在这个甬道本身设计就是为了让孩童行过，就算是摔落也并不会很痛，也并没有惹人生厌的虫网。在最后裴伦埃里走到了尽头，但是出口却并未打开。他敲了敲门，只有大人们无情的声音在询问：「你死了吗？」如果已经死了，又怎么能回答呢？但是大人们并不喜欢这个回复。他们反复问着一样的问题，直到裴伦埃里大喊：「死了！」大人们继续问：「那你看到了吗？」或许是黑暗带来的恐惧加上饥饿与疲惫，裴伦埃里眼中看到了幻象。赤红的月亮高悬在漆黑的夜空里，它突然转了过来，原来是巨大、惊恐的眼瞳。大人们打开了门，抱住满身煤黑的裴伦埃里：「你已经行过壁中炉内的两界之火，现在在这里得到新生。」
 
-</TimelineItem>
-
-<TimelineItem>
-
-<Subtitle>·占星</Subtitle>
+#### ·占星
 
 王国中的人们不曾见过大海，当然也从未目睹过真正的太阳。但即便是在这暗无天日的地方，亦有人妄图窥探群星的秘密。不过他们并非仰望星空，而是在镜面虚假的倒影中寻觅真实。
 
@@ -124,13 +102,9 @@ secondaryClass: "/nations"
 
 摸索着冗长的星表，久而久之，占星学家们自然也产生了这般的想法，只是那时的哲人们还不知道，他们已然窥见了永恒无限的魔天的一角。
 
-</TimelineItem>
-
 ### 魔神战争时期
 
-<TimelineItem>
-
-<Subtitle>·安吉莉卡</Subtitle>
+#### ·安吉莉卡
 
 那一天，教养院中迎来了新的成员。她是一位美丽的异国少女，自称是高贵的公主。因为故国被贵金之神打败，贵为祭司之女的她不愿承认新神，所以才流浪到了王国。她说她的名字叫安吉莉卡<Footnote n="3" text="但是古时璃月的人并不会这样取名，如今想来，她名字或许是「妙音女」或者「天王奴」。"></Footnote>，意思是「仿若天之神使」（仙灵）。美丽的安吉莉卡说自己将来只会和王国当中最强大的骑士结为夫妻。裴伦埃里对此不屑一顾，可赫雷贝里却被安吉莉卡所迷住。安吉莉卡时常在王国的井户之海附近散步，在那里她对赫雷贝里讲述了外面世界的种种事物。担心挚友的裴伦埃里也会同行，因那猜忌生得比好奇心要早，对于安吉莉卡所说的一切他虽心存怀疑，但希望终有一天能得以一见。
 
@@ -156,77 +130,53 @@ secondaryClass: "/nations"
 
 裴伦埃里的面前空无一物，只有广阔的大地。
 
-</TimelineItem>
-
 ## 黑日王朝
 
-<TimelineItem>
-
-<Subtitle>·黑日取代赤月</Subtitle>
+#### ·黑日取代赤月
 
 有人发现了直接接触深渊的方法，于是发动政变，驱逐了赤月王的王室血脉，建立黑日王朝。
 
-</TimelineItem>
-
 ### 王国四柱
-
-<TimelineItem>
 
 指的是坎瑞亚的四个支柱产业（炼金，军队，机械，占星）
 
-<div class="table-container">
-<table class="lightrelam-table">
+<table>
 <tr><th>组织</th><th>人物</th><th>介绍</th></tr>
-<tr><td>王室</td><td>「黑王」<br/>伊尔明苏尔</td><td class="text-left">独眼的王者</td></tr>
-<tr><td rowspan="6">骑士</td><td>「摄政元帅」<br/>安弗塔斯·亚尔伯里奇</td><td class="text-left">驾驶遗迹巨像驰援须弥的白鹄骑士的统帅<br/>亚尔伯里奇族在独眼王者失能后担任摄政</td></tr>
-<tr><td>克罗达尔·亚尔伯里奇</td><td class="text-left">创立深渊教团</td></tr>
-<tr><td>「末光之剑」<br/>戴因斯雷布</td><td class="text-left">宫廷卫队成员<br/>未能阻止坎瑞亚灭国，因不死诅咒而流浪</td></tr>
-<tr><td>哈夫丹</td><td class="text-left">戴因的战友</td></tr>
-<tr><td>「天柱骑士」<br/>瑟雷恩</td><td class="text-left">后来加入愚人众，成为卡皮塔诺</td></tr>
-<tr><td>古瑟雷德</td><td class="text-left">瑟雷恩的副官</td></tr>
-<tr><td rowspan="2">教养院</td><td>尼约德</td><td class="text-left">与黑骏相伴</td></tr>
-<tr><td>「妙音女」<br/>「天王奴」<br/>安吉莉卡</td><td class="text-left">来自璃月的少女</td></tr>
-<tr><td rowspan="4">深秘院</td><td>海洛塔帝</td><td class="text-left">院长，首席御前法师</td></tr>
-<tr><td>艾弗提尔维特</td><td class="text-left">副院长，宫廷法师，后来加入愚人众，成为皮耶罗</td></tr>
-<tr><td>阿尔夫</td><td class="text-left">最擅长战斗</td></tr>
-<tr><td>「妖僧」<br/>拉乌斯万格</td><td class="text-left"></td></tr>
+<tr><td>王室</td><td>「黑王」<br/>伊尔明苏尔</td><td>独眼的王者</td></tr>
+<tr><td rowspan="6">骑士</td><td>「摄政元帅」<br/>安弗塔斯·亚尔伯里奇</td><td>驾驶遗迹巨像驰援须弥的白鹄骑士的统帅<br/>亚尔伯里奇族在独眼王者失能后担任摄政</td></tr>
+<tr><td>克罗达尔·亚尔伯里奇</td><td>创立深渊教团</td></tr>
+<tr><td>「末光之剑」<br/>戴因斯雷布</td><td>宫廷卫队成员<br/>未能阻止坎瑞亚灭国，因不死诅咒而流浪</td></tr>
+<tr><td>哈夫丹</td><td>戴因的战友</td></tr>
+<tr><td>「天柱骑士」<br/>瑟雷恩</td><td>后来加入愚人众，成为卡皮塔诺</td></tr>
+<tr><td>古瑟雷德</td><td>瑟雷恩的副官</td></tr>
+<tr><td rowspan="2">教养院</td><td>尼约德</td><td>与黑骏相伴</td></tr>
+<tr><td>「妙音女」<br/>「天王奴」<br/>安吉莉卡</td><td>来自璃月的少女</td></tr>
+<tr><td rowspan="4">深秘院</td><td>海洛塔帝</td><td>院长，首席御前法师</td></tr>
+<tr><td>艾弗提尔维特</td><td>副院长，宫廷法师，后来加入愚人众，成为皮耶罗</td></tr>
+<tr><td>阿尔夫</td><td>最擅长战斗</td></tr>
+<tr><td>「妖僧」<br/>拉乌斯万格</td><td></td></tr>
 </table>
-</div>
-
-</TimelineItem>
 
 ### 坎瑞亚的五大罪人
 
-<TimelineItem>
-
-<div class="table-container">
-<table class="lightrelam-table">
+<table>
 <tr><th>罪人</th><th>权能</th><th>关系户</th><th>介绍</th></tr>
-<tr><td>「贤者」<br/>海洛塔帝</td><td>理</td><td></td><td class="text-left">曾是深秘院院长和首席御前法师</td></tr>
-<tr><td>「预言家」<br/>维瑟弗尼尔</td><td>时</td><td>戴因斯雷布（弟弟）</td><td class="text-left"></td></tr>
-<tr><td>「黄金」<br/>莱茵多特</td><td>生</td><td>造物：阿贝多、巴窟纳瓦、厄里那斯、魔龙杜林</td><td class="text-left">吞噬纳贝里士并成为生之执政<br/>「树为最完美的果实骄傲，它是如此圆满而无瑕疵。但是寄宿了梦的种子啊，不要止当果壳中的宇宙之王。」<Footnote n="5" text="阿贝多魔女的课业中，莱茵多特给阿贝多的寄语"></Footnote></td></tr>
-<tr><td>「极恶骑」<br/>苏尔特洛奇</td><td>空</td><td>丝柯克（徒弟）</td><td class="text-left">曾是宫廷卫队成员</td></tr>
-<tr><td>「猎月人」<br/>雷利尔</td><td>死</td><td>狂猎（造物）</td><td class="text-left">曾是猎杀赤月遗民的特务</td></tr>
+<tr><td>「贤者」<br/>海洛塔帝</td><td>理</td><td></td><td>曾是深秘院院长和首席御前法师</td></tr>
+<tr><td>「预言家」<br/>维瑟弗尼尔</td><td>时</td><td>戴因斯雷布（弟弟）</td><td></td></tr>
+<tr><td>「黄金」<br/>莱茵多特</td><td>生</td><td>造物：阿贝多、巴窟纳瓦、厄里那斯、魔龙杜林</td><td>吞噬纳贝里士并成为生之执政<br/>「树为最完美的果实骄傲，它是如此圆满而无瑕疵。但是寄宿了梦的种子啊，不要止当果壳中的宇宙之王。」<Footnote n="5" text="阿贝多魔女的课业中，莱茵多特给阿贝多的寄语"></Footnote></td></tr>
+<tr><td>「极恶骑」<br/>苏尔特洛奇</td><td>空</td><td>丝柯克（徒弟）</td><td>曾是宫廷卫队成员</td></tr>
+<tr><td>「猎月人」<br/>雷利尔</td><td>死</td><td>狂猎（造物）</td><td>曾是猎杀赤月遗民的特务</td></tr>
 </table>
-</div>
 
-</TimelineItem>
-
-<TimelineItem>
-
-<Subtitle>·苏尔特洛奇</Subtitle>
+#### ·苏尔特洛奇
 
 苏尔特洛奇是死囚的儿子，整日和一帮不良青年混迹街头，受过不少批评。虽然他受过不少苦难，但他始终保持乐观。他结识了身患重病的坎瑞亚贵族继承人斯克弗努格。苏尔特洛奇承认了斯克弗努格的天赋，同他一同切磋，二人都很快乐。十岁那年，他偷来了禁忌的研究资料，治好了斯克弗努格的病。
 
 后来，苏尔特洛奇进入骑士学院，和戴因斯雷布成为最好的朋友，在哈登手下学习黑蛇剑术。哈登打压新一辈的骑士，二人都因为践行骑士精神而受到体罚，苏尔特洛奇更是失去了一条腿和一只手。后来他不断奋斗，成为坎瑞亚精英骑士之一。
 
-</TimelineItem>
-
 ### 深秘院
 
-<TimelineItem>
-
-<Subtitle>·蛇之七变</Subtitle>
+#### ·蛇之七变
 
 「蛇之七变」乃是极恶骑教授丝柯克的小技法。
 
@@ -234,11 +184,7 @@ secondaryClass: "/nations"
 
 坎瑞亚本就以此为幻戏，只在表演与游行里使用。
 
-</TimelineItem>
-
-<TimelineItem>
-
-<Subtitle>·禁忌知识</Subtitle>
+#### ·禁忌知识
 
 已有人知晓了深罪的秘密，因此窥探星空也成为了禁忌的知识。
 
@@ -248,11 +194,7 @@ secondaryClass: "/nations"
 
 而这便是日后高颂天外渊薮的妖僧，一切故事与罪行的开端…
 
-</TimelineItem>
-
-<TimelineItem>
-
-<Subtitle>·拉乌斯万格被放逐</Subtitle>
+#### ·拉乌斯万格被放逐
 
 逾越身份的约束，已属蔑视君王的大恶，窥探深黑智慧，这般罪行更是绝不容赦。
 
@@ -270,25 +212,13 @@ secondaryClass: "/nations"
 
 </QuoteBlock>
 
-</TimelineItem>
-
 ### 教养院
 
-<TimelineItem>
+#### ·赤月的贤人期待能从世界之外找到超越神明的存在。而教养院负责接收世界之外的孩子，并为其洗练，以便于控制。
 
-<Subtitle>·赤月的贤人期待能从世界之外找到超越神明的存在。而教养院负责接收世界之外的孩子，并为其洗练，以便于控制。</Subtitle>
+#### ·虽然直到赤月降下，黑日升起，再到黑日垂暮，王国的教养院都一直没能等到超越之人到来，但教养院中走出了许多奇人异士，他们中很多人都成为了王国伟大的骑士。裴伦埃里自是他那个时代无愧的首席，除非硬要让他和他的挚友赫雷贝里相较。他们本应该争夺功勋，通过荣耀的数量与大小，还有庆功宴的饮下的美酒之数来分出高下。但是不知道为什么，他们却走上了以命相搏的末路。
 
-</TimelineItem>
-
-<TimelineItem>
-
-<Subtitle>·虽然直到赤月降下，黑日升起，再到黑日垂暮，王国的教养院都一直没能等到超越之人到来，但教养院中走出了许多奇人异士，他们中很多人都成为了王国伟大的骑士。裴伦埃里自是他那个时代无愧的首席，除非硬要让他和他的挚友赫雷贝里相较。他们本应该争夺功勋，通过荣耀的数量与大小，还有庆功宴的饮下的美酒之数来分出高下。但是不知道为什么，他们却走上了以命相搏的末路。</Subtitle>
-
-</TimelineItem>
-
-<TimelineItem>
-
-<Subtitle>·戴因斯雷布</Subtitle>
+#### ·戴因斯雷布
 
 在伟大的王上宣布新王储继位时，他远远瞧见了那一缕金发。欢庆、喧闹的气氛与他并没有什么关系，抛洒的真花与假花最后还需要他协助清扫。他从后望里回过头，继续维持着宫门前广场的秩序。他目前还只是个普通的青年骑士罢了。
 
@@ -302,31 +232,19 @@ secondaryClass: "/nations"
 
 弑君、大义、杀心、背叛，直到一切成为一片荒芜。这之后，同病相怜的二人一同旅行的时间，相比两人过于漫长而且渐行渐远的人生，也几乎只是交错的一点罢了。
 
-</TimelineItem>
-
 ## 500年前 黑日王朝覆灭
 
-<TimelineItem>
+#### ·伊尔明和王储开始吸收深渊之力
 
-<Subtitle>·伊尔明和王储开始吸收深渊之力</Subtitle>
-
-</TimelineItem>
-
-<TimelineItem>
-
-<Subtitle>·解救维瑟弗尼尔</Subtitle>
+#### ·解救维瑟弗尼尔
 
 为了拯救因献上预言而被下狱的哥哥维瑟弗尼尔，戴因召集了苏尔特洛奇、海洛塔帝、莱茵多特、雷利尔。几人发现了正在利用深渊力量的伊尔明和被用作无限吸收深渊力量的王储，于是制止了黑王，救下了他和维瑟弗尼尔。
 
-</TimelineItem>
-
-<TimelineItem>
-
-<Subtitle>·瓜分深渊力量，引发漆黑的灾祸</Subtitle>
+#### ·瓜分深渊力量，引发漆黑的灾祸
 
 然而除了戴因之外的五人却受到深渊的蛊惑，瓜分了王储身上的深渊力量，成为了与世界匹敌的超然存在——五罪人。
 
-雷利尔没有挽回索琳蒂丝，一怒之下接触深渊，成为罪人。<Footnote n="6" text="<a href='https://www.bilibili.com/video/BV1GPymBwE9K/' target='_blank'>《原神》剧情PV-「月的倒影」_原神</a>"></Footnote>
+雷利尔没有挽回索琳蒂丝，一怒之下接触深渊，成为罪人。<Footnote n="6" text="[《原神》剧情PV-「月的倒影」_原神](https://www.bilibili.com/video/BV1GPymBwE9K/)"></Footnote>
 
 被称为「黄金」的炼金士堕落为了罪人，孕育了大量漆黑的魔兽。
 
@@ -334,34 +252,24 @@ secondaryClass: "/nations"
 
 面对几人造成的漆黑灾厄，苏尔特洛奇因为提瓦特已没有他感兴趣的东西，而离开了提瓦特。
 
-</TimelineItem>
-
-<TimelineItem>
-
-<Subtitle>·天理势力前往坎瑞亚</Subtitle>
+#### ·天理势力前往坎瑞亚
 
 除了守护世界树的大慈树王，其余六神（温迪、钟离、雷电真、厄歌莉娅、玛薇卡、白沙皇）均被召集前往坎瑞亚抗击深渊。
 
-<div class="table-container">
-<table class="lightrelam-table">
+<table>
 <tr><th>七神</th><th>战斗结果</th></tr>
-<tr><td>温迪</td><td class="text-left">存活，是现存的一代神</td></tr>
-<tr><td>钟离</td><td class="text-left">存活，是现存的一代神。与冰之女皇签订了终结一切契约的契约</td></tr>
-<tr><td>雷电真</td><td class="text-left">在坎瑞亚战死。接任的雷电影开始维系永恒，闭关锁国，颁布眼狩令</td></tr>
-<tr><td>大慈树王</td><td class="text-left">因感染禁忌知识，所以将自身从世界树抹除，最终被世界遗忘。作为世界树枝芽的纳西妲诞生，取代了大慈树王在世界上的所有记录</td></tr>
-<tr><td>厄歌莉娅</td><td class="text-left">在甘露花海战死，树王种下大树，让厄歌莉娅的意识得以寄宿。接任的芙卡洛斯为了应对预言，承受水神创造枫丹人的罪孽，开始计划摧毁水神神座</td></tr>
-<tr><td>玛薇卡</td><td class="text-left">将自身融入圣火，支援500年后对深渊的决战</td></tr>
-<tr><td>白沙皇</td><td class="text-left">战死。接任的冰之女皇性情大变，成为不再爱人的神，创立了愚人众，并开始收集神之心</td></tr>
+<tr><td>温迪</td><td>存活，是现存的一代神</td></tr>
+<tr><td>钟离</td><td>存活，是现存的一代神。与冰之女皇签订了终结一切契约的契约</td></tr>
+<tr><td>雷电真</td><td>在坎瑞亚战死。接任的雷电影开始维系永恒，闭关锁国，颁布眼狩令</td></tr>
+<tr><td>大慈树王</td><td>因感染禁忌知识，所以将自身从世界树抹除，最终被世界遗忘。作为世界树枝芽的纳西妲诞生，取代了大慈树王在世界上的所有记录</td></tr>
+<tr><td>厄歌莉娅</td><td>在甘露花海战死，树王种下大树，让厄歌莉娅的意识得以寄宿。接任的芙卡洛斯为了应对预言，承受水神创造枫丹人的罪孽，开始计划摧毁水神神座</td></tr>
+<tr><td>玛薇卡</td><td>将自身融入圣火，支援500年后对深渊的决战</td></tr>
+<tr><td>白沙皇</td><td>战死。接任的冰之女皇性情大变，成为不再爱人的神，创立了愚人众，并开始收集神之心</td></tr>
 </table>
-</div>
 
-</TimelineItem>
+#### ·覆灭
 
-<TimelineItem>
-
-<Subtitle>·覆灭</Subtitle>
-
-若娜瓦前往坎瑞亚，给纯血坎瑞亚人降下不死诅咒。而其他血脉的国民遭遇荒野诅咒而变成丘丘人。艾弗提尔维特见证了她降下诅咒的开端。<Footnote n="7" text="<a href='https://www.bilibili.com/video/BV18tGHzoEyW/' target='_blank'>《原神·提瓦特篇》幕间PV-「神的局限性」_原神</a>"></Footnote>
+若娜瓦前往坎瑞亚，给纯血坎瑞亚人降下不死诅咒。而其他血脉的国民遭遇荒野诅咒而变成丘丘人。艾弗提尔维特见证了她降下诅咒的开端。<Footnote n="7" text="[《原神·提瓦特篇》幕间PV-「神的局限性」_原神](https://www.bilibili.com/video/BV18tGHzoEyW/)"></Footnote>
 
 黑日王朝最终覆灭，灾难突破了古国城墙，在大陆上散布开来。
 
@@ -385,53 +293,29 @@ secondaryClass: "/nations"
 
 </QuoteBlock>
 
-</TimelineItem>
-
-<TimelineItem>
-
-<Subtitle>·摄政</Subtitle>
+#### ·摄政
 
 伊尔明失能。摄政元帅安弗塔斯代理摄政，领导救国会议，重启超级大宝，携带贫民出逃。
 
-</TimelineItem>
+#### ·克罗达尔创立深渊教团，并在蒙德制造污秽逆位神像
 
-<TimelineItem>
-
-<Subtitle>·克罗达尔创立深渊教团，并在蒙德制造污秽逆位神像</Subtitle>
-
-</TimelineItem>
-
-<TimelineItem>
-
-<Subtitle>·命运的织机</Subtitle>
+#### ·命运的织机
 
 「将敌人的信仰作为薪柴，为高贵的公主殿下献上荣光」
 
 改造奥塞尔，以倒挂神像（捧着第一座耕地机的眼睛）为基底，动摇神座，改写历史
 
-</TimelineItem>
-
-<TimelineItem>
-
-<Subtitle>·深境螺旋</Subtitle>
+#### ·深境螺旋
 
 由早已覆灭的远古文明，修建的巨大地下古都。究竟是出于何种目的而修建，如今已经不可知。其结构被分为连结世界的「深境回廊」与通往未知的「渊月螺旋」，故此统称为「深境螺旋」。据说，其中埋葬着早已被这个世界遗忘的秘密与宝藏…
 
 相传通往天空岛之人，在神之眼中——在幻视中，看到的天梯也是如此螺旋的形态。我们走向宇宙，或者下到深渊。并没有差别，因为都是未知的漆黑。
 
-</TimelineItem>
-
-<TimelineItem>
-
-<Subtitle>·艾弗提尔维特前往至冬，成为「愚人」，效忠冰之女皇。</Subtitle>
+#### ·艾弗提尔维特前往至冬，成为「愚人」，效忠冰之女皇。
 
 贤者自以为无所不知，我等才明白愚行背后的道义。既然沾染的同胞的血无法洗净，那索性成为嘲笑命运的「丑角」。既然我的才学无法与「贤者」比拟，没能获得上一位王者的青睐，也未能阻止他们撕开深罪的纱笼，招来神怒、毁灭与痴愚的狂潮，那就索性成为笨拙的「愚人」，为理解我的伤痛的「陛下」效忠…
 
-</TimelineItem>
-
 ### *旅行者兄妹降临全流程
-
-<TimelineItem>
 
 <QuoteBlock>
 
@@ -441,29 +325,13 @@ secondaryClass: "/nations"
 
 </QuoteBlock>
 
-</TimelineItem>
+#### ·兄妹降临坎瑞亚。主角和反主昏迷
 
-<TimelineItem>
+#### ·反主先醒，失忆，被坎瑞亚培养，视它为第二故乡
 
-<Subtitle>·兄妹降临坎瑞亚。主角和反主昏迷</Subtitle>
+#### ·反主记忆逐渐恢复，然后坎瑞亚陷落灾难爆发
 
-</TimelineItem>
-
-<TimelineItem>
-
-<Subtitle>·反主先醒，失忆，被坎瑞亚培养，视它为第二故乡</Subtitle>
-
-</TimelineItem>
-
-<TimelineItem>
-
-<Subtitle>·反主记忆逐渐恢复，然后坎瑞亚陷落灾难爆发</Subtitle>
-
-</TimelineItem>
-
-<TimelineItem>
-
-<Subtitle>·蒂莱尔在去寻找救世主的路上被时间执政伊斯塔露的力量卷入，与500年后的主角所在的时空重叠，遇到了主角，</Subtitle>
+#### ·蒂莱尔在去寻找救世主的路上被时间执政伊斯塔露的力量卷入，与500年后的主角所在的时空重叠，遇到了主角，
 
 <QuoteBlock>
 
@@ -473,44 +341,18 @@ secondaryClass: "/nations"
 
 </QuoteBlock>
 
-</TimelineItem>
+#### ·反主碰到了蒂莱尔以及她带来的飞船钥匙，没有拿走蒂莱尔手里来自未来的钥匙（如果是情况一，就是未来主角的；如果是情况二，就是未来反主的）。蒂莱尔在收到不死诅咒变成丘丘人之后回到了山洞里等主角
 
-<TimelineItem>
+#### ·反主选择去查看主角情况，放弃了坎瑞亚人民。反主发现主角没事，钥匙还在。
 
-<Subtitle>·反主碰到了蒂莱尔以及她带来的飞船钥匙，没有拿走蒂莱尔手里来自未来的钥匙（如果是情况一，就是未来主角的；如果是情况二，就是未来反主的）。蒂莱尔在收到不死诅咒变成丘丘人之后回到了山洞里等主角</Subtitle>
+#### ·反主带着主角逃跑，被自称「天理维系者」的家伙拦截
 
-</TimelineItem>
+#### ·反主心有愧疚，决定用命运的织机复国坎瑞亚
 
-<TimelineItem>
+#### ·后接主线，反主利用夜神之国和教团记忆备份坎瑞亚
 
-<Subtitle>·反主选择去查看主角情况，放弃了坎瑞亚人民。反主发现主角没事，钥匙还在。</Subtitle>
-
-</TimelineItem>
-
-<TimelineItem>
-
-<Subtitle>·反主带着主角逃跑，被自称「天理维系者」的家伙拦截</Subtitle>
-
-</TimelineItem>
-
-<TimelineItem>
-
-<Subtitle>·反主心有愧疚，决定用命运的织机复国坎瑞亚</Subtitle>
-
-</TimelineItem>
-
-<TimelineItem>
-
-<Subtitle>·后接主线，反主利用夜神之国和教团记忆备份坎瑞亚</Subtitle>
-
-</TimelineItem>
-
-<TimelineItem>
-
-<Subtitle>·主角找到了这把「蒂莱尔手里的钥匙」</Subtitle>
+#### ·主角找到了这把「蒂莱尔手里的钥匙」
 
 （未完待续）
 
-</TimelineItem>
-
-</TimelineWrapper>
+</Timeline>

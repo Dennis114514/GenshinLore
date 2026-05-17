@@ -1,12 +1,12 @@
----
+﻿---
 layout: doc
 title: 第二章：稻妻·千手百眼，天下人间
 editLink: true
 secondaryClass: "/nations"
 ---
 
-<TextCenter>
-<p style="text-align: center !important; font-family: 'Khaenriah', sans-serif;">perpetua  perennis  imperia</p>
+<div class="text-center text-base text-[#4d4f53] leading-[2]">
+<p class="khaenriah-font" style="text-align:center">perpetua  perennis  imperia</p>
 将军长生不灭，
 <br>
 幕府锁国之期亦无尽头，
@@ -15,7 +15,7 @@ secondaryClass: "/nations"
 <br>
 在**世人**眼中见到了
 <br>
-怎样的**永恒**？<Footnote n="1" text="<a href='https://www.bilibili.com/video/BV1At4y1q7UQ/?spm_id_from=333.1387.upload.video_card.click&vd_source=5521f8f34a1af08d13b6fcf39bf4506b' target='_blank'>《原神·提瓦特篇》主线章节预告PV-「足迹」_哔哩哔哩_bilibili</a>"></Footnote>
+怎样的**永恒**？<Footnote n="1" text="[《原神·提瓦特篇》主线章节预告PV-「足迹」_哔哩哔哩_bilibili](https://www.bilibili.com/video/BV1At4y1q7UQ/?spm_id_from=333.1387.upload.video_card.click&vd_source=5521f8f34a1af08d13b6fcf39bf4506b)"></Footnote>
 <br>
 <Space :size="14"></Space>
 此身
@@ -27,77 +27,47 @@ secondaryClass: "/nations"
 此身曾许诺予臣民一**梦**，
 <br>
 即是千世万代不变不移的「永恒」。<Footnote n="2" text="最胜紫晶"></Footnote>
-</TextCenter>
+</div>
 
-<TimelineWrapper>
+<Timeline>
 
 ## 一、雷龙时期【待发现】
 
-<TimelineItem>
-
 编者注：目前雷龙王的信息极少。
-
-</TimelineItem>
 
 ## 二、月宫与葬火
 
 ### （一）月宫
 
-<TimelineItem>
+#### ·前鹤观文明崇拜月神
 
-<Subtitle>·前鹤观文明崇拜月神</Subtitle>
-
-<TimelineImage src="/img/context/Inazuma/image1.png" caption="前鹤观文明" />
-
-</TimelineItem>
+![前鹤观文明](/img/context/Inazuma/image1.png)
 
 ### （二）葬火
 
-<TimelineItem>
+#### ·明镜破碎，海洋升起，远古的樱之庭与其他岛屿的联系因此断绝了。
 
-<Subtitle>·明镜破碎，海洋升起，远古的樱之庭与其他岛屿的联系因此断绝了。</Subtitle>
+#### ·天钉降下，导致鹤观天空被净化，但也被迷雾笼罩。后来该文明覆灭。
 
-</TimelineItem>
-
-<TimelineItem>
-
-<Subtitle>·天钉降下，导致鹤观天空被净化，但也被迷雾笼罩。后来该文明覆灭。</Subtitle>
-
-</TimelineItem>
-
-<TimelineItem>
-
-<Subtitle>·德尔斐·皮托沉入海底。</Subtitle>
-
-</TimelineItem>
+#### ·德尔斐·皮托沉入海底。
 
 ## 三、鸣神时期/后葬火时期
 
 ### （一）地面的稻妻城
 
-<TimelineItem>
-
-<Subtitle>·稻妻城建立<Footnote n="3" text="八重神子角色故事"></Footnote></Subtitle>
+#### ·稻妻城建立<Footnote n="3" text="八重神子角色故事"></Footnote>
 
 天狗横越长空，鬼众驰骋沙场；狸妖见于阡陌，狐仙行走人间。在鸣神的大纛之下，妖众以不思议的力量，助人类度过刀耕火种，筚路蓝缕的时期。依山作险，傍海筑城，至此稻妻始成。
 
-</TimelineItem>
-
 ### （二）后鹤观文明<Footnote n="4" text="如雷的盛怒"></Footnote>
 
-<TimelineImage src="/img/context/Inazuma/image2.png" caption="崇拜雷鸟的萨满" />
+![崇拜雷鸟的萨满](/img/context/Inazuma/image2.png)
 
-<TimelineItem>
-
-<Subtitle>·崇拜魔鸟</Subtitle>
+#### ·崇拜魔鸟
 
 在祭拜雷之魔鸟的古老部落，德高望重的萨满头戴的冠冕。雷暴中高飞的鸟，携紫电引骤雨降临山林。蒙昧的部落感激它的恩赐，畏惧它的力量，故选举萨满，以血祭祈求护佑，逃避惩罚。雷鸟终究是魔物，人的崇拜于之有若敝屣。人们浑然不知，仍将雷鸟的无常视作天启。然而雷霆只是它的呼吸，一如人们的生死。在空中，人们在彼之眼中与走兽相去不远。
 
-</TimelineItem>
-
-<TimelineItem>
-
-<Subtitle>·雷鸟结识阿瑠</Subtitle>
+#### ·雷鸟结识阿瑠
 
 雷鸟高飞的季节里，暴雨肆虐的山林中，一位少年无畏地歌唱。孤高的雷电魔鸟被少年清澈的歌声吸引，静静地落在他的身旁。直到清澈的歌声有一天穿透了低鸣的雷雨，撕裂了空中的阴霭，将小小的光传给了它。
 
@@ -117,11 +87,7 @@ secondaryClass: "/nations"
 
 </QuoteBlock>
 
-</TimelineItem>
-
-<TimelineItem>
-
-<Subtitle>·阿瑠被当作祭品，鹤观灭亡</Subtitle>
+#### ·阿瑠被当作祭品，鹤观灭亡
 
 少年以自己的牺牲为奉献。为让巨鸟给部落带来恩赐，自愿接受骨血分离的摧残。
 
@@ -131,31 +97,19 @@ secondaryClass: "/nations"
 
 在部落最终的祭典上，狂怒的魔鸟掀翻了染血的祭台。预告守护神降临的时计，此刻却成了招来雷霆的丧钟。雷暴的巨鸟向部落人降下灭顶之灾，仅仅为一人之歌。
 
-</TimelineItem>
-
-<TimelineItem>
-
-<Subtitle>·雷鸟被雷电影斩杀<Footnote n="5" text="<a href='https://www.bilibili.com/video/BV1rL4y1h7nr/?spm_id_from=333.1387.upload.video_card.click&vd_source=5521f8f34a1af08d13b6fcf39bf4506b' target='_blank'>《原神》剧情PV-「许以臣民之梦」_哔哩哔哩bilibili_原神</a>"></Footnote></Subtitle>
+#### ·雷鸟被雷电影斩杀<Footnote n="5" text="[《原神》剧情PV-「许以臣民之梦」_哔哩哔哩bilibili_原神](https://www.bilibili.com/video/BV1rL4y1h7nr/?spm_id_from=333.1387.upload.video_card.click&vd_source=5521f8f34a1af08d13b6fcf39bf4506b)"></Footnote>
 
 未能兑现的承诺令雷之魔鸟悔恨发狂，它就此远远离开了已化作灰烬的山林，多年后它被视为作乱的妖物遭伐，化为雷音权现。
 
-</TimelineItem>
-
-<TimelineItem>
-
-<Subtitle>·阿瑠苏醒</Subtitle>
+#### ·阿瑠苏醒
 
 许多年后，曾经的焦土重又林木葱葱。昔日属雷的片羽则埋藏在了草木之间。但两者的故事已与部落一同归于虚无。
 
-</TimelineItem>
-
 ### （三）白夜国<Footnote n="6" text="白夜国馆藏"></Footnote>
 
-<TimelineImage src="/img/context/Inazuma/image3.png" caption="名片：稻妻·常世「啊，伟大的太阳啊！假若你不拥有你照耀的一切，你的光热有何意义？」渊下宫通行纹章「键纹」，也是后来的珊瑚宫家纹"></TimelineImage>
+![名片：稻妻·常世「啊，伟大的太阳啊！假若你不拥有你照耀的一切，你的光热有何意义？」渊下宫通行纹章「键纹」，也是后来的珊瑚宫家纹](/img/context/Inazuma/image3.png)
 
-<TimelineItem>
-
-<Subtitle>·黑暗的元年</Subtitle>
+#### ·黑暗的元年
 
 人类用光亮驱赶龙蜥，但处于下风
 
@@ -173,27 +127,15 @@ secondaryClass: "/nations"
 
 </QuoteBlock>
 
-</TimelineItem>
-
-<TimelineItem>
-
-<Subtitle>·黑暗的第三年</Subtitle>
+#### ·黑暗的第三年
 
 唯一没有抛弃我们（渊下宫）的那一位，她乃是「时间之执政」（常世大神）。她是时刻，是无时不刻，是千风与日月之度量。她是一切欢欣之时，一切愤怒之时，一切渴望之时，一切迷狂之时。她是一切谵妄的时刻。我们称呼她「卡伊洛斯」，或者「不变世界的统领与执政」。真正秘密的名字，我们不敢直言，所以在这里倒写。「露塔斯伊」——我仅提一次。
 
-</TimelineItem>
-
-<TimelineItem>
-
-<Subtitle>·目盲之年</Subtitle>
+#### ·目盲之年
 
 贤人阿布拉克（阿倍良久）他被开启了神智，他展示了从手中发出光的奇迹。先祖们以他为首领，开始建设「赫利俄斯」。
 
-</TimelineItem>
-
-<TimelineItem>
-
-<Subtitle>·目明之年，或日月的元年</Subtitle>
+#### ·目明之年，或日月的元年
 
 「赫利俄斯」——太阳的神车，终于落成。白夜到来，常夜消散。
 
@@ -207,11 +149,7 @@ secondaryClass: "/nations"
 
 渊下宫才因为太阳的出现而得到些许喘息。因那龙嗣亲近黑暗、忌惮光明，不再肆意妄为。龙嗣横行、敛人命如草的时日终于结束，渊下宫民变得能与其相抗了。然而，异种外患没有完全根除，这人性的腌臜就已经暴露了。人们选立了「太阳之子」，把他当做王崇拜。他却横征暴敛，构陷忠良。
 
-</TimelineItem>
-
-<TimelineItem>
-
-<Subtitle>·日月的二年</Subtitle>
+#### ·日月的二年
 
 先祖们尝试寻找归途。地表的大战应该已经结束。
 
@@ -221,11 +159,7 @@ secondaryClass: "/nations"
 
 阿布拉克被太阳之子下令囚禁。
 
-</TimelineItem>
-
-<TimelineItem>
-
-<Subtitle>·太阳之子囚禁阿倍良久</Subtitle>
+#### ·太阳之子囚禁阿倍良久
 
 <QuoteBlock>
 
@@ -247,26 +181,13 @@ secondaryClass: "/nations"
 
 贤人阿倍良久说完这句话，随即就被埋伏的兵士们按倒。
 
-</TimelineItem>
+#### ·斯巴达克为了反抗太阳之子与贵族暴政，而建立反抗军
 
-<TimelineItem>
-
-<Subtitle>·斯巴达克为了反抗太阳之子与贵族暴政，而建立反抗军</Subtitle>
-
-</TimelineItem>
-
-<TimelineItem>
-
-<Subtitle>·后来斯巴达克被囚禁，反抗军全军覆没。</Subtitle>
-
-</TimelineItem>
+#### ·后来斯巴达克被囚禁，反抗军全军覆没。
 
 ## 四、魔神战争
 
-<TimelineItem>
-
-<div class="table-container">
-<table class="lightrelam-table">
+<table>
 <thead>
 <tr>
 <th>雷电真</th>
@@ -276,29 +197,20 @@ secondaryClass: "/nations"
 <tbody>
 <tr>
 <td>雷电影</td>
-<td class="text-left">影武者</td>
+<td>影武者</td>
 </tr>
 <tr>
 <td>奥罗巴斯</td>
-<td class="text-left">大蛇，逃亡暗之外海，后成为海祇大御神</td>
+<td>大蛇，逃亡暗之外海，后成为海祇大御神</td>
 </tr>
 </tbody>
 </table>
-</div>
 
-</TimelineItem>
-
-<TimelineItem>
-
-<Subtitle>·真复活影<Footnote n="7" text="珍说澄研真影打"></Footnote></Subtitle>
+#### ·真复活影<Footnote n="7" text="珍说澄研真影打"></Footnote>
 
 影将军虽武艺通神、剑技无双，但自觉本身不过武人，无法通达人心，便选择身陨道消，助她的胞姐上洛「天上之京」，成为稻妻的执掌天下之人。「真」将军随后设立幕府，施政稻妻。自然念有旧情，（鸣神权现）唤回「影」之神识，重塑其身形，将她作为自己的「影武者」安置于御侧。
 
-</TimelineItem>
-
-<TimelineItem>
-
-<Subtitle>·奥罗巴斯逃亡暗之外海<Footnote n="8" text="证誓之明瞳"></Footnote></Subtitle>
+#### ·奥罗巴斯逃亡暗之外海<Footnote n="8" text="证誓之明瞳"></Footnote>
 
 <QuoteBlock>
 
@@ -308,13 +220,9 @@ secondaryClass: "/nations"
 
 本身海祇大御神就是闯入暗海，妄图避开魔神战争的大罪之神。
 
-</TimelineItem>
-
 ### （一）奥罗巴斯渊下宫时期<Footnote n="9" text="证誓之明瞳，远海夷地系列材料"></Footnote>
 
-<TimelineItem>
-
-<Subtitle>·大蛇来到渊下宫</Subtitle>
+#### ·大蛇来到渊下宫
 
 在海渊中，见到了什么都没有的弃民。于是它决定留下来，成为他们的「远吕羽氏尊」、「海祇大御神」。
 
@@ -326,11 +234,7 @@ secondaryClass: "/nations"
 
 </QuoteBlock>
 
-</TimelineItem>
-
-<TimelineItem>
-
-<Subtitle>·大蛇和孩童立约</Subtitle>
+#### ·大蛇和孩童立约
 
 不知经过了多少岁月，渊下宫里有一小童，与伙伴做了赌约。他只身一人，潜到三隅之外，避开龙嗣痕迹，想去寻那龙骨花。但是他却在洞中见到了一只未曾见过的大蛇。不知为何，小童见蛇之庞巨、诡异，并不觉恐怖，反而有亲近之感。
 
@@ -366,21 +270,13 @@ secondaryClass: "/nations"
 
 蛇神说完了最后的话语，然后它带着剩下的人民一同前去了海面。是时候履行它与天上之都的誓言了…
 
-</TimelineItem>
-
-<TimelineItem>
-
-<Subtitle>·大蛇推翻太阳之子，建立新的统治</Subtitle>
+#### ·大蛇推翻太阳之子，建立新的统治
 
 下属有珊瑚宫、地走官、大蛇御使，与雷神互不侵犯
 
 建立海祇岛后，力量耗尽，大蛇御使不在诞生，地走官凋零
 
-</TimelineItem>
-
-<TimelineItem>
-
-<Subtitle>·大蛇被判死刑</Subtitle>
+#### ·大蛇被判死刑
 
 <QuoteBlock>
 
@@ -390,19 +286,11 @@ secondaryClass: "/nations"
 
 大蛇偷看《日月前事》被天理判处死刑。
 
-</TimelineItem>
-
 ### （二）奥罗巴斯海祇岛时期<Footnote n="10" text="恶王丸，曚云之月，断浪长鳍，不灭月华，海染砗磲，珊瑚宫记，「东王」史辩，珊瑚宫民间信仰初勘，巫女曚云小传"></Footnote>
-
-<TimelineItem>
 
 #### 1.建立
 
-</TimelineItem>
-
-<TimelineItem>
-
-<Subtitle>·2000年前　登上海祇岛</Subtitle>
+#### ·2000年前　登上海祇岛
 
 <QuoteBlock>
 
@@ -420,14 +308,9 @@ secondaryClass: "/nations"
 
 </QuoteBlock>
 
-</TimelineItem>
+#### ·组织架构
 
-<TimelineItem>
-
-<Subtitle>·组织架构</Subtitle>
-
-<div class="table-container">
-<table class="lightrelam-table">
+<table>
 <thead>
 <tr>
 <th>职位</th>
@@ -440,31 +323,26 @@ secondaryClass: "/nations"
 <tr>
 <td>神</td>
 <td></td>
-<td class="text-left">保佑海民</td>
-<td class="text-left">「远吕羽氏」<br/>大蛇奥罗巴斯</td>
+<td>保佑海民</td>
+<td>「远吕羽氏」<br/>大蛇奥罗巴斯</td>
 </tr>
 <tr>
 <td rowspan="2">海民</td>
 <td>神人</td>
-<td class="text-left">大御神曾在海祇的诸多氏族中间广立神人，亲自为她们加以华冠。<br/>但在神殉之时代结束后，随着神人的离去，雅致的冠冕亦被封存。海民的传唱中，真珠与珊瑚制成的华冠永远不会沾染污秽。而有幸受赐海祇之冠之人，正是大御神所认可的「人君」。<br/>为海民尊称为「东山王」的勇猛藩王，或纵横诸海的双子…皆被大御神慈爱的目光所注视，被岛歌赋予了不朽的灵魂。传说这些人君曾辅弼大御神，引导海民在岛屿间耕作渔猎。<br/>海祇岛以神宫为高府，无将军奉行之畴。</td>
-<td class="text-left">东山王<br/>曚云<br/>菖蒲</td>
+<td>大御神曾在海祇的诸多氏族中间广立神人，亲自为她们加以华冠。<br/>但在神殉之时代结束后，随着神人的离去，雅致的冠冕亦被封存。海民的传唱中，真珠与珊瑚制成的华冠永远不会沾染污秽。而有幸受赐海祇之冠之人，正是大御神所认可的「人君」。<br/>为海民尊称为「东山王」的勇猛藩王，或纵横诸海的双子…皆被大御神慈爱的目光所注视，被岛歌赋予了不朽的灵魂。传说这些人君曾辅弼大御神，引导海民在岛屿间耕作渔猎。<br/>海祇岛以神宫为高府，无将军奉行之畴。</td>
+<td>东山王<br/>曚云<br/>菖蒲</td>
 </tr>
 <tr>
 <td>巫女</td>
-<td class="text-left">大小事务仰赖诸巫女，巫女之首曰「现人神巫女」，统领政事、祭典。</td>
-<td class="text-left">曚云<br/>菖蒲</td>
+<td>大小事务仰赖诸巫女，巫女之首曰「现人神巫女」，统领政事、祭典。</td>
+<td>曚云<br/>菖蒲</td>
 </tr>
 </tbody>
 </table>
-</div>
 
-</TimelineItem>
+#### ·最初的现人神巫女
 
-<TimelineItem>
-
-<Subtitle>·最初的现人神巫女</Subtitle>
-
-<TimelineImage src="/img/context/Inazuma/image4.png" caption="海祇岛的巫女，其头冠属于「神人」" />
+![海祇岛的巫女，其头冠属于「神人」](/img/context/Inazuma/image4.png)
 
 最初的「现人神巫女」出自采珠的海女。
 
@@ -492,11 +370,7 @@ secondaryClass: "/nations"
 
 传说沐浴虹光的砗磲感念海祇的柔情，于是生出了无垢的真珠。而日后被奉为现人神的海祇大巫女一脉，最初由真珠孕育而来。自砗磲斑斓柔软的摇篮漫步而出，与海月共舞的姐妹深受恩宠，欣喜慈爱之余，大御神赠之美玉，赐她们追逐天光的纯净梦想。在身上流淌着海祇之血的人子手中，真珠亦将更显明亮。或者这也许只是又一则古老的传说，真相早已难以查证。
 
-</TimelineItem>
-
-<TimelineItem>
-
-<Subtitle>·曚云和菖蒲</Subtitle>
+#### ·曚云和菖蒲
 
 巫女曚云出身右名氏，该氏族乃是最初追随大御神重见阳光的大族之一，至今依旧以鲸歌的天赋与亲和海洋生物传统知名。曚云自幼便进入珊瑚宫，同现人神巫女学习海祇巫女的祭礼传统、历史知识、政务与岛歌。曚云性情智慧和善，善于调解海民之间无妄的纷争。
 
@@ -512,11 +386,7 @@ secondaryClass: "/nations"
 
 双子的海祇巫女哼唱的鲸歌，曾随浪潮的漂流至岛民梦中。海祇的勇士们，无不将希望与斗志寄托在双子的巫女身上。随先阵高举的白若浪末的长卷，高叫着向其他的岛屿前行。
 
-</TimelineItem>
-
-<TimelineItem>
-
-<Subtitle>·东山王问世</Subtitle>
+#### ·东山王问世
 
 「东山王」姓名不详，出身低微，一些岛歌将他称作「月光与潮汐的遗子」，或「被月光遗忘的孩子」。或许他曾是失去氏族的孤子，或顺海流漂荡而来的流人之子。尽管无姓无名，也没有足以保护他安然长大的氏族，但海祇大御神还是接纳了这个孩子，就像他曾接纳深困海渊的遗民那般。
 
@@ -526,17 +396,9 @@ secondaryClass: "/nations"
 
 据说他的剑技仅有我流的「月曚云」与「夕潮」二式，但凭此二式秘剑在战场与试合不曾败在任何人的手下。常言蛇与鱼皆冷血。但冷血之物却醉心于炽热的愿景。
 
-</TimelineItem>
-
-<TimelineItem>
-
 #### 2.发起东侵
 
-</TimelineItem>
-
-<TimelineItem>
-
-<Subtitle>·创伤</Subtitle>
+#### ·创伤
 
 在无常的天地中间，渺小之人难免因在苦境的生存而伤痛，因悲哀的不幸而阴郁。不论明壶的天光、宁静的晴空与海面，还是流淌着虹光的砗磲宫阙、神人们温柔的教谕…都难以抚平饥饿与疾病的创伤。
 
@@ -576,11 +438,7 @@ secondaryClass: "/nations"
 
 </QuoteBlock>
 
-</TimelineItem>
-
-<TimelineItem>
-
-<Subtitle>·发起东侵</Subtitle>
+#### ·发起东侵
 
 为了实现子民的幻梦，大御神奥罗巴斯向集聚的雷云发起挑战。
 
@@ -592,11 +450,7 @@ secondaryClass: "/nations"
 
 战事酷烈，民生惨苦。两方鏖战今八酝岛，皆多有伤亡。
 
-</TimelineItem>
-
-<TimelineItem>
-
-<Subtitle>·巨鲸「大检校」</Subtitle>
+#### ·巨鲸「大检校」
 
 当海祇大御神终于不再踌躇，决定发起注定无望的东征时，珊瑚宫最初的水军由现人神巫女亲自委任给曚云姐妹，而曚云与巨鲸「大检校」的缘分也因此而起。
 
@@ -604,11 +458,7 @@ secondaryClass: "/nations"
 
 即使精通鲸歌的珊瑚宫海民，也未尝有活着面见如此巨兽，而又能全身而退的。但曚云接下了现人神巫女的安排，便在明月刚刚冲破海雾升上夜空的时刻，潜入了磷光闪闪的鲸宫。没有人知道究竟曚云以怎样的巧舌妙辩说服了「大检校」，只知三次月明高升的时刻，待到浪潮从海滩退去时，海祇之民见证了「大检校」的庞大身躯载着曚云巫女浮出宁静的海面，泛着点点的银色微光。
 
-</TimelineItem>
-
-<TimelineItem>
-
-<Subtitle>·东山王</Subtitle>
+#### ·东山王
 
 追随海祇踏上征服之路的凡人中，一位少年脱颖而出。当海祇大御神踏上无归的东征之途，少年为之先登破竹，率先攻下了当时被海民称为「东山」的岛屿。
 
@@ -622,11 +472,7 @@ secondaryClass: "/nations"
 
 </QuoteBlock>
 
-</TimelineItem>
-
-<TimelineItem>
-
-<Subtitle>·笹百合死于与大蛇的战争<Footnote n="13" text="<a href='https://www.bilibili.com/video/BV1Y3411B7SX/?spm_id_from=333.1387.upload.video_card.click&vd_source=5521f8f34a1af08d13b6fcf39bf4506b' target='_blank'>《原神》雷电将军角色PV——「噩梦」_游戏热门视频</a>"></Footnote></Subtitle>
+#### ·笹百合死于与大蛇的战争<Footnote n="13" text="[《原神》雷电将军角色PV——「噩梦」_游戏热门视频](https://www.bilibili.com/video/BV1Y3411B7SX/?spm_id_from=333.1387.upload.video_card.click&vd_source=5521f8f34a1af08d13b6fcf39bf4506b)"></Footnote>
 
 <QuoteBlock>
 
@@ -634,11 +480,7 @@ secondaryClass: "/nations"
 
 </QuoteBlock>
 
-</TimelineItem>
-
-<TimelineItem>
-
-<Subtitle>·奥被杀<Footnote n="14" text="<a href='https://www.bilibili.com/video/BV1rL4y1h7nr/?spm_id_from=333.1387.upload.video_card.click&vd_source=5521f8f34a1af08d13b6fcf39bf4506b' target='_blank'>《原神》剧情PV-「许以臣民之梦」_哔哩哔哩bilibili_原神</a>"></Footnote></Subtitle>
+#### ·奥被杀<Footnote n="14" text="[《原神》剧情PV-「许以臣民之梦」_哔哩哔哩bilibili_原神](https://www.bilibili.com/video/BV1rL4y1h7nr/?spm_id_from=333.1387.upload.video_card.click&vd_source=5521f8f34a1af08d13b6fcf39bf4506b)"></Footnote>
 
 <QuoteBlock>
 
@@ -658,11 +500,7 @@ secondaryClass: "/nations"
 
 海祇岛从此向雷神俯首称臣，完成鸣神化。
 
-</TimelineItem>
-
-<TimelineItem>
-
-<Subtitle>·东山王被杀</Subtitle>
+#### ·东山王被杀
 
 最终「恶王」与其主一道遭到「无想的一刀」制裁，曾一同泛波月夜的曚云亦在族人的哀叹中身殒漆黑鸦羽的风暴之中…
 
@@ -672,21 +510,13 @@ secondaryClass: "/nations"
 
 最终许多年以后，王号被淡忘，又被敌人的蔑称取代：「恶王」、大蛇的凶恶爪牙、酷烈侵攻八酝岛的魔王…
 
-</TimelineItem>
-
-<TimelineItem>
-
-<Subtitle>·曚云被杀</Subtitle>
+#### ·曚云被杀
 
 得知大御神与「东山王」一同战殁的消息后，曚云巫女在撤退途中为天狗笹百合的旧部所伏击，终于同巨鲸「大检校」一并战死，遗体为幕府军所获。其妹「海御前」菖蒲，则在力战之后消失在腥红的大海之中，不知所向。
 
 但是，大御神与其麾下将星的光采，终究不如闪雷明亮哪…曚云最终被漆黑的鸦羽淹没。与她们合唱的巨鲸沉没海床。
 
-</TimelineItem>
-
-<TimelineItem>
-
-<Subtitle>·菖蒲的下落</Subtitle>
+#### ·菖蒲的下落
 
 「海御前」菖蒲，则在力战之后消失在腥红的大海之中，不知所向。「海御前」就此湮没在波涛中，幻化成列岛共同的传说，
 
@@ -700,23 +530,15 @@ secondaryClass: "/nations"
 
 </QuoteBlock>
 
-</TimelineItem>
-
-<TimelineItem>
-
-<Subtitle>·后人</Subtitle>
+#### ·后人
 
 后来，勇士与神女之俦共奔赴无可挽回的牺牲之所，现人神巫女的羽衣并未失落，却随着记忆传承至今。
-
-</TimelineItem>
 
 ## 五、雷电真时期
 
 ### *雷电真与漆黑灾祸时期主要人物
 
-<TimelineItem>
-<div class="table-container">
-<table class="lightrelam-table">
+<table>
 <thead>
 <tr>
 <th>派别<Footnote n="15" text="编者注：关于人物介绍表中的第一列中的「派别」，是指「几个联系紧密的人物的组合」，并非「人物的种族」，具体种族请参见后面的「介绍」一列。将有关人物放在一起叙述，是为了方便理解。本手册中所有人物数量较多的表格，都是这样安排的。"></Footnote></th>
@@ -728,121 +550,100 @@ secondaryClass: "/nations"
 <tr>
 <td rowspan="4">御舆家</td>
 <td>御舆千代</td>
-<td class="text-left">鬼族，雷电姐妹的友人</td>
+<td>鬼族，雷电姐妹的友人</td>
 </tr>
 <tr>
 <td>御舆道启</td>
-<td class="text-left">鬼族，道胤公，千代的亲儿子，开创岩藏流</td>
+<td>鬼族，道胤公，千代的亲儿子，开创岩藏流</td>
 </tr>
 <tr>
 <td>御舆长正</td>
-<td class="text-left">人类，千代的养子</td>
+<td>人类，千代的养子</td>
 </tr>
 <tr>
 <td>柊弘嗣</td>
-<td class="text-left">人类，道启的好友，建设了离岛</td>
+<td>人类，道启的好友，建设了离岛</td>
 </tr>
 <tr>
 <td rowspan="3">狐狸</td>
 <td>狐斋宫</td>
-<td class="text-left">仙狐，「白辰狐王血脉」的继承者<br/>雷电姐妹的友人<br/>掌管鸣神大社</td>
+<td>仙狐，「白辰狐王血脉」的继承者<br/>雷电姐妹的友人<br/>掌管鸣神大社</td>
 </tr>
 <tr>
 <td>有乐斋</td>
-<td class="text-left">狐族</td>
+<td>狐族</td>
 </tr>
 <tr>
 <td>八重神子</td>
-<td class="text-left">狐族，「白辰狐王血脉」的继承者</td>
+<td>狐族，「白辰狐王血脉」的继承者</td>
 </tr>
 <tr>
 <td rowspan="5">灵善坊</td>
 <td>灵善坊</td>
-<td class="text-left">天狗族族长，高岭的师傅<br/>与千代和狐斋宫共同守护稻妻，因自觉守护不周自我流放</td>
+<td>天狗族族长，高岭的师傅<br/>与千代和狐斋宫共同守护稻妻，因自觉守护不周自我流放</td>
 </tr>
 <tr>
 <td>光代</td>
-<td class="text-left">天狗族少女，族长女儿，收留御舆道启</td>
+<td>天狗族少女，族长女儿，收留御舆道启</td>
 </tr>
 <tr>
 <td>惟神晴之介</td>
-<td class="text-left">人类，灵善坊的徒弟</td>
+<td>人类，灵善坊的徒弟</td>
 </tr>
 <tr>
 <td>「昆布丸」<br/>雾切高岭</td>
-<td class="text-left">人类，灵善坊的徒弟，喜欢浅濑响</td>
+<td>人类，灵善坊的徒弟，喜欢浅濑响</td>
 </tr>
 <tr>
 <td>浅濑响</td>
-<td class="text-left">浅濑巫女的后代，人类，喜欢昆布丸，后来养了寝子</td>
+<td>浅濑巫女的后代，人类，喜欢昆布丸，后来养了寝子</td>
 </tr>
 <tr>
 <td rowspan="5">其他</td>
 <td>五百藏</td>
-<td class="text-left">妖狸，后化为石像</td>
+<td>妖狸，后化为石像</td>
 </tr>
 <tr>
 <td>笹百合</td>
-<td class="text-left">天狗族，雷电姐妹的友人<br/>在魔神战争时，死于与大蛇的战争</td>
+<td>天狗族，雷电姐妹的友人<br/>在魔神战争时，死于与大蛇的战争</td>
 </tr>
 <tr>
 <td>赤穗百目鬼</td>
-<td class="text-left">鬼族，海盗头目，与浅濑响相识，后迷失至金苹果群岛</td>
+<td>鬼族，海盗头目，与浅濑响相识，后迷失至金苹果群岛</td>
 </tr>
 <tr>
 <td>「大手门」<br/>御伽金刚狮子大王</td>
-<td class="text-left">鬼族</td>
+<td>鬼族</td>
 </tr>
 <tr>
 <td>裁缝少女</td>
-<td class="text-left">人类，裁缝</td>
+<td>人类，裁缝</td>
 </tr>
 </tbody>
 </table>
-</div>
-</TimelineItem>
-
 ### （一）千代　大王<Footnote n="16" text="今昔剧画系列素材，有乐御簾切，赤角石溃杵"></Footnote>
 
-<TimelineItem>
-
-<Subtitle>·千代</Subtitle>
+#### ·千代
 
 鬼人千代身着无比华丽的十二单执剑而舞的身姿，有如春日风中落花般绚烂。
 
-</TimelineItem>
-
-<TimelineItem>
-
-<Subtitle>·有乐斋斩断妖狸宝物</Subtitle>
+#### ·有乐斋斩断妖狸宝物
 
 传说狐族的有乐斋曾乘醉酒狂兴斩断林中芝居的金漆御帘，与妖狸之长结了冤家。
 
 其佩剑（有乐斋的佩剑）因此得名（有乐御帘切），而那夜月下妖狐狂乱的剑舞亦被除妖狸之外所有看客引为逸事。
 
-</TimelineItem>
-
-<TimelineItem>
-
-<Subtitle>·有乐斋将宝物让给妖狸</Subtitle>
+#### ·有乐斋将宝物让给妖狸
 
 后来，据说有乐斋为向筹办芝居的妖狸赔罪，让出了贵重的茶器与诸多其他宝物。
 
 而在事发前与他仅有一面之缘的「大手门」，因居中调解而获赠名刀「御帘切」。
 
-</TimelineItem>
-
-<TimelineItem>
-
-<Subtitle>·大王踢树</Subtitle>
+#### ·大王踢树
 
 虽然御伽大王确实有力气，七个人一起也不能把他推出土俵。看到摘不到果实的小孩，就一脚踢在树上，让菫瓜簌簌落下。但有次不小心把果树踢倒了，被老人一路追着逃到了山上去。
 
-</TimelineItem>
-
-<TimelineItem>
-
-<Subtitle>·大王摔跤</Subtitle>
+#### ·大王摔跤
 
 他也曾经带着孩子们闯进官家饮酒赏红叶的歌会，大声叫嚷着「御伽金刚狮子大王来退治恶鬼了！」与兴致正好的娇小鬼人（千代）摔跤，当然结果惨不忍睹。大王的能耐不过如此，连背负将军旗印的资格也没有，又怎么能够让那些歌谣中的大妖怪拜服呢，孩子们说。
 
@@ -852,11 +653,7 @@ secondaryClass: "/nations"
 
 </QuoteBlock>
 
-</TimelineItem>
-
-<TimelineItem>
-
-<Subtitle>·大王将刀赠与少女裁缝</Subtitle>
+#### ·大王将刀赠与少女裁缝
 
 此公（大手门）不仅是与堇瓜树鏖战的怪人，亦稍通风雅，好演剧、玩物与衣着。投身征战时，往往以身披金色锦缎裁剪成的秋草云缝箔，面着艳丽油彩的奇异形象示人。然而不论古籍或话本中，都未曾有人描绘过他在最后一战中持饰金名刀「御帘切」之姿，在诸多逸事与史话中，他的武器始终都是那一如他的名号，念起来相当长且拗口的大刀。
 
@@ -898,31 +695,19 @@ secondaryClass: "/nations"
 
 面对其时鬼人突然显露出的严肃面相，着实将那平民家的裁缝少女吓得不轻。待她战战兢兢收下过于贵重的谢礼，自作聪明的武人才大笑数声，满意离去。「大手门」便又在村民町人当中赢得了「大傻瓜」的美誉，他倒也并不反感。
 
-</TimelineItem>
-
 ### （二）狐斋宫和五百藏<Footnote n="17" text="白辰之环，绝缘之旗印，追忆之注连，逆飞的流星"></Footnote>
 
-<TimelineItem>
-
-<Subtitle>·斋宫在白辰之野</Subtitle>
+#### ·斋宫在白辰之野
 
 这浅薄平凡的一生，我（狐斋宫）自认过得很充实。我曾经以白辰狐之身，与机敏可爱的眷属们，奔走鸣神的草野山岳。希望，在一切都结束之后，它们能再度欢快地奔跑呢…
 
-</TimelineItem>
-
-<TimelineItem>
-
-<Subtitle>·斋宫离开白辰之野，赴任鸣神大社</Subtitle>
+#### ·斋宫离开白辰之野，赴任鸣神大社
 
 当初狐斋宫离开白辰之野，赴任鸣神大社之时，八重大人尚未出生。我（有乐斋）那时也不过一介少年。
 
 因此她的新狐幼童年岁里，都是听闻斋宫之事长大的。她对斋宫之大爱自是敬仰。因此八重大人之游历生涯，最后也以赴任鸣神大社作结。
 
-</TimelineItem>
-
-<TimelineItem>
-
-<Subtitle>·八重神子到鸣神大社学习</Subtitle>
+#### ·八重神子到鸣神大社学习
 
 在大社学习已有些时日，自认成熟了许多。不再像小时那样愚钝，越来越能独当一面。但不知怎的，我（八重神子）愈是成长，斋宫大人的面庞却愈发掩上阴翳，浮现在她脸上的并非忧心，也非恐惧，而是深切悲哀的不舍…
 
@@ -934,11 +719,7 @@ secondaryClass: "/nations"
 
 这一次，即使浅笑也掩饰不住悲伤的神情，明明是祭典的日子，却仿佛即将告别一样…「对了，你也给我讲讲昆布丸那个呆瓜吧…」「怎么…你还怕我这老女人把他抢走不成？」
 
-</TimelineItem>
-
-<TimelineItem>
-
-<Subtitle>·此时的梦见月瑞希</Subtitle>
+#### ·此时的梦见月瑞希
 
 相比坐拥万千传说的狐妖、形姿飒爽的天狗、或是令人生畏的鬼族，「食梦貘」的名号不至于无人听闻，但也远远谈不上响亮。在「百物语大会」之上，食梦貘一族只是席间不起眼的点缀，或于僻静的角落安心品茶，或同其他小妖静听大能们的状语豪言，或扮演侍者，为有乐斋这样的雅士斟酒倒茶。
 
@@ -954,11 +735,7 @@ secondaryClass: "/nations"
 
 两人共同出游的时间不断减少，最后，连一月一会的约定都难以维系。对此，瑞希并无遗憾。毕竟每天早晨，她依旧会和神子同时出门，神子接过她准备的那碗油豆腐时，依旧会对她投以「挚友限定」的真诚笑容。她自认为承担不了神子十分之一的重任，甚至与神子并肩前行时，都会被四面八方来的压力击垮。她只需要一直扮演清静的小角色，在神子需要时，为神子提供一份安宁。
 
-</TimelineItem>
-
-<TimelineItem>
-
-<Subtitle>·八重神子效忠雷神</Subtitle>
+#### ·八重神子效忠雷神
 
 曾几何时在御前献艺起舞，丁宁的铃音恍若悠转至今。曾经追随那远去的白色身影，心向不可即的未醒之梦…
 
@@ -980,39 +757,23 @@ secondaryClass: "/nations"
 
 </QuoteBlock>
 
-</TimelineItem>
-
-<TimelineItem>
-
-<Subtitle>·百鬼夜行<Footnote n="18" text="<a href='https://www.bilibili.com/video/BV1tG411P79B/?spm_id_from=333.1387.upload.video_card.click&vd_source=5521f8f34a1af08d13b6fcf39bf4506b' target='_blank'>《原神》剧情PV-「秋津羽戏」_游戏热门视频</a>"></Footnote></Subtitle>
+#### ·百鬼夜行<Footnote n="18" text="[《原神》剧情PV-「秋津羽戏」_游戏热门视频](https://www.bilibili.com/video/BV1tG411P79B/?spm_id_from=333.1387.upload.video_card.click&vd_source=5521f8f34a1af08d13b6fcf39bf4506b)"></Footnote>
 
 妖中尤以「白辰狐王一脉」最为尊贵，代有大妖出世，在人间留下无数逸话。众妖偶尔聚坐对饮之时，也少不了各自吹嘘，最近自己又成就了一段新的传说。酒后所言，难免与真相有出入，却也无妖计较，只求个有趣好听。久而久之，即成「百物语大会」。其时常见有乐斋举杯高谈，引得众妖无不侧耳神往，连设宴的狐斋宫也不禁阖眸微笑。尚是幼狐身形的神子，却总是攀在狐斋宫肩头，不依不饶地挑拣着有乐斋故事中的漏洞。有乐斋毕竟是冰雪聪明的雅士，一捻胡子便圆好了说辞。不过神子也总能抓出新的纰漏，如此往复，直到斋宫大人笑着劝二位打住：听众们都急着要听下一段了。酒过三巡，故事也讲过数轮，席间已醉得无妖能组织出完整的章句。众妖便干脆免了言语争锋，各使妖力腾空而起，看谁能遮天蔽月，拔得头筹。——是为「无月之夜，百鬼夜行」。
 
-</TimelineItem>
-
-<TimelineItem>
-
-<Subtitle>·七岁的孩子和狐斋宫相遇</Subtitle>
+#### ·七岁的孩子和狐斋宫相遇
 
 常常有人会借传说当中，以狐之姿，现世的神明之相，掩盖自己的脸庞，或许就是希望拥有她的万端变化吧。
 
 在夏祭的人流中，（我这个孩子）和父母走散了。明明只是瞬间，因为想看水气球，稍稍松开了牵着爸爸袖子的手。护送神鉾的人就把我们冲散了。我在参道边的鸟居旁一边哭，一边数着过往路人上山的脚。不知何时起就站在我身边的，双眸如狐的美丽女性（狐斋宫）牵起了我的手。「把这么可爱的孩子丢在这里，实在是不像话」「如何？要不要去看烟火、丢飞镖、钓风船呢」
 
-</TimelineItem>
-
-<TimelineItem>
-
-<Subtitle>·十七岁的少年和狐斋宫再次相遇</Subtitle>
+#### ·十七岁的少年和狐斋宫再次相遇
 
 夏祭的夜里，（我这个青年）与心仪的少女走在参道上。隐隐约约，我听见了迷路的小孩子在哭。一晃神，就崴着了脚，把怀钟也摔坏了。在她去为我找创药的时候，我为了给来往的人让开道，坐在坂道边的岩石上歇息。戴着面具的美丽女性（狐斋宫）在身旁坐下。「知道这个位置的人非常少」「是个看烟花的绝好角度呢」原本以为只是一个梦，虽然十年已经未见了，虽然十年都没有变老…「你也这么大了。看来，钓风船就免了」「如何？我带了酒。要不要一起看烟火」
 
 有人会诽谤它是虚伪的拟造生命，因为生命在于变化、痛苦与成长，在于一期一会，在于终将消逝吧。但恐怕，那年夏祭时与她相遇观看烟火龙势，在高空如同真实的鲜花一般绽放消散的记忆，那位眼眸细长如狐，最后又蓦然消失的女子，也只有她留下的这朵不凋败的花还会记得吧。归根到底，是因为有的生命，如这不生不死的夏祭之花一般永恒，但大多数的生命像烟火那样须臾吧。
 
-</TimelineItem>
-
-<TimelineItem>
-
-<Subtitle>·少年来到神社还愿</Subtitle>
+#### ·少年来到神社还愿
 
 为了庆祝妻子怀孕，前往神社还愿。但不知为何，上山的时候就带上了，七岁时的水气球，十七岁时的狐面，还有十年、一百年都不会凋败的花。
 
@@ -1020,11 +781,7 @@ secondaryClass: "/nations"
 
 面具的背面以娟秀的字迹写着留言。「抱歉，借着烟火绽放的声音离开」「应该不会再见了吧。请你多珍重」
 
-</TimelineItem>
-
-<TimelineItem>
-
-<Subtitle>·五百藏被狐斋宫设计</Subtitle>
+#### ·五百藏被狐斋宫设计
 
 五百藏因盗取将军府的鸣草，被雷电影收入麾下。
 
@@ -1034,11 +791,7 @@ secondaryClass: "/nations"
 
 </QuoteBlock>
 
-</TimelineItem>
-
-<TimelineItem>
-
-<Subtitle>·斋宫与众人的情谊</Subtitle>
+#### ·斋宫与众人的情谊
 
 我（狐斋宫）曾与面容如月的鬼族少女（千代），一同在御前献艺倾奇与神乐，我也曾为她的剑舞不住叫好。希望她的美貌、勇武与仪态，能够为千年后的人久久传颂。一想到那名少女令人自愧弗如的美，就不禁希望以面具掩盖如今的模样…
 
@@ -1060,23 +813,15 @@ secondaryClass: "/nations"
 
 所有人，都是我不曾料想能够有幸结交的挚友。守护他们的结界，但愿不会被任何黑暗侵蚀…这一切，所有的所有，都是我如今所怀念的。
 
-</TimelineItem>
-
 ### （三）雾切<Footnote n="19" text="雾切之回光，飞雷之弦振"></Footnote>
 
-<TimelineItem>
-
-<Subtitle>·昆布丸被灵善坊收养</Subtitle>
+#### ·昆布丸被灵善坊收养
 
 （我昆布丸）少年时曾不羁漫游山林，又与偶遇的大天狗（灵善坊）相设赌局，以年轻勇健的肉身与将军御赐的铭弓，互为豪赌之注。至于那场赌局过程如何，或许只有酣饮畅醉时才依稀记起。但待到那夜天色初白之刻，三胜三负，正与天狗赌成平手。
 
 于是，不幸被天狗收为仆从小姓，幸而赢得了无双的宝弓。「昆布丸，天狗的弓法乃是如此，给我好好看，好好学！」被粗鲁地取了莫名其妙的外号，但终究见识了天狗的身姿。空行于重重云间，无拘无束地回闪俯冲，以弓弦释出雷矢…那是毫无保留的、真正的杀伐之舞，凶戾难测，优雅华美。
 
-</TimelineItem>
-
-<TimelineItem>
-
-<Subtitle>·浅濑响求学</Subtitle>
+#### ·浅濑响求学
 
 （我浅濑响）一度师从神通广大的狐狸大人，学习打理神社事宜。那时的我，不过是从小小渔村来到鸣神的幼稚巫女。比茶筅还要愚钝，也还未曾褪去孩童的任性与好奇，对斋宫大人优雅难懂的话语，总是抱着天真的怀疑。
 
@@ -1092,11 +837,7 @@ secondaryClass: "/nations"
 
 须臾过后，她便用烟管敲敲我的脑袋，神情一如既往的嗔怪与嘲弄：「天快亮了，小响。」「我们该回去了。」
 
-</TimelineItem>
-
-<TimelineItem>
-
-<Subtitle>·泡温泉<Footnote n="20" text="寝正月初晴"></Footnote></Subtitle>
+#### ·泡温泉<Footnote n="20" text="寝正月初晴"></Footnote>
 
 「因为在梦中见到了钱汤，错认为已经抵达了集合地点，所以起得稍晚了一些。」睡眼惺忪的少女（浅）以惯例的冷漠掩盖自己的羞愧，向同行的友人（晴之介）解释迟到的缘由，不愿坦率承认自己只是在新年的第一天睡过头，将责任推诿于梦中温暖的钱汤。
 
@@ -1110,11 +851,7 @@ secondaryClass: "/nations"
 
 </QuoteBlock>
 
-</TimelineItem>
-
-<TimelineItem>
-
-<Subtitle>·昆教浅濑响射箭</Subtitle>
+#### ·昆教浅濑响射箭
 
 （我昆布丸）曾与祓行的神人一同，以其秘剑「雾切」斩落无数的妖物与祟神。
 
@@ -1126,21 +863,13 @@ secondaryClass: "/nations"
 
 </QuoteBlock>
 
-</TimelineItem>
-
-<TimelineItem>
-
-<Subtitle>·昆加入幕府</Subtitle>
+#### ·昆加入幕府
 
 多年之后，已不再是做小姓的年纪，也颇学到些弓刀之术。如此，便被没耐性的主子一纸荐书打发到了幕府的大门下。追随将军的年月里，武艺多有精进，结识了许多友人与仇敌。
 
 呆头大叔昆布丸，也成了将军殿下的旗本，将迎娶高门武士之女…不羁空游的嗜好未曾改变，反而藉天狗之铭弓，更有恃无恐。
 
-</TimelineItem>
-
-<TimelineItem>
-
-<Subtitle>·昆和浅聚会</Subtitle>
+#### ·昆和浅聚会
 
 <QuoteBlock>
 
@@ -1152,19 +881,11 @@ secondaryClass: "/nations"
 
 （浅濑响）就这样被那家伙（昆布丸）拉去了港口，又出神地望着片片船帆来往，听他讲述神社的那位光代，如何继承了师傅的美貌与武艺；听他诉说曾经一度令他心惊胆战的，斩下自己首级的噩梦…但两人心知肚明，这不过是用话语来掩盖业已成年的悲哀。
 
-</TimelineItem>
-
-<TimelineItem>
-
-<Subtitle>·昆和浅打赌</Subtitle>
+#### ·昆和浅打赌
 
 「（我昆）这次与你（浅）赌上一把，如何？嗯——就以这把弓为赌注吧。」「我要将这把天下最好的弓为赌注，赌我能活着回到这里。」「就寄放在你这吧。如果我高岭输了，那这把弓就归你了。」「毕竟浅濑你算得了我流射术的真传。应该能用好它才对。」「但，假使我赢了的话…」
 
-</TimelineItem>
-
-<TimelineItem>
-
-<Subtitle>·浅的梦</Subtitle>
+#### ·浅的梦
 
 正如初梦所预示的那般，正如高岭上的鹰隼那般，矜夸于百战炼磨的武者，也一定能凭着她梦中所见的吉兆，避灾转福吧…只是自那时起，巫女的梦中便再也没有出现过振翼的鹰，唯有飘落的鹰羽，而鹰却早已失坠，再也飞不进她的梦。
 
@@ -1174,21 +895,13 @@ secondaryClass: "/nations"
 
 抱歉了，师傅，将您所传授的技艺如这般滥用，与您所效忠的旗帜为敌，以恶名玷染您的清正。但那也早已是无关紧要之事。不知我心者，尽可任意评说，我既不惜此身，亦不惜此名，只要这一次，能让他活下去…
 
-</TimelineItem>
-
 ## 六、500年前 漆黑的灾祸
 
 ### （一）千代和御舆家　大王和裁缝<Footnote n="21" text="今昔剧画系列素材，绝缘之旗印，有乐御簾切"></Footnote>
 
-<TimelineItem>
-
 #### 1.千代
 
-</TimelineItem>
-
-<TimelineItem>
-
-<Subtitle>·千代参战</Subtitle>
+#### ·千代参战
 
 一位翩翩少年（女），拥有优雅勇健的身姿与华丽的容貌。武艺高强，曾有在刀剑一千柄当中狂舞，被割破的十二单如同菫花般零落，身体却未受一丝伤害的说法。
 
@@ -1196,11 +909,7 @@ secondaryClass: "/nations"
 
 最后她撕开魔兽的胸腔，得以幸存。这是「虎啮的千代」之名的来由。在此后的岁月中，这一名号渐渐简化为「虎千代」。她以炽热沸腾的血气克服生死之运，为日渐稀薄的同族以战鬼之名，立下不朽的功绩。
 
-</TimelineItem>
-
-<TimelineItem>
-
-<Subtitle>·千代被深渊污染<Footnote n="22" text="<a href='https://www.bilibili.com/video/BV1Y3411B7SX/?spm_id_from=333.1387.upload.video_card.click&vd_source=5521f8f34a1af08d13b6fcf39bf4506b' target='_blank'>《原神》雷电将军角色PV——「噩梦」_游戏热门视频</a> <a href='https://www.bilibili.com/video/BV1ZgwoeJEph/?spm_id_from=333.1387.upload.video_card.click&vd_source=5521f8f34a1af08d13b6fcf39bf4506b' target='_blank'>《原神》剧情PV-「浮梦之诉」_原神</a>"></Footnote></Subtitle>
+#### ·千代被深渊污染<Footnote n="22" text="[《原神》雷电将军角色PV——「噩梦」_游戏热门视频](https://www.bilibili.com/video/BV1Y3411B7SX/?spm_id_from=333.1387.upload.video_card.click&vd_source=5521f8f34a1af08d13b6fcf39bf4506b) [《原神》剧情PV-「浮梦之诉」_原神](https://www.bilibili.com/video/BV1ZgwoeJEph/?spm_id_from=333.1387.upload.video_card.click&vd_source=5521f8f34a1af08d13b6fcf39bf4506b)"></Footnote>
 
 本应在雷之三重巴旗下立下了赫赫战功，原本以为能洗净的血浸的战服之十二单，与她猛烈搏动的心一同被永久地染黑了…
 
@@ -1218,19 +927,11 @@ secondaryClass: "/nations"
 
 </QuoteBlock>
 
-</TimelineItem>
-
-<TimelineItem>
-
-<Subtitle>·道启隐居山林</Subtitle>
+#### ·道启隐居山林
 
 应当继承家业的长子道启从此避世隐居在城外的村中。
 
-</TimelineItem>
-
-<TimelineItem>
-
-<Subtitle>·灵善坊赐道启新的氏名「岩藏」</Subtitle>
+#### ·灵善坊赐道启新的氏名「岩藏」
 
 <QuoteBlock>
 
@@ -1240,11 +941,7 @@ secondaryClass: "/nations"
 
 </QuoteBlock>
 
-</TimelineItem>
-
-<TimelineItem>
-
-<Subtitle>·道启和光代的决斗</Subtitle>
+#### ·道启和光代的决斗
 
 道启在十三年里和光代决斗训练，光代下定决定成为族长。
 
@@ -1256,13 +953,9 @@ secondaryClass: "/nations"
 
 </QuoteBlock>
 
-</TimelineItem>
+#### ·道启开创岩藏流，成为岩藏道启
 
-<TimelineItem>
-
-<Subtitle>·道启开创岩藏流，成为岩藏道启</Subtitle>
-
-<TimelineImage src="/img/context/Inazuma/image5.png" caption="岩藏道启" />
+![岩藏道启](/img/context/Inazuma/image5.png)
 
 在前往九条的屋敷就任前，已经学会饮酒的道启，最后一次，踏进因秘剑「天狗抄」的完成而彻底沦为废墟的枝社。在自己十三年内十次有三与影向的天狗真剑试合的废弃枝社院内，他想起自己在这里遇见自称「影向的光代」的黑翼天狗时的情景…
 
@@ -1278,11 +971,7 @@ secondaryClass: "/nations"
 
 那时的神樱也如同茫茫白雪般飘落。脚下的枝社虽失去祭神，也还完好。如同泉水般清亮的笑声回响在山间。而两人再未踏足已沦为废墟的小院。
 
-</TimelineItem>
-
-<TimelineItem>
-
-<Subtitle>·道启加入九条家</Subtitle>
+#### ·道启加入九条家
 
 <QuoteBlock>
 
@@ -1290,47 +979,23 @@ secondaryClass: "/nations"
 
 </QuoteBlock>
 
-</TimelineItem>
-
-<TimelineItem>
-
-<Subtitle>·长正投奔官府</Subtitle>
+#### ·长正投奔官府
 
 长正则为了洗清御舆的污名投身官府
 
-</TimelineItem>
-
-<TimelineItem>
-
 #### 2.大王
 
-</TimelineItem>
+#### ·大王参战
 
-<TimelineItem>
-
-<Subtitle>·大王参战</Subtitle>
-
-</TimelineItem>
-
-<TimelineItem>
-
-<Subtitle>·游手好闲的怪人御伽金刚狮子大王，却没有再现身过。后来，怪人踢倒的菫瓜树经细心护养再度结出了果实。</Subtitle>
+#### ·游手好闲的怪人御伽金刚狮子大王，却没有再现身过。后来，怪人踢倒的菫瓜树经细心护养再度结出了果实。
 
 尽管他总喜怒过常，在不长不短的一生中倒交了许多朋友，保护了不少性命。事后编织无字的锦画卷，以此供养保护了无数性命的神、狐、妖、鬼、人
 
-</TimelineItem>
-
-<TimelineItem>
-
-<Subtitle>·书卷</Subtitle>
+#### ·书卷
 
 裁缝也为未能将名刀归还于他，助他杀敌的遗憾，为他设计了执双刀的威仪。画卷中有描绘他两手各执一大一小双剑，如分开浪潮般斩落涌来的黑色妖异的雄姿，
 
-</TimelineItem>
-
-<TimelineItem>
-
-<Subtitle>·回忆</Subtitle>
+#### ·回忆
 
 鬼族同姓的后人在见到手执华丽如故名刀，却不再是少女的裁缝时，回忆道：
 
@@ -1342,39 +1007,23 @@ secondaryClass: "/nations"
 
 </QuoteBlock>
 
-</TimelineItem>
-
 ### （二）狐斋宫和五百藏<Footnote n="23" text="白辰之环"></Footnote>
 
-<TimelineItem>
-
-<Subtitle>·有乐斋的离去</Subtitle>
+#### ·有乐斋的离去
 
 他的所为，与日后深渊之入侵或许有所关联。
 
-</TimelineItem>
-
-<TimelineItem>
-
-<Subtitle>·斋宫的离去（第二次离去）</Subtitle>
+#### ·斋宫的离去（第二次离去）
 
 但在有乐斋大人被迫离去之后，狐斋宫大人便也不再驻留鸣神大社，而是前往城中天守长居了。
 
 八重大人也不过少女之龄。一直追随之人，再度离她而去了。岂料不多时灾厄席卷列岛，我们才得以了解其中深意…只是一切为时已晚，一切事与愿违。
 
-</TimelineItem>
-
-<TimelineItem>
-
-<Subtitle>·五百藏被变成石像</Subtitle>
+#### ·五百藏被变成石像
 
 五百藏找不到狐斋宫，偷了狐斋宫梳子，被惟神变成石像。
 
-</TimelineItem>
-
-<TimelineItem>
-
-<Subtitle>·狐斋宫死去（第三次离去）<Footnote n="24" text="<a href='https://www.bilibili.com/video/BV1Y3411B7SX/?spm_id_from=333.1387.upload.video_card.click&vd_source=5521f8f34a1af08d13b6fcf39bf4506b' target='_blank'>《原神》雷电将军角色PV——「噩梦」_游戏热门视频</a>"></Footnote></Subtitle>
+#### ·狐斋宫死去（第三次离去）<Footnote n="24" text="[《原神》雷电将军角色PV——「噩梦」_游戏热门视频](https://www.bilibili.com/video/BV1Y3411B7SX/?spm_id_from=333.1387.upload.video_card.click&vd_source=5521f8f34a1af08d13b6fcf39bf4506b)"></Footnote>
 
 死于深渊动荡中与污秽的抗争
 
@@ -1384,27 +1033,15 @@ secondaryClass: "/nations"
 
 </QuoteBlock>
 
-</TimelineItem>
-
-<TimelineItem>
-
-<Subtitle>·灵善坊自我流放</Subtitle>
+#### ·灵善坊自我流放
 
 大天狗大人，也因守护不周的罪疚发怒离去，自我远流，留下光代一人。
 
-</TimelineItem>
-
-<TimelineItem>
-
-<Subtitle>·惟神晴之介远走璃月</Subtitle>
+#### ·惟神晴之介远走璃月
 
 晴之介在哀恸的盛怒下远走别国，前往璃月修习仙术，发展阴阳术，创办诀箓阴阳寮。
 
-</TimelineItem>
-
-<TimelineItem>
-
-<Subtitle>·神子接任狐斋宫</Subtitle>
+#### ·神子接任狐斋宫
 
 <QuoteBlock>
 
@@ -1416,11 +1053,7 @@ secondaryClass: "/nations"
 
 邻家狐斋宫姐姐的身影无处可循，唯有双目黯然、面色苍白，脸颊留有隐约泪痕的神子，在临近枯萎的神樱树前低头祝祷。此后，瑞希熟知的神子便在做好准备前接过全部责任，成为了可敬的八重宫司。
 
-</TimelineItem>
-
-<TimelineItem>
-
-<Subtitle>·瑞希开始治愈人民的战后创伤</Subtitle>
+#### ·瑞希开始治愈人民的战后创伤
 
 不擅争战的食梦貘一族只能仓皇逃窜，藏匿至灾厄不屑一顾的角落。待到将军斩除最后的邪祟，瑞希与族裔们惊魂未定地归来时，昔日繁华的聚落已成废墟。瑞希心焦地四处奔走，寻找自己的朋友，所到之处，皆是生离死别的片段。
 
@@ -1438,25 +1071,17 @@ secondaryClass: "/nations"
 
 无论如何，都再也回不到无忧无虑的过去了。两人都有各自的路要走，不妨洒脱些，更不必苦苦纠缠。那些旧时光的回忆，就好好保存在意识深处吧。
 
-</TimelineItem>
-
 ### （三）影的永恒<Footnote n="25" text="薙草之稻光"></Footnote>
 
-<TimelineItem>
-
-<Subtitle>·雷电真死去<Footnote n="26" text="<a href='https://www.bilibili.com/video/BV1rL4y1h7nr/?spm_id_from=333.1387.upload.video_card.click&vd_source=5521f8f34a1af08d13b6fcf39bf4506b' target='_blank'>《原神》剧情PV-「许以臣民之梦」_哔哩哔哩bilibili_原神</a>"></Footnote></Subtitle>
+#### ·雷电真死去<Footnote n="26" text="[《原神》剧情PV-「许以臣民之梦」_哔哩哔哩bilibili_原神](https://www.bilibili.com/video/BV1rL4y1h7nr/?spm_id_from=333.1387.upload.video_card.click&vd_source=5521f8f34a1af08d13b6fcf39bf4506b)"></Footnote>
 
 雷电真在坎瑞亚死去。
 
 在伊斯塔露的帮助下，从雷电真身上折下的细枝一瞬间长成了大树。雷电影发现了神樱（实际上是自己在一千年后种下）
 
-<TimelineImage src="/img/context/Inazuma/image6.png" caption="大御所将军的纹样，亦即麾下军势之旗印，「雷之三重巴」。" />
+![大御所将军的纹样，亦即麾下军势之旗印，「雷之三重巴」。](/img/context/Inazuma/image6.png)
 
-</TimelineItem>
-
-<TimelineItem>
-
-<Subtitle>·雷电影维系永恒</Subtitle>
+#### ·雷电影维系永恒
 
 <QuoteBlock>
 
@@ -1472,11 +1097,7 @@ secondaryClass: "/nations"
 
 也是这一天，影彻底领悟了「磨损」带来的切肤之痛。继续跟随时间向前走的话，就连这刀、这樱…这稻妻众生，都会从眼中消失吧。这是稻妻的根基，也是「雷电将军」必须守护之物。「由此看来，超前的预想并非毫无意义…也并非僭越。」心中觉悟终定，生命超脱肉体，永恒降临浮世。
 
-</TimelineItem>
-
-<TimelineItem>
-
-<Subtitle>·永恒</Subtitle>
+#### ·永恒
 
 <QuoteBlock>
 
@@ -1500,25 +1121,13 @@ secondaryClass: "/nations"
 
 </QuoteBlock>
 
-</TimelineItem>
-
-<TimelineItem>
-
-<Subtitle>·雷电影开始制造人偶</Subtitle>
-
-</TimelineItem>
+#### ·雷电影开始制造人偶
 
 ### （四）雾切
 
-<TimelineItem>
+#### ·影向山的大天狗（灵善坊）避世隐居山林
 
-<Subtitle>·影向山的大天狗（灵善坊）避世隐居山林</Subtitle>
-
-</TimelineItem>
-
-<TimelineItem>
-
-<Subtitle>·昆对抗漆黑被感染</Subtitle>
+#### ·昆对抗漆黑被感染
 
 在其生涯的最末，他作为寄骑在将军的阵列中与漆黑的军势向对。如果没有将爱用的弓，作为赌注留在了她的身畔，或许情况也会不同吧。但真赌徒无论如何也不能后悔，绝不计较「如果」、绝不悔恨「假使」。敌人如同迷雾般涌来，那不断地使出连山岚夜雾也能斩断的妙剑就行了。斩切的速度足够快的话，那就能拨开欲深的漆黑迷雾，能瞥见光明吧——
 
@@ -1542,19 +1151,11 @@ secondaryClass: "/nations"
 
 灾厄自远海席卷而来的岁月里，武士与逞强的巫女互设赌局，以自深渊生还的机会，与将军御赐的铭弓，作为豪赌的赌注。当漆黑的秽毒沉入大地，复归平静之时，剑豪并未归来。而作为豪赌的胜果，将军御赐的铭弓被交予巫女的手里。
 
-</TimelineItem>
-
-<TimelineItem>
-
-<Subtitle>·浅射杀昆</Subtitle>
+#### ·浅射杀昆
 
 再后来，在狐斋宫不再现身的神林中、在相约再见的地方，自渊薮蹒跚而来的孤独归人，终又与不再年轻的巫女再逢。血泪干涸的漆黑眼眸重获神采，却被威光闪烁的钩矢射穿。
 
-</TimelineItem>
-
-<TimelineItem>
-
-<Subtitle>·浅解除结界<Footnote n="27" text="破魔之弓"></Footnote></Subtitle>
+#### ·浅解除结界<Footnote n="27" text="破魔之弓"></Footnote>
 
 浅为了救赤穗百目鬼，解开清籁岛结界，解除雷鸟封印，导致雷暴。
 
@@ -1564,17 +1165,9 @@ secondaryClass: "/nations"
 
 </QuoteBlock>
 
-</TimelineItem>
+#### ·百目鬼从此下落不明。后来到了「金苹果群岛」。
 
-<TimelineItem>
-
-<Subtitle>·百目鬼从此下落不明。后来到了「金苹果群岛」。</Subtitle>
-
-</TimelineItem>
-
-<TimelineItem>
-
-<Subtitle>·赤穗百目鬼走出迷雾，又回到清籁<Footnote n="28" text="「渔获」"></Footnote></Subtitle>
+#### ·赤穗百目鬼走出迷雾，又回到清籁<Footnote n="28" text="「渔获」"></Footnote>
 
 <QuoteBlock>
 
@@ -1584,15 +1177,11 @@ secondaryClass: "/nations"
 
 </QuoteBlock>
 
-</TimelineItem>
-
 ## 七、雷电影时期
 
 ### （一）雷电五传【待发现】
 
-<TimelineItem>
-<div class="table-container">
-<table class="lightrelam-table">
+<table>
 <thead>
 <tr>
 <th>派系</th>
@@ -1605,128 +1194,107 @@ secondaryClass: "/nations"
 <tr>
 <td>天目</td>
 <td>柴门家：<br/>目前由天目锻冶屋传授，后人为天目优也，有学徒阿创</td>
-<td class="text-left"></td>
-<td class="text-left">名刀「薄缘满光天目」的其中一柄影打（古代刀匠在锻刀时,都不会只打造一把,这数把刀中最成功的作品叫做「真打」,剩下来的叫做「影打」），由岩藏流初代宗主「道胤」赠予柴门家，报答他在自己隐居绀田村时受到的关照。</td>
+<td></td>
+<td>名刀「薄缘满光天目」的其中一柄影打（古代刀匠在锻刀时,都不会只打造一把,这数把刀中最成功的作品叫做「真打」,剩下来的叫做「影打」），由岩藏流初代宗主「道胤」赠予柴门家，报答他在自己隐居绀田村时受到的关照。</td>
 </tr>
 <tr>
 <td rowspan="3">经津</td>
 <td>惣领·经津实</td>
-<td class="text-left">三代目</td>
-<td class="text-left">波穗月白经津</td>
+<td>三代目</td>
+<td>波穗月白经津</td>
 </tr>
 <tr>
 <td>经津政芳</td>
-<td class="text-left">真砂丸</td>
-<td class="text-left">波乱月白经津，<br/>经津政芳博采众名匠所长，将「一心」传于枫原、丹羽、赤目三人，统称为「一心三作」</td>
+<td>真砂丸</td>
+<td>波乱月白经津，<br/>经津政芳博采众名匠所长，将「一心」传于枫原、丹羽、赤目三人，统称为「一心三作」</td>
 </tr>
 <tr>
 <td>惣领·经律弘芳</td>
-<td class="text-left">经津实的儿子，四代目<br/>受经津政芳教导</td>
-<td class="text-left"></td>
+<td>经津实的儿子，四代目<br/>受经津政芳教导</td>
+<td></td>
 </tr>
 <tr>
 <td rowspan="2">一心·赤目</td>
 <td>惣领·赤目实长</td>
-<td class="text-left"></td>
-<td class="text-left">赤目则怀着对「一心」的狂热执念，始终追逐「斩人剑」所能达到的终极</td>
+<td></td>
+<td>赤目则怀着对「一心」的狂热执念，始终追逐「斩人剑」所能达到的终极</td>
 </tr>
 <tr>
 <td>赤目兼长</td>
-<td class="text-left"></td>
-<td class="text-left">赤目兼长为倾奇者之案波及，犯下了大逆之罪，由此改易改姓远走雪国，</td>
+<td></td>
+<td>赤目兼长为倾奇者之案波及，犯下了大逆之罪，由此改易改姓远走雪国，</td>
 </tr>
 <tr>
 <td rowspan="3">一心·丹羽</td>
 <td>丹羽长光</td>
-<td class="text-left"></td>
-<td class="text-left">丹羽一族宅心仁厚，以烧刃见长</td>
+<td></td>
+<td>丹羽一族宅心仁厚，以烧刃见长</td>
 </tr>
 <tr>
 <td>丹羽久秀</td>
-<td class="text-left"></td>
-<td class="text-left"></td>
+<td></td>
+<td></td>
 </tr>
 <tr>
 <td>丹羽义庆<br/>（枫原义庆）</td>
-<td class="text-left">丹羽家的后人，被枫原家收养</td>
-<td class="text-left"></td>
+<td>丹羽家的后人，被枫原家收养</td>
+<td></td>
 </tr>
 <tr>
 <td rowspan="4">一心·枫原</td>
 <td>枫原景光</td>
-<td class="text-left"></td>
-<td class="text-left">枫原一族博闻强识，作品最具经津政芳风骨</td>
+<td></td>
+<td>枫原一族博闻强识，作品最具经津政芳风骨</td>
 </tr>
 <tr>
 <td>枫原义庆<br/>（丹羽义庆）</td>
-<td class="text-left">万叶的曾祖父，神里家主的下属</td>
-<td class="text-left"></td>
+<td>万叶的曾祖父，神里家主的下属</td>
+<td></td>
 </tr>
 <tr>
 <td>枫原久通</td>
-<td class="text-left">万叶的祖父</td>
-<td class="text-left"></td>
+<td>万叶的祖父</td>
+<td></td>
 </tr>
 <tr>
 <td>枫原景春</td>
-<td class="text-left">万叶的父亲</td>
-<td class="text-left"></td>
+<td>万叶的父亲</td>
+<td></td>
 </tr>
 <tr>
 <td colspan="2">枫原万叶</td>
-<td class="text-left"></td>
-<td class="text-left"></td>
+<td></td>
+<td></td>
 </tr>
 <tr>
 <td>百目</td>
 <td></td>
-<td class="text-left"></td>
-<td class="text-left"></td>
+<td></td>
+<td></td>
 </tr>
 <tr>
 <td>千手</td>
 <td></td>
-<td class="text-left"></td>
-<td class="text-left"></td>
+<td></td>
+<td></td>
 </tr>
 </tbody>
 </table>
-</div>
-</TimelineItem>
-
-<TimelineImage src="/img/context/Inazuma/image7.png" caption="雷电五传人物关系图"></TimelineImage>
-
-<TimelineItem>
+![雷电五传人物关系图](/img/context/Inazuma/image7.png)
 
 #### 1.天目
-
-</TimelineItem>
-
-<TimelineItem>
 
 天目源于道启的「岩藏流」。
 
 御舆道启隐居绀田村期间，委托当时的天目打制一把太刀，其名为「薄缘满光天目」，并将该刀的影打「天目影打刀」赠送给柴门家。此刀在岩藏门历代宗主岩藏之胤手上流传，最终被击败了末代宗主的旅行者于渊下宫收得，插入岩藏门剑冢。
 
-</TimelineItem>
-
-<TimelineItem>
-
 #### 2.经津
 
-</TimelineItem>
-
-<TimelineItem>
-
-<Subtitle>·实制波穗</Subtitle>
+#### ·实制波穗
 
 「波穗」一刀出自经津传三代目惣领经津实之手。锻成之后，这柄刀身薄青、刃文如水波的华美名物，时常悬于将军近侍御舆千代的腰间。再后来，刀身在与决定鬼人命运的真剑试合中刃切，遂交还重锻。
 
-</TimelineItem>
-
-<TimelineItem>
-
-<Subtitle>·实收养孤儿政芳</Subtitle>
+#### ·实收养孤儿政芳
 
 <QuoteBlock>
 
@@ -1734,11 +1302,7 @@ secondaryClass: "/nations"
 
 </QuoteBlock>
 
-</TimelineItem>
-
-<TimelineItem>
-
-<Subtitle>·政芳制波乱后离开</Subtitle>
+#### ·政芳制波乱后离开
 
 其时，久被酒、旧伤与祟神遗念折磨的经津实，已如未经回火的钢刀般断裂了。可年少的四代目经津弘芳，尚无比肩母亲的技艺。是他的义兄——世人唤作「真砂丸」的经津政芳，最终成功锻成此刀，令经津传杰作再度现身世间。两柄月白经津外观极为相似，气质却又大为不同。
 
@@ -1748,27 +1312,15 @@ secondaryClass: "/nations"
 
 此后，他又前往其他锻刀流派钻研技艺，博采众名匠所长。他晚年的三位得意弟子：枫原景光、丹羽长光与赤目实长，便是后日缔造了一心传的「一心三作」。
 
-</TimelineItem>
-
-<TimelineItem>
-
 #### 3.一心
 
-</TimelineItem>
-
-<TimelineItem>
-
-<Subtitle>·一心的命运</Subtitle>
+#### ·一心的命运
 
 怀着对「一心」的狂热执念，赤目一门始终追逐「斩人剑」所能达到的终极。赤目门人所锻炼之腰物因此虽锐利，却多有魔性，最终被官家评为「不良」。是故，赤目刀锻冶实长的「一心传」惣领之职并未下传三代，便为官家所夺。
 
-</TimelineItem>
+### （二）国崩<Footnote n="29" text="[《原神》剧情PV-「『神』意」_哔哩哔哩bilibili_原神](https://www.bilibili.com/video/BV1hW4y1e7Kx/?spm_id_from=333.1387.upload.video_card.click&vd_source=5521f8f34a1af08d13b6fcf39bf4506b)"></Footnote><Footnote n="30" text="华馆梦醒形骸记，桂木斩长正，笼钓瓶一心"></Footnote>
 
-### （二）国崩<Footnote n="29" text="<a href='https://www.bilibili.com/video/BV1hW4y1e7Kx/?spm_id_from=333.1387.upload.video_card.click&vd_source=5521f8f34a1af08d13b6fcf39bf4506b' target='_blank'>《原神》剧情PV-「『神』意」_哔哩哔哩bilibili_原神</a>"></Footnote><Footnote n="30" text="华馆梦醒形骸记，桂木斩长正，笼钓瓶一心"></Footnote>
-
-<TimelineItem>
-<div class="table-container">
-<table class="lightrelam-table">
+<table>
 <thead>
 <tr>
 <th>人物</th>
@@ -1778,44 +1330,35 @@ secondaryClass: "/nations"
 <tbody>
 <tr>
 <td>丹羽久秀</td>
-<td class="text-left">造兵司正　一心传继承者为人谦和　头脑聪慧</td>
+<td>造兵司正　一心传继承者为人谦和　头脑聪慧</td>
 </tr>
 <tr>
 <td>宫崎兼雄</td>
-<td class="text-left">丹羽的副手</td>
+<td>丹羽的副手</td>
 </tr>
 <tr>
 <td>桂木</td>
-<td class="text-left">长正手下的武人</td>
+<td>长正手下的武人</td>
 </tr>
 <tr>
 <td>无名人偶/<br/>倾奇者（俗称）/国崩（自称）</td>
-<td class="text-left">雷电影造出的第一个人偶</td>
+<td>雷电影造出的第一个人偶</td>
 </tr>
 <tr>
 <td>雷电将军</td>
-<td class="text-left">雷电影造出的能维系永恒的人偶</td>
+<td>雷电影造出的能维系永恒的人偶</td>
 </tr>
 </tbody>
 </table>
-</div>
-</TimelineItem>
-
 ### 1.雷电将军的诞生
 
-<TimelineItem>
-
-<Subtitle>·雷电影的人偶技术</Subtitle>
+#### ·雷电影的人偶技术
 
 局限于肉体之中的生命想要追求「永恒」，便无法回避寿命一事。有限的时间让影烦忧。
 
 直到某一天，一种神秘技术（坎瑞亚机械工学派技术）如命运般降临在她眼前。凭借这种技艺，人就能制造出与真实生命体无二的精巧人偶。理论上，人偶能完美复制出影的一切，等于是超越了寿命极限，可以一直存在下去，为稻妻提供永世庇护。然而，想要打造出神明的复制体，谈何容易？影为此进行了无数次试验，废弃了许多失败品，消耗了超乎想象的时间与材料（白树的枝条）。
 
-</TimelineItem>
-
-<TimelineItem>
-
-<Subtitle>·400年前，雷电影造出并舍弃第一个人偶/第一次背叛</Subtitle>
+#### ·400年前，雷电影造出并舍弃第一个人偶/第一次背叛
 
 <QuoteBlock>
 
@@ -1835,11 +1378,7 @@ secondaryClass: "/nations"
 
 作为神造的超越者，却当成无用之物被弃置。因为未可知的错误，从「休眠」中自行苏醒，开始行走在天地与凡人之间。后来，美丽的人偶苏醒了，开始了流浪。他见到了许许多多的心，善良的，正直的，坚毅的，柔软的…人偶也想拥有一颗心脏。
 
-</TimelineItem>
-
-<TimelineItem>
-
-<Subtitle>·雷电影终于造出雷电将军，将神之心交给神子</Subtitle>
+#### ·雷电影终于造出雷电将军，将神之心交给神子
 
 靠着执念与武人之志，她制造出了完美的人偶。新生的「雷电将军」静坐着，倾听影讲述有关她、「她」乃至她们的一切。稻妻的未来，被誊写在一张绚烂的蓝图上。她对影只有一个问题：「放弃肉体意味着无法回头。你当真不后悔吗？」「你的存在就是我的答案。」
 
@@ -1849,11 +1388,7 @@ secondaryClass: "/nations"
 
 八重神子领会影的意思，便笑着接过了那枚贵重的神之心。「这话可是你说的。不准反悔哦。」
 
-</TimelineItem>
-
-<TimelineItem>
-
-<Subtitle>·神子对雷神的呼唤<Footnote n="31" text="神乐之真意"></Footnote></Subtitle>
+#### ·神子对雷神的呼唤<Footnote n="31" text="神乐之真意"></Footnote>
 
 殿下（雷电影）长久沉溺于永恒愿景的梦景里，总要有人守望众生，为平镇恶鬼「黑阿弥」的怨怒，曾稍显露身凭不祥之物，为安抚秃狸小三太的大骚动，亦曾以微薄法力将之戏弄。侵扰诸岛的海贼林藏，最终因小小离间计策而众叛亲离，
 
@@ -1877,13 +1412,9 @@ secondaryClass: "/nations"
 
 </QuoteBlock>
 
-</TimelineItem>
-
 ### 2.倾奇者与踏鞴砂事件
 
-<TimelineItem>
-
-<Subtitle>·锻刀之舞</Subtitle>
+#### ·锻刀之舞
 
 虽然不过是御舆家的养子；虽然养母让御舆之名被染黑；虽然御舆的嫡子道启抛弃了孑然一身的自己，销声匿迹；但他自诩的愚钝、实际的忠义令他百倍珍惜御舆的名号。努力进入官府，并以百倍的勤奋与清明，洗刷家族污名。
 
@@ -1891,21 +1422,13 @@ secondaryClass: "/nations"
 
 御舆长正锻刀大成那日倾奇者与众人一同献上的欢庆之舞。
 
-</TimelineItem>
-
-<TimelineItem>
-
-<Subtitle>·踏鞴砂的变故</Subtitle>
+#### ·踏鞴砂的变故
 
 在引入远国的技术制造「御影炉心」前，漫长的时间里，踏鞴砂所采用的冶炼方法一直是传统的「踏鞴制铁法」。
 
 为了进一步提升锻造水准，赤目与携带枫丹新技术的埃舍尔深度合作，并将埃舍尔介绍给同为「一心三作」的丹羽。埃舍尔的到来一度让踏鞴砂激动。人们采用他提供的新兴技术处理晶化骨髓，效率与产量均有提升。但随着时间推移，踏鞴砂最中央的大炉出现了些许异样。炉中攒有大量黑气，慢慢地，诡异气体开始影响工匠的身体。冶炼锻造，本该是踏鞴砂赖以为生的基础，最终竟成了致死的事。死者数量渐渐增加，大炉进一步失控。没人能接近核心区域，就连让它停转都成了一件天大的难事。作为踏鞴砂最高负责人，丹羽不得不暂时封锁消息，同时派人到稻妻城向天守阁方面求救。可不知为何，驾船出海的人一个都没回来。恐惧蔓延在踏鞴砂人民的心中。
 
-</TimelineItem>
-
-<TimelineItem>
-
-<Subtitle>·国崩求助巫女</Subtitle>
+#### ·国崩求助巫女
 
 摒弃昨日的倾奇者已不会再想起它，但捂住耳朵，却仍能听见那年的暴雨与狂风。一双双期盼的眼睛说：
 
@@ -1929,11 +1452,7 @@ secondaryClass: "/nations"
 
 申请出动，调遣人手，乘船渡海。援兵赶到踏鞴砂时，当地并不是一片惨状，相反，大部分人甚至不知道发生了什么。只听机械师埃舍尔说，最高负责人丹羽自知失职携家人畏罪潜逃，倾奇者代替丹羽进入核心区，关闭了大炉。八重得知倾奇者与潜逃的丹羽本是好友，猜到他心情沉重，不愿在此时打扰他，只差人将那枚羽毛交还过去。
 
-</TimelineItem>
-
-<TimelineItem>
-
-<Subtitle>·丹羽之死/第二次背叛</Subtitle>
+#### ·丹羽之死/第二次背叛
 
 <QuoteBlock>
 
@@ -1961,11 +1480,7 @@ secondaryClass: "/nations"
 
 曾经这双非人的手能尝试关闭烧红的大炉，甚至不惜为此烧毁十指；
 
-</TimelineItem>
-
-<TimelineItem>
-
-<Subtitle>·长正斩桂木</Subtitle>
+#### ·长正斩桂木
 
 流浪多年的倾奇者已不会再想起它，但闭上双眼，却仍能看到踏鞴砂的月夜与炉火。年轻仁厚的副官（桂木）说：「这金饰是将军大人所赐身份之证，」「但你行走世间时，若非万不得已，」切不可将自己的身份透露给他人。」刚正不阿的目付（长正）说：「这枚金饰是将军大人所赐身份之证，但你既非人类亦非器物，在下只能这样处置你，还请你不要怨恨！」
 
@@ -1973,11 +1488,7 @@ secondaryClass: "/nations"
 
 御舆长正作为顺位下来的担当人，原本应该以死谢罪，多亏他那忠心的武人随从桂木以身代之，自愿扛下所有罪过。当晚，长正取来最心爱的宝刀「大踏鞴长正」，一击将桂木斩于面前。刀入体之深，几乎要将死者劈作两半…
 
-</TimelineItem>
-
-<TimelineItem>
-
-<Subtitle>·收养的孩童死去/第三次背叛</Subtitle>
+#### ·收养的孩童死去/第三次背叛
 
 <QuoteBlock>
 
@@ -1989,11 +1500,7 @@ secondaryClass: "/nations"
 
 即便经历了那么多变故，在那时的他心里，人之故去也不是一瞬就能完成的事。「一瞬」能留给人的只有疼痛。震惊之余，他感到无比愤怒——他又是孤单一人，那不就是被遗弃了吗？再一次、再一次、再一次！地上那具幼小的躯体蜷缩着，如同大团花瓣聚在一起，被血染红了一角。鲜红的血像极了枫叶…也像极了烈火。那天夜里，海边燃起了熊熊火光。倾奇者烧掉木屋，带上从小屋里找来的旧草帽，踏上了漫长的旅途。他四处游荡，不知该哪里去。沿途他遇见更多人，却不再将他们之中任何一个视作同伴。
 
-</TimelineItem>
-
 ### 3.国崩加入愚人众
-
-<TimelineItem>
 
 ·愚者找到他之前，他已经从无数年的漂流中，习得了这样的经验：我是超越一切人的「人」，连神也惮于干涉我的命运。无论人与神，还是命运都没有裁决我的资格，应当如何度过剩余的寿命，也是我的自由吧。既然与这些以面具示人的人同行似乎很有趣，那就成为「一丘之貉」吧。
 
@@ -2001,13 +1508,9 @@ secondaryClass: "/nations"
 
 再后来，他带着深渊探索的成果重返至冬，获封第六席，女皇准许他的新名号——「散兵」。力量、权力与纷争的欲望，他都已具备。战中的棋子掀起狂澜，舞场上的厮杀者毁灭秩序。使命也从深渊探索改为机动待命，支持愚人众在各国的秘密行动。那一刻他确信，散兵才是他真正的名字。
 
-</TimelineItem>
-
 ### 4.散兵更换图纸事件
 
-<TimelineItem>
-
-<Subtitle>·散兵来到稻妻</Subtitle>
+#### ·散兵来到稻妻
 
 <QuoteBlock>
 
@@ -2021,12 +1524,7 @@ secondaryClass: "/nations"
 
 因为枫原义庆和丹羽有关，放了义庆。
 
-</TimelineItem>
-
-<TimelineItem>
-
-<div class="table-container">
-<table class="lightrelam-table">
+<table>
 <thead>
 <tr>
 <th>受害者</th>
@@ -2037,36 +1535,27 @@ secondaryClass: "/nations"
 <tbody>
 <tr>
 <td>刀匠</td>
-<td class="text-left">更换了刀匠的图纸</td>
-<td class="text-left">赤目兼长等刀匠因畏罪叛逃稻妻前往至冬。（后来竭尽全力锻出一把名刀，号曰「笼吊瓶一心」，这是有间接原因的结果，但不是危害结果）</td>
+<td>更换了刀匠的图纸</td>
+<td>赤目兼长等刀匠因畏罪叛逃稻妻前往至冬。（后来竭尽全力锻出一把名刀，号曰「笼吊瓶一心」，这是有间接原因的结果，但不是危害结果）</td>
 </tr>
 <tr>
 <td>神里家主</td>
-<td class="text-left">重伤前来阻截的时任神里家主</td>
-<td class="text-left">神里家主受重伤，神里家名誉受损</td>
+<td>重伤前来阻截的时任神里家主</td>
+<td>神里家主受重伤，神里家名誉受损</td>
 </tr>
 <tr>
 <td>枫原义庆</td>
-<td class="text-left">击败前来阻截的枫原义庆，因枫原义庆和丹羽久秀有关，放过了枫原义庆</td>
-<td class="text-left">枫原义庆为了不让后代受伤，隐瞒倾奇者一事，并放弃锻刀，转而研习盆景</td>
+<td>击败前来阻截的枫原义庆，因枫原义庆和丹羽久秀有关，放过了枫原义庆</td>
+<td>枫原义庆为了不让后代受伤，隐瞒倾奇者一事，并放弃锻刀，转而研习盆景</td>
 </tr>
 </tbody>
 </table>
-</div>
 
-</TimelineItem>
-
-<TimelineItem>
-
-<Subtitle>·国崩</Subtitle>
+#### ·国崩
 
 稻妻的传统戏剧中，有一类角色被称呼为「国崩」。他们通常都是意图窃取一国、玩弄阴谋诡计之人。在流浪的最后，他凭借自己的意志选择了这个名字。而他之前使用过的名字，就连他自己也不记得了。稻妻的传统戏剧，常以三幕之名相连为剧名，譬如《堇染》、《山月》、《虎啮鉴》三幕，合为《堇染山月虎啮鉴》一剧。或许终有一天，这具形骸所经历的一切，也会化为人类口中的故事，地脉遥远的记忆。只是现在，属于他的第三幕仍在上演。
 
-</TimelineItem>
-
-<TimelineItem>
-
-<Subtitle>·后来，散兵又回到踏鞴砂</Subtitle>
+#### ·后来，散兵又回到踏鞴砂
 
 此夜，一道黑影趁着暴雨来到踏鞴砂旧址。附近早应没有住户，可偏偏另有一名农夫为了谋生来到此地摘取鸣草，便借着夜色望见一条鬼魅似的人影立在山崖边。那人戴着宽大的帽子，令旁人无从窥清他的面貌。他的呼吸声却穿透雨幕飘入到农夫耳中，一起一落。　
 
@@ -2088,35 +1577,23 @@ secondaryClass: "/nations"
 
 农夫看罢，只觉得背脊发凉。踏鞴砂荒废多年，早已没什么人前来祭扫。即便有，为何又只在这样的夜晚出现呢。
 
-</TimelineItem>
-
 ### *对散兵更换刀匠图纸事件的重要批注
-
-<TimelineItem>
 
 作者：诗漱
 
 散兵更换刀匠图纸事件是原神剧情中争议最大的事件，关于事件的原因、经过与结果，虽然游戏剧情里已经讲明该事件的经过，但网络上流传的答案仍然五花八门，错误百出。为理清事实，下面给出我自己的解读，作为参考。
 
-</TimelineItem>
-
-<TimelineItem>
-
 #### 原因
 
-1.散兵（无名人偶）因过于脆弱，而被雷电影抛弃；<Footnote n="32" text="<a href='https://www.bilibili.com/video/BV1hW4y1e7Kx/?spm_id_from=333.1387.upload.video_card.click&vd_source=5521f8f34a1af08d13b6fcf39bf4506b' target='_blank'>《原神》剧情PV-「『神』意」_哔哩哔哩bilibili_原神</a>，流浪者角色故事，华馆梦醒形骸记"></Footnote>
+1.散兵（无名人偶）因过于脆弱，而被雷电影抛弃；<Footnote n="32" text="[《原神》剧情PV-「『神』意」_哔哩哔哩bilibili_原神](https://www.bilibili.com/video/BV1hW4y1e7Kx/?spm_id_from=333.1387.upload.video_card.click&vd_source=5521f8f34a1af08d13b6fcf39bf4506b)，流浪者角色故事，华馆梦醒形骸记"></Footnote>
 
-2.散兵（倾奇者）在踏鞴砂事件中，认为是丹羽久秀杀死了无辜之人，挖出无辜之人的心脏作为灭火材料，并因自知失职而畏罪潜逃，觉得自己被第二次背叛；<Footnote n="33" text="倾落伽蓝，<a href='https://www.bilibili.com/video/BV1hW4y1e7Kx/?spm_id_from=333.1387.upload.video_card.click&vd_source=5521f8f34a1af08d13b6fcf39bf4506b' target='_blank'>《原神》剧情PV-「『神』意」_哔哩哔哩bilibili_原神</a>，流浪者角色故事"></Footnote>
+2.散兵（倾奇者）在踏鞴砂事件中，认为是丹羽久秀杀死了无辜之人，挖出无辜之人的心脏作为灭火材料，并因自知失职而畏罪潜逃，觉得自己被第二次背叛；<Footnote n="33" text="倾落伽蓝，[《原神》剧情PV-「『神』意」_哔哩哔哩bilibili_原神](https://www.bilibili.com/video/BV1hW4y1e7Kx/?spm_id_from=333.1387.upload.video_card.click&vd_source=5521f8f34a1af08d13b6fcf39bf4506b)，流浪者角色故事"></Footnote>
 
-3.散兵（倾奇者）离开踏鞴砂后，其收养的孩童病故，散兵（倾奇者）认为自己被第三次背叛。<Footnote n="34" text="<a href='https://www.bilibili.com/video/BV1hW4y1e7Kx/?spm_id_from=333.1387.upload.video_card.click&vd_source=5521f8f34a1af08d13b6fcf39bf4506b' target='_blank'>《原神》剧情PV-「『神』意」_哔哩哔哩bilibili_原神</a>，流浪者角色故事"></Footnote>
+3.散兵（倾奇者）离开踏鞴砂后，其收养的孩童病故，散兵（倾奇者）认为自己被第三次背叛。<Footnote n="34" text="[《原神》剧情PV-「『神』意」_哔哩哔哩bilibili_原神](https://www.bilibili.com/video/BV1hW4y1e7Kx/?spm_id_from=333.1387.upload.video_card.click&vd_source=5521f8f34a1af08d13b6fcf39bf4506b)，流浪者角色故事"></Footnote>
 
 4.踏鞴砂事件实为化名埃舍尔的博士从中作梗，心脏属于丹羽本人。<Footnote n="35" text="倾落伽蓝"></Footnote>
 
 综上，散兵认为自己被三度背叛，感到命运不公，对雷电影和刀匠怀恨在心，企图施加报复，<Footnote n="36" text="流浪者角色故事"></Footnote>因此也自称国崩。<Footnote n="37" text="华馆梦醒形骸记"></Footnote>但这种仇恨是被博士设立骗局而教唆的。<Footnote n="38" text="倾落伽蓝"></Footnote>
-
-</TimelineItem>
-
-<TimelineItem>
 
 #### 经过
 
@@ -2126,10 +1603,6 @@ secondaryClass: "/nations"
 
 3.散兵击败枫原义庆，又因发现枫原义庆和丹羽久秀有关，放过了枫原义庆和其他人。散兵留下「吾名国崩」这句话后离去。<Footnote n="41" text="倾落伽蓝"></Footnote>
 
-</TimelineItem>
-
-<TimelineItem>
-
 #### 结果
 
 1.刀匠因畏罪叛逃稻妻前往至冬。（后来竭尽全力锻出一把名刀，号曰「笼吊瓶一心」，这是有间接因果关系的结果）<Footnote n="42" text="陌野不识故人，笼钓瓶一心"></Footnote>
@@ -2137,10 +1610,6 @@ secondaryClass: "/nations"
 2.神里家主受重伤，神里家名誉受损。后来神里家主去世，但无法证明与重伤的因果关系，疑罪从无。<Footnote n="43" text="倾落伽蓝"></Footnote>（注意：此处的神里家主不是绫人绫华的父母，而是辈分更大的神里家祖先，绫人绫华的父母的过世<Footnote n="44" text="神里绫人角色故事"></Footnote>与散兵没有因果关系）
 
 3.枫原义庆为了不让后代受伤，隐瞒此事，并放弃锻刀，转而研习盆景。<Footnote n="45" text="春庭景如旧"></Footnote>（注意：除了此处提到的负面影响，后面枫原家的没落<Footnote n="46" text="枫原万叶角色故事"></Footnote>与散兵没有因果关系）
-
-</TimelineItem>
-
-<TimelineItem>
 
 #### 总结
 
@@ -2155,10 +1624,6 @@ secondaryClass: "/nations"
 **2.共犯问题：** 博士虽然通过故意激起散兵仇恨，教唆散兵犯罪，但散兵后续的犯罪内容由其自主决定，超出了教唆范围。因此，博士与散兵不构成共同犯罪，散兵对其犯罪行为独立承担责任。
 
 **3.博士罪责：** 博士为了介入稻妻局势，一手策划踏鞴砂事件，故意杀死丹羽久秀，并教唆散兵犯罪，属于教唆犯，性质相较于散兵更为恶劣，社会危害程度更高，应当独立承担更多责任。
-
-</TimelineItem>
-
-<TimelineItem>
 
 <QuoteBlock>
 
@@ -2226,19 +1691,11 @@ Nunquam genitus desiderem
 
 </QuoteBlock>
 
-</TimelineItem>
-
 ### （三）三奉行
-
-<TimelineItem>
 
 奉行之名也取自欢喜奉行之意，得到雷电将军青睐的人，也会向雷电将军回报以爱与忠义。
 
-</TimelineItem>
-
-<TimelineItem>
-<div class="table-container">
-<table class="lightrelam-table">
+<table>
 <thead>
 <tr>
 <th>奉行/职责</th>
@@ -2252,92 +1709,75 @@ Nunquam genitus desiderem
 <td rowspan="3"><img src="/img/context/Inazuma/image8.png" alt="勘定奉行" style="display:block;margin:0 auto 8px;max-width:100%;height:auto;">勘定奉行<br/>柊家</td>
 <td rowspan="3">财政海关</td>
 <td>柊弘嗣</td>
-<td class="text-left">将狐赠与的留念镜做成留影机创办离岛　<br/>数百年前，柊家的弘嗣公曾在荒岛上奇迹般建起商港，广招能人商贾加以招待安置，又鼓励自由经营贸易，令此地盛极一时。</td>
+<td>将狐赠与的留念镜做成留影机创办离岛　<br/>数百年前，柊家的弘嗣公曾在荒岛上奇迹般建起商港，广招能人商贾加以招待安置，又鼓励自由经营贸易，令此地盛极一时。</td>
 </tr>
 <tr>
 <td>柊慎介</td>
-<td class="text-left">勘定奉行领导者，柊家家主。受到女士贿赂而推行眼狩令</td>
+<td>勘定奉行领导者，柊家家主。受到女士贿赂而推行眼狩令</td>
 </tr>
 <tr>
 <td>柊千里</td>
-<td class="text-left">柊慎介的女儿，和九条镰治是恋人</td>
+<td>柊慎介的女儿，和九条镰治是恋人</td>
 </tr>
 <tr>
 <td rowspan="4"><img src="/img/context/Inazuma/image9.png" alt="天领奉行" style="display:block;margin:0 auto 8px;max-width:100%;height:auto;">天领奉行<br/>九条家</td>
 <td rowspan="4">军事治安</td>
 <td>九条孝行</td>
-<td class="text-left">受到女士贿赂而推行眼狩令</td>
+<td>受到女士贿赂而推行眼狩令</td>
 </tr>
 <tr>
 <td>九条政仁</td>
-<td class="text-left">是幕府军大将，于神无冢任兵职</td>
+<td>是幕府军大将，于神无冢任兵职</td>
 </tr>
 <tr>
 <td>九条镰治</td>
-<td class="text-left">天领奉行领导者，九条家家主</td>
+<td>天领奉行领导者，九条家家主</td>
 </tr>
 <tr>
 <td>九条裟罗</td>
-<td class="text-left">（狐斋宫）曾结识年幼固执的天狗，借「锻炼」之名唬她循山苦行，却感其无羁的身姿，遂将这孩子举荐给九条的死脑筋们。</td>
+<td>（狐斋宫）曾结识年幼固执的天狗，借「锻炼」之名唬她循山苦行，却感其无羁的身姿，遂将这孩子举荐给九条的死脑筋们。</td>
 </tr>
 <tr>
 <td></td>
 <td></td>
 <td>鹿野院平藏</td>
-<td class="text-left">侦探</td>
+<td>侦探</td>
 </tr>
 <tr>
 <td rowspan="4"><img src="/img/context/Inazuma/image10.png" alt="社奉行" style="display:block;margin:0 auto 8px;max-width:100%;height:auto;">社奉行<br/>神里家</td>
 <td rowspan="4">祭典</td>
 <td>神里绫人</td>
-<td class="text-left">社奉行领导者，神里家家主</td>
+<td>社奉行领导者，神里家家主</td>
 </tr>
 <tr>
 <td>神里绫华</td>
-<td class="text-left">大小姐，白鹭公主</td>
+<td>大小姐，白鹭公主</td>
 </tr>
 <tr>
 <td>托马</td>
-<td class="text-left">家仆，地头蛇</td>
+<td>家仆，地头蛇</td>
 </tr>
 <tr>
 <td>早柚</td>
-<td class="text-left">终末番忍者</td>
+<td>终末番忍者</td>
 </tr>
 </tbody>
 </table>
-</div>
-</TimelineItem>
-
-<TimelineItem>
-
-<Subtitle>·裟罗被收养</Subtitle>
+#### ·裟罗被收养
 
 她原本栖居于一片平静的山林之中。不知从何时起，邪祟作乱，周遭安宁不再。虽有天狗之力，年幼的她却仍无力单独对抗魔物，更曾在战斗中被击落山崖，羽翼受损。她从高处坠落，受伤的翅膀无法张开，眼看就要绝望地摔落地面。「不应该是这样的！我本以为，凭我的能力，可以永远守护这片山林…」翌日清晨，路过山脚的居民发觉一个小女孩昏倒在路边。女孩模样有些狼狈，但周身毫发无损，竟不知为何躺倒在此。众人觉得惊奇，便带着她返回城中，即刻上报给天领奉行。九条家主九条孝行一见此女，便察觉到她手中那枚发光的对象是可遇而不可求的「神之眼」。如此年幼就已获得神明的注视，九条孝行认为，这个女孩便是上天赐予天领奉行的「命运」。他收养了女孩，赐名「裟罗」，培养她成为全能的战士，并要求她服从将军，为稻妻而战。
 
 九条孝行认为：若能培育出名将，九条家的地位与民望也将愈发稳固。一切也如他所想，稳步发展着。拥有「神之眼」力量的裟罗迅速崭露头角，年纪轻轻便不负众望成为天领奉行的大将。然而，正因为拥有神之眼，裟罗才比任何人都清楚，她之所以从高山上坠落还能毫发无伤，正是由于神在那一瞬间望见了她。一眼的注视，赐予她一生的力量。她所享有的一切，都可说是将军大人的垂怜。如果是为将军而战…裟罗认为，那不是命令，不是养父的计谋，而是她真心所向。
 
-</TimelineItem>
-
-<TimelineItem>
-
-<Subtitle>·托马来到稻妻</Subtitle>
+#### ·托马来到稻妻
 
 托马的父亲是稻妻人，母亲则是蒙德人。托马在蒙德长大，自幼便习惯了蒙德自由快乐的氛围。受此影响，他能与任何人都轻松打成一片。不过，他也自幼接受父亲的教导，极为看重「忠义」二字。托马的老爹返回稻妻后，他担心老爹在那边喝不到蒙德的酒，便独自坐船载着蒲公英酒驶向稻妻。途中遇到巨浪打翻了船，托马也落入水中。幸运的是，他就这么昏迷不醒地顺水漂流，直到漂到稻妻的海滩上。那时的托马一无所有、举目无亲，仍乐观地开始了自己在稻妻的生活。然而尽管他已全力以赴，最终也没能找到本该在稻妻的父亲。不过就在最为窘迫的时刻，托马在稻妻遇到了值得他将「忠义」贯彻到底的人。
 
-</TimelineItem>
-
-<TimelineItem>
-
-<Subtitle>·神里家的劫难<Footnote n="47" text="<a href='https://www.bilibili.com/video/BV1ZF411g7EZ/?spm_id_from=333.1387.upload.video_card.click&vd_source=5521f8f34a1af08d13b6fcf39bf4506b' target='_blank'>《原神》PV短片——「雪霁逢椿」_游戏热门视频</a>"></Footnote></Subtitle>
+#### ·神里家的劫难<Footnote n="47" text="[《原神》PV短片——「雪霁逢椿」_游戏热门视频](https://www.bilibili.com/video/BV1ZF411g7EZ/?spm_id_from=333.1387.upload.video_card.click&vd_source=5521f8f34a1af08d13b6fcf39bf4506b)"></Footnote>
 
 十年前，正是社奉行神里家失势之际。因父母双双过世而被卷入家主继任权之争的神里绫人这样告诉托马：「如今稻妻局势不明，神里家面临的麻烦只会越来越多。你是能看清利害关系的人，如果不想卷入其中，就早些离开吧。」受到神里家如此多恩惠的托马，能就这样离开吗？选择离去，便意味着他要抱着遗憾和愧疚回归到平凡平稳的生活中。暴风在即，托马也如海水中打转的树叶一般。但深思熟虑之后，托马的回答是：「在此时离开，就会失去忠义。父亲曾要求我做一个忠义之人…我愿尽我所能，为少爷和小姐尽一份薄力。未来你们所要走的道路，也必定会需要我这个帮手。」为忠义而燃烧的意志铸就出强烈愿望，引来了神明的注视。像是要回应托马的选择一般——在这个命运分歧的夜晚，他身边多出了一颗鲜红如烈焰的「神之眼」。
 
-</TimelineItem>
-
-<TimelineItem>
-
-<Subtitle>·神子的帮助</Subtitle>
+#### ·神子的帮助
 
 汹涌暗流牵扯了无数权贵，涉事世家大族均遭到问责贬谪。就连执掌社奉行的神里家，也因督导下属不力而备受牵连。将军降下最终裁决之前，久未涉足政事的宫司大人突然向将军进言，赶在风雨飘摇之际保下了神里家。由此，神里家虽元气大伤，却终是免去罢黜之虞。
 
@@ -2347,7 +1787,5 @@ Nunquam genitus desiderem
 
 </QuoteBlock>
 
-</TimelineItem>
-
-</TimelineWrapper>
+</Timeline>
 
