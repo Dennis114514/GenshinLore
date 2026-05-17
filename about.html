@@ -819,6 +819,51 @@
                 tocList.appendChild(li);
             });
             
+            // 为目录链接添加平滑滚动与高亮同步
+            document.querySelectorAll('.toc-link').forEach(link => {
+                link.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    const targetId = this.getAttribute('href').slice(1);
+                    const targetEl = document.getElementById(targetId);
+                    if (!targetEl) return;
+                    const topbarHeight = 70; // 顶部栏高度
+                    const rect = targetEl.getBoundingClientRect();
+                    const targetPosition = window.scrollY + rect.top - topbarHeight - 16;
+                    window.scrollTo({ top: targetPosition, behavior: 'smooth' });
+                    // 更新高亮
+                    if (typeof updateTocHighlight === 'function') {
+                        updateTocHighlight(targetId);
+                    }
+
+                    // 若移动端目录为打开状态，则收起
+                    const tocSidebarEl = document.querySelector('.toc-sidebar');
+                    const tocOverlayEl = document.querySelector('.mobile-toc-overlay');
+                    const mobileTocBtn = document.querySelector('.mobile-toc-btn');
+                    if (tocSidebarEl && tocSidebarEl.classList.contains('mobile-active')) {
+                        tocSidebarEl.classList.remove('mobile-active');
+                        if (tocOverlayEl) tocOverlayEl.classList.remove('active');
+                        document.body.style.overflow = '';
+                        if (mobileTocBtn) setTimeout(() => mobileTocBtn.classList.remove('hidden'), 350);
+                    }
+                });
+            });
+
+            // 确保收起/展开按钮已绑定（兼容 script.js 中的 collapseToc/expandToc）
+            const localCollapseBtn = document.getElementById('toc-collapse');
+            const localExpandBtn = document.getElementById('toc-expand');
+            if (localCollapseBtn) {
+                localCollapseBtn.addEventListener('click', function(e) {
+                    e.stopPropagation();
+                    if (typeof collapseToc === 'function') collapseToc();
+                });
+            }
+            if (localExpandBtn) {
+                localExpandBtn.addEventListener('click', function(e) {
+                    e.stopPropagation();
+                    if (typeof expandToc === 'function') expandToc();
+                });
+            }
+            
             // 初始化高亮
             updateTocHighlight();
             

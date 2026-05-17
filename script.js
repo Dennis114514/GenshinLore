@@ -19,6 +19,29 @@ function goToMain() {
 
 window.goToMain = goToMain;
 
+// 全局的目录导航收起/展开函数
+let tocCollapseBtn, tocExpandBtn, tocSidebar;
+
+function collapseToc() {
+    try {
+        if (tocSidebar) tocSidebar.classList.add('collapsed');
+        if (tocCollapseBtn) tocCollapseBtn.style.display = 'none';
+        if (tocExpandBtn) tocExpandBtn.classList.add('visible');
+    } catch (e) {
+        console.error('collapseToc error:', e);
+    }
+}
+
+function expandToc() {
+    try {
+        if (tocSidebar) tocSidebar.classList.remove('collapsed');
+        if (tocCollapseBtn) tocCollapseBtn.style.display = 'flex';
+        if (tocExpandBtn) tocExpandBtn.classList.remove('visible');
+    } catch (e) {
+        console.error('expandToc error:', e);
+    }
+}
+
 document.addEventListener('DOMContentLoaded', function() {
     const navItems = document.querySelectorAll('.nav-item');
     const indicator = document.querySelector('.nav-indicator');
@@ -108,21 +131,9 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 
     // TOC toggle functionality
-    const tocCollapseBtn = document.getElementById('toc-collapse');
-    const tocExpandBtn = document.getElementById('toc-expand');
-    const tocSidebar = document.querySelector('.toc-sidebar');
-    
-    function collapseToc() {
-        tocSidebar.classList.add('collapsed');
-        tocCollapseBtn.style.display = 'none';
-        tocExpandBtn.classList.add('visible');
-    }
-    
-    function expandToc() {
-        tocSidebar.classList.remove('collapsed');
-        tocCollapseBtn.style.display = 'flex';
-        tocExpandBtn.classList.remove('visible');
-    }
+    tocCollapseBtn = document.getElementById('toc-collapse');
+    tocExpandBtn = document.getElementById('toc-expand');
+    tocSidebar = document.querySelector('.toc-sidebar');
     
     if (tocCollapseBtn && tocSidebar) {
         tocCollapseBtn.addEventListener('click', collapseToc);
@@ -191,7 +202,14 @@ function initMobileToc() {
     if (collapseBtn) {
         collapseBtn.addEventListener('click', function(e) {
             e.stopPropagation();
-            closeMobileToc();
+            if (isMobile()) {
+                closeMobileToc();
+            } else {
+                // 桌面端：调用收起目录导航的函数
+                if (typeof collapseToc === 'function') {
+                    collapseToc();
+                }
+            }
         });
     }
     
