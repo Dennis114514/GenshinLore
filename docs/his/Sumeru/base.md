@@ -1,8 +1,11 @@
-﻿---
+---
 layout: doc
 title: 第三章：须弥·虚空劫灰往世书
+description: 须弥国别史，梳理阿佩普、赤王、花神、大慈树王、沙漠诸王、教令院、虚空系统与近现代须弥事件。
+keywords: 须弥历史,赤王,花神,大慈树王,教令院,虚空,原神须弥
+image: /img/country/sumeru-bg.jpg
 editLink: true
-secondaryClass: "/nations"
+secondaryClass: '/nations'
 ---
 
 <div class="text-center text-base text-[#4d4f53] leading-[2]">

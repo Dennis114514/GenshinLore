@@ -1,0 +1,22 @@
+{
+  "name": "日月全事",
+  "short_name": "日月全事",
+  "description": "最详尽的原神世界观手册",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#15110d",
+  "theme_color": "#15110d",
+  "lang": "zh-CN",
+  "icons": [
+    {
+      "src": "/favicon.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    },
+    {
+      "src": "/img/logo/favicon32x32.png",
+      "sizes": "32x32",
+      "type": "image/png"
+    }
+  ]
+}

@@ -1,9 +1,10 @@
 import { defineConfig } from 'vitepress'
 import tailwindcss from '@tailwindcss/vite'
 import { execSync } from 'node:child_process'
-import { copyFileSync, existsSync, mkdirSync, readdirSync, statSync } from 'node:fs'
+import { copyFileSync, existsSync, mkdirSync, readdirSync, statSync, writeFileSync } from 'node:fs'
 import { dirname, join } from 'node:path'
 import { fileURLToPath } from 'node:url'
+import { siteDescription, siteHead, siteTitle, siteUrl, transformSeoHead } from './seo.mjs'
 
 const tailwindPlugin = tailwindcss() as unknown as NonNullable<
   Parameters<typeof defineConfig>[0]['vite']
@@ -38,25 +39,36 @@ function createStaticFallbackPages() {
   }
 }
 
+function createRobotsTxt() {
+  if (!existsSync(distDir)) return
+
+  const robotsTxt = ['User-agent: *', 'Allow: /', '', `Sitemap: ${siteUrl}/sitemap.xml`, ''].join(
+    '\n',
+  )
+
+  writeFileSync(join(distDir, 'robots.txt'), robotsTxt, 'utf8')
+}
+
+function finalizeBuild() {
+  createStaticFallbackPages()
+  createRobotsTxt()
+}
+
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
-  title: '日月全事',
-  description: '最详尽的原神世界观手册',
+  title: siteTitle,
+  description: siteDescription,
   lang: 'zh-CN',
   lastUpdated: true,
   //base: isProd ? '/GenshinLore/' : '/',
 
-  head: [
-    // 图标
-    ['link', { rel: 'icon', href: '/favicon.png' }],
-  ],
+  head: siteHead,
 
   // 渲染md文档的自定义配置
   markdown: {
     headers: true,
     config: (md) => {
-      md.renderer.rules.strong_open = () =>
-        '<strong class="red-text">'
+      md.renderer.rules.strong_open = () => '<strong class="red-text">'
       md.renderer.rules.strong_close = () => '</strong>'
 
       const defaultLinkRender =
@@ -65,13 +77,7 @@ export default defineConfig({
           return self.renderToken(tokens, idx, options)
         }
 
-      md.renderer.rules.link_open = function (
-        tokens,
-        idx,
-        options,
-        env,
-        self,
-      ) {
+      md.renderer.rules.link_open = function (tokens, idx, options, env, self) {
         const token = tokens[idx]
         const href = token.attrGet('href')
         if (href && /^https?:\/\//.test(href)) {
@@ -84,10 +90,12 @@ export default defineConfig({
   },
 
   sitemap: {
-    hostname: 'https://genshinlore.cn/',
+    hostname: `${siteUrl}/`,
   },
 
-  buildEnd: createStaticFallbackPages,
+  transformHead: transformSeoHead,
+
+  buildEnd: finalizeBuild,
 
   // 国内镜像站备案展示配置（填写备案号即启用显示）
   themeConfig: {
@@ -105,8 +113,6 @@ export default defineConfig({
     define: {
       __MIRROR_COMMIT__: JSON.stringify(mirrorCommit),
     },
-    plugins: [
-      tailwindPlugin,
-    ],
+    plugins: [tailwindPlugin],
   },
 })

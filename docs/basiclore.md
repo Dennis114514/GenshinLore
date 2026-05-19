@@ -1,8 +1,11 @@
 ---
 layout: doc
 title: 基本设定
+description: 原神提瓦特基本设定入口，整理龙族与光界、降临者、天理与人界、魔神、深渊、星空、地脉及世界规律等核心概念。
+keywords: 原神基本设定,提瓦特设定,天理,深渊,魔神,降临者,龙族,星空
+image: /img/context/basiclore/1.png
 editLink: true
-secondaryClass: "/basiclore"
+secondaryClass: '/basiclore'
 ---
 
 <Intro>

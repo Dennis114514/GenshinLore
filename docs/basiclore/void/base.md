@@ -1,11 +1,13 @@
 ---
 layout: doc
 title: 深渊/虚界
+description: 梳理原神深渊与虚界设定，聚焦深渊力量、漆黑灾祸、禁忌知识及其对提瓦特文明的影响。
 editLink: true
-secondaryClass: "/basiclore"
+secondaryClass: '/basiclore'
 ---
 
 ## 深渊的性质
+
 虚无界代表力量是深渊，主要特点是有侵蚀性，与光界和人界都不兼容。漆黑命运（深渊本体）和宇宙明光（灵光）是对抗的关系，且漆黑命运必然胜利。
 
 > 在我们的世界，星象是天上的丝线牵动地上的人；
