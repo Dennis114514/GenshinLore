@@ -1,12 +1,16 @@
 {
   "name": "日月全事",
   "short_name": "日月全事",
-  "description": "最详尽的原神世界观手册",
+  "description": "最详尽的原神世界观手册，系统整理提瓦特历史、七国剧情、天理、人界、龙族、深渊、魔神与世界观考据内容。",
   "start_url": "/",
+  "scope": "/",
   "display": "standalone",
+  "orientation": "portrait-primary",
   "background_color": "#15110d",
   "theme_color": "#15110d",
   "lang": "zh-CN",
+  "categories": ["books", "education", "entertainment"],
+  "dir": "ltr",
   "icons": [
     {
       "src": "/favicon.png",

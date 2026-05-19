@@ -3,6 +3,13 @@ layout: doc
 title: 提瓦特·日月前事
 description: 提瓦特日月前事总览，围绕原神世界早期历史、原初秩序、天幕、月宫、葬火与文明更替梳理关键事件脉络。
 keywords: 提瓦特历史,日月前事,原初之人,天幕,月宫,葬火,原神世界观
+seo:
+  summary: 提瓦特·日月前事是站点的宏观历史主线页面，集中梳理原初时代、龙族秩序、天幕与月宫、文明更替、葬火和七王时代等世界观线索。
+  topics:
+    - 提瓦特早期历史
+    - 原初秩序
+    - 天幕与月宫
+    - 文明更替
 image: /img/context/teyvathis/3.png
 editLink: true
 secondaryClass: '/teyvathis'

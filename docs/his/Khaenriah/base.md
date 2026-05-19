@@ -3,6 +3,13 @@ layout: doc
 title: 第?章：坎瑞亚·未有之梦
 description: 坎瑞亚国别史，梳理无神之国、漆黑灾祸、五大罪人、遗民、深渊教团与坎瑞亚覆灭相关线索。
 keywords: 坎瑞亚历史,漆黑灾祸,五大罪人,深渊教团,无神之国
+seo:
+  summary: 坎瑞亚页面聚焦无神之国与漆黑灾祸，适合查找坎瑞亚覆灭、五大罪人、深渊教团、遗民命运和天理相关线索。
+  topics:
+    - 坎瑞亚
+    - 漆黑灾祸
+    - 五大罪人
+    - 深渊教团
 editLink: true
 secondaryClass: '/nations'
 ---
