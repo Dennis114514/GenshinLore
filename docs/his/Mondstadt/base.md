@@ -1,8 +1,11 @@
-﻿---
+---
 layout: doc
 title: 序章：蒙德·捕风的异乡人
+description: 蒙德国别史，梳理风龙时期、沙尔·芬德尼尔、烈风王、高塔孤王、贵族专政、西风骑士团与近现代蒙德事件。
+keywords: 蒙德历史,风神,风龙,沙尔芬德尼尔,西风骑士团,原神蒙德
+image: /img/country/mondstadt-bg.jpg
 editLink: true
-secondaryClass: "/nations"
+secondaryClass: '/nations'
 ---
 
 <div class="text-center text-base text-[#4d4f53] leading-[2]">
@@ -1164,7 +1167,8 @@ Bis der Falke fliegt, im Morgenglanz
 
 「在新生的蒙德，所有人都应该拿起武器捍卫我们的自由。」
 
-![图 12 最初的铁钱&#10;古旧的铁质钱币，其上摹刻着鸦印的形状，据说是很久以前的盗宝团创始人雷德·米勒打造出的第一枚真正的「铁钱」](/img/context/Mondstadt/16.png)
+![图 12 最初的铁钱
+古旧的铁质钱币，其上摹刻着鸦印的形状，据说是很久以前的盗宝团创始人雷德·米勒打造出的第一枚真正的「铁钱」](/img/context/Mondstadt/16.png)
 
 名为瑞文伍德的少年，他是城中铁匠的儿子，在无名骑士停留蒙德的短短数年里，少年几乎成了他的跟班。
 
@@ -1414,7 +1418,7 @@ Bis der Falke fliegt, im Morgenglanz
 
 ## 七、灾变之后
 
-### *灾变之后的蒙德编制
+### \*灾变之后的蒙德编制
 
 <table>
 <thead>

@@ -1,8 +1,10 @@
-﻿---
+---
 layout: doc
 title: 第六章：至冬·无神怜爱的雪国
+description: 至冬国别史，梳理冰之国、愚人众、执行官、女皇与至冬相关历史和世界观线索。
+keywords: 至冬历史,冰神,愚人众,执行官,至冬女皇,原神至冬
 editLink: true
-secondaryClass: "/nations"
+secondaryClass: '/nations'
 ---
 
 <div class="text-center text-base text-[#4d4f53] leading-[2]">
@@ -54,6 +56,7 @@ secondaryClass: "/nations"
 而唯有长生的妖精们知道，终年不化的冻土远比沙皇的治世更加久远。
 
 #### ·少年和仙灵始祖相爱
+
 #### ·埋放在时间囊中的信笺
 
 亲爱的后代，很高兴你能读到这封信。
@@ -227,7 +230,7 @@ secondaryClass: "/nations"
 
 ## 三、3000年前 魔神战争 <Footnote n="5" text="苍星妖灵史略" />
 
-### *魔神战争及白沙皇统治时期重要人物
+### \*魔神战争及白沙皇统治时期重要人物
 
 <table>
 <thead>

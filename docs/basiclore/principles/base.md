@@ -1,8 +1,9 @@
-﻿---
+---
 layout: doc
 title: 天理/人界
+description: 梳理原神天理与人界设定，涵盖原初之人、天上秩序、人界建立、僭越与世界规则等核心内容。
 editLink: true
-secondaryClass: "/basiclore"
+secondaryClass: '/basiclore'
 ---
 
 <script setup lang="ts">

@@ -15,6 +15,7 @@
   "scripts": {
     "docs:dev": "vitepress dev docs --host 127.0.0.1 --port 5173 --strictPort",
     "docs:build": "vitepress build docs",
+    "docs:build:site": "node scripts/build-site.mjs",
     "docs:preview": "vitepress preview docs",
     "lint": "eslint .",
     "format": "prettier --write ."

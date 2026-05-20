@@ -1,8 +1,11 @@
-﻿---
+---
 layout: doc
 title: 第二章：稻妻·千手百眼，天下人间
+description: 稻妻国别史，梳理月宫与葬火、白夜国、雷电将军、三奉行、锁国令、眼狩令与近现代稻妻事件。
+keywords: 稻妻历史,雷电将军,白夜国,三奉行,眼狩令,原神稻妻
+image: /img/country/inazuma-bg.jpg
 editLink: true
-secondaryClass: "/nations"
+secondaryClass: '/nations'
 ---
 
 <div class="text-center text-base text-[#4d4f53] leading-[2]">
@@ -536,7 +539,7 @@ secondaryClass: "/nations"
 
 ## 五、雷电真时期
 
-### *雷电真与漆黑灾祸时期主要人物
+### \*雷电真与漆黑灾祸时期主要人物
 
 <table>
 <thead>
@@ -1577,7 +1580,7 @@ secondaryClass: "/nations"
 
 农夫看罢，只觉得背脊发凉。踏鞴砂荒废多年，早已没什么人前来祭扫。即便有，为何又只在这样的夜晚出现呢。
 
-### *对散兵更换刀匠图纸事件的重要批注
+### \*对散兵更换刀匠图纸事件的重要批注
 
 作者：诗漱
 
@@ -1788,4 +1791,3 @@ Nunquam genitus desiderem
 </QuoteBlock>
 
 </Timeline>
-
