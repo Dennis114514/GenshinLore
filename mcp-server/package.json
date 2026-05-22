@@ -11,9 +11,14 @@
     "build-data": "node parse-content.js",
     "start": "node index.js"
   },
-  "keywords": ["mcp", "genshin-impact", "lore"],
+  "keywords": [
+    "mcp",
+    "genshin-impact",
+    "lore"
+  ],
   "license": "GPL-3.0",
   "dependencies": {
-    "@modelcontextprotocol/sdk": "^1.29.0"
+    "@modelcontextprotocol/sdk": "^1.29.0",
+    "zod": "^4.4.3"
   }
 }

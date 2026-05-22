@@ -96,10 +96,12 @@ function htmlToText(html) {
     text = text.replace(/<[^>]+>/g, "");
   } while (text !== prev);
 
-  // Decode HTML entities last, after all tags are removed
+  // Decode HTML entities last, after all tags are removed.
+  // Decode &amp; first so that sequences like &amp;lt; become &lt; (literal text),
+  // not accidentally decoded further into <.
+  text = text.replace(/&amp;/g, "&");
   text = text.replace(/&lt;/g, "<");
   text = text.replace(/&gt;/g, ">");
-  text = text.replace(/&amp;/g, "&");
   text = text.replace(/&nbsp;/g, " ");
 
   // Normalize whitespace
