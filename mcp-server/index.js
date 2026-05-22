@@ -131,7 +131,7 @@ function parseMondstadtHtml(htmlContent) {
   if (!mainMatch) return null;
 
   const mainHtml = mainMatch[1];
-  let title = "\u5E8F\u7AE0\uFF1A\u8499\u5FB7\u00B7\u6355\u98CE\u7684\u5F02\u4E61\u4EBA";
+  let title = "序章：蒙德·捕风的异乡人";
 
   const titleMatch = mainHtml.match(
     /<h1[^>]*>([^<]*(?:<[^>]*>[^<]*)*)<\/h1>/i
@@ -186,13 +186,13 @@ function buildLoreIndex() {
   // 2. Parse basiclore HTML files (no md source available)
   const basicloreDir = join(REPO_ROOT, "basiclore");
   const basicloreNames = {
-    descenders: "\u964D\u4E34\u8005",
-    facilities: "\u8BBE\u65BD",
-    god: "\u9B54\u795E/\u90AA\u795E",
-    lightrelam: "\u5149\u754C",
-    principles: "\u5929\u7406/\u4EBA\u754C",
-    stars: "\u661F\u7A7A",
-    void: "\u865A\u7A7A",
+    descenders: "降临者",
+    facilities: "设施",
+    god: "魔神/邪神",
+    lightrelam: "光界",
+    principles: "天理/人界",
+    stars: "星空",
+    void: "虚空",
   };
 
   if (existsSync(basicloreDir)) {
