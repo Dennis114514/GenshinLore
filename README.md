@@ -62,6 +62,42 @@
 |genshinlore.peacefuly.top|MCheping8108|参考[Issue#12](https://github.com/Dennis114514/GenshinLore/issues/12)|
 |genshinlore.makotowu.cn|makotowu|参考[PullRequest#13](https://github.com/Dennis114514/GenshinLore/pull/13)，注意该镜像站为Vitepress测试站点，其内容**与主站有较大的不同**，仅用于学习交流|
 
+## MCP Server (AI 工具集成)
+
+本项目包含一个 [Model Context Protocol (MCP)](https://modelcontextprotocol.io/) 服务器，允许 AI 助手（如 Claude、GitHub Copilot 等）查询原神世界观知识库。
+
+### 安装与使用
+
+```bash
+cd mcp-server
+npm install
+npm run build-data   # 解析 md/ 和 basiclore/ 内容生成索引
+npm start            # 启动 MCP 服务器 (stdio 模式)
+```
+
+### 提供的工具
+
+| 工具 | 说明 | 参数 |
+|------|------|------|
+| `get_categories` | 列出所有可用的知识分类及章节标题 | 无 |
+| `read_lore` | 读取指定分类的内容，可选读取特定章节 | `category` (必需), `section` (可选) |
+| `search_lore` | 按关键词搜索所有文档，返回匹配的章节和片段 | `query` (必需), `max_results` (可选) |
+
+### MCP 客户端配置示例
+
+在支持 MCP 的客户端（如 Claude Desktop）中添加如下配置：
+
+```json
+{
+  "mcpServers": {
+    "genshinlore": {
+      "command": "node",
+      "args": ["/path/to/GenshinLore/mcp-server/index.js"]
+    }
+  }
+}
+```
+
 ## 项目结构
 ```
 <!-- TREE-START -->
