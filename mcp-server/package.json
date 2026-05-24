@@ -1,0 +1,23 @@
+{
+  "name": "genshinlore-mcp-server",
+  "version": "1.0.0",
+  "description": "MCP server for querying Genshin Impact lore knowledge base",
+  "type": "module",
+  "main": "index.js",
+  "bin": {
+    "genshinlore-mcp": "./index.js"
+  },
+  "scripts": {
+    "start": "node index.js"
+  },
+  "keywords": [
+    "mcp",
+    "genshin-impact",
+    "lore"
+  ],
+  "license": "GPL-3.0",
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.29.0",
+    "zod": "^4.4.3"
+  }
+}

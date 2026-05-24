@@ -62,6 +62,90 @@
 |genshinlore.peacefuly.top|MCheping8108|参考[Issue#12](https://github.com/Dennis114514/GenshinLore/issues/12)|
 |genshinlore.makotowu.cn|makotowu|参考[PullRequest#13](https://github.com/Dennis114514/GenshinLore/pull/13)，注意该镜像站为Vitepress测试站点，其内容**与主站有较大的不同**，仅用于学习交流|
 
+## MCP Server (AI 工具集成)
+
+本项目包含一个 [Model Context Protocol (MCP)](https://modelcontextprotocol.io/) 服务器，允许 AI 助手（如 Claude、GitHub Copilot 等）查询原神世界观知识库。
+
+### 安装与使用
+
+```bash
+cd mcp-server
+npm install
+npm start            # 启动 MCP 服务器 (默认 http://localhost:3000/mcp)
+```
+
+服务器启动时会自动从 `md/` 目录的 Markdown 源文件以及 `basiclore/` 的 HTML 文件中解析内容，无需预构建步骤。
+
+可通过环境变量 `PORT` 自定义端口：
+
+```bash
+PORT=8080 npm start  # 使用 8080 端口
+```
+
+### 传输协议
+
+服务器使用 **Streamable HTTP** 传输协议（MCP 规范推荐），通过 HTTP 提供服务：
+
+- **MCP 端点**：`POST /mcp`（处理 JSON-RPC 请求）
+- **健康检查**：`GET /health`（返回服务器状态）
+
+### 提供的工具
+
+| 工具 | 说明 | 参数 |
+|------|------|------|
+| `get_categories` | 列出所有可用的知识分类及章节标题 | 无 |
+| `read_lore` | 读取指定分类的内容，可选读取特定章节 | `category` (必需), `section` (可选) |
+| `search_lore` | 按关键词搜索所有文档，返回匹配的章节和片段 | `query` (必需), `max_results` (可选) |
+
+### MCP 客户端配置示例
+
+在支持 MCP 的客户端（如 Claude Desktop）中添加如下配置：
+
+```json
+{
+  "mcpServers": {
+    "genshinlore": {
+      "url": "http://localhost:3000/mcp"
+    }
+  }
+}
+```
+
+### 同时提供网页服务
+
+设置环境变量 `SERVE_STATIC=true`，同一个进程即可同时作为 MCP 服务器和静态网站服务器：
+
+```bash
+SERVE_STATIC=true npm start
+```
+
+此时访问 `http://localhost:3000/` 即可浏览网站，`/mcp` 端点继续处理 MCP 请求。
+
+### 部署到云平台（Railway / Render / Fly.io）
+
+由于服务器是标准的 HTTP 服务，可以直接部署到各类云平台。以 Railway 为例：
+
+1. 在 Railway 创建新项目，连接 GitHub 仓库
+2. **Root Directory 保持为仓库根目录**（因为 MCP 服务器需要读取上级目录的 `md/` 和 `basiclore/`）
+3. 设置构建与启动命令：
+   - **Build Command**: `cd mcp-server && npm install`
+   - **Start Command**: `cd mcp-server && npm start`
+4. 如需同时提供网页服务，添加环境变量 `SERVE_STATIC=true`
+5. `PORT` 环境变量由平台自动注入，无需手动配置
+6. 部署后，MCP 端点地址为 `https://<your-app>.up.railway.app/mcp`
+
+客户端配置示例（远程部署）：
+
+```json
+{
+  "mcpServers": {
+    "genshinlore": {
+      "url": "https://<your-app>.up.railway.app/mcp"
+    }
+  }
+}
+```
+
 ## 项目结构
 ```
 <!-- TREE-START -->
