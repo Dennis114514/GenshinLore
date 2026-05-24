@@ -1,10 +1,3 @@
-#!/usr/bin/env node
-// GenshinLore MCP Server
-// Reads lore directly from md/ source files and basiclore/ HTML at startup.
-// Provides 3 tools: get_categories, read_lore, search_lore
-// Uses Streamable HTTP transport (default port 3000)
-// Optionally serves the static website on the same port (set SERVE_STATIC=true)
-
 import { McpServer } from "@modelcontextprotocol/sdk/server/mcp.js";
 import { StreamableHTTPServerTransport } from "@modelcontextprotocol/sdk/server/streamableHttp.js";
 import { createServer } from "http";
@@ -469,8 +462,7 @@ const MIME_TYPES = {
   ".txt": "text/plain; charset=utf-8",
 };
 
-function serveStaticFile(req, res) {
-  let urlPath = req.url.split("?")[0];
+function serveStaticFile(urlPath, res) {
   if (urlPath.endsWith("/")) urlPath += "index.html";
 
   // Prevent path traversal
@@ -542,7 +534,7 @@ async function main() {
 
     // Serve static website files when enabled
     if (SERVE_STATIC) {
-      serveStaticFile(req, res);
+      serveStaticFile(req.url.split("?")[0], res);
       return;
     }
 

@@ -82,6 +82,21 @@ npm start            # 启动 MCP 服务器 (默认 http://localhost:3000/mcp)
 PORT=8080 npm start  # 使用 8080 端口
 ```
 
+### 使用 Docker 运行
+
+如果你希望直接从仓库根目录部署，可以使用仓库内置的 `Dockerfile`：
+
+```bash
+docker build -t genshinlore-mcp .
+docker run --rm -p 3000:3000 genshinlore-mcp
+```
+
+如需同时提供网页服务：
+
+```bash
+docker run --rm -p 3000:3000 -e SERVE_STATIC=true genshinlore-mcp
+```
+
 ### 传输协议
 
 服务器使用 **Streamable HTTP** 传输协议（MCP 规范推荐），通过 HTTP 提供服务：
@@ -123,16 +138,16 @@ SERVE_STATIC=true npm start
 
 ### 部署到云平台（Railway / Render / Fly.io）
 
-由于服务器是标准的 HTTP 服务，可以直接部署到各类云平台。以 Railway 为例：
+由于服务器是标准的 HTTP 服务，可以直接部署到各类云平台。仓库根目录已经提供 `Dockerfile`，推荐优先使用 Docker 部署。以 Railway 为例：
 
 1. 在 Railway 创建新项目，连接 GitHub 仓库
 2. **Root Directory 保持为仓库根目录**（因为 MCP 服务器需要读取上级目录的 `md/` 和 `basiclore/`）
-3. 设置构建与启动命令：
-   - **Build Command**: `cd mcp-server && npm install`
-   - **Start Command**: `cd mcp-server && npm start`
+3. Railway 检测到 `Dockerfile` 后会自动使用 Docker 构建，无需额外填写 Build Command / Start Command
 4. 如需同时提供网页服务，添加环境变量 `SERVE_STATIC=true`
 5. `PORT` 环境变量由平台自动注入，无需手动配置
 6. 部署后，MCP 端点地址为 `https://<your-app>.up.railway.app/mcp`
+
+如果平台不自动识别 Docker，也请显式指定使用仓库根目录下的 `Dockerfile`，不要再填写 `cd mcp-server && npm install` 这类命令。
 
 客户端配置示例（远程部署）：
 
