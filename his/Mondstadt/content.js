@@ -1,13 +1,21 @@
-        document.addEventListener('DOMContentLoaded', () => {
-            // 链接样式
-            const linkStyle = document.createElement('style');
-            linkStyle.textContent = `.custom-link{color:#D3BC8E;text-decoration:none}.custom-link:hover{color:#B59A7E}`;
-            document.head.appendChild(linkStyle);
-            
-            // Markdown 内容会硬编码进此数组
-            const MD_PARTS = [];
-            // __MD_PARTS_START__
-            MD_PARTS.push(String.raw`# 序章：蒙德·捕风的异乡人
+/**
+ * Copyright (C) 2026 GenshinLore Website & Dennis114514
+ * Licensed under the GNU General Public License v3.0 (GPL-3.0)
+ * See LICENSE.md file in the project root for full license information.
+ */
+document.addEventListener('DOMContentLoaded', () => {
+    /**
+     * 自定义链接样式元素
+     * 创建一个style标签，定义.custom-link类的样式
+     * 用于美化文档中的链接显示效果
+     */
+    const linkStyle = document.createElement('style');
+    linkStyle.textContent = `.custom-link{color:#D3BC8E;text-decoration:none}.custom-link:hover{color:#B59A7E}`;
+    document.head.appendChild(linkStyle);
+     //Markdown内容数组
+    const MD_PARTS = [];
+    // __MD_PARTS_START__
+    MD_PARTS.push(String.raw`# 序章：蒙德·捕风的异乡人
 
 mea  libertas  meus  canor  
 
@@ -1684,90 +1692,126 @@ Venti，venti……你是什么？
             // __MD_PARTS_END__
            const md = MD_PARTS.join('\n');
 
-            const pageTitleEl = document.getElementById('page-title');
-            const introEl = document.getElementById('timeline-intro');
-            const timelineEl = document.getElementById('timeline');
-            const tocList = document.getElementById('toc-list');
+    /**
+     * 页面DOM元素引用
+     * 获取页面中用于渲染内容的关键DOM节点
+     */
+    const pageTitleEl = document.getElementById('page-title');  // 页面标题元素
+    const introEl = document.getElementById('timeline-intro');   // 引言内容区域
+    const timelineEl = document.getElementById('timeline');     // 时间线主体区域
+    const tocList = document.getElementById('toc-list');         // 目录列表容器
 
-            const modal = document.getElementById('modal');
-            const modalBody = document.getElementById('modal-body');
-            const closeModal = document.getElementById('close-modal');
+    /**
+     * 模态框相关元素
+     * 用于展示引文详情的弹窗组件
+     */
+    const modal = document.getElementById('modal');           // 模态框容器
+    const modalBody = document.getElementById('modal-body');   // 模态框内容区域
+    const closeModal = document.getElementById('close-modal'); // 关闭按钮
 
-            function openModal(html) {
-                modalBody.innerHTML = html;
-                modal.style.display = 'flex';
-                setTimeout(() => modal.classList.add('modal-active'), 10);
-            }
+    /**
+     * 打开模态框函数
+     * @param {string} html - 要显示的HTML内容
+     */
+    function openModal(html) {
+        modalBody.innerHTML = html;
+        modal.style.display = 'flex';
+        setTimeout(() => modal.classList.add('modal-active'), 10);
+    }
 
-            function closeModalFunc() {
-                modal.classList.remove('modal-active');
-                setTimeout(() => { modal.style.display = 'none'; }, 300);
-            }
+    /**
+     * 关闭模态框函数
+     * 带有淡出动画效果
+     */
+    function closeModalFunc() {
+        modal.classList.remove('modal-active');
+        setTimeout(() => { modal.style.display = 'none'; }, 300);
+    }
 
-            closeModal.addEventListener('click', closeModalFunc);
-            modal.addEventListener('click', (e) => { if (e.target === modal) closeModalFunc(); });
-            document.addEventListener('keydown', (e) => {
-                if (e.key === 'Escape' && modal.style.display === 'flex') closeModalFunc();
+    // 绑定模态框关闭事件
+    closeModal.addEventListener('click', closeModalFunc);
+    modal.addEventListener('click', (e) => { if (e.target === modal) closeModalFunc(); });
+    document.addEventListener('keydown', (e) => {
+        if (e.key === 'Escape' && modal.style.display === 'flex') closeModalFunc();
+    });
+
+    /**
+     * HTML转义函数
+     * 将特殊字符转换为HTML实体，防止XSS攻击
+     * @param {string} text - 待转义的文本
+     * @returns {string} - 转义后的文本
+     */
+    function escapeHtml(text) {
+        return text
+            .replaceAll('&', '&amp;')
+            .replaceAll('<', '&lt;')
+            .replaceAll('>', '&gt;')
+            .replaceAll('"', '&quot;')
+            .replaceAll("'", '&#39;');
+    }
+
+    /**
+     * 行内文本标准化函数
+     * 将Markdown格式转换为HTML，并处理特殊标记
+     * @param {string} raw - 原始文本
+     * @returns {string} - 转换后的HTML字符串
+     */
+    function normalizeInline(raw) {
+        let s = raw ?? '';
+        // 使用Unicode私有区域字符作为临时分隔符
+        const DELIM_ALT = '\uE001';   // 图片alt文本分隔符
+        const DELIM_LINK = '\uE002';  // 链接文本分隔符
+        
+        // 预处理：移除回车符，保护特殊HTML标签
+        s = s.replaceAll(/\r/g, '');
+        s = s.replaceAll(/<br\s*\/?>/gi, '[[[BR]]]');
+        s = s.replaceAll(/<sup>\s*(\d+)\s*<\/sup>/gi, '[[[SUP:$1]]]');
+        s = s.replaceAll(/<sub>\s*(\d+)\s*<\/sub>/gi, '[[[SUB:$1]]]');
+        
+        // 保护Markdown图片格式（排除特殊标记）
+        s = s.replaceAll(/!\[(?!Introbg[01]|Imagebg)([^\]]*?)\]\(([^)]*)\)/gi,
+            (_, alt, src) => `[[[MDIMG:${src + DELIM_ALT + alt}]]]`);
+        
+        // 保护[Image](...)格式（必须在链接保护之前）
+        s = s.replaceAll(/\[Image\]\s*\(\s*["']([^"']+)["']\s*\)/gi, '[[[IMG:$1]]]');
+        
+        // 保护Markdown链接格式
+        s = s.replaceAll(/\[([^\]]*?)\]\(([^)]*)\)/gi,
+            (_, text, url) => `[[[LINK:${url + DELIM_LINK + text}]]]`);
+        
+        // HTML转义
+        s = escapeHtml(s);
+
+        // Markdown格式化：加粗/斜体/删除线
+        s = s.replaceAll(/\*\*([^*]+?)\*\*/g, '<span style="color:red;">$1</span>');  // 加粗
+        s = s.replaceAll(/(^|[^*])\*([^*]+?)\*(?!\*)/g, '$1<em>$2</em>');             // 斜体
+        s = s.replaceAll(/~~([^~~]+?)~~/g, '<del>$1</del>');                           // 删除线
+
+        // 还原允许的标签并生成最终HTML
+        s = s
+            .replaceAll('[[[BR]]]', '<br/>')
+            .replaceAll(/\[\[\[SUP:(\d+)\]\]\]/g, '<sup>$1</sup>')
+            .replaceAll(/\[\[\[SUB:(\d+)\]\]\]/g, '<sub>$1</sub>')
+            .replaceAll(/\[\[\[MDIMG:([^\]]+)\]\]\]/g, (match, data) => {
+                const idx = data.indexOf(DELIM_ALT);
+                const src = idx >= 0 ? data.slice(0, idx) : data;
+                const alt = idx >= 0 ? data.slice(idx + 1) : '';
+                let fixedSrc = src.replaceAll('\\', '/').replace(/^\/?\.\.\//, '../../');
+                return `<img src="${fixedSrc}" alt="${alt}" class="timeline-image-inline" style="display:block;margin:0 auto 8px;max-width:100%;height:auto;"><span class="image-caption">${alt}</span>`;
+            })
+            .replaceAll(/\[\[\[LINK:([^\]]+)\]\]\]/g, (match, data) => {
+                const idx = data.indexOf(DELIM_LINK);
+                const url = idx >= 0 ? data.slice(0, idx) : '';
+                const text = idx >= 0 ? data.slice(idx + 1) : data;
+                return `<a href="${url}" target="_blank" class="custom-link">${text}</a>`;
+            })
+            .replaceAll(/\[\[\[IMG:([^\]]+)\]\]\]/g, (match, src) => {
+                let fixedSrc = src.replaceAll('\\', '/').replace(/^\/?\.\.\//, '../../');
+                return `<img src="${fixedSrc}" alt="image" class="table-inline-image" style="display:block;margin:0 auto 8px;max-width:100%;height:auto;">`;
             });
 
-            function escapeHtml(text) {
-                return text
-                    .replaceAll('&', '&amp;')
-                    .replaceAll('<', '&lt;')
-                    .replaceAll('>', '&gt;')
-                    .replaceAll('"', '&quot;')
-                    .replaceAll("'", '&#39;');
-            }
-
-            function normalizeInline(raw) {
-                let s = raw ?? '';
-                // statistically unlikely delimiter
-                const DELIM_ALT = '\uE001';
-                const DELIM_LINK = '\uE002';
-                s = s.replaceAll(/\r/g, '');
-                s = s.replaceAll(/<br\s*\/?>/gi, '[[[BR]]]');
-                s = s.replaceAll(/<sup>\s*(\d+)\s*<\/sup>/gi, '[[[SUP:$1]]]');
-                s = s.replaceAll(/<sub>\s*(\d+)\s*<\/sub>/gi, '[[[SUB:$1]]]');
-                // 保护 ![alt](path) 格式 —— 排除 Introbg0 / Introbg1 / Imagebg
-                s = s.replaceAll(/!\[(?!Introbg[01]|Imagebg)([^\]]*?)\]\(([^)]*)\)/gi,
-                    (_, alt, src) => `[[[MDIMG:${src + DELIM_ALT + alt}]]]`);
-                // 保护 [Image](...) 格式（必须在链接保护之前）
-                s = s.replaceAll(/\[Image\]\s*\(\s*["']([^"']+)["']\s*\)/gi, '[[[IMG:$1]]]');
-                // 保护 [text](url) 格式（链接）
-                s = s.replaceAll(/\[([^\]]*?)\]\(([^)]*)\)/gi,
-                    (_, text, url) => `[[[LINK:${url + DELIM_LINK + text}]]]`);
-                s = escapeHtml(s);
-
-                // markdown 加粗/斜体/删除线（轻量支持）
-                s = s.replaceAll(/\*\*([^*]+?)\*\*/g, '<span style="color:red;">$1</span>');
-                s = s.replaceAll(/(^|[^*])\*([^*]+?)\*(?!\*)/g, '$1<em>$2</em>');
-                s = s.replaceAll(/~~([^~~]+?)~~/g, '<del>$1</del>');
-
-                // 还原允许标签
-                s = s
-                    .replaceAll('[[[BR]]]', '<br/>')
-                    .replaceAll(/\[\[\[SUP:(\d+)\]\]\]/g, '<sup>$1</sup>')
-                    .replaceAll(/\[\[\[SUB:(\d+)\]\]\]/g, '<sub>$1</sub>')
-                    .replaceAll(/\[\[\[MDIMG:([^\]]+)\]\]\]/g, (match, data) => {
-                        const idx = data.indexOf(DELIM_ALT);
-                        const src = idx >= 0 ? data.slice(0, idx) : data;
-                        const alt = idx >= 0 ? data.slice(idx + 1) : '';
-                        let fixedSrc = src.replaceAll('\\', '/').replace(/^\/?\.\.\//, '../../');
-                        return `<img src="${fixedSrc}" alt="${alt}" class="timeline-image-inline" style="display:block;margin:0 auto 8px;max-width:100%;height:auto;"><span class="image-caption">${alt}</span>`;
-                    })
-                    .replaceAll(/\[\[\[LINK:([^\]]+)\]\]\]/g, (match, data) => {
-                        const idx = data.indexOf(DELIM_LINK);
-                        const url = idx >= 0 ? data.slice(0, idx) : '';
-                        const text = idx >= 0 ? data.slice(idx + 1) : data;
-                        return `<a href="${url}" target="_blank" class="custom-link">${text}</a>`;
-                    })
-                    .replaceAll(/\[\[\[IMG:([^\]]+)\]\]\]/g, (match, src) => {
-                        let fixedSrc = src.replaceAll('\\', '/').replace(/^\/?\.\.\//, '../../');
-                        return `<img src="${fixedSrc}" alt="image" class="table-inline-image" style="display:block;margin:0 auto 8px;max-width:100%;height:auto;">`;
-                    });
-
-                return s;
-            }
+        return s;
+    }
 
             function parseFootnotes(lines) {
                 /** @type {Record<string, string>} */
@@ -1794,249 +1838,292 @@ Venti，venti……你是什么？
                 return map;
             }
 
-            function parseCommonContent(markdown, footnoteMap) {
-                const allLines = markdown.replaceAll('\r\n', '\n').replaceAll('\r', '\n').split('\n');
-                const container = document.createElement('div');
-                container.className = 'commoncontent-container';
-                container.style.cssText = 'padding:20px 0;max-width:800px;margin:0 auto;';
+    /**
+     * 解析通用内容区块函数
+     * 将<commoncontent>标签内的Markdown内容转换为DOM元素
+     * @param {string} markdown - Markdown内容
+     * @param {Record<string, string>} footnoteMap - 脚注映射表
+     * @returns {HTMLElement} - 包含解析后内容的容器元素
+     */
+    function parseCommonContent(markdown, footnoteMap) {
+        const allLines = markdown.replaceAll('\r\n', '\n').replaceAll('\r', '\n').split('\n');
+        const container = document.createElement('div');
+        container.className = 'commoncontent-container';
+        container.style.cssText = 'padding:20px 0;max-width:800px;margin:0 auto;';
 
-                let i = 0;
-                function isTableLine(line) {
-                    const t = (line || '').trim();
-                    return t.startsWith('|') && t.includes('|');
-                }
+        let i = 0;
+        
+        /**
+         * 判断是否为表格行
+         * @param {string} line - 待判断的行
+         * @returns {boolean} - 是否为表格行
+         */
+        function isTableLine(line) {
+            const t = (line || '').trim();
+            return t.startsWith('|') && t.includes('|');
+        }
 
-                while (i < allLines.length) {
-                    const rawLine = allLines[i] || '';
-                    const line = rawLine.trimEnd();
-                    const trimmed = line.trim();
+        while (i < allLines.length) {
+            const rawLine = allLines[i] || '';
+            const line = rawLine.trimEnd();
+            const trimmed = line.trim();
 
-                    if (!trimmed) {
-                        i++;
-                        continue;
-                    }
+            if (!trimmed) { i++; continue; }
 
-                    if (trimmed.startsWith('## ')) {
-                        const text = trimmed.slice(3).trim();
-                        if (!text) { i++; continue; }
-                        const h2 = document.createElement('h2');
-                        h2.style.cssText = 'font-size:1.5em;color:#D3BC8E;border-bottom:1px solid #8B7355;padding-bottom:8px;margin-top:32px;';
-                        h2.innerHTML = injectFootnoteTooltips(normalizeInline(text), footnoteMap);
-                        container.appendChild(h2);
-                        i++;
-                        continue;
-                    }
+            // 二级标题处理
+            if (trimmed.startsWith('## ')) {
+                const text = trimmed.slice(3).trim();
+                if (!text) { i++; continue; }
+                const h2 = document.createElement('h2');
+                h2.style.cssText = 'font-size:1.5em;color:#D3BC8E;border-bottom:1px solid #8B7355;padding-bottom:8px;margin-top:32px;';
+                h2.innerHTML = injectFootnoteTooltips(normalizeInline(text), footnoteMap);
+                container.appendChild(h2);
+                i++;
+                continue;
+            }
 
-                    if (trimmed.startsWith('### ')) {
-                        const text = trimmed.slice(4).trim();
-                        if (!text) { i++; continue; }
-                        const h3 = document.createElement('h3');
-                        h3.style.cssText = 'font-size:1.25em;color:#D3BC8E;margin-top:24px;';
-                        h3.innerHTML = injectFootnoteTooltips(normalizeInline(text), footnoteMap);
-                        container.appendChild(h3);
-                        i++;
-                        continue;
-                    }
+            // 三级标题处理
+            if (trimmed.startsWith('### ')) {
+                const text = trimmed.slice(4).trim();
+                if (!text) { i++; continue; }
+                const h3 = document.createElement('h3');
+                h3.style.cssText = 'font-size:1.25em;color:#D3BC8E;margin-top:24px;';
+                h3.innerHTML = injectFootnoteTooltips(normalizeInline(text), footnoteMap);
+                container.appendChild(h3);
+                i++;
+                continue;
+            }
 
-                    if (trimmed === '!!!') {
-                        i++;
-                        const blockLines = [];
-                        while (i < allLines.length && (allLines[i] || '').trim() !== '!!!') {
-                            blockLines.push((allLines[i] || '').trimEnd());
-                            i++;
-                        }
-                        i++;
-                        const div = document.createElement('div');
-                        div.className = 'second-text';
-                        const innerHTML = blockLines.map(l => normalizeInline(l)).join('<br/>');
-                        div.innerHTML = `<p style="font-size:115%;margin:0 0 6px;font-weight:bold;">参考资料</p><p>${innerHTML}</p>`;
-                        container.appendChild(div);
-                        continue;
-                    }
-
-                    if (trimmed === ':::') {
-                        i++;
-                        const blockLines = [];
-                        while (i < allLines.length && (allLines[i] || '').trim() !== ':::') {
-                            blockLines.push((allLines[i] || '').trimEnd());
-                            i++;
-                        }
-                        i++;
-                        const div = document.createElement('div');
-                        div.className = 'second-text';
-                        const innerHTML = blockLines.map(l => normalizeInline(l)).join('<br/>');
-                        div.innerHTML = `<p style="font-size:115%;margin:0 0 6px;font-weight:bold;">编者的话</p><p>${innerHTML}</p>`;
-                        container.appendChild(div);
-                        continue;
-                    }
-
-                    if (trimmed === '*******') {
-                        const hr = document.createElement('hr');
-                        hr.style.cssText = 'border:none;border-top:2px solid #D3BC8E;margin:24px 0;';
-                        container.appendChild(hr);
-                        i++;
-                        continue;
-                    }
-
-                    if (isTableLine(trimmed)) {
-                        const block = [];
-                        while (i < allLines.length && isTableLine(allLines[i] || '')) {
-                            block.push(allLines[i] || '');
-                            i++;
-                        }
-                        const tableEl = renderTable(block, footnoteMap);
-                        if (tableEl) container.appendChild(tableEl);
-                        continue;
-                    }
-
-                    if (/^!\[[^\]]*\]\([^)]*\)/.test(trimmed) && !/^!\[(Imagebg|Introbg)/i.test(trimmed)) {
-                        const m = trimmed.match(/^!\[([^\]]*?)\]\(([^)]*)\)/);
-                        if (m) {
-                            const alt = m[1];
-                            const src = m[2];
-                            const fixedSrc = src.replace(/^\/?\.\.\//, '../../').replaceAll('\\', '/');
-                            const wrapper = document.createElement('div');
-                            wrapper.style.cssText = 'text-align:center;margin:16px 0;';
-                            wrapper.innerHTML = `<img src="${fixedSrc}" alt="${escapeHtml(alt)}" style="max-width:100%;height:auto;border-radius:4px;"><p class="image-caption" style="color:#8B7355;font-size:0.9em;margin-top:8px;">${escapeHtml(alt)}</p>`;
-                            container.appendChild(wrapper);
-                            i++;
-                            continue;
-                        }
-                    }
-
-                    if (trimmed.startsWith('>')) {
-                        const q = [];
-                        while (i < allLines.length && ((allLines[i] || '').trim().startsWith('>'))) {
-                            q.push(allLines[i] || '');
-                            i++;
-                        }
-                        const block = document.createElement('div');
-                        block.style.cssText = 'border-left:3px solid #6B8E23;padding:8px 16px;margin:12px 0;background:#1a1a1a;border-radius:0 4px 4px 0;';
-                        const cleaned = q.map(l => l.replace(/^>\s?/, '').trimEnd()).filter(l => l.trim().length > 0);
-                        block.innerHTML = cleaned.map(l => `<p style="margin:0 0 8px;color:#ccc;font-style:italic;">${injectFootnoteTooltips(normalizeInline(l), footnoteMap)}</p>`).join('');
-                        container.appendChild(block);
-                        continue;
-                    }
-
-                    const p = document.createElement('p');
-                    p.style.cssText = 'color:#000;font-family:Common;line-height:1.8;margin:12px 0;';
-                    p.innerHTML = injectFootnoteTooltips(normalizeInline(trimmed), footnoteMap);
-                    container.appendChild(p);
+            // 参考资料块：!!! ... !!!
+            if (trimmed === '!!!') {
+                i++;
+                const blockLines = [];
+                while (i < allLines.length && (allLines[i] || '').trim() !== '!!!') {
+                    blockLines.push((allLines[i] || '').trimEnd());
                     i++;
                 }
-
-                return container;
+                i++;
+                const div = document.createElement('div');
+                div.className = 'second-text';
+                const innerHTML = blockLines.map(l => normalizeInline(l)).join('<br/>');
+                div.innerHTML = `<p style="font-size:115%;margin:0 0 6px;font-weight:bold;">参考资料</p><p>${innerHTML}</p>`;
+                container.appendChild(div);
+                continue;
             }
 
-            function injectFootnoteTooltips(html, footnoteMap) {
-                const replacer = (_, n) => {
-                    const key = String(n);
-                    const tip = footnoteMap[key] || '';
-                    return `<p class="has-footnote"><sup>${key}</sup><span class="tooltip">${tip}</span></p>`;
-                };
-
-                return html
-                    .replaceAll(/<sup>\s*(\d+)\s*<\/sup>/g, replacer)
-                    .replaceAll(/<sub>\s*(\d+)\s*<\/sub>/g, replacer);
+            // 编者的话块：::: ... :::
+            if (trimmed === ':::') {
+                i++;
+                const blockLines = [];
+                while (i < allLines.length && (allLines[i] || '').trim() !== ':::') {
+                    blockLines.push((allLines[i] || '').trimEnd());
+                    i++;
+                }
+                i++;
+                const div = document.createElement('div');
+                div.className = 'second-text';
+                const innerHTML = blockLines.map(l => normalizeInline(l)).join('<br/>');
+                div.innerHTML = `<p style="font-size:115%;margin:0 0 6px;font-weight:bold;">编者的话</p><p>${innerHTML}</p>`;
+                container.appendChild(div);
+                continue;
             }
 
-            function splitRow(rowLine) {
-                const trimmed = rowLine.trim();
-                const core = trimmed.replace(/^\|/, '').replace(/\|$/, '');
-                return core.split('|').map(c => (c ?? '').trim());
+            // 金色分割线：*******
+            if (trimmed === '*******') {
+                const hr = document.createElement('hr');
+                hr.style.cssText = 'border:none;border-top:2px solid #D3BC8E;margin:24px 0;';
+                container.appendChild(hr);
+                i++;
+                continue;
             }
 
-            function isBlankCell(cell) {
-                const t = (cell ?? '').trim();
-                // 只有真正空白的单元格才参与合并
-                // 严格匹配：只有内容恰好是 <br /> 的单元格视为有内容，不合并
-                // 其他情况（<br/>、<br>）视为空白单元格
+            // 表格处理
+            if (isTableLine(trimmed)) {
+                const block = [];
+                while (i < allLines.length && isTableLine(allLines[i] || '')) {
+                    block.push(allLines[i] || '');
+                    i++;
+                }
+                const tableEl = renderTable(block, footnoteMap);
+                if (tableEl) container.appendChild(tableEl);
+                continue;
+            }
+
+            // 图片处理（排除特殊标记图片）
+            if (/^!\[[^\]]*\]\([^)]*\)/.test(trimmed) && !/^!\[(Imagebg|Introbg)/i.test(trimmed)) {
+                const m = trimmed.match(/^!\[([^\]]*?)\]\(([^)]*)\)/);
+                if (m) {
+                    const alt = m[1];
+                    const src = m[2];
+                    const fixedSrc = src.replace(/^\/?\.\.\//, '../../').replaceAll('\\', '/');
+                    const wrapper = document.createElement('div');
+                    wrapper.style.cssText = 'text-align:center;margin:16px 0;';
+                    wrapper.innerHTML = `<img src="${fixedSrc}" alt="${escapeHtml(alt)}" style="max-width:100%;height:auto;border-radius:4px;"><p class="image-caption" style="color:#8B7355;font-size:0.9em;margin-top:8px;">${escapeHtml(alt)}</p>`;
+                    container.appendChild(wrapper);
+                    i++;
+                    continue;
+                }
+            }
+
+            // 引用块处理
+            if (trimmed.startsWith('>')) {
+                const q = [];
+                while (i < allLines.length && ((allLines[i] || '').trim().startsWith('>'))) {
+                    q.push(allLines[i] || '');
+                    i++;
+                }
+                const block = document.createElement('div');
+                block.style.cssText = 'border-left:3px solid #6B8E23;padding:8px 16px;margin:12px 0;background:#1a1a1a;border-radius:0 4px 4px 0;';
+                const cleaned = q.map(l => l.replace(/^>\s?/, '').trimEnd()).filter(l => l.trim().length > 0);
+                block.innerHTML = cleaned.map(l => `<p style="margin:0 0 8px;color:#ccc;font-style:italic;">${injectFootnoteTooltips(normalizeInline(l), footnoteMap)}</p>`).join('');
+                container.appendChild(block);
+                continue;
+            }
+
+            // 普通段落处理
+            const p = document.createElement('p');
+            p.style.cssText = 'color:#000;font-family:Common;line-height:1.8;margin:12px 0;';
+            p.innerHTML = injectFootnoteTooltips(normalizeInline(trimmed), footnoteMap);
+            container.appendChild(p);
+            i++;
+        }
+
+        return container;
+    }
+
+    /**
+     * 注入脚注提示函数
+     * 将HTML中的<sup>/<sub>标签转换为带tooltip的脚注引用
+     * @param {string} html - 待处理的HTML字符串
+     * @param {Record<string, string>} footnoteMap - 脚注映射表
+     * @returns {string} - 处理后的HTML字符串
+     */
+    function injectFootnoteTooltips(html, footnoteMap) {
+        const replacer = (_, n) => {
+            const key = String(n);
+            const tip = footnoteMap[key] || '';
+            return `<p class="has-footnote"><sup>${key}</sup><span class="tooltip">${tip}</span></p>`;
+        };
+
+        return html
+            .replaceAll(/<sup>\s*(\d+)\s*<\/sup>/g, replacer)
+            .replaceAll(/<sub>\s*(\d+)\s*<\/sub>/g, replacer);
+    }
+
+    /**
+     * 分割表格行函数
+     * 将Markdown表格行按|分割为单元格数组
+     * @param {string} rowLine - 表格行字符串
+     * @returns {string[]} - 单元格内容数组
+     */
+    function splitRow(rowLine) {
+        const trimmed = rowLine.trim();
+        const core = trimmed.replace(/^\|/, '').replace(/\|$/, '');
+        return core.split('|').map(c => (c ?? '').trim());
+    }
+
+    /**
+     * 判断是否为空白单元格
+     * @param {string} cell - 单元格内容
+     * @returns {boolean} - 是否为空白单元格
+     */
+    function isBlankCell(cell) {
+        const t = (cell ?? '').trim();
+        // 只有真正空白的单元格才参与合并
+        // 严格匹配：只有内容恰好是 <br /> 的单元格视为有内容，不合并
+        // 其他情况（<br/>、<br>）视为空白单元格
                 if (t === '<br />') return false;
                 return t === '' || t === '<br/>' || t === '<br>' || t === '&nbsp;' || t === '&#160;' || t === '—';
             }
 
-            function renderTable(blockLines, footnoteMap) {
-                if (blockLines.length < 1) return null;
+    /**
+     * 渲染表格函数
+     * 将Markdown表格转换为HTML表格，支持单元格合并
+     * @param {string[]} blockLines - 表格行数组
+     * @param {Record<string, string>} footnoteMap - 脚注映射表
+     * @returns {HTMLElement|null} - 表格容器元素或null
+     */
+    function renderTable(blockLines, footnoteMap) {
+        if (blockLines.length < 1) return null;
 
-                const headerCells = splitRow(blockLines[0]);
-                let bodyStart = 1;
+        const headerCells = splitRow(blockLines[0]);  // 解析表头行
+        let bodyStart = 1;  // 表体起始行索引
+        
+        // 识别分隔行（包含---的行，如 |---|---|---|）
+        const hasSeparatorRow = blockLines.length > 1 && blockLines[1].includes('---');
+        if (hasSeparatorRow) bodyStart = 2;
+
+        const bodyLines = blockLines.slice(bodyStart);      // 表体行
+        const bodyCells = bodyLines.map(splitRow);          // 解析所有表体单元格
+        const colCount = Math.max(headerCells.length, ...bodyCells.map(r => r.length));  // 计算最大列数
+
+        // 补齐列数（确保每行列数一致）
+        while (headerCells.length < colCount) headerCells.push('');
+        for (const r of bodyCells) while (r.length < colCount) r.push('');
+
+        // 初始化合并信息矩阵
+        /** @type {Array<Array<{text:string, rowspan:number, colspan:number, skip:boolean}>>} */
+        const mergedBody = bodyCells.map(row => row.map(text => ({ 
+            text,       // 单元格内容
+            rowspan: 1, // 纵向合并行数
+            colspan: 1, // 横向合并列数
+            skip: false // 是否跳过（已被合并）
+        })));
+
+        // 阶段一：横向合并（从有内容的单元格开始，向右合并空白单元格）
+        for (let r = 0; r < mergedBody.length; r++) {
+            for (let c = 0; c < colCount; c++) {
+                if (mergedBody[r][c].skip) continue;  // 跳过已被合并的单元格
                 
-                // 识别分隔行（包含---的行）
-                const hasSeparatorRow = blockLines.length > 1 && blockLines[1].includes('---');
-                if (hasSeparatorRow) bodyStart = 2;
-
-                const bodyLines = blockLines.slice(bodyStart);
-                const bodyCells = bodyLines.map(splitRow);
-                const colCount = Math.max(headerCells.length, ...bodyCells.map(r => r.length));
-
-                // 补齐列数
-                while (headerCells.length < colCount) headerCells.push('');
-                for (const r of bodyCells) while (r.length < colCount) r.push('');
-
-                // 初始化合并信息矩阵
-                /** @type {Array<Array<{text:string, rowspan:number, colspan:number, skip:boolean}>>} */
-                const mergedBody = bodyCells.map(row => row.map(text => ({ 
-                    text, 
-                    rowspan: 1, 
-                    colspan: 1, 
-                    skip: false 
-                })));
-
-                // 阶段一：横向合并（从有内容的单元格开始，向右合并空白单元格）
-                for (let r = 0; r < mergedBody.length; r++) {
-                    for (let c = 0; c < colCount; c++) {
-                        if (mergedBody[r][c].skip) continue;
-                        
-                        if (!isBlankCell(mergedBody[r][c].text)) {
-                            // 计算该单元格能向右延伸多少列（右方必须是空白单元格）
-                            let maxColspan = 1;
-                            for (let c2 = c + 1; c2 < colCount; c2++) {
-                                if (isBlankCell(mergedBody[r][c2].text) && !mergedBody[r][c2].skip) {
-                                    maxColspan++;
-                                } else {
-                                    break;
-                                }
-                            }
-                            
-                            if (maxColspan > 1) {
-                                mergedBody[r][c].colspan = maxColspan;
-                                // 标记被横向合并的单元格（标记为有内容，防止后续纵向合并）
-                                for (let c2 = c + 1; c2 < c + maxColspan; c2++) {
-                                    mergedBody[r][c2].skip = true;
-                                }
-                            }
+                if (!isBlankCell(mergedBody[r][c].text)) {
+                    // 计算该单元格能向右延伸多少列（右方必须是空白单元格）
+                    let maxColspan = 1;
+                    for (let c2 = c + 1; c2 < colCount; c2++) {
+                        if (isBlankCell(mergedBody[r][c2].text) && !mergedBody[r][c2].skip) {
+                            maxColspan++;
+                        } else {
+                            break;
+                        }
+                    }
+                    
+                    if (maxColspan > 1) {
+                        mergedBody[r][c].colspan = maxColspan;
+                        // 标记被横向合并的单元格（防止后续被纵向合并）
+                        for (let c2 = c + 1; c2 < c + maxColspan; c2++) {
+                            mergedBody[r][c2].skip = true;
                         }
                     }
                 }
+            }
+        }
+        
+        // 阶段二：纵向合并（从有内容的单元格开始，向下合并空白单元格）
+        for (let c = 0; c < colCount; c++) {
+            for (let r = 0; r < mergedBody.length; r++) {
+                if (mergedBody[r][c].skip) continue;  // 跳过已被合并的单元格
                 
-                // 阶段二：纵向合并（从有内容的单元格开始，向下合并空白单元格）
-                for (let c = 0; c < colCount; c++) {
-                    for (let r = 0; r < mergedBody.length; r++) {
-                        if (mergedBody[r][c].skip) continue;
-                        
-                        if (!isBlankCell(mergedBody[r][c].text)) {
-                            // 计算该单元格能向下延伸多少行（下方必须是空白单元格且未被横向合并标记）
-                            let maxRowspan = 1;
-                            for (let r2 = r + 1; r2 < mergedBody.length; r2++) {
-                                // 跳过被横向合并标记的单元格（这些单元格已被标记为有内容）
-                                if (mergedBody[r2][c].skip) continue;
-                                if (isBlankCell(mergedBody[r2][c].text)) {
-                                    maxRowspan++;
-                                } else {
-                                    break;
-                                }
-                            }
-                            
-                            if (maxRowspan > 1) {
-                                mergedBody[r][c].rowspan = maxRowspan;
-                                // 标记被纵向合并的单元格
-                                for (let r2 = r + 1; r2 < r + maxRowspan; r2++) {
-                                    mergedBody[r2][c].skip = true;
-                                }
-                            }
+                if (!isBlankCell(mergedBody[r][c].text)) {
+                    // 计算该单元格能向下延伸多少行（下方必须是空白单元格且未被横向合并标记）
+                    let maxRowspan = 1;
+                    for (let r2 = r + 1; r2 < mergedBody.length; r2++) {
+                        if (mergedBody[r2][c].skip) continue;  // 跳过被横向合并标记的单元格
+                        if (isBlankCell(mergedBody[r2][c].text)) {
+                            maxRowspan++;
+                        } else {
+                            break;
+                        }
+                    }
+                    
+                    if (maxRowspan > 1) {
+                        mergedBody[r][c].rowspan = maxRowspan;
+                        // 标记被纵向合并的单元格
+                        for (let r2 = r + 1; r2 < r + maxRowspan; r2++) {
+                            mergedBody[r2][c].skip = true;
                         }
                     }
                 }
+            }
+        }
 
                 const table = document.createElement('table');
                 table.className = 'common-table';
@@ -2088,60 +2175,83 @@ Venti，venti……你是什么？
                 return wrapper;
             }
 
-            function parseMarkdownToPage(markdown) {
-                const allLines = markdown.replaceAll('\r\n', '\n').replaceAll('\r', '\n').split('\n');
+    /**
+     * 解析Markdown内容并渲染到页面函数
+     * 这是核心渲染函数，负责将完整的Markdown内容转换为页面DOM元素
+     * @param {string} markdown - Markdown格式的内容
+     * @returns {{tocItems: Array<{id:string,text:string,level:1|2}>, quoteData: Record<string, {content: string}>}}
+     */
+    function parseMarkdownToPage(markdown) {
+        const allLines = markdown.replaceAll('\r\n', '\n').replaceAll('\r', '\n').split('\n');
 
-                // 提取 commoncontent 块
-                const commoncontentBlocks = [];
-                const commoncontentRegex = /<commoncontent>([\s\S]*?)<\/commoncontent>/g;
-                let processedMarkdown = markdown;
-                let match;
-                while ((match = commoncontentRegex.exec(markdown)) !== null) {
-                    commoncontentBlocks.push(match[1]);
-                }
-                processedMarkdown = markdown.replace(commoncontentRegex, '<COMMONCONTENT_PLACEHOLDER>');
+        // 提取 <commoncontent> 块（特殊内容区块）
+        const commoncontentBlocks = [];
+        const commoncontentRegex = /<commoncontent>([\s\S]*?)<\/commoncontent>/g;
+        let processedMarkdown = markdown;
+        let match;
+        while ((match = commoncontentRegex.exec(markdown)) !== null) {
+            commoncontentBlocks.push(match[1]);
+        }
+        processedMarkdown = markdown.replace(commoncontentRegex, '<COMMONCONTENT_PLACEHOLDER>');
 
-                // 识别文末注释区（以 > 数字 开始的行作为起点）
-                let footStart = -1;
-                const processedLines = processedMarkdown.replaceAll('\r\n', '\n').replaceAll('\r', '\n').split('\n');
-                for (let idx = 0; idx < processedLines.length; idx++) {
-                    if (/^>\s*\d+\s+/.test((processedLines[idx] || '').trim())) {
-                        footStart = idx;
-                        break;
-                    }
-                }
+        // 识别文末注释区（以 > 数字 格式开始的行作为脚注起点）
+        let footStart = -1;
+        const processedLines = processedMarkdown.replaceAll('\r\n', '\n').replaceAll('\r', '\n').split('\n');
+        for (let idx = 0; idx < processedLines.length; idx++) {
+            if (/^>\s*\d+\s+/.test((processedLines[idx] || '').trim())) {
+                footStart = idx;
+                break;
+            }
+        }
 
-                const contentLines = footStart === -1 ? processedLines : processedLines.slice(0, footStart);
-                const footnoteLines = footStart === -1 ? [] : processedLines.slice(footStart);
-                const footnoteMap = parseFootnotes(footnoteLines);
+        // 分离正文内容和脚注内容
+        const contentLines = footStart === -1 ? processedLines : processedLines.slice(0, footStart);
+        const footnoteLines = footStart === -1 ? [] : processedLines.slice(footStart);
+        const footnoteMap = parseFootnotes(footnoteLines);  // 解析脚注
 
-                /** @type {Array<{id:string,text:string,level:1|2}>} */
-                const tocItems = [];
-                /** @type {Record<string, {content: string}>} */
-                const quoteData = {};
-                let quoteIndex = 0;
-                let sectionIndex = 0;
-                let subIndex = 0;
-                let commoncontentIndex = 0;
+        /** @type {Array<{id:string,text:string,level:1|2}>} */
+        const tocItems = [];      // 目录项数组
+        /** @type {Record<string, {content: string}>} */
+        const quoteData = {};     // 引文数据映射
+        let quoteIndex = 0;       // 引文计数器
+        let sectionIndex = 0;     // 章节计数器
+        let subIndex = 0;         // 子章节计数器
+        let commoncontentIndex = 0; // commoncontent块计数器
 
-                function pushToc(id, text, level) {
-                    tocItems.push({ id, text, level });
-                }
+        /**
+         * 添加目录项
+         * @param {string} id - 章节ID
+         * @param {string} text - 章节标题文本
+         * @param {1|2} level - 目录级别（1=二级标题，2=三级标题）
+         */
+        function pushToc(id, text, level) {
+            tocItems.push({ id, text, level });
+        }
 
-                function cleanTocText(raw) {
-                    return (raw || '')
-                        .replace(/<\s*sup[^>]*>[\s\S]*?<\s*\/\s*sup\s*>/gi, '')
-                        .replace(/<\s*sub[^>]*>[\s\S]*?<\s*\/\s*sub\s*>/gi, '')
-                        .replace(/\*\*(.*?)\*\*/g, '$1')
-                        .replace(/\*(.*?)\*/g, '$1')
-                        .replace(/^\*\s*/g, '')
-                        .replace(/<[^>]+>/g, '')
-                        .replace(/\s+/g, ' ')
-                        .trim();
-                }
+        /**
+         * 清理目录文本（移除HTML标签和Markdown格式）
+         * @param {string} raw - 原始文本
+         * @returns {string} - 清理后的文本
+         */
+        function cleanTocText(raw) {
+            return (raw || '')
+                .replace(/<\s*sup[^>]*>[\s\S]*?<\s*\/\s*sup\s*>/gi, '')  // 移除上标标签
+                .replace(/<\s*sub[^>]*>[\s\S]*?<\s*\/\s*sub\s*>/gi, '')  // 移除下标标签
+                .replace(/\*\*(.*?)\*\*/g, '$1')                         // 移除加粗格式
+                .replace(/\*(.*?)\*/g, '$1')                            // 移除斜体格式
+                .replace(/^\*\s*/g, '')                                  // 移除开头的*
+                .replace(/<[^>]+>/g, '')                                 // 移除所有HTML标签
+                .replace(/\s+/g, ' ')                                    // 合并空格
+                .trim();
+        }
 
-                function makeId(level) {
-                    if (level === 1) return `section-${sectionIndex}`;
+        /**
+         * 生成章节ID
+         * @param {number} level - 章节级别
+         * @returns {string} - 生成的ID
+         */
+        function makeId(level) {
+            if (level === 1) return `section-${sectionIndex}`;
                     return `section-${sectionIndex}-${subIndex}`;
                 }
 
@@ -2563,65 +2673,84 @@ Venti，venti……你是什么？
                 return { tocItems, quoteData };
             }
 
-            function buildToc(tocItems) {
-                tocList.innerHTML = '';
+    /**
+     * 构建目录函数
+     * 根据目录项数组生成目录列表，并绑定滚动高亮事件
+     * @param {Array<{id:string,text:string,level:1|2}>} tocItems - 目录项数组
+     */
+    function buildToc(tocItems) {
+        tocList.innerHTML = '';  // 清空现有目录
 
-                tocItems.forEach(item => {
-                    const li = document.createElement('li');
-                    li.className = `toc-item level-${item.level}`;
+        // 遍历目录项，创建目录链接
+        tocItems.forEach(item => {
+            const li = document.createElement('li');
+            li.className = `toc-item level-${item.level}`;
 
-                    const a = document.createElement('a');
-                    a.href = '#' + item.id;
-                    a.className = 'toc-link level-' + item.level;
-                    a.textContent = item.text;
+            const a = document.createElement('a');
+            a.href = '#' + item.id;
+            a.className = 'toc-link level-' + item.level;
+            a.textContent = item.text;
 
-                    a.addEventListener('click', (e) => {
-                        e.preventDefault();
-                        const target = document.getElementById(item.id);
-                        if (!target) return;
-                        const offset = 100;
-                        const targetPosition = target.getBoundingClientRect().top + window.pageYOffset - offset;
-                        window.scrollTo({ top: targetPosition, behavior: 'smooth' });
-                        updateTocHighlight(item.id);
-                    });
+            // 点击目录链接时平滑滚动到对应章节
+            a.addEventListener('click', (e) => {
+                e.preventDefault();
+                const target = document.getElementById(item.id);
+                if (!target) return;
+                const offset = 100;  // 滚动偏移量（避免标题被顶部遮挡）
+                const targetPosition = target.getBoundingClientRect().top + window.pageYOffset - offset;
+                window.scrollTo({ top: targetPosition, behavior: 'smooth' });
+                updateTocHighlight(item.id);
+            });
 
-                    li.appendChild(a);
-                    tocList.appendChild(li);
+            li.appendChild(a);
+            tocList.appendChild(li);
+        });
+
+        // 初始化高亮状态并绑定滚动事件
+        updateTocHighlight();
+        window.addEventListener('scroll', () => updateTocHighlight());
+
+        /**
+         * 更新目录高亮函数
+         * 根据滚动位置自动高亮当前章节对应的目录项
+         * @param {string|null} forceId - 强制高亮的章节ID（可选）
+         */
+        function updateTocHighlight(forceId = null) {
+            const links = document.querySelectorAll('.toc-link');
+            
+            // 强制高亮指定章节
+            if (forceId) {
+                links.forEach(link => {
+                    link.classList.toggle('active', link.getAttribute('href') === '#' + forceId);
                 });
-
-                updateTocHighlight();
-                window.addEventListener('scroll', () => updateTocHighlight());
-
-                function updateTocHighlight(forceId = null) {
-                    const links = document.querySelectorAll('.toc-link');
-                    if (forceId) {
-                        links.forEach(link => {
-                            link.classList.toggle('active', link.getAttribute('href') === '#' + forceId);
-                        });
-                        return;
-                    }
-
-                    const sections = tocItems.map(item => document.getElementById(item.id)).filter(Boolean);
-                    let current = '';
-                    let minDistance = Infinity;
-
-                    sections.forEach(section => {
-                        const rect = section.getBoundingClientRect();
-                        const distance = Math.abs(rect.top - 100);
-                        if (rect.top <= 100 && rect.bottom >= 0) {
-                            if (distance < minDistance) {
-                                minDistance = distance;
-                                current = section.id;
-                            }
-                        }
-                    });
-
-                    if (!current && sections.length > 0) current = sections[0].id;
-                    links.forEach(link => {
-                        link.classList.toggle('active', link.getAttribute('href') === '#' + current);
-                    });
-                }
+                return;
             }
+
+            // 根据滚动位置计算当前章节
+            const sections = tocItems.map(item => document.getElementById(item.id)).filter(Boolean);
+            let current = '';
+            let minDistance = Infinity;
+
+            sections.forEach(section => {
+                const rect = section.getBoundingClientRect();
+                const distance = Math.abs(rect.top - 100);  // 计算到视口顶部100px位置的距离
+                if (rect.top <= 100 && rect.bottom >= 0) {  // 章节在视口可见范围内
+                    if (distance < minDistance) {
+                        minDistance = distance;
+                        current = section.id;
+                    }
+                }
+            });
+
+            // 默认高亮第一个章节
+            if (!current && sections.length > 0) current = sections[0].id;
+            
+            // 更新高亮状态
+            links.forEach(link => {
+                link.classList.toggle('active', link.getAttribute('href') === '#' + current);
+            });
+        }
+    }
 
             if (!md.trim()) {
                 introEl.innerHTML = '<p>（内容加载中）</p>';
