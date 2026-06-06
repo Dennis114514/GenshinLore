@@ -1478,6 +1478,11 @@ body {
     margin: 15px 0 15px 70px;
 }
 
+/* 当 second-text 的父元素是 timeline-section 且自身不是 timeline-item 时 */
+.timeline-section > .second-text:not(.timeline-item) {
+    margin: 15px 0 15px 70px;
+}
+
 .quote-block:hover {
     background-color: #efefef;
     border-left-color: #4d4f53;
@@ -2158,7 +2163,6 @@ body {
     line-height: 1.8;
     padding-left: 12px;
     border-left: 3px solid #c0c0c0!important;
-    margin: 15px 0 15px 70px;
 }
 
 .second-intro {
