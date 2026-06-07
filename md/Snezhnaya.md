@@ -18,9 +18,9 @@ ducam  regina  mea  gloria  haud  pluribus  impar
 替我燃烧旧世界吧。
 ![Introbg1](../img/context/Snezhnaya/SnezhnayaIntroBg1.png)
 
-## 一、冰龙时期
+## 第一幕 冰龙时代
 
-## 二、月宫与葬火
+## 第二幕 月宫与葬火
 
 ### *至冬妖精
 |种族|代表氏族/人物|介绍|
@@ -923,7 +923,7 @@ ducam  regina  mea  gloria  haud  pluribus  impar
 
 布莱赫借用终北传说里的虚构植物名，将格蕾兹娜培育的新品种命名为曼陀草，花语象征幸福与希望，格蕾兹娜托付布莱赫把曼陀草带出了庇护所。
 
-## 六、冰之女皇时期
+## 第六幕 冰之女皇时代
 
 ### 女皇的建设<sup>9</sup>
 
