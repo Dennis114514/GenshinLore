@@ -1747,7 +1747,7 @@ perpetua  perennis  imperia
         const replacer = (_, n) => {
             const key = String(n);
             const tip = footnoteMap[key] || '';
-            return `<p class="has-footnote"><sup>${key}</sup><span class="tooltip">${tip}</span></p>`;
+            return `<p class="has-footnote"><sup>*</sup><span class="tooltip">${tip}</span></p>`;
         };
 
         return html
@@ -1899,7 +1899,7 @@ perpetua  perennis  imperia
                         if (mergedBody[r][c].skip) continue;
 
                         const td = document.createElement('td');
-                        if (c === 1 || c === 3) td.classList.add('text-left');
+                        if (c === c) td.classList.add('text-left');
                         const rs = mergedBody[r][c].rowspan;
                         const cs = mergedBody[r][c].colspan;
                         if (rs > 1) td.rowSpan = rs;

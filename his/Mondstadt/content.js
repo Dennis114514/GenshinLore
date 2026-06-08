@@ -299,7 +299,7 @@ Unser Blut neuen Frieden wird säen
 
 「我心爱的主人啊，除您以外，我的心不会再爱上任何人」「所以也请您——也请您只注视我一人，只能注视我一人」——不懂得何为爱的人，与不懂得何为爱的神，直至撕碎彼此的那一瞬，也未曾知晓彼此的心。
 
-2.无名红发骑士
+#### 2.无名红发骑士
 
 身披坚铁的战士生来从未见过苍空，唯有烈风隔绝着寒天。本应奉命将暗巷间那些妄图撼动高塔的反叛者扼杀于摇篮，却因流淌在那少年诗人琴弦上的歌谣，弃下了手中的刀剑。<sup>6</sup>
 
@@ -307,13 +307,13 @@ Unser Blut neuen Frieden wird säen
 
 千年后，另一名红发骑士（名为莱艮芬德的晨曦骑士）追随他的脚步，照亮宗室贵胄涂黑的历史。就如同「风之花」的命运一般：在重压之下、不得不奋起时才绽放，这一族的宿命恐怕永远不会变：身居至暗的黑夜，带来破晓的火光……<sup>7</sup>
 
-3.无名少年
+#### 3.无名少年
 
 在旧蒙德，（风精灵）温迪结识了一位少年。少年懂得弹琴，渴望写出最好的诗。「我想看见飞鸟翱翔的模样。」生在风墙之内，不曾见过蓝天、鹰隼与绿草的少年这样说道。他的声音几乎被呼啸的风声盖过。「朋友，不与我同去吗？」
 
 为了生在城中，未曾目睹飞鸟的少年，元素精灵温迪搜集来鹰隼的翎羽。
 
-4.古恩希尔德
+#### 4.古恩希尔德
 
 ·金枝失去生机，大阿卡狄亚遗民去往蒙德南方
 
@@ -345,7 +345,7 @@ Unser Blut neuen Frieden wird säen
 
 ·荆夫港
 
-此时，荆夫港是古恩希尔德家族的采邑，在荆夫港，蒙德最初的圣堂建立。<sup></sup>
+此时，荆夫港是古恩希尔德家族的采邑，在荆夫港，蒙德最初的圣堂建立。<sup>8</sup>
 
 ### （二）自由之战
 
@@ -1299,7 +1299,7 @@ Unser Blut neuen Frieden wird säen
 | 「M」<br>安雅·「玛丽」·安德斯多特 | 人类，已婚<br>《野猪公主》的作者，撰写了杜林的故事<br>现已去世 | 小杜林（创造的故事人物） |
 | 「N」<br>尼可·莱恩 | 天使<br>无法开口说话，但能凭空在他人脑内说话，当世界发生变动，就能如先知般揭示人们真相 | 常九爷（间接的设定接收者）<sup>26</sup> |
 | 「O」<br>欧科塔维亚 | 能穿越星海，创造了千星奇域<br>（造物） | 千星人偶<br>（造物） |
-| 「R」<br>莱茵多特 | 坎瑞亚人，五罪人之一，擅长炼金术<br>现为生之执政 | 造物：阿贝多、巴隆纳瓦、厄里那斯、魔龙杜林 |
+| 「R」<br>莱茵多特 | 坎瑞亚人，五罪人之一，擅长炼金术<br>现为生之执政 | 造物：阿贝多、巴窟纳瓦、厄里那斯、魔龙杜林 |
 
 ### （一）阿贝多
 
@@ -1999,7 +1999,7 @@ Venti，venti……你是什么？
         const replacer = (_, n) => {
             const key = String(n);
             const tip = footnoteMap[key] || '';
-            return `<p class="has-footnote"><sup>${key}</sup><span class="tooltip">${tip}</span></p>`;
+            return `<p class="has-footnote"><sup>*</sup><span class="tooltip">${tip}</span></p>`;
         };
 
         return html
@@ -2151,7 +2151,7 @@ Venti，venti……你是什么？
                         if (mergedBody[r][c].skip) continue;
 
                         const td = document.createElement('td');
-                        if (c === 1 || c === 3) td.classList.add('text-left');
+                        if (c === c) td.classList.add('text-left');
                         const rs = mergedBody[r][c].rowspan;
                         const cs = mergedBody[r][c].colspan;
                         if (rs > 1) td.rowSpan = rs;
