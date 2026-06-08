@@ -1970,9 +1970,9 @@ Venti，venti……你是什么？
                     i++;
                 }
                 const block = document.createElement('div');
-                block.style.cssText = 'border-left:3px solid #6B8E23;padding:8px 16px;margin:12px 0;background:#1a1a1a;border-radius:0 4px 4px 0;';
+                block.className = 'second-text';
                 const cleaned = q.map(l => l.replace(/^>\s?/, '').trimEnd()).filter(l => l.trim().length > 0);
-                block.innerHTML = cleaned.map(l => `<p style="margin:0 0 8px;color:#ccc;font-style:italic;">${injectFootnoteTooltips(normalizeInline(l), footnoteMap)}</p>`).join('');
+                block.innerHTML = cleaned.map(l => `<p class="second-text;">${injectFootnoteTooltips(normalizeInline(l), footnoteMap)}</p>`).join('');
                 container.appendChild(block);
                 continue;
             }
@@ -2391,25 +2391,6 @@ Venti，venti……你是什么？
                     return block;
                 }
 
-                function renderImage(imgLine) {
-                    const m = imgLine.match(/image(\d+)\.png/i);
-                    if (!m) return null;
-                    const file = `image${m[1]}.png`;
-
-                    const wrapper = document.createElement('div');
-                    wrapper.className = 'timeline-image';
-
-                    const img = document.createElement('img');
-                    img.src = `../../img/context/Fontaine/${file}`; //图片路径
-                    img.alt = file;
-                    img.style.maxWidth = 'calc(100% - 100px)';
-                    img.style.display = 'block';
-                    img.style.margin = '0 auto';
-                    wrapper.appendChild(img);
-
-                    return wrapper;
-                }
-
                 function isTableLine(line) {
                     const t = (line || '').trim();
                     return t.startsWith('|') && t.includes('|');
@@ -2617,27 +2598,6 @@ Venti，venti……你是什么？
                             i++;
                         }
                         appendToCurrent(renderQuoteBlock(q));
-                        continue;
-                    }
-
-                    // 图片（含 [Image] 格式，排除已处理的特殊标记）
-                    if ((trimmed.includes('[Image]') || trimmed.includes('![Image]')) && !/!\[(Imagebg|Introbg)/i.test(trimmed)) {
-                        const img = renderImage(trimmed);
-                        if (img) {
-                            appendToCurrent(img);
-                            let j = i + 1;
-                            while (j < contentLines.length && !(contentLines[j] || '').trim()) j++;
-                            const cap = (contentLines[j] || '').trim();
-                            if (cap) {
-                                const p = document.createElement('p');
-                                p.className = 'image-caption';
-                                p.innerHTML = injectFootnoteTooltips(normalizeInline(cap), footnoteMap);
-                                img.appendChild(p);
-                                i = j + 1;
-                                continue;
-                            }
-                        }
-                        i++;
                         continue;
                     }
 
