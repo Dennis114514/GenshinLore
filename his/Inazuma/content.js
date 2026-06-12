@@ -1638,6 +1638,17 @@ perpetua  perennis  imperia
                 i++;
                 continue;
             }
+            // 四级标题处理
+            if (trimmed.startsWith('#### ')) {
+                const text = trimmed.slice(5).trim();
+                if (!text) { i++; continue; }
+                const h4 = document.createElement('h4');
+                h4.style.cssText = 'font-size:1em;color:#D3BC8E;margin-top:16px;';
+                h4.innerHTML = injectFootnoteTooltips(normalizeInline(text), footnoteMap);
+                container.appendChild(h4);
+                i++;
+                continue;
+            }
 
             // 参考资料块：!!! ... !!!
             if (trimmed === '!!!') {
