@@ -1,8 +1,8 @@
 # 第?章：坎瑞亚·未有之梦
 
-![Imagebg0](../img/context/Khaenriah/Introbg0.png)
+![Introbg0](../img/context/Khaenriah/Introbg0.png)
 
-<div style="transform: scaleX(-1);">
+<div style="transform: scaleX(-1);transform: scaleY(-1);">
 在无始无终的永恒里，
 人类将度过
 安然无梦的一生。
@@ -14,7 +14,7 @@
 我们取得否定世界的力量。
 </div>
 
-![Imagebg1](../img/context/Khaenriah/Introbg1.png)
+![Introbg1](../img/context/Khaenriah/Introbg1.png)
 
 ## 葬火
 

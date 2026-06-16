@@ -1251,11 +1251,7 @@ ducam  regina  mea  gloria  haud  pluribus  impar
      */
     function escapeHtml(text) {
         return text
-            .replaceAll('&', '&amp;')
-            .replaceAll('<', '&lt;')
-            .replaceAll('>', '&gt;')
-            .replaceAll('"', '&quot;')
-            .replaceAll("'", '&#39;');
+
     }
 
     /**

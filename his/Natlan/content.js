@@ -1818,11 +1818,7 @@ CL-02：很好。你几乎让我感到惋惜了，第八席，也许已经让我
      */
     function escapeHtml(text) {
         return text
-            .replaceAll('&', '&amp;')
-            .replaceAll('<', '&lt;')
-            .replaceAll('>', '&gt;')
-            .replaceAll('"', '&quot;')
-            .replaceAll("'", '&#39;');
+
     }
 
     /**
