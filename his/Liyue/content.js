@@ -1976,7 +1976,12 @@ ruat caelum  fiat  pactum
                             const fixedSrc = imgPath.replace(/^\/?\.\.\//, '../../').replaceAll('\\', '/');
                             const div = document.createElement('div');
                             div.className = 'second-intro';
-                            div.innerHTML = `<img class="bg-img" src="${fixedSrc}" alt=""><div class="intro-content"><pre>${escapeHtml(codeLines.join('\n'))}</pre></div>`;
+
+                            const codeHtml = codeLines
+                                .map(line => normalizeInline(line))
+                                .join('\n');
+
+                            div.innerHTML = `<img class="bg-img" src="${fixedSrc}" alt=""><div class="intro-content"><pre>${codeHtml}</pre></div>`;
                             appendToCurrent(div);
                         }
                         continue;
