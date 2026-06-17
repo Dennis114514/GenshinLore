@@ -1071,11 +1071,14 @@ body {
 }
 
 .home-title {
-    font-family: 'Genshin', serif;
-    font-size: 48px;
-    color: #4d4f53;
     text-align: center;
     margin-bottom: 20px;
+}
+
+.home-logo {
+    max-width: 300px;
+    height: auto;
+    vertical-align: middle;
 }
 
 .home-subtitle {
@@ -1109,9 +1112,67 @@ body {
     margin: 8px 0;
 }
 
-.editor-name {
-    font-size: 18px;
+.credits-container {
+    max-width: 700px;
+    margin: 40px auto;
+    padding: 30px;
+    background: rgba(255, 255, 255, 0.6);
+    border-radius: 12px;
+    border: 1px solid rgba(211, 188, 142, 0.3);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.03);
+}
+
+.credits-title {
+    font-family: 'Genshin', serif;
+    font-size: 28px;
+    color: #4d4f53;
+    text-align: center;
+    margin-bottom: 20px;
+    border-bottom: 2px solid #D3BC8E;
+    padding-bottom: 10px;
+    display: inline-block;
+}
+
+.credits-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 12px 40px;
+}
+
+.credit-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    font-family: 'Genshin', sans-serif;
+    font-size: 15px;
+    border-bottom: 1px dashed rgba(211, 188, 142, 0.2);
+    padding-bottom: 6px;
+}
+
+.credit-item .value {
+    color: #4d4f53;
+    font-weight: 500;
+}
+
+.credit-item .value a {
     color: #D3BC8E;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.credit-item .value a:hover {
+    color: #817254;
+}
+
+@media (max-width: 650px) {
+    .credits-grid {
+        grid-template-columns: 1fr;
+        gap: 12px;
+    }
+    .credits-container {
+        padding: 20px;
+        margin: 30px 10px;
+    }
 }
 
 .editor-info {
@@ -1201,6 +1262,55 @@ body {
 
 .quote-text p {
     margin: 10px 0;
+}
+
+.dead-person {
+    display: inline-block;
+    border: 1px solid #4d4f53;
+    padding: 0 4px;
+    margin: 0 2px;
+    line-height: 1.2;
+}
+
+.thanks-detail-new {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    text-align: left;
+    max-width: 800px;
+    margin: 0 auto;
+    font-family: 'Common', sans-serif;
+}
+
+.thanks-row {
+    display: flex;
+    align-items: flex-start;
+    gap: 30px;
+}
+
+.thanks-label {
+    flex: 0 0 120px;
+    color: #4d4f53;
+    font-family: 'Genshin', serif;
+    font-size: 18px;
+    text-align: right;
+}
+
+.thanks-value {
+    flex: 1;
+    color: #4d4f53;
+    font-size: 16px;
+    line-height: 1.8;
+}
+
+.thanks-value p {
+    margin: 0;
+    display: inline;
+}
+
+.thanks-value p + p::before {
+    content: ' ';
+    margin-right: 15px;
 }
 
 .lightrelam-content {
