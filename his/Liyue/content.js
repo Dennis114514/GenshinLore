@@ -1223,9 +1223,9 @@ ruat caelum  fiat  pactum
         // HTML转义
         s = escapeHtml(s);
 
-        // Markdown格式化：加粗/斜体/删除线
+         // Markdown格式化：加粗/删除线
         s = s.replaceAll(/\*\*([^*]+?)\*\*/g, '<span style="color:red;">$1</span>');  // 加粗
-        s = s.replaceAll(/(^|[^*])\*([^*]+?)\*(?!\*)/g, '$1<em>$2</em>');             // 斜体
+         s = s.replaceAll(/(^|[^*])\*([^*]+?)\*(?!\*)/g, '$1<strong>$2</strong>');      // 单星号也解析为加粗
         s = s.replaceAll(/~~([^~~]+?)~~/g, '<del>$1</del>');                           // 删除线
 
         // 还原允许的标签并生成最终HTML
