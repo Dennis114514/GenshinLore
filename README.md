@@ -87,6 +87,8 @@
 ├── basiclore
 │   ├── descenders
 │   │   └── base.html
+│   ├── elementusage
+│   │   └── base.html
 │   ├── facilities
 │   │   └── base.html
 │   ├── god
@@ -120,7 +122,8 @@
 │   │   ├── base.html
 │   │   └── content.js
 │   ├── Mondstadt
-│   │   └── base.html
+│   │   ├── base.html
+│   │   └── content.js
 │   ├── Natlan
 │   │   ├── base.html
 │   │   └── content.js
@@ -130,17 +133,20 @@
 │   └── Sumeru
 │       ├── base.html
 │       └── content.js
-├── img (115 files)
+├── img (158 files)
 ├── md
 │   ├── Fontaine.md
 │   ├── Inazuma.md
 │   ├── Khaenriah.md
 │   ├── Liyue.md
+│   ├── Mondstadt.md
 │   ├── Natlan.md
 │   ├── Snezhnaya.md
 │   ├── Sumeru.md
 │   ├── Teyvathis.md
 │   ├── aboutsite.md
+│   ├── main.md
+│   ├── preface.md
 │   └── somewords.md
 ├── .gitignore
 ├── 404.html
@@ -148,7 +154,6 @@
 ├── LICENCE.md
 ├── README.md
 ├── Teyvathis.html
-├── _headers
 ├── about.html
 ├── aboutsite.html
 ├── basiclore.html
