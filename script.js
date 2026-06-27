@@ -91,44 +91,46 @@ document.addEventListener('DOMContentLoaded', function() {
     const modalBody = document.getElementById('modal-body');
     const closeModal = document.getElementById('close-modal');
 
-    function openModal(quoteId) {
-        const text = quoteData[quoteId];
-        if (text) {
-            modalBody.innerHTML = text.content;
-            modal.style.display = 'flex';
+    if (modal && modalBody && closeModal) {
+        function openModal(quoteId) {
+            const text = quoteData[quoteId];
+            if (text) {
+                modalBody.innerHTML = text.content;
+                modal.style.display = 'flex';
+                setTimeout(() => {
+                    modal.classList.add('modal-active');
+                }, 10);
+            }
+        }
+
+        function closeModalFunc() {
+            modal.classList.remove('modal-active');
             setTimeout(() => {
-                modal.classList.add('modal-active');
-            }, 10);
+                modal.style.display = 'none';
+            }, 300);
         }
-    }
 
-    function closeModalFunc() {
-        modal.classList.remove('modal-active');
-        setTimeout(() => {
-            modal.style.display = 'none';
-        }, 300);
-    }
-
-    document.querySelectorAll('.quote-block').forEach(block => {
-        block.addEventListener('click', function() {
-            const quoteId = this.getAttribute('data-quote');
-            openModal(quoteId);
+        document.querySelectorAll('.quote-block').forEach(block => {
+            block.addEventListener('click', function() {
+                const quoteId = this.getAttribute('data-quote');
+                openModal(quoteId);
+            });
         });
-    });
 
-    closeModal.addEventListener('click', closeModalFunc);
+        closeModal.addEventListener('click', closeModalFunc);
 
-    modal.addEventListener('click', function(e) {
-        if (e.target === modal) {
-            closeModalFunc();
-        }
-    });
+        modal.addEventListener('click', function(e) {
+            if (e.target === modal) {
+                closeModalFunc();
+            }
+        });
 
-    document.addEventListener('keydown', function(e) {
-        if (e.key === 'Escape' && modal.style.display === 'flex') {
-            closeModalFunc();
-        }
-    });
+        document.addEventListener('keydown', function(e) {
+            if (e.key === 'Escape' && modal.style.display === 'flex') {
+                closeModalFunc();
+            }
+        });
+    }
 
     // TOC toggle functionality
     tocCollapseBtn = document.getElementById('toc-collapse');
@@ -145,6 +147,9 @@ document.addEventListener('DOMContentLoaded', function() {
     
     // 初始化移动端目录导航
     initMobileToc();
+
+    // 初始化移动端 tooltip 垂直位置适配
+    initMobileTooltip();
 });
 
 // 初始化移动端目录导航
@@ -258,6 +263,70 @@ function initMobileMenu() {
     window.addEventListener('resize', function() {
         if (window.innerWidth > 1012) {
             navMenu.classList.remove('active');
+        }
+    });
+}
+
+// 初始化移动端 tooltip 垂直位置适配
+// 在 <768px 时，tooltip 通过 CSS 固定为 position:fixed 并水平居中屏幕，
+// 此函数负责在 hover/touch 时将其 top 设置为关联文本元素的垂直位置，
+// 从而满足"垂直相对文本元素、水平固定屏幕居中"的响应式需求。
+function initMobileTooltip() {
+    let activeFootnote = null;
+
+    function isMobile() {
+        return window.innerWidth <= 768;
+    }
+
+    function positionTooltip(footnote) {
+        if (!footnote) return;
+        const tooltip = footnote.querySelector('.tooltip');
+        if (!tooltip) return;
+        const rect = footnote.getBoundingClientRect();
+        tooltip.style.setProperty('top', rect.top + 'px', 'important');
+    }
+
+    document.querySelectorAll('.has-footnote').forEach(footnote => {
+        const tooltip = footnote.querySelector('.tooltip');
+        if (!tooltip) return;
+
+        footnote.addEventListener('mouseenter', function() {
+            activeFootnote = footnote;
+            if (isMobile()) {
+                positionTooltip(footnote);
+            }
+        });
+
+        footnote.addEventListener('touchstart', function() {
+            activeFootnote = footnote;
+            if (isMobile()) {
+                positionTooltip(footnote);
+            }
+        }, { passive: true });
+
+        footnote.addEventListener('mouseleave', function() {
+            activeFootnote = null;
+        });
+    });
+
+    // 滚动时重新定位当前可见的 tooltip，避免 fixed 定位与文本元素错位
+    window.addEventListener('scroll', function() {
+        if (activeFootnote && isMobile()) {
+            positionTooltip(activeFootnote);
+        }
+    }, { passive: true });
+
+    // 窗口尺寸变化：移动端重新定位，桌面端清除内联 top 样式
+    window.addEventListener('resize', function() {
+        if (isMobile()) {
+            if (activeFootnote) {
+                positionTooltip(activeFootnote);
+            }
+        } else {
+            document.querySelectorAll('.tooltip').forEach(tooltip => {
+                tooltip.style.removeProperty('top');
+            });
+            activeFootnote = null;
         }
     });
 }

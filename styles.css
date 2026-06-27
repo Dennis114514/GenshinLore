@@ -833,9 +833,6 @@ body {
     opacity: 1;
     visibility: visible;
     pointer-events: auto;
-    left: 50%;
-    top: 0;
-    transform: translateX(-50%);
     z-index: 10000;
 }
 
@@ -968,6 +965,20 @@ body {
     left: 50%;
     top: 0;
     transform: translateX(-50%);
+}
+
+/* 移动端 tooltip 响应式适配：
+   - position: fixed 使 tooltip 脱离父容器限制，宽度可自适应屏幕
+   - left: 50% + transform 实现水平屏幕居中
+   - top 由 JS 动态设置（基于关联文本元素的垂直位置），不在此处硬编码 */
+@media (max-width: 768px) {
+    .tooltip {
+        position: fixed !important;
+        left: 50% !important;
+        transform: translateX(-50%) !important;
+        width: calc(100vw - 40px) !important;
+        max-width: 200px !important;
+    }
 }
 
 .basiclore-section {
