@@ -1087,21 +1087,33 @@ document.addEventListener('DOMContentLoaded', () => {
                     return;
                 }
 
-                // 如果 Markdown 中包含 mermaid 代码块，则动态加载 mermaid 脚本（只加载一次）
-                try {
-                    if (/```\s*mermaid\b/i.test(md)) {
-                        if (!document.querySelector('script[data-mermaid]')) {
+                const { tocItems } = parseMarkdownToPage(md);
+                buildToc(tocItems);
+
+                const mermaidNodes = document.querySelectorAll('.timeline-mermaid .mermaid');
+                if (mermaidNodes.length) {
+                    const renderMermaid = () => {
+                        if (window.mermaid && typeof window.mermaid.run === 'function') {
+                            window.mermaid.run({ nodes: Array.from(mermaidNodes) });
+                        } else if (window.mermaid && typeof window.mermaid.init === 'function') {
+                            window.mermaid.init(undefined, Array.from(mermaidNodes));
+                        }
+                    };
+
+                    if (window.mermaid && typeof window.mermaid.run === 'function') {
+                        renderMermaid();
+                    } else {
+                        const existingScript = document.querySelector('script[data-mermaid]');
+                        if (existingScript) {
+                            existingScript.addEventListener('load', renderMermaid, { once: true });
+                        } else {
                             const s = document.createElement('script');
-                            s.src = 'https://cdn.jsdelivr.net/gh/Dennis114514/GenshinLore@main/mermaid.min.js';
+                            s.src = new URL('../../mermaid.min.js', window.location.href).href;
                             s.setAttribute('data-mermaid', '1');
+                            s.addEventListener('load', renderMermaid, { once: true });
                             document.head.appendChild(s);
                         }
                     }
-                } catch (e) {
-                    console.warn('mermaid check failed', e);
                 }
-
-                const { tocItems } = parseMarkdownToPage(md);
-                buildToc(tocItems);
             });
         });
