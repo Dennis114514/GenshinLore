@@ -1092,7 +1092,7 @@ document.addEventListener('DOMContentLoaded', () => {
                     if (/```\s*mermaid\b/i.test(md)) {
                         if (!document.querySelector('script[data-mermaid]')) {
                             const s = document.createElement('script');
-                            s.src = 'https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.min.js';
+                            s.src = 'https://cdn.jsdelivr.net/gh/Dennis114514/GenshinLore@main/mermaid.min.js';
                             s.setAttribute('data-mermaid', '1');
                             document.head.appendChild(s);
                         }
