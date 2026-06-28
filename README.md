@@ -61,7 +61,7 @@
 | `<commoncontent>`内容`</commoncontent>` |普通内容，被这两个标签包裹的内容不会被渲染为时间线形式，而是普通文本形式，如“幕间：编者之声”部分|
 | `[Image](图片地址)` |图片标签，**已弃用**|
 
-注意：如需编辑，请编辑`/md/`目录下的 Markdown 文件，同时编辑对应页面的`content.js`或`contentteyvat.js`文件。
+注意：如需编辑，请编辑`/md/`目录下的 Markdown 文件，对应页面的`content.js`或`contentteyvat.js`文件会自动更新。
 
 稻妻 第七幕 雷电影时代 （一）雷电五传 雷电五传关系图在Markdown中使用的是`Mermaid`，而在`content.js`中使用的是`![图片描述](图片地址)`，请不要混淆。
 
