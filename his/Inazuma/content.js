@@ -1094,7 +1094,6 @@ document.addEventListener('DOMContentLoaded', () => {
                             const s = document.createElement('script');
                             s.src = 'https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.min.js';
                             s.setAttribute('data-mermaid', '1');
-                            s.onload = () => { try { if (window.mermaid && typeof window.mermaid.initialize === 'function') window.mermaid.initialize({ startOnLoad: true }); } catch (e) { console.warn('mermaid init failed', e); } };
                             document.head.appendChild(s);
                         }
                     }
