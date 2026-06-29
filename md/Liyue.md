@@ -21,7 +21,7 @@ ruat caelum  fiat  pactum
 
 ## 第一幕 岩龙时代【待发现】
 
-![Imagebg]()
+![Imagebg](../img/context/Liyue/image001.png)
 \`\`\`
 肃雍！
 昔若陀徽土

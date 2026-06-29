@@ -18,7 +18,7 @@ iustitia  omnia  vincit
 
 ## 第一幕 水龙时代【待发现】
 
-![Imagebg]()
+![Imagebg](../img/context/Fontaine/image001.png)
 \`\`\`
 「屈伏于万无意志缺陷的爱，即是原初正义的造影。」
 ——月谕圣牌

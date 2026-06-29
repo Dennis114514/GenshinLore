@@ -17,7 +17,7 @@ surge  vir  fortis  i  natam  victoriam
 ![Introbg1](../img/context/Natlan/Natlan-bg1.png)
 
 ## 第一幕 修库特尔时代【待发现】
-![Imagebg]()
+![Imagebg](../img/context/Natlan/image001.png)
 \`\`\`
 …封锁已解除…恭迎您的造访，火与智慧的主人，修库特尔王… 
 ——近月的隙间

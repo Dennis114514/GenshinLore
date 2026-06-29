@@ -22,7 +22,7 @@ sub floreis  lumen  sagacitatis
 
 ## 第一幕 阿佩普时代【待发现】
 
-![Imagebg]()
+![Imagebg](../img/context/Sumeru/image001.png)
 \`\`\`
 我不需要被拯救，尤其不需要被你，布耶尔。
 你和阿蒙一样，明明只存在了须臾的时间，却仗着天上的威光，自诩此地的领主。
