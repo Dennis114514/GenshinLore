@@ -346,7 +346,7 @@ document.addEventListener('DOMContentLoaded', () => {
         const replacer = (_, n) => {
             const key = String(n);
             const tip = footnoteMap[key] || '';
-            return `<p class="has-footnote"><sup>*</sup><span class="tooltip">${tip}</span></p>`;
+            return `<span class="has-footnote"><sup>*</sup><span class="tooltip">${tip}</span></span>`;
         };
 
         return html

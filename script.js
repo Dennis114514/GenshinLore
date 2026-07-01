@@ -267,8 +267,9 @@ function initMobileMenu() {
     });
 }
 
-// 初始化移动端 tooltip 垂直位置适配
+// 初始化 tooltip 位置适配
 // 在 <768px 时，tooltip 通过 CSS 固定为 position:fixed 并水平居中屏幕，
+// 在桌面端，.quote-preview 内的 tooltip 也使用 position:fixed 以突破父容器裁剪，
 // 此函数负责在 hover/touch 时将其 top 设置为关联文本元素的垂直位置，
 // 从而满足"垂直相对文本元素、水平固定屏幕居中"的响应式需求。
 function initMobileTooltip() {
@@ -278,12 +279,29 @@ function initMobileTooltip() {
         return window.innerWidth <= 768;
     }
 
+    function needsFixedPosition(footnote) {
+        return isMobile() || footnote.closest('.quote-preview') !== null;
+    }
+
     function positionTooltip(footnote) {
         if (!footnote) return;
         const tooltip = footnote.querySelector('.tooltip');
         if (!tooltip) return;
         const rect = footnote.getBoundingClientRect();
-        tooltip.style.setProperty('top', rect.top + 'px', 'important');
+        
+        if (isMobile()) {
+            tooltip.style.setProperty('top', rect.top + 'px', 'important');
+        } else if (footnote.closest('.quote-preview') !== null) {
+            tooltip.style.left = rect.left + 'px';
+            tooltip.style.top = rect.top - tooltip.offsetHeight - 10 + 'px';
+        }
+    }
+
+    function clearTooltipPosition(footnote) {
+        const tooltip = footnote?.querySelector('.tooltip');
+        if (!tooltip) return;
+        tooltip.style.removeProperty('top');
+        tooltip.style.removeProperty('left');
     }
 
     document.querySelectorAll('.has-footnote').forEach(footnote => {
@@ -292,41 +310,46 @@ function initMobileTooltip() {
 
         footnote.addEventListener('mouseenter', function() {
             activeFootnote = footnote;
-            if (isMobile()) {
+            if (needsFixedPosition(footnote)) {
                 positionTooltip(footnote);
             }
         });
 
         footnote.addEventListener('touchstart', function() {
             activeFootnote = footnote;
-            if (isMobile()) {
+            if (needsFixedPosition(footnote)) {
                 positionTooltip(footnote);
             }
         }, { passive: true });
 
         footnote.addEventListener('mouseleave', function() {
+            if (needsFixedPosition(footnote)) {
+                clearTooltipPosition(footnote);
+            }
             activeFootnote = null;
         });
     });
 
     // 滚动时重新定位当前可见的 tooltip，避免 fixed 定位与文本元素错位
     window.addEventListener('scroll', function() {
-        if (activeFootnote && isMobile()) {
+        if (activeFootnote && needsFixedPosition(activeFootnote)) {
             positionTooltip(activeFootnote);
         }
     }, { passive: true });
 
-    // 窗口尺寸变化：移动端重新定位，桌面端清除内联 top 样式
+    // 窗口尺寸变化：重新定位或清除内联样式
     window.addEventListener('resize', function() {
-        if (isMobile()) {
-            if (activeFootnote) {
+        if (activeFootnote) {
+            if (needsFixedPosition(activeFootnote)) {
                 positionTooltip(activeFootnote);
+            } else {
+                clearTooltipPosition(activeFootnote);
             }
         } else {
             document.querySelectorAll('.tooltip').forEach(tooltip => {
                 tooltip.style.removeProperty('top');
+                tooltip.style.removeProperty('left');
             });
-            activeFootnote = null;
         }
     });
 }

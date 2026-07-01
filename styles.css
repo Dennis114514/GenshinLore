@@ -1639,6 +1639,17 @@ body {
     text-overflow: ellipsis;
 }
 
+.quote-preview .has-footnote {
+    position: static;
+}
+
+.quote-preview .has-footnote .tooltip {
+    position: fixed;
+    left: auto;
+    right: auto;
+    transform: none;
+}
+
 .quote-link {
     font-family: 'Common', sans-serif;
     font-size: 12px;
