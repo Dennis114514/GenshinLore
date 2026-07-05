@@ -17,10 +17,6 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     }
 
-    function escapeHtml(text) {
-        return text;
-    }
-
     function normalizeInline(raw) {
         let s = raw ?? '';
         const DELIM_ALT = '\uE001';
@@ -50,7 +46,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 const src = idx >= 0 ? data.slice(0, idx) : data;
                 const alt = idx >= 0 ? data.slice(idx + 1) : '';
                 let fixedSrc = src.replaceAll('\\', '/').replace(/^\/?\.\.\//, '');
-                return `<img src="${fixedSrc}" alt="${alt}" style="max-width:100%;height:auto;margin:10px 0;"><br><span class="image-caption">${alt}</span>`;
+                return `<img src="${fixedSrc}" alt="${alt}" style="display:block;margin:0 auto 8px;max-width:100%;height:auto;"><br><p class="image-caption">${alt}</p>`;
             })
             .replaceAll(/\[\[\[LINK:([^\]]+)\]\]\]/g, (match, data) => {
                 const idx = data.indexOf(DELIM_LINK);
@@ -60,7 +56,7 @@ document.addEventListener('DOMContentLoaded', () => {
             })
             .replaceAll(/\[\[\[IMG:([^\]]+)\]\]\]/g, (match, src) => {
                 let fixedSrc = src.replaceAll('\\', '/').replace(/^\/?\.\.\//, '');
-                return `<img src="${fixedSrc}" alt="image" style="max-width:100%;height:auto;">`;
+                return `<img src="${fixedSrc}" alt="image" style="display:block;margin:0 auto 8px;max-width:100%;height:auto;">`;
             });
 
         return s;
@@ -210,7 +206,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     function buildToc(tocItems) {
         tocList.innerHTML = '';
-        tocItems.forEach(item => {
+        tocItems.filter(item => item.level <= 4).forEach(item => {
             const li = document.createElement('li');
             li.className = 'toc-item';
             const a = document.createElement('a');
@@ -272,9 +268,10 @@ document.addEventListener('DOMContentLoaded', () => {
                 const h2 = document.createElement('h2');
                 h2.id = id;
                 h2.className = 'section-title editor-note-title';
+                h2.style.margin = '40px 0 30px 0';
                 h2.innerHTML = injectFootnoteTooltips(normalizeInline(text), footnoteMap);
                 container.appendChild(h2);
-                tocItems.push({ id, text: text.replace(/<[^>]+>/g, ''), level: 1 });
+                tocItems.push({ id, text: text.replace(/<sup>[\s\S]*?<\/sup>/gi, '').replace(/<sub>[\s\S]*?<\/sub>/gi, '').replace(/<[^>]+>/g, ''), level: 1 });
                 i++;
                 continue;
             }
@@ -283,16 +280,17 @@ document.addEventListener('DOMContentLoaded', () => {
                 const text = trimmed.slice(3).trim();
                 const id = makeId(2);
                 const wrapper = document.createElement('div');
-                wrapper.className = 'editor-note-section';
+                wrapper.className = tocLevelOffset === 2 ? 'booklet-section' : 'editor-note-section';
                 const h2 = document.createElement('h2');
                 h2.id = id;
-                h2.className = 'timeline-main-title';
+                h2.className = 'timeline-period';
                 h2.style.fontSize = '2em';
+                h2.style.margin = '40px 0 30px 0';
                 h2.innerHTML = injectFootnoteTooltips(normalizeInline(text), footnoteMap);
                 wrapper.appendChild(h2);
                 container.appendChild(wrapper);
                 currentSection = wrapper;
-                tocItems.push({ id, text: text.replace(/<[^>]+>/g, ''), level: 2 });
+                tocItems.push({ id, text: text.replace(/<sup>[\s\S]*?<\/sup>/gi, '').replace(/<sub>[\s\S]*?<\/sub>/gi, '').replace(/<[^>]+>/g, ''), level: 2 });
                 i++;
                 continue;
             }
@@ -308,6 +306,7 @@ document.addEventListener('DOMContentLoaded', () => {
                     const h3 = document.createElement('h3');
                     h3.id = id;
                     h3.className = 'timeline-period';
+                    h3.style.margin = '40px 0 30px 0';
                     h3.innerHTML = injectFootnoteTooltips(normalizeInline(text), footnoteMap);
                     sectionWrapper.appendChild(h3);
                     container.appendChild(sectionWrapper);
@@ -316,12 +315,13 @@ document.addEventListener('DOMContentLoaded', () => {
                     const h3 = document.createElement('h3');
                     h3.id = id;
                     h3.className = 'timeline-main-title';
-                    h3.style.fontSize = '1.75em';
+                    h3.style.fontSize = '1.5em';
+                    h3.style.margin = '40px 0 30px 0';
                     h3.innerHTML = injectFootnoteTooltips(normalizeInline(text), footnoteMap);
                     currentSection.appendChild(h3);
                 }
                 
-                tocItems.push({ id, text: text.replace(/<[^>]+>/g, ''), level: 3 });
+                tocItems.push({ id, text: text.replace(/<sup>[\s\S]*?<\/sup>/gi, '').replace(/<sub>[\s\S]*?<\/sub>/gi, '').replace(/<[^>]+>/g, ''), level: 3 });
                 i++;
                 continue;
             }
@@ -337,7 +337,8 @@ document.addEventListener('DOMContentLoaded', () => {
                     const h4 = document.createElement('h4');
                     h4.id = id;
                     h4.className = 'timeline-main-title';
-                    h4.style.fontSize = '1.5em';
+                    h4.style.fontSize = '1.25em';
+                    h4.style.margin = '40px 0 30px 0';
                     h4.innerHTML = injectFootnoteTooltips(normalizeInline(text), footnoteMap);
                     item.appendChild(h4);
                     
@@ -352,11 +353,12 @@ document.addEventListener('DOMContentLoaded', () => {
                     const h4 = document.createElement('h4');
                     h4.id = id;
                     h4.className = 'timeline-main-title';
-                    h4.style.fontSize = '1.5em';
+                    h4.style.fontSize = '1em';
+                    h4.style.margin = '40px 0 30px 0';
                     h4.innerHTML = injectFootnoteTooltips(normalizeInline(text), footnoteMap);
                     currentSection.appendChild(h4);
                 }
-                tocItems.push({ id, text: text.replace(/<[^>]+>/g, ''), level: 4 });
+                tocItems.push({ id, text: text.replace(/<sup>[\s\S]*?<\/sup>/gi, '').replace(/<sub>[\s\S]*?<\/sub>/gi, '').replace(/<[^>]+>/g, ''), level: 4 });
                 i++;
                 continue;
             }
@@ -366,12 +368,13 @@ document.addEventListener('DOMContentLoaded', () => {
                 
                 const h5 = document.createElement('h5');
                 h5.id = id;
-                h5.className = 'timeline-main-title';
-                h5.style.fontSize = '1.25em';
+                h5.className = 'timeline-subtitle';
+                h5.style.fontSize = '1em';
+                h5.style.margin = '40px 0 30px 0';
                 h5.innerHTML = injectFootnoteTooltips(normalizeInline(text), footnoteMap);
                 currentSection.appendChild(h5);
                 
-                tocItems.push({ id, text: text.replace(/<[^>]+>/g, ''), level: 5 });
+                tocItems.push({ id, text: text.replace(/<sup>[\s\S]*?<\/sup>/gi, '').replace(/<sub>[\s\S]*?<\/sub>/gi, '').replace(/<[^>]+>/g, ''), level: 5 });
                 i++;
                 continue;
             }
@@ -518,10 +521,10 @@ document.addEventListener('DOMContentLoaded', () => {
                 const imgPath = m ? m[1] : '';
                 i++;
                 while (i < lines.length && !(lines[i] || '').trim()) i++;
-                if (i < lines.length && /^`{3}/.test((lines[i] || '').trim())) {
+                if (i < lines.length && /^(?:\\`){3}/.test((lines[i] || '').trim())) {
                     i++;
                     const codeLines = [];
-                    while (i < lines.length && !/^`{3}/.test((lines[i] || '').trim())) {
+                    while (i < lines.length && !/^(?:\\`){3}/.test((lines[i] || '').trim())) {
                         codeLines.push(lines[i] || '');
                         i++;
                     }
@@ -530,9 +533,25 @@ document.addEventListener('DOMContentLoaded', () => {
                     const div = document.createElement('div');
                     div.className = 'second-intro';
                     const codeHtml = codeLines.map(line => normalizeInline(line)).join('\n');
-                    div.innerHTML = `<img class="bg-img" src="${fixedSrc}" alt="" style="max-width:100%;"><div class="intro-content"><pre style="font-family:Khaenriah, sans-serif; color:#4d4f53; font-size:2em; font-weight:bold; text-align:center; background:none; border:none;">${codeHtml}</pre></div>`;
+                    div.innerHTML = `<img class="bg-img" src="${fixedSrc}" alt="" style="max-width:100%;"><div class="intro-content"><pre style="font-family:Genshin, sans-serif; color:#4d4f53; font-size:2em; font-weight:bold; text-align:center; background:none; border:none;">${codeHtml}</pre></div>`;
                     currentSection.appendChild(div);
                 }
+                continue;
+            }
+
+            if (/^(?:\\`){3}/.test(trimmed)) {
+                i++;
+                const codeLines = [];
+                while (i < lines.length && !/^(?:\\`){3}/.test((lines[i] || '').trim())) {
+                    codeLines.push(lines[i] || '');
+                    i++;
+                }
+                if (i < lines.length && /^(?:\\`){3}/.test((lines[i] || '').trim())) i++;
+                const pre = document.createElement('pre');
+                pre.className = 'code-block';
+                pre.style.cssText = 'font-family:monospace; color:#4d4f53; font-size:0.9em; line-height:1.6; background:#f5f5f5; border:1px solid #ddd; border-radius:4px; padding:12px 16px; overflow-x:auto; margin:16px 0; white-space:pre-wrap; word-break:break-word;';
+                pre.textContent = codeLines.join('\n');
+                currentSection.appendChild(pre);
                 continue;
             }
 
@@ -579,7 +598,12 @@ document.addEventListener('DOMContentLoaded', () => {
             bookletDiv.className = 'main-text';
             const parsed = parseSection(bookletMatch[1], footnoteMap, tocItems, 2);
             bookletDiv.appendChild(parsed);
-            containerEl.appendChild(bookletDiv);
+            const mainContent = document.querySelector('main.main-content');
+            if (mainContent) {
+                mainContent.after(bookletDiv);
+            } else {
+                document.body.appendChild(bookletDiv);
+            }
         }
 
         buildToc(tocItems);
