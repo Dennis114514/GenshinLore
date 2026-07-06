@@ -511,7 +511,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 const contentHTML = blockContent
                     .filter(l => (l || '').trim())
                     .map(l => `<p class="common-paragraph">${injectFootnoteTooltips(normalizeInline(l.trimEnd()), footnoteMap)}</p>`).join('');
-                wrapper.innerHTML = `<img class="bg-top" src="${fixedBg0}" alt="" style="max-width:100%;"><div class="intro-content">${contentHTML}</div><img class="bg-bottom" src="${fixedBg1}" alt="" style="max-width:100%;">`;
+                wrapper.innerHTML = `<img class="bg-top" src="${fixedBg0}" alt="" style="width:100vw;max-width:none;margin-left:calc(50% - 50vw);"><div class="intro-content">${contentHTML}</div><img class="bg-bottom" src="${fixedBg1}" alt="" style="width:100vw;max-width:none;margin-left:calc(50% - 50vw);">`;
                 currentSection.appendChild(wrapper);
                 continue;
             }

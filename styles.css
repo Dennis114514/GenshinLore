@@ -1833,8 +1833,6 @@ body {
 
 /* 编者的话样式 */
 .editor-note {
-    margin-top: 60px;
-    padding-top: 40px;
     border-top: 3px solid #D3BC8E;
 }
 
