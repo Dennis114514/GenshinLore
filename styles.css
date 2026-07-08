@@ -719,7 +719,8 @@ body {
     }
 
     .main-text {
-        padding-right: 0 !important;
+        padding-right: 20px !important;
+        padding-left: 20px !important;
     }
 
     .page-content {
@@ -965,6 +966,30 @@ body {
     left: 50%;
     top: 0;
     transform: translateX(-50%);
+}
+
+/* Booklet intro: make background images full-bleed and center the intro paragraph */
+#about-content .booklet-section .intro-bg {
+    width: 100vw;
+    max-width: 100vw;
+    margin-left: calc(50% - 50vw);
+    margin-right: calc(50% - 50vw);
+    box-sizing: border-box;
+    padding-left: 0;
+    padding-right: 0;
+}
+
+#about-content .booklet-section .intro-bg .bg-top,
+#about-content .booklet-section .intro-bg .bg-bottom {
+    width: 100vw;
+    max-width: 100vw;
+    margin-left: calc(50% - 50vw);
+}
+
+#about-content .booklet-section .intro-content .common-paragraph {
+    text-align: center !important;
+    margin: 0 auto 15px !important;
+    padding: 0 20px;
 }
 
 /* 移动端 tooltip 响应式适配：

@@ -598,11 +598,16 @@ document.addEventListener('DOMContentLoaded', () => {
             bookletDiv.className = 'main-text';
             const parsed = parseSection(bookletMatch[1], footnoteMap, tocItems, 2);
             bookletDiv.appendChild(parsed);
-            const mainContent = document.querySelector('main.main-content');
-            if (mainContent) {
-                mainContent.after(bookletDiv);
+            // 插入到关于页面的内容容器中，确保继承页面内边距和样式
+            if (containerEl) {
+                containerEl.appendChild(bookletDiv);
             } else {
-                document.body.appendChild(bookletDiv);
+                const mainContent = document.querySelector('main.main-content');
+                if (mainContent) {
+                    mainContent.after(bookletDiv);
+                } else {
+                    document.body.appendChild(bookletDiv);
+                }
             }
         }
 
