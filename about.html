@@ -829,25 +829,56 @@
             <p><a href="https://icp.gov.moe/?keyword=20263347" target="_blank">萌ICP备20263347号</a></p>
         </footer>
     <script>
+        /**
+         * 关于页面特殊交互模块（IIFE）
+         * 实现"彩蛋"功能：通过键盘序列（347）或移动端输入触发隐藏的覆层，
+         * 包含三层覆层：special-overlay -> end-overlay -> final-overlay，
+         * 支持滚轮/触摸手势关闭和切换。
+         */
         (function() {
+            /** 特殊区域容器元素 */
             const specialSection = document.getElementById('special-section');
+            /** 特殊提示文字元素 */
             const specialHint = document.getElementById('special-hint');
+            /** 特殊覆层（主彩蛋内容） */
             const specialOverlay = document.getElementById('special-overlay');
+            /** 覆层内的卡片容器 */
             const specialCard = document.querySelector('.special-card');
+            /** 结束覆层（过渡动画） */
             const endOverlay = document.getElementById('end-overlay');
+            /** 最终覆层（致谢页面） */
             const finalOverlay = document.getElementById('final-overlay');
+
+            /** 特殊覆层是否已打开 */
             let overlayOpened = false;
+            /** 结束覆层是否已打开 */
             let endOverlayOpened = false;
+            /** 最终覆层是否已打开 */
             let finalOverlayOpened = false;
+
+            /** 键盘序列密码：依次按下 3、4、7 触发 */
             const sequenceKeys = ['3', '4', '7'];
+            /** 当前序列匹配位置 */
             let sequencePosition = 0;
+
+            /** 移动端触发输入框 */
             const mobileTriggerInput = document.getElementById('mobile-trigger');
+            /** 移动端触发按钮 */
             const mobileTriggerButton = document.getElementById('mobile-trigger-button');
 
+            /**
+             * 重置键盘序列状态
+             * 将序列匹配位置归零
+             */
             function resetSequence() {
                 sequencePosition = 0;
             }
 
+            /**
+             * 处理键盘序列输入
+             * 匹配预设的按键序列（3-4-7），全部匹配后触发覆层打开
+             * @param {string} key - 按下的键值
+             */
             function handleKeySequence(key) {
                 if (key === sequenceKeys[sequencePosition]) {
                     sequencePosition += 1;
@@ -857,12 +888,17 @@
                     }
                     return;
                 }
+                /** 序列中断，重置并检查是否是新序列的开头 */
                 resetSequence();
                 if (key === sequenceKeys[0]) {
                     sequencePosition = 1;
                 }
             }
 
+            /**
+             * 打开特殊覆层
+             * 显示彩蛋内容，隐藏页面其他元素
+             */
             function openOverlay() {
                 if (overlayOpened) return;
                 overlayOpened = true;
@@ -871,12 +907,17 @@
                 specialOverlay.setAttribute('aria-hidden', 'false');
             }
 
+            /**
+             * 关闭特殊覆层
+             * 带退出动画，450ms 后移除可见类
+             */
             function closeOverlay() {
                 if (!overlayOpened) return;
                 specialOverlay.classList.add('exiting');
                 specialOverlay.setAttribute('aria-hidden', 'true');
                 setTimeout(() => {
                     specialOverlay.classList.remove('visible', 'exiting');
+                    /** 如果其他覆层也未打开，恢复页面正常状态 */
                     if (!endOverlayOpened && !finalOverlayOpened) {
                         document.body.classList.remove('special-active');
                     }
@@ -884,6 +925,10 @@
                 overlayOpened = false;
             }
 
+            /**
+             * 打开结束覆层（过渡页面）
+             * 先关闭特殊覆层（如果打开），再显示结束覆层
+             */
             function openEndOverlay() {
                 if (endOverlayOpened) return;
                 endOverlayOpened = true;
@@ -895,6 +940,9 @@
                 endOverlay.setAttribute('aria-hidden', 'false');
             }
 
+            /**
+             * 关闭结束覆层
+             */
             function closeEndOverlay() {
                 if (!endOverlayOpened) return;
                 endOverlay.classList.remove('visible');
@@ -905,6 +953,10 @@
                 }
             }
 
+            /**
+             * 打开最终覆层（致谢/结尾页面）
+             * 先关闭结束覆层（如果打开），再显示最终覆层
+             */
             function openFinalOverlay() {
                 if (finalOverlayOpened) return;
                 finalOverlayOpened = true;
@@ -916,6 +968,9 @@
                 finalOverlay.setAttribute('aria-hidden', 'false');
             }
 
+            /**
+             * 关闭最终覆层
+             */
             function closeFinalOverlay() {
                 if (!finalOverlayOpened) return;
                 finalOverlay.classList.remove('visible');
@@ -926,6 +981,7 @@
                 }
             }
 
+            /** 桌面端键盘事件：监听数字键序列 */
             window.addEventListener('keydown', (event) => {
                 if (overlayOpened) return;
                 if (/^[0-9]$/.test(event.key)) {
@@ -933,6 +989,7 @@
                 }
             });
 
+            /** 移动端按钮点击：校验输入值是否为 '347' */
             mobileTriggerButton.addEventListener('click', () => {
                 if (overlayOpened) return;
                 if (mobileTriggerInput.value.trim() === '347') {
@@ -941,6 +998,7 @@
                 }
             });
 
+            /** 移动端输入框回车键触发 */
             mobileTriggerInput.addEventListener('keydown', (event) => {
                 if (event.key === 'Enter') {
                     event.preventDefault();
@@ -948,10 +1006,22 @@
                 }
             });
 
+            /**
+             * 滚轮手势状态变量
+             * specialWheelDirection: 当前滚轮方向（'up'/'down'），用于检测连续同向滚动
+             * specialWheelDistance: 累计滚轮距离，超过阈值触发切换
+             */
             let specialWheelDirection = null;
             let specialWheelDistance = 0;
+
+            /**
+             * 获取滑动手势阈值
+             * 基于视口高度动态计算，为视口高度的 1/4
+             * @returns {number} 滑动阈值（像素）
+             */
             const getSwipeThreshold = () => window.innerHeight / 4;
 
+            /** 桌面端滚轮事件：在覆层卡片边界处滚动可关闭/切换覆层 */
             specialCard.addEventListener('wheel', (event) => {
                 if (!overlayOpened) return;
                 const scrollTop = specialCard.scrollTop;
@@ -959,18 +1029,21 @@
                 const deltaY = event.deltaY;
                 const direction = deltaY > 0 ? 'down' : deltaY < 0 ? 'up' : null;
                 const swipeThreshold = getSwipeThreshold();
+                /** 判断是否处于滚动边界（顶部或底部） */
                 const atTopEdge = scrollTop <= 1;
                 const atBottomEdge = scrollTop >= scrollBottom - 1;
                 const isOverscrolling = (direction === 'up' && atTopEdge) || (direction === 'down' && atBottomEdge);
 
                 if (!direction) return;
 
+                /** 非边界滚动：重置累计 */
                 if (!isOverscrolling) {
                     specialWheelDirection = null;
                     specialWheelDistance = 0;
                     return;
                 }
 
+                /** 方向改变则重置累计 */
                 if (direction !== specialWheelDirection) {
                     specialWheelDirection = direction;
                     specialWheelDistance = 0;
@@ -978,12 +1051,14 @@
 
                 specialWheelDistance += Math.abs(deltaY);
 
+                /** 累计距离超过阈值，触发切换 */
                 if (specialWheelDistance >= swipeThreshold) {
                     event.preventDefault();
                     event.stopPropagation();
                     specialWheelDirection = null;
                     specialWheelDistance = 0;
 
+                    /** 向上滚动：关闭覆层；向下滚动：打开结束覆层 */
                     if (direction === 'up') {
                         closeOverlay();
                     } else if (direction === 'down') {
@@ -992,6 +1067,7 @@
                 }
             }, { passive: false });
 
+            /** 移动端触摸开始：记录初始触摸位置 */
             specialCard.addEventListener('touchstart', (event) => {
                 const touch = event.touches[0];
                 specialCard.dataset.touchStartY = touch.clientY;
@@ -1000,6 +1076,7 @@
                 specialCard.dataset.touchOverscrollDirection = '';
             }, { passive: true });
 
+            /** 移动端触摸移动：在边界处滑动可关闭/切换覆层 */
             specialCard.addEventListener('touchmove', (event) => {
                 if (!overlayOpened) return;
                 const touch = event.touches[0];
@@ -1016,16 +1093,19 @@
 
                 if (!direction) return;
 
+                /** 判断是否处于滚动边界 */
                 const atTopEdge = scrollTop <= 1;
                 const atBottomEdge = scrollTop >= scrollBottom - 1;
                 const isOverscrolling = (direction === 'down' && atTopEdge) || (direction === 'up' && atBottomEdge);
 
+                /** 非边界滚动：重置累计 */
                 if (!isOverscrolling) {
                     specialCard.dataset.touchOverscrollDistance = '0';
                     specialCard.dataset.touchOverscrollDirection = '';
                     return;
                 }
 
+                /** 方向改变则重置累计 */
                 if (direction !== overscrollDirection) {
                     overscrollDirection = direction;
                     overscrollDistance = 0;
@@ -1035,10 +1115,12 @@
                 overscrollDistance += Math.abs(deltaY);
                 specialCard.dataset.touchOverscrollDistance = overscrollDistance.toString();
 
+                /** 累计距离超过阈值，触发切换 */
                 if (overscrollDistance >= swipeThreshold) {
                     event.preventDefault();
                     event.stopPropagation();
 
+                    /** 向下滑动：关闭覆层；向上滑动：打开结束覆层 */
                     if (direction === 'down') {
                         closeOverlay();
                     } else if (direction === 'up') {
@@ -1050,11 +1132,13 @@
                 }
             }, { passive: false });
 
+            /** 点击结束覆层：关闭并打开最终覆层 */
             endOverlay.addEventListener('click', () => {
                 closeEndOverlay();
                 openFinalOverlay();
             });
 
+            /** 点击最终覆层：关闭 */
             finalOverlay.addEventListener('click', () => {
                 closeFinalOverlay();
             });
