@@ -1,5 +1,7 @@
 /**
  * Copyright (C) 2026 GenshinLore Website & Dennis114514 & other contributors
+ * Licensed under the GNU General Public License v3.0 (GPL-3.0)
+ * See LICENSE.md file in the project root for full license information.
  */
 document.addEventListener('DOMContentLoaded', () => {
     const mdPath = 'md/about.md';
