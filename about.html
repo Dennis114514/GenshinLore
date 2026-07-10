@@ -48,6 +48,384 @@
             margin: 15px 0;
             text-align: justify;
         }
+
+        /* Special section styles */
+        #special-section {
+            position: relative;
+            padding: 30px 0 80px;
+            font-family: 'Genshin', sans-serif;
+        }
+
+        .special-hint {
+            opacity: 0;
+            transform: translateY(12px);
+            transition: opacity 0.35s ease, transform 0.35s ease;
+            color: #4d4f53;
+            font-family: 'Genshin', sans-serif;
+            font-size: 16px;
+            text-align: center;
+            margin: 0 auto;
+            max-width: 680px;
+        }
+
+        .special-hint.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        .special-input {
+            display: none;
+            margin: 24px auto 0;
+            max-width: 400px;
+            text-align: center;
+        }
+
+        .end-overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: #ffffff;
+            z-index: 10000;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            opacity: 0;
+            visibility: hidden;
+            transition: opacity 0.8s ease, visibility 0.8s ease;
+        }
+
+        .end-overlay.visible {
+            opacity: 1;
+            visibility: visible;
+        }
+
+        .final-overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: #ffffff;
+            z-index: 10001;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            opacity: 0;
+            visibility: hidden;
+            transition: opacity 0.8s ease, visibility 0.8s ease;
+        }
+
+        .final-overlay.visible {
+            opacity: 1;
+            visibility: visible;
+        }
+
+        .final-content {
+            max-width: 720px;
+            width: min(760px, 90%);
+            padding: 32px;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 18px;
+        }
+
+        .final-icon img {
+            width: min(220px, 45vw);
+            max-width: 260px;
+            display: block;
+            margin: 0 auto;
+        }
+
+        .final-title {
+            font-family: 'Genshin', sans-serif;
+            font-size: clamp(2rem, 4vw, 3rem);
+            color: #2f3135;
+            margin: 0;
+        }
+
+        .final-subtitle {
+            font-family: 'Genshin', 'Microsoft YaHei', sans-serif;
+            font-size: 14px;
+            color: #838383;
+            margin: 0;
+        }
+
+        .final-footer {
+            margin-top: 36px;
+            color: #838383;
+            font-size: 14px;
+            line-height: 1.8;
+            text-align: center;
+        }
+
+        .final-footer a {
+            color: inherit;
+            text-decoration: none;
+        }
+
+        .final-footer p {
+            margin: 6px 0;
+        }
+
+        .end-content {
+            max-width: 800px;
+            padding: 40px;
+            text-align: center;
+        }
+
+        .end-content p {
+            font-family: 'Genshin', 'Microsoft YaHei', sans-serif;
+            font-size: 20px;
+            line-height: 2;
+            margin-bottom: 10px;
+            letter-spacing: 1px;
+        }
+
+        .end-hint {
+            font-family: 'Genshin', 'Microsoft YaHei', sans-serif;
+            font-size: 14px;
+            color: #838383;
+            margin-top: 40px;
+            letter-spacing: 0.5px;
+        }
+
+        .special-input label {
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            font-family: 'Genshin', sans-serif;
+            color: #4d4f53;
+            font-size: 16px;
+        }
+
+        .special-input input {
+            min-width: 120px;
+            width: 120px;
+            border: 1px solid #c0c0c0;
+            border-radius: 10px;
+            padding: 10px 12px;
+            background: #fff;
+            color: #2f3135;
+            font-size: 16px;
+            outline: none;
+        }
+
+        .special-input button {
+            margin-left: 12px;
+            border: none;
+            border-radius: 10px;
+            padding: 10px 16px;
+            background: #D3BC8E;
+            color: #1f2123;
+            font-family: 'Genshin', sans-serif;
+            font-size: 16px;
+            cursor: pointer;
+            transition: background 0.2s ease;
+        }
+
+        .special-input button:hover {
+            background: #B59A7E;
+        }
+
+        .special-overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(248, 246, 240, 0.98);
+            backdrop-filter: blur(14px);
+            opacity: 0;
+            visibility: hidden;
+            transition: opacity 0.45s ease, visibility 0.45s ease;
+            z-index: 9999;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 24px;
+            overflow: hidden;
+            overscroll-behavior: contain;
+            pointer-events: none;
+            touch-action: pan-y;
+            -webkit-overflow-scrolling: touch;
+        }
+
+        .special-overlay.visible {
+            opacity: 1;
+            visibility: visible;
+            pointer-events: auto;
+        }
+
+        .special-card {
+            display: grid;
+            grid-template-columns: minmax(0, 1.15fr) minmax(280px, 0.85fr);
+            gap: 36px;
+            width: min(1180px, 100%);
+            max-width: 1180px;
+            max-height: min(90vh, calc(100vh - 48px));
+            padding: 36px;
+            background: rgba(255, 255, 255, 0.95);
+            border-radius: 28px;
+            box-shadow: 0 30px 120px rgba(86, 84, 88, 0.18);
+            opacity: 0;
+            transform: translateY(40px);
+            animation: specialEnter 0.7s ease forwards;
+            min-height: 0;
+            overflow-y: auto;
+            overflow-x: hidden;
+            overscroll-behavior: contain;
+            -webkit-overflow-scrolling: touch;
+            box-sizing: border-box;
+            touch-action: pan-y;
+        }
+
+        .special-overlay.exiting .special-card {
+            animation: specialExit 0.45s ease forwards;
+        }
+
+        .special-text {
+            font-family: 'Genshin', sans-serif;
+            color: #2f3135;
+            line-height: 2;
+        }
+
+        .special-text h2 {
+            font-size: clamp(2rem, 2.4vw, 2.6rem);
+            margin-bottom: 24px;
+            letter-spacing: 0.04em;
+            color: #1f2123;
+        }
+
+        .special-text p {
+            margin: 16px 0;
+            font-size: 16px;
+            text-align: justify;
+        }
+
+        .special-text ruby {
+            ruby-position: over;
+            font-size: 1rem;
+        }
+
+        .special-media img {
+            width: 100%;
+            height: auto;
+            display: block;
+            border-radius: 18px;
+            box-shadow: 0 26px 80px rgba(0, 0, 0, 0.12);
+            opacity: 0;
+            transform: translateY(30px);
+            animation: imageEnter 0.7s ease 0.16s forwards;
+        }
+
+        .special-overlay.exiting .special-media img {
+            animation: imageExit 0.42s ease forwards;
+        }
+
+        .special-overlay.exiting .special-text,
+        .special-overlay.exiting .special-media img {
+            opacity: 1;
+        }
+
+        footer.home-footer {
+            opacity: 0;
+            visibility: hidden;
+            height: 0;
+            overflow: hidden;
+            pointer-events: none;
+            transition: opacity 0.35s ease, visibility 0.35s ease;
+        }
+
+        body.special-active header,
+        body.special-active .main-content > :not(#special-section) {
+            opacity: 0;
+            pointer-events: none;
+            transition: opacity 0.35s ease;
+        }
+
+        body.special-active {
+            overflow: hidden;
+        }
+
+        @keyframes specialEnter {
+            from {
+                opacity: 0;
+                transform: translateY(40px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes specialExit {
+            from {
+                opacity: 1;
+                transform: translateY(0);
+            }
+            to {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+        }
+
+        @keyframes imageEnter {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes imageExit {
+            from {
+                opacity: 1;
+                transform: translateY(0);
+            }
+            to {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+        }
+
+        @media (max-width: 1012px) {
+            .special-card {
+                grid-template-columns: 1fr;
+                gap: 24px;
+                padding: 24px;
+                max-height: calc(100vh - 48px);
+            }
+
+            .special-media {
+                order: 2;
+            }
+
+            .special-media img {
+                max-width: 100%;
+            }
+
+            .special-input {
+                display: block;
+            }
+
+            .end-content p {
+                font-size: calc(100vw / 50) !important;
+                line-height: 1.8 !important;
+            }
+
+            .end-hint {
+                font-size: calc(100vw / 70) !important;
+                margin-top: 30px !important;
+                color:#838383 !important;
+            }
+        }
     </style>
 </head>
 <body>
@@ -396,12 +774,293 @@
                 <!-- 内容将由 aboutcontent.js 渲染 -->
             </div>
         </section>
+        <div id="special-section">
+            <div id="special-hint" class="special-hint visible">查看更多内容<br>请依次输入：表象，本征，垂直超越之径的数目</div>
+            <div id="special-input" class="special-input">
+                <label for="mobile-trigger">
+                    <input id="mobile-trigger" type="text" inputmode="numeric" maxlength="3" placeholder="" autocomplete="off">
+                </label>
+                <button id="mobile-trigger-button" type="button">提交</button>
+            </div>
+            <div id="special-overlay" class="special-overlay" aria-hidden="true">
+                <div class="special-card" role="dialog" aria-modal="true">
+                    <div class="special-text">
+                        <h2>One Last World</h2>
+                        <p>第一次来到空之神殿时，</p>
+                        <p>我并没有什么特别的感觉。</p>
+                        <p>因为独属于我的「派·蒙娜丽莎」，</p>
+                        <p>我早已遇见。</p>
+                        <p>「<ruby>你<rp>(</rp><rt>派蒙</rt><rp>)</rp></ruby>」是万千星辰中的一颗。</p>
+                        <p>但于我而言，</p>
+                        <p>「<ruby>你<rp>(</rp><rt>派蒙</rt><rp>)</rp></ruby>」</p>
+                        <p>就是整个「<ruby>世界<rp>(</rp><rt>提瓦特</rt><rp>)</rp></ruby>」。</p>
+                    </div>
+                    <div class="special-media">
+                        <img src="img/context/about/11.png" alt="One Last World">
+                    </div>
+                </div>
+            </div>
+            <div id="end-overlay" class="end-overlay" aria-hidden="true">
+                <div class="end-content" role="dialog" aria-modal="true">
+                    <p>语言的价值不可仅仅留存在字面。借由语言的一致性，人们统御思维。语言即是底线、规则、武器与暴力。通过令语言与众不同，我们终于能够另辟蹊径抵达思想上的相对完全。</p>
+                    <p>而统御思想固然对一部分人来说没有意义，却对绝大部分人意义非凡。个体追求的差异决定了我们掌握不同语言并使用不同媒介。人在诸多时刻受语言控制。</p>
+                    <p>——艾尔海森将印着这些话的纸张翻过去。<span style="color:red;">书看到结尾了，再翻就是封底。</span></p>
+                    <p class="end-hint">点击任意位置继续</p>
+                </div>
+            </div>
+            <div id="final-overlay" class="final-overlay" aria-hidden="true">
+                <div class="final-content" role="dialog" aria-modal="true">
+                    <div class="final-icon">
+                        <img src="img/logo/Genshinlore/icondark.png" alt="日月全事">
+                    </div>
+                    <p class="final-title">感谢阅读</p>
+                    <p class="final-subtitle">点击任意位置返回</p>
+                    <div class="final-footer">
+                        <p>愿风指引你们的道路</p>
+                        <p><a href="https://github.com/Dennis114514/GenshinLore" target="_blank">GenshinLore</a> 2026</p>
+                        <p><a href="https://icp.gov.moe/?keyword=20263347" target="_blank">萌ICP备20263347号</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
     </main>
         <footer class="home-footer">
             <p>愿风指引你们的道路</p>
             <p><a href="https://github.com/Dennis114514/GenshinLore" target="_blank">GenshinLore</a> 2026</p>
             <p><a href="https://icp.gov.moe/?keyword=20263347" target="_blank">萌ICP备20263347号</a></p>
         </footer>
+    <script>
+        (function() {
+            const specialSection = document.getElementById('special-section');
+            const specialHint = document.getElementById('special-hint');
+            const specialOverlay = document.getElementById('special-overlay');
+            const specialCard = document.querySelector('.special-card');
+            const endOverlay = document.getElementById('end-overlay');
+            const finalOverlay = document.getElementById('final-overlay');
+            let overlayOpened = false;
+            let endOverlayOpened = false;
+            let finalOverlayOpened = false;
+            const sequenceKeys = ['3', '4', '7'];
+            let sequencePosition = 0;
+            const mobileTriggerInput = document.getElementById('mobile-trigger');
+            const mobileTriggerButton = document.getElementById('mobile-trigger-button');
+
+            function resetSequence() {
+                sequencePosition = 0;
+            }
+
+            function handleKeySequence(key) {
+                if (key === sequenceKeys[sequencePosition]) {
+                    sequencePosition += 1;
+                    if (sequencePosition === sequenceKeys.length) {
+                        resetSequence();
+                        openOverlay();
+                    }
+                    return;
+                }
+                resetSequence();
+                if (key === sequenceKeys[0]) {
+                    sequencePosition = 1;
+                }
+            }
+
+            function openOverlay() {
+                if (overlayOpened) return;
+                overlayOpened = true;
+                specialOverlay.classList.add('visible');
+                document.body.classList.add('special-active');
+                specialOverlay.setAttribute('aria-hidden', 'false');
+            }
+
+            function closeOverlay() {
+                if (!overlayOpened) return;
+                specialOverlay.classList.add('exiting');
+                specialOverlay.setAttribute('aria-hidden', 'true');
+                setTimeout(() => {
+                    specialOverlay.classList.remove('visible', 'exiting');
+                    if (!endOverlayOpened && !finalOverlayOpened) {
+                        document.body.classList.remove('special-active');
+                    }
+                }, 450);
+                overlayOpened = false;
+            }
+
+            function openEndOverlay() {
+                if (endOverlayOpened) return;
+                endOverlayOpened = true;
+                if (overlayOpened) {
+                    closeOverlay();
+                }
+                endOverlay.classList.add('visible');
+                document.body.classList.add('special-active');
+                endOverlay.setAttribute('aria-hidden', 'false');
+            }
+
+            function closeEndOverlay() {
+                if (!endOverlayOpened) return;
+                endOverlay.classList.remove('visible');
+                endOverlay.setAttribute('aria-hidden', 'true');
+                endOverlayOpened = false;
+                if (!overlayOpened && !finalOverlayOpened) {
+                    document.body.classList.remove('special-active');
+                }
+            }
+
+            function openFinalOverlay() {
+                if (finalOverlayOpened) return;
+                finalOverlayOpened = true;
+                if (endOverlayOpened) {
+                    closeEndOverlay();
+                }
+                finalOverlay.classList.add('visible');
+                document.body.classList.add('special-active');
+                finalOverlay.setAttribute('aria-hidden', 'false');
+            }
+
+            function closeFinalOverlay() {
+                if (!finalOverlayOpened) return;
+                finalOverlay.classList.remove('visible');
+                finalOverlay.setAttribute('aria-hidden', 'true');
+                finalOverlayOpened = false;
+                if (!overlayOpened && !endOverlayOpened) {
+                    document.body.classList.remove('special-active');
+                }
+            }
+
+            window.addEventListener('keydown', (event) => {
+                if (overlayOpened) return;
+                if (/^[0-9]$/.test(event.key)) {
+                    handleKeySequence(event.key);
+                }
+            });
+
+            mobileTriggerButton.addEventListener('click', () => {
+                if (overlayOpened) return;
+                if (mobileTriggerInput.value.trim() === '347') {
+                    mobileTriggerInput.value = '';
+                    openOverlay();
+                }
+            });
+
+            mobileTriggerInput.addEventListener('keydown', (event) => {
+                if (event.key === 'Enter') {
+                    event.preventDefault();
+                    mobileTriggerButton.click();
+                }
+            });
+
+            let specialWheelDirection = null;
+            let specialWheelDistance = 0;
+            const getSwipeThreshold = () => window.innerHeight / 4;
+
+            specialCard.addEventListener('wheel', (event) => {
+                if (!overlayOpened) return;
+                const scrollTop = specialCard.scrollTop;
+                const scrollBottom = specialCard.scrollHeight - specialCard.clientHeight;
+                const deltaY = event.deltaY;
+                const direction = deltaY > 0 ? 'down' : deltaY < 0 ? 'up' : null;
+                const swipeThreshold = getSwipeThreshold();
+                const atTopEdge = scrollTop <= 1;
+                const atBottomEdge = scrollTop >= scrollBottom - 1;
+                const isOverscrolling = (direction === 'up' && atTopEdge) || (direction === 'down' && atBottomEdge);
+
+                if (!direction) return;
+
+                if (!isOverscrolling) {
+                    specialWheelDirection = null;
+                    specialWheelDistance = 0;
+                    return;
+                }
+
+                if (direction !== specialWheelDirection) {
+                    specialWheelDirection = direction;
+                    specialWheelDistance = 0;
+                }
+
+                specialWheelDistance += Math.abs(deltaY);
+
+                if (specialWheelDistance >= swipeThreshold) {
+                    event.preventDefault();
+                    event.stopPropagation();
+                    specialWheelDirection = null;
+                    specialWheelDistance = 0;
+
+                    if (direction === 'up') {
+                        closeOverlay();
+                    } else if (direction === 'down') {
+                        openEndOverlay();
+                    }
+                }
+            }, { passive: false });
+
+            specialCard.addEventListener('touchstart', (event) => {
+                const touch = event.touches[0];
+                specialCard.dataset.touchStartY = touch.clientY;
+                specialCard.dataset.touchPrevY = touch.clientY;
+                specialCard.dataset.touchOverscrollDistance = '0';
+                specialCard.dataset.touchOverscrollDirection = '';
+            }, { passive: true });
+
+            specialCard.addEventListener('touchmove', (event) => {
+                if (!overlayOpened) return;
+                const touch = event.touches[0];
+                const prevY = parseFloat(specialCard.dataset.touchPrevY || touch.clientY);
+                const deltaY = touch.clientY - prevY;
+                const scrollTop = specialCard.scrollTop;
+                const scrollBottom = specialCard.scrollHeight - specialCard.clientHeight;
+                const direction = deltaY > 0 ? 'down' : deltaY < 0 ? 'up' : null;
+                const swipeThreshold = getSwipeThreshold();
+                let overscrollDirection = specialCard.dataset.touchOverscrollDirection;
+                let overscrollDistance = parseFloat(specialCard.dataset.touchOverscrollDistance || '0');
+
+                specialCard.dataset.touchPrevY = touch.clientY;
+
+                if (!direction) return;
+
+                const atTopEdge = scrollTop <= 1;
+                const atBottomEdge = scrollTop >= scrollBottom - 1;
+                const isOverscrolling = (direction === 'down' && atTopEdge) || (direction === 'up' && atBottomEdge);
+
+                if (!isOverscrolling) {
+                    specialCard.dataset.touchOverscrollDistance = '0';
+                    specialCard.dataset.touchOverscrollDirection = '';
+                    return;
+                }
+
+                if (direction !== overscrollDirection) {
+                    overscrollDirection = direction;
+                    overscrollDistance = 0;
+                    specialCard.dataset.touchOverscrollDirection = direction;
+                }
+
+                overscrollDistance += Math.abs(deltaY);
+                specialCard.dataset.touchOverscrollDistance = overscrollDistance.toString();
+
+                if (overscrollDistance >= swipeThreshold) {
+                    event.preventDefault();
+                    event.stopPropagation();
+
+                    if (direction === 'down') {
+                        closeOverlay();
+                    } else if (direction === 'up') {
+                        openEndOverlay();
+                    }
+
+                    specialCard.dataset.touchOverscrollDistance = '0';
+                    specialCard.dataset.touchOverscrollDirection = '';
+                }
+            }, { passive: false });
+
+            endOverlay.addEventListener('click', () => {
+                closeEndOverlay();
+                openFinalOverlay();
+            });
+
+            finalOverlay.addEventListener('click', () => {
+                closeFinalOverlay();
+            });
+        })();
+    </script>
     <script src="aboutcontent.js"></script>
     <script src="script.js"></script>
     <script src="useragreement.js"></script>
