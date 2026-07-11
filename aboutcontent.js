@@ -94,7 +94,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 const src = idx >= 0 ? data.slice(0, idx) : data;
                 const alt = idx >= 0 ? data.slice(idx + 1) : '';
                 let fixedSrc = src.replaceAll('\\', '/').replace(/^\/?\.\.\//, '');
-                return `<img src="${fixedSrc}" alt="${alt}" style="display:block;margin:0 auto 8px;max-width:100%;height:auto;"><br><p class="image-caption">${alt}</p>`;
+                return `<img src="${fixedSrc}" alt="${alt}" style="display:block;margin:0 auto 8px;max-width:100%;height:auto;"><p class="image-caption" style="text-align:center;">${alt}</p>`;
             })
             .replaceAll(/\[\[\[LINK:([^\]]+)\]\]\]/g, (match, data) => {
                 const idx = data.indexOf(DELIM_LINK);
