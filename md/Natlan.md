@@ -1549,7 +1549,7 @@ CL-02：很好。你几乎让我感到惋惜了，第八席，也许已经让我
 
 !!!
 [《原神》剧情PV-「荣勋」_哔哩哔哩bilibili_原神](https://www.bilibili.com/video/BV1yArkYKEva/)
-[《原神》动画短片：「此世之忆」_哔哩哔哩_bilibili](https://www.bilibili.com/video/BV1h7reY9EM7/b)
+[《原神》动画短片：「此世之忆」_哔哩哔哩_bilibili](https://www.bilibili.com/video/BV1h7reY9EM7/)
 [《原神》动画短片——「黄昏」_哔哩哔哩_bilibili](https://www.bilibili.com/video/BV1mtCNY3EiH/)
 !!!
 
