@@ -83,6 +83,9 @@
 ├── .github
 │   └── workflows
 │       └── main.yml
+├── Linear
+│   ├── base.html
+│   └── marker.js
 ├── basiclore
 │   ├── descenders
 │   │   └── base.html
@@ -132,7 +135,7 @@
 │   └── Sumeru
 │       ├── base.html
 │       └── content.js
-├── img (158 files)
+├── img (183 files)
 ├── md
 │   ├── Fontaine.md
 │   ├── Inazuma.md
@@ -143,6 +146,7 @@
 │   ├── Snezhnaya.md
 │   ├── Sumeru.md
 │   ├── Teyvathis.md
+│   ├── about.md
 │   ├── aboutsite.md
 │   ├── main.md
 │   ├── preface.md
@@ -153,7 +157,9 @@
 ├── LICENCE.md
 ├── README.md
 ├── Teyvathis.html
+├── Via_7.0.0.zip
 ├── about.html
+├── aboutcontent.js
 ├── aboutsite.html
 ├── basiclore.html
 ├── contentteyvat.js
@@ -164,6 +170,7 @@
 ├── interestfacts.json
 ├── main.html
 ├── md.html
+├── mermaid.min.js
 ├── notice.js
 ├── notice.json
 ├── preface.html
