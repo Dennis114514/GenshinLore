@@ -1,3 +1,5 @@
+@import url('https://font.webcache.cn/google/css2?family=Noto+Sans+SC:wght@100..900&display=swap');
+
 @font-face {
     font-family: 'Genshin';
     src: url('https://cdn.jsdelivr.net/gh/Dennis114514/GenshinLore@main/fonts/genshin.woff2') format('woff2');
@@ -6,17 +8,10 @@
 }
 
 @font-face {
-    font-family: 'Common';
-    src: url('https://cdn.jsdelivr.net/gh/Dennis114514/GenshinLore@main/fonts/common.woff2') format('woff2');
-    font-weight: normal;
-    font-style: normal;
-}
-
-@font-face {
     font-family: 'Khaenriah';
     src: url('fonts/Khaenriah.woff2') format('woff2');
-    font-weight: normal;
-    font-style: normal;
+  font-weight: normal;
+  font-style: normal;
 }
 
 /* ========================
@@ -53,6 +48,8 @@
     /* 动画时长 */
     --modal-transition: 0.3s;
     --modal-transition-fast: 0.2s;
+    /*重定向字体*/
+    --font-common: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
 }
 
 /* 基础弹窗结构 */
@@ -133,7 +130,7 @@
     padding: var(--modal-padding);
     max-height: var(--modal-body-max-height);
     overflow-y: auto;
-    font-family: 'Common', sans-serif;
+    font-family: var(--font-common);
     font-size: 14px;
     line-height: 1.6;
     color: var(--modal-text-primary);
@@ -265,7 +262,7 @@
 }
 
 .notice-modal .notice-description {
-    font-family: 'Common', sans-serif;
+    font-family: var(--font-common);
     font-size: 14px;
     color: var(--modal-text-primary);
     line-height: 1.8;
@@ -290,7 +287,7 @@
     overflow-x: hidden;
     word-break: break-word;
     white-space: normal;
-    font-family: 'Common', sans-serif;
+    font-family: var(--font-common);
     font-size: 14px;
     line-height: 1.8;
     color: var(--modal-text-primary);
@@ -748,14 +745,14 @@ body {
     color: #8d8f93;
     padding: 15px 20px;
     border-left: 3px solid #c0c0c0!important;
-    font-family: 'Common', sans-serif; 
+    font-family: var(--font-common); 
     font-size: 14px; 
     line-height: 2; 
     margin: 10px 0 10px 70px; 
     text-align: justify;
 }
 .intro-text {
-    font-family: 'Common', serif;
+    font-family: var(--font-common);
     font-size: 18px;
     color: #4d4f53;
     text-align: center;
@@ -921,7 +918,7 @@ body {
     pointer-events: auto;
     text-align: middle;
     line-height: 1.5;
-    font-family: 'Common', sans-serif;
+    font-family: var(--font-common);
 }
 
 .tooltip:hover {
@@ -1083,7 +1080,7 @@ body {
 }
 
 .card-description {
-    font-family: 'Common', sans-serif;
+    font-family: var(--font-common);
     font-size: 12px;
     color: #6d6f73;
     margin-top: 8px;
@@ -1241,7 +1238,7 @@ body {
 .common-table {
     width: 100%;
     border-collapse: collapse;
-    font-family: 'Common', sans-serif;
+    font-family: var(--font-common);
     font-size: 14px;
     line-height: 1.6;
 }
@@ -1276,7 +1273,7 @@ body {
 }
 
 .lightrelam-description {
-    font-family: 'Common', sans-serif;
+    font-family: var(--font-common);
     font-size: 16px;
     color: #4d4f53;
     text-align: center;
@@ -1285,7 +1282,7 @@ body {
 }
 
 .quote-text {
-    font-family: 'Common', sans-serif;
+    font-family: var(--font-common);
     font-size: 15px;
     color: #5a5c5f;
     background-color: #f5f5f5;
@@ -1315,7 +1312,7 @@ body {
     text-align: left;
     max-width: 800px;
     margin: 0 auto;
-    font-family: 'Common', sans-serif;
+    font-family: var(--font-common);
 }
 
 .thanks-row {
@@ -1365,7 +1362,7 @@ body {
 }
 
 .lightrelam-content p {
-    font-family: 'Common', sans-serif;
+    font-family: var(--font-common);
     font-size: 16px;
     color: #4d4f53;
     text-align: center;
@@ -1457,7 +1454,7 @@ body {
 }
 
 .context-text {
-    font-family: 'Common', sans-serif;
+    font-family: var(--font-common);
     font-size: 14px;
     line-height: 1.8;
     color: #4d4f53;
@@ -1475,7 +1472,7 @@ body {
 }
 
 .timeline-intro {
-    font-family: 'Common', sans-serif;
+    font-family: var(--font-common);
     font-size: 15px;
     color: #4d4f53;
     text-align: center;
@@ -1561,7 +1558,7 @@ body {
 }
 
 .timeline-note {
-    font-family: 'Common', sans-serif;
+    font-family: var(--font-common);
     font-size: 12px;
     color: #8d8f93;
     margin: 0 0 30px 70px;
@@ -1599,7 +1596,7 @@ body {
 }
 
 .timeline-content {
-    font-family: 'Common', sans-serif;
+    font-family: var(--font-common);
     font-size: 14px;
     color: #5a5c5f;
     line-height: 1.8;
@@ -1639,7 +1636,7 @@ body {
 }
 
 .quote-block p {
-    font-family: 'Common', sans-serif;
+    font-family: var(--font-common);
     font-size: 14px;
     color: #5a5c5f;
     line-height: 1.8;
@@ -1648,7 +1645,7 @@ body {
 }
 
 .quote-preview {
-    font-family: 'Common', sans-serif;
+    font-family: var(--font-common);
     font-size: 14px;
     color: #5a5c5f;
     line-height: 1.8;
@@ -1680,7 +1677,7 @@ body {
 }
 
 .quote-link {
-    font-family: 'Common', sans-serif;
+    font-family: var(--font-common);
     font-size: 12px;
     color: #ceae6d !important;
     text-align: right !important;
@@ -1791,7 +1788,7 @@ body {
 }
 
 .version-changes li {
-    font-family: 'Common', sans-serif;
+    font-family: var(--font-common);
     font-size: 15px;
     color: #4d4f53;
     line-height: 1.9;
@@ -1909,7 +1906,7 @@ body {
 }
 
 .poem-author {
-    font-family: 'Common', sans-serif;
+    font-family: var(--font-common);
     font-size: 15px;
     color: #4d4f53;
     margin-bottom: 12px;
@@ -1917,7 +1914,7 @@ body {
 }
 
 .poem-editor-note {
-    font-family: 'Common', sans-serif;
+    font-family: var(--font-common);
     font-size: 13px;
     color: #8d8f93;
     line-height: 1.8;
@@ -1929,7 +1926,7 @@ body {
 }
 
 .poem-content {
-    font-family: 'Common', sans-serif;
+    font-family: var(--font-common);
     font-size: 16px;
     color: #4d4f53;
     line-height: 2;
@@ -1986,7 +1983,7 @@ body {
 }
 
 .footnote-item {
-    font-family: 'Common', sans-serif;
+    font-family: var(--font-common);
     font-size: 13px;
     color: #8d8f93;
     line-height: 1.8;
@@ -2043,7 +2040,7 @@ body {
 }
 
 .image-caption {
-    font-family: 'Common', sans-serif;
+    font-family: var(--font-common);
     font-size: 12px;
     color: #8d8f93;
     margin-top: 10px;
@@ -2205,7 +2202,7 @@ body {
 }
 
 .toc-link {
-    font-family: 'Common', sans-serif;
+    font-family: var(--font-common);
     font-size: 14px;
     color: #4d4f53;
     text-decoration: none;
@@ -2290,7 +2287,7 @@ body {
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
     padding: 30px;
     position: relative;
-    font-family: 'Common', sans-serif;
+    font-family: var(--font-common);
     line-height: 1.8;
     font-size: 15px;
     color: #4d4f53;
@@ -2358,7 +2355,7 @@ body {
 .intro-bg {
     display: flex;
     flex-direction: column;
-    font-family: 'Common', sans-serif;
+    font-family: var(--font-common);
     font-size: 15px;
     color: #4d4f53;
     text-align: center;

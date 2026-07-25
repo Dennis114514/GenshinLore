@@ -6,20 +6,16 @@
     <title>关于原神你不知道的很多事实和彩蛋 - 日月全事</title>
     <link rel="icon" type="image/png" sizes="32x32" href="img/logo/favicon32x32.png">
     <style>
+        @import url('https://font.webcache.cn/google/css2?family=Noto+Sans+SC:wght@100..900&display=swap');
         @font-face {
             font-family: 'Genshin';
             src: url('fonts/genshin.woff2') format('woff2');
             font-weight: normal;
             font-style: normal;
         }
-
-        @font-face {
-            font-family: 'Common';
-            src: url('fonts/common.woff2') format('woff2');
-            font-weight: normal;
-            font-style: normal;
+        .root{
+        --font-common: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
         }
-
         * {
             margin: 0;
             padding: 0;
@@ -27,7 +23,7 @@
         }
 
         body {
-            font-family: 'Common', sans-serif;
+            font-family: var(--font-common);
             background-color: #ffffff;
             color: #4d4f53;
             min-height: 100vh;
@@ -75,7 +71,7 @@
         }
 
         .fact-id {
-            font-family: 'Common', sans-serif;
+            font-family: var(--font-common);
             font-size: 14px;
             color: #8d8f93;
             background-color: #e8e8e8;

@@ -326,7 +326,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
             // 普通段落处理
             const p = document.createElement('p');
-            p.style.cssText = 'color:#000;font-family:Common;line-height:1.8;margin:12px 0;';
+            p.style.cssText = 'color:#000;font-family: var(--font-common);line-height:1.8;margin:12px 0;';
             p.innerHTML = injectFootnoteTooltips(normalizeInline(trimmed), footnoteMap);
             container.appendChild(p);
             i++;
