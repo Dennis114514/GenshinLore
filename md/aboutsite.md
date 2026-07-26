@@ -6,7 +6,7 @@
 [一些想说的话](/somewords.html)
 
 - 服务器：Cloudflare
-![Cloudflare](/img/logo/website/Cloudflare.png)]
+![Cloudflare](/img/logo/website/Cloudflare.png)
 - 域名：雨云
 ![Yun](/img/logo/website/Rainyun.png)
 - 源代码：[Github](https://github.com/Dennis114514/GenshinLore)
