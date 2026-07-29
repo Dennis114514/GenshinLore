@@ -2,10 +2,20 @@
 
 @font-face {
     font-family: 'Genshin';
+    src: url('/fonts/genshin.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/*从jsdelivr的CDN下载字体，暂时弃用*/
+/*
+@font-face {
+    font-family: 'Genshin';
     src: url('https://cdn.jsdelivr.net/gh/Dennis114514/GenshinLore@main/fonts/genshin.woff2') format('woff2');
     font-weight: normal;
     font-style: normal;
 }
+*/
 
 @font-face {
     font-family: 'Khaenriah';
