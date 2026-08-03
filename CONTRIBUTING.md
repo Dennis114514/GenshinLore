@@ -4,9 +4,7 @@
 
 ```
 GenshinLore/
-├── .github/
-│   └── workflows/
-│       └── main.yml     # 自动构建README中的文件树
+│
 ├── basiclore/           # “基本设定”页面的子页面内容
 │   ├── descenders/      # 降临者
 │   │   └── base.html
