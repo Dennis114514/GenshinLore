@@ -93,7 +93,7 @@
 为保障网站正常运行及优化用户体验，本网站可能会使用必要的 Cookies 及本地存储技术。
 
 1. 必要性 Cookies：用于记录您的公告、用户协议阅读状态、[原神剧情线性观看顺序](https://genshinlore.cn/Linear/base)页面的任务完成状态，不涉及个人隐私追踪。
-2. 追踪Cookies：用于分析网站在您的设备上的渲染情况和运行状态，这些数据由Cloudflare记录并向我们展示无法追踪到具体来源的脱敏数据。（该Cookie名称：cf_clearance）
+2. 安全验证 Cookies：用于在您通过 Cloudflare 人机验证（如 Managed Challenge 或 Turnstile）后，在有效期内（默认 30 分钟）免于重复挑战并允许正常访问网站。该 Cookie 由 Cloudflare 设定，与您的访客身份和设备绑定，无法跨设备复用，不用于个人隐私追踪或网站渲染分析。其数据由 Cloudflare 依据其隐私政策处理。（该Cookie名称：cf_clearance）
 3. 您的权利：您可以在浏览器设置中禁用 Cookies，但这可能导致部分页面功能无法正常使用。
 
 ## 十、法律适用与管辖
