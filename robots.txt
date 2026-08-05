@@ -1,0 +1,8 @@
+User-agent: *
+Allow: /
+Sitemap: https://genshinlore.cn/sitemap.xml
+
+# AI Content Signals
+search: yes
+ai-input: yes
+ai-train: yes
