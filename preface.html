@@ -1,662 +1,785 @@
 <!DOCTYPE html>
 <html lang="zh-CN">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>前言 - 日月全事</title>
-    <link rel="icon" type="image/png" sizes="32x32" href="img/logo/favicon32x32.png">
-    <link rel="stylesheet" href="styles.css">
-    <style>
-        /* 页面内容区域布局 */
-        .page-content {
-            position: relative;
-        }
 
-        /* 主要内容区域 */
-        .main-text {
-            max-width: 1000px;
-            margin: 0 auto;
-            padding-right: 290px;
-        }
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>前言 - 日月全事</title>
+        <link rel="icon" type="image/png" sizes="32x32" href="img/logo/favicon32x32.png">
+        <link rel="stylesheet" href="styles.css">
+        <style>
+            /* 页面内容区域布局 */
+            .page-content {
+                position: relative;
+            }
 
-        /* 段落和文本样式 */
-        .main-text p {
-            font-family: var(--font-common);
-            font-size: 16px;
-            line-height: 2;
-            color: #4d4f53;
-            margin: 15px 0;
-            text-align: justify;
-        }
+            /* 主要内容区域 */
+            .main-text {
+                max-width: 1000px;
+                margin: 0 auto;
+                padding-right: 290px;
+            }
 
-        /* 标题样式 */
-        .main-text h2 {
-            font-family: 'Genshin', serif;
-            font-size: 28px;
-            color: #4d4f53;
-            margin: 40px 0 20px 0;
-            padding-bottom: 10px;
-            border-bottom: 2px solid #D3BC8E;
-            line-height: 1.4;
-        }
+            /* 段落和文本样式 */
+            .main-text p {
+                font-family: var(--font-common);
+                font-size: 16px;
+                line-height: 2;
+                color: #4d4f53;
+                margin: 15px 0;
+                text-align: justify;
+            }
 
-        .main-text h3 {
-            font-family: 'Genshin', serif;
-            font-size: 22px;
-            color: #4d4f53;
-            margin: 30px 0 15px 0;
-            line-height: 1.5;
-        }
+            /* 标题样式 */
+            .main-text h2 {
+                font-family: 'Genshin', serif;
+                font-size: 28px;
+                color: #4d4f53;
+                margin: 40px 0 20px 0;
+                padding-bottom: 10px;
+                border-bottom: 2px solid #D3BC8E;
+                line-height: 1.4;
+            }
 
-        .main-text h4 {
-            font-family: 'Genshin', serif;
-            font-size: 18px;
-            color: #4d4f53;
-            margin: 25px 0 12px 0;
-            line-height: 1.5;
-        }
+            .main-text h3 {
+                font-family: 'Genshin', serif;
+                font-size: 22px;
+                color: #4d4f53;
+                margin: 30px 0 15px 0;
+                line-height: 1.5;
+            }
 
-        /* 表格样式 */
-        .main-text table {
-            font-family: var(--font-common);
-            font-size: 14px;
-            line-height: 1.8;
-            width: 100%;
-            border-collapse: collapse;
-            margin: 20px 0;
-        }
+            .main-text h4 {
+                font-family: 'Genshin', serif;
+                font-size: 18px;
+                color: #4d4f53;
+                margin: 25px 0 12px 0;
+                line-height: 1.5;
+            }
 
-        .main-text table th {
-            background-color: #4d4f53;
-            color: #D3BC8E;
-            padding: 12px 15px;
-            text-align: left;
-            border: 1px solid #D3BC8E;
-            font-weight: normal;
-        }
+            /* 表格样式 */
+            .main-text table {
+                font-family: var(--font-common);
+                font-size: 14px;
+                line-height: 1.8;
+                width: 100%;
+                border-collapse: collapse;
+                margin: 20px 0;
+            }
 
-        .main-text table td {
-            padding: 12px 15px;
-            border: 1px solid #D3BC8E;
-            text-align: left;
-            color: #4d4f53;
-            line-height: 1.8;
-        }
+            .main-text table th {
+                background-color: #4d4f53;
+                color: #D3BC8E;
+                padding: 12px 15px;
+                text-align: left;
+                border: 1px solid #D3BC8E;
+                font-weight: normal;
+            }
 
-        .main-text table tr:nth-child(even) {
-            background-color: #f5f5f5;
-        }
+            .main-text table td {
+                padding: 12px 15px;
+                border: 1px solid #D3BC8E;
+                text-align: left;
+                color: #4d4f53;
+                line-height: 1.8;
+            }
 
-        .main-text table tr:hover {
-            background-color: #f0f0f0;
-        }
+            .main-text table tr:nth-child(even) {
+                background-color: #f5f5f5;
+            }
 
-        /* 链接样式 */
-        .main-text a {
-            font-family: var(--font-common);
-            color: #D3BC8E;
-            text-decoration: none;
-        }
+            .main-text table tr:hover {
+                background-color: #f0f0f0;
+            }
 
-        .main-text a:hover {
-            text-decoration: underline;
-        }
+            /* 链接样式 */
+            .main-text a {
+                font-family: var(--font-common);
+                color: #D3BC8E;
+                text-decoration: none;
+            }
 
-        /* 红色文字悬停时不加下划线 */
-        .main-text a[style*="color: red"]:hover,
-        .main-text a span[style*="color: red"]:hover {
-            text-decoration: none !important;
-        }
+            .main-text a:hover {
+                text-decoration: underline;
+            }
 
-        /* 次要信息/注释样式 */
-        .secondary-text {
-            color: #8d8f93;
-            font-size: 13px!important;
-            line-height: 1.8;
-            padding-left: 12px;
-            border-left: 3px solid #c0c0c0!important;
-            margin: 15px 0;
-        }
+            /* 红色文字悬停时不加下划线 */
+            .main-text a[style*="color: red"]:hover,
+            .main-text a span[style*="color: red"]:hover {
+                text-decoration: none !important;
+            }
 
-        /* 脚注样式 */
-        .has-footnote {
-            position: relative;
-            display: inline-flex;
-            align-items: flex-start;
-        }
+            /* 次要信息/注释样式 */
+            .secondary-text {
+                color: #8d8f93;
+                font-size: 13px !important;
+                line-height: 1.8;
+                padding-left: 12px;
+                border-left: 3px solid #c0c0c0 !important;
+                margin: 15px 0;
+            }
 
-        .has-footnote sup {
-            color: #D3BC8E;
-            margin-left: 4px;
-        }
+            /* 脚注样式 */
+            .has-footnote {
+                position: relative;
+                display: inline-flex;
+                align-items: flex-start;
+            }
 
-        .tooltip {
-            position: absolute;
-            left: auto;
-            top: 0;
-            margin-left: auto;
-            background-color: #4d4f53;
-            color: #D3BC8E;
-            padding: 10px 14px;
-            border-radius: 6px;
-            font-size: 14px;
-            white-space: normal;
-            width: auto;
-            min-width: 250px;
-            max-width: 500px;
-            opacity: 0;
-            box-sizing: border-box;
-            visibility: hidden;
-            transition: all 0.3s ease;
-            z-index: 4000;
-            pointer-events: auto;
-            text-align: left;
-            line-height: 1.5;
-            font-family: var(--font-common);
-        }
+            .has-footnote sup {
+                color: #D3BC8E;
+                margin-left: 4px;
+            }
 
-        .has-footnote:hover .tooltip {
-            opacity: 1;
-            visibility: visible;
-            pointer-events: auto;
-        }
+            .tooltip {
+                position: absolute;
+                left: auto;
+                top: 0;
+                margin-left: auto;
+                background-color: #4d4f53;
+                color: #D3BC8E;
+                padding: 10px 14px;
+                border-radius: 6px;
+                font-size: 14px;
+                white-space: normal;
+                width: auto;
+                min-width: 250px;
+                max-width: 500px;
+                opacity: 0;
+                box-sizing: border-box;
+                visibility: hidden;
+                transition: all 0.3s ease;
+                z-index: 4000;
+                pointer-events: auto;
+                text-align: left;
+                line-height: 1.5;
+                font-family: var(--font-common);
+            }
 
-    </style>
-</head>
-<body>
-    <header class="topbar">
-        <div class="topbar-left" onclick="window.location.href='main.html'">
-            <img src="img/logo/genshinlogo.webp" alt="原神Logo" class="logo">
-            <span class="site-title">世界观手册</span>
-        </div>
-        <nav class="nav-menu">
-            <div class="nav-indicator"></div>
-            <ul class="nav-list">
-                <li class="nav-item" data-index="0">
-                    <a href="main.html" data-nav="home">首页</a>
-                </li>
-                <li class="nav-item active" data-index="1">
-                    <a href="preface.html" data-nav="preface">前言</a>
-                </li>
-                <li class="nav-item" data-index="2">
-                    <a href="basiclore.html" data-nav="basic">基本设定</a>
-                </li>
-                <li class="nav-item" data-index="3">
-                    <a href="Teyvathis.html" data-nav="history">提瓦特历史</a>
-                </li>
-                <li class="nav-item" data-index="4">
-                    <a href="history-country.html" data-nav="nations">各国历史</a>
-                </li>
-                <li class="nav-item" data-index="5">
-                    <a href="genshinbasichis.html" data-nav="brief">时间线</a>
-                </li>
-                <li class="nav-item" data-index="6">
-                    <a href="about.html" data-nav="about-manual">关于手册</a>
-                </li>
-                <li class="nav-item" data-index="7">
-                    <a href="aboutsite.html" data-nav="about-site">关于本站</a>
-                </li>
-            </ul>
-        </nav>
-    </header>
-    <main class="main-content">
-        <aside class="toc-wrapper">
-            <aside class="toc-sidebar">
-                <h3 class="toc-title">目录导航 <button class="toc-collapse-btn" id="toc-collapse">→</button></h3>
-                <ul class="toc-list" id="toc-list">
+            .has-footnote:hover .tooltip {
+                opacity: 1;
+                visibility: visible;
+                pointer-events: auto;
+            }
+        </style>
+    </head>
+
+    <body>
+        <header class="topbar">
+            <div class="topbar-left" onclick="window.location.href='main.html'">
+                <img src="img/logo/genshinlogo.webp" alt="原神Logo" class="logo">
+                <span class="site-title">世界观手册</span>
+            </div>
+            <nav class="nav-menu">
+                <div class="nav-indicator"></div>
+                <ul class="nav-list">
+                    <li class="nav-item" data-index="0">
+                        <a href="main.html" data-nav="home">首页</a>
+                    </li>
+                    <li class="nav-item active" data-index="1">
+                        <a href="preface.html" data-nav="preface">前言</a>
+                    </li>
+                    <li class="nav-item" data-index="2">
+                        <a href="basiclore.html" data-nav="basic">基本设定</a>
+                    </li>
+                    <li class="nav-item" data-index="3">
+                        <a href="Teyvathis.html" data-nav="history">提瓦特历史</a>
+                    </li>
+                    <li class="nav-item" data-index="4">
+                        <a href="history-country.html" data-nav="nations">各国历史</a>
+                    </li>
+                    <li class="nav-item" data-index="5">
+                        <a href="genshinbasichis.html" data-nav="brief">时间线</a>
+                    </li>
+                    <li class="nav-item" data-index="6">
+                        <a href="about.html" data-nav="about-manual">关于手册</a>
+                    </li>
+                    <li class="nav-item" data-index="7">
+                        <a href="aboutsite.html" data-nav="about-site">关于本站</a>
+                    </li>
                 </ul>
+            </nav>
+        </header>
+        <main class="main-content">
+            <aside class="toc-wrapper">
+                <aside class="toc-sidebar">
+                    <h3 class="toc-title">目录导航 <button class="toc-collapse-btn" id="toc-collapse">→</button></h3>
+                    <ul class="toc-list" id="toc-list">
+                    </ul>
+                </aside>
+                <button class="toc-expand-btn" id="toc-expand">☰</button>
             </aside>
-            <button class="toc-expand-btn" id="toc-expand">☰</button>
-        </aside>
-        
-<section class="page-content">
-    <div class="main-text">
-            <h1 class="page-title">前言</h1>
-        <h2 id="section-1">一、这本手册讲了什么？</h2>
-        
-        <p>做游戏一定要有大纲。由上海米哈游网络科技股份有限公司制作发行的一款开放世界冒险游戏《原神》展示了一个多元的虚拟世界，在其看似简约的主线剧情背后，埋藏着一个纷繁复杂、严丝合缝的世界文化拼盘。然而《原神》采用的是碎片化的叙事方式，并且含有大量的生僻概念。只是依据主线剧情的叙述，玩家还难以理解世界观中丰富的设定。</p>
-        <p>因此，我制作了这本世界观手册，旨在用更加直观的方式，从混沌中梳理出明晰的脉络，形成这样一部国别体和纪传体结合的通史，帮助玩家以尽量低的理解成本，把握《原神》的基本设定。由于涉及大量剧透，在过完游戏本体剧情（尤其是魔神任务）之后再进行阅读，效果更佳。</p>
-        <p><a style="color: red;">本手册的主要内容是各国历史及核心角色的故事，不包括主线、活动剧情。内容几乎全部源于游戏内的文案，尤其是圣遗物、武器、书籍中的背景故事</a>，本手册的编写工作从2022年开始，跟随《原神》的持续更新，断断续续整理到了现在，并会持续<a style="color: red;">免费</a>更新。</p>
-        
-        <h2 id="section-2">二、这本手册有何优点？</h2>
-        
-        <h3 id="section-2-1">（一）整合性</h3>
-        <p>通过对旧版本的反复扬弃，对文本的不计其数的删改，我这本迭代数次的手册，已经基本汇集了这五个优点：</p>
-        <p>1.在<a style="color: red;">【全球范围】</a>内，第一个把<a style="color: red;">【原神世界观】</a>做成了<a style="color: red;">【可直接印刷】</a>的<a style="color: red;">【中文】</a>手册，形式灵活，下载后的文件甚至<a style="color: red;">【无需联网】</a>就可使用，大量节省了在各种资料库到处搜索，复制粘贴信息的麻烦；</p>
-        <p>2.在汇集了已公布的重要信息、图文并茂的基本要求上，还尽可能做到了<a style="color: red;">【轻量化】</a>，保证了<a style="color: red;">【通俗性】</a>，保证零基础的读者也能快速取得概念索引，与传统的、理解门槛较高的文化考据做出了区分度；</p>
-        <p>3.充分还原<a style="color: red;">【游戏本体】</a>的叙述方式，尊重<a style="color: red;">【原始设定】</a>，几乎所有文本都有可追溯的来源，对于不确定之处也有特别标注；对于争议性话题进行充分悬置，就事论事；不搞私设，不辱角色，不P鬼图；</p>
-        <p>4.在手册的获取渠道上<a style="color: red;">【不设任何门槛】</a> ，<a style="color: red;">【不搞任何套路】</a>，不需要加下载group，没有带密码的压缩包，没有绕来绕去的链接，没有捆绑套装，没有爱发电，甚至下载都不需要额外开通网盘会员来加速。所有操作就只需要复制，点开链接，下载，保存，就是这么<a style="color: red;">【流畅】</a>，就是<a style="color: red;">【纯赚口碑】</a>；</p>
-        <p>5.截至手册的月之四修订2版本，所有内容的整理和编排，都是我<a style="color: red;">【一个人】</a>完成，在文本的编排方式，做到了<a style="color: red;">【高度统一】</a>，尽可能地减少了因为信息差导致的内容冲突。</p>
-        <p>此外，除了<a style="color: red;">本手册《日月全事》（《Genshin Lore》）</a>，手册还附赠三个文件，作为手册内容的补充：</p>
-        <p>1.<a href="genshinbasichis.html" style="color: red;">大事年表《提瓦特历史时间线》（《Teyvat Timeline》）</a>：以时代为主要脉络，细致地梳理了八个国家发生的重大事件，直观地展示了各国的时代特征，适合作为手册的目录使用，也能作为各国历史对比的参考资料，从而快速锚定重要历史事件的时间点。</p>
-        <p>2.<a href="Linear/base.html" style="color: red;">剧情指南《原神剧情线性观看顺序》（《Genshin Linear Watch Order》）</a>：严格依据游戏内「旅行历程」规定的顺序以及游戏版本内容发布顺序整理而成，紧密贴合剧情发布、演出的逻辑，梳理出了剧情的线性顺序，哪怕是对原神剧情一无所知，也能根据该指南快速把握原神剧情的核心。</p>
-        <p>3.<a style="color: red;">《日月全事（随书附赠册）》（《Genshin Lore（Bonus Booklet）》）</a>：简单收录了《日月全事》的制作思路以及制作流程。</p>
-        <h3 id="section-2-2">（二）便捷性</h3>
-        <p>关于该手册的核心定位，不妨先讲一个小故事。在十几年前的苹果发布会上，乔布斯从iphone和imac中间拿出一个全新的产品——ipad。它比iphone大，又比imac灵活，但当时的人们，并不能准确定义ipad作为电子设备的功能：虽然它的确是一个新奇玩意儿，但它既不能替代手机的通话功能，也无法像电脑那样，完全作为生产工具来使用。</p>
-        <p>不过，后来的实践证明了ipad独具一格的生态位：恰恰是ipad，恰恰是这块不伦不类的「巨型iphone」，成为了首款真正实现大规模普及，并重新定义了现代平板电脑形态与交互逻辑的产品。只因它足够极简，足够便捷，足够酷。「不那么小，也不那么大」的屏幕，恰好就是看电子书、看视频、记笔记乃至盖泡面的优秀工具。</p>
-        <p>玄妙之处在于，正是ipad，在十几年前重塑了我对电子产品的印象。此后，平板电脑这一工具的设计逻辑，也结构出我的生活方式。我设想着这样一个直观的内容架构——它应当是触手可得的，应当在信息的呈现上尽量丝滑、连贯，还应当可以随时移动位置，一只手就能轻易拿走，就像拿走酒席桌上的一块蛋糕那样——它可以作为一串电子数据，放在你的硬盘里永久保存；也可以作为一本书籍，放在你的桌面上随意翻阅。</p>
-        <p><a style="color: red;">正因如此，我的这本手册的生态位就是ipad。它既是对iphone式的「碎片化叙事」的超越，也是对imac笨重的、庞杂的「文件库」的浓缩。</a>读者正需要这样一个信息浓度高，又不失便捷直观的阅读体验，而我做的就是这样的垂直内容。我的建设并不会取代wiki和考据视频，但我做的就是在填补这中间的沟壑，从而占据这一生态位。</a></p>
-        <p>这本书，也就文本的通顺度、标点的使用还有美术表现需要进一步完善，并且目前没有任何团队帮我修缮，但在其他地方，我已经把各种参数都拉满了。至于未来有没有高人能做出更好的，我不可能知道，就算能知道，我现在也管不着。<a style="color: red;">我只看现在（2026年2月），在这个生态位上。我这本就是最好的，没有之一。</a></p>
-        <p>更进一步说，授之以鱼，不如授之以渔。智能手机对电子钱包的架构，彻底改变了人们的支付方式，也让容易丢失、不易统计的现金退居二线。同样，我也希望通过公布这本ipad式的手册的内容以及设计思路，能为读者创造出阅读、整合碎片化文本的全新姿态。</p>
-        <h3 id="section-2-3">（三）备份功能</h3>
 
-        <p>关于为什么要在手册中添加大量的文本原始内容，这是因为：<span style="color: red; font-weight: normal;">互联网的内容是会逐渐消失的。</span>维护数据需要大量的成本，任何在互联网上发布的东西都不会长期存在，甚至会五年进行一轮小更新，十年进行一次大更新，旧的内容是会永久消失的。更不用谈，现在ai的发达，更导致错误信息在互联网中的泛滥，例如关于鸟类的图片，很多都是ai，并且与真实拍摄内容混淆在一起，极难分辨。</p>
-        <p>《魔兽世界》是一个长线运营、具有宏伟世界观架构、人物众多的rpg游戏，经过二十年的运营，它已经塞入了千万级别的文本量。但我至今都没有发现一个充分还原游戏内文本的魔兽世界数据库，这导致，如果我想查一个基本的人物设定，搜到的基本上都是二次创作出来、文本没有出处的视频，并且有大量的垃圾信息来干扰我的检索，很多都错得非常离谱，甚至是用玩家讨论的野史来代替正史。</p>
-        <p>已有这样的教训，不可在原神上重蹈覆辙。自知单凭个人的力量，无法做出wiki那样庞大的文本库，但我又有保存文本的需求，所以我给出这样的一个备份文本的生态位，它应当是离线的，内容充分，并且「转述」较少，不能用考据视频式的转述代替文本本身。</p>
-        <p>我希望过了许多年之后，后人依然能使用我的备份成果，并从中得到一些便利。再次强调，只有存到硬盘、光盘里的数据，才能长期存在。<span style="color: red; font-weight: normal;">正如「木偶」就是阿兰对玛丽安、乃至整个水仙十字的备份，正因如此，水仙十字的故事才会借「木偶」之口，在五百年后的提瓦特继续繁衍。</span></p>
+            <section class="page-content">
+                <div class="main-text">
+                    <h1 class="page-title">前言</h1>
+                    <h2 id="section-1">一、这本手册讲了什么？</h2>
 
-        <h2 id="section-3">三、如何阅读手册？如何提出修订建议？</h2>
-        
-        <h3 id="section-3-1">（一）阅读与打印手册</h3>
-        
-        <p>本手册欢迎以下读者：</p>
-            <p>第一，关注原神设定的爱好者；</p>
-            <p>第二，深度了解原神设定，并能提出可执行的修订、优化方案的考据者； </p>
-            <p>第三，需要查找原神设定的同人作者；</p>
-            <p>第四，回归原神，需要快速补全现有设定的老玩家；</p>
-            <p>第五，关注实体印刷品、实体专辑或实体光盘的爱好者；</p>
-            <p>第六，其他关注、了解原神设定的人。</p>
-        <p>可以在手机上看，也可以在平板上看；可以在电脑上看，<span style="color: red; font-weight: normal;">也可以自行委托打印店打印出来看；</span></p>
-        <p>打印要求参考：</p>
-        <table class="common-table">
-            <tr>
-            <th></th>
-            <th style="text-align: center;">平装</th>
-            <th style="text-align: center;">精装</th>
-        </tr>
-        <tr>
-            <td>打印方式</td>
-            <td colspan="2" style="text-align: center;">推荐双面彩印</td>
-        </tr>
-        <tr>
-            <td>纸张大小</td>
-            <td colspan="2" style="text-align: center;">A4（宽 21厘米，高 29.7厘米）</td>
-        </tr>
-        <tr>
-            <td>封面封底<aa class="has-footnote"><sup>*</sup><span class="tooltip">每个读者的定制需求（例如纸张重量，印刷工艺）不同，手册厚度不同，导致书脊宽度也不同。因此，本手册暂不提供书脊设计。如有印刷书脊的需求，可自行设计或定制。</span></aa></td>
-            <td>首页图片为封面<br>最后一页图片为封底<br>推荐铜版纸胶装封面与封底</td>
-            <td>首页图片为封面<br>最后一页图片为封底<br>具体工艺请咨询打印店</td>
-        </tr>
-        <tr>
-            <td>内页<aa class="has-footnote"><sup>*</sup><span class="tooltip">内页是指书本封面与封底之间的纸页，包括扉页、目录、前言、正文、后记、后扉页。在书籍中，内页一般位于封二（封面的背面，在书籍之内）之后、封三（封底的背面，在书籍之内）之前。</span></aa></td>
-            <td>推荐双胶纸<br>具体重量请咨询打印店，推荐 80g</td>
-            <td>具体工艺请咨询打印店</td>
-        </tr>
-        <tr>
-            <td>打印份数</td>
-            <td colspan="2" style="text-align: center;">1 份</td>
-        </tr>
-        </table>
-        <p>可以坐着看，也可以躺着看；可以闲暇时看，也可以摸鱼时看。我的所有内容完全免费，一键三连并转发就是对我最大的支持。由于涉及大量剧透，在过完游戏本体剧情（尤其是魔神任务）之后再进行阅读，效果更佳。</p>
-        <p><span style="color: red; font-weight: normal;">在pdf页面按Ctrl+F可以检索任意文本</span>。另外世界观手册附赠的大事年表《提瓦特历史时间线》规定了事件发生的时间先后，也可以当目录用。</p>
-        <p>网站作者注：在本网站上，你可以按照你想查看的内容类别跳转至对应的页面，通过页面边上的目录导航跳转到对应的内容；如果目录导航遮挡内容你可以点击边上的→（向右小箭头）收起目录导航，再次点击☰图标可以展开。</p>
+                    <p>做游戏一定要有大纲。由上海米哈游网络科技股份有限公司制作发行的一款开放世界冒险游戏《原神》展示了一个多元的虚拟世界，在其看似简约的主线剧情背后，埋藏着一个纷繁复杂、严丝合缝的世界文化拼盘。然而《原神》采用的是碎片化的叙事方式，并且含有大量的生僻概念。只是依据主线剧情的叙述，玩家还难以理解世界观中丰富的设定。
+                    </p>
+                    <p>因此，我制作了这本世界观手册，旨在用更加直观的方式，从混沌中梳理出明晰的脉络，形成这样一部国别体和纪传体结合的通史，帮助玩家以尽量低的理解成本，把握《原神》的基本设定。由于涉及大量剧透，在过完游戏本体剧情（尤其是魔神任务）之后再进行阅读，效果更佳。
+                    </p>
+                    <p><a
+                            style="color: red;">本手册的主要内容是各国历史及核心角色的故事，不包括主线、活动剧情。内容几乎全部源于游戏内的文案，尤其是圣遗物、武器、书籍中的背景故事</a>，本手册的编写工作从2022年开始，跟随《原神》的持续更新，断断续续整理到了现在，并会持续<a
+                            style="color: red;">免费</a>更新。</p>
 
-        <h3 id="section-3-2">（二）修订建议</h3>
-        <h4>1.发送方式</h4>
-        <p>因为文本来源的时间跨度大，会出现前后文本不一致、新的正式文本对旧的推测没有及时修正的情况。手册内仍有很多错误，需要读者指出。</p>
-        <p style="color: red;">若有修订建议，请及时联系我，直接与我沟通。最好是发邮件，便于我集中处理并存档。</p>
-        
-        <div style="border: 2px solid #333; padding: 20px 30px; margin: 20px 0; background-color: #fff; display: flex; align-items: flex-start; gap: 30px; max-width: 650px; width: 100%; box-sizing: border-box; flex-wrap: wrap;">
-            <div style="display: flex; align-items: center; flex-shrink: 0;">
-                <img src="img/others/author.png" alt="诗漱头像" style="width: 50px; height: 50px; border-radius: 50%; object-fit: cover; margin-right: 10px;">
-            </div>
-            <div style="flex: 1; min-width: 0;">
-                <p style="margin: 0 0 12px 0; font-size: 18px; font-weight: bold; color: #333;">诗漱（责任编辑）</p>
-                <div style="display: flex; gap: 50px; font-size: 14px; color: #333; flex-wrap: wrap; align-items: center;">
-                    <div style="min-width: 0;">
-                        <span style="font-weight: bold;">B站：</span><a href="https://space.bilibili.com/1916076420" style="color: #0066cc; text-decoration: none;">诗漱FlowedPoem</a>
+                    <h2 id="section-2">二、这本手册有何优点？</h2>
+
+                    <h3 id="section-2-1">（一）整合性</h3>
+                    <p>通过对旧版本的反复扬弃，对文本的不计其数的删改，我这本迭代数次的手册，已经基本汇集了这五个优点：</p>
+                    <p>1.在<a style="color: red;">【全球范围】</a>内，第一个把<a style="color: red;">【原神世界观】</a>做成了<a
+                            style="color: red;">【可直接印刷】</a>的<a style="color: red;">【中文】</a>手册，形式灵活，下载后的文件甚至<a
+                            style="color: red;">【无需联网】</a>就可使用，大量节省了在各种资料库到处搜索，复制粘贴信息的麻烦；</p>
+                    <p>2.在汇集了已公布的重要信息、图文并茂的基本要求上，还尽可能做到了<a style="color: red;">【轻量化】</a>，保证了<a
+                            style="color: red;">【通俗性】</a>，保证零基础的读者也能快速取得概念索引，与传统的、理解门槛较高的文化考据做出了区分度；</p>
+                    <p>3.充分还原<a style="color: red;">【游戏本体】</a>的叙述方式，尊重<a
+                            style="color: red;">【原始设定】</a>，几乎所有文本都有可追溯的来源，对于不确定之处也有特别标注；对于争议性话题进行充分悬置，就事论事；不搞私设，不辱角色，不P鬼图；
+                    </p>
+                    <p>4.在手册的获取渠道上<a style="color: red;">【不设任何门槛】</a> ，<a
+                            style="color: red;">【不搞任何套路】</a>，不需要加下载group，没有带密码的压缩包，没有绕来绕去的链接，没有捆绑套装，没有爱发电，甚至下载都不需要额外开通网盘会员来加速。所有操作就只需要复制，点开链接，下载，保存，就是这么<a
+                            style="color: red;">【流畅】</a>，就是<a style="color: red;">【纯赚口碑】</a>；</p>
+                    <p>5.截至手册的月之四修订2版本，所有内容的整理和编排，都是我<a style="color: red;">【一个人】</a>完成，在文本的编排方式，做到了<a
+                            style="color: red;">【高度统一】</a>，尽可能地减少了因为信息差导致的内容冲突。</p>
+                    <p>此外，除了<a style="color: red;">本手册《日月全事》（《Genshin Lore》）</a>，手册还附赠三个文件，作为手册内容的补充：</p>
+                    <p>1.<a href="genshinbasichis.html" style="color: red;">大事年表《提瓦特历史时间线》（《Teyvat
+                            Timeline》）</a>：以时代为主要脉络，细致地梳理了八个国家发生的重大事件，直观地展示了各国的时代特征，适合作为手册的目录使用，也能作为各国历史对比的参考资料，从而快速锚定重要历史事件的时间点。
+                    </p>
+                    <p>2.<a href="Linear/base.html" style="color: red;">剧情指南《原神剧情线性观看顺序》（《Genshin Linear Watch
+                            Order》）</a>：严格依据游戏内「旅行历程」规定的顺序以及游戏版本内容发布顺序整理而成，紧密贴合剧情发布、演出的逻辑，梳理出了剧情的线性顺序，哪怕是对原神剧情一无所知，也能根据该指南快速把握原神剧情的核心。
+                    </p>
+                    <p>3.<a style="color: red;">《日月全事（随书附赠册）》（《Genshin Lore（Bonus Booklet）》）</a>：简单收录了《日月全事》的制作思路以及制作流程。
+                    </p>
+                    <h3 id="section-2-2">（二）便捷性</h3>
+                    <p>关于该手册的核心定位，不妨先讲一个小故事。在十几年前的苹果发布会上，乔布斯从iphone和imac中间拿出一个全新的产品——ipad。它比iphone大，又比imac灵活，但当时的人们，并不能准确定义ipad作为电子设备的功能：虽然它的确是一个新奇玩意儿，但它既不能替代手机的通话功能，也无法像电脑那样，完全作为生产工具来使用。
+                    </p>
+                    <p>不过，后来的实践证明了ipad独具一格的生态位：恰恰是ipad，恰恰是这块不伦不类的「巨型iphone」，成为了首款真正实现大规模普及，并重新定义了现代平板电脑形态与交互逻辑的产品。只因它足够极简，足够便捷，足够酷。「不那么小，也不那么大」的屏幕，恰好就是看电子书、看视频、记笔记乃至盖泡面的优秀工具。
+                    </p>
+                    <p>玄妙之处在于，正是ipad，在十几年前重塑了我对电子产品的印象。此后，平板电脑这一工具的设计逻辑，也结构出我的生活方式。我设想着这样一个直观的内容架构——它应当是触手可得的，应当在信息的呈现上尽量丝滑、连贯，还应当可以随时移动位置，一只手就能轻易拿走，就像拿走酒席桌上的一块蛋糕那样——它可以作为一串电子数据，放在你的硬盘里永久保存；也可以作为一本书籍，放在你的桌面上随意翻阅。
+                    </p>
+                    <p><a
+                            style="color: red;">正因如此，我的这本手册的生态位就是ipad。它既是对iphone式的「碎片化叙事」的超越，也是对imac笨重的、庞杂的「文件库」的浓缩。</a>读者正需要这样一个信息浓度高，又不失便捷直观的阅读体验，而我做的就是这样的垂直内容。我的建设并不会取代wiki和考据视频，但我做的就是在填补这中间的沟壑，从而占据这一生态位。</a>
+                    </p>
+                    <p>这本书，也就文本的通顺度、标点的使用还有美术表现需要进一步完善，并且目前没有任何团队帮我修缮，但在其他地方，我已经把各种参数都拉满了。至于未来有没有高人能做出更好的，我不可能知道，就算能知道，我现在也管不着。<a
+                            style="color: red;">我只看现在（2026年2月），在这个生态位上。我这本就是最好的，没有之一。</a></p>
+                    <p>更进一步说，授之以鱼，不如授之以渔。智能手机对电子钱包的架构，彻底改变了人们的支付方式，也让容易丢失、不易统计的现金退居二线。同样，我也希望通过公布这本ipad式的手册的内容以及设计思路，能为读者创造出阅读、整合碎片化文本的全新姿态。
+                    </p>
+                    <h3 id="section-2-3">（三）备份功能</h3>
+
+                    <p>关于为什么要在手册中添加大量的文本原始内容，这是因为：<span
+                            style="color: red; font-weight: normal;">互联网的内容是会逐渐消失的。</span>维护数据需要大量的成本，任何在互联网上发布的东西都不会长期存在，甚至会五年进行一轮小更新，十年进行一次大更新，旧的内容是会永久消失的。更不用谈，现在ai的发达，更导致错误信息在互联网中的泛滥，例如关于鸟类的图片，很多都是ai，并且与真实拍摄内容混淆在一起，极难分辨。
+                    </p>
+                    <p>《魔兽世界》是一个长线运营、具有宏伟世界观架构、人物众多的rpg游戏，经过二十年的运营，它已经塞入了千万级别的文本量。但我至今都没有发现一个充分还原游戏内文本的魔兽世界数据库，这导致，如果我想查一个基本的人物设定，搜到的基本上都是二次创作出来、文本没有出处的视频，并且有大量的垃圾信息来干扰我的检索，很多都错得非常离谱，甚至是用玩家讨论的野史来代替正史。
+                    </p>
+                    <p>已有这样的教训，不可在原神上重蹈覆辙。自知单凭个人的力量，无法做出wiki那样庞大的文本库，但我又有保存文本的需求，所以我给出这样的一个备份文本的生态位，它应当是离线的，内容充分，并且「转述」较少，不能用考据视频式的转述代替文本本身。
+                    </p>
+                    <p>我希望过了许多年之后，后人依然能使用我的备份成果，并从中得到一些便利。再次强调，只有存到硬盘、光盘里的数据，才能长期存在。<span
+                            style="color: red; font-weight: normal;">正如「木偶」就是阿兰对玛丽安、乃至整个水仙十字的备份，正因如此，水仙十字的故事才会借「木偶」之口，在五百年后的提瓦特继续繁衍。</span>
+                    </p>
+
+                    <h2 id="section-3">三、如何阅读手册？如何提出修订建议？</h2>
+
+                    <h3 id="section-3-1">（一）阅读与打印手册</h3>
+
+                    <p>本手册欢迎以下读者：</p>
+                    <p>第一，关注原神设定的爱好者；</p>
+                    <p>第二，深度了解原神设定，并能提出可执行的修订、优化方案的考据者； </p>
+                    <p>第三，需要查找原神设定的同人作者；</p>
+                    <p>第四，回归原神，需要快速补全现有设定的老玩家；</p>
+                    <p>第五，关注实体印刷品、实体专辑或实体光盘的爱好者；</p>
+                    <p>第六，其他关注、了解原神设定的人。</p>
+                    <p>可以在手机上看，也可以在平板上看；可以在电脑上看，<span style="color: red; font-weight: normal;">也可以自行委托打印店打印出来看；</span>
+                    </p>
+                    <p>打印要求参考：</p>
+                    <table class="common-table">
+                        <tr>
+                            <th></th>
+                            <th style="text-align: center;">平装</th>
+                            <th style="text-align: center;">精装</th>
+                        </tr>
+                        <tr>
+                            <td>打印方式</td>
+                            <td colspan="2" style="text-align: center;">推荐双面彩印</td>
+                        </tr>
+                        <tr>
+                            <td>纸张大小</td>
+                            <td colspan="2" style="text-align: center;">A4（宽 21厘米，高 29.7厘米）</td>
+                        </tr>
+                        <tr>
+                            <td>封面封底<aa class="has-footnote"><sup>*</sup><span
+                                        class="tooltip">每个读者的定制需求（例如纸张重量，印刷工艺）不同，手册厚度不同，导致书脊宽度也不同。因此，本手册暂不提供书脊设计。如有印刷书脊的需求，可自行设计或定制。</span>
+                                </aa>
+                            </td>
+                            <td>首页图片为封面<br>最后一页图片为封底<br>推荐铜版纸胶装封面与封底</td>
+                            <td>首页图片为封面<br>最后一页图片为封底<br>具体工艺请咨询打印店</td>
+                        </tr>
+                        <tr>
+                            <td>内页<aa class="has-footnote"><sup>*</sup><span
+                                        class="tooltip">内页是指书本封面与封底之间的纸页，包括扉页、目录、前言、正文、后记、后扉页。在书籍中，内页一般位于封二（封面的背面，在书籍之内）之后、封三（封底的背面，在书籍之内）之前。</span>
+                                </aa>
+                            </td>
+                            <td>推荐双胶纸<br>具体重量请咨询打印店，推荐 80g</td>
+                            <td>具体工艺请咨询打印店</td>
+                        </tr>
+                        <tr>
+                            <td>打印份数</td>
+                            <td colspan="2" style="text-align: center;">1 份</td>
+                        </tr>
+                    </table>
+                    <p>可以坐着看，也可以躺着看；可以闲暇时看，也可以摸鱼时看。我的所有内容完全免费，一键三连并转发就是对我最大的支持。由于涉及大量剧透，在过完游戏本体剧情（尤其是魔神任务）之后再进行阅读，效果更佳。
+                    </p>
+                    <p><span
+                            style="color: red; font-weight: normal;">在pdf页面按Ctrl+F可以检索任意文本</span>。另外世界观手册附赠的大事年表《提瓦特历史时间线》规定了事件发生的时间先后，也可以当目录用。
+                    </p>
+                    <p>网站作者注：在本网站上，你可以按照你想查看的内容类别跳转至对应的页面，通过页面边上的目录导航跳转到对应的内容；如果目录导航遮挡内容你可以点击边上的→（向右小箭头）收起目录导航，再次点击☰图标可以展开。
+                    </p>
+
+                    <h3 id="section-3-2">（二）修订建议</h3>
+                    <h4>1.发送方式</h4>
+                    <p>因为文本来源的时间跨度大，会出现前后文本不一致、新的正式文本对旧的推测没有及时修正的情况。手册内仍有很多错误，需要读者指出。</p>
+                    <p style="color: red;">若有修订建议，请及时联系我，直接与我沟通。最好是发邮件，便于我集中处理并存档。</p>
+
+                    <div
+                        style="border: 2px solid #333; padding: 20px 30px; margin: 20px 0; background-color: #fff; display: flex; align-items: flex-start; gap: 30px; max-width: 650px; width: 100%; box-sizing: border-box; flex-wrap: wrap;">
+                        <div style="display: flex; align-items: center; flex-shrink: 0;">
+                            <img src="img/others/author.png" alt="诗漱头像"
+                                style="width: 50px; height: 50px; border-radius: 50%; object-fit: cover; margin-right: 10px;">
+                        </div>
+                        <div style="flex: 1; min-width: 0;">
+                            <p style="margin: 0 0 12px 0; font-size: 18px; font-weight: bold; color: #333;">诗漱（责任编辑）</p>
+                            <div
+                                style="display: flex; gap: 50px; font-size: 14px; color: #333; flex-wrap: wrap; align-items: center;">
+                                <div style="min-width: 0;">
+                                    <span style="font-weight: bold;">B站：</span><a
+                                        href="https://space.bilibili.com/1916076420"
+                                        style="color: #0066cc; text-decoration: none;">诗漱FlowedPoem</a>
+                                </div>
+                                <div style="min-width: 0;">
+                                    <span style="font-weight: bold;">邮箱：</span><span>1849390709@qq.com</span>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                    <div style="min-width: 0;">
-                        <span style="font-weight: bold;">邮箱：</span><span>1849390709@qq.com</span>
-                    </div>
+                    <p>请不要在其他区域（包括但不限于评论区、其他平台、私聊、群聊等区域）中撰写单向的、消息难以送达我方的修订意见，我可能遗漏。</p>
+                    <h4>2.格式规范</h4>
+                    <p>修订建议遵循以下格式规范来撰写。可接受的完整修订意见应当满足四个要件：</p>
+                    <p>第一，版本：在xx版本（pdf或者网站，第x版）的手册中；</p>
+                    <p>第二，问题：xx部分（章节名）中的xx有误；</p>
+                    <p>第三，方案：应当更正为xx；</p>
+                    <p>第四，材料：依据的材料是xx。（信息来源）</p>
+                    <h4>3.更正举措</h4>
+                    <p>对于《日月全事》pdf版本中任何「实际存在」的错误，都会采取以下更正举措：</p>
+                    <p>第一，在pdf版本中作出更正；</p>
+                    <p>第二，在发布内容的账号发布公告；</p>
+                    <p>第三，记录、存档更正情况；</p>
+                    <p>第四，后续跟进网站版内容的更正。</p>
+                    <p>网站作者注：如遇技术问题（如网站打不开，排版严重异常，请提Issues或Pull Request）</p>
+                    <p style="text-align: center;"><a href="https://github.com/Dennis114514/GenshinLore"
+                            target="_blank"><img src="img/others/GenshinLore.png" alt="GenshinLore Github项目"
+                                style="width:auto; max-width: 400px; cursor: pointer;"></a></p>
+
+                    <h2 id="section-4">四、如何认定本手册的法律性质？</h2>
+
+                    <h3 id="section-4-1">（一）本作品的法律性质</h3>
+
+                    <h4 id="section-4-1-1">1.这部作品能否营利？</h4>
+
+                    <p>《著作权法》第十五条规定，汇编若干作品、作品的片段或者不构成作品的数据或者其他材料，对其内容的选择或者编排体现独创性的作品，为汇编作品，其著作权由汇编人享有，但行使著作权时，不得侵犯原作品的著作权。
+                    </p>
+                    <p>在本手册中，我根据自己的考据逻辑以及对设定的理解，对官方素材进行了选择和编排，并添加了大量的原创内容，包括但不限于以下内容：</p>
+                    <p>第一，所有的标题文本、文本衔接处的说明、对时间线的划分、对事件的概括；</p>
+                    <p>第二，人物设定表及相关介绍、人物关系图；</p>
+                    <p>第三，脚注中的说明、题注中的说明、「编者的话」文本框中的文本；</p>
+                    <p>第四，「幕间：编者之声」中的文本、「编者前言」中的文本、「编者后记」中的文本；</p>
+                    <p>第五，本手册衍生内容《随书附赠册》中的文本等。</p>
+                    <p><span
+                            style="color: red;">因此，本手册对内容的选择与编排体现了独创性，而不仅仅是对官方素材的简单复制。</span>本手册属于汇编作品，我对该汇编作品享有著作权。对于我的汇编作品及其中的汇编形式，禁止任何擅自发布
+                        <aa class="has-footnote"><sup>*</sup><span
+                                class="tooltip">擅自发布行为是指未经作者许可，将未发表作品公之于众。未发表作品包括但不限于任何word、excel、ps文件等制作素材，尚未正式公布的pdf、png文件，尚未正式公布的共享文档。</span>
+                        </aa>、抄袭<aa class="has-footnote"><sup>*</sup><span
+                                class="tooltip">抄袭行为包括但不限于：直接将文件内容复制到自己的作品中并署自己的名，对文件内容进行略微的修改（例如更换同义词、更换语序）并署自己的名。</span>
+                        </aa>、商业行为<aa class="has-footnote"><sup>*</sup><span
+                                class="tooltip">商业行为包括但不限于：一、售卖文件；二、售卖文件下载链接或涉及文件的网站的链接；三、售卖文件的实体印刷品（例如实体图书、手册）；四、提取文件内容用于制作付费图片（例如思维导图、全局关系图）、付费文档（例如出版图书、专栏、回答、小说、网站文档）、付费视频（例如充电视频、网课）、付费音频（例如有声小说，广播节目）、付费周边（例如同人徽章、卡片、色纸、文集）或付费程序（例如同人游戏、软件、脚本、代码）；五、将文件用于商业宣传（例如给文件内容植入商品广告，用文件给商品或付费平台引流）等行为。</span>
+                        </aa>、篡改<aa class="has-footnote"><sup>*</sup><span
+                                class="tooltip">篡改行为包括但不限于：在未经著作权人允许的情况下，修改文件格式，拆分合并文件以制作新文件，修改、伪造制作人员信息，修改语句，修改章节顺序或标题设置，修改插图，修改表格，修改文本框，修改字体、格式等行为。</span>
+                        </aa>、歪曲<aa class="has-footnote"><sup>*</sup><span
+                                class="tooltip">歪曲行为包括但不限于：断章取义，制造谣言，添加误导性解读，歪曲制作人员思想等行为。</span></aa>等侵权行为。</p>
+
+                    <h4 id="section-4-1-2">2.这部作品引用了其他作品的文本，合理吗？</h4>
+                    <p>《著作权法》第二十四条规定，在下列情况下使用作品，可以不经著作权人许可，不向其支付报酬，但应当指明作者姓名或者名称、作品名称，并且不得影响该作品的正常使用，也不得不合理地损害著作权人的合法权益：（一）为个人学习、研究或者欣赏，使用他人已经发表的作品；……
+                    </p>
+                    <p>据此，第一，本手册主要通过汇编、引用关于原神设定的文本，以宣传原神设定与考据，该作品在网络平台公布，开放免费下载渠道，不涉及任何商业行为，仅为个人（自然人）学习、研究或者欣赏；第二，本手册中几乎所有引用的文本的出处都有标注（包括但不限于脚注、题注、「编者的话」文本框、「参考资料」文本框、重要参考资料等区域）；第三，本手册中所有文本的编排都不影响原作品的正常使用，也不损害原作品著作权人的合法权益。<span
+                            style="color: red;">本手册的文本引用行为属于合理使用，可以不经著作权人许可，也不向其支付报酬。</span></p>
+                    <p>但是，由于本手册文本编纂的时间过于长久，参考材料（包括但不限于文本、图片等材料）过于庞杂，可能仍然存在部分引用文本的出处尚不明确、无法联系到原作者的情况，因此无法在引用文本处标注原作者信息，这种引用并不属于《著作权法》第二十四条规定的「合理使用」。
+                    </p>
+                    <p>为避免引用行为对原作品产生不良影响，如有原作者在阅读时发现此类情况，想要对引用文本作出认定，请通过邮箱1849390709@qq.com联系我。我会依据原作者的事后授权，对引用文本进行标注或修订；依据原作者的请求，直接删除引用文本。
+                    </p>
+
+                    <h4>3.这部作品需要提交申报吗？</h4>
+                    <p>本手册虽然具有实体印刷品的质量，但仍然属于<span style="color: red;">免费电子汇编同人文集</span>，属于虚拟物品，不属于实体作品。</p>
+                    <p>另外需要强调的是，《原神同人周边正式运行指引V1.3》前言指出，该指引旨在对于创作者们所提交的《原神》同人周边申请的内容以及实体周边制作销售的流程进行审核确认，审核范围<span
+                            style="color: red;">不含虚拟物品的制作</span>与销售、线下展会的开办等等。结合该指引全文，也能推断出该指引规制的是「实体同人周边制作、销售行为」，而不包括「虚拟周边」。
+                    </p>
+                    <p>并且《原神同人周边正式运行指引V1.3》第六条还特别指出，<span
+                            style="color: red;">同人文集</span>、同人小说在基于合法合规符合国家政策的情况下，无论盈利与否，均无需提交申报。本手册的全部内容合法合规，符合国家政策。
+                    </p>
+                    <p>综上，<span
+                            style="color: red;">本手册无需提交申报，也不由《原神同人周边正式运行指引V1.3》审核确认。而本着维护官方素材的著作权，并且尽可能提升原神设定传播度的基本原则，本手册不涉及任何商业行为，仅用于同好交流（即不以任何形式及理由收取费用，如赠送、展示）。</span>
+                    </p>
+
+                    <h4 id="section-4-1-4">4.这部作品能否出版？</h4>
+                    <p>根据《著作权法》第十六条规定，使用汇编已有作品而产生的作品进行出版，应当取得该作品的著作权人和原作品的著作权人许可，并支付报酬。</p>
+                    <p>我可以在汇编作品中注明出处，免费传播，但若要涉及出版，我仍需要取得官方授权，并向官方支付报酬。<span style="color: red;">目前，本手册尚无出版计划。</span></p>
+
+                    <h4 id="section-4-1-5">5.有人将作品印刷成实体产品并出售，怎么处理？</h4>
+                    <p><span
+                            style="color: red;">我不承担任何关于本手册的印刷工作</span>，不帮助任何读者进行印刷，更不会通过印刷手册来营利。本手册允许读者自行将电子文件印刷出来阅读，<span
+                            style="color: red;">但仅用于个人学习、欣赏、赠送，禁止任何商业行为。</span></p>
+                    <p>谁印刷并以此营利，谁就担责。如果张三印刷并以此营利，那么张三构成对官方的侵权，由官方向张三追责。</p>
+                    <p class="secondary-text">千织：我们回来了。<br>
+                        绮良良：你们去了好久！应该没…没发生什么吧…<br>
+                        千织：没什么，你只要知道，以后枫丹没人敢再对你的货下手了就行。<br>
+                        绯良良：…抱歉，给千织姐添麻烦了。<br>
+                        <span style="color: red;">千织：说什么呢，你又没做错什么。错的是那耍小手段的家伙，还有那群见钱眼开的盗贼。</span><br>
+                        千织：下次出城的时候，就该叫上枫丹特巡队来护送你，然后中途交接一下，让刺玫会送你下半程…<br>
+                        千织：这样一来，我保证你下次送快递的时候，那些盗宝团都争着抢着要来帮你提包裹。<br>
+                        绯良良：啊哈哈哈…千织姐…你还真会开玩笑。<br>
+                        千织：我没在开玩笑，你知道的。当我说一件事的时候，这件事就已经做完了。<br>
+                        <span style="text-align: right; display: block;">——千织传说任务，当他们谈起今夜</span>
+                    </p>
+
+                    <h4 id="section-4-1-6">6.能否将该作品输入给人工智能工具，或架设人工智能工具？</h4>
+                    <p>本手册的内容<aa class="has-footnote"><sup>*</sup><span class="tooltip">包括手册及衍生作品的文件、网站源代码。</span></aa>
+                        对人工智能来说属于优质数据，在用于训练人工智能后，能极大提升人工智能理解原神剧情的准确度，不但能促进人工智能发展，也能优化手册本身内容。</p>
+                    <p>您可以将本手册中的内容输入给人工智能工具，并向其询问问题；也可以基于本手册中的内容自行架设人工智能工具。但以上输入、架设情形须遵守以下规定：</p>
+                    <h5 style="font-size: 16px;">6.1 通用规则</h5>
+                    <p>如果您将人工智能工具产出的结论<aa class="has-footnote"><sup>*</sup><span
+                                class="tooltip">包括但不限于文本、表格、思维导图等。</span></aa>对外发布<aa class="has-footnote">
+                            <sup>*</sup><span class="tooltip">包括但不限于公开平台、私聊、群聊、链接分享等。</span></aa>，必须在结论附近醒目处注明<span
+                            style="color: red;">「该结论的学习素材包括《日月全事》」</span>，同时注明<span
+                            style="color: red;">「任何经由人工智能工具产出的结论仅作参考，不代表《日月全事》观点」</span>。</p>
+                    <h5 style="font-size: 16px;">6.2 自行架设人工智能工具的特别规则</h5>
+                    <p>如果您基于本手册中的内容开发并运营人工智能工具<aa class="has-footnote"><sup>*</sup><span
+                                class="tooltip">包括但不限于问答机器人、对话系统、人工智能平台等。</span></aa>，除必须遵守第6.1条外，还须同时遵守以下规定：</p>
+                    <p>（1）工具名称<span
+                            style="color: red;">不得包含「日月全事」</span>。并且，工具的界面信息与宣传内容，均不得以任何方式暗示该工具是《日月全事》的官方工具或衍生作品，只能在参考资料的醒目处<span
+                            style="color:red">注明「本工具的学习素材包括《日月全事》」</span>。</p>
+                    <p>（2）您知晓并同意：您对外发布的与该工具相关的任何信息<aa class="has-footnote"><sup>*</sup><span
+                                class="tooltip">包括但不限于安装包、视频、图片、文本等。</span></aa>，<span
+                            style="color: red;">仅代表您个人观点，不代表本手册观点</span>。并且我<span
+                            style="color: red;">不负责处理与该工具相关的任何争议，也不负责向您转达用户对该工具的修改意见。</span></p>
+                    <p style="color: #666; font-size: 13px;">
+                        网站作者注：本网站提供了markdown版本的手册，比PDF更适合AI的阅读，而且将不同部分的文本分开，便于上下文长度较小的AI使用，在一定程度上也可以节约token资源，如有需要可以下载使用
+                    </p>
+
+                    <h4 id="section-4-1-7">7.能否将作品分享到国外平台，广泛传播？</h4>
+                    <p>不能。</p>
+                    <p>《著作权法》第十条规定，信息网络传播权是以有线或者无线方式向公众提供作品，使公众可以在其个人选定的时间和地点获得作品的权利。我享有该手册的信息网络传播权，目前手册仅在国内<aa
+                            class="has-footnote"><sup>*</sup><span class="tooltip">中国大陆（内地、境内）和港澳台</span></aa>
+                        传播，使用的主要语言是简体中文，面向的主要受众为国内的、且主要使用简体中文的读者。本手册暂时不会翻译成其他语言，也不支持在国外广泛传播。<span
+                            style="color: red;">为避免产生跨国著作权纠纷，禁止擅自将本手册发布到任何国外<aa class="has-footnote"><sup>*</sup><span
+                                    class="tooltip">「中国大陆（内地、境内）和港澳台」以外的国家和地区</span></aa>平台。</span></p>
+
+                    <h4 id="section-4-1-8">8.能否将该作品转化成千星奇域？</h4>
+                    <p>不合适。</p>
+                    <p>一方面在内容上不合适，《奇匠创作守则》第（三）款第1项第（9）目指出：因涉及官方产品的角色与背景故事，我们不建议制作角色剧情类、官方产品故事背景设定相关内容。据此，以介绍世界观为内容的项目难以通过审核，哪怕通过审核，也极易被下架。
+                    </p>
+                    <p>另一方面，在形式上也不合适，千星奇域本质上仍是游戏，应当具有可重复游玩的玩法，但《日月全事》是书籍，核心功能是查询并备份文本，如果做成游戏，其一，书籍内容本身严谨性将会大打折扣，将会把本来已经整理好的环环相扣的体系，又再次拆得七零八落；其二，可玩性也极差，大部分内容较为晦涩，需要扎实的前置知识，难以转化成轻松易懂的内容。
+                    </p>
+                    <p>综上，<span style="color: red;">可以作为制作千星奇域时的背景知识参考，但完全不建议直接将书中内容转化成千星奇域。</span></p>
+
+                    <h3 id="section-4-3">（二）关于泄密内容——以米哈游诉妮可少女案为例</h3>
+                    <h4 id="section-4-3-1">1.基本案情</h4>
+                    <p><a
+                            style="color: red;">如果你不关心法律，那法律就会来关心你。</a>——这一条箴言的价值，集中表现于米哈游诉妮可少女案。「妮可少女」是米哈游旗下《原神》等游戏在全球范围内最具影响力的泄密者的账号（即「内鬼」）。他运营的网站「玉衡杯数据库」，是原神圈内知名的未公开内容泄密平台，他运用破解安装包和加密信息的技术，整理出精准的游戏数据、卡池预测、版本规划爆料并在网站集中发布，累计3年时间，发布了上万条米哈游游戏的泄密内容（即「内鬼消息」）。该泄密网站事无巨细，几乎囊括了《原神》等游戏的全部基础信息，甚至包括大量加密数据，例如卡池顺序、角色编号、怪物属性等等。
+                    </p>
+                    <p>据悉，2025年12月，米哈游多次向妮可少女发送律师函与侵权下架通知，要求其停止全部侵权行为、关停相关侵权站点。2025年12月29日，妮可少女回应称将不再发布新的解包内容，但明确拒绝关停玉衡杯核心网站，未终止持续侵权行为。2026年1月，妮可少女还参加了原神fes活动，并参观了米哈游总部，还在社交账号中公开行程与照片，被网友解读为「对米哈游的挑衅」。
+                    </p>
+                    <p>2026年2月5日，一份在网络流传的诉状显示，米哈游在美国佐治亚州法院正式对妮可少女提起跨国民事诉讼，原告米哈游在诉状中提出7项核心诉讼主张，请求被告关闭所有内鬼网站，并禁止其实施破解技术、泄密、教唆违约等侵权行为，同时，请求被告赔偿实际损失、法定最高限额赔偿以及惩罚性赔偿，没收被告因侵权所获的全部利润，并承担原告所有诉讼费用和律师费。上述事件曝光后，多个头部内鬼账号集体发布道歉声明，宣布永久停更解包内容、注销相关账号。
+                    </p>
+                    <p>而在2026年2月27日，公开消息
+                        <aa class="has-footnote">
+                            <sup>*</sup>
+                            <span class="tooltip">
+                                <a href="https://www.thepaper.cn/newsDetail_forward_32665176">多款未公开的角色遭泄露，上海首例刑事打击的游戏“非法剧透”案告破_浦江头条_澎湃新闻-The
+                                    Pape</a>
+                                <a
+                                    href="https://www.bilibili.com/video/BV1KjAhz9Eqz/">持续、大量发布《原神》《崩坏：星穹铁道》《绝区零》未公开涉密游戏内容，“妮可少女”等3人被采取刑事强制措施_游戏热门视频</a>
+                            </span>
+                        </aa>
+                        显示，知名泄密者妮可少女（周某）已被警方抓获：近日，上海警方成功破获一起侵犯游戏著作权案件，抓获犯罪嫌疑人3名（苏某、吴某、周某）。在完成全面数据固证，并摸清嫌疑人位置后，专案组于2025年10月至2026年1月间，先后抓获上述3名犯罪嫌疑人，查获电脑、手机等作案工具。到案后，周某等3人交代自己均系游戏爱好者，为博取流量、获得平台和用户打赏，通过破解游戏测试包体方式、制作侵权视频并通过平台发布。自以为被平台警告后只要删除或下架视频即可，不用承担其他法律责任。其中，具有技术背景的在读博士周某（即妮可少女），除了通过反编译技术破解游戏测试包体外，还搭建了名为「玉衡杯」的网站，用于上传游戏未公开版本信息等侵权内容，在网络上引发大量转发、扩散，对游戏的日常运营带来了严重负面影响，一些碎片化的信息描述还引发了玩家的争执，对游戏社区生态造成破坏。
+                    </p>
+                    <p>目前，犯罪嫌疑人苏某、吴某因涉嫌侵犯著作权罪已被检察机关依法移送起诉，犯罪嫌疑人周某因涉嫌侵犯著作权罪已被警方依法采取刑事强制措施，案件正在进一步侦办中。</p>
+                    <h4 id="section-4-3-2">2.泄密行为的性质</h4>
+                    <p>作为长期跟进、关注原神内容发布流程的创作者，我认为：泄密内容看似有利于玩家提前几个版本进行抽卡规划或收集角色养成素材，但对原神这一内容向游戏的长期运营而言百害而无一利。最核心的负面影响有两个：
+                    </p>
+                    <p>其一，泄密信息不但包括未来角色的形象与设定，更透露了未来剧情关键信息，这极大地扰乱了内容运营的节奏，直接让官方后续的宣发物料失去了悬念，传播效果大幅衰减，甚至完全失效。最具影响力的一次泄露，甚至提前7个月曝光了枫丹10个主要角色的官方设定图与草稿图（史称「枫丹八骏图」），直接使官方对枫丹的长期铺垫彻底作废。
+                    </p>
+                    <p>其二，一些泄露出去的商业秘密极易为竞争对手掌握，竞争对手可据此针对性地调整自身的产品排期，见招拆招，甚至提前发布同类设计，从而抢先获得市场份额与版权保护，这将极大削弱原创内容的核心竞争力。
+                    </p>
+                    <p>而在法律层面，需要格外强调的是，内容泄密是毋庸置疑的违法行为。具体而言，对原神内容的泄密行为，根据行为主体、实施手段、情节轻重、损害后果的不同，会分别构成以下违法行为：</p>
+                    <p>（1）民事违约：包括但不限于违反《保密协议》行为
+                        <aa class="has-footnote">
+                            <sup>*</sup>
+                            <span
+                                class="tooltip">《保密协议》通常由参与非公开测试环节的人员签署，一般而言，《保密协议》会明确约定不得泄露、传播、破解、复制测试服内容，不得向第三方披露未公开的游戏信息，不得将涉密内容用于测试之外的任何用途。</span>
+                        </aa>、违反《用户服务协议》
+                        <aa class="has-footnote">
+                            <sup>*</sup>
+                            <span
+                                class="tooltip">根据《米哈游游戏使用许可及服务协议》第2条第1款的规定，米哈游游戏（包括但不限于文字、图片、音频、视频、界面设计、版面框架、相关数据、电子文档等）的一切著作权、商标权、专利权、商业秘密等知识产权及相关合法权益，均受法律保护，米哈游享有上述权利。<br>第10条第2款禁止用户对游戏软件进行反向工程、反向汇编、反向编译或者以其他方式尝试发现软件代码（包括但不限于软件的源代码），对游戏软件运行过程中释放的终端内存数据、客户端与服务器端交互数据、系统数据，进行复制、修改、挂接运行或创作衍生作品，包括使用非经合法授权的第三方工具/服务接入软件和相关系统。<br>第26条规定，未经米哈游事先书面允许，用户不得通过第三方软件公开全部或部分展示、复制、传播、播放米哈游游戏服务中的游戏画面。</span>
+                        </aa>行为等；
+                    </p>
+                    <p>（2）民事侵权：包括但不限于著作权侵权行为
+                        <aa class="has-footnote">
+                            <sup>*</sup>
+                            <span class="tooltip">《著作权法》（中）、《版权法》（美）、《数字千年版权法（DMCA）》（美）</span>
+                        </aa>、 商业秘密侵权行为
+                        <aa class="has-footnote">
+                            <sup>*</sup>
+                            <span class="tooltip">《反不正当竞争法》（中）、《保护商业秘密法（DTSA）》（美）</span>
+                        </aa>、 不正当竞争侵权行为
+                        <aa class="has-footnote">
+                            <sup>*</sup>
+                            <span class="tooltip">《反不正当竞争法》</span>
+                        </aa>等；
+                    </p>
+                    <p>（3）刑事犯罪：情节严重程度达到法定标准的，还会构成刑事犯罪，包括但不限于侵犯商业秘密罪
+                        <aa class="has-footnote">
+                            <sup>*</sup>
+                            <span class="tooltip">《刑法》第219条</span>
+                        </aa>、 侵犯著作权罪
+                        <aa class="has-footnote">
+                            <sup>*</sup>
+                            <span class="tooltip">《刑法》第217条</span>
+                        </aa>、 非法获取计算机信息系统数据、非法控制计算机信息系统罪
+                        <aa class="has-footnote">
+                            <sup>*</sup>
+                            <span class="tooltip">《刑法》第285条第2款</span>
+                        </aa>、 提供侵入、非法控制计算机信息系统程序、工具罪
+                        <aa class="has-footnote">
+                            <sup>*</sup>
+                            <span class="tooltip">《刑法》第285条第3款</span>
+                        </aa>等。
+                    </p>
+                    <p>可以发现，泄密行为的行为主体具有普遍性，涉及了普通玩家、测试服参与者、内容制作者（例如公司员工）、内容传播者（例如视频制作者、发帖者）、工具制作者（例如内鬼网站运营者）等多种身份；侵犯的法益具有复合性，一次简单的泄露就可能同时侵犯不同的权益；实施的手段具有多样性，多种信息传播形式、传播渠道都有可能被认定为泄密——这种对内容泄密行为的严格规制，也侧面反映出官方对其作品的大力保护，以及对侵权行为的严格禁止。
+                    </p>
+                    <p>总之，严重的泄密行为足以构成犯罪，这并不是无稽之谈，而是具有法律依据的论断。而本案中的妮可少女为博取流量，获取打赏，而多次破解游戏测试包体，制作泄密视频，甚至搭建泄密网站，自以为被平台警告后，只要删除或下架视频即可，不用承担其他法律责任，甚至疑似在收到官方发送的律师函之后，仍不悔改——其态度可谓是猖狂至极，造成的恶劣影响无法估量！
+                    </p>
+                    <h4 id="section4-3-3">3.对泄密行为的禁止</h4>
+                    <p>如今，虽然大量的泄密网站已经关停，大量的头部泄密账号也已经注销，长期霸占社区的内容泄密生态逐渐走向了凋敝，但是社区内仍然存在不少的即时泄密内容。这些信息以破解安装包得到的信息为主，来源于国外的泄密者或群组，并在国内经由大量去中心化的自媒体账号进行搬运、发布，并在各个平台、群组内引发玩家的传播。有些关于泄密内容的讨论，甚至公然聚集在官方账号的讨论场域展开，在内容上，这些讨论严重打乱了官方内容发布的节奏，更将泄密信息广泛传播给了大量完全不知情的玩家；在程序上，这些由泄密内容衍生出的诉求的反馈方式，大部分都不符合官方对反馈渠道与操作流程的规定，除了挑动不必要的社区争议，间接给「专门以负面舆论牟利」的解构者提供借题发挥的素材以外，毫无建设性意义。
+                    </p>
+                    <p>以上这种乱象至今都难以彻底遏制，大量玩家在浏览社区时，仍然对泄密信息防不胜防。不过正如枫丹大法官那维莱特所言：「凡高大者，我无不蔑视。」法律不会同情任何对法律的无知。再高大的存在，只要背负罪孽，那就应当受到应有的审判——这不是我自己主观捏造的妄言，而是在客观法条中蕴含的宗旨。基于以上案例与信息，本手册不可不对创作手册的材料来源做严格把控。
+                    </p>
+                    <p>本手册做出郑重承诺：</p>
+                    <p>第一，本手册所使用的一切游戏内容，<span
+                            style="color: red;">均为官方已经公布的素材</span>。本手册绝不将泄密素材（包括但不限于解包内容，内鬼推测）作为讨论、分析的根据，并且拒绝任何涉及泄密素材的修改建议。
+                    </p>
+                    <p>第二，我作为原神社区内容的建设者，也希望通过分享关于泄密事件的处理结果（包括但不限于社区处理结果、司法程序结果），<span
+                            style="color: red;">对潜在或实际的内容泄密者起到震慑作用，减少泄密内容的传播，营造出良好的内容发布与创作生态。</span></p>
+                    <p>第三，天下苦内鬼久矣。倘若荒野上仍有内鬼如狂猎般游荡，那我便用这本手册，为内容的建设者、爱好者修筑起坚实的城墙，作为最为直接的抵御。</p>
+                    <h4 id="section4-3-4">4.真正的「禁忌知识」</h4>
+                    <p>被禁忌知识裹挟的「妮可少女」已被这世界彻底排除，因此不再赘述。而更重要的事恰恰被放在了<span
+                            style="color:red;">下一页</span>：一位名为「尼可」的「魔女」向我分享了世界的底层架构。通过参考这位魔女提供的宝贵信息，还有一位名为戴因斯雷布的先生的旅行经历，以及一本名为《日月前事》的古籍记载的历史，我得以书写下《日月全事》的开篇——
+                    </p>
+                    <p>我们想要记录的事情，不仅涉及天神在大地上「创世的神迹」，更关乎人类「闯世的足迹」，以及这串足迹上刻画的见闻。</p>
+                    <p>这个「方舟」<aa class="has-footnote"><sup>*</sup><span class="tooltip">提瓦特，Teyvat，在古希伯来语中意为「方舟」。</span>
+                        </aa>
+                        世界的目的，也许是给岁月以「人类的文明」。它的自由，是人类文明独立自主发展的自由；它的契约，是为协调人类文明中各方利益而订立的契约；它的永恒，是驱动文明发展之人类欲望的永恒；它的智慧，是人类文明替物质性世界铭记历史的智慧；它的正义，是不断延续人类文明的正义；它的战争，是在人类文明的危机中集结命运共同体的战争；它的██，是……
+                    </p>
+                    <p>这段旅途在数年间启发我的神智，足以让我源源不断地记录。<span
+                            style="color:red;">请各位打起精神，随时留意头顶可能砸下的柱体。我将要讲述的，才是真正的「禁忌知识」。</span></p>
                 </div>
-            </div>
-        </div>
-        <p>请不要在其他区域（包括但不限于评论区、其他平台、私聊、群聊等区域）中撰写单向的、消息难以送达我方的修订意见，我可能遗漏。</p>
-        <h4>2.格式规范</h4>
-        <p>修订建议遵循以下格式规范来撰写。可接受的完整修订意见应当满足四个要件：</p>
-        <p>第一，版本：在xx版本（pdf或者网站，第x版）的手册中；</p>
-        <p>第二，问题：xx部分（章节名）中的xx有误；</p>
-        <p>第三，方案：应当更正为xx；</p>
-        <p>第四，材料：依据的材料是xx。（信息来源）</p>
-        <h4>3.更正举措</h4>
-        <p>对于《日月全事》pdf版本中任何「实际存在」的错误，都会采取以下更正举措：</p>
-        <p>第一，在pdf版本中作出更正；</p>
-        <p>第二，在发布内容的账号发布公告；</p>
-        <p>第三，记录、存档更正情况；</p>
-        <p>第四，后续跟进网站版内容的更正。</p>
-        <p>网站作者注：如遇技术问题（如网站打不开，排版严重异常，请提Issues或Pull Request）</p>
-        <p style="text-align: center;"><a href="https://github.com/Dennis114514/GenshinLore" target="_blank"><img src="img/others/GenshinLore.png" alt="GenshinLore Github项目" style="width:auto; max-width: 400px; cursor: pointer;"></a></p>
+            </section>
 
-        <h2 id="section-4">四、如何认定本手册的法律性质？</h2>
+            <footer class="home-footer">
+                <p>愿风指引你们的道路</p>
+                <p><a href="https://github.com/Dennis114514/GenshinLore" target="_blank">GenshinLore</a> 2026</p>
+                <p><a href="https://icp.gov.moe/?keyword=20263347" target="_blank">萌ICP备20263347号</a></p>
+            </footer>
+        </main>
+        <script src="script.js"></script>
+        <script>
+            document.addEventListener('DOMContentLoaded', function () {
+                const tocList = document.getElementById('toc-list');
+                const tocToggle = document.getElementById('toc-toggle');
 
-        <h3 id="section-4-1">（一）本作品的法律性质</h3>
+                // 目录数据
+                const tocData = [
+                    { id: 'section-1', text: '一、这本手册讲了什么？', level: 1 },
+                    { id: 'section-2', text: '二、这本手册有何优点？', level: 1 },
+                    { id: 'section-2-1', text: '（一）整合性', level: 2 },
+                    { id: 'section-2-2', text: '（二）便捷性', level: 2 },
+                    { id: 'section-2-3', text: '（三）备份功能', level: 2 },
+                    { id: 'section-3', text: '三、如何阅读手册？如何提出修订建议？', level: 1 },
+                    { id: 'section-3-1', text: '（一）阅读与打印手册', level: 2 },
+                    { id: 'section-3-2', text: '（二）修订建议', level: 2 },
+                    { id: 'section-4', text: '四、如何认定本手册的法律性质？', level: 1 },
+                    { id: 'section-4-1', text: '（一）本作品的法律性质', level: 2 },
+                    { id: 'section-4-1-1', text: '1.这部作品能否营利？', level: 3 },
+                    { id: 'section-4-1-2', text: '2.这部作品引用了其他作品的文本，合理吗？', level: 3 },
+                    { id: 'section-4-1-3', text: '3.这部作品需要提交申报吗？', level: 3 },
+                    { id: 'section-4-1-4', text: '4.这部作品能否出版？', level: 3 },
+                    { id: 'section-4-1-5', text: '5.有人将作品印刷成实体产品并出售，怎么处理？', level: 3 },
+                    { id: 'section-4-1-6', text: '6.能否将该作品输入给人工智能工具，或架设人工智能工具？', level: 3 },
+                    { id: 'section-4-1-7', text: '7.能否将作品分享到国外平台，广泛传播？', level: 3 },
+                    { id: 'section-4-1-8', text: '8.能否将该作品转化成千星奇域？', level: 3 },
+                    { id: 'section-4-3', text: '（二）关于泄密内容——以米哈游诉妮可少女案为例', level: 2 },
+                    { id: 'section-4-3-1', text: '1.基本案情', level: 3 },
+                    { id: 'section-4-3-2', text: '2.泄密行为的性质', level: 3 },
+                    { id: 'section4-3-3', text: '3.对泄密行为的禁止', level: 3 },
+                    { id: 'section4-3-4', text: '4.真正的「禁忌知识」', level: 3 }
+                ];
 
-        <h4 id="section-4-1-1">1.这部作品能否营利？</h4>
-        
-        <p>《著作权法》第十五条规定，汇编若干作品、作品的片段或者不构成作品的数据或者其他材料，对其内容的选择或者编排体现独创性的作品，为汇编作品，其著作权由汇编人享有，但行使著作权时，不得侵犯原作品的著作权。</p>
-        <p>在本手册中，我根据自己的考据逻辑以及对设定的理解，对官方素材进行了选择和编排，并添加了大量的原创内容，包括但不限于以下内容：</p>
-        <p>第一，所有的标题文本、文本衔接处的说明、对时间线的划分、对事件的概括；</p>
-        <p>第二，人物设定表及相关介绍、人物关系图；</p>
-        <p>第三，脚注中的说明、题注中的说明、「编者的话」文本框中的文本；</p>
-        <p>第四，「幕间：编者之声」中的文本、「编者前言」中的文本、「编者后记」中的文本；</p>
-        <p>第五，本手册衍生内容《随书附赠册》中的文本等。</p>
-        <p><span style="color: red;">因此，本手册对内容的选择与编排体现了独创性，而不仅仅是对官方素材的简单复制。</span>本手册属于汇编作品，我对该汇编作品享有著作权。对于我的汇编作品及其中的汇编形式，禁止任何擅自发布<aa class="has-footnote"><sup>*</sup><span class="tooltip">擅自发布行为是指未经作者许可，将未发表作品公之于众。未发表作品包括但不限于任何word、excel、ps文件等制作素材，尚未正式公布的pdf、png文件，尚未正式公布的共享文档。</span></aa>、抄袭<aa class="has-footnote"><sup>*</sup><span class="tooltip">抄袭行为包括但不限于：直接将文件内容复制到自己的作品中并署自己的名，对文件内容进行略微的修改（例如更换同义词、更换语序）并署自己的名。</span></aa>、商业行为<aa class="has-footnote"><sup>*</sup><span class="tooltip">商业行为包括但不限于：一、售卖文件；二、售卖文件下载链接或涉及文件的网站的链接；三、售卖文件的实体印刷品（例如实体图书、手册）；四、提取文件内容用于制作付费图片（例如思维导图、全局关系图）、付费文档（例如出版图书、专栏、回答、小说、网站文档）、付费视频（例如充电视频、网课）、付费音频（例如有声小说，广播节目）、付费周边（例如同人徽章、卡片、色纸、文集）或付费程序（例如同人游戏、软件、脚本、代码）；五、将文件用于商业宣传（例如给文件内容植入商品广告，用文件给商品或付费平台引流）等行为。</span></aa>、篡改<aa class="has-footnote"><sup>*</sup><span class="tooltip">篡改行为包括但不限于：在未经著作权人允许的情况下，修改文件格式，拆分合并文件以制作新文件，修改、伪造制作人员信息，修改语句，修改章节顺序或标题设置，修改插图，修改表格，修改文本框，修改字体、格式等行为。</span></aa>、歪曲<aa class="has-footnote"><sup>*</sup><span class="tooltip">歪曲行为包括但不限于：断章取义，制造谣言，添加误导性解读，歪曲制作人员思想等行为。</span></aa>等侵权行为。</p>
-        
-        <h4 id="section-4-1-2">2.这部作品引用了其他作品的文本，合理吗？</h4>
-        <p>《著作权法》第二十四条规定，在下列情况下使用作品，可以不经著作权人许可，不向其支付报酬，但应当指明作者姓名或者名称、作品名称，并且不得影响该作品的正常使用，也不得不合理地损害著作权人的合法权益：（一）为个人学习、研究或者欣赏，使用他人已经发表的作品；……</p>
-        <p>据此，第一，本手册主要通过汇编、引用关于原神设定的文本，以宣传原神设定与考据，该作品在网络平台公布，开放免费下载渠道，不涉及任何商业行为，仅为个人（自然人）学习、研究或者欣赏；第二，本手册中几乎所有引用的文本的出处都有标注（包括但不限于脚注、题注、「编者的话」文本框、「参考资料」文本框、重要参考资料等区域）；第三，本手册中所有文本的编排都不影响原作品的正常使用，也不损害原作品著作权人的合法权益。<span style="color: red;">本手册的文本引用行为属于合理使用，可以不经著作权人许可，也不向其支付报酬。</span></p>
-        <p>但是，由于本手册文本编纂的时间过于长久，参考材料（包括但不限于文本、图片等材料）过于庞杂，可能仍然存在部分引用文本的出处尚不明确、无法联系到原作者的情况，因此无法在引用文本处标注原作者信息，这种引用并不属于《著作权法》第二十四条规定的「合理使用」。</p>
-        <p>为避免引用行为对原作品产生不良影响，如有原作者在阅读时发现此类情况，想要对引用文本作出认定，请通过邮箱1849390709@qq.com联系我。我会依据原作者的事后授权，对引用文本进行标注或修订；依据原作者的请求，直接删除引用文本。</p>
-        
-        <h4>3.这部作品需要提交申报吗？</h4>
-        <p>本手册虽然具有实体印刷品的质量，但仍然属于<span style="color: red;">免费电子汇编同人文集</span>，属于虚拟物品，不属于实体作品。</p>
-        <p>另外需要强调的是，《原神同人周边正式运行指引V1.3》前言指出，该指引旨在对于创作者们所提交的《原神》同人周边申请的内容以及实体周边制作销售的流程进行审核确认，审核范围<span style="color: red;">不含虚拟物品的制作</span>与销售、线下展会的开办等等。结合该指引全文，也能推断出该指引规制的是「实体同人周边制作、销售行为」，而不包括「虚拟周边」。</p>
-        <p>并且《原神同人周边正式运行指引V1.3》第六条还特别指出，<span style="color: red;">同人文集</span>、同人小说在基于合法合规符合国家政策的情况下，无论盈利与否，均无需提交申报。本手册的全部内容合法合规，符合国家政策。</p>
-        <p>综上，<span style="color: red;">本手册无需提交申报，也不由《原神同人周边正式运行指引V1.3》审核确认。而本着维护官方素材的著作权，并且尽可能提升原神设定传播度的基本原则，本手册不涉及任何商业行为，仅用于同好交流（即不以任何形式及理由收取费用，如赠送、展示）。</span></p>
-        
-        <h4 id="section-4-1-4">4.这部作品能否出版？</h4>
-        <p>根据《著作权法》第十六条规定，使用汇编已有作品而产生的作品进行出版，应当取得该作品的著作权人和原作品的著作权人许可，并支付报酬。</p>
-        <p>我可以在汇编作品中注明出处，免费传播，但若要涉及出版，我仍需要取得官方授权，并向官方支付报酬。<span style="color: red;">目前，本手册尚无出版计划。</span></p>
-        
-        <h4 id="section-4-1-5">5.有人将作品印刷成实体产品并出售，怎么处理？</h4>
-        <p><span style="color: red;">我不承担任何关于本手册的印刷工作</span>，不帮助任何读者进行印刷，更不会通过印刷手册来营利。本手册允许读者自行将电子文件印刷出来阅读，<span style="color: red;">但仅用于个人学习、欣赏、赠送，禁止任何商业行为。</span></p>
-        <p>谁印刷并以此营利，谁就担责。如果张三印刷并以此营利，那么张三构成对官方的侵权，由官方向张三追责。</p>
-        <p class="secondary-text">千织：我们回来了。<br>
-        绮良良：你们去了好久！应该没…没发生什么吧…<br>
-        千织：没什么，你只要知道，以后枫丹没人敢再对你的货下手了就行。<br>
-        绯良良：…抱歉，给千织姐添麻烦了。<br>
-        <span style="color: red;">千织：说什么呢，你又没做错什么。错的是那耍小手段的家伙，还有那群见钱眼开的盗贼。</span><br>
-        千织：下次出城的时候，就该叫上枫丹特巡队来护送你，然后中途交接一下，让刺玫会送你下半程…<br>
-        千织：这样一来，我保证你下次送快递的时候，那些盗宝团都争着抢着要来帮你提包裹。<br>
-        绯良良：啊哈哈哈…千织姐…你还真会开玩笑。<br>
-        千织：我没在开玩笑，你知道的。当我说一件事的时候，这件事就已经做完了。<br>
-        <span style="text-align: right; display: block;">——千织传说任务，当他们谈起今夜</span></p>
-        
-        <h4 id="section-4-1-6">6.能否将该作品输入给人工智能工具，或架设人工智能工具？</h4>
-        <p>本手册的内容<aa class="has-footnote"><sup>*</sup><span class="tooltip">包括手册及衍生作品的文件、网站源代码。</span></aa>对人工智能来说属于优质数据，在用于训练人工智能后，能极大提升人工智能理解原神剧情的准确度，不但能促进人工智能发展，也能优化手册本身内容。</p>
-        <p>您可以将本手册中的内容输入给人工智能工具，并向其询问问题；也可以基于本手册中的内容自行架设人工智能工具。但以上输入、架设情形须遵守以下规定：</p>
-        <h5 style="font-size: 16px;">6.1 通用规则</h5>
-        <p>如果您将人工智能工具产出的结论<aa class="has-footnote"><sup>*</sup><span class="tooltip">包括但不限于文本、表格、思维导图等。</span></aa>对外发布<aa class="has-footnote"><sup>*</sup><span class="tooltip">包括但不限于公开平台、私聊、群聊、链接分享等。</span></aa>，必须在结论附近醒目处注明<span style="color: red;">「该结论的学习素材包括《日月全事》」</span>，同时注明<span style="color: red;">「任何经由人工智能工具产出的结论仅作参考，不代表《日月全事》观点」</span>。</p>
-        <h5 style="font-size: 16px;">6.2 自行架设人工智能工具的特别规则</h5>
-        <p>如果您基于本手册中的内容开发并运营人工智能工具<aa class="has-footnote"><sup>*</sup><span class="tooltip">包括但不限于问答机器人、对话系统、人工智能平台等。</span></aa>，除必须遵守第6.1条外，还须同时遵守以下规定：</p>
-        <p>（1）工具名称<span style="color: red;">不得包含「日月全事」</span>。并且，工具的界面信息与宣传内容，均不得以任何方式暗示该工具是《日月全事》的官方工具或衍生作品，只能在参考资料的醒目处<span style="color:red">注明「本工具的学习素材包括《日月全事》」</span>。</p>
-        <p>（2）您知晓并同意：您对外发布的与该工具相关的任何信息<aa class="has-footnote"><sup>*</sup><span class="tooltip">包括但不限于安装包、视频、图片、文本等。</span></aa>，<span style="color: red;">仅代表您个人观点，不代表本手册观点</span>。并且我<span style="color: red;">不负责处理与该工具相关的任何争议，也不负责向您转达用户对该工具的修改意见。</span></p>
-        <p style="color: #666; font-size: 13px;">网站作者注：本网站提供了markdown版本的手册，比PDF更适合AI的阅读，而且将不同部分的文本分开，便于上下文长度较小的AI使用，在一定程度上也可以节约token资源，如有需要可以下载使用</p>
-        
-        <h4 id="section-4-1-7">7.能否将作品分享到国外平台，广泛传播？</h4>
-        <p>不能。</p>
-        <p>《著作权法》第十条规定，信息网络传播权是以有线或者无线方式向公众提供作品，使公众可以在其个人选定的时间和地点获得作品的权利。我享有该手册的信息网络传播权，目前手册仅在国内<aa class="has-footnote"><sup>*</sup><span class="tooltip">中国大陆（内地、境内）和港澳台</span></aa>传播，使用的主要语言是简体中文，面向的主要受众为国内的、且主要使用简体中文的读者。本手册暂时不会翻译成其他语言，也不支持在国外广泛传播。<span style="color: red;">为避免产生跨国著作权纠纷，禁止擅自将本手册发布到任何国外<aa class="has-footnote"><sup>*</sup><span class="tooltip">「中国大陆（内地、境内）和港澳台」以外的国家和地区</span></aa>平台。</span></p>
-        
-        <h4 id="section-4-1-8">8.能否将该作品转化成千星奇域？</h4>
-        <p>不合适。</p>
-        <p>一方面在内容上不合适，《奇匠创作守则》第（三）款第1项第（9）目指出：因涉及官方产品的角色与背景故事，我们不建议制作角色剧情类、官方产品故事背景设定相关内容。据此，以介绍世界观为内容的项目难以通过审核，哪怕通过审核，也极易被下架。</p>
-        <p>另一方面，在形式上也不合适，千星奇域本质上仍是游戏，应当具有可重复游玩的玩法，但《日月全事》是书籍，核心功能是查询并备份文本，如果做成游戏，其一，书籍内容本身严谨性将会大打折扣，将会把本来已经整理好的环环相扣的体系，又再次拆得七零八落；其二，可玩性也极差，大部分内容较为晦涩，需要扎实的前置知识，难以转化成轻松易懂的内容。</p>
-        <p>综上，<span style="color: red;">可以作为制作千星奇域时的背景知识参考，但完全不建议直接将书中内容转化成千星奇域。</span></p>
+                // 生成目录
+                tocData.forEach(item => {
+                    const li = document.createElement('li');
+                    li.className = 'toc-item';
 
-        <h3 id="section-4-3">（二）关于泄密内容——以米哈游诉妮可少女案为例</h3>
-        <h4 id="section-4-3-1">1.基本案情</h4>
-        <p><a style="color: red;">如果你不关心法律，那法律就会来关心你。</a>——这一条箴言的价值，集中表现于米哈游诉妮可少女案。「妮可少女」是米哈游旗下《原神》等游戏在全球范围内最具影响力的泄密者的账号（即「内鬼」）。他运营的网站「玉衡杯数据库」，是原神圈内知名的未公开内容泄密平台，他运用破解安装包和加密信息的技术，整理出精准的游戏数据、卡池预测、版本规划爆料并在网站集中发布，累计3年时间，发布了上万条米哈游游戏的泄密内容（即「内鬼消息」）。该泄密网站事无巨细，几乎囊括了《原神》等游戏的全部基础信息，甚至包括大量加密数据，例如卡池顺序、角色编号、怪物属性等等。</p>
-        <p>据悉，2025年12月，米哈游多次向妮可少女发送律师函与侵权下架通知，要求其停止全部侵权行为、关停相关侵权站点。2025年12月29日，妮可少女回应称将不再发布新的解包内容，但明确拒绝关停玉衡杯核心网站，未终止持续侵权行为。2026年1月，妮可少女还参加了原神fes活动，并参观了米哈游总部，还在社交账号中公开行程与照片，被网友解读为「对米哈游的挑衅」。</p>
-        <p>2026年2月5日，一份在网络流传的诉状显示，米哈游在美国佐治亚州法院正式对妮可少女提起跨国民事诉讼，原告米哈游在诉状中提出7项核心诉讼主张，请求被告关闭所有内鬼网站，并禁止其实施破解技术、泄密、教唆违约等侵权行为，同时，请求被告赔偿实际损失、法定最高限额赔偿以及惩罚性赔偿，没收被告因侵权所获的全部利润，并承担原告所有诉讼费用和律师费。上述事件曝光后，多个头部内鬼账号集体发布道歉声明，宣布永久停更解包内容、注销相关账号。</p>
-            <p>而在2026年2月27日，公开消息            
-                <aa class="has-footnote">
-                <sup>*</sup>
-                <span class="tooltip">
-                    <a href="https://www.thepaper.cn/newsDetail_forward_32665176">多款未公开的角色遭泄露，上海首例刑事打击的游戏“非法剧透”案告破_浦江头条_澎湃新闻-The Pape</a>
-                    <a href="https://www.bilibili.com/video/BV1KjAhz9Eqz/">持续、大量发布《原神》《崩坏：星穹铁道》《绝区零》未公开涉密游戏内容，“妮可少女”等3人被采取刑事强制措施_游戏热门视频</a>
-                </span>
-            </aa>显示，知名泄密者妮可少女（周某）已被警方抓获：近日，上海警方成功破获一起侵犯游戏著作权案件，抓获犯罪嫌疑人3名（苏某、吴某、周某）。在完成全面数据固证，并摸清嫌疑人位置后，专案组于2025年10月至2026年1月间，先后抓获上述3名犯罪嫌疑人，查获电脑、手机等作案工具。到案后，周某等3人交代自己均系游戏爱好者，为博取流量、获得平台和用户打赏，通过破解游戏测试包体方式、制作侵权视频并通过平台发布。自以为被平台警告后只要删除或下架视频即可，不用承担其他法律责任。其中，具有技术背景的在读博士周某（即妮可少女），除了通过反编译技术破解游戏测试包体外，还搭建了名为「玉衡杯」的网站，用于上传游戏未公开版本信息等侵权内容，在网络上引发大量转发、扩散，对游戏的日常运营带来了严重负面影响，一些碎片化的信息描述还引发了玩家的争执，对游戏社区生态造成破坏。</p>
-            <p>目前，犯罪嫌疑人苏某、吴某因涉嫌侵犯著作权罪已被检察机关依法移送起诉，犯罪嫌疑人周某因涉嫌侵犯著作权罪已被警方依法采取刑事强制措施，案件正在进一步侦办中。</p>        
-        <h4 id="section-4-3-2">2.泄密行为的性质</h4>
-        <p>作为长期跟进、关注原神内容发布流程的创作者，我认为：泄密内容看似有利于玩家提前几个版本进行抽卡规划或收集角色养成素材，但对原神这一内容向游戏的长期运营而言百害而无一利。最核心的负面影响有两个：</p>
-        <p>其一，泄密信息不但包括未来角色的形象与设定，更透露了未来剧情关键信息，这极大地扰乱了内容运营的节奏，直接让官方后续的宣发物料失去了悬念，传播效果大幅衰减，甚至完全失效。最具影响力的一次泄露，甚至提前7个月曝光了枫丹10个主要角色的官方设定图与草稿图（史称「枫丹八骏图」），直接使官方对枫丹的长期铺垫彻底作废。</p>
-        <p>其二，一些泄露出去的商业秘密极易为竞争对手掌握，竞争对手可据此针对性地调整自身的产品排期，见招拆招，甚至提前发布同类设计，从而抢先获得市场份额与版权保护，这将极大削弱原创内容的核心竞争力。</p>
-        <p>而在法律层面，需要格外强调的是，内容泄密是毋庸置疑的违法行为。具体而言，对原神内容的泄密行为，根据行为主体、实施手段、情节轻重、损害后果的不同，会分别构成以下违法行为：</p>
-        <p>（1）民事违约：包括但不限于违反《保密协议》行为
-            <aa class="has-footnote">
-                <sup>*</sup>
-                <span class="tooltip">《保密协议》通常由参与非公开测试环节的人员签署，一般而言，《保密协议》会明确约定不得泄露、传播、破解、复制测试服内容，不得向第三方披露未公开的游戏信息，不得将涉密内容用于测试之外的任何用途。</span>
-            </aa>、违反《用户服务协议》
-            <aa class="has-footnote">
-                <sup>*</sup>
-                <span class="tooltip">根据《米哈游游戏使用许可及服务协议》第2条第1款的规定，米哈游游戏（包括但不限于文字、图片、音频、视频、界面设计、版面框架、相关数据、电子文档等）的一切著作权、商标权、专利权、商业秘密等知识产权及相关合法权益，均受法律保护，米哈游享有上述权利。<br>第10条第2款禁止用户对游戏软件进行反向工程、反向汇编、反向编译或者以其他方式尝试发现软件代码（包括但不限于软件的源代码），对游戏软件运行过程中释放的终端内存数据、客户端与服务器端交互数据、系统数据，进行复制、修改、挂接运行或创作衍生作品，包括使用非经合法授权的第三方工具/服务接入软件和相关系统。<br>第26条规定，未经米哈游事先书面允许，用户不得通过第三方软件公开全部或部分展示、复制、传播、播放米哈游游戏服务中的游戏画面。</span>
-            </aa>行为等；</p>
-        <p>（2）民事侵权：包括但不限于著作权侵权行为
-            <aa class="has-footnote">
-                <sup>*</sup>
-                <span class="tooltip">《著作权法》（中）、《版权法》（美）、《数字千年版权法（DMCA）》（美）</span>
-            </aa>、 商业秘密侵权行为
-            <aa class="has-footnote">
-                <sup>*</sup>
-                <span class="tooltip">《反不正当竞争法》（中）、《保护商业秘密法（DTSA）》（美）</span>
-            </aa>、 不正当竞争侵权行为
-            <aa class="has-footnote">
-                <sup>*</sup>
-                <span class="tooltip">《反不正当竞争法》</span>
-            </aa>等；</p> 
-            <p>（3）刑事犯罪：情节严重程度达到法定标准的，还会构成刑事犯罪，包括但不限于侵犯商业秘密罪
-            <aa class="has-footnote">
-                <sup>*</sup>
-                <span class="tooltip">《刑法》第219条</span>
-            </aa>、 侵犯著作权罪
-            <aa class="has-footnote">
-                <sup>*</sup>
-                <span class="tooltip">《刑法》第217条</span>
-            </aa>、 非法获取计算机信息系统数据、非法控制计算机信息系统罪
-            <aa class="has-footnote">
-                <sup>*</sup>
-                <span class="tooltip">《刑法》第285条第2款</span>
-            </aa>、 提供侵入、非法控制计算机信息系统程序、工具罪
-            <aa class="has-footnote">
-                <sup>*</sup>
-                <span class="tooltip">《刑法》第285条第3款</span>
-            </aa>等。</p>
-        <p>可以发现，泄密行为的行为主体具有普遍性，涉及了普通玩家、测试服参与者、内容制作者（例如公司员工）、内容传播者（例如视频制作者、发帖者）、工具制作者（例如内鬼网站运营者）等多种身份；侵犯的法益具有复合性，一次简单的泄露就可能同时侵犯不同的权益；实施的手段具有多样性，多种信息传播形式、传播渠道都有可能被认定为泄密——这种对内容泄密行为的严格规制，也侧面反映出官方对其作品的大力保护，以及对侵权行为的严格禁止。</p>
-        <p>总之，严重的泄密行为足以构成犯罪，这并不是无稽之谈，而是具有法律依据的论断。而本案中的妮可少女为博取流量，获取打赏，而多次破解游戏测试包体，制作泄密视频，甚至搭建泄密网站，自以为被平台警告后，只要删除或下架视频即可，不用承担其他法律责任，甚至疑似在收到官方发送的律师函之后，仍不悔改——其态度可谓是猖狂至极，造成的恶劣影响无法估量！</p>
-        <h4 id="section4-3-3">3.对泄密行为的禁止</h4>
-        <p>如今，虽然大量的泄密网站已经关停，大量的头部泄密账号也已经注销，长期霸占社区的内容泄密生态逐渐走向了凋敝，但是社区内仍然存在不少的即时泄密内容。这些信息以破解安装包得到的信息为主，来源于国外的泄密者或群组，并在国内经由大量去中心化的自媒体账号进行搬运、发布，并在各个平台、群组内引发玩家的传播。有些关于泄密内容的讨论，甚至公然聚集在官方账号的讨论场域展开，在内容上，这些讨论严重打乱了官方内容发布的节奏，更将泄密信息广泛传播给了大量完全不知情的玩家；在程序上，这些由泄密内容衍生出的诉求的反馈方式，大部分都不符合官方对反馈渠道与操作流程的规定，除了挑动不必要的社区争议，间接给「专门以负面舆论牟利」的解构者提供借题发挥的素材以外，毫无建设性意义。</p>
-        <p>以上这种乱象至今都难以彻底遏制，大量玩家在浏览社区时，仍然对泄密信息防不胜防。不过正如枫丹大法官那维莱特所言：「凡高大者，我无不蔑视。」法律不会同情任何对法律的无知。再高大的存在，只要背负罪孽，那就应当受到应有的审判——这不是我自己主观捏造的妄言，而是在客观法条中蕴含的宗旨。基于以上案例与信息，本手册不可不对创作手册的材料来源做严格把控。</p>
-        <p>本手册做出郑重承诺：</p>
-        <p>第一，本手册所使用的一切游戏内容，<span style="color: red;">均为官方已经公布的素材</span>。本手册绝不将泄密素材（包括但不限于解包内容，内鬼推测）作为讨论、分析的根据，并且拒绝任何涉及泄密素材的修改建议。</p>
-        <p>第二，我作为原神社区内容的建设者，也希望通过分享关于泄密事件的处理结果（包括但不限于社区处理结果、司法程序结果），<span style="color: red;">对潜在或实际的内容泄密者起到震慑作用，减少泄密内容的传播，营造出良好的内容发布与创作生态。</span></p>
-        <p>第三，天下苦内鬼久矣。倘若荒野上仍有内鬼如狂猎般游荡，那我便用这本手册，为内容的建设者、爱好者修筑起坚实的城墙，作为最为直接的抵御。</p>
-        <h4 id="section4-3-4">4.真正的「禁忌知识」</h4>
-        <p>被禁忌知识裹挟的「妮可少女」已被这世界彻底排除，因此不再赘述。而更重要的事恰恰被放在了<span style="color:red;">下一页</span>：一位名为「尼可」的「魔女」向我分享了世界的底层架构。通过参考这位魔女提供的宝贵信息，还有一位名为戴因斯雷布的先生的旅行经历，以及一本名为《日月前事》的古籍记载的历史，我得以书写下《日月全事》的开篇——</p>
-        <p>我们想要记录的事情，不仅涉及天神在大地上「创世的神迹」，更关乎人类「闯世的足迹」，以及这串足迹上刻画的见闻。</p>
-        <p>这个「方舟」<aa class="has-footnote"><sup>*</sup><span class="tooltip">提瓦特，Teyvat，在古希伯来语中意为「方舟」。</span></aa>世界的目的，也许是给岁月以「人类的文明」。它的自由，是人类文明独立自主发展的自由；它的契约，是为协调人类文明中各方利益而订立的契约；它的永恒，是驱动文明发展之人类欲望的永恒；它的智慧，是人类文明替物质性世界铭记历史的智慧；它的正义，是不断延续人类文明的正义；它的战争，是在人类文明的危机中集结命运共同体的战争；它的██，是……</p>
-        <p>这段旅途在数年间启发我的神智，足以让我源源不断地记录。<span style="color:red;">请各位打起精神，随时留意头顶可能砸下的柱体。我将要讲述的，才是真正的「禁忌知识」。</span></p>
-    </div>
-</section>
+                    const a = document.createElement('a');
+                    a.href = '#' + item.id;
+                    a.className = 'toc-link level-' + item.level;
+                    a.textContent = item.text;
 
-        <footer class="home-footer">
-            <p>愿风指引你们的道路</p>
-            <p><a href="https://github.com/Dennis114514/GenshinLore" target="_blank">GenshinLore</a> 2026</p>
-            <p><a href="https://icp.gov.moe/?keyword=20263347" target="_blank">萌ICP备20263347号</a></p>
-        </footer>
-    </main>
-    <script src="script.js"></script>
-    <script>
-        document.addEventListener('DOMContentLoaded', function() {
-            const tocList = document.getElementById('toc-list');
-            const tocToggle = document.getElementById('toc-toggle');
-            
-            // 目录数据
-            const tocData = [
-                { id: 'section-1', text: '一、这本手册讲了什么？', level: 1 },
-                { id: 'section-2', text: '二、这本手册有何优点？', level: 1 },
-                { id: 'section-2-1', text: '（一）整合性', level: 2 },
-                { id: 'section-2-2', text: '（二）便捷性', level: 2 },
-                { id: 'section-2-3', text: '（三）备份功能', level: 2 },
-                { id: 'section-3', text: '三、如何阅读手册？如何提出修订建议？', level: 1 },
-                { id: 'section-3-1', text: '（一）阅读与打印手册', level: 2 },
-                { id: 'section-3-2', text: '（二）修订建议', level: 2 },
-                { id: 'section-4', text: '四、如何认定本手册的法律性质？', level: 1 },
-                { id: 'section-4-1', text: '（一）本作品的法律性质', level: 2 },
-                { id: 'section-4-1-1', text: '1.这部作品能否营利？', level: 3 },
-                { id: 'section-4-1-2', text: '2.这部作品引用了其他作品的文本，合理吗？', level: 3 },
-                { id: 'section-4-1-3', text: '3.这部作品需要提交申报吗？', level: 3 },
-                { id: 'section-4-1-4', text: '4.这部作品能否出版？', level: 3 },
-                { id: 'section-4-1-5', text: '5.有人将作品印刷成实体产品并出售，怎么处理？', level: 3 },
-                { id: 'section-4-1-6', text: '6.能否将该作品输入给人工智能工具，或架设人工智能工具？', level: 3 },
-                { id: 'section-4-1-7', text: '7.能否将作品分享到国外平台，广泛传播？', level: 3 },
-                { id: 'section-4-1-8', text: '8.能否将该作品转化成千星奇域？', level: 3 },
-                { id: 'section-4-3', text: '（二）关于泄密内容——以米哈游诉妮可少女案为例', level: 2 },
-                { id: 'section-4-3-1', text: '1.基本案情', level: 3 },
-                { id: 'section-4-3-2', text: '2.泄密行为的性质', level: 3 },
-                { id: 'section4-3-3', text: '3.对泄密行为的禁止', level: 3 },
-                { id: 'section4-3-4', text: '4.真正的「禁忌知识」', level: 3 }
-            ];
-            
-            // 生成目录
-            tocData.forEach(item => {
-                const li = document.createElement('li');
-                li.className = 'toc-item';
-                
-                const a = document.createElement('a');
-                a.href = '#' + item.id;
-                a.className = 'toc-link level-' + item.level;
-                a.textContent = item.text;
-                
-                li.appendChild(a);
-                tocList.appendChild(li);
-            });
-            
-            // 为目录链接添加平滑滚动与高亮同步
-            document.querySelectorAll('.toc-link').forEach(link => {
-                link.addEventListener('click', function(e) {
-                    e.preventDefault();
-                    const targetId = this.getAttribute('href').slice(1);
-                    const targetEl = document.getElementById(targetId);
-                    if (!targetEl) return;
-                    const topbarHeight = 70;
-                    const rect = targetEl.getBoundingClientRect();
-                    const targetPosition = window.scrollY + rect.top - topbarHeight - 16;
-                    window.scrollTo({ top: targetPosition, behavior: 'smooth' });
-                    if (typeof updateTocHighlight === 'function') {
-                        updateTocHighlight(targetId);
-                    }
-
-                    // 若移动端目录为打开状态，则收起
-                    const tocSidebarEl = document.querySelector('.toc-sidebar');
-                    const tocOverlayEl = document.querySelector('.mobile-toc-overlay');
-                    const mobileTocBtn = document.querySelector('.mobile-toc-btn');
-                    if (tocSidebarEl && tocSidebarEl.classList.contains('mobile-active')) {
-                        tocSidebarEl.classList.remove('mobile-active');
-                        if (tocOverlayEl) tocOverlayEl.classList.remove('active');
-                        document.body.style.overflow = '';
-                        if (mobileTocBtn) setTimeout(() => mobileTocBtn.classList.remove('hidden'), 350);
-                    }
+                    li.appendChild(a);
+                    tocList.appendChild(li);
                 });
-            });
 
-            // 确保收起/展开按钮已绑定（兼容 script.js 中的 collapseToc/expandToc）
-            const localCollapseBtn = document.getElementById('toc-collapse');
-            const localExpandBtn = document.getElementById('toc-expand');
-            if (localCollapseBtn) {
-                localCollapseBtn.addEventListener('click', function(e) {
-                    e.stopPropagation();
-                    if (typeof collapseToc === 'function') collapseToc();
+                // 为目录链接添加平滑滚动与高亮同步
+                document.querySelectorAll('.toc-link').forEach(link => {
+                    link.addEventListener('click', function (e) {
+                        e.preventDefault();
+                        const targetId = this.getAttribute('href').slice(1);
+                        const targetEl = document.getElementById(targetId);
+                        if (!targetEl) return;
+                        const topbarHeight = 70;
+                        const rect = targetEl.getBoundingClientRect();
+                        const targetPosition = window.scrollY + rect.top - topbarHeight - 16;
+                        window.scrollTo({ top: targetPosition, behavior: 'smooth' });
+                        if (typeof updateTocHighlight === 'function') {
+                            updateTocHighlight(targetId);
+                        }
+
+                        // 若移动端目录为打开状态，则收起
+                        const tocSidebarEl = document.querySelector('.toc-sidebar');
+                        const tocOverlayEl = document.querySelector('.mobile-toc-overlay');
+                        const mobileTocBtn = document.querySelector('.mobile-toc-btn');
+                        if (tocSidebarEl && tocSidebarEl.classList.contains('mobile-active')) {
+                            tocSidebarEl.classList.remove('mobile-active');
+                            if (tocOverlayEl) tocOverlayEl.classList.remove('active');
+                            document.body.style.overflow = '';
+                            if (mobileTocBtn) setTimeout(() => mobileTocBtn.classList.remove('hidden'), 350);
+                        }
+                    });
                 });
-            }
-            if (localExpandBtn) {
-                localExpandBtn.addEventListener('click', function(e) {
-                    e.stopPropagation();
-                    if (typeof expandToc === 'function') expandToc();
-                });
-            }
-            
-            // 初始化高亮
-            updateTocHighlight();
-            
-            // 滚动监听
-            window.addEventListener('scroll', function() {
+
+                // 确保收起/展开按钮已绑定（兼容 script.js 中的 collapseToc/expandToc）
+                const localCollapseBtn = document.getElementById('toc-collapse');
+                const localExpandBtn = document.getElementById('toc-expand');
+                if (localCollapseBtn) {
+                    localCollapseBtn.addEventListener('click', function (e) {
+                        e.stopPropagation();
+                        if (typeof collapseToc === 'function') collapseToc();
+                    });
+                }
+                if (localExpandBtn) {
+                    localExpandBtn.addEventListener('click', function (e) {
+                        e.stopPropagation();
+                        if (typeof expandToc === 'function') expandToc();
+                    });
+                }
+
+                // 初始化高亮
                 updateTocHighlight();
-            });
-            
-            // 更新大纲高亮的函数
-            function updateTocHighlight(forceId = null) {
-                if (forceId) {
+
+                // 滚动监听
+                window.addEventListener('scroll', function () {
+                    updateTocHighlight();
+                });
+
+                // 更新大纲高亮的函数
+                function updateTocHighlight(forceId = null) {
+                    if (forceId) {
+                        document.querySelectorAll('.toc-link').forEach(link => {
+                            link.classList.remove('active');
+                            if (link.getAttribute('href') === '#' + forceId) {
+                                link.classList.add('active');
+                            }
+                        });
+                        return;
+                    }
+
+                    const sections = tocData.map(item => document.getElementById(item.id)).filter(Boolean);
+                    let currentSection = '';
+
+                    let minDistance = Infinity;
+                    sections.forEach(section => {
+                        const rect = section.getBoundingClientRect();
+                        const distance = Math.abs(rect.top - 100);
+
+                        if (rect.top <= 100 && rect.bottom >= 0) {
+                            if (distance < minDistance) {
+                                minDistance = distance;
+                                currentSection = section.id;
+                            }
+                        }
+                    });
+
+                    if (!currentSection && sections.length > 0) {
+                        currentSection = sections[0].id;
+                    }
+
                     document.querySelectorAll('.toc-link').forEach(link => {
                         link.classList.remove('active');
-                        if (link.getAttribute('href') === '#' + forceId) {
+                        if (link.getAttribute('href') === '#' + currentSection) {
                             link.classList.add('active');
                         }
                     });
-                    return;
                 }
-                
-                const sections = tocData.map(item => document.getElementById(item.id)).filter(Boolean);
-                let currentSection = '';
-                
-                let minDistance = Infinity;
-                sections.forEach(section => {
-                    const rect = section.getBoundingClientRect();
-                    const distance = Math.abs(rect.top - 100);
-                    
-                    if (rect.top <= 100 && rect.bottom >= 0) {
-                        if (distance < minDistance) {
-                            minDistance = distance;
-                            currentSection = section.id;
-                        }
-                    }
-                });
-                
-                if (!currentSection && sections.length > 0) {
-                    currentSection = sections[0].id;
-                }
-                
-                document.querySelectorAll('.toc-link').forEach(link => {
-                    link.classList.remove('active');
-                    if (link.getAttribute('href') === '#' + currentSection) {
-                        link.classList.add('active');
-                    }
+            });
+
+            // 复制代码块功能
+            function copyCode(button) {
+                // 从按钮向上找到外层容器，然后找到pre元素
+                const codeContainer = button.closest('div[style*="border-radius: 4px"]');
+                const preElement = codeContainer.querySelector('pre');
+                const text = preElement.textContent;
+
+                // 复制图标SVG
+                const copyIcon = '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640" style="width: 18px; height: 18px; fill: #666;"><!--!Font Awesome Free v7.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2026 Fonticons, Inc.--><path d="M480 400L288 400C279.2 400 272 392.8 272 384L272 128C272 119.2 279.2 112 288 112L421.5 112C425.7 112 429.8 113.7 432.8 116.7L491.3 175.2C494.3 178.2 496 182.3 496 186.5L496 384C496 392.8 488.8 400 480 400zM288 448L480 448C515.3 448 544 419.3 544 384L544 186.5C544 169.5 537.3 153.2 525.3 141.2L466.7 82.7C454.7 70.7 438.5 64 421.5 64L288 64C252.7 64 224 92.7 224 128L224 384C224 419.3 252.7 448 288 448zM160 192C124.7 192 96 220.7 96 256L96 512C96 547.3 124.7 576 160 576L352 576C387.3 576 416 547.3 416 512L416 496L368 496L368 512C368 520.8 360.8 528 352 528L160 528C151.2 528 144 520.8 144 512L144 256C144 247.2 151.2 240 160 240L176 240L176 192L160 192z"/></svg>';
+
+                // 成功图标SVG
+                const successIcon = '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640" style="width: 18px; height: 18px; fill: #2ecc71;"><!--!Font Awesome Pro v7.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2026 Fonticons, Inc.--><path d="M530.8 134.1C545.1 144.5 548.3 164.5 537.9 178.8L281.9 530.8C276.4 538.4 267.9 543.1 258.5 543.9C249.1 544.7 240 541.2 233.4 534.6L105.4 406.6C92.9 394.1 92.9 373.8 105.4 361.3C117.9 348.8 138.2 348.8 150.7 361.3L252.2 462.8L486.2 141.1C496.6 126.8 516.6 123.6 530.9 134z"/></svg>';
+
+                // 失败图标SVG
+                const errorIcon = '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640" style="width: 18px; height: 18px; fill: #e74c3c;"><!--!Font Awesome Free v7.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2026 Fonticons, Inc.--><path d="M183.1 137.4C170.6 124.9 150.3 124.9 137.8 137.4C125.3 149.9 125.3 170.2 137.8 182.7L275.2 320L137.9 457.4C125.4 469.9 125.4 490.2 137.9 502.7C150.4 515.2 170.7 515.2 183.2 502.7L320.5 365.3L457.9 502.6C470.4 515.1 490.7 515.1 503.2 502.6C515.7 490.1 515.7 469.8 503.2 457.3L365.8 320L503.1 182.6C515.6 170.1 515.6 149.8 503.1 137.3C490.6 124.8 470.3 124.8 457.8 137.3L320.5 274.7L183.1 137.4z"/></svg>';
+
+                navigator.clipboard.writeText(text).then(() => {
+                    button.innerHTML = successIcon;
+                    button.style.opacity = '1';
+
+                    setTimeout(() => {
+                        button.innerHTML = copyIcon;
+                        button.style.opacity = '0.6';
+                    }, 2000);
+                }).catch(err => {
+                    console.error('复制失败:', err);
+                    button.innerHTML = errorIcon;
+                    button.style.opacity = '1';
+
+                    setTimeout(() => {
+                        button.innerHTML = copyIcon;
+                        button.style.opacity = '0.6';
+                    }, 2000);
                 });
             }
-        });
-        
-        // 复制代码块功能
-        function copyCode(button) {
-            // 从按钮向上找到外层容器，然后找到pre元素
-            const codeContainer = button.closest('div[style*="border-radius: 4px"]');
-            const preElement = codeContainer.querySelector('pre');
-            const text = preElement.textContent;
-            
-            // 复制图标SVG
-            const copyIcon = '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640" style="width: 18px; height: 18px; fill: #666;"><!--!Font Awesome Free v7.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2026 Fonticons, Inc.--><path d="M480 400L288 400C279.2 400 272 392.8 272 384L272 128C272 119.2 279.2 112 288 112L421.5 112C425.7 112 429.8 113.7 432.8 116.7L491.3 175.2C494.3 178.2 496 182.3 496 186.5L496 384C496 392.8 488.8 400 480 400zM288 448L480 448C515.3 448 544 419.3 544 384L544 186.5C544 169.5 537.3 153.2 525.3 141.2L466.7 82.7C454.7 70.7 438.5 64 421.5 64L288 64C252.7 64 224 92.7 224 128L224 384C224 419.3 252.7 448 288 448zM160 192C124.7 192 96 220.7 96 256L96 512C96 547.3 124.7 576 160 576L352 576C387.3 576 416 547.3 416 512L416 496L368 496L368 512C368 520.8 360.8 528 352 528L160 528C151.2 528 144 520.8 144 512L144 256C144 247.2 151.2 240 160 240L176 240L176 192L160 192z"/></svg>';
-            
-            // 成功图标SVG
-            const successIcon = '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640" style="width: 18px; height: 18px; fill: #2ecc71;"><!--!Font Awesome Pro v7.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2026 Fonticons, Inc.--><path d="M530.8 134.1C545.1 144.5 548.3 164.5 537.9 178.8L281.9 530.8C276.4 538.4 267.9 543.1 258.5 543.9C249.1 544.7 240 541.2 233.4 534.6L105.4 406.6C92.9 394.1 92.9 373.8 105.4 361.3C117.9 348.8 138.2 348.8 150.7 361.3L252.2 462.8L486.2 141.1C496.6 126.8 516.6 123.6 530.9 134z"/></svg>';
-            
-            // 失败图标SVG
-            const errorIcon = '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640" style="width: 18px; height: 18px; fill: #e74c3c;"><!--!Font Awesome Free v7.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2026 Fonticons, Inc.--><path d="M183.1 137.4C170.6 124.9 150.3 124.9 137.8 137.4C125.3 149.9 125.3 170.2 137.8 182.7L275.2 320L137.9 457.4C125.4 469.9 125.4 490.2 137.9 502.7C150.4 515.2 170.7 515.2 183.2 502.7L320.5 365.3L457.9 502.6C470.4 515.1 490.7 515.1 503.2 502.6C515.7 490.1 515.7 469.8 503.2 457.3L365.8 320L503.1 182.6C515.6 170.1 515.6 149.8 503.1 137.3C490.6 124.8 470.3 124.8 457.8 137.3L320.5 274.7L183.1 137.4z"/></svg>';
-            
-            navigator.clipboard.writeText(text).then(() => {
-                button.innerHTML = successIcon;
-                button.style.opacity = '1';
-                
-                setTimeout(() => {
-                    button.innerHTML = copyIcon;
-                    button.style.opacity = '0.6';
-                }, 2000);
-            }).catch(err => {
-                console.error('复制失败:', err);
-                button.innerHTML = errorIcon;
-                button.style.opacity = '1';
-                
-                setTimeout(() => {
-                    button.innerHTML = copyIcon;
-                    button.style.opacity = '0.6';
-                }, 2000);
-            });
-        }
-        
-        // 初始化移动端目录导航（确保目录DOM创建完成后调用）
-        if (typeof initMobileToc === 'function') {
-            initMobileToc();
-        }
-    </script>
-    <script src="useragreement.js"></script>
-    <script src="notice.js"></script>
-</body>
+
+            // 初始化移动端目录导航（确保目录DOM创建完成后调用）
+            if (typeof initMobileToc === 'function') {
+                initMobileToc();
+            }
+        </script>
+        <script src="useragreement.js"></script>
+        <script src="notice.js"></script>
+    </body>
+
 </html>
