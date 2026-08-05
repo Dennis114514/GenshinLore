@@ -1,0 +1,70 @@
+# Genshinlore
+
+> A comprehensive, offline-friendly Genshin Impact lore manual.  
+> All content is sourced from in-game texts, with traceable references and clear uncertainty markers.  
+> Fully free, no registration required.
+
+## Main pages
+
+- [Home](https://genshinlore.cn/main.html)
+- [Preface](https://genshinlore.cn/preface.html)
+- [About the manual](https://genshinlore.cn/md/about.md)
+
+## Core content
+
+### Basic Lore
+
+- [Basic Lore Index](https://genshinlore.cn/basiclore.html)
+  - [Descenders](https://genshinlore.cn/basiclore/descenders/base)
+  - [Element Usage](https://genshinlore.cn/basiclore/elementusage/base)
+  - [Facilities (Land & Installations)](https://genshinlore.cn/basiclore/facilities/base)
+  - [Gods](https://genshinlore.cn/basiclore/god/base)
+  - [Light Realm (Vishaps/Dragons)](https://genshinlore.cn/basiclore/lightrelam/base)
+  - [Principles (Heavenly Principles/Human Realm)](https://genshinlore.cn/basiclore/principles/base)
+  - [Stars (Firmament)](https://genshinlore.cn/basiclore/stars/base)
+  - [Void (Abyss)](https://genshinlore.cn/basiclore/void/base)
+
+### Country Histories
+
+- [Country Index](https://genshinlore.cn/history-country.html)
+  - [Mondstadt](https://genshinlore.cn/md/Mondstadt.md)
+  - [Liyue](https://genshinlore.cn/md/Liyue.md)
+  - [Inazuma](https://genshinlore.cn/md/Inazuma.md)
+  - [Sumeru](https://genshinlore.cn/md/Sumeru.md)
+  - [Fontaine](https://genshinlore.cn/md/Fontaine.md)
+  - [Natlan](https://genshinlore.cn/md/Natlan.md)
+  - [Snezhnaya](https://genshinlore.cn/md/Snezhnaya.md)
+  - [Khaenri'ah](https://genshinlore.cn/md/Khaenriah.md)
+
+### Integrated History
+
+- [Teyvat History](https://genshinlore.cn/md/Teyvathis.md)
+- [Timeline](https://genshinlore.cn/genshinbasichis.html)
+
+### Extra Guides & Fun
+
+- [Linear Story Watching Order](https://genshinlore.cn/Linear/base.html)
+- [Fun Facts/Easter Eggs](https://genshinlore.cn/interestfacts.html)
+- [Ramblings](https://genshinlore.cn/somewords.html)
+
+## Key features
+
+- **Offline & Printable** – Save locally or print as a physical book.
+- **Primary Sources Only** – Directly based on in-game text, no fan-fiction.
+- **Uncertainty Marked** – Ambiguous information is clearly noted.
+- **Free & No-Barrier** – No forced group joins, passwords, or bundled software.
+- **Single-Author Consistency** – Uniform formatting, unified timeline, and minimal conflicting information.
+
+## Site structure overview
+
+URL base: `https://genshinlore.cn`
+
+- `basiclore/` – HTML pages for basic lore concepts.
+- `his/` – Country history HTML pages (base.html + content.js).
+- `md/` – Markdown source files for country and history content.
+- `Linear/` – Linear story order page with progress markers.
+- `img/` – All site images (context, country, logo, others).
+- `fonts/` – Custom fonts (Noto Sans SC, Hanyi Wenhei, Khaenri'ah style).
+- `docimg/` – Icons.
+- `*.html` at root – Main navigation pages, about, preface, 404, etc.
+- `*.js` – Scripts for content injection, notice, watermark, etc.
