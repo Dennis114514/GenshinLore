@@ -86,18 +86,21 @@ GenshinLore/
 ├── BingSiteAuth.xml     
 ├── contentteyvat.js     # 用于向“提瓦特历史”页面写入内容
 ├── genshinbasichis.html # “时间线”页面
+├── _headers             # 服务器请求头
 ├── history-country.html # “各国历史”导航页
 ├── index.html           # 开屏页
 ├── interestfacts.html   # 彩蛋页
 ├── interestfacts.json   # 彩蛋页数据
-├── LICENCE.md           
+├── LICENCE.md
+├── llms.txt           
 ├── main.html            # 主页
 ├── md.html              # markdown源文件提供页面
 ├── mermaid.min.js       # mermaid渲染器
 ├── notice.js            # 公告模块
 ├── notice.json          # 公告模块数据
 ├── preface.html         # 前言页面
-├── README.md            
+├── README.md
+├── robots.txt
 ├── script-index.js      # 开屏页脚本
 ├── script.js            # 全站脚本
 ├── sitemap.xml
