@@ -4,7 +4,7 @@
   Access-Control-Allow-Origin: *
 
 # 公告/版本文件优化
-/notices.json
+/notice.json
   Cache-Control: public, max-age=3600, stale-while-revalidate=86400, must-revalidate
   Vary: Accept-Encoding
 
@@ -13,7 +13,7 @@
   Vary: Accept-Encoding
 
 # 字体文件
-/fonts/*.woff2
+/fonts/*
   Cache-Control: public, max-age=31536000, immutable
   Vary: Accept-Encoding
 
