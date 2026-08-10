@@ -752,7 +752,16 @@ document.addEventListener('DOMContentLoaded', () => {
      * 5. 构建目录导航
      */
     loadMarkdown().then(md => {
-        if (!md) return;
+        if (containerEl) {
+            containerEl.innerHTML = '';
+        }
+
+        if (!md) {
+            if (containerEl) {
+                containerEl.innerHTML = '<p class="common-paragraph loading-text">内容加载失败，请稍后刷新页面。</p>';
+            }
+            return;
+        }
 
         /** 提取脚注：从第一个 `\n> 1 ` 开始分离 */
         const footStart = md.indexOf('\n> 1 ');
