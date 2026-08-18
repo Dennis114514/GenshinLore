@@ -2,6 +2,8 @@
 
 ducam  regina  mea  gloria  haud  pluribus  impar
 
+**至冬章改动较大，具体参见[首页PDF原文](https://genshinlore.cn/main/)**
+
 ![Introbg0](../img/context/Snezhnaya/SnezhnayaIntroBg0.png)
 她
 是人再也不会去爱的神，
