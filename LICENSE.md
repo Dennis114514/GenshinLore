@@ -32,7 +32,7 @@ License: GPL-3.0-or-later (code) · CC BY-NC-SA 4.0 (design) · CC BY-NC-ND 4.0 
 本声明以简体中文、英文双语发布；两种版本如有歧义，以简体中文版为准。
 
 ---
-**Repository License and Copyright Notice**
+# Repository License and Copyright Notice
 
 This repository (the GenshinLore project) is made available under a **multi-licensing framework**. Given the intertwined nature of code, design, and content in static web projects, this notice defines the scope of each license by "functional attributes" rather than by "file directories."
 
@@ -66,7 +66,6 @@ This repository (the GenshinLore project) is made available under a **multi-lice
 A: Under this notice, the HTML tags (structure layer) in such a file are governed by GPLv3, while the textual content enclosed therein is governed by CC BY‑NC‑ND 4.0. This means you are free to reference the page structure, but you may not directly copy or alter the protected textual content.
 
 ---
-
 This notice is published in both Simplified Chinese and English. In case of any ambiguity or discrepancy between the two versions, the Simplified Chinese version shall prevail.
 ---
 
