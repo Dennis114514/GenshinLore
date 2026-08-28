@@ -1,24 +1,25 @@
+License: GPL-3.0-or-later (code) · CC BY-NC-SA 4.0 (design) · CC BY-NC-ND 4.0 (original curated content)
+
 # 仓库许可与版权声明
 
 本仓库（GenshinLore 项目）采用**多重许可协议**。考虑到静态网页项目中代码、设计与内容相互交织的特点，本协议以“功能属性”而非“文件目录”来界定各项许可的适用范围。
 
 ## 1. 逻辑与功能实现
 - **适用协议：** GNU 通用公共许可证第三版 (GPLv3)
-- **定义范围：** 本项目中的所有源代码，无论是否经过编译，包括但不限于 JavaScript 逻辑脚本、HTML 结构标签、自动化工作流 (GitHub Actions) 以及各类构建工具配置文件。
+- **定义范围：** 定义范围：本项目中一切以源代码文本形式存在的文件，无论是否经构建处理，包括但不限于 JavaScript 逻辑脚本、HTML 与 CSS 文件、自动化工作流（GitHub Actions）以及各类构建工具配置文件。
 - **授权说明：** 凡涉及上述程序逻辑的复制、修改或分发，均须遵守 GPLv3 的开源义务。
 
 ## 2. 视觉呈现与交互样式
 - **适用协议：** 知识共享 署名-非商业性使用-相同方式共享 4.0 国际 (CC BY-NC-SA 4.0)
-- **定义范围：** 本网站整体的视觉风格、配色方案、交互动效方案、CSS 样式文件及其所定义的界面布局方案。
+- **定义范围：** 从代码中抽象出来的视觉与交互设计方案，包括整体视觉风格、配色方案、交互动效方案及界面布局方案（以其实际呈现的具体表达为准，不含第 1 条所列代码文件本身）。
 - **授权说明：** 仅限于非商业性使用。基于本 UI 方案的任何修改版本必须以相同协议开源，不得将其作为私有商业模板出售或闭源使用。
 
-## 3. 文献汇编内容与授权素材
-- **适用协议：** 知识共享 署名-非商业性使用-禁止演绎 4.0 国际 (CC BY-NC-ND 4.0) + 官方版权保留
-- **定义范围：** 本网站所展示的所有文字叙述、数据图表及其版面编排等。
-- **版权声明：**
-  - 本项目涉及的《原神》游戏原文、角色形象、美术素材等版权均归**上海米哈游网络科技股份有限公司 (miHoYo)** 所有。
-  - 本汇编作品作者对游戏文本所进行的独创性整理、校对、注释及编排所形成的智力成果，依法享有著作权保护。
-- **特别限制：** 严禁任何形式的商业倒卖。引用时须保持内容完整，禁止进行可能导致原意歪曲的二次修改、删节或不当混编。
+## 3. 文献汇编内容与素材
+- **适用协议**： 原创汇编内容适用 CC BY-NC-ND 4.0；官方原始内容不在本声明任何授权范围之内
+- **定义范围和版权声明**，细分为：
+ - 原创汇编内容：本项目作者对游戏文本进行独创性整理、校对、注释及编排所形成的智力成果，包括全部文字叙述、数据图表、数据文件（如时间线数据）及版面编排。依《著作权法》第十五条享有汇编作品著作权，行使时不得侵犯官方原始内容的著作权；依 CC BY-NC-ND 4.0 授权使用。
+ - 官方原始内容：本项目涉及的《原神》游戏内原文、角色形象、美术素材等，版权归上海米哈游影铁科技有限公司（miHoYo）及其关联方所有。本项目未获授权、亦无权对其作出任何许可或权利主张；相关使用应遵循米哈游官方发布的相关规则及法律法规。
+- **特别限制：** 禁止对原创汇编内容进行修改、删节、翻译、混编等演绎后分发；引用时须保持逐字及上下文完整；任何使用均不得歪曲、割裂原意或损害原作者声誉；严禁任何形式的商业倒卖。
 
 ---
 
@@ -27,34 +28,46 @@
 答：根据本协议，该文件中的 HTML 标签（结构层）受 GPLv3 约束，而其中所包裹的文字内容受 CC BY-NC-ND 4.0 约束。这意味着你可以自由参考其页面结构，但不得直接复制或篡改其中受保护的文献内容。
 
 ---
-# Repository License & Copyright
 
-This repository (GenshinLore project) is released under a **multi-license model**. Given the intertwined nature of code, design, and content in a static website project, this license defines the scope of each grant based on “functional nature” rather than directory paths.
+本声明以简体中文、英文双语发布；两种版本如有歧义，以简体中文版为准。
 
-## 1. Logic & Functionality
-- **License:** GNU General Public License v3.0 (GPLv3)
-- **Scope:** All source code in this project, whether compiled or not, including but not limited to JavaScript logic scripts, HTML structural markup, automation workflows (GitHub Actions), and various build tool configurations.
-- **Terms:** Any reproduction, modification, or distribution of the above program logic must comply with the open-source obligations of GPLv3.
+---
+**Repository License and Copyright Notice**
 
-## 2. Visuals & Interaction
-- **License:** Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International (CC BY-NC-SA 4.0)
-- **Scope:** The overall visual style, color scheme, interactive effect design, CSS stylesheets, and the UI layout scheme they define.
-- **Terms:** Non-commercial use only. Any modified version based on this UI scheme must be released under the same license. It may not be turned into a private commercial template or used in any closed-source manner.
-
-## 3. Compiled Content & Licensed Assets
-- **License:** Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International (CC BY-NC-ND 4.0) + Official Rights Reservation
-- **Scope:** All textual narratives, data charts, and typographical arrangements displayed on this website.
-- **Copyright Notice:**
-  - All copyrights to in-game texts, characters, and artistic assets of *Genshin Impact* referenced in this project belong to **Shanghai miHoYo Network Technology Co., Ltd. (miHoYo)**.
-  - The original compilation, verification, annotation, and arrangement of the game texts by the author of this project form a protected intellectual work under applicable law.
-- **Special Restrictions:** Any form of commercial resale is strictly prohibited. When quoting, the integrity of the content must be maintained. Secondary modification, abridgment, or remixing that may distort the original meaning is forbidden.
+This repository (the GenshinLore project) is made available under a **multi-licensing framework**. Given the intertwined nature of code, design, and content in static web projects, this notice defines the scope of each license by "functional attributes" rather than by "file directories."
 
 ---
 
-## Edge Cases
-**Q: How does this apply to an HTML file that contains both structural code and textual content?**  
-A: Under this license, the HTML tags (structure) within that file are governed by GPLv3, while the textual content enclosed by those tags is governed by CC BY-NC-ND 4.0. This means you may freely reference the page structure, but you may not directly copy or alter the protected literary content.
+## 1. Logic and Functional Implementation
+- **Applicable License:** GNU General Public License, Version 3 (GPLv3)
+- **Scope Defined:** All files existing in the form of source code text within this project, whether processed by build tools or not, including but not limited to JavaScript logic scripts, HTML and CSS files, automation workflows (GitHub Actions), and various build tool configuration files.
+- **Licensing Terms:** Any copying, modification, or distribution involving the above program logic must comply with the open‑source obligations of GPLv3.
 
+---
+
+## 2. Visual Presentation and Interaction Design
+- **Applicable License:** Creative Commons Attribution‑NonCommercial‑ShareAlike 4.0 International (CC BY‑NC‑SA 4.0)
+- **Scope Defined:** The visual and interaction design schemes abstracted from the code, including overall visual style, color schemes, interaction effect designs, and interface layout schemes (as expressed in their concrete presentation, excluding the code files themselves listed in Section 1).
+- **Licensing Terms:** Use is permitted for non‑commercial purposes only. Any modified version based on this UI scheme must be released under the same license and may not be sold or used in a closed‑source manner as a proprietary commercial template.
+
+---
+
+## 3. Compiled Documentation Content and Materials
+- **Applicable Licenses:** Original compiled content is subject to CC BY‑NC‑ND 4.0; official original content is not covered by any license under this notice.
+- **Scope Defined and Copyright Statement,** subdivided as follows:
+  - **Original Compiled Content:** The intellectual achievements resulting from the project author's original arrangement, proofreading, annotation, and compilation of game texts, including all written narratives, data charts, data files (e.g., timeline data), and typographical layouts. The author enjoys compilation copyright under Article 15 of the Copyright Law, and the exercise of such rights shall not infringe upon the copyrights of the official original content. This content is licensed under CC BY‑NC‑ND 4.0.
+  - **Official Original Content:** The original in‑game texts, character images, art assets, etc., involved in this project are the property of Shanghai miHoYo Yingtie Technology Co., Ltd. (miHoYo) and its affiliates. This project is not authorized to, and has no right to, grant any license or make any claim over such content; any use thereof shall comply with the relevant rules published by miHoYo and applicable laws and regulations.
+- **Special Restrictions:** It is prohibited to modify, abridge, translate, remix, or otherwise create derivative works of the original compiled content for distribution. Quotations must preserve the verbatim text and full context. Any use shall not distort, dismember, or misrepresent the original meaning, nor harm the reputation of the original author. Commercial resale in any form is strictly forbidden.
+
+---
+
+## FAQ
+**Q: How should an HTML file that contains both structural code and textual content be treated?**  
+A: Under this notice, the HTML tags (structure layer) in such a file are governed by GPLv3, while the textual content enclosed therein is governed by CC BY‑NC‑ND 4.0. This means you are free to reference the page structure, but you may not directly copy or alter the protected textual content.
+
+---
+
+This notice is published in both Simplified Chinese and English. In case of any ambiguity or discrepancy between the two versions, the Simplified Chinese version shall prevail.
 ---
 
 ## 附录/Appendix
