@@ -1,4 +1,4 @@
-License: GPL-3.0-or-later (code) · CC BY-NC-SA 4.0 (design) · CC BY-NC-ND 4.0 (original curated content)
+License: GPL-3.0-or-later (code),CC BY-NC-SA 4.0 (design),CC BY-NC-ND 4.0 (original curated content)
 
 # 仓库许可与版权声明
 
@@ -19,7 +19,7 @@ License: GPL-3.0-or-later (code) · CC BY-NC-SA 4.0 (design) · CC BY-NC-ND 4.0 
 - **定义范围和版权声明**，细分为：
  - 原创汇编内容：本项目作者对游戏文本进行独创性整理、校对、注释及编排所形成的智力成果，包括全部文字叙述、数据图表、数据文件（如时间线数据）及版面编排。依《著作权法》第十五条享有汇编作品著作权，行使时不得侵犯官方原始内容的著作权；依 CC BY-NC-ND 4.0 授权使用。
  - 官方原始内容：本项目涉及的《原神》游戏内原文、角色形象、美术素材等，版权归上海米哈游影铁科技有限公司（miHoYo）及其关联方所有。本项目未获授权、亦无权对其作出任何许可或权利主张；相关使用应遵循米哈游官方发布的相关规则及法律法规。
-- **特别限制：** 禁止对原创汇编内容进行修改、删节、翻译、混编等演绎后分发；引用时须保持逐字及上下文完整；任何使用均不得歪曲、割裂原意或损害原作者声誉；严禁任何形式的商业倒卖。
+- **特别限制：** 禁止在未经作者授权的情况下对原创汇编内容进行修改、删节、翻译、混编等演绎后分发；引用时须保持逐字及上下文完整；任何使用均不得歪曲、割裂原意或损害原作者声誉；严禁任何形式的商业倒卖。
 
 ---
 
@@ -57,7 +57,7 @@ This repository (the GenshinLore project) is made available under a **multi-lice
 - **Scope Defined and Copyright Statement,** subdivided as follows:
   - **Original Compiled Content:** The intellectual achievements resulting from the project author's original arrangement, proofreading, annotation, and compilation of game texts, including all written narratives, data charts, data files (e.g., timeline data), and typographical layouts. The author enjoys compilation copyright under Article 15 of the Copyright Law, and the exercise of such rights shall not infringe upon the copyrights of the official original content. This content is licensed under CC BY‑NC‑ND 4.0.
   - **Official Original Content:** The original in‑game texts, character images, art assets, etc., involved in this project are the property of Shanghai miHoYo Yingtie Technology Co., Ltd. (miHoYo) and its affiliates. This project is not authorized to, and has no right to, grant any license or make any claim over such content; any use thereof shall comply with the relevant rules published by miHoYo and applicable laws and regulations.
-- **Special Restrictions:** It is prohibited to modify, abridge, translate, remix, or otherwise create derivative works of the original compiled content for distribution. Quotations must preserve the verbatim text and full context. Any use shall not distort, dismember, or misrepresent the original meaning, nor harm the reputation of the original author. Commercial resale in any form is strictly forbidden.
+- **Special Restrictions:** Without the author's authorization, it is prohibited to modify, abridge, translate, remix, or otherwise create derivative works of the original compiled content for distribution. Quotations must preserve the verbatim text and full context. Any use shall not distort, dismember, or misrepresent the original meaning, nor harm the reputation of the original author. Commercial resale in any form is strictly forbidden.
 
 ---
 
