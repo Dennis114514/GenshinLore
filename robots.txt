@@ -2,4 +2,4 @@ User-agent: *
 Allow: /
 Sitemap: https://genshinlore.cn/sitemap.xml
 
-Content-Usage: train-ai=y, ai-use=y, search=y
+Content-Signal: ai-train=yes, search=yes, ai-input=yes
