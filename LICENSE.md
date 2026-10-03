@@ -748,7 +748,7 @@ the library.  If this is what you want to do, use the GNU Lesser General
 Public License instead of this License.  But first, please read
 <https://www.gnu.org/licenses/why-not-lgpl.html>.
 ```
-2. 知识共享 署名-非商业性使用-禁止演绎 4.0 国际 (CC BY-NC-ND 4.0) 许可协议原文内容/Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International Full Text
+2. 知识共享 署名-非商业性使用-禁止演绎 4.0 国际 (CC BY-NC-ND 4.0) 许可协议原文内容/Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International Full Text
 ```
 Attribution-NonCommercial-NoDerivatives 4.0 International
 
@@ -1153,7 +1153,7 @@ public licenses.
 
 Creative Commons may be contacted at creativecommons.org.
 ```
-3. 知识共享 署名-非商业性使用-相同方式共享 4.0 国际 (CC BY-NC-SA 4.0) 许可协议原文内容/Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International Full Text
+3. 知识共享 署名-非商业性使用-相同方式共享 4.0 国际 (CC BY-NC-SA 4.0) 许可协议原文内容/Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International Full Text
 ```
 Attribution-NonCommercial-ShareAlike 4.0 International
 
